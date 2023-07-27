@@ -1,0 +1,691 @@
+"'MEPS1-04-2M-HIDRAULICO' As screen":
+    OnVisible: =
+
+    Rectangle1_49 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =92
+        Width: =1366
+        ZIndex: =1
+
+    Rectangle2_316 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =35
+        Width: =1366
+        Y: =146
+        ZIndex: =2
+
+    Rectangle2_317 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =216
+        ZIndex: =3
+
+    Label1_13 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =92
+        Size: =20
+        Text: |-
+            ="ORDEN DE TRABAJO 
+            MANTENIMIENTO PREVENTIVO ACTIVO"
+        Width: =527
+        X: =419
+        ZIndex: =4
+
+    Label2_13 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =26
+        Size: =14
+        Text: |-
+            ="Proc. No.: MEPS1-04-2M-HIDRAULICO"
+        Width: =461
+        X: =904
+        Y: =105
+        ZIndex: =5
+
+    Label3_26 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        Size: =14
+        Text: ="Activo No."
+        X: =7
+        Y: =148
+        ZIndex: =6
+
+    Label4_26 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        Size: =14
+        Text: ="Nombre del Activo"
+        Width: =190
+        X: =596
+        Y: =148
+        ZIndex: =7
+
+    Label5_26 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        Size: =14
+        Text: |-
+            ="Localización
+            "
+        X: =1155
+        Y: =146
+        ZIndex: =8
+
+    Label3_27 As label:
+        Align: =Align.Center
+        Height: =35
+        Text: ="MEPS1-04"
+        Y: =179
+        ZIndex: =9
+
+    Label4_27 As label:
+        Align: =Align.Center
+        Height: =35
+        Text: ="Pivatic Puncher"
+        Width: =190
+        X: =575
+        Y: =184
+        ZIndex: =10
+
+    Label5_27 As label:
+        Align: =Align.Center
+        Height: =35
+        Text: ="PRENSAS"
+        X: =1136
+        Y: =179
+        ZIndex: =11
+
+    Label6_351 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =30
+        Text: |-
+            ="Asignado a:"
+        Width: =107
+        X: =21
+        Y: =557
+        ZIndex: =17
+
+    Rectangle2_318 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =528
+        ZIndex: =18
+
+    Label6_329 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =43
+        Text: |-
+            ="Prioridad:"
+        Width: =119
+        X: =581
+        Y: =257
+        ZIndex: =19
+
+    Label6_333 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Text: |-
+            ="Tipo de Trabajo:"
+        Width: =184
+        X: =568
+        Y: =293
+        ZIndex: =20
+
+    Label6_338 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Text: |-
+            ="Clase Mtto:"
+        Width: =184
+        X: =529
+        Y: =332
+        ZIndex: =21
+
+    Label6_341 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Text: |-
+            ="Hrs. Maq. Prog:"
+        Width: =142
+        X: =602
+        Y: =370
+        ZIndex: =22
+
+    Label6_344 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Text: |-
+            ="Hrs. Hom. Prog:"
+        Width: =141
+        X: =606
+        Y: =404
+        ZIndex: =23
+
+    Label6_349 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Text: |-
+            ="Clasificación:"
+        Width: =128
+        X: =596
+        Y: =448
+        ZIndex: =24
+
+    Label6_353 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        Text: |-
+            ="Descripción:"
+        Width: =121
+        X: =9
+        Y: =604
+        ZIndex: =28
+
+    Label6_328 As label:
+        Height: =42
+        Text: ="Cada 2 Mes (es) | Segundo Domingo"
+        Width: =311
+        X: =200
+        Y: =257
+        ZIndex: =29
+
+    Label6_335 As label:
+        Height: =26
+        Text: ="20/08/2023"
+        Width: =257
+        X: =208
+        Y: =301
+        ZIndex: =30
+
+    Label6_339 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        Text: ="33"
+        Width: =257
+        X: =200
+        Y: =358
+        ZIndex: =31
+
+    Label6_346 As label:
+        Height: =43
+        Text: ="15/10/2023"
+        Width: =257
+        X: =200
+        Y: =427
+        ZIndex: =32
+
+    Label6_330 As label:
+        Height: =43
+        Text: ="Alta"
+        Width: =67
+        X: =763
+        Y: =257
+        ZIndex: =33
+
+    Label6_334 As label:
+        Height: =43
+        Text: ="HIDRAULICO"
+        Width: =160
+        X: =762
+        Y: =293
+        ZIndex: =34
+
+    Label6_337 As label:
+        Height: =43
+        Text: ="Preventivo"
+        Width: =160
+        X: =762
+        Y: =329
+        ZIndex: =35
+
+    Label6_342 As label:
+        Height: =43
+        Text: ="4.00"
+        Width: =160
+        X: =762
+        Y: =370
+        ZIndex: =36
+
+    Label6_345 As label:
+        Height: =43
+        Text: ="4.00"
+        Width: =160
+        X: =762
+        Y: =406
+        ZIndex: =37
+
+    Label6_348 As label:
+        Height: =43
+        Text: ="A"
+        Width: =160
+        X: =762
+        Y: =445
+        ZIndex: =38
+
+    Button1_13 As button:
+        BorderThickness: =0
+        DisabledBorderColor: =RGBA(41, 191, 18, 1)
+        Fill: =RGBA(152, 208, 70, 1)
+        OnSelect: =Navigate('MEPS1-04-2M-HIDRAULICO(PREG1)',ScreenTransition.Cover)
+        Text: ="Contestar "
+        Width: =242
+        X: =561
+        Y: =712
+        ZIndex: =39
+
+    Rectangle2_319 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =664
+        ZIndex: =40
+
+    Label6_352 As label:
+        Height: =38
+        Text: ="MANTENIMIENTO PREVENTIVO DESTACKER"
+        Width: =409
+        X: =149
+        Y: =603
+        ZIndex: =41
+
+    Image2_48 As image:
+        Height: =53
+        Image: =carrier_logo_300
+        Width: =209
+        X: =1155
+        Y: =19
+        ZIndex: =42
+
+    "Gallery4_14 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DelayItemLoading: =true
+        Height: =106
+        Items: =ColMenu
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Set(Boton,ThisItem) & Navigate(ThisItem.ventana,ScreenTransition.Fade)
+        TemplateFill: |+
+            =If(ThisItem.Titulo = Boton.Titulo,RGBA(92, 103, 125, 1), RGBA(151, 157, 172, 1)) //Lo que se hace aqui es una condicion, que dice, que si el item seleccionado es verdadero que cambie de color a uno mas oscuro, pero si la condicion no se cumple, que vuelva a su color original
+            
+        TemplatePadding: =0
+        TemplateSize: =53
+        Width: =If(reducir,0,340)
+        X: =28
+        Y: =80
+        ZIndex: =43
+
+        Image10_14 As image:
+            Height: =42
+            Image: =ThisItem.icono
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =1
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title8_14 As label:
+            Color: =RGBA(0, 8, 20,1)
+            DisabledColor: =RGBA(255,255,255, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            HoverColor: |
+                =Self.Color
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Titulo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image10_14.Width - 137
+            X: =1
+            Y: =14
+            ZIndex: =2
+
+        Separator8_14 As rectangle:
+            BorderThickness: =1
+            Height: =0
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =53
+            ZIndex: =4
+
+        Rectangle10_14 As rectangle:
+            Height: =Parent.TemplateHeight - Separator8_14.Height
+            OnSelect: =Select(Parent)
+            Visible: =If(ThisItem.IsSelected, true, false)
+            Width: =1
+            ZIndex: =5
+
+    Icon6_15 As icon.Hamburger:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Hamburger
+        OnSelect: =Set(reducir,!reducir) //Esto me va permitir que la hamburguesa reduzca el menu, lo que dice aqui es de que si se da clic va reducirse y cuando se vuelva dar clic se va quitar
+        X: =28
+        Y: =8
+        ZIndex: =44
+
+    Label6_350 As label:
+        Height: =44
+        Text: =User().Email
+        Width: =207
+        X: =152
+        Y: =555
+        ZIndex: =45
+
+    Icon9_12 As icon.AddUser:
+        Height: =39
+        Icon: =Icon.AddUser
+        OnSelect: |
+            =
+            UpdateContext({PopUp:true})
+        Width: =35
+        X: =426
+        Y: =553
+        ZIndex: =47
+
+    Dropdown2_84 As dropdown:
+        Default: =""
+        Height: =47
+        Items: =Lista_Usuarios
+        Visible: |+
+            =If(Drop_CantUsuario_11.Selected.Value >= 1, true,false)
+            
+            
+            
+        Width: =246
+        X: =533
+        Y: =549
+        ZIndex: =48
+
+    Dropdown2_85 As dropdown:
+        Default: ="Marieth,Alexis,Claudia,Raul"
+        Height: =47
+        Items: |
+            =Lista_Usuarios
+        Visible: |+
+            =If(Drop_CantUsuario_11.Selected.Value >= 2, true, false)
+            
+            
+            
+        Width: =246
+        X: =814
+        Y: =549
+        ZIndex: =49
+
+    Dropdown2_87 As dropdown:
+        Default: ="Marieth,Alexis,Claudia,Raul"
+        Height: =47
+        Items: |
+            =Lista_Usuarios
+        Visible: =If(Drop_CantUsuario_11.Selected.Value >= 4, true, false)
+        Width: =246
+        X: =533
+        Y: =610
+        ZIndex: =50
+
+    Dropdown2_88 As dropdown:
+        Default: ="Marieth,Alexis,Claudia,Raul"
+        Height: =47
+        Items: |
+            =Lista_Usuarios
+        Visible: =If(Drop_CantUsuario_11.Selected.Value >= 5, true, false)
+        Width: =246
+        X: =814
+        Y: =610
+        ZIndex: =51
+
+    Dropdown2_86 As dropdown:
+        Default: ="Marieth,Alexis,Claudia,Raul"
+        Height: =47
+        Items: |
+            =Lista_Usuarios
+        Visible: |+
+            =If(Drop_CantUsuario_11.Selected.Value >= 3, true, false)
+            
+            
+            
+        Width: =246
+        X: =1096
+        Y: =549
+        ZIndex: =52
+
+    Timer2_11 As timer:
+        AutoPause: =false
+        AutoStart: =TimerGo
+        OnTimerEnd: =TimerGo 
+        OnTimerStart: =TimerGo
+        Reset: =true
+        Start: =TimerGo
+        X: =1169
+        Y: =259
+        ZIndex: =53
+
+    Button5_11 As button:
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(153, 207, 236, 1)
+        Height: =45
+        OnSelect: |-
+            =UpdateContext({TimerGo: true})
+        Text: ="Iniciar"
+        Visible: =false
+        X: =1155
+        Y: =707
+        ZIndex: =54
+
+    DatePicker1_11 As datepicker:
+        DefaultDate: =Now()
+        DisplayMode: =DisplayMode.Disabled
+        Format: ="dd/mm/yyyy"
+        Height: =26
+        Width: =195
+        X: =203
+        Y: =334
+        ZIndex: =55
+
+    DatePicker2_11 As datepicker:
+        Format: ="dd/mm/yyyy"
+        Height: =26
+        Width: =195
+        X: =203
+        Y: =405
+        ZIndex: =56
+
+    Group6_11 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =64
+
+        Label6_331 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =43
+            Text: |-
+                ="Frecuencia:"
+            Width: =119
+            X: =8
+            Y: =259
+            ZIndex: =12
+
+        Label6_336 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =35
+            Text: |-
+                ="Fecha de Inicio:"
+            Width: =156
+            X: =2
+            Y: =328
+            ZIndex: =13
+
+        Label6_332 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Text: |-
+                ="Fecha Programada:"
+            Width: =192
+            Y: =291
+            ZIndex: =14
+
+        Label6_340 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Bold
+            Height: =38
+            Text: |-
+                ="Semana:"
+            Width: =105
+            Y: =362
+            ZIndex: =15
+
+        Label6_347 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Text: |-
+                ="Fecha Prox. MP:"
+            Width: =146
+            X: =16
+            Y: =432
+            ZIndex: =16
+
+        Label6_343 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =34
+            Text: |-
+                ="Fecha de Cierre:"
+            Width: =149
+            X: =16
+            Y: =397
+            ZIndex: =46
+
+    Group5_11 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =65
+
+        HtmlText3_11 As htmlViewer:
+            Height: =768
+            HtmlText: |-
+                ="<div style=""
+                position: absolute;
+                  text-align: center;
+                  color: #fff;
+                  box-shadow: 0px 0px 25px #222;
+                  backdrop-filter: blur(10px);
+                height:"& App.Height &"px;
+                width:"&App.Width &"px;""></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Visible: =PopUp
+            Width: =1366
+            ZIndex: =57
+
+        Rectangle4_11 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =295
+            Visible: =PopUp
+            Width: =500
+            X: =404
+            Y: =216
+            ZIndex: =58
+
+        Btn_CancelUsuario_11 As button:
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =0
+            Fill: =RGBA(255, 0, 0, 1)
+            Height: =32
+            HoverFill: =ColorFade(RGBA(255, 0, 0, 100), -20%)
+            OnSelect: |
+                =Set(Cancelar ,false);
+                UpdateContext({PopUp:false})
+            Text: ="Cancelar"
+            Visible: =PopUp
+            Width: =150
+            X: =713
+            Y: =434
+            ZIndex: =59
+
+        Btn_ConfirmUsuario_11 As button:
+            BorderStyle: =BorderStyle.None
+            Fill: =RGBA(54, 176, 75, 1)
+            Height: =32
+            HoverFill: =ColorFade(RGBA(54, 176, 75, 100), -20%)
+            OnSelect: |+
+                =
+                UpdateContext({PopUp:false});
+                
+            Text: ="Aceptar"
+            Visible: =PopUp
+            Width: =150
+            X: =460
+            Y: =434
+            ZIndex: =60
+
+        Rectangle5_11 As rectangle:
+            Fill: =RGBA(0, 40, 85, 1)
+            Height: =72
+            Visible: =PopUp
+            Width: =500
+            X: =404
+            Y: =216
+            ZIndex: =61
+
+        Label11_11 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =72
+            Size: =15
+            Text: ="¿Cuantos usuarios deseas agregar?"
+            Visible: =PopUp
+            Width: =500
+            X: =404
+            Y: =216
+            ZIndex: =62
+
+        Drop_CantUsuario_11 As dropdown:
+            BorderColor: =RGBA(0, 40, 85, 1)
+            ChevronBackground: =RGBA(0, 40, 85, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+            DisabledFill: =RGBA(255, 255, 255, 1)
+            Height: =37
+            HoverFill: =RGBA(151, 157, 172, 1)
+            Items: =[0,1,2,3,4,5,6]
+            SelectionFill: =RGBA(92, 103, 125, 1)
+            Visible: =PopUp
+            Width: =71
+            X: =624
+            Y: =353
+            ZIndex: =63
+

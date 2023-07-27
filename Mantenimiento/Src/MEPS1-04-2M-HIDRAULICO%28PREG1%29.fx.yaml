@@ -1,4 +1,4 @@
-"'MP-MEPS-OUT(PREG1)_1' As screen":
+"'MEPS1-04-2M-HIDRAULICO(PREG1)' As screen":
 
     Rectangle1_51 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -6,7 +6,7 @@
         Width: =1366
         ZIndex: =1
 
-    Label9_38 As label:
+    Label9_37 As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =59
@@ -16,7 +16,7 @@
         X: =389
         ZIndex: =2
 
-    Rectangle2_316 As rectangle:
+    Rectangle2_320 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
         Width: =1366
@@ -57,11 +57,11 @@
         ZIndex: =8
 
     Label10_363 As label:
-        Height: =33
-        Text: ="Reapriete y verificación de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)"
+        Height: =65
+        Text: ="Remplazar filtros de succión."
         Width: =1031
         X: =93
-        Y: =103
+        Y: =140
         ZIndex: =11
 
     Respuesta1_26 As dropdown:
@@ -81,15 +81,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =107
+        Y: =160
         ZIndex: =13
 
     Label10_364 As label:
-        Height: =37
-        Text: ="Reapriete y verificación de tornillos de brackets de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)"
+        Height: =52
+        Text: ="Remplazar filtros de retorno."
         Width: =1031
         X: =93
-        Y: =146
+        Y: =202
         ZIndex: =17
 
     Respuesta3_25 As dropdown:
@@ -107,15 +107,17 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =197
+        Y: =262
         ZIndex: =19
 
     Label10_365 As label:
-        Height: =26
-        Text: ="Verificar funcionamiento de sensores de carro"
+        Height: =48
+        Text: |-
+            =" Remplazar filtros de retorno.
+            ."
         Width: =1112
         X: =93
-        Y: =197
+        Y: =251
         ZIndex: =20
 
     Respuesta4_24 As dropdown:
@@ -133,15 +135,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =239
+        Y: =320
         ZIndex: =22
 
     Label10_366 As label:
-        Height: =23
-        Text: ="Limpieza y lubricación de chumaceras de carro de alimentación"
-        Width: =1067
+        Height: =48
+        Text: ="El tanque del aceite debe de estar a ¾ de su capacidad, rellenar si es necesario."
+        Width: =1064
         X: =93
-        Y: =240
+        Y: =309
         ZIndex: =23
 
     Respuesta5_24 As dropdown:
@@ -159,15 +161,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =283
+        Y: =374
         ZIndex: =26
 
     Label10_367 As label:
-        Height: =28
-        Text: ="Reapriete y verificación de tornillos de chumaceras, Flecha transmisión (marcar testigo en caso de no encontrarse)"
+        Height: =48
+        Text: ="Tomar temperatura del motor."
         Width: =1059
-        X: =92
-        Y: =282
+        X: =93
+        Y: =363
         ZIndex: =27
 
     Icon3_27 As icon.NextArrow:
@@ -201,7 +203,7 @@
             
             //ESTE CODIGO LO QUE ME ESTA HACIENDO ES UNA VALIDACION DE QUE SI EL DROPDOWN ESTA EN BLANCO O SI EL INPUT TEXT ESTA VISIBLE Y SI ESTA EN BLANCO, QUE ME DE UNA NOTIFICACION DE ERROR, PERO SI SE CUMPLE LA CONDICION QUE ME ENVIE A LA OTRA PAGINA
             If(
-              IsBlank(Respuesta1_26.Selected) || Hallazgo1_26.Visible = true && IsBlank(Hallazgo1_26.Text) || IsBlank(Respuesta2_26.Selected) || Hallazgo2_26.Visible = true && IsBlank(Hallazgo2_26.Text) || IsBlank(Respuesta3_25.Selected) || Hallazgo3_25.Visible = true && IsBlank(Hallazgo3_25.Text) || IsBlank(Respuesta4_24.Selected) || Hallazgo4_24.Visible = true && IsBlank(Hallazgo4_24.Text) || IsBlank(Respuesta5_24.Selected) || Hallazgo5_24.Visible = true && IsBlank(Hallazgo5_24.Text)  || IsBlank(Respuesta6_21.Selected) || Hallazgo6_22.Visible = true && IsBlank(Hallazgo6_22.Text) || IsBlank(Respuesta7_20.Selected) || Hallazgo7_19.Visible = true && IsBlank(Hallazgo7_19.Text) || IsBlank(Respuesta8_16.Selected) || Hallazgo8_16.Visible = true && IsBlank(Hallazgo8_16.Text) || IsBlank(Respuesta9_15.Selected) || Hallazgo9_15.Visible = true && IsBlank(Hallazgo9_15.Text) || IsBlank(Respuesta10_15.Selected) || Hallazgo10_15.Visible = true && IsBlank(Hallazgo10_15.Text) || IsBlank(Respuesta11_22.Selected) || Hallazgo11_14.Visible = true && IsBlank(Hallazgo11_14.Text) || IsBlank(Respuesta11_21.Selected) || Hallazgo12_13.Visible = true && IsBlank(Hallazgo12_13.Text) ,Notify("Debes de contestar todos los campos.", NotificationType.Error) && Set(BotonColor,RGBA(106, 4, 15, 1)),Navigate('MP-MEPS-OUT(Hallaz)',ScreenTransition.CoverRight) &&  Set(BotonColor, RGBA(0, 18, 107, 1))
+              IsBlank(Respuesta1_26.Selected) || Hallazgo1_26.Visible = true && IsBlank(Hallazgo1_26.Text) || IsBlank(Respuesta2_26.Selected) || Hallazgo2_26.Visible = true && IsBlank(Hallazgo2_26.Text) || IsBlank(Respuesta3_25.Selected) || Hallazgo3_25.Visible = true && IsBlank(Hallazgo3_25.Text) || IsBlank(Respuesta4_24.Selected) || Hallazgo4_24.Visible = true && IsBlank(Hallazgo4_24.Text) || IsBlank(Respuesta5_24.Selected) || Hallazgo5_24.Visible = true && IsBlank(Hallazgo5_24.Text)  || IsBlank(Respuesta6_21.Selected) || Hallazgo6_22.Visible = true && IsBlank(Hallazgo6_22.Text) || IsBlank(Respuesta7_20.Selected) || Hallazgo7_19.Visible = true && IsBlank(Hallazgo7_19.Text) || IsBlank(Respuesta8_16.Selected) || Hallazgo8_16.Visible = true && IsBlank(Hallazgo8_16.Text) || IsBlank(Respuesta9_15.Selected) || Hallazgo9_15.Visible = true && IsBlank(Hallazgo9_15.Text) || IsBlank(Respuesta10_15.Selected) || Hallazgo10_15.Visible = true && IsBlank(Hallazgo10_15.Text) ,Notify("Debes de contestar todos los campos.", NotificationType.Error) && Set(BotonColor,RGBA(106, 4, 15, 1)),Navigate('MEPS1-04-2M-HIDRAULICO((Hallaz)',ScreenTransition.CoverRight) &&  Set(BotonColor, RGBA(0, 18, 107, 1))
             
             );
             
@@ -241,23 +243,23 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =330
+        Y: =428
         ZIndex: =30
 
     Label10_368 As label:
-        Height: =27
-        Text: ="Controlar y limpiar bandejas de cables (armor blocks,power tracks)"
-        Width: =1068
+        Height: =48
+        Text: ="Realizar limpieza general (no debe de haber aceite derramado)."
+        Width: =1064
         X: =93
-        Y: =329
+        Y: =417
         ZIndex: =31
 
     Label10_369 As label:
-        Height: =28
-        Text: ="Revision de condiciones de anclaje en topes para montacargas, re apretar tuercas de sujecion."
+        Height: =48
+        Text: ="Revisar y registrar la presión de los tanques de nitrógeno, en caso de que no estén entre 1600 y 1750 psi proceder a rellenarlo con el equipo apropiado."
         Width: =1064
-        X: =92
-        Y: =375
+        X: =93
+        Y: =466
         ZIndex: =32
 
     Respuesta7_20 As dropdown:
@@ -275,7 +277,7 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =376
+        Y: =483
         ZIndex: =33
 
     Respuesta8_16 As dropdown:
@@ -293,15 +295,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =422
+        Y: =527
         ZIndex: =34
 
     Label10_370 As label:
-        Height: =24
-        Text: ="Limpiar y verificar funcionamiento de sensores de Muting (Sick)"
+        Height: =48
+        Text: ="Al termino del preventivo realizar pruebas en vacío para ver el comportamiento de la UH y anotar presiones."
         Width: =1064
-        X: =92
-        Y: =423
+        X: =93
+        Y: =518
         ZIndex: =35
 
     Respuesta9_15 As dropdown:
@@ -319,15 +321,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =471
+        Y: =575
         ZIndex: =36
 
     Label10_371 As label:
-        Height: =20
-        Text: ="Revisar el reapriete de tornillos en las llantas de los carros (Marcar testigo en caso de no contar)"
-        Width: =1060
-        X: =92
-        Y: =474
+        Height: =48
+        Text: ="Reapretar conexiones hidráulicas si es necesario."
+        Width: =1059
+        X: =93
+        Y: =564
         ZIndex: =37
 
     Respuesta10_15 As dropdown:
@@ -345,47 +347,21 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =522
+        Y: =616
         ZIndex: =38
 
     Label10_372 As label:
-        Height: =22
-        Text: ="Revisión Typer Look"
+        Height: =48
+        Text: ="Tomar numero de parte de mangueras hidráulicas y anotar."
         Width: =1059
-        X: =92
-        Y: =524
+        X: =93
+        Y: =605
         ZIndex: =39
-
-    Respuesta11_22 As dropdown:
-        AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-        Height: =26
-        HoverFill: =RGBA(151, 157, 172, 1)
-        Items: =["R","N"]
-        OnSelect: |-
-            =If(
-                IsBlank(Respuesta11_22.Selected),
-                true
-            )
-        SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
-        Y: =574
-        ZIndex: =40
-
-    Label10_373 As label:
-        Height: =26
-        Text: ="Revisión de Riel y realizar limpieza "
-        Width: =1059
-        X: =92
-        Y: =574
-        ZIndex: =41
 
     Icon1_26 As icon.BackArrow:
         Height: =75
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('MP-MEPS-OUT',ScreenTransition.Fade)
+        OnSelect: =Navigate('MEPS1-04-2M-HIDRAULICO',ScreenTransition.Fade)
         Width: =67
         X: =26
         Y: =693
@@ -402,14 +378,14 @@
     Hallazgo3_25 As text:
         Default: =""
         EnableSpellCheck: =true
-        Height: =31
+        Height: =25
         HintText: ="¿Por qué?"
         OnChange: =
         Visible: |
             =If(Respuesta3_25.Selected.Value = "N", true, false)
-        Width: =194
-        X: =1078
-        Y: =193
+        Width: =209
+        X: =1138
+        Y: =263
         ZIndex: =48
 
     Hallazgo1_26 As text:
@@ -425,8 +401,8 @@
             )
         Visible: =If(Respuesta1_26.Selected.Value = "N", true, false) 
         Width: =209
-        X: =1109
-        Y: =104
+        X: =1138
+        Y: =160
         ZIndex: =50
 
     Hallazgo2_26 As text:
@@ -438,8 +414,8 @@
         Visible: |
             =If(Respuesta2_26.Selected.Value = "N", true, false)
         Width: =209
-        X: =1071
-        Y: =149
+        X: =1138
+        Y: =210
         ZIndex: =51
 
     Hallazgo4_24 As text:
@@ -451,8 +427,8 @@
         Visible: |
             =If(Respuesta4_24.Selected.Value = "N", true, false)
         Width: =209
-        X: =1078
-        Y: =236
+        X: =1138
+        Y: =321
         ZIndex: =52
 
     Hallazgo5_24 As text:
@@ -464,8 +440,8 @@
         Visible: |
             =If(Respuesta5_24.Selected.Value = "N", true, false)
         Width: =209
-        X: =1078
-        Y: =282
+        X: =1138
+        Y: =378
         ZIndex: =53
 
     Hallazgo6_22 As text:
@@ -477,8 +453,8 @@
         Visible: |
             =If(Respuesta6_21.Selected.Value = "N", true, false)
         Width: =209
-        X: =1078
-        Y: =329
+        X: =1138
+        Y: =429
         ZIndex: =54
 
     Hallazgo7_19 As text:
@@ -490,8 +466,8 @@
         Visible: |
             =If(Respuesta7_20.Selected.Value = "N", true, false)
         Width: =209
-        X: =1078
-        Y: =372
+        X: =1138
+        Y: =479
         ZIndex: =55
 
     Hallazgo8_16 As text:
@@ -503,8 +479,8 @@
         Visible: |
             =If(Respuesta8_16.Selected.Value = "N", true, false)
         Width: =209
-        X: =1078
-        Y: =419
+        X: =1138
+        Y: =527
         ZIndex: =56
 
     Hallazgo9_15 As text:
@@ -516,8 +492,8 @@
         Visible: |
             =If(Respuesta9_15.Selected.Value = "N", true, false)
         Width: =209
-        X: =1078
-        Y: =466
+        X: =1138
+        Y: =572
         ZIndex: =57
 
     Hallazgo10_15 As text:
@@ -529,22 +505,9 @@
         Visible: |
             =If(Respuesta10_15.Selected.Value = "N", true, false)
         Width: =209
-        X: =1078
-        Y: =521
+        X: =1138
+        Y: =614
         ZIndex: =58
-
-    Hallazgo11_14 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta11_22.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1078
-        Y: =570
-        ZIndex: =59
 
     Respuesta2_26 As dropdown:
         AllowEmptySelection: =true
@@ -561,129 +524,94 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =151
+        Y: =217
         ZIndex: =61
-
-    Rectangle2_317 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
-        Height: =1
-        Width: =1366
-        Y: =140
-        ZIndex: =62
-
-    Rectangle2_318 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
-        Height: =1
-        Width: =1366
-        Y: =187
-        ZIndex: =63
-
-    Rectangle2_319 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
-        Height: =1
-        Width: =1366
-        Y: =232
-        ZIndex: =64
-
-    Rectangle2_320 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
-        Height: =1
-        Width: =1366
-        Y: =273
-        ZIndex: =65
-
-    Rectangle2_321 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
-        Height: =1
-        Width: =1366
-        Y: =319
-        ZIndex: =66
 
     Rectangle2_322 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
-        Y: =367
-        ZIndex: =67
+        Y: =207
+        ZIndex: =62
 
     Rectangle2_323 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
-        Y: =409
-        ZIndex: =68
+        Y: =250
+        ZIndex: =63
 
     Rectangle2_324 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
-        Y: =457
-        ZIndex: =69
+        Y: =306
+        ZIndex: =64
 
     Rectangle2_325 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
-        Y: =509
-        ZIndex: =70
+        Y: =361
+        ZIndex: =65
 
     Rectangle2_326 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
-        Y: =561
-        ZIndex: =71
+        Y: =414
+        ZIndex: =66
 
     Rectangle2_327 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
-        Y: =610
-        ZIndex: =72
-
-    Respuesta11_21 As dropdown:
-        AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-        Height: =26
-        HoverFill: =RGBA(151, 157, 172, 1)
-        Items: =["R","N"]
-        OnSelect: |-
-            =If(
-                IsBlank(Respuesta11_21.Selected),
-                true
-            )
-        SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
-        Y: =628
-        ZIndex: =73
-
-    Label10_362 As label:
-        Height: =26
-        Text: =" Revisión y/o reparación del Braket"
-        Width: =1059
-        X: =92
-        Y: =628
-        ZIndex: =74
-
-    Hallazgo12_13 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta11_21.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1078
-        Y: =622
-        ZIndex: =75
+        Y: =466
+        ZIndex: =67
 
     Rectangle2_328 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
-        Y: =664
-        ZIndex: =76
+        Y: =519
+        ZIndex: =68
+
+    Rectangle2_329 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =566
+        ZIndex: =69
+
+    Rectangle2_330 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =608
+        ZIndex: =70
+
+    Rectangle2_331 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =649
+        ZIndex: =71
+
+    Rectangle2_321 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =127
+        ZIndex: =73
+
+    Label10_362 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        Size: =20
+        Text: ="SISTEMA ELECTRICO"
+        Width: =299
+        X: =533
+        Y: =99
+        ZIndex: =74
 
