@@ -1,4 +1,4 @@
-"'MP-MEPS-OUT(PREG1)_1' As screen":
+"'MP-MEPS-GP-X2(PREG1)' As screen":
 
     Rectangle1_51 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -58,7 +58,7 @@
 
     Label10_363 As label:
         Height: =33
-        Text: ="Reapriete y verificación de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)"
+        Text: ="Revisar condiciones de power track y ruteo de cables, mangueras dentro del power track"
         Width: =1031
         X: =93
         Y: =103
@@ -86,7 +86,7 @@
 
     Label10_364 As label:
         Height: =37
-        Text: ="Reapriete y verificación de tornillos de brackets de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)"
+        Text: ="Verificar que los cables no cuenten con daño (enconder, sensores, servomotor)"
         Width: =1031
         X: =93
         Y: =146
@@ -112,7 +112,7 @@
 
     Label10_365 As label:
         Height: =26
-        Text: ="Verificar funcionamiento de sensores de carro"
+        Text: =" Revisar el estado de los sensores magnéticos."
         Width: =1112
         X: =93
         Y: =197
@@ -138,7 +138,7 @@
 
     Label10_366 As label:
         Height: =23
-        Text: ="Limpieza y lubricación de chumaceras de carro de alimentación"
+        Text: ="Revisar reapriete en toda la tornillería y marcar testigo en caso de no tener."
         Width: =1067
         X: =93
         Y: =240
@@ -164,7 +164,7 @@
 
     Label10_367 As label:
         Height: =28
-        Text: ="Reapriete y verificación de tornillos de chumaceras, Flecha transmisión (marcar testigo en caso de no encontrarse)"
+        Text: ="Verificar que balero lineal de gripper se encuentre en buenas condiciones."
         Width: =1059
         X: =92
         Y: =282
@@ -201,7 +201,7 @@
             
             //ESTE CODIGO LO QUE ME ESTA HACIENDO ES UNA VALIDACION DE QUE SI EL DROPDOWN ESTA EN BLANCO O SI EL INPUT TEXT ESTA VISIBLE Y SI ESTA EN BLANCO, QUE ME DE UNA NOTIFICACION DE ERROR, PERO SI SE CUMPLE LA CONDICION QUE ME ENVIE A LA OTRA PAGINA
             If(
-              IsBlank(Respuesta1_26.Selected) || Hallazgo1_26.Visible = true && IsBlank(Hallazgo1_26.Text) || IsBlank(Respuesta2_26.Selected) || Hallazgo2_26.Visible = true && IsBlank(Hallazgo2_26.Text) || IsBlank(Respuesta3_25.Selected) || Hallazgo3_25.Visible = true && IsBlank(Hallazgo3_25.Text) || IsBlank(Respuesta4_24.Selected) || Hallazgo4_24.Visible = true && IsBlank(Hallazgo4_24.Text) || IsBlank(Respuesta5_24.Selected) || Hallazgo5_24.Visible = true && IsBlank(Hallazgo5_24.Text)  || IsBlank(Respuesta6_21.Selected) || Hallazgo6_22.Visible = true && IsBlank(Hallazgo6_22.Text) || IsBlank(Respuesta7_20.Selected) || Hallazgo7_19.Visible = true && IsBlank(Hallazgo7_19.Text) || IsBlank(Respuesta8_16.Selected) || Hallazgo8_16.Visible = true && IsBlank(Hallazgo8_16.Text) || IsBlank(Respuesta9_15.Selected) || Hallazgo9_15.Visible = true && IsBlank(Hallazgo9_15.Text) || IsBlank(Respuesta10_15.Selected) || Hallazgo10_15.Visible = true && IsBlank(Hallazgo10_15.Text) || IsBlank(Respuesta11_22.Selected) || Hallazgo11_14.Visible = true && IsBlank(Hallazgo11_14.Text) || IsBlank(Respuesta11_21.Selected) || Hallazgo12_13.Visible = true && IsBlank(Hallazgo12_13.Text) ,Notify("Debes de contestar todos los campos.", NotificationType.Error) && Set(BotonColor,RGBA(106, 4, 15, 1)),Navigate('MP-MEPS-OUT(Hallaz)',ScreenTransition.CoverRight) &&  Set(BotonColor, RGBA(0, 18, 107, 1))
+              IsBlank(Respuesta1_26.Selected) || Hallazgo1_26.Visible = true && IsBlank(Hallazgo1_26.Text) || IsBlank(Respuesta2_26.Selected) || Hallazgo2_26.Visible = true && IsBlank(Hallazgo2_26.Text) || IsBlank(Respuesta3_25.Selected) || Hallazgo3_25.Visible = true && IsBlank(Hallazgo3_25.Text) || IsBlank(Respuesta4_24.Selected) || Hallazgo4_24.Visible = true && IsBlank(Hallazgo4_24.Text) || IsBlank(Respuesta5_24.Selected) || Hallazgo5_24.Visible = true && IsBlank(Hallazgo5_24.Text)  || IsBlank(Respuesta6_21.Selected) || Hallazgo6_22.Visible = true && IsBlank(Hallazgo6_22.Text) || IsBlank(Respuesta7_20.Selected) || Hallazgo7_19.Visible = true && IsBlank(Hallazgo7_19.Text) || IsBlank(Respuesta8_16.Selected) || Hallazgo8_16.Visible = true && IsBlank(Hallazgo8_16.Text) || IsBlank(Respuesta9_15.Selected) || Hallazgo9_15.Visible = true && IsBlank(Hallazgo9_15.Text) || IsBlank(Respuesta10_15.Selected) || Hallazgo10_15.Visible = true && IsBlank(Hallazgo10_15.Text) || IsBlank(Respuesta11_22.Selected) || Hallazgo11_14.Visible = true && IsBlank(Hallazgo11_14.Text) || IsBlank(Respuesta11_21.Selected) || Hallazgo12_13.Visible = true && IsBlank(Hallazgo12_13.Text) ,Notify("Debes de contestar todos los campos.", NotificationType.Error) && Set(BotonColor,RGBA(106, 4, 15, 1)),Navigate('MP-MEPS-GP-X2(PREG2)',ScreenTransition.CoverRight)
             
             );
             
@@ -246,7 +246,7 @@
 
     Label10_368 As label:
         Height: =27
-        Text: ="Controlar y limpiar bandejas de cables (armor blocks,power tracks)"
+        Text: =" Realizar movimiento con la mano para escuchar algún sonido extraño en balero lineal (movimiento vertical)."
         Width: =1068
         X: =93
         Y: =329
@@ -254,7 +254,7 @@
 
     Label10_369 As label:
         Height: =28
-        Text: ="Revision de condiciones de anclaje en topes para montacargas, re apretar tuercas de sujecion."
+        Text: ="Realizar movimiento con la mano para escuchar algún sonido extraño en balero lineal (movimiento horizontal)."
         Width: =1064
         X: =92
         Y: =375
@@ -298,7 +298,7 @@
 
     Label10_370 As label:
         Height: =24
-        Text: ="Limpiar y verificar funcionamiento de sensores de Muting (Sick)"
+        Text: ="Limpiar y verificar estado de guía lineal de movimiento horizontal."
         Width: =1064
         X: =92
         Y: =423
@@ -324,7 +324,7 @@
 
     Label10_371 As label:
         Height: =20
-        Text: ="Revisar el reapriete de tornillos en las llantas de los carros (Marcar testigo en caso de no contar)"
+        Text: ="Limpiar y lubricar balero lineal movimiento horizontal."
         Width: =1060
         X: =92
         Y: =474
@@ -350,7 +350,7 @@
 
     Label10_372 As label:
         Height: =22
-        Text: ="Revisión Typer Look"
+        Text: ="Limpiar y lubricar Cremallera."
         Width: =1059
         X: =92
         Y: =524
@@ -376,7 +376,7 @@
 
     Label10_373 As label:
         Height: =26
-        Text: ="Revisión de Riel y realizar limpieza "
+        Text: ="Limpiar y Verificar el estado de la Cremallera."
         Width: =1059
         X: =92
         Y: =574
@@ -385,7 +385,7 @@
     Icon1_26 As icon.BackArrow:
         Height: =75
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('MP-MEPS-OUT',ScreenTransition.Fade)
+        OnSelect: =Navigate('MP-MEPS-GP-X2',ScreenTransition.Fade)
         Width: =67
         X: =26
         Y: =693
@@ -661,7 +661,7 @@
 
     Label10_362 As label:
         Height: =26
-        Text: =" Revisión y/o reparación del Braket"
+        Text: ="Limpiar y verificar el estado de las guías lineales de movimiento vertical."
         Width: =1059
         X: =92
         Y: =628
