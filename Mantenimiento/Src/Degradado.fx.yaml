@@ -1,0 +1,88 @@
+Degradado As screen:
+    OnVisible: |+
+        =UpdateContext({bgBlue:151,bgBlueReverse:false});
+        
+        UpdateContext({bgGreen:157,bgGreenReverse:false});
+        
+        UpdateContext({bgRed:172,bgRedReverse:false});
+        
+
+    HtmlText2 As htmlViewer:
+        Height: =768
+        HtmlText: |-
+            ="<div style=""
+            background:linear-gradient(-150deg,RGBA("&bgBlue&","&bgGreen&","&bgRed&",0.8),#001233);
+            
+            height:"&App.Height & "px""></div>"
+        Width: =1366
+        ZIndex: =1
+
+    TimerBlue As timer:
+        AutoStart: =true
+        Duration: =50
+        OnTimerEnd: |+
+            =If(
+                bgBlue = 300,
+                UpdateContext({bgBlueReverse:true}),
+                bgBlue = 100,
+                UpdateContext({bgBlueReverse:false})
+            );
+            
+            If(
+                bgBlueReverse,
+                UpdateContext({bgBlue:bgBlue-5}),
+                UpdateContext({bgBlue:bgBlue+5})
+            );
+            
+        Repeat: =true
+        Visible: =false
+        X: =28
+        Y: =32
+        ZIndex: =2
+
+    TimerGreen As timer:
+        AutoStart: =true
+        Duration: =50
+        OnTimerEnd: |+
+            =If(
+                bgGreen = 300,
+                UpdateContext({bgGreenReverse:true}),
+                bgGreen = 100,
+                UpdateContext({bgGreenReverse:false})
+            );
+            
+            If(
+                bgGreenReverse,
+                UpdateContext({bgGreen:bgGreen-5}),
+                UpdateContext({bgGreen:bgGreen+5})
+            );
+            
+        Repeat: =true
+        Visible: =false
+        X: =215
+        Y: =32
+        ZIndex: =3
+
+    TimerRed As timer:
+        AutoStart: =true
+        Duration: =50
+        OnTimerEnd: |+
+            =If(
+                bgRed = 300,
+                UpdateContext({bgRedReverse:true}),
+                bgRed = 100,
+                UpdateContext({bgRedReverse:false})
+            );
+            
+            If(
+                bgRedReverse,
+                UpdateContext({bgRed:bgRed-5}),
+                UpdateContext({bgRed:bgRed+5})
+            );
+            
+        Repeat: =true
+        Visible: =false
+        X: =401
+        Y: =32
+        ZIndex: =4
+

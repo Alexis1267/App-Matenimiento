@@ -1,0 +1,376 @@
+"'Screen1_1(Borrador)' As screen":
+
+    Rectangle1_2 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =92
+        Width: =1366
+        ZIndex: =1
+
+    Rectangle2_5 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =35
+        Width: =1366
+        Y: =146
+        ZIndex: =2
+
+    Rectangle2_6 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =216
+        ZIndex: =3
+
+    Label1_1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =92
+        Size: =20
+        Text: |-
+            ="ORDEN DE TRABAJO 
+            MANTENIMIENTO PREVENTIVO ACTIVO"
+        Width: =527
+        X: =419
+        ZIndex: =4
+
+    Label2_1 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =31
+        Size: =14
+        Text: |-
+            ="Proc. No.: MEPS1-04-2M-INP"
+        Width: =269
+        X: =1096
+        Y: =104
+        ZIndex: =5
+
+    Label3_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        Size: =14
+        Text: ="Activo No."
+        X: =63
+        Y: =146
+        ZIndex: =6
+
+    Label4_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        Size: =14
+        Text: ="Nombre del Activo"
+        Width: =190
+        X: =588
+        Y: =146
+        ZIndex: =7
+
+    Label5_2 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        Size: =14
+        Text: |-
+            ="Localización
+            "
+        X: =1155
+        Y: =146
+        ZIndex: =8
+
+    Label3_3 As label:
+        Align: =Align.Center
+        Height: =35
+        Text: ="MEPS1-04"
+        X: =63
+        Y: =181
+        ZIndex: =9
+
+    Label4_3 As label:
+        Align: =Align.Center
+        Height: =35
+        Text: ="Pivatic Puncher"
+        Width: =190
+        X: =589
+        Y: =181
+        ZIndex: =10
+
+    Label5_3 As label:
+        Align: =Align.Center
+        Height: =35
+        Text: ="PRENSAS"
+        X: =1155
+        Y: =181
+        ZIndex: =11
+
+    Label6_36 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Text: |-
+            ="Asignado a:"
+        Width: =184
+        X: =40
+        Y: =565
+        ZIndex: =19
+
+    Rectangle2_7 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =527
+        ZIndex: =20
+
+    Label6_46 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Text: |-
+            ="Descripción:"
+        Width: =184
+        X: =40
+        Y: =604
+        ZIndex: =30
+
+    Button1_1 As button:
+        BorderThickness: =0
+        Fill: =RGBA(127, 178, 57, 1)
+        OnSelect: =Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Fade)
+        Text: ="Contestar "
+        Width: =242
+        X: =561
+        Y: =712
+        ZIndex: =42
+
+    Rectangle2_8 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =664
+        ZIndex: =43
+
+    Label6_57 As label:
+        Height: =43
+        Text: ="MANTENIMIENTO PREVENTIVO CARROS PALLET"
+        Width: =409
+        X: =224
+        Y: =604
+        ZIndex: =44
+
+    Label6_33 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Text: |-
+            ="Tiempo por EHS:"
+        Width: =184
+        X: =855
+        Y: =275
+        ZIndex: =49
+
+    Label6_34 As label:
+        Align: =Align.Right
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Text: |-
+            ="Tiempo por Dep Medico:"
+        Width: =229
+        X: =813
+        Y: =343
+        ZIndex: =50
+
+    "Gallery4_2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DelayItemLoading: =true
+        Height: =112
+        Items: =ColMenu
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Set(Boton,ThisItem) & Navigate(ThisItem.ventana,ScreenTransition.Fade)
+        TemplateFill: |+
+            =If(ThisItem.Titulo = Boton.Titulo,RGBA(92, 103, 125, 1), RGBA(151, 157, 172, 1)) //Lo que se hace aqui es una condicion, que dice, que si el item seleccionado es verdadero que cambie de color a uno mas oscuro, pero si la condicion no se cumple, que vuelva a su color original
+            
+        TemplatePadding: =0
+        TemplateSize: =49
+        Width: =If(reducir,0,340)
+        X: =28
+        Y: =82
+        ZIndex: =53
+
+        Image10_2 As image:
+            Height: =42
+            Image: =ThisItem.icono
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =48
+            X: =27
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title8_2 As label:
+            Color: =RGBA(0, 8, 20,1)
+            DisabledColor: =RGBA(255,255,255, 1)
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            HoverColor: |
+                =Self.Color
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Titulo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image10_2.Width - 137
+            X: =92
+            Y: =14
+            ZIndex: =2
+
+        Separator8_2 As rectangle:
+            BorderThickness: =1
+            Height: =0
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =53
+            ZIndex: =4
+
+        Rectangle10_2 As rectangle:
+            Height: =Parent.TemplateHeight - Separator8_2.Height
+            OnSelect: =Select(Parent)
+            Visible: =If(ThisItem.IsSelected, true, false)
+            Width: =4
+            ZIndex: =5
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =53
+
+        Label6_35 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Text: |-
+                ="Actividades para desarrollar:"
+            Width: =264
+            X: =778
+            Y: =428
+            ZIndex: =51
+
+        Dropdown3_1 As dropdown:
+            ChevronBackground: =RGBA(0, 40, 85, 1)
+            Height: =26
+            Items: =["SI","NO"]
+            Width: =94
+            X: =1042
+            Y: =434
+            ZIndex: =52
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =53
+
+        Label6_31 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Text: |-
+                ="Fecha de cierre:"
+            Width: =184
+            X: =208
+            Y: =343
+            ZIndex: =45
+
+        Label6_48 As label:
+            Height: =43
+            Text: ="07/08/2023"
+            Width: =257
+            X: =392
+            Y: =341
+            ZIndex: =46
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =53
+
+        Label6_30 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Text: |-
+                ="Fecha de inicio:"
+            Width: =184
+            X: =208
+            Y: =275
+            ZIndex: =13
+
+        Label6_47 As label:
+            Height: =43
+            Text: ="07/08/2023"
+            Width: =257
+            X: =392
+            Y: =271
+            ZIndex: =32
+
+    Group4 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =53
+
+        Label6_32 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Text: |-
+                ="Downtime:"
+            Width: =116
+            X: =274
+            Y: =428
+            ZIndex: =47
+
+        Dropdown3 As dropdown:
+            ChevronBackground: =RGBA(0, 40, 85, 1)
+            Height: =26
+            Items: =["SI","NO"]
+            Width: =94
+            X: =392
+            Y: =434
+            ZIndex: =48
+
+    Icon6_2 As icon.Hamburger:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Hamburger
+        OnSelect: =Set(reducir,!reducir) //Esto me va permitir que la hamburguesa reduzca el menu, lo que dice aqui es de que si se da clic va reducirse y cuando se vuelva dar clic se va quitar
+        X: =28
+        Y: =8
+        ZIndex: =54
+
+    Image2_4 As image:
+        Height: =53
+        Image: =carrier_logo_300
+        Width: =209
+        X: =1157
+        Y: =19
+        ZIndex: =55
+
+    Label15 As label:
+        Text: =Operador
+        X: =224
+        Y: =566
+        ZIndex: =56
+

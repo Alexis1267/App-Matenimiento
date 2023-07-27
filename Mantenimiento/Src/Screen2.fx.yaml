@@ -1,0 +1,72 @@
+"Screen2 As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
+
+    ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
+        Fill: =RGBA(245, 245, 245, 1)
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutGap: =16
+        LayoutMode: =LayoutMode.Auto
+        LayoutWrap: =true
+        PaddingBottom: =16
+        PaddingLeft: =16
+        PaddingRight: =16
+        PaddingTop: =16
+        Width: =Parent.Width
+        ZIndex: =1
+
+        LeftSideContainer1 As groupContainer.verticalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =20
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutWrap: =true
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =2
+
+            Button2 As button:
+                OnSelect: =Navigate('MP-MEPS-INP',ScreenTransition.Fade)
+                Text: ="MP-MEPS-INP"
+                Width: =200
+                ZIndex: =1
+
+            Button4 As button:
+                AlignInContainer: =AlignInContainer.Start
+                OnSelect: =Navigate('MP-MEPS-DK-IN',ScreenTransition.Fade)
+                Text: ="MP-MEPS-DK-IN"
+                Width: =200
+                ZIndex: =2
+
+            Button8 As button:
+                OnSelect: =Navigate('MP-MEPS-DK-OUT',ScreenTransition.Fade)
+                Text: ="MP-MEPS-DK-OUT"
+                Width: =200
+                ZIndex: =3
+
+            Button9 As button:
+                OnSelect: =Navigate('MP-MEPS-OUT',ScreenTransition.Fade)
+                Text: ="MP-MEPS-OUT"
+                Width: =200
+                ZIndex: =4
+
+            Button10 As button:
+                Text: ="Button"
+                Width: =200
+                ZIndex: =5
+
+        RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            ZIndex: =3
+

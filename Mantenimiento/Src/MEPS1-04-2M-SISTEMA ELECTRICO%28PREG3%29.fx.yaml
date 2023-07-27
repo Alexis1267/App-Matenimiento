@@ -1,0 +1,525 @@
+"'MEPS1-04-2M-SISTEMA ELECTRICO(PREG3)' As screen":
+
+    Rectangle1_45 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =59
+        Width: =1366
+        ZIndex: =1
+
+    Label9_34 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =59
+        Size: =20
+        Text: ="Descripción de las Actividades a Realizar"
+        Width: =588
+        X: =389
+        ZIndex: =2
+
+    Rectangle2_290 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =91
+        ZIndex: =3
+
+    Label10_337 As label:
+        Height: =32
+        Text: ="Realizado"
+        Width: =119
+        X: =36
+        Y: =59
+        ZIndex: =4
+
+    Label10_339 As label:
+        Height: =32
+        Text: ="No realizado"
+        Width: =125
+        X: =177
+        Y: =59
+        ZIndex: =5
+
+    Label10_336 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        Text: ="[R] "
+        Width: =36
+        Y: =59
+        ZIndex: =7
+
+    Label10_338 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        Text: ="[N] "
+        Width: =50
+        X: =142
+        Y: =59
+        ZIndex: =8
+
+    Label10_341 As label:
+        Height: =65
+        Text: ="Revisar funcionamiento de SICK de seguridad, al interrumpir el equipo debe marcar alarma."
+        Width: =1031
+        X: =93
+        Y: =140
+        ZIndex: =11
+
+    Respuesta1_24 As dropdown:
+        AllowEmptySelection: =true
+        BorderColor: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        DisabledFill: =RGBA(255, 255, 255, 1)
+        Height: =25
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |
+            =If(
+                IsBlank(Respuesta1_24.Selected),
+                true
+            )
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Width: =75
+        X: =5
+        Y: =160
+        ZIndex: =13
+
+    Label10_342 As label:
+        Height: =52
+        Text: =" Revisión de condiciones de guardas de seguridad, que estén en su lugar, que no estén dañadas y reparar si es necesari."
+        Width: =1031
+        X: =93
+        Y: =202
+        ZIndex: =17
+
+    Respuesta3_23 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Respuesta3_23.Selected),
+                true
+            )
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Width: =75
+        X: =5
+        Y: =262
+        ZIndex: =19
+
+    Label10_343 As label:
+        Height: =48
+        Text: ="Revisar interlock de puertas que se encuentren en buen estado, estén cerradas y aseguradas al abrir debe marcar alarma de puertas."
+        Width: =1112
+        X: =93
+        Y: =251
+        ZIndex: =20
+
+    Respuesta4_22 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Respuesta4_22.Selected),
+                true
+            )
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Width: =75
+        X: =5
+        Y: =320
+        ZIndex: =22
+
+    Label10_344 As label:
+        Height: =48
+        Text: =" Checar todos los paros de emergencia, que operen correctamente durante el ciclo del equipo."
+        Width: =1064
+        X: =93
+        Y: =309
+        ZIndex: =23
+
+    Respuesta5_22 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Respuesta5_22.Selected),
+                true
+            )
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Width: =75
+        X: =5
+        Y: =374
+        ZIndex: =26
+
+    Label10_345 As label:
+        Height: =48
+        Text: ="Revisar correcta operación y estado físico de las cortinas de luz."
+        Width: =1059
+        X: =93
+        Y: =363
+        ZIndex: =27
+
+    Icon3_25 As icon.NextArrow:
+        AutoDisableOnSelect: |
+            =//If(
+             // IsBlank(Respuesta1.Selected) || IsBlank(Respuesta2.Selected) || IsBlank(Respuesta3.Selected) || IsBlank(Respuesta4.Selected) || IsBlank(Respuesta5.Selected) || IsBlank(Respuesta6.Selected) || IsBlank(Respuesta7.Selected) || IsBlank(Respuesta8.Selected) || IsBlank(Respuesta9.Selected) || IsBlank(Respuesta10.Selected) || IsBlank(Respuesta11.Selected) || IsBlank(Respuesta12.Selected),true, false
+            //)
+        Color: |-
+            =
+            RGBA(0, 18, 107, 1)
+        DisabledColor: |
+            =BotonColor
+        Fill: =RGBA(255,255,255,1)
+        Height: =75
+        Icon: =Icon.NextArrow
+        OnSelect: |+
+            =//If(
+            //Respuesta1.Selected.Value = "R" && Respuesta2.Selected.Value = "R" && Respuesta3.Selected.Value = "R" &&Respuesta4.Selected.Value = "R" && Respuesta5.Selected.Value = "R" && Respuesta6.Selected.Value = "R" && Respuesta7.Selected.Value = "R" && Respuesta8.Selected.Value = "R" && Respuesta9.Selected.Value = "R" && Respuesta10.Selected.Value = "R" && Respuesta11.Selected.Value = "R" && Respuesta12.Selected.Value = "R"    , 
+              //Navigate(Screen4, ScreenTransition.CoverRight),
+            
+            
+              //If(
+              //IsBlank(Hallazgo1.Text) && IsBlank(Hallazgo2.Text) && IsBlank(Hallazgo3.Text) && IsBlank(Hallazgo4.Text) && IsBlank(Hallazgo5.Text) && IsBlank(Hallazgo6.Text) || IsBlank(Hallazgo7.Text) || IsBlank(Hallazgo8.Text) || IsBlank(Hallazgo9.Text) || IsBlank(Hallazgo10.Text) || IsBlank(Hallazgo11.Text) || IsBlank(Hallazgo12.Text), 
+              //Notify("Debes de llenar el campo vacio.", NotificationType.Error),
+              //Navigate(Screen4,ScreenTransition.CoverRight)
+            //);
+             // IsBlank(Respuesta1.Selected) && IsBlank(Respuesta2.Selected) && IsBlank(Respuesta3.Selected) && IsBlank(Respuesta4.Selected) && IsBlank(Respuesta5.Selected) && IsBlank(Respuesta6.Selected) && IsBlank(Respuesta7.Selected) && IsBlank(Respuesta8.Selected) && IsBlank(Respuesta9.Selected) && IsBlank(Respuesta10.Selected) && IsBlank(Respuesta11.Selected) && IsBlank(Respuesta12.Selected), 
+             // Notify("Debes de realizar todas las actividades.", NotificationType.Error)
+            //);
+            
+            
+            //ESTE CODIGO LO QUE ME ESTA HACIENDO ES UNA VALIDACION DE QUE SI EL DROPDOWN ESTA EN BLANCO O SI EL INPUT TEXT ESTA VISIBLE Y SI ESTA EN BLANCO, QUE ME DE UNA NOTIFICACION DE ERROR, PERO SI SE CUMPLE LA CONDICION QUE ME ENVIE A LA OTRA PAGINA
+            If(
+              IsBlank(Respuesta1_24.Selected) || Hallazgo1_24.Visible = true && IsBlank(Hallazgo1_24.Text) || IsBlank(Respuesta2_24.Selected) || Hallazgo2_24.Visible = true && IsBlank(Hallazgo2_24.Text) || IsBlank(Respuesta3_23.Selected) || Hallazgo3_23.Visible = true && IsBlank(Hallazgo3_23.Text) || IsBlank(Respuesta4_22.Selected) || Hallazgo4_22.Visible = true && IsBlank(Hallazgo4_22.Text) || IsBlank(Respuesta5_22.Selected) || Hallazgo5_22.Visible = true && IsBlank(Hallazgo5_22.Text)  || IsBlank(Respuesta6_20.Selected) || Hallazgo6_21.Visible = true && IsBlank(Hallazgo6_21.Text) || IsBlank(Respuesta7_19.Selected) || Hallazgo7_18.Visible = true && IsBlank(Hallazgo7_18.Text) || IsBlank(Respuesta8_15.Selected) || Hallazgo8_15.Visible = true && IsBlank(Hallazgo8_15.Text)  ,Notify("Debes de contestar todos los campos.", NotificationType.Error) && Set(BotonColor,RGBA(106, 4, 15, 1)),Navigate('MEPS1-04-2M-SISTEMA ELECTRICO(Hallaz)',ScreenTransition.CoverRight) &&  Set(BotonColor, RGBA(0, 18, 107, 1))
+            
+            );
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        Width: =67
+        X: =1280
+        Y: =693
+        ZIndex: =29
+
+    Respuesta6_20 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Respuesta6_20.Selected),
+                true
+            )
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Width: =75
+        X: =5
+        Y: =428
+        ZIndex: =30
+
+    Label10_346 As label:
+        Height: =48
+        Text: ="Asegurar las condiciones de la guarda perimetral se encuentre en buen estado. "
+        Width: =1064
+        X: =93
+        Y: =417
+        ZIndex: =31
+
+    Label10_347 As label:
+        Height: =48
+        Text: =" Revisar funcionamiento de los 4 sick estén en buen estado, realizar limpieza solamente con trapo."
+        Width: =1064
+        X: =93
+        Y: =466
+        ZIndex: =32
+
+    Respuesta7_19 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Respuesta7_19.Selected),
+                true
+            )
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Width: =75
+        X: =5
+        Y: =483
+        ZIndex: =33
+
+    Respuesta8_15 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Respuesta8_15.Selected),
+                true
+            )
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Width: =75
+        X: =5
+        Y: =527
+        ZIndex: =34
+
+    Label10_348 As label:
+        Height: =48
+        Text: |-
+            =" Revisar, Reapriete Realizar Marcaje de toda la tornillería, realizar cambio de tornillería dañada, colocar marca con plumón 
+            permanente, asegurar que toda la tornillería se encuentre con testigo."
+        Width: =1064
+        X: =93
+        Y: =518
+        ZIndex: =35
+
+    Icon1_24 As icon.BackArrow:
+        Height: =75
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('MEPS1-04-2M-SISTEMA ELECTRICO(PREG2)',ScreenTransition.Fade)
+        Width: =67
+        X: =26
+        Y: =693
+        ZIndex: =44
+
+    Image2_44 As image:
+        Height: =41
+        Image: =carrier_logo_300
+        Width: =209
+        X: =1157
+        Y: =9
+        ZIndex: =45
+
+    Hallazgo3_23 As text:
+        Default: =""
+        EnableSpellCheck: =true
+        Height: =25
+        HintText: ="¿Por qué?"
+        OnChange: =
+        Visible: |
+            =If(Respuesta3_23.Selected.Value = "N", true, false)
+        Width: =209
+        X: =1138
+        Y: =263
+        ZIndex: =48
+
+    Hallazgo1_24 As text:
+        Default: =""
+        EnableSpellCheck: =true
+        Height: =31
+        HintText: ="¿Por qué?"
+        OnChange: =
+        OnSelect: |-
+            =If(
+              IsBlank(Hallazgo1_24.Text),
+              true
+            )
+        Visible: =If(Respuesta1_24.Selected.Value = "N", true, false) 
+        Width: =209
+        X: =1138
+        Y: =160
+        ZIndex: =50
+
+    Hallazgo2_24 As text:
+        Default: =""
+        EnableSpellCheck: =true
+        Height: =31
+        HintText: ="¿Por qué?"
+        OnChange: =
+        Visible: |
+            =If(Respuesta2_24.Selected.Value = "N", true, false)
+        Width: =209
+        X: =1138
+        Y: =210
+        ZIndex: =51
+
+    Hallazgo4_22 As text:
+        Default: =""
+        EnableSpellCheck: =true
+        Height: =31
+        HintText: ="¿Por qué?"
+        OnChange: =
+        Visible: |
+            =If(Respuesta4_22.Selected.Value = "N", true, false)
+        Width: =209
+        X: =1138
+        Y: =321
+        ZIndex: =52
+
+    Hallazgo5_22 As text:
+        Default: =""
+        EnableSpellCheck: =true
+        Height: =31
+        HintText: ="¿Por qué?"
+        OnChange: =
+        Visible: |
+            =If(Respuesta5_22.Selected.Value = "N", true, false)
+        Width: =209
+        X: =1138
+        Y: =378
+        ZIndex: =53
+
+    Hallazgo6_21 As text:
+        Default: =""
+        EnableSpellCheck: =true
+        Height: =31
+        HintText: ="¿Por qué?"
+        OnChange: =
+        Visible: |
+            =If(Respuesta6_20.Selected.Value = "N", true, false)
+        Width: =209
+        X: =1138
+        Y: =429
+        ZIndex: =54
+
+    Hallazgo7_18 As text:
+        Default: =""
+        EnableSpellCheck: =true
+        Height: =31
+        HintText: ="¿Por qué?"
+        OnChange: =
+        Visible: |
+            =If(Respuesta7_19.Selected.Value = "N", true, false)
+        Width: =209
+        X: =1138
+        Y: =479
+        ZIndex: =55
+
+    Hallazgo8_15 As text:
+        Default: =""
+        EnableSpellCheck: =true
+        Height: =31
+        HintText: ="¿Por qué?"
+        OnChange: =
+        Visible: |
+            =If(Respuesta8_15.Selected.Value = "N", true, false)
+        Width: =209
+        X: =1138
+        Y: =527
+        ZIndex: =56
+
+    Respuesta2_24 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Respuesta1_24.Selected),
+                true
+            )
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Width: =75
+        X: =5
+        Y: =217
+        ZIndex: =61
+
+    Rectangle2_292 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =207
+        ZIndex: =62
+
+    Rectangle2_293 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =250
+        ZIndex: =63
+
+    Rectangle2_294 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =306
+        ZIndex: =64
+
+    Rectangle2_295 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =361
+        ZIndex: =65
+
+    Rectangle2_296 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =414
+        ZIndex: =66
+
+    Rectangle2_297 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =466
+        ZIndex: =67
+
+    Rectangle2_298 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =519
+        ZIndex: =68
+
+    Rectangle2_291 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =127
+        ZIndex: =73
+
+    Label10_340 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        Size: =20
+        Text: ="SEGURIDAD"
+        Width: =299
+        X: =533
+        Y: =99
+        ZIndex: =74
+
+    Rectangle2_299 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =576
+        ZIndex: =75
+

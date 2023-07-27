@@ -1,0 +1,31 @@
+{
+  "655ab65a-a2ff-451c-8e48-7655068acc7e": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://carcgl-my.sharepoint.com/personal/alexis_silva_carrier_com": {
+        "dataSources": {
+          "Inicio_Sesion": {
+            "tableName": "66a01cd0-4088-4fb2-8906-255f11a4d758"
+          },
+          "Lista_Usuarios": {
+            "tableName": "54bfec88-dab9-4b9c-9db3-19dc05572b29"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Inicio_Sesion",
+      "Lista_Usuarios"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "655ab65a-a2ff-451c-8e48-7655068acc7e"
+  }
+}

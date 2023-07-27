@@ -1,0 +1,53 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =ClearCollect(ColImg,Table(
+        {
+            Imagen:"Home",
+            icono:carrier_logo_minsize,
+            ventana: 'Screen1_1(Borrador)' 
+            },
+        {
+            Titulo:"Nuevo MP", 
+            icono:carrier_logo_minsize,
+            ventana: Screen1
+            }));
+        
+            ClearCollect(ColMenu, Table(
+        {
+            Titulo:"Home",
+            icono:carrier_logo_minsize,
+            ventana: 'Screen1_1(Borrador)' 
+            },
+        {
+            Titulo:"Nuevo MP", 
+            icono:carrier_logo_minsize,
+            ventana: Screen1
+            }));
+        
+        
+        ClearCollect(Fotos,[])
+        
+        
+        
+        
+        
+        
+            
+        
+        
+        
+        
+           
+        
+        
+           
+    StartScreen: =
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
