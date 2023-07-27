@@ -1,4 +1,4 @@
-"'MEPS-RT-LB(Hallaz)' As screen":
+"'MP-MEPS-RT-LB(Hallaz)' As screen":
 
     Label12_11 As label:
         FontWeight: =FontWeight.Bold
@@ -94,7 +94,7 @@
     Icon7_9 As icon.BackArrow:
         Height: =75
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('MEPS1-04-2M-CONZOLAS-Z(PREG3)',ScreenTransition.UnCoverRight)
+        OnSelect: =Navigate('MP-MEPS-RT-LB(PREG1)',ScreenTransition.UnCoverRight)
         Width: =67
         X: =40
         Y: =684

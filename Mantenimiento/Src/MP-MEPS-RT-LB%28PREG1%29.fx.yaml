@@ -201,7 +201,7 @@
             
             //ESTE CODIGO LO QUE ME ESTA HACIENDO ES UNA VALIDACION DE QUE SI EL DROPDOWN ESTA EN BLANCO O SI EL INPUT TEXT ESTA VISIBLE Y SI ESTA EN BLANCO, QUE ME DE UNA NOTIFICACION DE ERROR, PERO SI SE CUMPLE LA CONDICION QUE ME ENVIE A LA OTRA PAGINA
             If(
-              IsBlank(Respuesta1_25.Selected) || Hallazgo1_25.Visible = true && IsBlank(Hallazgo1_25.Text) || IsBlank(Respuesta2_25.Selected) || Hallazgo2_25.Visible = true && IsBlank(Hallazgo2_25.Text) || IsBlank(Respuesta3_24.Selected) || Hallazgo3_24.Visible = true && IsBlank(Hallazgo3_24.Text) || IsBlank(Respuesta4_23.Selected) || Hallazgo4_23.Visible = true && IsBlank(Hallazgo4_23.Text) || IsBlank(Respuesta5_23.Selected) || Hallazgo5_23.Visible = true && IsBlank(Hallazgo5_23.Text) ,Notify("Debes de contestar todos los campos.", NotificationType.Error) && Set(BotonColor,RGBA(106, 4, 15, 1)),Navigate(,ScreenTransition.CoverRight) &&  Set(BotonColor, RGBA(0, 18, 107, 1))
+              IsBlank(Respuesta1_25.Selected) || Hallazgo1_25.Visible = true && IsBlank(Hallazgo1_25.Text) || IsBlank(Respuesta2_25.Selected) || Hallazgo2_25.Visible = true && IsBlank(Hallazgo2_25.Text) || IsBlank(Respuesta3_24.Selected) || Hallazgo3_24.Visible = true && IsBlank(Hallazgo3_24.Text) || IsBlank(Respuesta4_23.Selected) || Hallazgo4_23.Visible = true && IsBlank(Hallazgo4_23.Text) || IsBlank(Respuesta5_23.Selected) || Hallazgo5_23.Visible = true && IsBlank(Hallazgo5_23.Text) ,Notify("Debes de contestar todos los campos.", NotificationType.Error) && Set(BotonColor,RGBA(106, 4, 15, 1)),Navigate('MP-MEPS-RT-LB(Hallaz)',ScreenTransition.CoverRight)
             
             );
             
