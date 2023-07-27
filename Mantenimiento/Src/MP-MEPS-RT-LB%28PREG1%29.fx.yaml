@@ -58,7 +58,7 @@
 
     Label10_354 As label:
         Height: =33
-        Text: ="Reapriete y verificación de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)"
+        Text: ="Realizar lubricación en balero, chumaceras de carros de entrada y salida"
         Width: =1031
         X: =93
         Y: =103
@@ -86,7 +86,7 @@
 
     Label10_355 As label:
         Height: =37
-        Text: ="Reapriete y verificación de tornillos de brackets de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)"
+        Text: =" Realizar realizar lubricación en cremallera horizontal y vertical, baleros lineales, guías de destacker entrada y salida."
         Width: =1031
         X: =93
         Y: =146
@@ -107,12 +107,12 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =197
+        Y: =208
         ZIndex: =19
 
     Label10_356 As label:
-        Height: =26
-        Text: ="Verificar funcionamiento de sensores de carro"
+        Height: =48
+        Text: ="Realizar lubricación de baleros lineales, chumaceras, sin fin, guías realizar limpieza ocasionado por fugas de aceite consolas z1,z2,z3,z4,y1,y2,y3,y4"
         Width: =1112
         X: =93
         Y: =197
@@ -133,15 +133,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =239
+        Y: =264
         ZIndex: =22
 
     Label10_357 As label:
         Height: =23
-        Text: ="Limpieza y lubricación de chumaceras de carro de alimentación"
+        Text: ="Lubricar chumaceras, cadena, baleros lineales en banda transportadora blanca y tambor."
         Width: =1067
         X: =93
-        Y: =240
+        Y: =265
         ZIndex: =23
 
     Respuesta5_23 As dropdown:
@@ -159,15 +159,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =283
+        Y: =308
         ZIndex: =26
 
     Label10_358 As label:
         Height: =28
-        Text: ="Reapriete y verificación de tornillos de chumaceras, Flecha transmisión (marcar testigo en caso de no encontrarse)"
+        Text: =" Lubricar cremallera gripper x1 y x2 revisar que cuente con los cartuchos de grasa de no ser el caso programar cambio"
         Width: =1059
         X: =92
-        Y: =282
+        Y: =307
         ZIndex: =27
 
     Icon3_26 As icon.NextArrow:
@@ -201,7 +201,7 @@
             
             //ESTE CODIGO LO QUE ME ESTA HACIENDO ES UNA VALIDACION DE QUE SI EL DROPDOWN ESTA EN BLANCO O SI EL INPUT TEXT ESTA VISIBLE Y SI ESTA EN BLANCO, QUE ME DE UNA NOTIFICACION DE ERROR, PERO SI SE CUMPLE LA CONDICION QUE ME ENVIE A LA OTRA PAGINA
             If(
-              IsBlank(Respuesta1_25.Selected) || Hallazgo1_25.Visible = true && IsBlank(Hallazgo1_25.Text) || IsBlank(Respuesta2_25.Selected) || Hallazgo2_25.Visible = true && IsBlank(Hallazgo2_25.Text) || IsBlank(Respuesta3_24.Selected) || Hallazgo3_24.Visible = true && IsBlank(Hallazgo3_24.Text) || IsBlank(Respuesta4_23.Selected) || Hallazgo4_23.Visible = true && IsBlank(Hallazgo4_23.Text) || IsBlank(Respuesta5_23.Selected) || Hallazgo5_23.Visible = true && IsBlank(Hallazgo5_23.Text) ,Notify("Debes de contestar todos los campos.", NotificationType.Error) && Set(BotonColor,RGBA(106, 4, 15, 1)),Navigate('MP-MEPS-OUT(Hallaz)',ScreenTransition.CoverRight) &&  Set(BotonColor, RGBA(0, 18, 107, 1))
+              IsBlank(Respuesta1_25.Selected) || Hallazgo1_25.Visible = true && IsBlank(Hallazgo1_25.Text) || IsBlank(Respuesta2_25.Selected) || Hallazgo2_25.Visible = true && IsBlank(Hallazgo2_25.Text) || IsBlank(Respuesta3_24.Selected) || Hallazgo3_24.Visible = true && IsBlank(Hallazgo3_24.Text) || IsBlank(Respuesta4_23.Selected) || Hallazgo4_23.Visible = true && IsBlank(Hallazgo4_23.Text) || IsBlank(Respuesta5_23.Selected) || Hallazgo5_23.Visible = true && IsBlank(Hallazgo5_23.Text) ,Notify("Debes de contestar todos los campos.", NotificationType.Error) && Set(BotonColor,RGBA(106, 4, 15, 1)),Navigate(,ScreenTransition.CoverRight) &&  Set(BotonColor, RGBA(0, 18, 107, 1))
             
             );
             
@@ -229,7 +229,7 @@
     Icon1_25 As icon.BackArrow:
         Height: =75
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('MP-MEPS-OUT',ScreenTransition.Fade)
+        OnSelect: =Navigate('MP-MEPS-RT-LB',ScreenTransition.Fade)
         Width: =67
         X: =26
         Y: =693
@@ -252,8 +252,8 @@
         Visible: |
             =If(Respuesta3_24.Selected.Value = "N", true, false)
         Width: =194
-        X: =1078
-        Y: =193
+        X: =1116
+        Y: =201
         ZIndex: =48
 
     Hallazgo1_25 As text:
@@ -296,7 +296,7 @@
             =If(Respuesta4_23.Selected.Value = "N", true, false)
         Width: =209
         X: =1078
-        Y: =236
+        Y: =261
         ZIndex: =52
 
     Hallazgo5_23 As text:
@@ -309,7 +309,7 @@
             =If(Respuesta5_23.Selected.Value = "N", true, false)
         Width: =209
         X: =1078
-        Y: =282
+        Y: =307
         ZIndex: =53
 
     Respuesta2_25 As dropdown:
@@ -348,13 +348,20 @@
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
-        Y: =232
+        Y: =248
         ZIndex: =64
 
     Rectangle2_309 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
-        Y: =273
+        Y: =298
         ZIndex: =65
+
+    Rectangle2_310 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =349
+        ZIndex: =66
 

@@ -1,4 +1,4 @@
-"'MP-MEPS1-RT-LB' As screen":
+"'MP-MEPS-RT-LB' As screen":
     OnVisible: =
 
     Rectangle1_47 As rectangle:
@@ -285,7 +285,7 @@
         BorderThickness: =0
         DisabledBorderColor: =RGBA(41, 191, 18, 1)
         Fill: =RGBA(152, 208, 70, 1)
-        OnSelect: =Navigate('MEPS1-04-2M-SISTEMA ELECTRICO(PREG1)',ScreenTransition.Cover)
+        OnSelect: =Navigate('MP-MEPS-RT-LB(PREG1)',ScreenTransition.Cover)
         Text: ="Contestar "
         Width: =242
         X: =561

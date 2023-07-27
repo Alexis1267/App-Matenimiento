@@ -14765,7 +14765,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "MP-MEPS1-RT-LB": {
+    "MP-MEPS-RT-LB": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -14786,23 +14786,13 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "MP-MEPS1-RT-LB",
+      "Name": "MP-MEPS-RT-LB",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Design",
-          "PropertyName": "LoadingSpinnerColor",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ImagePosition",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
+          "PropertyName": "LoadingSpinner",
           "RuleProviderType": "Unknown"
         },
         {
@@ -14812,17 +14802,27 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "LoadingSpinner",
+          "PropertyName": "Height",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "Size",
+          "PropertyName": "ImagePosition",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinnerColor",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
           "PropertyName": "Fill",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Size",
           "RuleProviderType": "Unknown"
         },
         {
@@ -16208,12 +16208,12 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "Start",
+          "PropertyName": "AutoStart",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
-          "PropertyName": "AutoStart",
+          "PropertyName": "Start",
           "RuleProviderType": "Unknown"
         },
         {
@@ -16353,12 +16353,12 @@
         },
         {
           "Category": "Behavior",
-          "PropertyName": "OnTimerEnd",
+          "PropertyName": "OnTimerStart",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Behavior",
-          "PropertyName": "OnTimerStart",
+          "PropertyName": "OnTimerEnd",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -16618,5 +16618,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "MP-MEPS1-RT-LB"
+  "TopParentName": "MP-MEPS-RT-LB"
 }
