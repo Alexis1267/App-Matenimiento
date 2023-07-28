@@ -1,6 +1,26 @@
 "'MEPS1-04-2M-HIDRAULICO' As screen":
     OnVisible: =
 
+    Rectangle1_51 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =92
+        Width: =1366
+        ZIndex: =1
+
+    Rectangle2_316 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =35
+        Width: =1366
+        Y: =146
+        ZIndex: =2
+
+    Rectangle2_317 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =216
+        ZIndex: =3
+
     Label1_13 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -16,13 +36,12 @@
 
     Label2_13 As label:
         FontWeight: =FontWeight.Bold
-        Height: =26
         Size: =14
         Text: |-
             ="Proc. No.: MEPS1-04-2M-HIDRAULICO"
         Width: =461
-        X: =904
-        Y: =105
+        X: =905
+        Y: =106
         ZIndex: =5
 
     Label3_26 As label:
@@ -95,6 +114,13 @@
         X: =21
         Y: =557
         ZIndex: =17
+
+    Rectangle2_318 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =528
+        ZIndex: =18
 
     Label6_329 As label:
         Align: =Align.Right
@@ -175,7 +201,7 @@
 
     Label6_328 As label:
         Height: =42
-        Text: ="Cada 2 Mes (es) | Segundo Domingo"
+        Text: ="Cada 2 Mes (es) | Tercer Domingo"
         Width: =311
         X: =200
         Y: =257
@@ -216,7 +242,7 @@
 
     Label6_334 As label:
         Height: =43
-        Text: ="HIDRAULICO"
+        Text: ="PREVENTIVO"
         Width: =160
         X: =762
         Y: =293
@@ -265,6 +291,13 @@
         Y: =712
         ZIndex: =39
 
+    Rectangle2_319 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        Y: =664
+        ZIndex: =40
+
     Label6_352 As label:
         Height: =38
         Text: ="MANTENIMIENTO PREVENTIVO DESTACKER"
@@ -272,6 +305,14 @@
         X: =149
         Y: =603
         ZIndex: =41
+
+    Image2_50 As image:
+        Height: =53
+        Image: =carrier_logo_300
+        Width: =209
+        X: =1155
+        Y: =19
+        ZIndex: =42
 
     "Gallery4_14 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -470,6 +511,13 @@
         X: =203
         Y: =405
         ZIndex: =56
+
+    Rectangle2_320 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =539
+        ZIndex: =64
 
     Group6_11 As group:
         Height: =5
