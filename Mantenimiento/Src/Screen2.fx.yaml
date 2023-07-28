@@ -85,6 +85,19 @@
                 HoverFillColor: =RGBA(47, 81, 151, 1)
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
+                OnScan: |-
+                    =Collect(
+                        colScannedItems,
+                        {ScannedItem: First(BarcodeReader1.Barcodes).Value, ScannedTime: Now()}
+                    );
+                    
+                    Switch(
+                        First(BarcodeReader1.Barcodes).Value,
+                        "https://make.powerapps.com/e/Default-36839a65-7f3f-4bac-9ea4-f571f10a9a03/canvas/?action=edit&app-id=%2Fproviders%2FMicrosoft.PowerApps%2Fapps%2F2e516993-46ed-4ef1-9678-83466401527f", Navigate('MP-MEPS-DK-IN'),
+                        // Otras opciones aquí
+                        // Si el código QR no coincide con ninguna URL esperada, muestra un mensaje o realiza una acción por defecto
+                        Notify("Código QR inválido.", NotificationType.Error)
+                    )
                 PressedBorderColor: =RGBA(56, 96, 178, 1)
                 PressedContentColor: =RGBA(56, 96, 178, 1)
                 PressedFillColor: =RGBA(255, 255, 255, 1)
