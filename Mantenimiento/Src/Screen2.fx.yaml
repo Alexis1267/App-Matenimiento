@@ -1,14 +1,74 @@
 "Screen2 As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
+    OnVisible: |-
+        =UpdateContext({Line:-20})
+
+    HtmlText1_3 As htmlViewer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =676
+        HtmlText: |+
+            ="<div style = ""
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            margin-left: -500px;
+            margin-top: 230px;
+            transform-origin: 50% 48%;
+            border-radius: 43%;
+            height:"& 1000 &"px;
+            width:"&1000 &"px;
+            background-color:RGBA(173, 181, 189, 0);
+            transform: rotate("&Line&"deg);
+            ""></div>
+            
+            
+            <div style = ""
+            position: absolute;
+            top: 40%;
+            left: 10%;
+            margin-left: -500px;
+            margin-top: 230px;
+            transform-origin: 50% 48%;
+            border-radius: 43%;
+            height:"& 1000 &"px;
+            width:"&1000 &"px;
+            background-color:RGBA(173, 181, 189, 0.1);
+            transform: rotate("&Line&"deg);
+            ""></div>
+            
+            <div style = ""
+            position: absolute;
+            top: -140%;
+            left: 110%;
+            margin-left: -500px;
+            margin-top: 500px;
+            transform-origin: 50% 48%;
+            border-radius: 43%;
+            height:"& 1000 &"px;
+            width:"&1000 &"px;
+            background-color:RGBA(173, 181, 189, 0.1);
+            transform: rotate("&Line&"deg);
+            ""></div>"
+            
+            
+            
+            
+            
+        Width: =1365
+        X: =1
+        Y: =92
+        ZIndex: =1
 
     "BarcodeReader1_2 As 'Barcode Reader'":
         BarcodeType: ='BarcodeReader.BarcodeType'.Auto
         BorderFillColor: =RGBA(47, 81, 151, 1)
+        BorderStyle: =BorderStyle.None
+        Disabled: =false
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledContentColor: =RGBA(166, 166, 166, 1)
         DisabledFillColor: =RGBA(244, 244, 244, 1)
         DisplayMode: =DisplayMode.Edit
-        FillColor: =RGBA(56, 96, 178, 1)
-        Height: =80
+        FillColor: =RGBA(0, 40, 85, 1)
+        Height: =82
         HoverBorderColor: =RGBA(88, 115, 171, 1)
         HoverContentColor: =RGBA(255, 255, 255, 1)
         HoverFillColor: =RGBA(47, 81, 151, 1)
@@ -43,16 +103,16 @@
         Text: ="Escanear QR"
         TextAlignment: =Align.Center
         TextColor: =RGBA(255, 255, 255, 1)
-        Width: =210
-        X: =606
-        Y: =545
-        ZIndex: =1
+        Width: =310
+        X: =556
+        Y: =582
+        ZIndex: =2
 
     Rectangle1_58 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
         Width: =1366
-        ZIndex: =2
+        ZIndex: =3
 
     Label1_14 As label:
         Align: =Align.Center
@@ -60,10 +120,10 @@
         FontWeight: =FontWeight.Bold
         Height: =92
         Size: =35
-        Text: ="MATENIMIENTO PREVENTIVO "
+        Text: ="MATENIMIENTOS PREVENTIVO "
         Width: =802
-        X: =310
-        ZIndex: =3
+        X: =282
+        ZIndex: =4
 
     Image2_57 As image:
         Height: =80
@@ -71,13 +131,26 @@
         Width: =223
         X: =1112
         Y: =6
-        ZIndex: =4
+        ZIndex: =5
 
     Image1 As image:
         Height: =286
         Image: =mantenimiento
-        Width: =489
-        X: =454
-        Y: =178
-        ZIndex: =5
+        Width: =434
+        X: =494
+        Y: =182
+        ZIndex: =6
+
+    Timer1_2 As timer:
+        AutoStart: =true
+        Duration: =50
+        OnTimerEnd: |-
+            =If(Line = 360,
+            UpdateContext({Line:0}),
+            UpdateContext({Line:Line+2}))
+        Repeat: =true
+        Visible: =false
+        X: =61
+        Y: =54
+        ZIndex: =7
 
