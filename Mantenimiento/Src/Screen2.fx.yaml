@@ -1,147 +1,83 @@
 "Screen2 As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
 
-    ScreenContainer1 As groupContainer.horizontalAutoLayoutContainer:
-        Fill: =RGBA(245, 245, 245, 1)
-        Height: =Parent.Height
-        LayoutAlignItems: =LayoutAlignItems.Stretch
-        LayoutGap: =16
-        LayoutMode: =LayoutMode.Auto
-        LayoutWrap: =true
-        PaddingBottom: =16
-        PaddingLeft: =16
-        PaddingRight: =16
-        PaddingTop: =16
-        Width: =Parent.Width
+    "BarcodeReader1_2 As 'Barcode Reader'":
+        BarcodeType: ='BarcodeReader.BarcodeType'.Auto
+        BorderFillColor: =RGBA(47, 81, 151, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledContentColor: =RGBA(166, 166, 166, 1)
+        DisabledFillColor: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =RGBA(56, 96, 178, 1)
+        Height: =80
+        HoverBorderColor: =RGBA(88, 115, 171, 1)
+        HoverContentColor: =RGBA(255, 255, 255, 1)
+        HoverFillColor: =RGBA(47, 81, 151, 1)
+        OnScan: |-
+            =Switch(First(BarcodeReader1_2.Barcodes).Value,
+            "MP-MEPS-INP",Navigate('MP-MEPS-INP',ScreenTransition.Cover), 
+            "MP-MEPS-DK-IN",Navigate('MP-MEPS-DK-IN',ScreenTransition.Cover), 
+            "MP-MEPS-DK-OUT",Navigate('MP-MEPS-DK-OUT',ScreenTransition.Cover),
+            "MP-MEPS-OUT",Navigate('MP-MEPS-OUT',ScreenTransition.Cover), 
+            "MEPS1-04-2M-CONZOLAS-Z",Navigate('MEPS1-04-2M-CONZOLAS-Z',ScreenTransition.Cover),
+            "MEPS1-04-2M-CONZOLAS-Y",Navigate('MEPS1-04-2M-CONZOLAS-Y',ScreenTransition.Cover),
+            "MEPS1-04-2M-GP-X1",Navigate('MEPS1-04-2M-GP-X1',ScreenTransition.Cover),
+            "MEPS1-04-2M-BANDA TRNSP-TAMBOR",Navigate('MEPS1-04-2M-BANDA TRNSP-TAMBOR',ScreenTransition.Cover),
+            "MEPS1-04-2M-SISTEMA ELECTRICO",Navigate('MEPS1-04-2M-SISTEMA ELECTRICO',ScreenTransition.Cover),
+            "MEPS1-04-2M-HIDRAULICO",Navigate('MEPS1-04-2M-HIDRAULICO',ScreenTransition.Cover),
+            "MP-MEPS-RT-LB",Navigate('MP-MEPS-RT-LB',ScreenTransition.Cover),
+            "MP-MEPS-GP-X2",Navigate('MP-MEPS-GP-X2',ScreenTransition.Cover),
+            Notify("Valor de código no reconocido", NotificationType.Error))
+            
+            
+            //Switch(
+              //  First(BarcodeReader1.Barcodes).Value,
+                //"", Navigate('MP-MEPS-DK-IN'),
+                // Otras opciones aquí
+                // Si el código QR no coincide con ninguna URL esperada, muestra un mensaje o realiza una acción por defecto
+                //Notify("Código QR inválido.", NotificationType.Error)
+            //)
+        PressedBorderColor: =RGBA(56, 96, 178, 1)
+        PressedContentColor: =RGBA(56, 96, 178, 1)
+        PressedFillColor: =RGBA(255, 255, 255, 1)
+        ScanningMode: ='BarcodeReader.ScanningMode'.SelectToScan
+        Text: ="Escanear QR"
+        TextAlignment: =Align.Center
+        TextColor: =RGBA(255, 255, 255, 1)
+        Width: =210
+        X: =606
+        Y: =545
         ZIndex: =1
 
-        LeftSideContainer1 As groupContainer.verticalAutoLayoutContainer:
-            Fill: =RGBA(255, 255, 255, 1)
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutGap: =20
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            LayoutWrap: =true
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            ZIndex: =2
+    Rectangle1_58 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =92
+        Width: =1366
+        ZIndex: =2
 
-            Button2 As button:
-                OnSelect: =Navigate('MP-MEPS-INP',ScreenTransition.Fade)
-                Text: ="MP-MEPS-INP"
-                Width: =200
-                ZIndex: =1
+    Label1_14 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =92
+        Size: =35
+        Text: ="MATENIMIENTO PREVENTIVO "
+        Width: =802
+        X: =310
+        ZIndex: =3
 
-            Button4 As button:
-                AlignInContainer: =AlignInContainer.Start
-                OnSelect: =Navigate('MP-MEPS-DK-IN',ScreenTransition.Fade)
-                Text: ="MP-MEPS-DK-IN"
-                Width: =200
-                ZIndex: =2
+    Image2_57 As image:
+        Height: =80
+        Image: =carrier_logo_300
+        Width: =223
+        X: =1112
+        Y: =6
+        ZIndex: =4
 
-            Button8 As button:
-                OnSelect: =Navigate('MP-MEPS-DK-OUT',ScreenTransition.Fade)
-                Text: ="MP-MEPS-DK-OUT"
-                Width: =200
-                ZIndex: =3
-
-            Button9 As button:
-                OnSelect: =Navigate('MP-MEPS-OUT',ScreenTransition.Fade)
-                Text: ="MP-MEPS-OUT"
-                Width: =200
-                ZIndex: =4
-
-            Button10 As button:
-                Text: ="Button"
-                Width: =200
-                ZIndex: =5
-
-        RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
-            Fill: =RGBA(255, 255, 255, 1)
-            LayoutAlignItems: =LayoutAlignItems.Center
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutJustifyContent: =LayoutJustifyContent.Center
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            ZIndex: =3
-
-            "BarcodeReader1 As 'Barcode Reader'":
-                BarcodeType: ='BarcodeReader.BarcodeType'.Auto
-                BorderFillColor: =RGBA(47, 81, 151, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledContentColor: =RGBA(166, 166, 166, 1)
-                DisabledFillColor: =RGBA(244, 244, 244, 1)
-                DisplayMode: =DisplayMode.Edit
-                FillColor: =RGBA(56, 96, 178, 1)
-                Height: =70
-                HoverBorderColor: =RGBA(88, 115, 171, 1)
-                HoverContentColor: =RGBA(255, 255, 255, 1)
-                HoverFillColor: =RGBA(47, 81, 151, 1)
-                LayoutMinHeight: =70
-                LayoutMinWidth: =280
-                OnScan: |-
-                    =Switch(First(BarcodeReader1.Barcodes).Value,
-                    "MP-MEPS-INP",Navigate('MP-MEPS-INP',ScreenTransition.Cover), 
-                    "MP-MEPS-DK-IN",Navigate('MP-MEPS-DK-IN',ScreenTransition.Cover), 
-                    "MP-MEPS-DK-OUT",Navigate('MP-MEPS-DK-OUT',ScreenTransition.Cover),
-                    "MP-MEPS-OUT",Navigate('MP-MEPS-OUT',ScreenTransition.Cover), 
-                    "MEPS1-04-2M-CONZOLAS-Z",Navigate('MEPS1-04-2M-CONZOLAS-Z',ScreenTransition.Cover),
-                    "MEPS1-04-2M-CONZOLAS-Y",Navigate('MEPS1-04-2M-CONZOLAS-Y',ScreenTransition.Cover),
-                    "MEPS1-04-2M-GP-X1",Navigate('MEPS1-04-2M-GP-X1',ScreenTransition.Cover),
-                    "MEPS1-04-2M-BANDA TRNSP-TAMBOR",Navigate('MEPS1-04-2M-BANDA TRNSP-TAMBOR',ScreenTransition.Cover),
-                    "MEPS1-04-2M-SISTEMA ELECTRICO",Navigate('MEPS1-04-2M-SISTEMA ELECTRICO',ScreenTransition.Cover),
-                    "MEPS1-04-2M-HIDRAULICO",Navigate('MEPS1-04-2M-HIDRAULICO',ScreenTransition.Cover),
-                    "MP-MEPS-RT-LB",Navigate('MP-MEPS-RT-LB',ScreenTransition.Cover),
-                    "MP-MEPS-GP-X2",Navigate('MP-MEPS-GP-X2',ScreenTransition.Cover),
-                    Notify("Valor de código no reconocido", NotificationType.Error))
-                    
-                    
-                    //Switch(
-                      //  First(BarcodeReader1.Barcodes).Value,
-                        //"", Navigate('MP-MEPS-DK-IN'),
-                        // Otras opciones aquí
-                        // Si el código QR no coincide con ninguna URL esperada, muestra un mensaje o realiza una acción por defecto
-                        //Notify("Código QR inválido.", NotificationType.Error)
-                    //)
-                PressedBorderColor: =RGBA(56, 96, 178, 1)
-                PressedContentColor: =RGBA(56, 96, 178, 1)
-                PressedFillColor: =RGBA(255, 255, 255, 1)
-                ScanningMode: ='BarcodeReader.ScanningMode'.SelectToScan
-                Text: ="Escanear"
-                TextAlignment: =Align.Center
-                TextColor: =RGBA(255, 255, 255, 1)
-                Width: =280
-                X: =0
-                Y: =0
-                ZIndex: =1
-
-        Container2 As groupContainer.horizontalAutoLayoutContainer:
-            LayoutAlignItems: =LayoutAlignItems.Center
-            LayoutDirection: =LayoutDirection.Vertical
-            LayoutGap: =10
-            LayoutJustifyContent: =LayoutJustifyContent.Center
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            ZIndex: =4
-
-            TextInput2 As text:
-                Default: =""
-                Format: =TextFormat.Number
-                ZIndex: =1
-
-            Button11 As button:
-                OnSelect: |+
-                    =Switch(TextInput2.Text, "1234",Navigate('MP-MEPS-INP',ScreenTransition.Cover), "111",Navigate('MP-MEPS-DK-IN',ScreenTransition.Cover))
-                    
-                    
-                Text: ="Button"
-                ZIndex: =2
+    Image1 As image:
+        Height: =286
+        Image: =mantenimiento
+        Width: =489
+        X: =454
+        Y: =178
+        ZIndex: =5
 
