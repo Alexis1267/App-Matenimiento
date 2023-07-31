@@ -60,7 +60,9 @@
 
         RightSideContainer1 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
+            LayoutAlignItems: =LayoutAlignItems.Center
             LayoutDirection: =LayoutDirection.Vertical
+            LayoutJustifyContent: =LayoutJustifyContent.Center
             LayoutMinHeight: =100
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
@@ -71,7 +73,6 @@
             ZIndex: =3
 
             "BarcodeReader1 As 'Barcode Reader'":
-                AlignInContainer: =AlignInContainer.Center
                 BarcodeType: ='BarcodeReader.BarcodeType'.MicroQRCode
                 BorderFillColor: =RGBA(47, 81, 151, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -86,12 +87,7 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
                 OnScan: |-
-                    =Collect(
-                        colScannedItems,
-                        {ScannedItem: First(BarcodeReader1.Barcodes).Value, ScannedTime: Now()}
-                    );
-                    
-                    Switch(
+                    =Switch(
                         First(BarcodeReader1.Barcodes).Value,
                         "https://make.powerapps.com/e/Default-36839a65-7f3f-4bac-9ea4-f571f10a9a03/canvas/?action=edit&app-id=%2Fproviders%2FMicrosoft.PowerApps%2Fapps%2F2e516993-46ed-4ef1-9678-83466401527f", Navigate('MP-MEPS-DK-IN'),
                         // Otras opciones aquí
@@ -109,4 +105,27 @@
                 X: =0
                 Y: =0
                 ZIndex: =1
+
+        Container2 As groupContainer.horizontalAutoLayoutContainer:
+            LayoutAlignItems: =LayoutAlignItems.Center
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutGap: =10
+            LayoutJustifyContent: =LayoutJustifyContent.Center
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =4
+
+            TextInput2 As text:
+                Default: =""
+                Format: =TextFormat.Number
+                ZIndex: =1
+
+            Button11 As button:
+                OnSelect: |+
+                    =Switch(TextInput2.Text, "1234",Navigate('MP-MEPS-INP',ScreenTransition.Cover), "111",Navigate('MP-MEPS-DK-IN',ScreenTransition.Cover))
+                    
+                    
+                Text: ="Button"
+                ZIndex: =2
 
