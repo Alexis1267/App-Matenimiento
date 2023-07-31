@@ -87,8 +87,20 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
                 OnScan: |-
-                    =Switch(First(BarcodeReader1.Barcodes).Value, "MP-MEPS-INP",Navigate('MP-MEPS-INP',ScreenTransition.Cover), "MP-MEPS-DK-IN",Navigate('MP-MEPS-DK-IN',ScreenTransition.Cover))
-                    
+                    =Switch(First(BarcodeReader1.Barcodes).Value,
+                    "MP-MEPS-INP",Navigate('MP-MEPS-INP',ScreenTransition.Cover), 
+                    "MP-MEPS-DK-IN",Navigate('MP-MEPS-DK-IN',ScreenTransition.Cover), 
+                    "MP-MEPS-DK-OUT",Navigate('MP-MEPS-DK-OUT',ScreenTransition.Cover),
+                    "MP-MEPS-OUT",Navigate('MP-MEPS-OUT',ScreenTransition.Cover), 
+                    "MEPS1-04-2M-CONZOLAS-Z",Navigate('MEPS1-04-2M-CONZOLAS-Z',ScreenTransition.Cover),
+                    "MEPS1-04-2M-CONZOLAS-Y",Navigate('MEPS1-04-2M-CONZOLAS-Y',ScreenTransition.Cover),
+                    "MEPS1-04-2M-GP-X1",Navigate('MEPS1-04-2M-GP-X1',ScreenTransition.Cover),
+                    "MEPS1-04-2M-BANDA TRNSP-TAMBOR",Navigate('MEPS1-04-2M-BANDA TRNSP-TAMBOR',ScreenTransition.Cover),
+                    "MEPS1-04-2M-SISTEMA ELECTRICO",Navigate('MEPS1-04-2M-SISTEMA ELECTRICO',ScreenTransition.Cover),
+                    "MEPS1-04-2M-HIDRAULICO",Navigate('MEPS1-04-2M-HIDRAULICO',ScreenTransition.Cover),
+                    "MP-MEPS-RT-LB",Navigate('MP-MEPS-RT-LB',ScreenTransition.Cover),
+                    "MP-MEPS-GP-X2",Navigate('MP-MEPS-GP-X2',ScreenTransition.Cover),
+                    Notify("Valor de código no reconocido", NotificationType.Error))
                     
                     
                     //Switch(
