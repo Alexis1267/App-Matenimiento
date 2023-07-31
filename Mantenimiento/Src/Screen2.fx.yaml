@@ -73,7 +73,7 @@
             ZIndex: =3
 
             "BarcodeReader1 As 'Barcode Reader'":
-                BarcodeType: ='BarcodeReader.BarcodeType'.Codabar
+                BarcodeType: ='BarcodeReader.BarcodeType'.QRCode
                 BorderFillColor: =RGBA(47, 81, 151, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledContentColor: =RGBA(166, 166, 166, 1)
