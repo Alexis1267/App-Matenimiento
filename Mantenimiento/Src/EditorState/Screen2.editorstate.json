@@ -52,7 +52,8 @@
           "InvariantPropertyName": "TextAlignment",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "OnScan"
       ],
       "DynamicProperties": [
         {
@@ -227,6 +228,11 @@
         {
           "Category": "Design",
           "PropertyName": "TextAlignment",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "OnScan",
           "RuleProviderType": "Unknown"
         }
       ],
