@@ -73,7 +73,7 @@
             ZIndex: =3
 
             "BarcodeReader1 As 'Barcode Reader'":
-                BarcodeType: ='BarcodeReader.BarcodeType'.QRCode
+                BarcodeType: ='BarcodeReader.BarcodeType'.Auto
                 BorderFillColor: =RGBA(47, 81, 151, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledContentColor: =RGBA(166, 166, 166, 1)
@@ -87,13 +87,17 @@
                 LayoutMinHeight: =70
                 LayoutMinWidth: =280
                 OnScan: |-
-                    =Switch(
-                        First(BarcodeReader1.Barcodes).Value,
-                        "1234", Navigate('MP-MEPS-DK-IN'),
+                    =Switch(First(BarcodeReader1.Barcodes).Value, "MP-MEPS-INP",Navigate('MP-MEPS-INP',ScreenTransition.Cover), "MP-MEPS-DK-IN",Navigate('MP-MEPS-DK-IN',ScreenTransition.Cover))
+                    
+                    
+                    
+                    //Switch(
+                      //  First(BarcodeReader1.Barcodes).Value,
+                        //"", Navigate('MP-MEPS-DK-IN'),
                         // Otras opciones aquí
                         // Si el código QR no coincide con ninguna URL esperada, muestra un mensaje o realiza una acción por defecto
-                        Notify("Código QR inválido.", NotificationType.Error)
-                    )
+                        //Notify("Código QR inválido.", NotificationType.Error)
+                    //)
                 PressedBorderColor: =RGBA(56, 96, 178, 1)
                 PressedContentColor: =RGBA(56, 96, 178, 1)
                 PressedFillColor: =RGBA(255, 255, 255, 1)
