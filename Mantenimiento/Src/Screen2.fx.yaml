@@ -129,3 +129,9 @@
                 Text: ="Button"
                 ZIndex: =2
 
+        Container5 As groupContainer.horizontalAutoLayoutContainer:
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =5
+
