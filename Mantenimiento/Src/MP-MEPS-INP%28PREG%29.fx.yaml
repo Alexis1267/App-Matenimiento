@@ -53,11 +53,11 @@
         ZIndex: =8
 
     Label10_18 As label:
-        Height: =48
+        Height: =27
         Text: ="Reapriete y verificación de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)"
         Width: =868
         X: =93
-        Y: =135
+        Y: =116
         ZIndex: =11
 
     Respuesta1 As dropdown:
@@ -77,15 +77,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =150
+        Y: =117
         ZIndex: =13
 
     Label10_20 As label:
-        Height: =52
+        Height: =27
         Text: ="Reapriete y verificación de tornillos de brackets de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)"
         Width: =1064
         X: =93
-        Y: =181
+        Y: =163
         ZIndex: =17
 
     Respuesta3 As dropdown:
@@ -103,15 +103,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =238
+        Y: =210
         ZIndex: =19
 
     Label10_21 As label:
-        Height: =48
+        Height: =32
         Text: ="Verificar funcionamiento de sensores de carro"
         Width: =1064
         X: =93
-        Y: =223
+        Y: =204
         ZIndex: =20
 
     Respuesta4 As dropdown:
@@ -129,15 +129,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =279
+        Y: =257
         ZIndex: =22
 
     Label10_22 As label:
-        Height: =48
+        Height: =29
         Text: ="Limpieza y lubricación de chumaceras de carro de alimentación"
         Width: =1064
         X: =93
-        Y: =264
+        Y: =255
         ZIndex: =23
 
     Respuesta5 As dropdown:
@@ -155,11 +155,11 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =319
+        Y: =305
         ZIndex: =26
 
     Label10_23 As label:
-        Height: =48
+        Height: =27
         Text: ="Reapriete y verificación de tornillos de chumaceras, Flecha transmisión (marcar testigo en caso de no encontrarse)"
         Width: =1245
         X: =93
@@ -237,23 +237,23 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =359
+        Y: =356
         ZIndex: =30
 
     Label10_19 As label:
-        Height: =48
+        Height: =27
         Text: ="Controlar y limpiar bandejas de cables (armor blocks, power tracks)"
         Width: =1245
         X: =93
-        Y: =344
+        Y: =355
         ZIndex: =31
 
     Label10_30 As label:
-        Height: =48
+        Height: =27
         Text: ="Revisión de condiciones de anclaje en topes para montacargas, re apretar tuercas de sujeción"
         Width: =1245
         X: =93
-        Y: =394
+        Y: =402
         ZIndex: =32
 
     Respuesta7 As dropdown:
@@ -271,7 +271,7 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =406
+        Y: =403
         ZIndex: =33
 
     Respuesta8 As dropdown:
@@ -319,11 +319,11 @@
         ZIndex: =36
 
     Label10_32 As label:
-        Height: =48
+        Height: =28
         Text: ="Revisar el reapriete de tornillos en las llantas de los carros (Marcar testigo en caso de no contar)"
         Width: =1245
         X: =93
-        Y: =479
+        Y: =493
         ZIndex: =37
 
     Respuesta10 As dropdown:
@@ -345,11 +345,11 @@
         ZIndex: =38
 
     Label10_33 As label:
-        Height: =48
+        Height: =27
         Text: ="Revisión Typer Look"
         Width: =1245
         X: =93
-        Y: =520
+        Y: =534
         ZIndex: =39
 
     Respuesta11 As dropdown:
@@ -367,15 +367,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =575
+        Y: =578
         ZIndex: =40
 
     Label10_34 As label:
-        Height: =48
+        Height: =27
         Text: ="Revisión de Riel y realizar limpieza"
         Width: =1245
         X: =93
-        Y: =560
+        Y: =575
         ZIndex: =41
 
     Respuesta12 As dropdown:
@@ -393,15 +393,15 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =615
+        Y: =623
         ZIndex: =42
 
     Label10_35 As label:
-        Height: =48
+        Height: =25
         Text: ="Revisión y/o reparación del Braket"
         Width: =1045
         X: =93
-        Y: =600
+        Y: =623
         ZIndex: =43
 
     Icon1 As icon.BackArrow:
@@ -596,6 +596,90 @@
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
-        Y: =196
+        Y: =164
         ZIndex: =61
+
+    Rectangle2_366 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =150
+        ZIndex: =62
+
+    Rectangle2_367 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =198
+        ZIndex: =63
+
+    Rectangle2_368 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =245
+        ZIndex: =64
+
+    Rectangle2_369 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =294
+        ZIndex: =65
+
+    Rectangle2_370 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =343
+        ZIndex: =66
+
+    Rectangle2_371 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =392
+        ZIndex: =67
+
+    Rectangle2_372 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =440
+        ZIndex: =68
+
+    Rectangle2_373 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =484
+        ZIndex: =69
+
+    Rectangle2_374 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =527
+        ZIndex: =70
+
+    Rectangle2_375 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =567
+        ZIndex: =71
+
+    Rectangle2_376 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =611
+        ZIndex: =72
+
+    Rectangle2_377 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =656
+        ZIndex: =73
 
