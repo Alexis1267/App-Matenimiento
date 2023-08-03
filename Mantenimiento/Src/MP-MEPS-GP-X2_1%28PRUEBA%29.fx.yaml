@@ -1,27 +1,27 @@
-"'MP-MEPS-INP' As screen":
+"'MP-MEPS-GP-X2_1(PRUEBA)' As screen":
     OnVisible: =
 
-    Rectangle1_8 As rectangle:
+    Rectangle1_59 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
         Width: =1366
         ZIndex: =1
 
-    Rectangle2_11 As rectangle:
+    Rectangle2_378 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =35
         Width: =1366
         Y: =146
         ZIndex: =2
 
-    Rectangle2_12 As rectangle:
+    Rectangle2_379 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
         Width: =1366
         Y: =216
         ZIndex: =3
 
-    Label1_2 As label:
+    Label1_15 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -34,18 +34,18 @@
         X: =419
         ZIndex: =4
 
-    Label2_2 As label:
+    Label2_14 As label:
         FontWeight: =FontWeight.Bold
-        Height: =31
+        Height: =26
         Size: =14
         Text: |-
-            ="Proc. No.: MEPS1-04-2M-INP"
-        Width: =269
-        X: =1096
-        Y: =104
+            ="Proc. No.: MEPS1-04-2M-GP-X2"
+        Width: =461
+        X: =904
+        Y: =105
         ZIndex: =5
 
-    Label3_4 As label:
+    Label3_28 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -56,7 +56,7 @@
         Y: =148
         ZIndex: =6
 
-    Label4_4 As label:
+    Label4_28 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -68,7 +68,7 @@
         Y: =148
         ZIndex: =7
 
-    Label5_4 As label:
+    Label5_28 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -81,14 +81,14 @@
         Y: =146
         ZIndex: =8
 
-    Label3_5 As label:
+    Label3_29 As label:
         Align: =Align.Center
         Height: =35
         Text: ="MEPS1-04"
         Y: =179
         ZIndex: =9
 
-    Label4_5 As label:
+    Label4_29 As label:
         Align: =Align.Center
         Height: =35
         Text: ="Pivatic Puncher"
@@ -97,7 +97,7 @@
         Y: =184
         ZIndex: =10
 
-    Label5_5 As label:
+    Label5_29 As label:
         Align: =Align.Center
         Height: =35
         Text: ="PRENSAS"
@@ -105,7 +105,7 @@
         Y: =179
         ZIndex: =11
 
-    Label6_70 As label:
+    Label6_377 As label:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =30
@@ -116,14 +116,14 @@
         Y: =557
         ZIndex: =17
 
-    Rectangle2_13 As rectangle:
+    Rectangle2_380 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
         Width: =1366
         Y: =528
         ZIndex: =18
 
-    Label6_38 As label:
+    Label6_355 As label:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =43
@@ -134,7 +134,7 @@
         Y: =257
         ZIndex: =19
 
-    Label6_44 As label:
+    Label6_359 As label:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
@@ -145,7 +145,7 @@
         Y: =293
         ZIndex: =20
 
-    Label6_52 As label:
+    Label6_364 As label:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
@@ -156,7 +156,7 @@
         Y: =332
         ZIndex: =21
 
-    Label6_55 As label:
+    Label6_367 As label:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
@@ -167,7 +167,7 @@
         Y: =370
         ZIndex: =22
 
-    Label6_62 As label:
+    Label6_370 As label:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
@@ -178,7 +178,7 @@
         Y: =404
         ZIndex: =23
 
-    Label6_66 As label:
+    Label6_375 As label:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
@@ -189,7 +189,7 @@
         Y: =448
         ZIndex: =24
 
-    Label6_71 As label:
+    Label6_379 As label:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =33
@@ -200,23 +200,23 @@
         Y: =604
         ZIndex: =28
 
-    Label6_40 As label:
-        Height: =43
-        Text: ="Cada 8 Semana(s) | Lunes"
-        Width: =257
+    Label6_354 As label:
+        Height: =42
+        Text: ="Cada 2 Mes (es) | Segundo Domingo"
+        Width: =311
         X: =200
         Y: =257
         ZIndex: =29
 
-    Label6_51 As label:
+    Label6_361 As label:
         Height: =26
-        Text: ="07/08/2023"
+        Text: ="13/08/2023"
         Width: =257
         X: =208
         Y: =301
         ZIndex: =30
 
-    Label6_64 As label:
+    Label6_365 As label:
         FontWeight: =FontWeight.Bold
         Height: =43
         Text: ="32"
@@ -225,15 +225,15 @@
         Y: =358
         ZIndex: =31
 
-    Label6_68 As label:
+    Label6_372 As label:
         Height: =43
-        Text: =LookUp(CMXE_MP,Proc_No="MEINS-05-30D",Fecha_inicio)
+        Text: =
         Width: =257
         X: =200
-        Y: =427
+        Y: =444
         ZIndex: =32
 
-    Label6_41 As label:
+    Label6_356 As label:
         Height: =43
         Text: ="Alta"
         Width: =67
@@ -241,7 +241,7 @@
         Y: =257
         ZIndex: =33
 
-    Label6_43 As label:
+    Label6_360 As label:
         Height: =43
         Text: ="PREVENTIVO"
         Width: =160
@@ -249,7 +249,7 @@
         Y: =293
         ZIndex: =34
 
-    Label6_50 As label:
+    Label6_363 As label:
         Height: =43
         Text: ="Preventivo"
         Width: =160
@@ -257,23 +257,23 @@
         Y: =329
         ZIndex: =35
 
-    Label6_56 As label:
+    Label6_368 As label:
         Height: =43
-        Text: ="6.00"
+        Text: ="4.00"
         Width: =160
         X: =762
         Y: =370
         ZIndex: =36
 
-    Label6_61 As label:
+    Label6_371 As label:
         Height: =43
-        Text: ="6.00"
+        Text: ="4.00"
         Width: =160
         X: =762
         Y: =406
         ZIndex: =37
 
-    Label6_65 As label:
+    Label6_374 As label:
         Height: =43
         Text: ="A"
         Width: =160
@@ -281,33 +281,33 @@
         Y: =445
         ZIndex: =38
 
-    Button1_2 As button:
+    Button1_14 As button:
         BorderThickness: =0
         DisabledBorderColor: =RGBA(41, 191, 18, 1)
         Fill: =RGBA(152, 208, 70, 1)
-        OnSelect: =Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover)
+        OnSelect: =Navigate('MP-MEPS-GP-X2(PREG1)',ScreenTransition.Cover)
         Text: ="Contestar "
         Width: =242
         X: =561
         Y: =712
         ZIndex: =39
 
-    Rectangle2_14 As rectangle:
+    Rectangle2_382 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
         Width: =1366
         Y: =664
         ZIndex: =40
 
-    Label6_72 As label:
+    Label6_378 As label:
         Height: =38
-        Text: ="MANTENIMIENTO PREVENTIVO CARROS PALLET"
+        Text: ="MANTENIMIENTO PREVENTIVO DESTACKER"
         Width: =409
         X: =149
         Y: =603
         ZIndex: =41
 
-    Image2_8 As image:
+    Image2_58 As image:
         Height: =53
         Image: =carrier_logo_300
         Width: =209
@@ -315,7 +315,7 @@
         Y: =19
         ZIndex: =42
 
-    "Gallery4_3 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+    "Gallery4_15 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
         BorderColor: =RGBA(0, 0, 0, 1)
         DelayItemLoading: =true
         Height: =106
@@ -333,7 +333,7 @@
         Y: =80
         ZIndex: =43
 
-        Image10_3 As image:
+        Image10_15 As image:
             Height: =42
             Image: =ThisItem.icono
             OnSelect: =Select(Parent)
@@ -341,12 +341,11 @@
             RadiusBottomRight: =8
             RadiusTopLeft: =8
             RadiusTopRight: =8
-            Width: =48
-            X: =27
+            Width: =1
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
-        Title8_3 As label:
+        Title8_15 As label:
             Color: =RGBA(0, 8, 20,1)
             DisabledColor: =RGBA(255,255,255, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -360,12 +359,12 @@
             PaddingTop: =0
             Text: =ThisItem.Titulo
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - Image10_3.Width - 137
-            X: =92
+            Width: =Parent.TemplateWidth - Image10_15.Width - 137
+            X: =1
             Y: =14
             ZIndex: =2
 
-        Separator8_3 As rectangle:
+        Separator8_15 As rectangle:
             BorderThickness: =1
             Height: =0
             OnSelect: =Select(Parent)
@@ -373,14 +372,14 @@
             Y: =53
             ZIndex: =4
 
-        Rectangle10_3 As rectangle:
-            Height: =Parent.TemplateHeight - Separator8_3.Height
+        Rectangle10_15 As rectangle:
+            Height: =Parent.TemplateHeight - Separator8_15.Height
             OnSelect: =Select(Parent)
             Visible: =If(ThisItem.IsSelected, true, false)
-            Width: =4
+            Width: =1
             ZIndex: =5
 
-    Icon6_4 As icon.Hamburger:
+    Icon6_16 As icon.Hamburger:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Hamburger
         OnSelect: =Set(reducir,!reducir) //Esto me va permitir que la hamburguesa reduzca el menu, lo que dice aqui es de que si se da clic va reducirse y cuando se vuelva dar clic se va quitar
@@ -388,7 +387,7 @@
         Y: =8
         ZIndex: =44
 
-    Label6_69 As label:
+    Label6_376 As label:
         Height: =44
         Text: =User().Email
         Width: =207
@@ -396,7 +395,7 @@
         Y: =555
         ZIndex: =45
 
-    Icon9_1 As icon.AddUser:
+    Icon9_13 As icon.AddUser:
         Height: =39
         Icon: =Icon.AddUser
         OnSelect: |
@@ -407,12 +406,12 @@
         Y: =553
         ZIndex: =47
 
-    Dropdown2_29 As dropdown:
+    Dropdown2_89 As dropdown:
         Default: =""
         Height: =47
         Items: =Lista_Usuarios
         Visible: |+
-            =If(Drop_CantUsuario.Selected.Value >= 1, true,false)
+            =If(Drop_CantUsuario_12.Selected.Value >= 1, true,false)
             
             
             
@@ -421,13 +420,13 @@
         Y: =549
         ZIndex: =48
 
-    Dropdown2_30 As dropdown:
+    Dropdown2_90 As dropdown:
         Default: ="Marieth,Alexis,Claudia,Raul"
         Height: =47
         Items: |
             =Lista_Usuarios
         Visible: |+
-            =If(Drop_CantUsuario.Selected.Value >= 2, true, false)
+            =If(Drop_CantUsuario_12.Selected.Value >= 2, true, false)
             
             
             
@@ -436,35 +435,35 @@
         Y: =549
         ZIndex: =49
 
-    Dropdown2_32 As dropdown:
+    Dropdown2_92 As dropdown:
         Default: ="Marieth,Alexis,Claudia,Raul"
         Height: =47
         Items: |
             =Lista_Usuarios
-        Visible: =If(Drop_CantUsuario.Selected.Value >= 4, true, false)
+        Visible: =If(Drop_CantUsuario_12.Selected.Value >= 4, true, false)
         Width: =246
         X: =533
         Y: =610
         ZIndex: =50
 
-    Dropdown2_33 As dropdown:
+    Dropdown2_93 As dropdown:
         Default: ="Marieth,Alexis,Claudia,Raul"
         Height: =47
         Items: |
             =Lista_Usuarios
-        Visible: =If(Drop_CantUsuario.Selected.Value >= 5, true, false)
+        Visible: =If(Drop_CantUsuario_12.Selected.Value >= 5, true, false)
         Width: =246
         X: =814
         Y: =610
         ZIndex: =51
 
-    Dropdown2_31 As dropdown:
+    Dropdown2_91 As dropdown:
         Default: ="Marieth,Alexis,Claudia,Raul"
         Height: =47
         Items: |
             =Lista_Usuarios
         Visible: |+
-            =If(Drop_CantUsuario.Selected.Value >= 3, true, false)
+            =If(Drop_CantUsuario_12.Selected.Value >= 3, true, false)
             
             
             
@@ -473,7 +472,7 @@
         Y: =549
         ZIndex: =52
 
-    Timer2 As timer:
+    Timer2_12 As timer:
         AutoPause: =false
         AutoStart: =TimerGo
         OnTimerEnd: =TimerGo 
@@ -484,7 +483,7 @@
         Y: =259
         ZIndex: =53
 
-    Button5 As button:
+    Button5_12 As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(153, 207, 236, 1)
         Height: =45
@@ -496,7 +495,7 @@
         Y: =707
         ZIndex: =54
 
-    DatePicker1 As datepicker:
+    DatePicker1_12 As datepicker:
         DefaultDate: =Now()
         DisplayMode: =DisplayMode.Disabled
         Format: ="dd/mm/yyyy"
@@ -506,22 +505,29 @@
         Y: =334
         ZIndex: =55
 
-    DatePicker2 As datepicker:
+    DatePicker2_12 As datepicker:
         Format: ="dd/mm/yyyy"
         Height: =26
         Width: =195
         X: =203
-        Y: =405
+        Y: =420
         ZIndex: =56
 
-    Group6 As group:
+    Rectangle2_381 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        Y: =539
+        ZIndex: =64
+
+    Group6_12 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =64
 
-        Label6_39 As label:
+        Label6_357 As label:
             Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =43
@@ -532,7 +538,7 @@
             Y: =259
             ZIndex: =12
 
-        Label6_45 As label:
+        Label6_362 As label:
             Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =35
@@ -543,7 +549,7 @@
             Y: =328
             ZIndex: =13
 
-        Label6_53 As label:
+        Label6_358 As label:
             Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Text: |-
@@ -552,7 +558,7 @@
             Y: =291
             ZIndex: =14
 
-        Label6_63 As label:
+        Label6_366 As label:
             Align: =Align.Right
             FontWeight: =FontWeight.Bold
             Height: =38
@@ -562,7 +568,7 @@
             Y: =362
             ZIndex: =15
 
-        Label6_67 As label:
+        Label6_373 As label:
             Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =39
@@ -573,7 +579,7 @@
             Y: =432
             ZIndex: =16
 
-        Label6_58 As label:
+        Label6_369 As label:
             Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =34
@@ -584,14 +590,99 @@
             Y: =397
             ZIndex: =46
 
-    Group5 As group:
+    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =297
+        Items: =Prueba
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =104
+        Width: =428
+        X: =863
+        Y: =306
+        ZIndex: =65
+
+        Image6 As image:
+            Height: =72
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =72
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title3 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Fecha_Ini
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 173
+            X: =103
+            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle3.Size * 1.8)) / 2
+            ZIndex: =2
+
+        Subtitle3 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title3.Width
+            X: =Title3.X
+            Y: =Title3.Y + Title3.Height
+            ZIndex: =3
+
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator2 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle6 As rectangle:
+            Height: =Parent.TemplateHeight - Separator2.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+
+    Group5_12 As group:
         Height: =5
         Width: =5
         X: =60
         Y: =60
         ZIndex: =65
 
-        HtmlText3 As htmlViewer:
+        HtmlText3_12 As htmlViewer:
             Height: =768
             HtmlText: |-
                 ="<div style=""
@@ -610,7 +701,7 @@
             Width: =1366
             ZIndex: =57
 
-        Rectangle4 As rectangle:
+        Rectangle4_12 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
@@ -621,7 +712,7 @@
             Y: =216
             ZIndex: =58
 
-        Btn_CancelUsuario As button:
+        Btn_CancelUsuario_12 As button:
             BorderStyle: =BorderStyle.None
             BorderThickness: =0
             Fill: =RGBA(255, 0, 0, 1)
@@ -637,7 +728,7 @@
             Y: =434
             ZIndex: =59
 
-        Btn_ConfirmUsuario As button:
+        Btn_ConfirmUsuario_12 As button:
             BorderStyle: =BorderStyle.None
             Fill: =RGBA(54, 176, 75, 1)
             Height: =32
@@ -653,7 +744,7 @@
             Y: =434
             ZIndex: =60
 
-        Rectangle5 As rectangle:
+        Rectangle5_12 As rectangle:
             Fill: =RGBA(0, 40, 85, 1)
             Height: =72
             Visible: =PopUp
@@ -662,7 +753,7 @@
             Y: =216
             ZIndex: =61
 
-        Label11 As label:
+        Label11_12 As label:
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
@@ -675,7 +766,7 @@
             Y: =216
             ZIndex: =62
 
-        Drop_CantUsuario As dropdown:
+        Drop_CantUsuario_12 As dropdown:
             BorderColor: =RGBA(0, 40, 85, 1)
             ChevronBackground: =RGBA(0, 40, 85, 1)
             ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)

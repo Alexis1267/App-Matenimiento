@@ -73,7 +73,8 @@
         HoverContentColor: =RGBA(255, 255, 255, 1)
         HoverFillColor: =RGBA(47, 81, 151, 1)
         OnScan: |-
-            =Switch(First(BarcodeReader1_2.Barcodes).Value,
+            =ClearCollect(ColeccionFilaSQL,Filter(CMXE_MP,Proc_No=First(BarcodeReader1_2.Barcodes).Value))
+            ;Switch(First(BarcodeReader1_2.Barcodes).Value,
             "MP-MEPS-INP",Navigate('MP-MEPS-INP',ScreenTransition.Cover), 
             "MP-MEPS-DK-IN",Navigate('MP-MEPS-DK-IN',ScreenTransition.Cover), 
             "MP-MEPS-DK-OUT",Navigate('MP-MEPS-DK-OUT',ScreenTransition.Cover),
@@ -89,7 +90,7 @@
             Notify("Valor de código no reconocido", NotificationType.Error))
             
             
-            //Switch(
+            //Switch(First(BarcodeReader1_2.Barcodes).Value)
               //  First(BarcodeReader1.Barcodes).Value,
                 //"", Navigate('MP-MEPS-DK-IN'),
                 // Otras opciones aquí

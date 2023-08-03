@@ -1,0 +1,42 @@
+Screen3 As screen:
+
+    Gallery10 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Items: =ColeccionFilaSQL
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        X: =240
+        Y: =84
+        ZIndex: =1
+
+        Label15 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Nom_equipo
+            X: =244
+            ZIndex: =1
+
+        Label15_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Clas_Mantenimineto
+            X: =40
+            Y: =40
+            ZIndex: =2
+
+        Label15_2 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Fecha_inicio
+            Width: =180
+            X: =40
+            Y: =80
+            ZIndex: =3
+
+        Label15_3 As label:
+            Height: =41
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Fecha_Programada
+            Width: =180
+            X: =40
+            Y: =133
+            ZIndex: =4
+

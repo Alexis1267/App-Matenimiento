@@ -461,7 +461,7 @@
             =If(Respuesta2.Selected.Value = "N", true, false)
         Width: =209
         X: =1094
-        Y: =161
+        Y: =159
         ZIndex: =51
 
     Hallazgo4 As text:
@@ -474,7 +474,7 @@
             =If(Respuesta4.Selected.Value = "N", true, false)
         Width: =209
         X: =1094
-        Y: =257
+        Y: =254
         ZIndex: =52
 
     Hallazgo5 As text:
@@ -526,7 +526,7 @@
             =If(Respuesta8.Selected.Value = "N", true, false)
         Width: =209
         X: =1094
-        Y: =449
+        Y: =447
         ZIndex: =56
 
     Hallazgo9 As text:
@@ -539,7 +539,7 @@
             =If(Respuesta9.Selected.Value = "N", true, false)
         Width: =209
         X: =1094
-        Y: =489
+        Y: =490
         ZIndex: =57
 
     Hallazgo10 As text:
@@ -565,7 +565,7 @@
             =If(Respuesta11.Selected.Value = "N", true, false)
         Width: =209
         X: =1094
-        Y: =576
+        Y: =574
         ZIndex: =59
 
     Hallazgo12 As text:
@@ -578,7 +578,7 @@
             =If(Respuesta12.Selected.Value = "N", true, false)
         Width: =209
         X: =1094
-        Y: =623
+        Y: =618
         ZIndex: =60
 
     Respuesta2 As dropdown:

@@ -2,12 +2,12 @@
 
     Label12_2 As label:
         FontWeight: =FontWeight.Bold
-        Height: =47
+        Height: =42
         Size: =16
         Text: ="Observaciones y/o hallazgos"
-        Width: =399
-        X: =517
-        Y: =495
+        Width: =314
+        X: =526
+        Y: =476
         ZIndex: =1
 
     TextInput3_2 As text:
@@ -18,7 +18,7 @@
         Mode: =TextMode.MultiLine
         Width: =850
         X: =258
-        Y: =542
+        Y: =539
         ZIndex: =2
 
     Button2_2 As button:
@@ -34,46 +34,6 @@
         X: =602
         Y: =702
         ZIndex: =3
-
-    AddMediaWithImage2 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =4
-
-        UploadedImage2 As image:
-            Height: =318
-            Image: =If(IsBlank(AddMediaButton2.Media), SampleImage, AddMediaButton2.Media)
-            Width: =508
-            X: =AddMediaButton2.X
-            Y: =109
-            ZIndex: =5
-
-        AddMediaButton2 As addMedia:
-            BorderColor: =RGBA(0, 18, 107, 0)
-            ChangePictureText: =""
-            DisabledColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(119, 119, 119, 0)
-            Fill: =RGBA(255, 255, 255, 0)
-            Height: =133
-            HoverBorderColor: =ColorFade(Self.BorderColor, 0%)
-            Size: =25
-            Text: ="Adjuntar Evidencia"
-            Width: =508
-            X: =429
-            Y: =201
-            ZIndex: =6
-
-    Label7 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Bold
-        Height: =46
-        Text: ="Adjuntar foto de evidencia"
-        Width: =473
-        X: =446
-        Y: =427
-        ZIndex: =7
 
     Rectangle1_7 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -107,4 +67,35 @@
         X: =1157
         Y: =4
         ZIndex: =11
+
+    Label12_14 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =54
+        Size: =25
+        Text: ="Adjuntar Evidencia"
+        Width: =326
+        X: =520
+        Y: =398
+        ZIndex: =12
+
+    AddMediaWithImage1 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =13
+
+        UploadedImage1 As image:
+            Height: =AddMediaButton1.Height
+            Image: =If(IsBlank(Camera), SampleImage, AddMediaButton1.Media)
+            Width: =AddMediaButton1.Width
+            X: =AddMediaButton1.X
+            Y: =AddMediaButton1.Y
+            ZIndex: =14
+
+        AddMediaButton1 As addMedia:
+            Size: =25
+            X: =520
+            Y: =109
+            ZIndex: =15
 
