@@ -38,10 +38,10 @@
         FontWeight: =FontWeight.Bold
         Height: =31
         Size: =14
-        Text: =Maqui
+        Text: =Text(Maqui)
         Width: =269
-        X: =1096
-        Y: =104
+        X: =1060
+        Y: =103
         ZIndex: =5
 
     Label3_4 As label:
@@ -226,7 +226,7 @@
 
     Label6_68 As label:
         Height: =43
-        Text: =LookUp(CMXE_MP,Proc_No="MEINS-05-30D",Fecha_inicio)
+        Text: =//LookUp(CMXE_MP,Proc_No="MEINS-05-30D",Fecha_inicio)
         Width: =257
         X: =200
         Y: =427
