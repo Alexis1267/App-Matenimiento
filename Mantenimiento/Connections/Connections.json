@@ -1,4 +1,34 @@
 {
+  "62083961-affe-4ac4-ae44-5862ef0b6ba5": {
+    "connectionRef": {
+      "authenticationType": "sqlAuthentication",
+      "displayName": "SQL Server",
+      "gatewayObjectIdHint": "07d9c54a-5560-4815-aeb5-b2183ad08d62",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/sql-1644-2/1.0.1644.3343/sql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sql",
+      "isOnPremiseConnection": true,
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/98c9afb4a49b4033adaa1bf0caedf526",
+      "xrmConnectionReferenceLogicalName": "crea9_98c9afb4a49b4033adaa1bf0caedf526"
+    },
+    "datasets": {
+      "sqc8107pmi001.229b7873c6f5.database.windows.net,CMXEDataCollection": {
+        "dataSources": {
+          "CMXE_MP": {
+            "tableName": "[dbo].[CMXE_MP]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "CMXE_MP"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "endpoints": [
+      "sqc8107pmi001.229b7873c6f5.database.windows.net,CMXEDataCollection"
+    ],
+    "id": "62083961-affe-4ac4-ae44-5862ef0b6ba5"
+  },
   "655ab65a-a2ff-451c-8e48-7655068acc7e": {
     "connectionRef": {
       "apiTier": "Standard",
