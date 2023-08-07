@@ -1,42 +1,73 @@
 Screen3 As screen:
 
-    Gallery10 As gallery.galleryVertical:
+    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
+        Height: =768
         Items: =ColeccionFilaSQL
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-        X: =240
-        Y: =84
+        TemplatePadding: =0
+        TemplateSize: =90
+        Width: =1366
         ZIndex: =1
 
-        Label15 As label:
+        Title2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             Text: =ThisItem.Nom_equipo
-            X: =244
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 86
+            X: =16
+            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
             ZIndex: =1
 
-        Label15_1 As label:
+        Subtitle2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Clas_Mantenimineto
-            X: =40
-            Y: =40
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Cond_Equipo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2.Width
+            X: =Title2.X
+            Y: =Title2.Y + Title2.Height
             ZIndex: =2
 
-        Label15_2 As label:
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Fecha_inicio
-            Width: =180
-            X: =40
-            Y: =80
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =3
 
-        Label15_3 As label:
-            Height: =41
+        Separator2 As rectangle:
+            Height: =8
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Fecha_Programada
-            Width: =180
-            X: =40
-            Y: =133
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
             ZIndex: =4
+
+        Rectangle6 As rectangle:
+            Height: =Parent.TemplateHeight - Separator2.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =5
 
