@@ -284,7 +284,7 @@
         BorderThickness: =0
         DisabledBorderColor: =RGBA(41, 191, 18, 1)
         Fill: =RGBA(152, 208, 70, 1)
-        OnSelect: =Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover)
+        OnSelect: =If(Label2_2.Text = "MP-MEPS-INP",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover))
         Text: ="Contestar "
         Width: =242
         X: =561
