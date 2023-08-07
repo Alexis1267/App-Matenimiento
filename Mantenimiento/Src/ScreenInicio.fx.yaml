@@ -38,9 +38,9 @@ ScreenInicio As screen:
         FontWeight: =FontWeight.Bold
         Height: =31
         Size: =14
-        Text: |+
-            =Text(Maquina)
-            
+        Text: |
+            =//Text(Maquina)
+            "MPC-277-3M-3"
         Width: =269
         X: =1060
         Y: =103
@@ -85,14 +85,14 @@ ScreenInicio As screen:
     Label3_31 As label:
         Align: =Align.Center
         Height: =35
-        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Proc_No)
+        Text: =//LookUp(CMXE_MP,Proc_No = Label2_15.Text,Proc_No)
         Y: =179
         ZIndex: =9
 
     Label4_31 As label:
         Align: =Align.Center
         Height: =35
-        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Nom_equipo)
+        Text: =//LookUp(CMXE_MP,Proc_No = Label2_15.Text,Nom_equipo)
         Width: =190
         X: =575
         Y: =184
