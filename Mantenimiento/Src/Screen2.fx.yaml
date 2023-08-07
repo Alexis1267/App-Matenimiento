@@ -73,9 +73,14 @@
         HoverContentColor: =RGBA(255, 255, 255, 1)
         HoverFillColor: =RGBA(47, 81, 151, 1)
         OnScan: |-
-            =Set(Maqui,First(BarcodeReader1_2.Barcodes).Value);
+            =Set(Maquina,First(BarcodeReader1_2.Barcodes).Value);
+            Navigate(ScreenInicio,ScreenTransition.Cover)
+            
+            
+            
+            //Set(Maqui,First(BarcodeReader1_2.Barcodes).Value);
             //ClearCollect(ColeccionFilaSQL,Filter(CMXE_MP,Proc_No=First(BarcodeReader1_2.Barcodes).Value))
-            Switch(First(BarcodeReader1_2.Barcodes).Value,
+            /*Switch(First(BarcodeReader1_2.Barcodes).Value,
             "MP-MEPS-INP",Navigate('MP-MEPS-INP',ScreenTransition.Cover), 
             "MP-MEPS-DK-IN",Navigate('MP-MEPS-DK-IN',ScreenTransition.Cover), 
             "MP-MEPS-DK-OUT",Navigate('MP-MEPS-DK-OUT',ScreenTransition.Cover),
@@ -88,7 +93,12 @@
             "MEPS1-04-2M-HIDRAULICO",Navigate('MEPS1-04-2M-HIDRAULICO',ScreenTransition.Cover),
             "MP-MEPS-RT-LB",Navigate('MP-MEPS-RT-LB',ScreenTransition.Cover),
             "MP-MEPS-GP-X2",Navigate('MP-MEPS-GP-X2',ScreenTransition.Cover),
-            Notify("Valor de código no reconocido", NotificationType.Error))
+            Notify("Valor de código no reconocido", NotificationType.Error))*/
+            
+            
+            
+            
+            
             
             
             //Switch(First(BarcodeReader1_2.Barcodes).Value)
