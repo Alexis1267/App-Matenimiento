@@ -3,6 +3,14 @@
     "connectionRef": {
       "authenticationType": "sqlAuthentication",
       "displayName": "SQL Server",
+      "executionRestrictions": {
+        "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
+        "apiVer": 2,
+        "appVer": "3.23074.15",
+        "modifiedOn": "2023-08-08 14:35:55",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp]\":[\"get\"]}}",
+        "version": 1
+      },
       "gatewayObjectIdHint": "07d9c54a-5560-4815-aeb5-b2183ad08d62",
       "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/sql-1644-2/1.0.1644.3343/sql/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_sql",
