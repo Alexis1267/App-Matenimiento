@@ -36,14 +36,14 @@ DatosMP As screen:
 
     Label2_15 As label:
         FontWeight: =FontWeight.Bold
-        Height: =31
+        Height: =25
         Size: =14
         Text: |
             =//Text(Maquina)
-            "MPC-277-3M-3"
-        Width: =269
-        X: =1060
-        Y: =103
+            "MEINS-05-30D"
+        Width: =160
+        X: =1169
+        Y: =109
         ZIndex: =5
 
     Label3_30 As label:
@@ -82,22 +82,6 @@ DatosMP As screen:
         Y: =146
         ZIndex: =8
 
-    Label3_31 As label:
-        Align: =Align.Center
-        Height: =35
-        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Proc_No)
-        Y: =179
-        ZIndex: =9
-
-    Label4_31 As label:
-        Align: =Align.Center
-        Height: =35
-        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Nom_equipo)
-        Width: =190
-        X: =575
-        Y: =184
-        ZIndex: =10
-
     Label5_31 As label:
         Align: =Align.Center
         Height: =35
@@ -110,7 +94,7 @@ DatosMP As screen:
         BorderThickness: =0
         DisabledBorderColor: =RGBA(41, 191, 18, 1)
         Fill: =RGBA(152, 208, 70, 1)
-        OnSelect: =If(Label2_15.Text = "MP-MEPS-INP",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover))
+        OnSelect: =If(Label2_15.Text = Maquina,Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
         Text: ="Contestar "
         Width: =242
         X: =561
@@ -155,9 +139,74 @@ DatosMP As screen:
         Y: =707
         ZIndex: =54
 
+    Label5_32 As label:
+        Align: =Align.Center
+        Height: =35
+        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Proc_No)
+        X: =7
+        Y: =183
+        ZIndex: =56
+
+    Label5_33 As label:
+        Align: =Align.Center
+        Height: =35
+        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Nom_equipo)
+        X: =608
+        Y: =183
+        ZIndex: =57
+
     Label7 As label:
-        Text: ="Text"
-        X: =683
-        Y: =361
-        ZIndex: =55
+        Text: ="Fecha Inicio"
+        X: =49
+        Y: =400
+        ZIndex: =58
+
+    Label7_12 As label:
+        Text: ="Fecha Programada"
+        Width: =184
+        X: =49
+        Y: =472
+        ZIndex: =59
+
+    Label7_13 As label:
+        Text: ="Clase de mantenimiento"
+        Width: =259
+        X: =25
+        Y: =262
+        ZIndex: =60
+
+    Label7_14 As label:
+        Text: ="Horas hombre"
+        Width: =259
+        X: =49
+        Y: =340
+        ZIndex: =61
+
+    Label8 As label:
+        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Clas_Mantenimineto)
+        X: =284
+        Y: =281
+        ZIndex: =62
+
+    Label8_1 As label:
+        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Horas_Hombre)
+        X: =199
+        Y: =340
+        ZIndex: =63
+
+    DatePicker3 As datepicker:
+        DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_inicio)
+        DisplayMode: =DisplayMode.Disabled
+        Width: =154
+        X: =195
+        Y: =400
+        ZIndex: =64
+
+    DatePicker3_1 As datepicker:
+        DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_Programada)
+        DisplayMode: =DisplayMode.Disabled
+        Width: =154
+        X: =233
+        Y: =472
+        ZIndex: =65
 

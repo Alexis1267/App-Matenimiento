@@ -122,72 +122,6 @@
         Y: =528
         ZIndex: =18
 
-    Label6_38 As label:
-        Align: =Align.Right
-        FontWeight: =FontWeight.Semibold
-        Height: =43
-        Text: |-
-            ="Prioridad:"
-        Width: =119
-        X: =581
-        Y: =257
-        ZIndex: =19
-
-    Label6_44 As label:
-        Align: =Align.Right
-        FontWeight: =FontWeight.Semibold
-        Height: =39
-        Text: |-
-            ="Tipo de Trabajo:"
-        Width: =184
-        X: =568
-        Y: =293
-        ZIndex: =20
-
-    Label6_52 As label:
-        Align: =Align.Right
-        FontWeight: =FontWeight.Semibold
-        Height: =39
-        Text: |-
-            ="Clase Mtto:"
-        Width: =184
-        X: =529
-        Y: =332
-        ZIndex: =21
-
-    Label6_55 As label:
-        Align: =Align.Right
-        FontWeight: =FontWeight.Semibold
-        Height: =39
-        Text: |-
-            ="Hrs. Maq. Prog:"
-        Width: =142
-        X: =602
-        Y: =370
-        ZIndex: =22
-
-    Label6_62 As label:
-        Align: =Align.Right
-        FontWeight: =FontWeight.Semibold
-        Height: =39
-        Text: |-
-            ="Hrs. Hom. Prog:"
-        Width: =141
-        X: =606
-        Y: =404
-        ZIndex: =23
-
-    Label6_66 As label:
-        Align: =Align.Right
-        FontWeight: =FontWeight.Semibold
-        Height: =39
-        Text: |-
-            ="Clasificación:"
-        Width: =128
-        X: =596
-        Y: =448
-        ZIndex: =24
-
     Label6_71 As label:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
@@ -582,6 +516,79 @@
             X: =16
             Y: =397
             ZIndex: =46
+
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =64
+
+        Label6_38 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =43
+            Text: |-
+                ="Prioridad:"
+            Width: =119
+            X: =581
+            Y: =257
+            ZIndex: =19
+
+        Label6_44 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Text: |-
+                ="Tipo de Trabajo:"
+            Width: =184
+            X: =568
+            Y: =293
+            ZIndex: =20
+
+        Label6_52 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Text: |-
+                ="Clase Mtto:"
+            Width: =184
+            X: =529
+            Y: =332
+            ZIndex: =21
+
+        Label6_55 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Text: |-
+                ="Hrs. Maq. Prog:"
+            Width: =142
+            X: =602
+            Y: =370
+            ZIndex: =22
+
+        Label6_62 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Text: |-
+                ="Hrs. Hom. Prog:"
+            Width: =141
+            X: =606
+            Y: =404
+            ZIndex: =23
+
+        Label6_66 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Text: |-
+                ="Clasificación:"
+            Width: =128
+            X: =596
+            Y: =448
+            ZIndex: =24
 
     Group5 As group:
         Height: =5
