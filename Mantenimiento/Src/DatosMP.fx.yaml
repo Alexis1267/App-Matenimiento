@@ -1,4 +1,4 @@
-ScreenInicio As screen:
+DatosMP As screen:
     OnVisible: =
 
     Rectangle1_60 As rectangle:
@@ -85,14 +85,14 @@ ScreenInicio As screen:
     Label3_31 As label:
         Align: =Align.Center
         Height: =35
-        Text: =//LookUp(CMXE_MP,Proc_No = Label2_15.Text,Proc_No)
+        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Proc_No)
         Y: =179
         ZIndex: =9
 
     Label4_31 As label:
         Align: =Align.Center
         Height: =35
-        Text: =//LookUp(CMXE_MP,Proc_No = Label2_15.Text,Nom_equipo)
+        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Nom_equipo)
         Width: =190
         X: =575
         Y: =184

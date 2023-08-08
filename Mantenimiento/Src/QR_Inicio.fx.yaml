@@ -1,4 +1,4 @@
-"Scan_Inicio As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
+"QR_Inicio As screen.'tabletAutoLayout_SplitScreen_ver1.0'":
     OnVisible: |-
         =UpdateContext({Line:-20})
 
@@ -74,7 +74,7 @@
         HoverFillColor: =RGBA(47, 81, 151, 1)
         OnScan: |-
             =Set(Maquina,First(BarcodeReader1_2.Barcodes).Value);
-            Navigate(ScreenInicio,ScreenTransition.Cover)
+            Navigate(DatosMP,ScreenTransition.Cover)
             
             
             
