@@ -146,7 +146,6 @@ DatosMP As screen:
         Height: =35
         Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Proc_No)
         Width: =188
-        X: =7
         Y: =183
         ZIndex: =56
 
@@ -163,8 +162,8 @@ DatosMP As screen:
         FontWeight: =FontWeight.Bold
         Text: |-
             ="Fecha Inicio:"
-        X: =20
-        Y: =403
+        X: =88
+        Y: =259
         ZIndex: =58
 
     Label7_12 As label:
@@ -172,8 +171,8 @@ DatosMP As screen:
         Text: |-
             ="Fecha Programada:"
         Width: =184
-        X: =20
-        Y: =464
+        X: =88
+        Y: =350
         ZIndex: =59
 
     Label7_13 As label:
@@ -181,8 +180,8 @@ DatosMP As screen:
         Text: |-
             ="Clase de mantenimiento:"
         Width: =259
-        X: =20
-        Y: =261
+        X: =419
+        Y: =433
         ZIndex: =60
 
     Label7_14 As label:
@@ -190,39 +189,71 @@ DatosMP As screen:
         Text: |-
             ="Horas hombre:"
         Width: =259
-        X: =20
-        Y: =340
+        X: =419
+        Y: =526
         ZIndex: =61
 
     Label8 As label:
         BorderThickness: =1
         Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Clas_Mantenimineto)
         Width: =254
-        X: =279
-        Y: =260
+        X: =419
+        Y: =473
         ZIndex: =62
 
     Label8_1 As label:
         BorderThickness: =1
         Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Horas_Hombre)
         Width: =254
-        X: =279
-        Y: =340
+        X: =419
+        Y: =566
         ZIndex: =63
 
     DatePicker3 As datepicker:
         DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_inicio)
         DisplayMode: =DisplayMode.Disabled
         Width: =254
-        X: =279
-        Y: =399
+        X: =88
+        Y: =299
         ZIndex: =64
 
     DatePicker3_1 As datepicker:
         DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_Programada)
         DisplayMode: =DisplayMode.Disabled
         Width: =254
-        X: =279
-        Y: =464
+        X: =88
+        Y: =390
         ZIndex: =65
+
+    Label7_15 As label:
+        FontWeight: =FontWeight.Bold
+        Text: ="Prioridad"
+        Width: =259
+        X: =419
+        Y: =244
+        ZIndex: =66
+
+    Label8_2 As label:
+        BorderThickness: =1
+        Text: ="Alta"
+        Width: =259
+        X: =419
+        Y: =284
+        ZIndex: =67
+
+    Label7_16 As label:
+        FontWeight: =FontWeight.Bold
+        Text: ="Clasificación"
+        Width: =259
+        X: =419
+        Y: =337
+        ZIndex: =68
+
+    Label8_3 As label:
+        BorderThickness: =1
+        Text: ="A"
+        Width: =254
+        X: =419
+        Y: =377
+        ZIndex: =69
 
