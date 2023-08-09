@@ -234,8 +234,9 @@ DatosMP As screen:
         ZIndex: =66
 
     Label8_2 As label:
+        BorderColor: =If(Label8_2.Text = "Alta", RGBA(239, 35, 60,1),Label8_2.Text = "Baja", RGBA(56, 176, 0,1))
         BorderThickness: =1
-        Text: ="Alta"
+        Text: ="Baja"
         Width: =259
         X: =419
         Y: =284
@@ -256,4 +257,21 @@ DatosMP As screen:
         X: =419
         Y: =377
         ZIndex: =69
+
+    Label7_17 As label:
+        FontWeight: =FontWeight.Bold
+        Text: |-
+            ="Fecha Proxima MP:"
+        Width: =184
+        X: =88
+        Y: =460
+        ZIndex: =70
+
+    DatePicker3_2 As datepicker:
+        DefaultDate: ="6/11"
+        DisplayMode: =DisplayMode.Disabled
+        Width: =254
+        X: =88
+        Y: =500
+        ZIndex: =71
 
