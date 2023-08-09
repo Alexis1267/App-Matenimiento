@@ -94,7 +94,7 @@ DatosMP As screen:
         BorderThickness: =0
         DisabledBorderColor: =RGBA(41, 191, 18, 1)
         Fill: =RGBA(152, 208, 70, 1)
-        OnSelect: =If(Label2_15.Text = Maquina,Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
+        OnSelect: =If(Label2_15.Text = "MEPS1-10-56D",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
         Text: ="Contestar "
         Width: =242
         X: =561
@@ -163,8 +163,8 @@ DatosMP As screen:
         FontWeight: =FontWeight.Bold
         Text: |-
             ="Fecha Inicio:"
-        X: =54
-        Y: =400
+        X: =20
+        Y: =403
         ZIndex: =58
 
     Label7_12 As label:
@@ -172,8 +172,8 @@ DatosMP As screen:
         Text: |-
             ="Fecha Programada:"
         Width: =184
-        X: =49
-        Y: =488
+        X: =20
+        Y: =464
         ZIndex: =59
 
     Label7_13 As label:
@@ -181,8 +181,8 @@ DatosMP As screen:
         Text: |-
             ="Clase de mantenimiento:"
         Width: =259
-        X: =49
-        Y: =260
+        X: =20
+        Y: =261
         ZIndex: =60
 
     Label7_14 As label:
@@ -190,39 +190,39 @@ DatosMP As screen:
         Text: |-
             ="Horas hombre:"
         Width: =259
-        X: =49
+        X: =20
         Y: =340
         ZIndex: =61
 
     Label8 As label:
         BorderThickness: =1
         Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Clas_Mantenimineto)
-        Width: =259
-        X: =285
-        Y: =261
+        Width: =254
+        X: =279
+        Y: =260
         ZIndex: =62
 
     Label8_1 As label:
         BorderThickness: =1
         Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Horas_Hombre)
         Width: =254
-        X: =54
-        Y: =369
+        X: =279
+        Y: =340
         ZIndex: =63
 
     DatePicker3 As datepicker:
         DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_inicio)
         DisplayMode: =DisplayMode.Disabled
-        Width: =154
-        X: =54
-        Y: =448
+        Width: =254
+        X: =279
+        Y: =399
         ZIndex: =64
 
     DatePicker3_1 As datepicker:
         DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_Programada)
         DisplayMode: =DisplayMode.Disabled
-        Width: =154
-        X: =54
-        Y: =528
+        Width: =254
+        X: =279
+        Y: =464
         ZIndex: =65
 
