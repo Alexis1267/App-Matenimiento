@@ -5,21 +5,21 @@ DatosMP As screen:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
         Width: =1366
-        ZIndex: =1
+        ZIndex: =2
 
     Rectangle2_383 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =35
         Width: =1366
         Y: =146
-        ZIndex: =2
+        ZIndex: =3
 
     Rectangle2_384 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
         Width: =1366
         Y: =216
-        ZIndex: =3
+        ZIndex: =4
 
     Label1_16 As label:
         Align: =Align.Center
@@ -32,7 +32,7 @@ DatosMP As screen:
             MANTENIMIENTO PREVENTIVO ACTIVO"
         Width: =527
         X: =419
-        ZIndex: =4
+        ZIndex: =5
 
     Label2_15 As label:
         FontWeight: =FontWeight.Bold
@@ -40,11 +40,11 @@ DatosMP As screen:
         Size: =14
         Text: |
             =//Text(Maquina)
-            "MEPS1-10-56D"
+            "MEINS-05-30D"
         Width: =160
         X: =1169
         Y: =109
-        ZIndex: =5
+        ZIndex: =6
 
     Label3_30 As label:
         Align: =Align.Center
@@ -55,7 +55,7 @@ DatosMP As screen:
         Text: ="Activo No."
         X: =7
         Y: =148
-        ZIndex: =6
+        ZIndex: =7
 
     Label4_30 As label:
         Align: =Align.Center
@@ -67,7 +67,7 @@ DatosMP As screen:
         Width: =190
         X: =596
         Y: =148
-        ZIndex: =7
+        ZIndex: =8
 
     Label5_30 As label:
         Align: =Align.Center
@@ -80,7 +80,7 @@ DatosMP As screen:
             "
         X: =1155
         Y: =146
-        ZIndex: =8
+        ZIndex: =9
 
     Label5_31 As label:
         Align: =Align.Center
@@ -88,25 +88,26 @@ DatosMP As screen:
         Text: ="PRENSAS"
         X: =1155
         Y: =181
-        ZIndex: =11
+        ZIndex: =10
 
     Button1_15 As button:
         BorderThickness: =0
         DisabledBorderColor: =RGBA(41, 191, 18, 1)
-        Fill: =RGBA(152, 208, 70, 1)
+        Fill: =RGBA(97, 181, 73, 1)
+        FontWeight: =FontWeight.Bold
         OnSelect: =If(Label2_15.Text = "MEPS1-10-56D",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
         Text: ="Contestar "
         Width: =242
         X: =561
         Y: =712
-        ZIndex: =39
+        ZIndex: =11
 
     Rectangle2_386 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
         Width: =1366
         Y: =623
-        ZIndex: =40
+        ZIndex: =12
 
     Image2_59 As image:
         Height: =53
@@ -114,7 +115,7 @@ DatosMP As screen:
         Width: =209
         X: =1155
         Y: =19
-        ZIndex: =42
+        ZIndex: =13
 
     Timer2_13 As timer:
         AutoPause: =false
@@ -127,7 +128,7 @@ DatosMP As screen:
             =false
         X: =1169
         Y: =259
-        ZIndex: =53
+        ZIndex: =14
 
     Button5_13 As button:
         Color: =RGBA(0, 0, 0, 1)
@@ -139,7 +140,7 @@ DatosMP As screen:
         Visible: =false
         X: =1155
         Y: =707
-        ZIndex: =54
+        ZIndex: =15
 
     Label5_32 As label:
         Align: =Align.Center
@@ -147,7 +148,7 @@ DatosMP As screen:
         Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Proc_No)
         Width: =188
         Y: =183
-        ZIndex: =56
+        ZIndex: =16
 
     Label5_33 As label:
         Align: =Align.Center
@@ -156,122 +157,219 @@ DatosMP As screen:
         Width: =195
         X: =585
         Y: =181
-        ZIndex: =57
+        ZIndex: =17
 
-    Label7 As label:
+    Rectangle2_389 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =3
+        Width: =1366
+        Y: =329
+        ZIndex: =29
+
+    Label7_25 As label:
         FontWeight: =FontWeight.Bold
         Text: |-
-            ="Fecha Inicio:"
-        X: =88
-        Y: =259
-        ZIndex: =58
+            ="Proc. No.:"
+        Width: =101
+        X: =1068
+        Y: =99
+        ZIndex: =30
 
-    Label7_12 As label:
-        FontWeight: =FontWeight.Bold
-        Text: |-
-            ="Fecha Programada:"
-        Width: =184
-        X: =88
-        Y: =350
-        ZIndex: =59
+    Group7 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =33
 
-    Label7_13 As label:
-        FontWeight: =FontWeight.Bold
-        Text: |-
-            ="Clase de mantenimiento:"
-        Width: =259
-        X: =419
-        Y: =433
-        ZIndex: =60
+        DatePicker3_1 As datepicker:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_Programada)
+            DisplayMode: =DisplayMode.Disabled
+            Width: =254
+            X: =307
+            Y: =276
+            ZIndex: =23
 
-    Label7_14 As label:
-        FontWeight: =FontWeight.Bold
-        Text: |-
-            ="Horas hombre:"
-        Width: =259
-        X: =419
-        Y: =526
-        ZIndex: =61
+        Label7_12 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Text: |-
+                ="Fecha Programada:"
+            Width: =254
+            X: =307
+            Y: =236
+            ZIndex: =32
 
-    Label8 As label:
-        BorderThickness: =1
-        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Clas_Mantenimineto)
-        Width: =254
-        X: =419
-        Y: =473
-        ZIndex: =62
+    Group8 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =33
 
-    Label8_1 As label:
-        BorderThickness: =1
-        Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Horas_Hombre)
-        Width: =254
-        X: =419
-        Y: =566
-        ZIndex: =63
+        DatePicker3_2 As datepicker:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            DefaultDate: ="6/11"
+            DisplayMode: =DisplayMode.Disabled
+            Width: =254
+            X: =591
+            Y: =276
+            ZIndex: =28
 
-    DatePicker3 As datepicker:
-        DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_inicio)
-        DisplayMode: =DisplayMode.Disabled
-        Width: =254
-        X: =88
-        Y: =299
-        ZIndex: =64
+        Label7_17 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Text: |-
+                ="Fecha Proxima MP:"
+            Width: =254
+            X: =591
+            Y: =236
+            ZIndex: =31
 
-    DatePicker3_1 As datepicker:
-        DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_Programada)
-        DisplayMode: =DisplayMode.Disabled
-        Width: =254
-        X: =88
-        Y: =390
-        ZIndex: =65
+    Group1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =74
 
-    Label7_15 As label:
-        FontWeight: =FontWeight.Bold
-        Text: ="Prioridad"
-        Width: =259
-        X: =419
-        Y: =244
-        ZIndex: =66
+        Label7_15 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Text: |-
+                ="Prioridad:"
+            Width: =254
+            X: =18
+            Y: =345
+            ZIndex: =24
 
-    Label8_2 As label:
-        BorderColor: =If(Label8_2.Text = "Alta", RGBA(239, 35, 60,1),Label8_2.Text = "Baja", RGBA(56, 176, 0,1))
-        BorderThickness: =1
-        Text: ="Baja"
-        Width: =259
-        X: =419
-        Y: =284
-        ZIndex: =67
+        Label8_2 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Fill: =If(Label8_2.Text = "Alta", RGBA(239, 35, 60,1),Label8_2.Text = "Baja", RGBA(56, 176, 0,1))
+            LineHeight: |
+                =1.2
+            Text: ="Baja"
+            Width: =254
+            X: =18
+            Y: =385
+            ZIndex: =25
 
-    Label7_16 As label:
-        FontWeight: =FontWeight.Bold
-        Text: ="Clasificación"
-        Width: =259
-        X: =419
-        Y: =337
-        ZIndex: =68
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =74
 
-    Label8_3 As label:
-        BorderThickness: =1
-        Text: ="A"
-        Width: =254
-        X: =419
-        Y: =377
-        ZIndex: =69
+        Label7_13 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Text: |-
+                ="Clase de mantenimiento:"
+            Width: =254
+            X: =307
+            Y: =345
+            ZIndex: =19
 
-    Label7_17 As label:
-        FontWeight: =FontWeight.Bold
-        Text: |-
-            ="Fecha Proxima MP:"
-        Width: =184
-        X: =88
-        Y: =460
-        ZIndex: =70
+        Label8 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Fill: =RGBA(237, 237, 237, 1)
+            Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Clas_Mantenimineto)
+            Width: =254
+            X: =307
+            Y: =385
+            ZIndex: =21
 
-    DatePicker3_2 As datepicker:
-        DefaultDate: ="6/11"
-        DisplayMode: =DisplayMode.Disabled
-        Width: =254
-        X: =88
-        Y: =500
-        ZIndex: =71
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =74
+
+        Label7_16 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Text: |-
+                ="Clasificación:"
+            Width: =254
+            X: =18
+            Y: =438
+            ZIndex: =26
+
+        Label8_3 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Fill: =RGBA(237, 237, 237, 1)
+            Text: ="A"
+            Width: =254
+            X: =18
+            Y: =478
+            ZIndex: =27
+
+    Group4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =74
+
+        Label7_14 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Text: |-
+                ="Horas hombre:"
+            Width: =254
+            X: =18
+            Y: =527
+            ZIndex: =20
+
+        Label8_1 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Fill: =RGBA(237, 237, 237, 1)
+            Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Horas_Hombre)
+            Width: =254
+            X: =18
+            Y: =567
+            ZIndex: =22
+
+    Group6 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =74
+
+        DatePicker3 As datepicker:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_inicio)
+            DisplayMode: =DisplayMode.Disabled
+            Width: =254
+            X: =18
+            Y: =276
+            ZIndex: =1
+
+        Label7 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Text: |-
+                ="Fecha Inicio:"
+            Width: =254
+            X: =18
+            Y: =236
+            ZIndex: =18
 

@@ -195,6 +195,7 @@ DatosMP_1 As screen:
 
     Label8_4 As label:
         BorderThickness: =1
+        Fill: =RGBA(237, 237, 237, 1)
         Text: =LookUp(CMXE_MP,Proc_No = Label2_17.Text,Clas_Mantenimineto)
         Width: =254
         X: =307
@@ -203,6 +204,7 @@ DatosMP_1 As screen:
 
     Label8_6 As label:
         BorderThickness: =1
+        Fill: =RGBA(237, 237, 237, 1)
         Text: =LookUp(CMXE_MP,Proc_No = Label2_17.Text,Horas_Hombre)
         Width: =254
         X: =306
@@ -236,6 +238,7 @@ DatosMP_1 As screen:
     Label8_5 As label:
         BorderColor: =If(Label8_5.Text = "Alta", RGBA(239, 35, 60,1),Label8_5.Text = "Baja", RGBA(56, 176, 0,1))
         BorderThickness: =1
+        Fill: =RGBA(237, 237, 237, 1)
         Text: ="Baja"
         Width: =259
         X: =307
@@ -252,6 +255,7 @@ DatosMP_1 As screen:
 
     Label8_7 As label:
         BorderThickness: =1
+        Fill: =RGBA(237, 237, 237, 1)
         Text: ="A"
         Width: =254
         X: =1001
