@@ -40,7 +40,7 @@ DatosMP As screen:
         Size: =14
         Text: |
             =//Text(Maquina)
-            "MEINS-05-30D"
+            "MEPS1-10-56D"
         Width: =160
         X: =1169
         Y: =109
@@ -86,8 +86,8 @@ DatosMP As screen:
         Align: =Align.Center
         Height: =35
         Text: ="PRENSAS"
-        X: =1136
-        Y: =179
+        X: =1155
+        Y: =181
         ZIndex: =11
 
     Button1_15 As button:
@@ -105,7 +105,7 @@ DatosMP As screen:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
         Width: =1366
-        Y: =664
+        Y: =623
         ZIndex: =40
 
     Image2_59 As image:
@@ -123,6 +123,8 @@ DatosMP As screen:
         OnTimerStart: =TimerGo
         Reset: =true
         Start: =TimerGo
+        Visible: |
+            =false
         X: =1169
         Y: =259
         ZIndex: =53
@@ -143,70 +145,84 @@ DatosMP As screen:
         Align: =Align.Center
         Height: =35
         Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Proc_No)
+        Width: =188
         X: =7
         Y: =183
         ZIndex: =56
 
     Label5_33 As label:
         Align: =Align.Center
-        Height: =35
+        Height: =39
         Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Nom_equipo)
-        X: =608
-        Y: =183
+        Width: =195
+        X: =585
+        Y: =181
         ZIndex: =57
 
     Label7 As label:
-        Text: ="Fecha Inicio"
-        X: =49
+        FontWeight: =FontWeight.Bold
+        Text: |-
+            ="Fecha Inicio:"
+        X: =54
         Y: =400
         ZIndex: =58
 
     Label7_12 As label:
-        Text: ="Fecha Programada"
+        FontWeight: =FontWeight.Bold
+        Text: |-
+            ="Fecha Programada:"
         Width: =184
         X: =49
-        Y: =472
+        Y: =488
         ZIndex: =59
 
     Label7_13 As label:
-        Text: ="Clase de mantenimiento"
+        FontWeight: =FontWeight.Bold
+        Text: |-
+            ="Clase de mantenimiento:"
         Width: =259
-        X: =25
-        Y: =262
+        X: =49
+        Y: =260
         ZIndex: =60
 
     Label7_14 As label:
-        Text: ="Horas hombre"
+        FontWeight: =FontWeight.Bold
+        Text: |-
+            ="Horas hombre:"
         Width: =259
         X: =49
         Y: =340
         ZIndex: =61
 
     Label8 As label:
+        BorderThickness: =1
         Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Clas_Mantenimineto)
-        X: =284
-        Y: =281
+        Width: =259
+        X: =285
+        Y: =261
         ZIndex: =62
 
     Label8_1 As label:
+        BorderThickness: =1
         Text: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Horas_Hombre)
-        X: =199
-        Y: =340
+        Width: =254
+        X: =54
+        Y: =369
         ZIndex: =63
 
     DatePicker3 As datepicker:
         DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_inicio)
         DisplayMode: =DisplayMode.Disabled
         Width: =154
-        X: =195
-        Y: =400
+        X: =54
+        Y: =448
         ZIndex: =64
 
     DatePicker3_1 As datepicker:
         DefaultDate: =LookUp(CMXE_MP,Proc_No = Label2_15.Text,Fecha_Programada)
         DisplayMode: =DisplayMode.Disabled
         Width: =154
-        X: =233
-        Y: =472
+        X: =54
+        Y: =528
         ZIndex: =65
 
