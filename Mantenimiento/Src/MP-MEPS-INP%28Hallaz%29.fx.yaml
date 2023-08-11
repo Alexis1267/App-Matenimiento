@@ -80,7 +80,7 @@
 
     UploadedImage1 As image:
         Height: =AddMediaButton1.Height
-        Image: =
+        Image: =Camera
         Width: =AddMediaButton1.Width
         X: =AddMediaButton1.X
         Y: =AddMediaButton1.Y
@@ -98,13 +98,13 @@
             Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
             ImagePosition: =ImagePosition.Fill
             Width: =AddMediaButton1.Width
-            X: =AddMediaButton1.X
-            Y: =AddMediaButton1.Y
+            X: =520
+            Y: =120
             ZIndex: =16
 
         AddMediaButton1 As addMedia:
             Size: =25
-            X: =519
-            Y: =131
+            X: =520
+            Y: =120
             ZIndex: =17
 
