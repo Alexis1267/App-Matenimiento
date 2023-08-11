@@ -1,11 +1,25 @@
 DatosMP As screen:
     OnVisible: =
 
+    Rectangle1_63 As rectangle:
+        Fill: =RGBA(204, 208, 225, 1)
+        Height: =36
+        Width: =229
+        Y: =339
+        ZIndex: =1
+
+    Rectangle1_62 As rectangle:
+        Fill: =RGBA(204, 208, 225, 1)
+        Height: =36
+        Width: =307
+        Y: =102
+        ZIndex: =2
+
     Rectangle1_60 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
         Width: =1366
-        ZIndex: =2
+        ZIndex: =4
 
     Label1_16 As label:
         Align: =Align.Center
@@ -30,14 +44,15 @@ DatosMP As screen:
         Width: =242
         X: =561
         Y: =712
-        ZIndex: =11
+        ZIndex: =6
 
     Rectangle2_386 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(0, 0, 0, 1)
         Height: =2
         Width: =1366
         Y: =692
-        ZIndex: =12
+        ZIndex: =7
 
     Image2_59 As image:
         Height: =58
@@ -45,7 +60,7 @@ DatosMP As screen:
         Width: =194
         X: =1138
         Y: =17
-        ZIndex: =13
+        ZIndex: =8
 
     Timer2_13 As timer:
         AutoPause: =false
@@ -58,7 +73,7 @@ DatosMP As screen:
             =false
         X: =1169
         Y: =259
-        ZIndex: =14
+        ZIndex: =9
 
     Button5_13 As button:
         Color: =RGBA(0, 0, 0, 1)
@@ -70,7 +85,27 @@ DatosMP As screen:
         Visible: =false
         X: =1155
         Y: =707
-        ZIndex: =15
+        ZIndex: =10
+
+    Label1_18 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =20
+        Text: ="Datos de la Maquina"
+        Width: =284
+        X: =23
+        Y: =102
+        ZIndex: =32
+
+    Label1_19 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =20
+        Text: ="Datos del MP"
+        Width: =254
+        X: =23
+        Y: =339
+        ZIndex: =33
 
     Group7 As group:
         Height: =5
@@ -87,18 +122,19 @@ DatosMP As screen:
             Width: =254
             X: =342
             Y: =426
-            ZIndex: =23
+            ZIndex: =16
 
         Label7_12 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: |-
                 ="Fecha Programada:"
             Width: =254
             X: =342
             Y: =386
-            ZIndex: =32
+            ZIndex: =23
 
     Group8 As group:
         Height: =5
@@ -115,18 +151,19 @@ DatosMP As screen:
             Width: =254
             X: =662
             Y: =426
-            ZIndex: =28
+            ZIndex: =21
 
         Label7_17 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: |-
                 ="Fecha Proxima MP:"
             Width: =254
             X: =662
             Y: =386
-            ZIndex: =31
+            ZIndex: =22
 
     Group2_1 As group:
         Height: =5
@@ -138,6 +175,7 @@ DatosMP As screen:
         Label7_26 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Height: =61
             Text: |-
@@ -145,12 +183,12 @@ DatosMP As screen:
             Width: =118
             X: =23
             Y: =148
-            ZIndex: =33
+            ZIndex: =24
 
         Label8_8 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(219, 219, 219, 1)
             Height: =61
             Text: |-
                 =//Text(Maquina)
@@ -158,7 +196,7 @@ DatosMP As screen:
             Width: =237
             X: =135
             Y: =148
-            ZIndex: =34
+            ZIndex: =25
 
     Group3_1 As group:
         Height: =5
@@ -170,23 +208,32 @@ DatosMP As screen:
         Label7_25 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: |-
                 ="Activo No:"
             Width: =254
             X: =23
             Y: =224
-            ZIndex: =35
+            ZIndex: =26
 
         Label8_9 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(219, 219, 219, 1)
             Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Proc_No)
             Width: =254
             X: =23
             Y: =264
-            ZIndex: =36
+            ZIndex: =27
+
+    Rectangle2_389 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =2
+        Width: =1366
+        Y: =324
+        ZIndex: =38
 
     Group3_2 As group:
         Height: =5
@@ -198,32 +245,23 @@ DatosMP As screen:
         Label7_27 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: ="Nombre del Activo"
             Width: =254
             X: =342
             Y: =224
-            ZIndex: =37
+            ZIndex: =28
 
         Label8_10 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(219, 219, 219, 1)
             Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Nom_equipo)
             Width: =254
             X: =342
             Y: =264
-            ZIndex: =38
-
-    Label1_18 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =36
-        Size: =20
-        Text: ="Datos de la Maquina"
-        Width: =349
-        X: =23
-        Y: =102
-        ZIndex: =41
+            ZIndex: =29
 
     Group3_3 As group:
         Height: =5
@@ -235,39 +273,23 @@ DatosMP As screen:
         Label7_28 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: ="Localización"
             Width: =254
             X: =662
             Y: =224
-            ZIndex: =39
+            ZIndex: =30
 
         Label8_11 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(219, 219, 219, 1)
             Text: ="Prensas"
             Width: =254
             X: =662
             Y: =264
-            ZIndex: =40
-
-    Rectangle2_389 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
-        Height: =2
-        Width: =1366
-        Y: =328
-        ZIndex: =42
-
-    Label1_19 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =36
-        Size: =20
-        Text: ="Datos del MP"
-        Width: =254
-        X: =23
-        Y: =339
-        ZIndex: =43
+            ZIndex: =31
 
     Group4_1 As group:
         Height: =5
@@ -279,24 +301,25 @@ DatosMP As screen:
         Label7_29 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: |-
                 ="Descripción:"
             Width: =396
             X: =23
             Y: =599
-            ZIndex: =44
+            ZIndex: =34
 
         Label8_12 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(219, 219, 219, 1)
             Size: =12
             Text: ="MANTENIMIENTO PREVENTIVO CENTRO DE PUNZONADO CONSOLAS Y1,Y2,Y3,Y4"
             Width: =396
             X: =23
             Y: =639
-            ZIndex: =45
+            ZIndex: =35
 
     Group3_4 As group:
         Height: =5
@@ -308,23 +331,24 @@ DatosMP As screen:
         Label7_30 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: |-
                 ="Asignado a:"
             Width: =254
             X: =452
             Y: =599
-            ZIndex: =46
+            ZIndex: =36
 
         Label8_13 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(219, 219, 219, 1)
             Text: ="Alexis Silva"
             Width: =254
             X: =452
             Y: =639
-            ZIndex: =47
+            ZIndex: =37
 
     Group1 As group:
         Height: =5
@@ -336,13 +360,14 @@ DatosMP As screen:
         Label7_15 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: |-
                 ="Prioridad:"
             Width: =254
             X: =23
             Y: =492
-            ZIndex: =24
+            ZIndex: =17
 
         Label8_2 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -354,7 +379,7 @@ DatosMP As screen:
             Width: =254
             X: =23
             Y: =532
-            ZIndex: =25
+            ZIndex: =18
 
     Group2 As group:
         Height: =5
@@ -366,23 +391,24 @@ DatosMP As screen:
         Label7_13 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: |-
                 ="Clase de Mantenimiento:"
             Width: =254
             X: =307
             Y: =492
-            ZIndex: =19
+            ZIndex: =12
 
         Label8 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(219, 219, 219, 1)
             Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Clas_Mantenimineto)
             Width: =254
             X: =307
             Y: =532
-            ZIndex: =21
+            ZIndex: =14
 
     Group3 As group:
         Height: =5
@@ -394,23 +420,24 @@ DatosMP As screen:
         Label7_16 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: |-
                 ="Clasificación:"
             Width: =254
             X: =596
             Y: =492
-            ZIndex: =26
+            ZIndex: =19
 
         Label8_3 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(219, 219, 219, 1)
             Text: ="A"
             Width: =254
             X: =596
             Y: =532
-            ZIndex: =27
+            ZIndex: =20
 
     Group4 As group:
         Height: =5
@@ -422,23 +449,24 @@ DatosMP As screen:
         Label7_14 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: |-
                 ="Horas Hombre:"
             Width: =254
             X: =882
             Y: =492
-            ZIndex: =20
+            ZIndex: =13
 
         Label8_1 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(219, 219, 219, 1)
             Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Horas_Hombre)
             Width: =254
             X: =882
             Y: =532
-            ZIndex: =22
+            ZIndex: =15
 
     Group6 As group:
         Height: =5
@@ -455,16 +483,17 @@ DatosMP As screen:
             Width: =254
             X: =23
             Y: =426
-            ZIndex: =1
+            ZIndex: =3
 
         Label7 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            Fill: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Text: |-
                 ="Fecha Inicio:"
             Width: =254
             X: =23
             Y: =386
-            ZIndex: =18
+            ZIndex: =11
 
