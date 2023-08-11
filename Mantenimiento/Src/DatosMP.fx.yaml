@@ -36,7 +36,7 @@ DatosMP As screen:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =2
         Width: =1366
-        Y: =684
+        Y: =588
         ZIndex: =12
 
     Image2_59 As image:
@@ -86,7 +86,7 @@ DatosMP As screen:
             DisplayMode: =DisplayMode.Disabled
             Width: =254
             X: =342
-            Y: =145
+            Y: =426
             ZIndex: =23
 
         Label7_12 As label:
@@ -97,7 +97,7 @@ DatosMP As screen:
                 ="Fecha Programada:"
             Width: =254
             X: =342
-            Y: =105
+            Y: =386
             ZIndex: =32
 
     Group8 As group:
@@ -114,7 +114,7 @@ DatosMP As screen:
             DisplayMode: =DisplayMode.Disabled
             Width: =254
             X: =662
-            Y: =145
+            Y: =426
             ZIndex: =28
 
         Label7_17 As label:
@@ -125,7 +125,7 @@ DatosMP As screen:
                 ="Fecha Proxima MP:"
             Width: =254
             X: =662
-            Y: =105
+            Y: =386
             ZIndex: =31
 
     Group2_1 As group:
@@ -144,7 +144,7 @@ DatosMP As screen:
                 ="Proc.No.:"
             Width: =118
             X: =23
-            Y: =248
+            Y: =148
             ZIndex: =33
 
         Label8_8 As label:
@@ -154,10 +154,10 @@ DatosMP As screen:
             Height: =61
             Text: |-
                 =//Text(Maquina)
-                "MEINS-05-30D"
+                "MEPS1-10-56D"
             Width: =237
             X: =135
-            Y: =248
+            Y: =148
             ZIndex: =34
 
     Group3_1 As group:
@@ -175,7 +175,7 @@ DatosMP As screen:
                 ="Activo No:"
             Width: =254
             X: =23
-            Y: =324
+            Y: =224
             ZIndex: =35
 
         Label8_9 As label:
@@ -185,7 +185,7 @@ DatosMP As screen:
             Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Proc_No)
             Width: =254
             X: =23
-            Y: =364
+            Y: =264
             ZIndex: =36
 
     Group3_2 As group:
@@ -202,7 +202,7 @@ DatosMP As screen:
             Text: ="Nombre del Activo"
             Width: =254
             X: =342
-            Y: =324
+            Y: =224
             ZIndex: =37
 
         Label8_10 As label:
@@ -212,7 +212,7 @@ DatosMP As screen:
             Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Nom_equipo)
             Width: =254
             X: =342
-            Y: =364
+            Y: =264
             ZIndex: =38
 
     Label1_18 As label:
@@ -222,7 +222,7 @@ DatosMP As screen:
         Text: ="Datos de la Maquina"
         Width: =349
         X: =23
-        Y: =204
+        Y: =104
         ZIndex: =41
 
     Group3_3 As group:
@@ -239,7 +239,7 @@ DatosMP As screen:
             Text: ="Localización"
             Width: =254
             X: =662
-            Y: =324
+            Y: =224
             ZIndex: =39
 
         Label8_11 As label:
@@ -249,14 +249,14 @@ DatosMP As screen:
             Text: ="Prensas"
             Width: =254
             X: =662
-            Y: =364
+            Y: =264
             ZIndex: =40
 
     Rectangle2_389 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =2
         Width: =1366
-        Y: =420
+        Y: =328
         ZIndex: =42
 
     Label1_19 As label:
@@ -266,15 +266,8 @@ DatosMP As screen:
         Text: ="Datos del MP"
         Width: =254
         X: =23
-        Y: =427
+        Y: =344
         ZIndex: =43
-
-    Rectangle2_390 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
-        Height: =2
-        Width: =1366
-        Y: =198
-        ZIndex: =44
 
     Group1 As group:
         Height: =5
@@ -291,19 +284,19 @@ DatosMP As screen:
                 ="Prioridad:"
             Width: =254
             X: =23
-            Y: =476
+            Y: =492
             ZIndex: =24
 
         Label8_2 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =If(Label8_2.Text = "Alta", RGBA(239, 35, 60,1),Label8_2.Text = "Baja", RGBA(56, 176, 0,1))
+            Fill: =If(Label8_2.Text = "Alta", RGBA(239, 35, 60,1),Label8_2.Text = "Baja", RGBA(56, 176, 0,1),Label8_2.Text = "Media", RGBA(233, 165, 43,1))
             LineHeight: |
                 =1.2
-            Text: ="Baja"
+            Text: ="Media"
             Width: =254
             X: =23
-            Y: =516
+            Y: =532
             ZIndex: =25
 
     Group2 As group:
@@ -321,7 +314,7 @@ DatosMP As screen:
                 ="Clase de Mantenimiento:"
             Width: =254
             X: =307
-            Y: =476
+            Y: =492
             ZIndex: =19
 
         Label8 As label:
@@ -331,7 +324,7 @@ DatosMP As screen:
             Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Clas_Mantenimineto)
             Width: =254
             X: =307
-            Y: =516
+            Y: =532
             ZIndex: =21
 
     Group3 As group:
@@ -349,7 +342,7 @@ DatosMP As screen:
                 ="Clasificación:"
             Width: =254
             X: =596
-            Y: =476
+            Y: =492
             ZIndex: =26
 
         Label8_3 As label:
@@ -359,7 +352,7 @@ DatosMP As screen:
             Text: ="A"
             Width: =254
             X: =596
-            Y: =516
+            Y: =532
             ZIndex: =27
 
     Group4 As group:
@@ -377,7 +370,7 @@ DatosMP As screen:
                 ="Horas Hombre:"
             Width: =254
             X: =882
-            Y: =476
+            Y: =492
             ZIndex: =20
 
         Label8_1 As label:
@@ -387,7 +380,7 @@ DatosMP As screen:
             Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Horas_Hombre)
             Width: =254
             X: =882
-            Y: =516
+            Y: =532
             ZIndex: =22
 
     Group6 As group:
@@ -404,7 +397,7 @@ DatosMP As screen:
             DisplayMode: =DisplayMode.Disabled
             Width: =254
             X: =23
-            Y: =145
+            Y: =426
             ZIndex: =1
 
         Label7 As label:
@@ -415,6 +408,6 @@ DatosMP As screen:
                 ="Fecha Inicio:"
             Width: =254
             X: =23
-            Y: =105
+            Y: =386
             ZIndex: =18
 
