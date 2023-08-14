@@ -28,7 +28,7 @@
     "dependents": [],
     "id": "655ab65a-a2ff-451c-8e48-7655068acc7e"
   },
-  "7057e653-ec12-4932-bc08-c369b93c6e7e": {
+  "7b9ad2af-db46-41f7-8f32-d1490edaf295": {
     "connectionRef": {
       "authenticationType": "sqlAuthentication",
       "displayName": "SQL Server",
@@ -36,7 +36,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23074.17",
-        "modifiedOn": "2023-08-14 13:37:42",
+        "modifiedOn": "2023-08-14 13:47:38",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp]\":[\"get\"]}}",
         "version": 1
       },
@@ -64,6 +64,6 @@
     "endpoints": [
       "vmc8107da003,CMXEDataCollection"
     ],
-    "id": "7057e653-ec12-4932-bc08-c369b93c6e7e"
+    "id": "7b9ad2af-db46-41f7-8f32-d1490edaf295"
   }
 }
