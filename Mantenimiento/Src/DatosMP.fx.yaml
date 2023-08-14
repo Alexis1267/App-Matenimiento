@@ -2,14 +2,14 @@ DatosMP As screen:
     OnVisible: =
 
     Rectangle1_63 As rectangle:
-        Fill: =RGBA(204, 208, 225, 1)
+        Fill: =RGBA(116, 116, 116, 1)
         Height: =36
         Width: =229
         Y: =339
         ZIndex: =1
 
     Rectangle1_62 As rectangle:
-        Fill: =RGBA(204, 208, 225, 1)
+        Fill: =RGBA(116, 116, 116, 1)
         Height: =36
         Width: =322
         Y: =102
@@ -67,6 +67,7 @@ DatosMP As screen:
         ZIndex: =10
 
     Label1_18 As label:
+        Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =36
         Size: =20
@@ -77,6 +78,7 @@ DatosMP As screen:
         ZIndex: =32
 
     Label1_19 As label:
+        Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =36
         Size: =20
@@ -165,6 +167,7 @@ DatosMP As screen:
             ZIndex: =24
 
         Label8_8 As label:
+            Align: =Align.Center
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Fill: =RGBA(219, 219, 219, 1)
