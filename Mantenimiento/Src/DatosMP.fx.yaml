@@ -57,7 +57,7 @@ DatosMP As screen:
         Text: ="Contestar "
         Width: =242
         X: =561
-        Y: =728
+        Y: =712
         ZIndex: =8
 
     Image2_59 As image:
@@ -171,6 +171,7 @@ DatosMP As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Fill: =RGBA(166, 166, 166, 1)
+            Font: =Font.Arial
             FontWeight: =FontWeight.Bold
             Height: =61
             Text: |-
@@ -185,6 +186,7 @@ DatosMP As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Fill: =RGBA(219, 219, 219, 1)
+            Font: =Font.Arial
             Height: =61
             Text: |-
                 =//Text(Maquina)
@@ -391,7 +393,7 @@ DatosMP As screen:
         Label8 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(237, 237, 237, 1)
             Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Clas_Mantenimineto)
             Width: =254
             X: =307
