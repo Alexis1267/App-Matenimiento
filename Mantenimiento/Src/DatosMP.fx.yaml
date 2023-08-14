@@ -260,6 +260,16 @@ DatosMP As screen:
         Y: =102
         ZIndex: =40
 
+    Icon2 As icon.Information:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =40
+        Icon: =Icon.Information
+        OnSelect: =Notify("Fecha en la que se creo el MP",NotificationType.Information)
+        Width: =30
+        X: =247
+        Y: =365
+        ZIndex: =41
+
     Group3_3 As group:
         Height: =5
         Width: =5
