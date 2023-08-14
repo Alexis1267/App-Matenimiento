@@ -2,6 +2,8 @@ DatosMP As screen:
     OnVisible: =
 
     Rectangle1_65 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
         Fill: =RGBA(166, 166, 166, 1)
         Height: =18
         Width: =1366
@@ -9,6 +11,8 @@ DatosMP As screen:
         ZIndex: =1
 
     Rectangle1_64 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
         Fill: =RGBA(166, 166, 166, 1)
         Height: =18
         Width: =1366
@@ -16,6 +20,7 @@ DatosMP As screen:
         ZIndex: =2
 
     Rectangle1_63 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(116, 116, 116, 1)
         Height: =36
         Width: =229
