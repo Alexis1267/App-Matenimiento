@@ -62,19 +62,6 @@ DatosMP As screen:
         Y: =17
         ZIndex: =8
 
-    Timer2_13 As timer:
-        AutoPause: =false
-        AutoStart: =TimerGo
-        OnTimerEnd: =TimerGo 
-        OnTimerStart: =TimerGo
-        Reset: =true
-        Start: =TimerGo
-        Visible: |
-            =false
-        X: =1169
-        Y: =259
-        ZIndex: =9
-
     Button5_13 As button:
         Color: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(153, 207, 236, 1)
