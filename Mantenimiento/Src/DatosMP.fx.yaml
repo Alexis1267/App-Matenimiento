@@ -1,4 +1,5 @@
 DatosMP As screen:
+    OnHidden: =Set(Maq,Label8_8.Text)
     OnVisible: =
 
     Rectangle1_64 As rectangle:
@@ -199,7 +200,8 @@ DatosMP As screen:
         Label8_9 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Proc_No)
+            Text: |
+                =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Proc_No)
             Width: =254
             X: =23
             Y: =264

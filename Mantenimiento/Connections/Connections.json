@@ -1,4 +1,18 @@
 {
+  "2019b927-6731-4741-9d45-d73b8f21f1cf": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/partial-builds/390724148/1.0.1641.3327/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2019b927-6731-4741-9d45-d73b8f21f1cf"
+  },
   "2c2b67a3-ed93-4aec-82bb-13cb980fcf43": {
     "connectionRef": {
       "authenticationType": "sqlAuthentication",
@@ -7,7 +21,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23074.17",
-        "modifiedOn": "2023-08-14 16:42:23",
+        "modifiedOn": "2023-08-14 20:25:53",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp]\":[\"get\"]}}",
         "version": 1
       },
