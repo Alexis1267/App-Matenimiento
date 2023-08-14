@@ -1,25 +1,39 @@
 DatosMP As screen:
     OnVisible: =
 
+    Rectangle1_65 As rectangle:
+        Fill: =RGBA(166, 166, 166, 1)
+        Height: =18
+        Width: =1366
+        Y: =111
+        ZIndex: =1
+
+    Rectangle1_64 As rectangle:
+        Fill: =RGBA(166, 166, 166, 1)
+        Height: =18
+        Width: =1366
+        Y: =348
+        ZIndex: =2
+
     Rectangle1_63 As rectangle:
         Fill: =RGBA(116, 116, 116, 1)
         Height: =36
         Width: =229
         Y: =339
-        ZIndex: =1
+        ZIndex: =3
 
     Rectangle1_62 As rectangle:
         Fill: =RGBA(116, 116, 116, 1)
         Height: =36
         Width: =322
         Y: =102
-        ZIndex: =2
+        ZIndex: =4
 
     Rectangle1_60 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
         Width: =1366
-        ZIndex: =4
+        ZIndex: =6
 
     Label1_16 As label:
         Align: =Align.Center
@@ -32,7 +46,7 @@ DatosMP As screen:
             MANTENIMIENTO PREVENTIVO ACTIVO"
         Width: =527
         X: =419
-        ZIndex: =5
+        ZIndex: =7
 
     Button1_15 As button:
         BorderThickness: =0
@@ -43,8 +57,8 @@ DatosMP As screen:
         Text: ="Contestar "
         Width: =242
         X: =561
-        Y: =712
-        ZIndex: =6
+        Y: =728
+        ZIndex: =8
 
     Image2_59 As image:
         Height: =58
@@ -52,7 +66,7 @@ DatosMP As screen:
         Width: =194
         X: =1138
         Y: =17
-        ZIndex: =8
+        ZIndex: =9
 
     Button5_13 As button:
         Color: =RGBA(0, 0, 0, 1)
@@ -377,7 +391,7 @@ DatosMP As screen:
         Label8 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =RGBA(219, 219, 219, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Clas_Mantenimineto)
             Width: =254
             X: =307
@@ -457,7 +471,7 @@ DatosMP As screen:
             Width: =254
             X: =23
             Y: =426
-            ZIndex: =3
+            ZIndex: =5
 
         Label7 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
