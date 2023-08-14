@@ -56,11 +56,12 @@ DatosMP As screen:
         DisabledBorderColor: =RGBA(41, 191, 18, 1)
         Fill: =RGBA(97, 181, 73, 1)
         FontWeight: =FontWeight.Bold
+        Height: =54
         OnSelect: =If(Label8_8.Text = "MEPS1-10-56D",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
         Text: ="Contestar "
-        Width: =242
-        X: =561
-        Y: =712
+        Width: =256
+        X: =555
+        Y: =698
         ZIndex: =8
 
     Image2_59 As image:
