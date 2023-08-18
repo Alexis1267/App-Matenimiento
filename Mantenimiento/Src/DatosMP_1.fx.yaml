@@ -122,7 +122,7 @@ DatosMP_1 As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
         OnSelect: |-
-            =UpdateContext({Valida:LookUp(Inicio_Sesion,DropUser.SelectedText.Value = Usuario,Contrasena)});     //Lo que esta haciendo el codigo es de que me traiga la tabla, y que cuando en el                                                                                              input1 ponga al usuario, traiga la contraseña del usuario                                                                                                                    ("LookUp" me sirve para traer un solo registro de la tabla) y                                                                                                                          (UpdateContext es una variable de contexto, que quiere decir que solo van a funcionar en esta pantall)
+            =UpdateContext({Valida:LookUp(Tecnicos_App_MP,DropUser.SelectedText.Value = ,Nomina)});     //Lo que esta haciendo el codigo es de que me traiga la tabla, y que cuando en el                                                                                              input1 ponga al usuario, traiga la contraseña del usuario                                                                                                                    ("LookUp" me sirve para traer un solo registro de la tabla) y                                                                                                                          (UpdateContext es una variable de contexto, que quiere decir que solo van a funcionar en esta pantall)
             
             If(Valida = TextInput2_8.Text,Navigate(Screen1),Notify("El usuario y contraseña no coinciden, favor de verificar los datos",NotificationType.Error)); //Aqui lo que se esta haciendo es una validacion, de que si los datos de Usuario y Contraseña coinciden, que me mande a la pantalla1, pero si los datos no coinciden, que me mande un mensaje de datos erroneos (Me trae la variable "Valida" donde tenemos almacenada la contraseña del usuario)
             
@@ -184,7 +184,7 @@ DatosMP_1 As screen:
         ZIndex: =10
 
     DropUser As dropdown:
-        Items: =Lista_Usuarios
+        Items: =Tecnicos_App_MP
         X: =533
         Y: =369
         ZIndex: =11
