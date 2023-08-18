@@ -323,7 +323,10 @@ DatosMP As screen:
         Label8_24 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Text: ="Alexis Silva"
+            Color: =If(Label8_24.Text = "Off",RGBA(168,0,0,1),Label8_24.Text = "On",RGBA(97,180,93,100))
+            FontWeight: =FontWeight.Bold
+            Text: |
+                =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Cond_Equipo)
             Width: =254
             X: =23
             Y: =618
@@ -375,16 +378,16 @@ DatosMP As screen:
             Text: |-
                 ="Asignado a:"
             Width: =254
-            X: =736
+            X: =731
             Y: =578
             ZIndex: =36
 
         Label8_13 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Text: ="Alexis Silva"
+            Text: =Operador
             Width: =254
-            X: =736
+            X: =731
             Y: =618
             ZIndex: =37
 

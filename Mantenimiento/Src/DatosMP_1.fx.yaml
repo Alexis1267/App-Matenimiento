@@ -102,11 +102,11 @@ DatosMP_1 As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 0, 0, 0)
-        HintText: ="Contraseña"
+        Format: =TextFormat.Number
+        HintText: ="Nomina"
         HoverBorderColor: =RGBA(255, 255, 255, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
-        Mode: =TextMode.Password
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
@@ -122,9 +122,9 @@ DatosMP_1 As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
         OnSelect: |-
-            =UpdateContext({Valida:LookUp(Tecnicos_App_MP,DropUser.SelectedText.Value = ,Nomina)});     //Lo que esta haciendo el codigo es de que me traiga la tabla, y que cuando en el                                                                                              input1 ponga al usuario, traiga la contraseña del usuario                                                                                                                    ("LookUp" me sirve para traer un solo registro de la tabla) y                                                                                                                          (UpdateContext es una variable de contexto, que quiere decir que solo van a funcionar en esta pantall)
+            =UpdateContext({Valida:LookUp(Tecnicos_App_MP,DropUser.SelectedText.Value = Title,Nomina)});     //Lo que esta haciendo el codigo es de que me traiga la tabla, y que cuando en el                                                                                              input1 ponga al usuario, traiga la contraseña del usuario                                                                                                                    ("LookUp" me sirve para traer un solo registro de la tabla) y                                                                                                                          (UpdateContext es una variable de contexto, que quiere decir que solo van a funcionar en esta pantall)
             
-            If(Valida = TextInput2_8.Text,Navigate(Screen1),Notify("El usuario y contraseña no coinciden, favor de verificar los datos",NotificationType.Error)); //Aqui lo que se esta haciendo es una validacion, de que si los datos de Usuario y Contraseña coinciden, que me mande a la pantalla1, pero si los datos no coinciden, que me mande un mensaje de datos erroneos (Me trae la variable "Valida" donde tenemos almacenada la contraseña del usuario)
+            If(Valida = TextInput2_8.Text,Navigate(QR_Inicio),Notify("El usuario y contraseña no coinciden, favor de verificar los datos",NotificationType.Error)); //Aqui lo que se esta haciendo es una validacion, de que si los datos de Usuario y Contraseña coinciden, que me mande a la pantalla1, pero si los datos no coinciden, que me mande un mensaje de datos erroneos (Me trae la variable "Valida" donde tenemos almacenada la contraseña del usuario)
             
             Set(Operador,DropUser.SelectedText.Value) //Esto es una variable global, lo que quiere decir que va funcionar dentro de toda la aplicacion
                                                                                          
@@ -184,7 +184,13 @@ DatosMP_1 As screen:
         ZIndex: =10
 
     DropUser As dropdown:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronFill: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(0, 0, 0, 1)
         Items: =Tecnicos_App_MP
+        SelectionColor: =RGBA(0, 0, 0, 1)
+        SelectionFill: =RGBA(255, 255, 255, 1)
         X: =533
         Y: =369
         ZIndex: =11

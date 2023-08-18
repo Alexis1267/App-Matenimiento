@@ -117,7 +117,7 @@
         TextColor: =RGBA(255, 255, 255, 1)
         Width: =310
         X: =556
-        Y: =582
+        Y: =563
         ZIndex: =2
 
     Rectangle1_58 As rectangle:
@@ -150,7 +150,7 @@
         Image: =mantenimiento
         Width: =434
         X: =494
-        Y: =182
+        Y: =247
         ZIndex: =6
 
     Timer1_2 As timer:
@@ -165,4 +165,27 @@
         X: =31
         Y: =26
         ZIndex: =7
+
+    Label1_17 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =63
+        Size: =35
+        Text: |-
+            ="Tecnico encargado:"
+        Width: =463
+        X: =479
+        Y: =92
+        ZIndex: =8
+
+    Label1_18 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =63
+        Size: =25
+        Text: =Operador
+        Width: =543
+        X: =439
+        Y: =155
+        ZIndex: =9
 
