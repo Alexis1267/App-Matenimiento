@@ -51,7 +51,9 @@ App As appinfo:
         Filter(CMXE_MP, Proc_No = "MPC-203-6M" ),
         Filter(CMXE_MP, Proc_No = "MPC-204-45D" ),
         Filter(CMXE_MP, Proc_No = "MPC-204-3M-2" ),
-        Filter(CMXE_MP, Proc_No = "MPC-214-3M-1" ))
+        Filter(CMXE_MP, Proc_No = "MPC-214-3M-1" ));
+        
+        Set(DATOS,CMXE_MP)
         
         
         

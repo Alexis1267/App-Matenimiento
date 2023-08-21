@@ -1,16 +1,16 @@
 DatosMP_2 As screen:
     OnHidden: =
-    OnVisible: =
+    OnVisible: =Set(MaQ,Left(Label9.Text,5))
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =676
         Items: |
-            =CMXE_MP
+            =Filter( CMXE_MP, StartsWith( Proc_No, Label9_44.Text))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =153
+        TemplateSize: =143
         Width: =1366
         Y: =92
         ZIndex: =1
@@ -195,7 +195,6 @@ DatosMP_2 As screen:
                 ="Fecha de Inicio:"
             VerticalAlign: =VerticalAlign.Top
             Width: =240
-            X: =4
             Y: =73
             ZIndex: =13
 
@@ -263,6 +262,13 @@ DatosMP_2 As screen:
         FontWeight: =FontWeight.Bold
         Text: ="MEINS-05-30D"
         X: =56
-        Y: =26
         ZIndex: =10
+
+    Label9_44 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Text: =Left(Label9.Text,5)
+        X: =56
+        Y: =40
+        ZIndex: =11
 
