@@ -1,6 +1,6 @@
 DatosMP As screen:
     OnHidden: =Set(Maq,Label8_8.Text)
-    OnVisible: =
+    OnVisible: =Set(MAQUINA,Title3.Text)
 
     Rectangle1_64 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -171,7 +171,8 @@ DatosMP As screen:
             Height: =61
             Text: |-
                 =//Text(Maquina)
-                "MEPS1-10-56D"
+                //"MEPS1-10-56D"
+                MAQUINA
             Width: =231
             X: =141
             Y: =148
@@ -299,6 +300,15 @@ DatosMP As screen:
             X: =662
             Y: =264
             ZIndex: =31
+
+    Icon6 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Lista_MP,ScreenTransition.Fade)
+        Width: =75
+        X: =44
+        Y: =14
+        ZIndex: =44
 
     Group3_10 As group:
         Height: =5
