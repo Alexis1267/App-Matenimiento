@@ -1,0 +1,268 @@
+DatosMP_2 As screen:
+    OnHidden: =
+    OnVisible: =
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =676
+        Items: |
+            =CMXE_MP
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =153
+        Width: =1366
+        Y: =92
+        ZIndex: =1
+
+        Title3 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Proc_No
+            VerticalAlign: =VerticalAlign.Top
+            Width: =1056
+            X: =223
+            Y: =6
+            ZIndex: =1
+
+        Subtitle3 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Nom_equipo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =1056
+            X: =223
+            Y: =31
+            ZIndex: =2
+
+        Body2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Clas_Mantenimineto
+            VerticalAlign: =VerticalAlign.Top
+            Width: =1056
+            X: =223
+            Y: =52
+            ZIndex: =3
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator3 As rectangle:
+            Height: =0
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle7 As rectangle:
+            Height: =Parent.TemplateHeight - Separator3.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+
+        Body2_1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Fecha_inicio
+            VerticalAlign: =VerticalAlign.Top
+            Width: =1056
+            X: =223
+            Y: =73
+            ZIndex: =7
+
+        Body2_2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Fecha_Programada
+            VerticalAlign: =VerticalAlign.Top
+            Width: =1056
+            X: =223
+            Y: =94
+            ZIndex: =8
+
+        Body2_3 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Estatus
+            VerticalAlign: =VerticalAlign.Top
+            Width: =1056
+            X: =223
+            Y: =116
+            ZIndex: =9
+
+        Title3_1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =17
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="Proc.No:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =240
+            X: =4
+            Y: =7
+            ZIndex: =10
+
+        Subtitle3_1 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =15
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="Nombre del equipo:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =240
+            X: =4
+            Y: =31
+            ZIndex: =11
+
+        Body2_4 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =15
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="Clase de Mantenimiento:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =240
+            X: =4
+            Y: =51
+            ZIndex: =12
+
+        Body2_5 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =15
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="Fecha de Inicio:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =240
+            X: =4
+            Y: =73
+            ZIndex: =13
+
+        Body2_6 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =15
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="Fecha Programada:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =240
+            X: =4
+            Y: =94
+            ZIndex: =14
+
+        Body2_7 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =15
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="Estatus del Mantenimiento:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =240
+            X: =4
+            Y: =117
+            ZIndex: =15
+
+    Rectangle1_61 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =92
+        Width: =1366
+        ZIndex: =6
+
+    Label1_20 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =92
+        Size: =20
+        Text: |-
+            ="ORDEN DE TRABAJO 
+            MANTENIMIENTO PREVENTIVO ACTIVO"
+        Width: =527
+        X: =419
+        ZIndex: =7
+
+    Image2_60 As image:
+        Height: =58
+        Image: =carrier_logo_300
+        Width: =194
+        X: =1138
+        Y: =17
+        ZIndex: =9
+
+    Label9 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Text: ="MEINS-05-30D"
+        X: =56
+        Y: =26
+        ZIndex: =10
+
