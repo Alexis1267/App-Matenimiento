@@ -69,12 +69,13 @@ Lista_MP As screen:
             Color: =RGBA(0, 0, 0, 1)
             Height: =75
             Icon: =Icon.ChevronRight
-            OnSelect: =If(ThisItem.IsSelected,Navigate(DatosMP,ScreenTransition.Fade),NextArrow3.AutoDisableOnSelect)
+            OnSelect: =Navigate(DatosMP,ScreenTransition.Fade)
             PaddingBottom: =16
             PaddingLeft: =16
             PaddingRight: =16
             PaddingTop: =16
             Tooltip: ="View item details"
+            Visible: =If(ThisItem.IsSelected,true)
             Width: =79
             X: =1275
             Y: =35
