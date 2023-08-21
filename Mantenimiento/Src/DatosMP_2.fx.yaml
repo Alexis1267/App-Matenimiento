@@ -6,7 +6,7 @@ DatosMP_2 As screen:
         DelayItemLoading: =true
         Height: =676
         Items: |
-            =Filter( CMXE_MP, StartsWith( Proc_No, Label9_44.Text))
+            =Filter( CMXE_MP, StartsWith( Proc_No, Label9_44.Text),Estatus = "En Proceso")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -260,7 +260,7 @@ DatosMP_2 As screen:
     Label9 As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Text: ="MEINS-05-30D"
+        Text: ="MEPS1-09-56D"
         X: =56
         ZIndex: =10
 
