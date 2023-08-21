@@ -25,7 +25,12 @@
         BorderStyle: =BorderStyle.None
         BorderThickness: =10
         Fill: =RGBA(127, 178, 57, 1)
-        OnSelect: =Notify("Se ha enviado correctamente.",NotificationType.Success)
+        OnSelect: |
+            =Patch(
+                CMXE_MP,   // Nombre de la tabla
+                {Proc_No: MAQUINA},  // Filtro para identificar el registro
+                {Estatus: "Completado"}  // Datos a modificar
+            )
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
