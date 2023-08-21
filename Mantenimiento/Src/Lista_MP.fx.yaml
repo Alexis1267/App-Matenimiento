@@ -268,7 +268,9 @@ Lista_MP As screen:
     Label9 As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Text: ="MEPS1-09"
+        Text: |-
+            =Maquina
+            //"MEPS1-09"
         X: =56
         ZIndex: =10
 

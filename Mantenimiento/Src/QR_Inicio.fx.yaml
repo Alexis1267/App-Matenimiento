@@ -74,7 +74,7 @@
         HoverFillColor: =RGBA(47, 81, 151, 1)
         OnScan: |-
             =Set(Maquina,First(BarcodeReader1_2.Barcodes).Value);
-            Navigate(DatosMP,ScreenTransition.Cover)
+            Navigate(Lista_MP,ScreenTransition.Cover)
             
             
             
