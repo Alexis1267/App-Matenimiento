@@ -12,7 +12,7 @@ Lista_MP As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
-        TemplateFill: =If(ThisItem.IsSelected,RGBA(186,192,208,1), RGBA(0,0,0,0))
+        TemplateFill: =If(ThisItem.IsSelected,RGBA(186,192,208,1), RGBA(0,0,0,0)) //En esta parte se realiza una validacion, solo con la finalidad de estetica, ya que lo que realiza este codigo es de que me esta diciendo que si se selecciona este item, que me lo colore a un color tono gris 
         TemplatePadding: =0
         TemplateSize: =213
         Width: =1366
@@ -36,7 +36,7 @@ Lista_MP As screen:
 
         Subtitle3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =20
+            Height: =28
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -71,7 +71,7 @@ Lista_MP As screen:
             Color: =RGBA(0, 0, 0, 1)
             Height: =75
             Icon: =Icon.ChevronRight
-            OnSelect: =Navigate(DatosMP,ScreenTransition.Fade)
+            OnSelect: =Navigate(DatosMP,ScreenTransition.Fade) //En esta parte lo que se hace es de que cuando se le de click a la flecha, me rediriga a la pantalla "DatosMP" 
             PaddingBottom: =16
             PaddingLeft: =16
             PaddingRight: =16
@@ -296,15 +296,15 @@ Lista_MP As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Text: |-
-            =Maquina //Esta variable me esta trayendo lo que el QR tiene almacenado
-            //"MEPS1-09"
+            =//Maquina //Esta variable me esta trayendo lo que el QR tiene almacenado
+            "MEPS1-09"
         X: =56
         ZIndex: =10
 
     Label9_44 As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Text: =Left(Label9.Text,3)
+        Text: =Left(Label9.Text,3) //En esta parte lo unico que se esta haciendo es recortar la palabra de la variable "Maquina" esto solo con la finalidad de realizar los filtros de las maquinas.
         X: =56
         Y: =40
         ZIndex: =11

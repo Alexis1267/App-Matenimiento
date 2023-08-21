@@ -43,7 +43,7 @@ DatosMP As screen:
         Fill: =RGBA(97, 181, 73, 1)
         FontWeight: =FontWeight.Bold
         Height: =54
-        OnSelect: =If(Label8_8.Text = "MEPS1-10-56D",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
+        OnSelect: =If(Label8_8.Text = "MEPS1-09-56D",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
         Text: ="Contestar "
         Width: =256
         X: =555
@@ -172,7 +172,7 @@ DatosMP As screen:
             Text: |-
                 =//Text(Maquina)
                 //"MEPS1-10-56D"
-                MAQUINA
+                MAQUINA //Esta variable es la que se toma de la pantalla "ListaMP" que me agarra el Proc.No, esto para poder mandar a llamar todos los campos que restan de la pantalla de su respectiva maquina o folio
             Width: =231
             X: =141
             Y: =148
@@ -202,7 +202,7 @@ DatosMP As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Text: |
-                =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Proc_No)
+                =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Proc_No) //Esto lo que me hace es de que me encuentre el registo del Proc.No.:
             Width: =254
             X: =23
             Y: =264

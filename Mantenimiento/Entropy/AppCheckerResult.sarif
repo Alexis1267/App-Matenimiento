@@ -32698,19 +32698,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Sesion.TextInput2_8.AccessibleLabel"
+                  "fullyQualifiedName": "Sesion.InsertNomina.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Sesion.TextInput2_8.AccessibleLabel",
+                  "fullyQualifiedName": "Sesion.InsertNomina.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Sesion",
-                "type": "Sesion.TextInput2_8"
+                "type": "Sesion.InsertNomina"
               }
             }
           ],
@@ -61237,6 +61237,36 @@
               },
               "properties": {
                 "member": "Cancelar",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Maquina"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Maquina",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Maquina",
                 "module": "App",
                 "type": "App"
               }

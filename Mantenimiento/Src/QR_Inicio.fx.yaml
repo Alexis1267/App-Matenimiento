@@ -73,8 +73,8 @@
         HoverContentColor: =RGBA(255, 255, 255, 1)
         HoverFillColor: =RGBA(47, 81, 151, 1)
         OnScan: |-
-            =Set(Maquina,First(BarcodeReader1_2.Barcodes).Value);//En esta parte lo que se es haciendo es almacenar el valor del QR en una variable para despues hacer uso de ella 
-            Navigate(Lista_MP,ScreenTransition.Cover) //En esta parte del codigo lo unico que se hace es de me que dirija a la pantalla en donde se encuentran los MP generados con su respectivo filtro, que el filtro depende de
+            =Set(Maquina,First(BarcodeReader1_2.Barcodes).Value);//En esta parte lo que se es haciendo es almacenar el valor del QR en una variable para despues hacer uso de ella en los filtros de la pantalla "Lista_MP". 
+            Navigate(Lista_MP,ScreenTransition.Cover) //En esta parte del codigo lo unico que se hace es de me que dirija a la pantalla en donde se encuentran los MP generados con su respectivo filtro, que el filtro depende del valor que tome la variable "Maquina" que esta en la primera linea del codigo.
             
             
             
@@ -183,7 +183,7 @@
         FontWeight: =FontWeight.Bold
         Height: =63
         Size: =25
-        Text: =Operador
+        Text: =Operador //En esta parte lo que hago es poner la variable que se creo en la pantalla de "Sesion" donde me toma el nombre de la persona que hizo el inicio de sesion y lo muestra en la pantalla
         Width: =543
         X: =439
         Y: =155

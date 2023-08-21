@@ -94,7 +94,7 @@ Sesion As screen:
         Y: =54
         ZIndex: =3
 
-    TextInput2_8 As text:
+    InsertNomina As text:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =1
         Color: =RGBA(255, 255, 255, 1)
@@ -124,7 +124,7 @@ Sesion As screen:
         OnSelect: |-
             =UpdateContext({Valida:LookUp(Tecnicos_App_MP,DropUser.SelectedText.Value = 'Email - Primary Work',Nomina)});     //Lo que esta haciendo el codigo es de que me traiga la tabla, y que cuando en el                                                                                              input1 ponga al usuario, traiga la contraseña del usuario                                                                                                                    ("LookUp" me sirve para traer un solo registro de la tabla) y                                                                                                                          (UpdateContext es una variable de contexto, que quiere decir que solo van a funcionar en esta pantall)
             
-            If(Valida = TextInput2_8.Text,Navigate(QR_Inicio),Notify("El nombre y/o el numero de nomina no coinciden",NotificationType.Error)); //Aqui lo que se esta haciendo es una validacion, de que si los datos de Usuario y Contraseña coinciden, que me mande a la pantalla1, pero si los datos no coinciden, que me mande un mensaje de datos erroneos (Me trae la variable "Valida" donde tenemos almacenada la contraseña del usuario)
+            If(Valida = InsertNomina.Text,Navigate(QR_Inicio),Notify("El nombre y/o el numero de nomina no coinciden",NotificationType.Error)); //Aqui lo que se esta haciendo es una validacion, de que si los datos de Usuario y Contraseña coinciden, que me mande a la pantalla1, pero si los datos no coinciden, que me mande un mensaje de datos erroneos (Me trae la variable "Valida" donde tenemos almacenada la contraseña del usuario)
             
             Set(Operador,DropUser.SelectedText.Value) //Esto es una variable global, lo que quiere decir que va funcionar dentro de toda la aplicacion
                                                                                          
@@ -190,7 +190,7 @@ Sesion As screen:
         ChevronFill: =RGBA(0, 0, 0, 1)
         Default: ="Seleccione"
         DisabledColor: =RGBA(0, 0, 0, 1)
-        Items: =Tecnicos_App_MP
+        Items: =Tecnicos_App_MP //Esto me esta mandando a llamar la lista que tengo en sharepoint de los nombres de los tecnicos
         SelectionColor: =RGBA(0, 0, 0, 1)
         SelectionFill: =RGBA(255, 255, 255, 1)
         X: =533
