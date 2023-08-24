@@ -25,12 +25,16 @@
         BorderStyle: =BorderStyle.None
         BorderThickness: =10
         Fill: =RGBA(127, 178, 57, 1)
-        OnSelect: |
-            =Patch(
-                CMXE_MP,   // Nombre de la tabla
+        OnSelect: |+
+            =/*Patch(
+                CMXE_MP_N,   // Nombre de la tabla
                 {Proc_No: MAQUINA},  // Filtro para identificar el registro
                 {Estatus: "Completado"}  // Datos a modificar
-            )
+            )*/
+            
+            Patch( CMXE_MP_N,
+            LookUp( CMXE_MP_N, Proc_No = MAQUINA ), { Com_Matenimiento: "Si" } )
+            
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20

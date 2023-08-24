@@ -1,7 +1,7 @@
 Lista_MP As screen:
     OnHidden: =
     OnVisible: |+
-        =Set(MaQ,Left(Label9.Text,5));
+        =Set(MaQ,Left(Label9.Text,5)); //Esta variable es solo para guardar el nombre de la maquina y despues tomar la variable y pasarla 
         
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
@@ -273,7 +273,7 @@ Lista_MP As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Proc_No
+            Text: =ThisItem.Localizacion
             VerticalAlign: =VerticalAlign.Top
             Width: =342
             X: =313
@@ -311,7 +311,7 @@ Lista_MP As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Text: |-
-            =//Maquina //Esta variable me esta trayendo lo que el QR tiene almacenado
+            =//Maquina_QR //Esta variable me esta trayendo lo que el QR tiene almacenado
             "MEPS1-09"
         X: =56
         ZIndex: =10
