@@ -38,8 +38,8 @@
             
             Patch(
                 CMXE_MP_N,  // Nombre de la tabla
-                {ID: Value(ID_Maquina) },  // Registro específico que deseas modificar
-                {Com_Matenimiento: "SI FUNCIONO"}  // Datos a modificar
+                {ID: Value(ID_Maquina) },  // Registro específico que deseas modificar EL VALUE ES PARA TOMARLO COMO VALOR NUMERICO
+                {Com_Matenimiento: "Si"}  // Datos a modificar
             )
         RadiusBottomLeft: =20
         RadiusBottomRight: =20

@@ -3,7 +3,7 @@ Datos_MP As screen:
     OnVisible: |-
         =Set(MAQUINA,Title3.Text); //Esta variable se utiliza para almacenar el "Proc.No" que esta en la pantalla de ListaMP
         
-        Set(ID_Maquina,Title3_5.Text)
+        Set(ID_Maquina,Title3_5.Text) //Esta variable se utiliza para almacenar el "ID" de la maquina, para que despues en la pantalla de los botones cuando finalizan las actividades se pueda hacer el update de "Com_Mantenimiento"
 
     Rectangle1_64 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -46,7 +46,7 @@ Datos_MP As screen:
         Fill: =RGBA(97, 181, 73, 1)
         FontWeight: =FontWeight.Bold
         Height: =54
-        OnSelect: =If(Label8_8.Text = "Mp30D",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
+        OnSelect: =If(Label8_8.Text = "Mp30D2",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
         Text: ="Contestar "
         Width: =256
         X: =555
@@ -375,34 +375,6 @@ Datos_MP As screen:
             X: =307
             Y: =618
             ZIndex: =35
-
-    Group4_2 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =47
-
-        Label7_18 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(0, 40, 85, 1)
-            FontWeight: =FontWeight.Bold
-            Text: ="ID"
-            Width: =254
-            X: =1092
-            Y: =129
-            ZIndex: =45
-
-        Label8_4 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,ID)
-            Width: =254
-            X: =1092
-            Y: =169
-            ZIndex: =46
 
     Group3_4 As group:
         Height: =5
