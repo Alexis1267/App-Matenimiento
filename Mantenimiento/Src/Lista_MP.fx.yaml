@@ -8,7 +8,7 @@ Lista_MP As screen:
         DelayItemLoading: =true
         Height: =676
         Items: |
-            =Filter( CMXE_MP, StartsWith( Proc_No, Label9_44.Text),Estatus = "En Proceso")
+            =Filter( CMXE_MP_N, StartsWith( Proc_No, Label9_44.Text),Estatus = "En Proceso")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
@@ -43,7 +43,7 @@ Lista_MP As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =14
-            Text: =ThisItem.Nom_equipo
+            Text: =ThisItem.Nom_Equipo
             VerticalAlign: =VerticalAlign.Top
             Width: =342
             X: =313
@@ -109,7 +109,7 @@ Lista_MP As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =14
-            Text: =ThisItem.Fecha_inicio
+            Text: =ThisItem.Fecha_Inicio
             VerticalAlign: =VerticalAlign.Top
             Width: =342
             X: =313
@@ -264,6 +264,21 @@ Lista_MP As screen:
             X: =23
             Y: =9
             ZIndex: =16
+
+        Title3_3 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =24
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Proc_No
+            VerticalAlign: =VerticalAlign.Top
+            Width: =342
+            X: =313
+            Y: =9
+            ZIndex: =17
 
     Rectangle1_61 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
