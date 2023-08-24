@@ -7,7 +7,6 @@
       "RevisionNumber": 2
     },
     "ConnectedDataSourceInfoNameMapping": {
-      "57dfb1b5-7d79-4046-a4da-fd831d5befe1-KeyId": "KeyId",
       "Asignado": "Asignado",
       "Clas_Mantenimineto": "Clas_Mantenimineto",
       "Clasificacion": "Clasificacion",
@@ -21,6 +20,7 @@
       "Fecha_Proxima": "Fecha_Proxima",
       "Frecuencia": "Frecuencia",
       "Horas_Hombre": "Horas_Hombre",
+      "ID": "ID",
       "Localizacion": "Localizacion",
       "Nom_Equipo": "Nom_Equipo",
       "Porcentaje": "Porcentaje",
@@ -30,7 +30,7 @@
     "DatasetName": "vmc8107da003,CMXEDataCollection",
     "EncodeDataset": false,
     "IsSampleData": false,
-    "IsWritable": false,
+    "IsWritable": true,
     "Name": "CMXE_MP_N",
     "Type": "ConnectedDataSourceInfo"
   }

@@ -32,8 +32,9 @@
                 {Estatus: "Completado"}  // Datos a modificar
             )*/
             
-            Patch( CMXE_MP_N,
-            LookUp( CMXE_MP_N, Proc_No = MAQUINA ), { Com_Matenimiento: "Si" } )
+            //Patch( CMXE_MP_N,
+            //LookUp( CMXE_MP_N, Proc_No = Text(MAQUINA), { Com_Matenimiento: "Si" } )
+            
             
         RadiusBottomLeft: =20
         RadiusBottomRight: =20

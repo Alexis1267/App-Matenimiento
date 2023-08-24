@@ -1,6 +1,6 @@
-DatosMP As screen:
+Datos_MP As screen:
     OnHidden: =Set(Maq,Label8_8.Text)
-    OnVisible: =Set(MAQUINA,Title3.Text)
+    OnVisible: =Set(MAQUINA,Title3.Text) //Esta variable se utiliza para almacenar el "Proc.No" que esta en la pantalla de ListaMP
 
     Rectangle1_64 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -43,7 +43,7 @@ DatosMP As screen:
         Fill: =RGBA(97, 181, 73, 1)
         FontWeight: =FontWeight.Bold
         Height: =54
-        OnSelect: =If(Label8_8.Text = "MEPS1-09-56D",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
+        OnSelect: =If(Label8_8.Text = "Mp30D2",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
         Text: ="Contestar "
         Width: =256
         X: =555

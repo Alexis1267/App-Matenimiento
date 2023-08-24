@@ -416,7 +416,7 @@
     Icon1 As icon.BackArrow:
         Height: =75
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(DatosMP,ScreenTransition.Fade)
+        OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
         Width: =67
         X: =26
         Y: =685

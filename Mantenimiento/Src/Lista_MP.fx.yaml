@@ -1,14 +1,14 @@
 Lista_MP As screen:
     OnHidden: =
     OnVisible: |+
-        =Set(MaQ,Left(Label9.Text,5)); //Esta variable es solo para guardar el nombre de la maquina y despues tomar la variable y pasarla 
+        =//Set(MaQ,Left(MAQUINA_QR.Text,5)); //Esta variable es solo para guardar el nombre de la maquina y despues tomar la variable y pasarla 
         
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =676
         Items: |
-            =Filter( CMXE_MP_N, StartsWith( Proc_No, Label9_44.Text),Estatus = "En Proceso")
+            =Filter( CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "En Proceso") //Esta parte del codigo es solamente para que me filtre todos los preventivos de las maquinas que estan en proceso
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
@@ -71,7 +71,7 @@ Lista_MP As screen:
             Color: =RGBA(0, 0, 0, 1)
             Height: =75
             Icon: =Icon.ChevronRight
-            OnSelect: =Navigate(DatosMP,ScreenTransition.Fade) //En esta parte lo que se hace es de que cuando se le de click a la flecha, me rediriga a la pantalla "DatosMP" 
+            OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade) //En esta parte lo que se hace es de que cuando se le de click a la flecha, me rediriga a la pantalla "DatosMP" 
             PaddingBottom: =16
             PaddingLeft: =16
             PaddingRight: =16
@@ -307,19 +307,19 @@ Lista_MP As screen:
         Y: =17
         ZIndex: =9
 
-    Label9 As label:
+    MAQUINA_QR As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Text: |-
             =//Maquina_QR //Esta variable me esta trayendo lo que el QR tiene almacenado
-            "MEPS1-09"
+            "Mp"
         X: =56
         ZIndex: =10
 
-    Label9_44 As label:
+    MAQUINA_QR_3Letras As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Text: =Left(Label9.Text,3) //En esta parte lo unico que se esta haciendo es recortar la palabra de la variable "Maquina" esto solo con la finalidad de realizar los filtros de las maquinas.
+        Text: =Left(MAQUINA_QR.Text,3) //En esta parte lo unico que se esta haciendo es recortar la palabra de la variable "Maquina" esto solo con la finalidad de realizar los filtros de las maquinas.
         X: =56
         Y: =40
         ZIndex: =11
