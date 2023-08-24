@@ -46,18 +46,10 @@
     "dependents": [],
     "id": "655ab65a-a2ff-451c-8e48-7655068acc7e"
   },
-  "f18263f1-4f1d-459b-ba7a-8bc46cc0a96c": {
+  "7775f770-9288-4337-8a04-32fcad1302d3": {
     "connectionRef": {
       "authenticationType": "sqlAuthentication",
       "displayName": "SQL Server",
-      "executionRestrictions": {
-        "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
-        "apiVer": 2,
-        "appVer": "3.23075.16",
-        "modifiedOn": "2023-08-21 19:52:58",
-        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp]\":[\"get\"]}}",
-        "version": 1
-      },
       "gatewayObjectIdHint": "217359fc-552c-470d-bcb6-5f7d514806f1",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1590/1.0.1590.2955/sql/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_sql",
@@ -68,20 +60,20 @@
     "datasets": {
       "vmc8107da003,CMXEDataCollection": {
         "dataSources": {
-          "CMXE_MP": {
-            "tableName": "[dbo].[CMXE_MP]"
+          "CMXE_MP_N": {
+            "tableName": "[dbo].[CMXE_MP_N]"
           }
         }
       }
     },
     "dataSources": [
-      "CMXE_MP"
+      "CMXE_MP_N"
     ],
     "dependencies": {},
     "dependents": [],
     "endpoints": [
       "vmc8107da003,CMXEDataCollection"
     ],
-    "id": "f18263f1-4f1d-459b-ba7a-8bc46cc0a96c"
+    "id": "7775f770-9288-4337-8a04-32fcad1302d3"
   }
 }

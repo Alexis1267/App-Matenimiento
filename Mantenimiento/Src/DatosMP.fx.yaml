@@ -91,7 +91,7 @@ DatosMP As screen:
         DatePicker3_1 As datepicker:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            DefaultDate: =LookUp(CMXE_MP,Proc_No =Label8_8.Text,Fecha_Programada)
+            DefaultDate: =LookUp(CMXE_MP_N,Proc_No =Label8_8.Text,Fecha_Programada)
             DisplayMode: =DisplayMode.Disabled
             Width: =254
             X: =342
@@ -121,7 +121,7 @@ DatosMP As screen:
         DatePicker3_2 As datepicker:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            DefaultDate: ="7/10/2023"
+            DefaultDate: =LookUp(CMXE_MP_N,Proc_No =Label8_8.Text,Fecha_Proxima)
             DisplayMode: =DisplayMode.Disabled
             Width: =254
             X: =662
@@ -202,7 +202,7 @@ DatosMP As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Text: |
-                =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Proc_No) //Esto lo que me hace es de que me encuentre el registo del Proc.No.:
+                =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Proc_No) //Esto lo que me hace es de que me encuentre el registo del Proc.No.:
             Width: =254
             X: =23
             Y: =264
@@ -246,7 +246,7 @@ DatosMP As screen:
         Label8_10 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Nom_equipo)
+            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Nom_Equipo)
             Width: =254
             X: =342
             Y: =264
@@ -295,7 +295,7 @@ DatosMP As screen:
         Label8_11 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Text: ="Prensas"
+            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Localizacion)
             Width: =254
             X: =662
             Y: =264
@@ -336,7 +336,7 @@ DatosMP As screen:
             Color: =If(Label8_24.Text = "Off",RGBA(168,0,0,1),Label8_24.Text = "On",RGBA(97,180,93,100))
             FontWeight: =FontWeight.Bold
             Text: |
-                =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Cond_Equipo)
+                =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Cond_Equipo)
             Width: =254
             X: =23
             Y: =618
@@ -366,7 +366,8 @@ DatosMP As screen:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Size: =12
-            Text: ="MANTENIMIENTO PREVENTIVO CENTRO DE PUNZONADO CONSOLAS Y1,Y2,Y3,Y4"
+            Text: |
+                =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Descripción)
             Width: =396
             X: =307
             Y: =618
@@ -427,7 +428,7 @@ DatosMP As screen:
             Fill: =If(Label8_2.Text = "Alta", RGBA(239, 35, 60,1),Label8_2.Text = "Baja", RGBA(56, 176, 0,1),Label8_2.Text = "Media", RGBA(233, 165, 43,1))
             LineHeight: |
                 =1.2
-            Text: ="Media"
+            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Prioridad)
             Width: =254
             X: =23
             Y: =511
@@ -456,7 +457,7 @@ DatosMP As screen:
         Label8 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Clas_Mantenimineto)
+            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Clas_Mantenimineto)
             Width: =254
             X: =307
             Y: =511
@@ -485,7 +486,7 @@ DatosMP As screen:
         Label8_3 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Text: ="A"
+            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Clasificacion)
             Width: =254
             X: =596
             Y: =511
@@ -514,7 +515,7 @@ DatosMP As screen:
         Label8_1 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Text: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Horas_Hombre)
+            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Horas_Hombre)
             Width: =254
             X: =882
             Y: =511
@@ -530,7 +531,7 @@ DatosMP As screen:
         DatePicker3 As datepicker:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            DefaultDate: =LookUp(CMXE_MP,Proc_No = Label8_8.Text,Fecha_inicio)
+            DefaultDate: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Fecha_Inicio)
             DisplayMode: =DisplayMode.Disabled
             Width: =254
             X: =23
