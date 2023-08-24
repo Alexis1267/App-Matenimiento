@@ -26,7 +26,8 @@
         BorderThickness: =10
         Fill: =RGBA(127, 178, 57, 1)
         OnSelect: |+
-            =/*Patch(
+            =
+            /*Patch(
                 CMXE_MP_N,   // Nombre de la tabla
                 {Proc_No: MAQUINA},  // Filtro para identificar el registro
                 {Estatus: "Completado"}  // Datos a modificar
@@ -34,7 +35,6 @@
             
             //Patch( CMXE_MP_N,
             //LookUp( CMXE_MP_N, Proc_No = Text(MAQUINA), { Com_Matenimiento: "Si" } )
-            
             
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
