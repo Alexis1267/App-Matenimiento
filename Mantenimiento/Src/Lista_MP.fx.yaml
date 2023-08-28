@@ -3,12 +3,20 @@ Lista_MP As screen:
     OnVisible: |+
         =//Set(MaQ,Left(MAQUINA_QR.Text,5)); //Esta variable es solo para guardar el nombre de la maquina y despues tomar la variable y pasarla 
         
+        
+        
+        
+        
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =676
-        Items: |
-            =Filter( CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "En Proceso") //Esta parte del codigo es solamente para que me filtre todos los preventivos de las maquinas que estan en proceso
+        Height: =601
+        Items: |-
+            =//Search(CMXE_MP_N, Buscador.Text,"Proc_No")
+            
+            //Filter( CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "En Proceso") //Esta parte del codigo es solamente para que me filtre todos los preventivos de las maquinas que estan en proceso
+            
+            Filter(Search(CMXE_MP_N, Buscador.Text,"Proc_No"), StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "En Proceso")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
@@ -16,7 +24,7 @@ Lista_MP As screen:
         TemplatePadding: =0
         TemplateSize: =213
         Width: =1366
-        Y: =92
+        Y: =167
         ZIndex: =1
 
         Title3 As label:
@@ -354,4 +362,19 @@ Lista_MP As screen:
         X: =56
         Y: =40
         ZIndex: =11
+
+    Buscador As text:
+        Default: ="Text input"
+        HintText: ="Filtro"
+        Y: =101
+        ZIndex: =12
+
+    Icon3 As icon.Search:
+        DisplayMode: =DisplayMode.View
+        Height: =40
+        Icon: =Icon.Search
+        Width: =33
+        X: =287
+        Y: =101
+        ZIndex: =13
 
