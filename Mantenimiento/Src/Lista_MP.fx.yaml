@@ -11,15 +11,16 @@ Lista_MP As screen:
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =601
-        Items: |+
+        Items: |-
             =//Search(CMXE_MP_N, Buscador.Text,"Proc_No")
             
             //Filter( CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "En Proceso") //Esta parte del codigo es solamente para que me filtre todos los preventivos de las maquinas que estan en proceso
             
-            //Filter(Search(CMXE_MP_N, Buscador.Text,"Proc_No","Nom_Equipo","Clas_Mantenimineto"),StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "En Proceso")
+            Filter(Search(CMXE_MP_N, Buscador.Text,"Proc_No","Nom_Equipo","Clas_Mantenimineto"),StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado")
             
-            Filter(Search(CMXE_MP_N, Buscador.Text,"Proc_No","Nom_Equipo","Clas_Mantenimineto"),Nom_Equipo = Dropdown3.SelectedText.Value, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado")
+            //Filter(Search(CMXE_MP_N, Buscador.Text,"Proc_No","Nom_Equipo","Clas_Mantenimineto"),Nom_Equipo = Dropdown3.SelectedText.Value, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado")
             
+            //Filter(CMXE_MP_N,If(IsBlank(Dropdown3.SelectedText.Value),Nom_Equipo = Dropdown3.SelectedText.Value))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
@@ -367,6 +368,7 @@ Lista_MP As screen:
         ZIndex: =11
 
     Dropdown3 As dropdown:
+        AllowEmptySelection: =true
         Items: =Filter(CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado")
         X: =378
         Y: =101

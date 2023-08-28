@@ -1,7 +1,19 @@
 Screen3 As screen:
 
-    HtmlText2 As htmlViewer:
-        Height: =768
-        Width: =639
+    ComboBox1 As combobox:
+        DisplayFields: =["{Name}"]
+        IsSearchable: =false
+        Items: =Filter(Tecnicos_App_MP, Name = Drop_CantUsuario_10.Selected.Value)
+        SearchFields: =["{Name}"]
+        SearchItems: =[]
+        X: =270
+        Y: =125
         ZIndex: =1
+
+    ComboBox2 As combobox:
+        Items: =ComboBoxSample
+        SearchItems: =Search(ComboBoxSample,ComboBox2.SearchText,"Value1")
+        X: =237
+        Y: =428
+        ZIndex: =2
 
