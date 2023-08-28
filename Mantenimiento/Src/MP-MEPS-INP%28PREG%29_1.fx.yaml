@@ -1,4 +1,6 @@
 "'MP-MEPS-INP(PREG)_1' As screen":
+    OnVisible: |-
+        =Set(PREGUNTA1,Concatenate( Pregunta1_1.Text,"   Justificación: ",Hallazgo1_30.Text))
 
     Rectangle1_6 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -456,8 +458,8 @@
             )
         Visible: =If(Respuesta1_30.Selected.Value = "N", true, false) 
         Width: =209
-        X: =1094
-        Y: =113
+        X: =977
+        Y: =114
         ZIndex: =50
 
     Hallazgo2_30 As text:
@@ -692,12 +694,19 @@
         Y: =654
         ZIndex: =73
 
-    HtmlText1 As htmlViewer:
-        Height: =207
-        HtmlText: |-
-            =Concatenate("Se ha enviado este correo para revisar los <b><font color=red>HALLAZGOS</font></b>""<br><br>","Maquina: ", Maq,"<br><br>""Actividad: ",Pregunta1.Text, "<br><br>",Hallazgo1.Text)
-        Width: =450
-        X: =561
-        Y: =561
+    Button2 As button:
+        Height: =28
+        Text: ="Button"
+        Width: =132
+        X: =1206
+        Y: =115
         ZIndex: =74
+
+    Label10_429 As label:
+        Height: =29
+        Text: =PREGUNTA1
+        Width: =1091
+        X: =161
+        Y: =705
+        ZIndex: =75
 
