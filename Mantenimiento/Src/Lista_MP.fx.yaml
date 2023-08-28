@@ -363,6 +363,12 @@ Lista_MP As screen:
         Y: =40
         ZIndex: =11
 
+    Dropdown3 As dropdown:
+        Items: =Filter(CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado")
+        X: =378
+        Y: =101
+        ZIndex: =14
+
     Group9 As group:
         Height: =5
         Width: =5
@@ -371,7 +377,7 @@ Lista_MP As screen:
         ZIndex: =14
 
         Buscador As text:
-            Default: ="Text input"
+            Default: =""
             HintText: ="Filtro"
             X: =16
             Y: =103
