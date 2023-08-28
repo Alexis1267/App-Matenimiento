@@ -369,7 +369,7 @@ Lista_MP As screen:
 
     Dropdown3 As dropdown:
         AllowEmptySelection: =true
-        Items: =Filter(CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado")
+        Items: =//Filter(CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado")
         X: =378
         Y: =101
         ZIndex: =14
