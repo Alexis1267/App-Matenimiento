@@ -21,39 +21,6 @@
         Y: =539
         ZIndex: =2
 
-    Button2_2 As button:
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =10
-        Fill: =RGBA(127, 178, 57, 1)
-        OnSelect: |-
-            =
-            
-            /*Patch(
-                CMXE_MP_N,  // Nombre de la tabla
-                {ID: ID_Maquina },// Registro específico que deseas modificar EL VALUE ES PARA TOMARLO COMO VALOR NUMERICO
-                {Com_Matenimiento: "Si"},
-                {Fecha_de_Finalizacion: Now()}  // Datos a modificar
-            )*/
-            
-            
-            
-            /*Patch(
-                CMXE_MP_N,   // Nombre de la tabla
-                {Proc_No: MAQUINA},  // Filtro para identificar el registro
-                {Estatus: "SI JALO"}  // Datos a modificar
-            )*/
-            
-            //Patch( CMXE_MP_N,
-            //LookUp( CMXE_MP_N, Proc_No = MAQUINA, { Com_Matenimiento: "Si JALA" } ))
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Text: ="Enviar"
-        X: =602
-        Y: =702
-        ZIndex: =3
-
     Rectangle1_7 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =67
@@ -126,4 +93,35 @@
             X: =520
             Y: =120
             ZIndex: =17
+
+    Button3 As button:
+        OnSelect: |-
+            =
+            
+            /*Patch(
+                CMXE_MP_N,  // Nombre de la tabla
+                {ID: ID_Maquina },// Registro específico que deseas modificar EL VALUE ES PARA TOMARLO COMO VALOR NUMERICO
+                {Com_Matenimiento: "Si"},
+                {Fecha_de_Finalizacion: Now()}  // Datos a modificar
+            )*/
+            
+            
+            
+            /*Patch(
+                CMXE_MP_N,   // Nombre de la tabla
+                {Proc_No: MAQUINA},  // Filtro para identificar el registro
+                {Estatus: "SI JALO"}  // Datos a modificar
+            )*/
+            
+            //Patch( CMXE_MP_N,
+            //LookUp( CMXE_MP_N, Proc_No = MAQUINA, { Com_Matenimiento: "Si JALA" } ))
+            
+            Patch(CMXE_MP_N,
+            {ID: ID_Maquina},
+            {Com_Matenimiento: "Si"},
+            {Fecha_de_Finalizacion: Now()})
+        Text: ="Button"
+        X: =619
+        Y: =701
+        ZIndex: =18
 
