@@ -95,7 +95,7 @@
             ZIndex: =17
 
     Button3 As button:
-        OnSelect: |-
+        OnSelect: |+
             =
             /*Patch(
                 CMXE_MP_N,  // Nombre de la tabla
@@ -111,11 +111,7 @@
             //Patch( CMXE_MP_N,
             //LookUp( CMXE_MP_N, Proc_No = MAQUINA, { Com_Matenimiento: "Si JALA" } ))
             
-            Patch(
-                CMXE_MP_N, 
-            {ID: ID_Maquina},
-             {Com_Matenimiento: "Si"},
-             {Fecha_de_Finalizacion: Now()})
+            
         Text: ="Button"
         X: =619
         Y: =701
