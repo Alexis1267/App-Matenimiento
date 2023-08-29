@@ -113,12 +113,7 @@
             
             
             
-            Patch(
-                CMXE_MP_N,  
-                {ID: ID_Maquina },
-                {Com_Matenimiento: "Si"},
-                {Fecha_de_Finalizacion: Now()} 
-            )
+            Patch( CMXE_MP_N, Defaults( CMXE_MP_N ), {Proc_No:"MP_PRUEBA_POWERAPP"} )	
             
         Text: ="Button"
         X: =619

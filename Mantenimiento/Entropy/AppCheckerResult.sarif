@@ -64396,6 +64396,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.ID_Maquina"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.ID_Maquina",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ID_Maquina",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Maq"
                 }
               ],
