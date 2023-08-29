@@ -112,8 +112,29 @@
             //LookUp( CMXE_MP_N, Proc_No = MAQUINA, { Com_Matenimiento: "Si JALA" } ))
             
             
+            
+            Patch(
+                CMXE_MP_N,  
+                {ID: ID_Maquina },
+                {Com_Matenimiento: "Si"},
+                {Fecha_de_Finalizacion: Now()} 
+            )
+            
         Text: ="Button"
         X: =619
         Y: =701
         ZIndex: =18
+
+    Button4 As button:
+        OnSelect: |-
+            =Patch(
+                CMXE_MP_N,  
+                {ID: 30},
+                {Proc_No:"MP SI JALA POWER APPS"}
+            
+            )
+        Text: ="Button"
+        X: =98
+        Y: =295
+        ZIndex: =19
 
