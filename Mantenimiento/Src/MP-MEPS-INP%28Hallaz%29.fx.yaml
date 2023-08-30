@@ -130,7 +130,7 @@
             }
             )*/
             
-            Patch(Modifi_MP,{Folio: 2},{Edad: 20}
+            Patch(Modifi_MP,{Folio: 2},{Edad: 10}
             )
         Text: ="Button"
         X: =58
@@ -139,8 +139,8 @@
 
     Button3_3 As button:
         OnSelect: |-
-            =
-            Patch(CMXE_MP_N
+            =Patch(CMXE_MP_N,{Folio_Maq: 8},{Proc_No: "Si"}
+            )
         Text: ="Button"
         X: =1051
         Y: =398
