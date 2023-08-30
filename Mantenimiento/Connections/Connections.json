@@ -13,31 +13,6 @@
     "dependents": [],
     "id": "2019b927-6731-4741-9d45-d73b8f21f1cf"
   },
-  "655ab65a-a2ff-451c-8e48-7655068acc7e": {
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "SharePoint",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
-      "parameterHints": {},
-      "parameterHintsV2": {}
-    },
-    "datasets": {
-      "https://carcgl-my.sharepoint.com/personal/alexis_silva_carrier_com": {
-        "dataSources": {
-          "Tecnicos_App_MP": {
-            "tableName": "b6097c69-2ea6-4c0c-a183-6d681794f2b9"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "Tecnicos_App_MP"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "655ab65a-a2ff-451c-8e48-7655068acc7e"
-  },
   "9f89a928-e1d7-45d1-b73f-1097d7630337": {
     "connectionRef": {
       "authenticationType": "sqlAuthentication",
@@ -46,8 +21,8 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23082.20",
-        "modifiedOn": "2023-08-30 14:27:53",
-        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
+        "modifiedOn": "2023-08-30 15:05:38",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[modifi_mp]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
       "gatewayObjectIdHint": "217359fc-552c-470d-bcb6-5f7d514806f1",
@@ -62,12 +37,16 @@
         "dataSources": {
           "CMXE_MP_N": {
             "tableName": "[dbo].[CMXE_MP_N]"
+          },
+          "Modifi_MP": {
+            "tableName": "[dbo].[Modifi_MP]"
           }
         }
       }
     },
     "dataSources": [
-      "CMXE_MP_N"
+      "CMXE_MP_N",
+      "Modifi_MP"
     ],
     "dependencies": {},
     "dependents": [],
