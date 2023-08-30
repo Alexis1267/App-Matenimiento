@@ -122,14 +122,20 @@
 
     Button4 As button:
         OnSelect: |-
-            =Patch(
-                CMXE_MP_N,  
-                {ID: 30},
-                {Proc_No:"MP SI JALA POWER APPS"}
+            =/*Patch(CMXE_MP_N,LookUp(CMXE_MP_N, ID = 41),
+            {
+            Com_Matenimiento: "No"
             
-            )
+            }
+            )*/
+            
+            Patch(
+                CMXE_MP_N,  // Nombre de la tabla
+                {ID: ID_Maquina },// Registro específico que deseas modificar EL VALUE ES PARA TOMARLO COMO VALOR NUMERICO
+                {Com_Matenimiento: "Si"},
+                {Fecha_de_Finalizacion: Now()}
         Text: ="Button"
-        X: =98
+        X: =58
         Y: =295
         ZIndex: =19
 

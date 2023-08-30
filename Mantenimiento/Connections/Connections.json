@@ -25,12 +25,6 @@
     "datasets": {
       "https://carcgl-my.sharepoint.com/personal/alexis_silva_carrier_com": {
         "dataSources": {
-          "Inicio_Sesion": {
-            "tableName": "66a01cd0-4088-4fb2-8906-255f11a4d758"
-          },
-          "Lista_Usuarios": {
-            "tableName": "54bfec88-dab9-4b9c-9db3-19dc05572b29"
-          },
           "Tecnicos_App_MP": {
             "tableName": "b6097c69-2ea6-4c0c-a183-6d681794f2b9"
           }
@@ -38,8 +32,6 @@
       }
     },
     "dataSources": [
-      "Inicio_Sesion",
-      "Lista_Usuarios",
       "Tecnicos_App_MP"
     ],
     "dependencies": {},
@@ -54,7 +46,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23082.20",
-        "modifiedOn": "2023-08-29 20:00:42",
+        "modifiedOn": "2023-08-30 14:27:53",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
