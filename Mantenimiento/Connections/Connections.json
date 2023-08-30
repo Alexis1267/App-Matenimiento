@@ -21,7 +21,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23082.20",
-        "modifiedOn": "2023-08-30 15:05:38",
+        "modifiedOn": "2023-08-30 16:37:54",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[modifi_mp]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
@@ -45,8 +45,8 @@
       }
     },
     "dataSources": [
-      "CMXE_MP_N",
-      "Modifi_MP"
+      "Modifi_MP",
+      "CMXE_MP_N"
     ],
     "dependencies": {},
     "dependents": [],
