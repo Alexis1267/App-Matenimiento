@@ -1,26 +1,4 @@
 {
-  "069f54ed-8fe4-4204-bd36-90039d7e8930": {
-    "connectionRef": {
-      "displayName": "SharePoint",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
-    },
-    "datasets": {
-      "https://carcgl-my.sharepoint.com/personal/alexis_silva_carrier_com": {
-        "dataSources": {
-          "Inicio_Sesion": {
-            "tableName": "66a01cd0-4088-4fb2-8906-255f11a4d758"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "Inicio_Sesion"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "069f54ed-8fe4-4204-bd36-90039d7e8930"
-  },
   "2019b927-6731-4741-9d45-d73b8f21f1cf": {
     "connectionRef": {
       "displayName": "Office 365 Outlook",
@@ -35,6 +13,28 @@
     "dependents": [],
     "id": "2019b927-6731-4741-9d45-d73b8f21f1cf"
   },
+  "3781cddb-e53a-4b94-b919-4e0845a84178": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://carcgl-my.sharepoint.com/personal/alexis_silva_carrier_com": {
+        "dataSources": {
+          "Tecnicos_App_MP": {
+            "tableName": "b6097c69-2ea6-4c0c-a183-6d681794f2b9"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Tecnicos_App_MP"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "3781cddb-e53a-4b94-b919-4e0845a84178"
+  },
   "7817e419-2139-4788-9873-a604336f6667": {
     "connectionRef": {
       "authenticationType": "sqlAuthentication",
@@ -43,8 +43,8 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23082.20",
-        "modifiedOn": "2023-08-31 17:42:43",
-        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[modifi_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
+        "modifiedOn": "2023-08-31 20:08:44",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[modifi_mp]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
       "gatewayObjectIdHint": "263dc832-5fea-479a-9fac-23670d346397",

@@ -46,7 +46,7 @@ Datos_MP As screen:
         Fill: =RGBA(97, 181, 73, 1)
         FontWeight: =FontWeight.Bold
         Height: =54
-        OnSelect: =If(Label8_8.Text = "MP_Prueba",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
+        OnSelect: =If(Label8_8.Text = "MPC-277-3M-3",Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover),Notify("Error",NotificationType.Error))
         Text: ="Contestar "
         Width: =256
         X: =555
