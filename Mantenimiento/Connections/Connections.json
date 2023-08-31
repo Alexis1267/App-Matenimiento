@@ -1,4 +1,26 @@
 {
+  "069f54ed-8fe4-4204-bd36-90039d7e8930": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://carcgl-my.sharepoint.com/personal/alexis_silva_carrier_com": {
+        "dataSources": {
+          "Inicio_Sesion": {
+            "tableName": "66a01cd0-4088-4fb2-8906-255f11a4d758"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Inicio_Sesion"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "069f54ed-8fe4-4204-bd36-90039d7e8930"
+  },
   "2019b927-6731-4741-9d45-d73b8f21f1cf": {
     "connectionRef": {
       "displayName": "Office 365 Outlook",
@@ -13,7 +35,7 @@
     "dependents": [],
     "id": "2019b927-6731-4741-9d45-d73b8f21f1cf"
   },
-  "9f89a928-e1d7-45d1-b73f-1097d7630337": {
+  "7817e419-2139-4788-9873-a604336f6667": {
     "connectionRef": {
       "authenticationType": "sqlAuthentication",
       "displayName": "SQL Server",
@@ -21,19 +43,18 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23082.20",
-        "modifiedOn": "2023-08-31 16:56:29",
-        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[modifi_mp]\":[\"post\",\"patch\",\"get\"]}}",
+        "modifiedOn": "2023-08-31 17:42:43",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[modifi_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
-      "gatewayObjectIdHint": "217359fc-552c-470d-bcb6-5f7d514806f1",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1590/1.0.1590.2955/sql/icon.png",
+      "gatewayObjectIdHint": "263dc832-5fea-479a-9fac-23670d346397",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1651/1.0.1651.3382/sql/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_sql",
       "isOnPremiseConnection": true,
-      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/9cfade4445464fb98d8df47a7d0c44cb",
-      "xrmConnectionReferenceLogicalName": "crea9_9cfade4445464fb98d8df47a7d0c44cb"
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/a5d471f8b1aa4169a7b683c5b6391877"
     },
     "datasets": {
-      "vmc8107da003,CMXEDataCollection": {
+      "Vmc8107da003,CMXEDataCollection": {
         "dataSources": {
           "CMXE_MP_N": {
             "tableName": "[dbo].[CMXE_MP_N]"
@@ -45,14 +66,14 @@
       }
     },
     "dataSources": [
-      "Modifi_MP",
-      "CMXE_MP_N"
+      "CMXE_MP_N",
+      "Modifi_MP"
     ],
     "dependencies": {},
     "dependents": [],
     "endpoints": [
-      "vmc8107da003,CMXEDataCollection"
+      "Vmc8107da003,CMXEDataCollection"
     ],
-    "id": "9f89a928-e1d7-45d1-b73f-1097d7630337"
+    "id": "7817e419-2139-4788-9873-a604336f6667"
   }
 }
