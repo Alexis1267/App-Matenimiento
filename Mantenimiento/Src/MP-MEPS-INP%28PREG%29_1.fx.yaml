@@ -663,10 +663,11 @@
         Y: =654
         ZIndex: =73
 
-    Button2 As button:
+    Btn1 As button:
         Height: =28
         OnSelect: |-
-            =UpdateContext({ShowPopUp : true});
+            =Set(Pregunta,Pregunta1_1.Text);
+            UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Respuesta1_30.Selected.Value = "N", true, false) 
         Width: =200
@@ -674,10 +675,11 @@
         Y: =115
         ZIndex: =74
 
-    Button2_1 As button:
+    Btn2 As button:
         Height: =28
         OnSelect: |-
-            =UpdateContext({ShowPopUp : true});
+            =Set(Pregunta,Label10_418.Text);
+            UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Respuesta2_30.Selected.Value = "N", true, false) 
         Width: =200
@@ -716,4 +718,11 @@
                 Width: =54
                 X: =944
                 ZIndex: =2
+
+            Label10 As label:
+                Text: =Pregunta
+                Width: =886
+                X: =34
+                Y: =51
+                ZIndex: =3
 
