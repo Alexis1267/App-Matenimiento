@@ -1,6 +1,5 @@
 "'MP-MEPS-INP(PREG)_1' As screen":
-    OnVisible: |-
-        =Set(PREGUNTA1,Concatenate( Pregunta1_1.Text,"   Justificación: ",Hallazgo1_30.Text))
+    OnVisible: =
 
     Rectangle1_6 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -198,10 +197,10 @@
             
             
             //ESTE CODIGO LO QUE ME ESTA HACIENDO ES UNA VALIDACION DE QUE SI EL DROPDOWN ESTA EN BLANCO O SI EL INPUT TEXT ESTA VISIBLE Y SI ESTA EN BLANCO, QUE ME DE UNA NOTIFICACION DE ERROR, PERO SI SE CUMPLE LA CONDICION QUE ME ENVIE A LA OTRA PAGINA
-            If(
+            /*If(
               IsBlank(Respuesta1_30.Selected) || Hallazgo1_30.Visible = true && IsBlank(Hallazgo1_30.Text) || IsBlank(Respuesta2_30.Selected) || Hallazgo2_30.Visible = true && IsBlank(Hallazgo2_30.Text) || IsBlank(Respuesta3_29.Selected) || Hallazgo3_29.Visible = true && IsBlank(Hallazgo3_29.Text) || IsBlank(Respuesta4_28.Selected) || Hallazgo4_28.Visible = true && IsBlank(Hallazgo4_28.Text) || IsBlank(Respuesta5_28.Selected) || Hallazgo5_28.Visible = true && IsBlank(Hallazgo5_28.Text)  || IsBlank(Respuesta6_25.Selected) || Hallazgo6_26.Visible = true && IsBlank(Hallazgo6_26.Text) || IsBlank(Respuesta7_24.Selected) || Hallazgo7_23.Visible = true && IsBlank(Hallazgo7_23.Text) || IsBlank(Respuesta8_19.Selected) || Hallazgo8_19.Visible = true && IsBlank(Hallazgo8_19.Text) || IsBlank(Respuesta9_18.Selected) || Hallazgo9_18.Visible = true && IsBlank(Hallazgo9_18.Text) || IsBlank(Respuesta10_15.Selected) || Hallazgo10_15.Visible = true && IsBlank(Hallazgo10_15.Text) || IsBlank(Respuesta11_21.Selected) || Hallazgo11_14.Visible = true && IsBlank(Hallazgo11_14.Text) || IsBlank(Respuesta12_1.Selected) || Hallazgo12_1.Visible = true && IsBlank(Hallazgo12_1.Text),Notify("Debes de contestar todos los campos.", NotificationType.Error) && Set(BotonColor,RGBA(106, 4, 15, 1)),Navigate('MP-MEPS-INP(Hallaz)',ScreenTransition.CoverRight) &&  Set(BotonColor, RGBA(0, 18, 107, 1))
             
-            );
+            );*/
             
             
             /*ForAll(Filter(Respuesta1 = "N" && !IsBlank(Hallazgo1.Text)),
@@ -445,36 +444,6 @@
         Y: =207
         ZIndex: =48
 
-    Hallazgo1_30 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        OnSelect: |-
-            =If(
-              IsBlank(Hallazgo1_30.Text),
-              true
-            )
-        Visible: =If(Respuesta1_30.Selected.Value = "N", true, false) 
-        Width: =209
-        X: =977
-        Y: =114
-        ZIndex: =50
-
-    Hallazgo2_30 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta2_30.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1094
-        Y: =159
-        ZIndex: =51
-
     Hallazgo4_28 As text:
         Default: =""
         EnableSpellCheck: =true
@@ -696,17 +665,27 @@
 
     Button2 As button:
         Height: =28
-        Text: ="Button"
-        Width: =132
-        X: =1206
+        OnSelect: =
+        Text: ="Justificación"
+        Visible: =If(Respuesta1_30.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
         Y: =115
         ZIndex: =74
 
-    Label10_429 As label:
-        Height: =29
-        Text: =PREGUNTA1
-        Width: =1091
-        X: =161
-        Y: =705
+    Button2_1 As button:
+        Height: =28
+        OnSelect: =
+        Text: ="Justificación"
+        Visible: =If(Respuesta2_30.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
+        Y: =161
         ZIndex: =75
+
+    Container1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(219, 219, 219, 0.75)
+        Height: =768
+        Width: =1366
+        ZIndex: =76
 
