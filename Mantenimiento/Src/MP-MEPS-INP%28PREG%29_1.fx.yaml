@@ -909,7 +909,9 @@
                     ZIndex: =17
 
                 TextInput1_6 As text:
+                    Clear: =true
                     Default: =
+                    EnableSpellCheck: =true
                     Height: =100
                     Mode: =TextMode.MultiLine
                     Width: =480
