@@ -1,6 +1,7 @@
 "'MP-MEPS-INP(PREG)_1' As screen":
     OnVisible: |-
-        =Set(Dato_Localizacion,Label8_11.Text);
+        =//Variables para traerme los datos de los inputs que se encuentran en la pantalla "Datos_MP"
+        Set(Dato_Localizacion,Label8_11.Text);
         Set(Dato_NomMaquina,Label8_10.Text);
         Set(Dato_ClassMtto,Label8.Text);
         Set(Dato_Proc_No,Label8_9.Text);
@@ -216,10 +217,10 @@
             )
             );*/
             
-            Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
+            //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            
+            Navigate('MP-MEPS-INP(Hallaz)',ScreenTransition.CoverRight)
             
             
             
@@ -672,9 +673,9 @@
         AutoDisableOnSelect: =!HabilitarBtn
         Height: =28
         OnSelect: |-
-            =Set(HabilitarBtn,false);
-            Set(Pregunta,Pregunta1_1.Text);
-            UpdateContext({ShowPopUp : true});
+            =
+            Set(Pregunta,Pregunta1_1.Text); //Variable que me trae la pregunta
+            UpdateContext({ShowPopUp : true}); //Variable para habilitar el ModalPopUp
         Text: ="Justificación"
         Visible: =If(Respuesta1_30.Selected.Value = "N", true, false) 
         Width: =200
