@@ -1,5 +1,9 @@
 "'MP-MEPS-INP(PREG)_1' As screen":
-    OnVisible: =
+    OnVisible: |-
+        =Set(Dato_Localizacion,Label8_11.Text);
+        Set(Dato_NomMaquina,Label8_10.Text);
+        Set(Dato_ClassMtto,Label8.Text);
+        Set(Dato_Proc_No,Label8_9.Text)
 
     Rectangle1_6 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -730,6 +734,9 @@
                 ZIndex: =1
 
             Button7 As button:
+                BorderStyle: =BorderStyle.None
+                Fill: =RGBA(97, 181, 73, 1)
+                FontWeight: =FontWeight.Bold
                 OnSelect: |-
                     =Set(HabilitarBtn,true);
                     UpdateContext({ShowPopUp: false}) //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
@@ -781,7 +788,7 @@
                     ZIndex: =12
 
                 TextInput1_4 As text:
-                    Default: =
+                    Default: =Dato_NomMaquina
                     DisplayMode: =DisplayMode.View
                     Width: =369
                     X: =20
@@ -805,7 +812,7 @@
                     ZIndex: =14
 
                 TextInput1_5 As text:
-                    Default: =
+                    Default: =Dato_ClassMtto
                     DisplayMode: =DisplayMode.View
                     Width: =344
                     X: =455
@@ -829,7 +836,7 @@
                     ZIndex: =10
 
                 TextInput1_3 As text:
-                    Default: =
+                    Default: =Dato_Proc_No
                     DisplayMode: =DisplayMode.View
                     Width: =290
                     X: =317
@@ -853,7 +860,7 @@
                     ZIndex: =8
 
                 TextInput1_2 As text:
-                    Default: =
+                    Default: =Dato_Localizacion
                     DisplayMode: =DisplayMode.View
                     Width: =244
                     X: =20
@@ -896,7 +903,7 @@
                     FontWeight: =FontWeight.Bold
                     Text: |-
                         ="Justificación:"
-                    Width: =299
+                    Width: =348
                     X: =20
                     Y: =360
                     ZIndex: =17
@@ -905,7 +912,7 @@
                     Default: =
                     Height: =100
                     Mode: =TextMode.MultiLine
-                    Width: =412
+                    Width: =480
                     X: =20
                     Y: =400
                     ZIndex: =18
