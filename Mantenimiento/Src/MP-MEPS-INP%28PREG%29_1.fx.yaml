@@ -739,10 +739,11 @@
                 FontWeight: =FontWeight.Bold
                 OnSelect: |-
                     =Set(HabilitarBtn,true);
-                    UpdateContext({ShowPopUp: false}) //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
+                    UpdateContext({ShowPopUp: false}); //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
+                    Reset(TextInput1_6)
                 Text: ="Enviar"
-                X: =418
-                Y: =534
+                X: =419
+                Y: =538
                 ZIndex: =2
 
             Icon4 As icon.Cancel:
@@ -750,7 +751,8 @@
                 Height: =65
                 Icon: =Icon.Cancel
                 OnSelect: |-
-                    =UpdateContext({ShowPopUp: false})
+                    =UpdateContext({ShowPopUp: false});
+                    Reset(TextInput1_6)
                 X: =934
                 ZIndex: =3
 
@@ -771,77 +773,58 @@
                 X: =290
                 ZIndex: =6
 
-            Group10 As group:
+            Group15 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_46 As label:
+                Label9_49 As label:
                     FontWeight: =FontWeight.Bold
+                    Height: =48
                     Text: |-
-                        ="Nombre de la maquina:"
-                    Width: =232
+                        ="Justificación:"
+                    Width: =348
                     X: =20
-                    Y: =161
-                    ZIndex: =12
+                    Y: =351
+                    ZIndex: =17
 
-                TextInput1_4 As text:
-                    Default: =Dato_NomMaquina
-                    DisplayMode: =DisplayMode.View
-                    Width: =369
+                TextInput1_6 As text:
+                    Clear: =true
+                    Default: =
+                    Height: =120
+                    Mode: =TextMode.MultiLine
+                    Reset: =true
+                    Width: =480
                     X: =20
-                    Y: =201
-                    ZIndex: =13
+                    Y: =399
+                    ZIndex: =18
 
-            Group11 As group:
+            Group14 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_47 As label:
+                TextInput1 As text:
+                    Default: =Pregunta
+                    DisplayMode: =DisplayMode.View
+                    Height: =68
+                    Mode: =TextMode.MultiLine
+                    Width: =941
+                    X: =20
+                    Y: =283
+                    ZIndex: =7
+
+                Label9_48 As label:
                     FontWeight: =FontWeight.Bold
                     Text: |-
-                        ="Clase de mantenimiento:"
-                    Width: =250
-                    X: =455
-                    Y: =161
-                    ZIndex: =14
-
-                TextInput1_5 As text:
-                    Default: =Dato_ClassMtto
-                    DisplayMode: =DisplayMode.View
-                    Width: =344
-                    X: =455
-                    Y: =201
-                    ZIndex: =15
-
-            Group12 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =19
-
-                Label9_44 As label:
-                    FontWeight: =FontWeight.Bold
-                    Text: |-
-                        ="Proc_No:"
-                    Width: =218
-                    X: =317
-                    Y: =65
-                    ZIndex: =10
-
-                TextInput1_3 As text:
-                    Default: =Dato_Proc_No
-                    DisplayMode: =DisplayMode.View
-                    Width: =290
-                    X: =317
-                    Y: =105
-                    ZIndex: =11
+                        ="Actividad:"
+                    X: =20
+                    Y: =243
+                    ZIndex: =16
 
             Group13 As group:
                 Height: =5
@@ -867,55 +850,113 @@
                     Y: =105
                     ZIndex: =9
 
-            Group14 As group:
+            Group12 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                TextInput1 As text:
-                    Default: =Pregunta
+                Label9_44 As label:
+                    FontWeight: =FontWeight.Bold
+                    Text: |-
+                        ="Proc_No:"
+                    Width: =218
+                    X: =317
+                    Y: =65
+                    ZIndex: =10
+
+                TextInput1_3 As text:
+                    Default: =Dato_Proc_No
                     DisplayMode: =DisplayMode.View
-                    Height: =68
-                    Mode: =TextMode.MultiLine
-                    Width: =941
-                    X: =20
-                    Y: =292
-                    ZIndex: =7
+                    Width: =290
+                    X: =317
+                    Y: =105
+                    ZIndex: =11
 
-                Label9_48 As label:
-                    FontWeight: =FontWeight.Bold
-                    Text: |-
-                        ="Actividad:"
-                    X: =20
-                    Y: =252
-                    ZIndex: =16
-
-            Group15 As group:
+            Group11 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_49 As label:
+                Label9_47 As label:
                     FontWeight: =FontWeight.Bold
                     Text: |-
-                        ="Justificación:"
-                    Width: =348
-                    X: =20
-                    Y: =360
-                    ZIndex: =17
+                        ="Clase de mantenimiento:"
+                    Width: =250
+                    X: =455
+                    Y: =155
+                    ZIndex: =14
 
-                TextInput1_6 As text:
-                    Clear: =true
-                    Default: =
-                    EnableSpellCheck: =true
-                    Height: =100
-                    Mode: =TextMode.MultiLine
-                    Width: =480
+                TextInput1_5 As text:
+                    Default: =Dato_ClassMtto
+                    DisplayMode: =DisplayMode.View
+                    Width: =344
+                    X: =455
+                    Y: =195
+                    ZIndex: =15
+
+            Group10 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_46 As label:
+                    FontWeight: =FontWeight.Bold
+                    Text: |-
+                        ="Nombre de la maquina:"
+                    Width: =232
                     X: =20
-                    Y: =400
-                    ZIndex: =18
+                    Y: =155
+                    ZIndex: =12
+
+                TextInput1_4 As text:
+                    Default: =Dato_NomMaquina
+                    DisplayMode: =DisplayMode.View
+                    Width: =369
+                    X: =20
+                    Y: =195
+                    ZIndex: =13
+
+            AddMediaWithImage6 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                UploadedImage7 As image:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
+                    Height: =139
+                    Image: =If(IsBlank(AddMediaButton6.Media), SampleImage, AddMediaButton6.Media)
+                    Width: =188
+                    X: =775
+                    Y: =380
+                    ZIndex: =20
+
+                AddMediaButton6 As addMedia:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
+                    ChangePictureText: ="Cambiar fotografia"
+                    Height: =64
+                    Size: =15
+                    Text: ="Adjuntar evidencia"
+                    Width: =188
+                    X: =579
+                    Y: =417
+                    ZIndex: =21
+
+        UploadedImage6 As image:
+            Height: =
+            Image: =
+            ImagePosition: =ImagePosition.Fill
+            Width: =
+            X: =
+            Y: =
+            ZIndex: =4
 
