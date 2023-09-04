@@ -96,8 +96,7 @@
 
     Button3_3 As button:
         OnSelect: |-
-            =Patch(CMXE_MP_N,{Folio_Maq: 8},{Com_Matenimiento: "Si"}
-            )
+            =Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"})
         Text: ="Enviar"
         X: =603
         Y: =701

@@ -3,7 +3,7 @@ Datos_MP As screen:
     OnVisible: |-
         =Set(MAQUINA,Title3.Text); //Esta variable se utiliza para almacenar el "Proc.No" que esta en la pantalla de ListaMP
         
-        Set(ID_Maquina,Title3_5.Text) //Esta variable se utiliza para almacenar el "ID" de la maquina, para que despues en la pantalla de los botones cuando finalizan las actividades se pueda hacer el update de "Com_Mantenimiento"
+        Set(ID_Maquina,Value(Title3_5.Text)) //Esta variable se utiliza para almacenar el "ID" de la maquina, para que despues en la pantalla de los botones cuando finalizan las actividades se pueda hacer el update de "Com_Mantenimiento"
 
     Rectangle1_64 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)

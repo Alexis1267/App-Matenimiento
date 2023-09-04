@@ -1,19 +1,58 @@
 Screen3 As screen:
 
-    ComboBox1 As combobox:
-        DisplayFields: =["{Name}"]
-        IsSearchable: =false
-        Items: =Filter(Tecnicos_App_MP, Name = Drop_CantUsuario_10.Selected.Value)
-        SearchFields: =["{Name}"]
-        SearchItems: =[]
-        X: =270
-        Y: =125
+    BTON2 As button:
+        DisplayMode: |
+            =If(Boton1HizoClic, DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =51
+        OnSelect: =
+        Text: ="Button2"
+        X: =867
+        Y: =311
         ZIndex: =1
 
-    ComboBox2 As combobox:
-        Items: =ComboBoxSample
-        SearchItems: =Search(ComboBoxSample,ComboBox2.SearchText,"Value1")
-        X: =237
-        Y: =428
+    BTON1 As button:
+        OnSelect: |
+            =Set(Boton1HizoClic,true)
+        Text: ="Enviar"
+        X: =271
+        Y: =362
         ZIndex: =2
+
+    BTON1_2 As button:
+        DisplayMode: |-
+            =
+            If(Boton2HizoClic, DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =51
+        OnSelect: =Set(btnSeleccionado,BTON1_2)
+        Text: ="Button1"
+        X: =867
+        Y: =235
+        ZIndex: =4
+
+    BTON2_1 As button:
+        DisplayMode: |
+            =If(Boton1HizoClic, DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =51
+        Text: ="Button4"
+        X: =867
+        Y: =462
+        ZIndex: =5
+
+    BTON1_3 As button:
+        DisplayMode: |
+            =If(Boton1HizoClic, DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =51
+        OnSelect: =
+        Text: ="Button3"
+        X: =867
+        Y: =386
+        ZIndex: =6
+
+    BTON1_1 As button:
+        OnSelect: |
+            =Set(Boton2HizoClic, true)
+        Text: ="Enviar2"
+        X: =271
+        Y: =437
+        ZIndex: =7
 
