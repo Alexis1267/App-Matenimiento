@@ -756,7 +756,7 @@
                     Clas_Mantenimiento: TextInput1_5.Text,
                     Fecha_Inicio: Now(),
                     Justificacion: TextInput1_6.Text,
-                    Imagenes: attachmentValue1,
+                    Imagenes: "",
                     Actividad: ACT.Text,
                     Estatus: "Abierto"
                     });
