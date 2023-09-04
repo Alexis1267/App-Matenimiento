@@ -43,7 +43,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23082.20",
-        "modifiedOn": "2023-09-04 19:51:46",
+        "modifiedOn": "2023-09-04 20:24:10",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
@@ -58,12 +58,16 @@
         "dataSources": {
           "CMXE_MP_N": {
             "tableName": "[dbo].[CMXE_MP_N]"
+          },
+          "CMXE_TablaH_MP": {
+            "tableName": "[dbo].[CMXE_TablaH_MP]"
           }
         }
       }
     },
     "dataSources": [
-      "CMXE_MP_N"
+      "CMXE_MP_N",
+      "CMXE_TablaH_MP"
     ],
     "dependencies": {},
     "dependents": [],
