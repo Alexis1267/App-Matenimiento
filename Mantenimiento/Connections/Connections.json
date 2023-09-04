@@ -43,7 +43,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23082.20",
-        "modifiedOn": "2023-09-04 19:51:46",
+        "modifiedOn": "2023-09-04 20:01:22",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
@@ -58,42 +58,7 @@
         "dataSources": {
           "CMXE_MP_N": {
             "tableName": "[dbo].[CMXE_MP_N]"
-          }
-        }
-      }
-    },
-    "dataSources": [
-      "CMXE_MP_N"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "endpoints": [
-      "Vmc8107da003,CMXEDataCollection"
-    ],
-    "id": "7817e419-2139-4788-9873-a604336f6667"
-  },
-  "b7e35e86-9771-4c75-9084-6774f7d0266d": {
-    "connectionRef": {
-      "authenticationType": "sqlAuthentication",
-      "displayName": "SQL Server",
-      "executionRestrictions": {
-        "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
-        "apiVer": 2,
-        "appVer": "3.23082.20",
-        "modifiedOn": "2023-09-04 19:51:47",
-        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"]}}",
-        "version": 1
-      },
-      "gatewayObjectIdHint": "217359fc-552c-470d-bcb6-5f7d514806f1",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1590/1.0.1590.2955/sql/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_sql",
-      "isOnPremiseConnection": true,
-      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_sql/connections/9cfade4445464fb98d8df47a7d0c44cb",
-      "xrmConnectionReferenceLogicalName": "crea9_9cfade4445464fb98d8df47a7d0c44cb"
-    },
-    "datasets": {
-      "vmc8107da003,CMXEDataCollection": {
-        "dataSources": {
+          },
           "CMXE_TablaH_MP": {
             "tableName": "[dbo].[CMXE_TablaH_MP]"
           }
@@ -101,13 +66,14 @@
       }
     },
     "dataSources": [
+      "CMXE_MP_N",
       "CMXE_TablaH_MP"
     ],
     "dependencies": {},
     "dependents": [],
     "endpoints": [
-      "vmc8107da003,CMXEDataCollection"
+      "Vmc8107da003,CMXEDataCollection"
     ],
-    "id": "b7e35e86-9771-4c75-9084-6774f7d0266d"
+    "id": "7817e419-2139-4788-9873-a604336f6667"
   }
 }
