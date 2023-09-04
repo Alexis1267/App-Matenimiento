@@ -738,11 +738,12 @@
                 BorderStyle: =BorderStyle.None
                 Fill: =RGBA(97, 181, 73, 1)
                 FontWeight: =FontWeight.Bold
-                OnSelect: |-
-                    =Set(HabilitarBtn,true);
+                OnSelect: |
+                    =
+                    Set(HabilitarBtn,true);
                     UpdateContext({ShowPopUp: false}); //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
                     Reset(TextInput1_6);
-                    Reset(AddMediaButton6)
+                    Reset(AddMediaButton6);
                 Text: ="Enviar"
                 X: =419
                 Y: =538
