@@ -736,10 +736,17 @@
 
             Button7 As button:
                 BorderStyle: =BorderStyle.None
+                DisplayMode: |-
+                    =//Validacion de boton de que debe cumplir y escribir en justificacion
+                    If(IsBlank(TextInput1_6),DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
                 Fill: =RGBA(97, 181, 73, 1)
                 FontWeight: =FontWeight.Bold
-                OnSelect: |
-                    =//INGRESAR DATOS A LA TABLA HALLAZGOS
+                OnSelect: |+
+                    =//CONVERTIR ARCHIVO
+                    Set(attachmentValue1, JSON(UploadedImage7.Image, JSONFormat.IncludeBinaryData));
+                        Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
+                    
+                    //INGRESAR DATOS A LA TABLA HALLAZGOS
                     Patch(CMXE_TablaH_MP,Defaults(CMXE_TablaH_MP),
                     {
                     Asignado: TextInput1_7.Text,
@@ -749,12 +756,16 @@
                     Clas_Mantenimiento: TextInput1_5.Text,
                     Fecha_Inicio: Now(),
                     Justificacion: TextInput1_6.Text,
-                    Imagenes: "N/A"
+                    Imagenes: attachmentValue1,
+                    Actividad: ACT.Text,
+                    Estatus: "Abierto"
                     });
                     
                     UpdateContext({ShowPopUp: false}); //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
                     Reset(TextInput1_6);
                     Reset(AddMediaButton6);
+                    
+                    
                 Text: ="Enviar"
                 X: =419
                 Y: =538

@@ -56,3 +56,14 @@ Screen3 As screen:
         Y: =437
         ZIndex: =7
 
+    Button4 As button:
+        OnSelect: |-
+            =Patch(CMXE_TablaH_MP,Defaults(CMXE_TablaH_MP),
+            {
+            Actividad: 
+            });
+        Text: ="Button"
+        X: =288
+        Y: =111
+        ZIndex: =8
+
