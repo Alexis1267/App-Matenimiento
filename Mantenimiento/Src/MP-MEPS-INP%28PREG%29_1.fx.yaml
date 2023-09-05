@@ -742,9 +742,17 @@
                 Fill: =RGBA(97, 181, 73, 1)
                 FontWeight: =FontWeight.Bold
                 OnSelect: |+
-                    =//CONVERTIR ARCHIVO
+                    =
+                    
+                    
+                    //CONVERTIR ARCHIVO
                     Set(attachmentValue1, JSON(UploadedImage7.Image, JSONFormat.IncludeBinaryData));
                         Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
+                    
+                    
+                            // Upload file1 and get url
+                    Set(attachment1Link,CreateFile1.Run(fileName1, attachment1Base64Only).sharepointfilelink);
+                    );
                     
                     //INGRESAR DATOS A LA TABLA HALLAZGOS
                     Patch(CMXE_TablaH_MP,Defaults(CMXE_TablaH_MP),
