@@ -1,4 +1,18 @@
 {
+  "1102e19c-503c-4599-ba22-9e94ae81ca10": {
+    "connectionRef": {
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1649/1.0.1649.3368/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1102e19c-503c-4599-ba22-9e94ae81ca10"
+  },
   "2019b927-6731-4741-9d45-d73b8f21f1cf": {
     "connectionRef": {
       "displayName": "Office 365 Outlook",
@@ -43,7 +57,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23082.20",
-        "modifiedOn": "2023-09-04 20:03:28",
+        "modifiedOn": "2023-09-05 15:58:22",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
