@@ -57,7 +57,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23082.20",
-        "modifiedOn": "2023-09-05 15:58:22",
+        "modifiedOn": "2023-09-05 17:18:41",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
@@ -89,33 +89,5 @@
       "Vmc8107da003,CMXEDataCollection"
     ],
     "id": "7817e419-2139-4788-9873-a604336f6667"
-  },
-  "d8ed0514-648a-47f0-b6cd-d0a9dbd7e266": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "b53ef04d-c241-4370-ac5a-f1829be407da"
-        }
-      },
-      "parameterHintsV2": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "b53ef04d-c241-4370-ac5a-f1829be407da"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "Copyof-ImagenMP"
-    ],
-    "dependencies": {
-      "shared_sharepointonline": "3781cddb-e53a-4b94-b919-4e0845a84178"
-    },
-    "dependents": [],
-    "id": "d8ed0514-648a-47f0-b6cd-d0a9dbd7e266"
   }
 }
