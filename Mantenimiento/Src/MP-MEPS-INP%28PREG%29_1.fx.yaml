@@ -754,7 +754,6 @@
                     Set(attachment1Link,Insert_Img_MP.Run(fileName1,attachment1Base64Only).imagenh);
                     */
                     
-                    If(Checkbox1.Value = true,Set(fileName1, Blank()),
                     
                     // Set file1 name
                         Set(fileName1, Concatenate(TextInput1_3.Text &"_1",Now(),".jpg"));
@@ -769,7 +768,7 @@
                     
                         // Upload file1 and get url
                         Set(attachment1Link,Insert_Img_MP.Run(fileName1, attachment1Base64Only).imagenh);
-                    );
+                    
                     
                     
                     
@@ -1033,10 +1032,4 @@
                     X: =673
                     Y: =105
                     ZIndex: =22
-
-    Checkbox1 As checkbox:
-        Text: ="Option"
-        X: =753
-        Y: =460
-        ZIndex: =77
 
