@@ -34488,17 +34488,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'MP-MEPS-INP(PREG)_1'.Container1.Container2.Button7.OnSelect"
+                  "fullyQualifiedName": "'MP-MEPS-INP(PREG)_2'.Container1_1.Container2_1.Button7_1.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'MP-MEPS-INP(PREG)_1'.Container1.Container2.Button7.OnSelect",
+                  "fullyQualifiedName": "'MP-MEPS-INP(PREG)_2'.Container1_1.Container2_1.Button7_1.OnSelect",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 51,
-                  "charOffset": 920,
+                  "charOffset": 811,
                   "snippet": {
                     "text": "Insert_Img_MP.Run(fileName1, attachment1Base64Only)"
                   }
@@ -34506,8 +34506,8 @@
               },
               "properties": {
                 "member": "OnSelect",
-                "module": "MP-MEPS-INP(PREG)_1",
-                "type": "'MP-MEPS-INP(PREG)_1'.Container1.Container2.Button7"
+                "module": "MP-MEPS-INP(PREG)_2",
+                "type": "'MP-MEPS-INP(PREG)_2'.Container1_1.Container2_1.Button7_1"
               }
             }
           ],
@@ -68384,36 +68384,6 @@
               },
               "properties": {
                 "member": "Tecnicos_App_MP",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-NotOfflineConnectors",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Prueba_Img_MP"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Prueba_Img_MP",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Prueba_Img_MP",
                 "module": "App",
                 "type": "App"
               }

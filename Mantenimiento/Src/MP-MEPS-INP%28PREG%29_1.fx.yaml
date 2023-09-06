@@ -767,7 +767,7 @@
                      
                     
                         // Upload file1 and get url
-                        Set(attachment1Link,Insert_Img_MP.Run(fileName1, attachment1Base64Only).imagenh);
+                        Set(attachment1Link,Insert_Img_MP.Run(fileName1 && attachment1Base64Only).imagenh);
                     
                     
                     
