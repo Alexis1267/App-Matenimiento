@@ -57,10 +57,9 @@
       "displayName": "SQL Server",
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
-        "apiVer": 2,
-        "appVer": "3.23082.20",
-        "modifiedOn": "2023-09-06 17:12:36",
-        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"]}}",
+        "appVer": "3.23083.17",
+        "modifiedOn": "2023-09-07 15:17:48",
+        "policy": "{\"type\":\"unused\"}",
         "version": 1
       },
       "gatewayObjectIdHint": "263dc832-5fea-479a-9fac-23670d346397",
@@ -102,12 +101,18 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "3781cddb-e53a-4b94-b919-4e0845a84178": {
+          "value": "shared_sharepointonline"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "76b6a22e-b459-44d7-963a-28501c370fbe"
         }
       },
       "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "3781cddb-e53a-4b94-b919-4e0845a84178"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "76b6a22e-b459-44d7-963a-28501c370fbe"
