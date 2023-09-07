@@ -749,7 +749,7 @@
                 BorderStyle: =BorderStyle.None
                 Fill: =RGBA(97, 181, 73, 1)
                 FontWeight: =FontWeight.Bold
-                OnSelect: |
+                OnSelect: |+
                     =/*Set(Foto_For,JSON(UploadedImage7_1.Image,JSONFormat.IncludeBinaryData));
                     
                     Set(Foto2_for,Mid(Foto_For,2,Len(Foto_For)-2));
@@ -765,20 +765,49 @@
                     
                     */
                     
-                    
                     // Set file1 name
-                        Set(fileName1, Concatenate(TextInput1_3.Text &"_1",Now(),".jpg"));
+                        Set(fileName1, Concatenate(TextInput1_3.Text &"_1",DatePicker4.SelectedDate,".jpg"));
                     
                      
                     
                         // Get file1 binary data and convert it to base64
-                        Set(attachmentValue1, JSON(UploadedImage7.Image, JSONFormat.IncludeBinaryData));
+                        Set(attachmentValue1, JSON(UploadedImage7_1.Image, JSONFormat.IncludeBinaryData));
                         Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
                     
                      
                     
                         // Upload file1 and get url
-                        Set(attachment1Link,Insert_Img_MP.Run(fileName1, attachment1Base64Only).imagenh);
+                        //Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
+                    
+                    Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    //INGRESAR DATOS A LA TABLA HALLAZGOS
+                    Patch(CMXE_TablaH_MP,Defaults(CMXE_TablaH_MP),
+                    {
+                    Asignado: TextInput1_7.Text,
+                    Localizacion: TextInput1_2.Text,
+                    Proc_No: TextInput1_3.Text,
+                    Nom_Maquina:TextInput1_4.Text,
+                    Clas_Mantenimiento: TextInput1_5.Text,
+                    Fecha_Inicio: Now(),
+                    Justificacion: TextInput1_14.Text,
+                    Imagenes: attachment1Link,
+                    Actividad: ACT.Text,
+                    Estatus: "Abierto"
+                    });
+                    
+                    UpdateContext({ShowPopUp: false}); //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
+                    Reset(TextInput1_6);
+                    Reset(AddMediaButton6);
+                    
                 Text: ="Enviar"
                 X: =419
                 Y: =538
@@ -1015,4 +1044,11 @@
                     X: =673
                     Y: =105
                     ZIndex: =22
+
+    DatePicker4 As datepicker:
+        DefaultDate: =Now()
+        Format: ="dd/mm/yyyy"
+        X: =810
+        Y: =335
+        ZIndex: =77
 
