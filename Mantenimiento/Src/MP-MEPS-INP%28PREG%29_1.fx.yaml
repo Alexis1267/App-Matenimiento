@@ -7,11 +7,141 @@
         Set(Dato_Proc_No,Label8_9.Text);
         Set(Dato_Asignado,Label8_13.Text)
 
+    Btn3 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =28
+        OnSelect: |-
+            =Set(Pregunta,Preg2.Text);
+            UpdateContext({ShowPopUp : true});
+        Text: ="Justificación"
+        Visible: =If(Resp3.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
+        Y: =209
+        ZIndex: =1
+
+    Btn4 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =28
+        OnSelect: |-
+            =Set(Pregunta,Preg2.Text);
+            UpdateContext({ShowPopUp : true});
+        Text: ="Justificación"
+        Visible: =If(Resp4.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
+        Y: =255
+        ZIndex: =2
+
+    Btn5 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =28
+        OnSelect: |-
+            =Set(Pregunta,Preg2.Text);
+            UpdateContext({ShowPopUp : true});
+        Text: ="Justificación"
+        Visible: =If(Resp5.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
+        Y: =306
+        ZIndex: =3
+
+    Btn6 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =28
+        OnSelect: |-
+            =Set(Pregunta,Preg2.Text);
+            UpdateContext({ShowPopUp : true});
+        Text: ="Justificación"
+        Visible: =If(Resp6.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
+        Y: =356
+        ZIndex: =4
+
+    Btn7 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =28
+        OnSelect: |-
+            =Set(Pregunta,Preg2.Text);
+            UpdateContext({ShowPopUp : true});
+        Text: ="Justificación"
+        Visible: =If(Resp7.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
+        Y: =403
+        ZIndex: =5
+
+    Btn8 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =28
+        OnSelect: |-
+            =Set(Pregunta,Preg2.Text);
+            UpdateContext({ShowPopUp : true});
+        Text: ="Justificación"
+        Visible: =If(Resp8.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
+        Y: =450
+        ZIndex: =6
+
+    Btn9 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =28
+        OnSelect: |-
+            =Set(Pregunta,Preg2.Text);
+            UpdateContext({ShowPopUp : true});
+        Text: ="Justificación"
+        Visible: =If(Resp9.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
+        Y: =493
+        ZIndex: =7
+
+    Btn10 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =28
+        OnSelect: |-
+            =Set(Pregunta,Preg2.Text);
+            UpdateContext({ShowPopUp : true});
+        Text: ="Justificación"
+        Visible: =If(Resp10.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
+        Y: =534
+        ZIndex: =8
+
+    Btn11 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =28
+        OnSelect: |-
+            =Set(Pregunta,Preg2.Text);
+            UpdateContext({ShowPopUp : true});
+        Text: ="Justificación"
+        Visible: =If(Resp11.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
+        Y: =576
+        ZIndex: =9
+
+    Btn12 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =28
+        OnSelect: |-
+            =Set(Pregunta,Preg2.Text);
+            UpdateContext({ShowPopUp : true});
+        Text: ="Justificación"
+        Visible: =If(Resp12.Selected.Value = "N", true, false) 
+        Width: =200
+        X: =1138
+        Y: =620
+        ZIndex: =10
+
     Rectangle1_6 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =59
         Width: =1366
-        ZIndex: =1
+        ZIndex: =11
 
     Label9_4 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -21,35 +151,35 @@
         Text: ="Descripción de las Actividades a Realizar"
         Width: =588
         X: =389
-        ZIndex: =2
+        ZIndex: =12
 
     Rectangle2_383 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
         Width: =1366
         Y: =99
-        ZIndex: =3
+        ZIndex: =13
 
     Label10_372 As label:
         Text: ="Realizado"
         Width: =119
         X: =36
         Y: =59
-        ZIndex: =4
+        ZIndex: =14
 
     Label10_417 As label:
         Text: ="No realizado"
         Width: =125
         X: =177
         Y: =59
-        ZIndex: =5
+        ZIndex: =15
 
     Label10_18 As label:
         FontWeight: =FontWeight.Bold
         Text: ="[R] "
         Width: =36
         Y: =59
-        ZIndex: =7
+        ZIndex: =16
 
     Label10_373 As label:
         FontWeight: =FontWeight.Bold
@@ -57,17 +187,17 @@
         Width: =50
         X: =142
         Y: =59
-        ZIndex: =8
+        ZIndex: =17
 
-    Pregunta1_1 As label:
+    Preg1 As label:
         Height: =27
         Text: ="Reapriete y verificación de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)"
         Width: =868
         X: =93
         Y: =116
-        ZIndex: =11
+        ZIndex: =18
 
-    Respuesta1_30 As dropdown:
+    Resp1 As dropdown:
         AllowEmptySelection: =true
         BorderColor: =RGBA(0, 40, 85, 1)
         ChevronBackground: =RGBA(0, 40, 85, 1)
@@ -78,24 +208,24 @@
         Items: =["R","N"]
         OnSelect: |
             =If(
-                IsBlank(Respuesta1_30.Selected),
+                IsBlank(Resp1.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =117
-        ZIndex: =13
+        ZIndex: =19
 
-    Label10_418 As label:
+    Preg2 As label:
         Height: =48
         Text: ="Reapriete y verificación de tornillos de brackets de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)"
         Width: =1027
         X: =93
         Y: =151
-        ZIndex: =17
+        ZIndex: =20
 
-    Respuesta3_29 As dropdown:
+    Resp3 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -104,24 +234,24 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Respuesta3_29.Selected),
+                IsBlank(Resp3.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =210
-        ZIndex: =19
+        ZIndex: =21
 
-    Label10_419 As label:
+    Preg3 As label:
         Height: =32
         Text: ="Verificar funcionamiento de sensores de carro"
         Width: =1064
         X: =93
         Y: =204
-        ZIndex: =20
+        ZIndex: =22
 
-    Respuesta4_28 As dropdown:
+    Resp4 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -130,24 +260,24 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Respuesta4_28.Selected),
+                IsBlank(Resp4.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =257
-        ZIndex: =22
+        ZIndex: =23
 
-    Label10_420 As label:
+    Preg4 As label:
         Height: =29
         Text: ="Limpieza y lubricación de chumaceras de carro de alimentación"
         Width: =1064
         X: =93
         Y: =255
-        ZIndex: =23
+        ZIndex: =24
 
-    Respuesta5_28 As dropdown:
+    Resp5 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -156,22 +286,22 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Respuesta5_28.Selected),
+                IsBlank(Resp5.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =305
-        ZIndex: =26
+        ZIndex: =25
 
-    Label10_421 As label:
+    Preg5 As label:
         Height: =27
         Text: ="Reapriete y verificación de tornillos de chumaceras, Flecha transmisión (marcar testigo en caso de no encontrarse)"
-        Width: =1245
+        Width: =1027
         X: =93
         Y: =304
-        ZIndex: =27
+        ZIndex: =26
 
     Icon3_31 As icon.NextArrow:
         AutoDisableOnSelect: |
@@ -236,9 +366,9 @@
         Width: =67
         X: =1271
         Y: =685
-        ZIndex: =29
+        ZIndex: =27
 
-    Respuesta6_25 As dropdown:
+    Resp6 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -247,32 +377,32 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Respuesta6_25.Selected),
+                IsBlank(Resp6.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =356
-        ZIndex: =30
+        ZIndex: =28
 
-    Label10_422 As label:
+    Preg6 As label:
         Height: =27
         Text: ="Controlar y limpiar bandejas de cables (armor blocks, power tracks)"
-        Width: =1245
+        Width: =1027
         X: =93
         Y: =355
-        ZIndex: =31
+        ZIndex: =29
 
-    Label10_423 As label:
+    Preg7 As label:
         Height: =27
         Text: ="Revisión de condiciones de anclaje en topes para montacargas, re apretar tuercas de sujeción"
-        Width: =1245
+        Width: =1027
         X: =93
         Y: =402
-        ZIndex: =32
+        ZIndex: =30
 
-    Respuesta7_24 As dropdown:
+    Resp7 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -281,16 +411,16 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Respuesta7_24.Selected),
+                IsBlank(Resp7.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =403
-        ZIndex: =33
+        ZIndex: =31
 
-    Respuesta8_19 As dropdown:
+    Resp8 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -299,24 +429,24 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Respuesta8_19.Selected),
+                IsBlank(Resp8.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =450
-        ZIndex: =34
+        ZIndex: =32
 
-    Label10_424 As label:
-        Height: =48
+    Preg8 As label:
+        Height: =28
         Text: ="Limpiar y verificar funcionamiento de sensores de Muting (Sick)"
-        Width: =1245
+        Width: =1016
         X: =93
-        Y: =441
-        ZIndex: =35
+        Y: =450
+        ZIndex: =33
 
-    Respuesta9_18 As dropdown:
+    Resp9 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -325,24 +455,24 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Respuesta9_18.Selected),
+                IsBlank(Resp9.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =494
-        ZIndex: =36
+        ZIndex: =34
 
-    Label10_425 As label:
-        Height: =28
+    Preg9 As label:
+        Height: =27
         Text: ="Revisar el reapriete de tornillos en las llantas de los carros (Marcar testigo en caso de no contar)"
-        Width: =1245
+        Width: =1027
         X: =93
-        Y: =493
-        ZIndex: =37
+        Y: =494
+        ZIndex: =35
 
-    Respuesta10_15 As dropdown:
+    Resp10 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -351,24 +481,24 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Respuesta10_15.Selected),
+                IsBlank(Resp10.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =535
-        ZIndex: =38
+        ZIndex: =36
 
-    Label10_426 As label:
-        Height: =27
+    Preg10 As label:
+        Height: =26
         Text: ="Revisión Typer Look"
-        Width: =1245
+        Width: =1027
         X: =93
-        Y: =534
-        ZIndex: =39
+        Y: =535
+        ZIndex: =37
 
-    Respuesta11_21 As dropdown:
+    Resp11 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -377,24 +507,24 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Respuesta11_21.Selected),
+                IsBlank(Resp11.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =578
-        ZIndex: =40
+        ZIndex: =38
 
-    Label10_427 As label:
-        Height: =27
+    Preg11 As label:
+        Height: =26
         Text: ="Revisión de Riel y realizar limpieza"
-        Width: =1245
+        Width: =1027
         X: =93
-        Y: =575
-        ZIndex: =41
+        Y: =576
+        ZIndex: =39
 
-    Respuesta12_1 As dropdown:
+    Resp12 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -403,22 +533,22 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Respuesta12_1.Selected),
+                IsBlank(Resp12.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =623
-        ZIndex: =42
+        ZIndex: =40
 
-    Label10_428 As label:
-        Height: =25
+    Preg12 As label:
+        Height: =30
         Text: ="Revisión y/o reparación del Braket"
-        Width: =1045
+        Width: =1016
         X: =93
-        Y: =623
-        ZIndex: =43
+        Y: =618
+        ZIndex: =41
 
     Icon1_30 As icon.BackArrow:
         Height: =75
@@ -427,7 +557,7 @@
         Width: =67
         X: =26
         Y: =685
-        ZIndex: =44
+        ZIndex: =42
 
     Image2_7 As image:
         Height: =41
@@ -435,139 +565,9 @@
         Width: =209
         X: =1157
         Y: =9
-        ZIndex: =45
+        ZIndex: =43
 
-    Hallazgo3_29 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta3_29.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1094
-        Y: =207
-        ZIndex: =48
-
-    Hallazgo4_28 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta4_28.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1094
-        Y: =254
-        ZIndex: =52
-
-    Hallazgo5_28 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta5_28.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1094
-        Y: =303
-        ZIndex: =53
-
-    Hallazgo6_26 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta6_25.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1094
-        Y: =353
-        ZIndex: =54
-
-    Hallazgo7_23 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta7_24.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1094
-        Y: =401
-        ZIndex: =55
-
-    Hallazgo8_19 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta8_19.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1094
-        Y: =447
-        ZIndex: =56
-
-    Hallazgo9_18 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta9_18.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1094
-        Y: =490
-        ZIndex: =57
-
-    Hallazgo10_15 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta10_15.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1094
-        Y: =533
-        ZIndex: =58
-
-    Hallazgo11_14 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta11_21.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1094
-        Y: =574
-        ZIndex: =59
-
-    Hallazgo12_1 As text:
-        Default: =""
-        EnableSpellCheck: =true
-        Height: =31
-        HintText: ="¿Por qué?"
-        OnChange: =
-        Visible: |
-            =If(Respuesta12_1.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1094
-        Y: =618
-        ZIndex: =60
-
-    Respuesta2_30 As dropdown:
+    Resp2 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -576,130 +576,132 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Respuesta1_30.Selected),
+                IsBlank(Resp1.Selected),
                 true
             )
         SelectionFill: =RGBA(92, 103, 125, 1)
         Width: =75
         X: =5
         Y: =164
-        ZIndex: =61
+        ZIndex: =45
 
     Rectangle2_384 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
         Y: =150
-        ZIndex: =62
+        ZIndex: =46
 
     Rectangle2_386 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
         Y: =198
-        ZIndex: =63
+        ZIndex: =47
 
     Rectangle2_389 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
         Y: =246
-        ZIndex: =64
+        ZIndex: =48
 
     Rectangle2_390 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
-        Y: =294
-        ZIndex: =65
+        Y: =290
+        ZIndex: =49
 
     Rectangle2_391 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
         Y: =343
-        ZIndex: =66
+        ZIndex: =50
 
     Rectangle2_392 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
         Y: =392
-        ZIndex: =67
+        ZIndex: =51
 
     Rectangle2_393 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
         Y: =440
-        ZIndex: =68
+        ZIndex: =52
 
     Rectangle2_394 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
         Y: =484
-        ZIndex: =69
+        ZIndex: =53
 
     Rectangle2_395 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
         Y: =527
-        ZIndex: =70
+        ZIndex: =54
 
     Rectangle2_396 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
         Y: =567
-        ZIndex: =71
+        ZIndex: =55
 
     Rectangle2_397 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
         Y: =611
-        ZIndex: =72
+        ZIndex: =56
 
     Rectangle2_398 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
         Y: =654
-        ZIndex: =73
+        ZIndex: =57
 
     Btn1 As button:
         AutoDisableOnSelect: =
+        Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |
             =
-            Set(Pregunta,Pregunta1_1.Text); //Variable que me trae la pregunta
+            Set(Pregunta,Preg1.Text); //Variable que me trae la pregunta
             UpdateContext({ShowPopUp : true}); //Variable para habilitar el ModalPopUp
         Text: ="Justificación"
-        Visible: =If(Respuesta1_30.Selected.Value = "N", true, false) 
+        Visible: =If(Resp1.Selected.Value = "N", true, false) 
         Width: =200
         X: =1138
         Y: =115
-        ZIndex: =74
+        ZIndex: =58
 
     Btn2 As button:
+        Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |-
-            =Set(Pregunta,Label10_418.Text);
+            =Set(Pregunta,Preg2.Text);
             UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
-        Visible: =If(Respuesta2_30.Selected.Value = "N", true, false) 
+        Visible: =If(Resp2.Selected.Value = "N", true, false) 
         Width: =200
         X: =1138
         Y: =161
-        ZIndex: =75
+        ZIndex: =59
 
     Container1 As groupContainer.manualLayoutContainer:
         Height: =768
         Visible: =ShowPopUp
         Width: =1366
-        ZIndex: =76
+        ZIndex: =60
 
         HtmlText3_13 As htmlViewer:
             Height: =768
