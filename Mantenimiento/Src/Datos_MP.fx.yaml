@@ -345,37 +345,6 @@ Datos_MP As screen:
             Y: =618
             ZIndex: =43
 
-    Group4_1 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =46
-
-        Label7_29 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(0, 40, 85, 1)
-            FontWeight: =FontWeight.Bold
-            Text: |-
-                ="Descripción:"
-            Width: =396
-            X: =307
-            Y: =578
-            ZIndex: =34
-
-        Label8_12 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Size: =12
-            Text: |
-                =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Descripción)
-            Width: =396
-            X: =307
-            Y: =618
-            ZIndex: =35
-
     Group3_4 As group:
         Height: =5
         Width: =5
@@ -392,7 +361,7 @@ Datos_MP As screen:
             Text: |-
                 ="Asignado a:"
             Width: =254
-            X: =731
+            X: =328
             Y: =578
             ZIndex: =36
 
@@ -401,7 +370,7 @@ Datos_MP As screen:
             BorderThickness: =1
             Text: =Operador
             Width: =254
-            X: =731
+            X: =328
             Y: =618
             ZIndex: =37
 

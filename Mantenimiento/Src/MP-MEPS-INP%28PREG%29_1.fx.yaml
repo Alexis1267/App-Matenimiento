@@ -11,7 +11,7 @@
         Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |-
-            =Set(Pregunta,Preg2.Text);
+            =Set(Pregunta,Preg3.Text);
             UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Resp3.Selected.Value = "N", true, false) 
@@ -24,7 +24,7 @@
         Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |-
-            =Set(Pregunta,Preg2.Text);
+            =Set(Pregunta,Preg4.Text);
             UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Resp4.Selected.Value = "N", true, false) 
@@ -37,7 +37,7 @@
         Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |-
-            =Set(Pregunta,Preg2.Text);
+            =Set(Pregunta,Preg5.Text);
             UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Resp5.Selected.Value = "N", true, false) 
@@ -50,7 +50,7 @@
         Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |-
-            =Set(Pregunta,Preg2.Text);
+            =Set(Pregunta,Preg6.Text);
             UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Resp6.Selected.Value = "N", true, false) 
@@ -63,7 +63,7 @@
         Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |-
-            =Set(Pregunta,Preg2.Text);
+            =Set(Pregunta,Preg7.Text);
             UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Resp7.Selected.Value = "N", true, false) 
@@ -76,7 +76,7 @@
         Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |-
-            =Set(Pregunta,Preg2.Text);
+            =Set(Pregunta,Preg8.Text);
             UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Resp8.Selected.Value = "N", true, false) 
@@ -89,7 +89,7 @@
         Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |-
-            =Set(Pregunta,Preg2.Text);
+            =Set(Pregunta,Preg9.Text);
             UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Resp9.Selected.Value = "N", true, false) 
@@ -102,7 +102,7 @@
         Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |-
-            =Set(Pregunta,Preg2.Text);
+            =Set(Pregunta,Preg10.Text);
             UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Resp10.Selected.Value = "N", true, false) 
@@ -115,7 +115,7 @@
         Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |-
-            =Set(Pregunta,Preg2.Text);
+            =Set(Pregunta,Preg11.Text);
             UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Resp11.Selected.Value = "N", true, false) 
@@ -128,7 +128,7 @@
         Fill: =RGBA(0, 18, 107, 1)
         Height: =28
         OnSelect: |-
-            =Set(Pregunta,Preg2.Text);
+            =Set(Pregunta,Preg12.Text);
             UpdateContext({ShowPopUp : true});
         Text: ="Justificación"
         Visible: =If(Resp12.Selected.Value = "N", true, false) 

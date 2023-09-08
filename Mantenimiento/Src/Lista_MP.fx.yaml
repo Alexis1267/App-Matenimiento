@@ -16,7 +16,7 @@ Lista_MP As screen:
             
             //Filter( CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "En Proceso") //Esta parte del codigo es solamente para que me filtre todos los preventivos de las maquinas que estan en proceso
             
-            Filter(Search(CMXE_MP_N, Buscador.Text,"Proc_No","Nom_Equipo","Clas_Mantenimineto"),StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado")
+            Sort(Filter(Search(CMXE_MP_N, Buscador.Text,"Proc_No","Nom_Equipo","Clas_Mantenimineto"),StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "En Proceso"),Fecha_Inicio,SortOrder.Descending)
             
             //Filter(Search(CMXE_MP_N, Buscador.Text,"Proc_No","Nom_Equipo","Clas_Mantenimineto"),Nom_Equipo = Dropdown3.SelectedText.Value, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado")
             
