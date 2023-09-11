@@ -801,7 +801,7 @@
                     Reset(AddMediaButton6);
                     
                     
-                    If(BotonActivo = "Boton1", Btn1.DisplayMode.Disabled, true);
+                    If(BotonActivo = "Boton1", Btn1.DisplayMode.View);
                     If(BotonActivo = "Boton2",Btn2.DisplayMode.Disabled, true);
                     If(BotonActivo = "Boton3", Btn3.DisplayMode.Disabled, true);
                     

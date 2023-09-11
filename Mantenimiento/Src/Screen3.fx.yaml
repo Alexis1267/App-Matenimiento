@@ -1,2 +1,40 @@
 Screen3 As screen:
+    OnVisible: =
+
+    ListBox2 As listbox:
+        Items: =Tecnicos_App_MP
+        X: =270
+        Y: =219
+        ZIndex: =1
+
+    ComboBox2 As combobox:
+        DisplayFields: =["{Name}"]
+        Items: =Tecnicos_App_MP
+        SearchFields: =["{Name}"]
+        SearchItems: =Search(Tecnicos_App_MP,ComboBox2.SearchText,"{Name}")
+        X: =288
+        Y: =432
+        ZIndex: =3
+
+    Label12_1 As label:
+        Height: =176
+        Text: |
+            =/*Left(
+                Concat(ComboBox2.SelectedItems,Name&",",Char(10)),
+                Len(Concat(ComboBox2.SelectedItems,Name&","))-1)*/
+            
+               
+                Concat(ComboBox2.SelectedItems,Name&"",Char(10))
+                
+        Width: =323
+        X: =781
+        Y: =256
+        ZIndex: =4
+
+    Dropdown1 As dropdown:
+        Items: |
+            = Split(Concat(ComboBox2.SelectedItems, "" & Name & Char(10)), Char(10))
+        X: =681
+        Y: =576
+        ZIndex: =5
 
