@@ -1,0 +1,177 @@
+Screen3_1 As screen:
+    OnVisible: =
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+        DelayItemLoading: =true
+        Items: =Add_Involucrado
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =80
+        Width: =315
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        Title2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Nombre
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 86
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =12
+            PaddingLeft: =12
+            PaddingRight: =12
+            PaddingTop: =12
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =2
+
+        Separator2 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =3
+
+        Rectangle8 As rectangle:
+            Height: =Parent.TemplateHeight - Separator2.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =4
+
+    Button2 As button:
+        OnSelect: |-
+            =UpdateContext({Modal:true})
+        Text: ="Abrir modal "
+        X: =35
+        Y: =695
+        ZIndex: =1
+
+    Container3 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(202, 202, 202, 1)
+        Height: =339
+        Visible: =Modal
+        Width: =681
+        X: =375
+        Y: =160
+        ZIndex: =2
+
+        InsertNomina_1 As text:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            Default: =""
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Format: =TextFormat.Number
+            HintText: ="Nomina"
+            HoverBorderColor: =RGBA(255, 255, 255, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            X: =199
+            Y: =169
+            ZIndex: =1
+
+        Button3_4 As button:
+            BorderThickness: =0
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =57
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
+            OnSelect: |-
+                =
+                
+                UpdateContext({Valida:LookUp(Tecnicos_App_MP,DropUser_1.SelectedText.Value = 'Email - Primary Work',Nomina)});     //Lo que esta haciendo el codigo es de que me traiga la tabla, y que cuando en el                                                                                              input1 ponga al usuario, traiga la contraseña del usuario                                                                                                                    ("LookUp" me sirve para traer un solo registro de la tabla) y                                                                                                                          (UpdateContext es una variable de contexto, que quiere decir que solo van a funcionar en esta pantalla)
+                
+                If(Valida = InsertNomina_1.Text,Collect(Add_Involucrado,{Nombre: DropUser_1.SelectedText.Value})); //Aqui lo que se esta haciendo es una validacion, de que si los datos de Usuario y Contraseña coinciden, que me mande a la pantalla1, pero si los datos no coinciden, que me mande un mensaje de datos erroneos (Me trae la variable "Valida" donde tenemos almacenada la contraseña del usuario)
+                
+                Set(Operador,DropUser_1.SelectedText.Value) //Esto es una variable global, lo que quiere decir que va funcionar dentro de toda la aplicacion
+                                                                                             
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Text: ="Agregar"
+            Width: =186
+            X: =255
+            Y: =251
+            ZIndex: =2
+
+        Icon6_18 As icon.Person:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =40
+            Icon: =Icon.Person
+            Width: =49
+            X: =150
+            Y: =75
+            ZIndex: =3
+
+        Icon10_3 As icon.Lock:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =DisplayMode.View
+            Height: =40
+            Icon: =Icon.Lock
+            Width: =36
+            X: =156
+            Y: =169
+            ZIndex: =4
+
+        DropUser_1 As dropdown:
+            AllowEmptySelection: =true
+            BorderColor: =RGBA(255, 255, 255, 1)
+            ChevronBackground: =RGBA(166, 166, 166, 1)
+            ChevronFill: =RGBA(0, 0, 0, 1)
+            Default: ="Seleccione"
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            Items: =Tecnicos_App_MP //Esto me esta mandando a llamar la lista que tengo en sharepoint de los nombres de los tecnicos
+            SelectionColor: =RGBA(0, 0, 0, 1)
+            SelectionFill: =RGBA(255, 255, 255, 1)
+            X: =199
+            Y: =75
+            ZIndex: =5
+
+        Icon2 As icon.Cancel:
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({Modal:false})
+            X: =617
+            ZIndex: =6
+
+    Label10 As label:
+        BorderThickness: =1
+        Height: =152
+        Text: |
+            =Text(Concat(Add_Involucrado,Nombre,Char(10)))
+        Width: =300
+        X: =1020
+        Y: =570
+        ZIndex: =3
+
