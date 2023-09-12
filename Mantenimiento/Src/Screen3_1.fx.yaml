@@ -1,66 +1,11 @@
 Screen3_1 As screen:
     OnVisible: =
 
-    "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
-        DelayItemLoading: =true
-        Items: =Add_Involucrado
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =80
-        Width: =315
-        X: =40
-        Y: =40
-        ZIndex: =1
-
-        Title2 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Nombre
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 86
-            X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
-
-        NextArrow2 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Color: =RGBA(166, 166, 166, 1)
-            Height: =50
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =12
-            PaddingLeft: =12
-            PaddingRight: =12
-            PaddingTop: =12
-            Tooltip: ="View item details"
-            Width: =50
-            X: =Parent.TemplateWidth - Self.Width - 12
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =2
-
-        Separator2 As rectangle:
-            Height: =8
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =3
-
-        Rectangle8 As rectangle:
-            Height: =Parent.TemplateHeight - Separator2.Height
-            OnSelect: =Select(Parent)
-            Visible: =ThisItem.IsSelected
-            Width: =4
-            ZIndex: =4
-
     Button2 As button:
         OnSelect: |-
-            =UpdateContext({Modal:true})
+            =UpdateContext({Modal:true});
+            
+            Set(ModalVisiBTN,"Texto")
         Text: ="Abrir modal "
         X: =35
         Y: =695
@@ -74,6 +19,67 @@ Screen3_1 As screen:
         X: =375
         Y: =160
         ZIndex: =2
+
+        "Gallery4 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+            DelayItemLoading: =true
+            Fill: =RGBA(186,192,208,1)
+            Height: =209
+            Items: =Add_Involucrado
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplateFill: =If(ThisItem.IsSelected,RGBA(186,192,208,1), RGBA(0,0,0,0))
+            TemplatePadding: =0
+            TemplateSize: =87
+            Visible: =ModalVisiBTN = "Eliminar"
+            Width: =280
+            X: =212
+            Y: =115
+            ZIndex: =1
+
+            Title6 As label:
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Nombre
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Parent.TemplateWidth - 86
+                X: =16
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =1
+
+            NextArrow6 As icon.ChevronRight:
+                AccessibleLabel: =Self.Tooltip
+                Color: =RGBA(168, 0, 0, 1)
+                Height: =50
+                Icon: =Icon.Trash
+                OnSelect: =Remove(Add_Involucrado,ThisItem)
+                PaddingBottom: =12
+                PaddingLeft: =12
+                PaddingRight: =12
+                PaddingTop: =12
+                Tooltip: ="View item details"
+                Width: =50
+                X: =Parent.TemplateWidth - Self.Width - 12
+                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                ZIndex: =2
+
+            Separator6 As rectangle:
+                Height: =8
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =3
+
+            Rectangle11 As rectangle:
+                Height: =Parent.TemplateHeight - Separator6.Height
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.IsSelected
+                Width: =4
+                ZIndex: =4
 
         InsertNomina_1 As text:
             BorderColor: =RGBA(255, 255, 255, 1)
@@ -92,6 +98,7 @@ Screen3_1 As screen:
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
+            Visible: =ModalVisiBTN = "Texto"
             X: =199
             Y: =169
             ZIndex: =1
@@ -109,11 +116,13 @@ Screen3_1 As screen:
                 UpdateContext({Valida:LookUp(Tecnicos_App_MP,DropUser_1.SelectedText.Value = 'Email - Primary Work',Nomina)});                        
                 
                 //VALIDA SI TODO ESTA CORRECTO
-                If(Valida = InsertNomina_1.Text,
+                If(Valida = InsertNomina_1.Text, UpdateContext({Modal:false})&&
                     Notify("El usuario se agregó con éxito.", NotificationType.Success)
                 ); 
                 //VALIDA SI HAY ALGO QUE NO COINCIDA CON LOS DATOS DEL USUARIO
                 If(Valida = InsertNomina_1.Text,Collect(Add_Involucrado,{Nombre: DropUser_1.SelectedText.Value}),Notify("El nombre y/o el numero de nomina no coinciden, no se puede agregar al usuario, compruebe sus datos.",NotificationType.Error));
+                
+                
                 
                 
                 
@@ -127,8 +136,9 @@ Screen3_1 As screen:
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Text: ="Agregar"
+            Visible: =ModalVisiBTN = "Texto"
             Width: =186
-            X: =255
+            X: =266
             Y: =251
             ZIndex: =2
 
@@ -138,6 +148,7 @@ Screen3_1 As screen:
             DisplayMode: =DisplayMode.View
             Height: =40
             Icon: =Icon.Person
+            Visible: =ModalVisiBTN = "Texto"
             Width: =49
             X: =150
             Y: =75
@@ -149,6 +160,7 @@ Screen3_1 As screen:
             DisplayMode: =DisplayMode.View
             Height: =40
             Icon: =Icon.Lock
+            Visible: =ModalVisiBTN = "Texto"
             Width: =36
             X: =156
             Y: =169
@@ -164,24 +176,40 @@ Screen3_1 As screen:
             Items: =Tecnicos_App_MP //Esto me esta mandando a llamar la lista que tengo en sharepoint de los nombres de los tecnicos
             SelectionColor: =RGBA(0, 0, 0, 1)
             SelectionFill: =RGBA(255, 255, 255, 1)
+            Visible: =ModalVisiBTN = "Texto"
             X: =199
             Y: =75
             ZIndex: =5
 
         Icon2 As icon.Cancel:
             Icon: =Icon.Cancel
-            OnSelect: |-
-                =UpdateContext({Modal:false})
-            X: =617
+            OnSelect: |
+                =UpdateContext({Modal:false});
+                
+                Reset(DropUser_1);
+                Reset(InsertNomina_1);
+            X: =612
             ZIndex: =6
 
     Label10 As label:
         BorderThickness: =1
         Height: =152
+        Overflow: =Overflow.Scroll
         Text: |
             =Text(Concat(Add_Involucrado,Nombre,Char(10)))
         Width: =300
-        X: =1020
-        Y: =570
+        X: =1005
+        Y: =565
         ZIndex: =3
+
+    Button2_1 As button:
+        OnSelect: |-
+            =UpdateContext({Modal:true});
+            
+            Set(ModalVisiBTN,"Eliminar")
+        Text: ="Eliminar usuario"
+        Width: =206
+        X: =328
+        Y: =695
+        ZIndex: =4
 
