@@ -335,20 +335,18 @@ Datos_MP As screen:
             Y: =618
             ZIndex: =43
 
-    ComboBox2_1 As combobox:
-        BorderColor: =RGBA(0, 0, 0, 1)
-        ChevronBackground: =RGBA(0, 40, 85, 1)
-        DisplayFields: =["{Name}"]
-        Height: =80
-        InputTextPlaceholder: ="Agregar personas involucradas"
-        Items: =Tecnicos_App_MP
-        SearchFields: =["{Name}"]
-        SearchItems: =Search(Tecnicos_App_MP,ComboBox2_1.SearchText,"{Name}")
-        SelectionFill: =RGBA(0, 40, 85, 1)
-        Width: =251
-        X: =599
-        Y: =578
-        ZIndex: =45
+    Icon8 As icon.AddUser:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =26
+        Icon: =Icon.AddUser
+        OnSelect: |-
+            =UpdateContext({ModalPop_Datos:true});
+            
+            Set(BTN_VISIBLE,"AGREGAR")
+        Width: =44
+        X: =806
+        Y: =586
+        ZIndex: =48
 
     Group3_4 As group:
         Height: =5
@@ -366,7 +364,7 @@ Datos_MP As screen:
             Text: |-
                 ="Asignado a:"
             Width: =254
-            X: =328
+            X: =596
             Y: =578
             ZIndex: =36
 
@@ -375,7 +373,7 @@ Datos_MP As screen:
             BorderThickness: =1
             Text: =Operador
             Width: =254
-            X: =328
+            X: =596
             Y: =618
             ZIndex: =37
 
@@ -391,14 +389,7 @@ Datos_MP As screen:
             BorderThickness: =1
             Height: =145
             Overflow: =Overflow.Scroll
-            Text: |
-                =/*Left(
-                    Concat(ComboBox2.SelectedItems,Name&",",Char(10)),
-                    Len(Concat(ComboBox2.SelectedItems,Name&","))-1)*/
-                
-                   
-                    Concat(ComboBox2_1.SelectedItems,"- "&Name&"",Char(10))
-                    
+            Text: =Text(Concat(Add_Involucrado,Nombre,Char(10)))
             Width: =373
             X: =882
             Y: =514
@@ -411,11 +402,279 @@ Datos_MP As screen:
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
             Height: =43
-            Text: ="Personas involucradas"
+            Text: |-
+                ="Involucrados:"
             Width: =373
             X: =882
             Y: =471
             ZIndex: =47
+
+    Icon9 As icon.Trash:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =43
+        Icon: =Icon.Trash
+        OnSelect: |-
+            =UpdateContext({ModalPop_Datos:true});
+            
+            Set(BTN_VISIBLE, "ELIMINAR");
+        Width: =30
+        X: =1220
+        Y: =471
+        ZIndex: =49
+
+    ModalPop_Datos As groupContainer.manualLayoutContainer:
+        Height: =768
+        Visible: =ModalPop_Datos
+        Width: =1366
+        ZIndex: =50
+
+        HtmlText3_15 As htmlViewer:
+            Height: =768
+            HtmlText: |-
+                ="<div style=""
+                position: absolute;
+                  text-align: center;
+                  color: #fff;
+                  box-shadow: 0px 0px 25px #222;
+                  backdrop-filter: blur(10px);
+                height:"& App.Height &"px;
+                width:"&App.Width &"px;""></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Visible: =ModalPop_Datos
+            Width: =1366
+            ZIndex: =1
+
+        ModalPop_Datos2 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(227, 234, 243, 1)
+            Height: =467
+            Width: =819
+            X: =273
+            Y: =150
+            ZIndex: =2
+
+            "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+                DelayItemLoading: =true
+                Height: =402
+                Items: =Add_Involucrado
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =80
+                Visible: =BTN_VISIBLE = "ELIMINAR"
+                Width: =819
+                Y: =65
+                ZIndex: =1
+
+                Title2 As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =Self.Size * 1.8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.Nombre
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =Parent.TemplateWidth - 86
+                    X: =16
+                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                    ZIndex: =1
+
+                NextArrow2 As icon.ChevronRight:
+                    AccessibleLabel: =Self.Tooltip
+                    Color: =RGBA(168, 0, 0, 1)
+                    Height: =72
+                    Icon: =Icon.Trash
+                    OnSelect: |-
+                        =Remove(Add_Involucrado,ThisItem);
+                        Notify("Se a eliminado con exito",NotificationType.Success)
+                    PaddingBottom: =12
+                    PaddingLeft: =12
+                    PaddingRight: =12
+                    PaddingTop: =12
+                    Tooltip: ="View item details"
+                    Width: =73
+                    X: =704
+                    ZIndex: =2
+
+                Separator2 As rectangle:
+                    Height: =8
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =3
+
+                Rectangle8 As rectangle:
+                    Height: =Parent.TemplateHeight - Separator2.Height
+                    OnSelect: =Select(Parent)
+                    Visible: =ThisItem.IsSelected
+                    Width: =4
+                    ZIndex: =4
+
+            Rectangle3_2 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =65
+                Width: =820
+                ZIndex: =4
+
+            Icon4_2 As icon.Cancel:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =65
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =UpdateContext({ModalPop_Datos: false});
+                    
+                    Reset(DropUser_2);
+                    Reset(InsertNomina_2)
+                X: =748
+                ZIndex: =6
+
+            Image4_2 As image:
+                Height: =65
+                Image: =carrier_logo_300
+                Width: =118
+                X: =20
+                ZIndex: =7
+
+            Label9_60 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =65
+                Size: =30
+                Text: ="Agregar Involucrados"
+                Visible: =BTN_VISIBLE = "AGREGAR"
+                Width: =458
+                X: =214
+                ZIndex: =8
+
+            InsertNomina_2 As text:
+                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderThickness: =1
+                Color: =RGBA(255, 255, 255, 1)
+                Default: =""
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                Format: =TextFormat.Number
+                HintText: ="Nomina"
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Visible: =BTN_VISIBLE = "AGREGAR"
+                X: =270
+                Y: =267
+                ZIndex: =9
+
+            Button3_5 As button:
+                BorderThickness: =0
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =57
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
+                OnSelect: |-
+                    =
+                    //VALIDACIÓN DE USUARIO CON NOMINA 
+                    UpdateContext({Valida:LookUp(Tecnicos_App_MP,DropUser_2.SelectedText.Value = 'Email - Primary Work',Nomina)});                        
+                    
+                    //VALIDA SI TODO ESTA CORRECTO
+                    If(Valida = InsertNomina_2.Text, UpdateContext({ModalPop_Datos:false})&&
+                        Notify("El usuario se agregó con éxito.", NotificationType.Success)
+                    ); 
+                    //VALIDA SI HAY ALGO QUE NO COINCIDA CON LOS DATOS DEL USUARIO
+                    If(Valida = InsertNomina_2.Text,Collect(Add_Involucrado,{Nombre: DropUser_2.SelectedText.Value}),Notify("El nombre y/o el numero de nomina no coinciden, no se puede agregar al usuario, compruebe sus datos.",NotificationType.Error));
+                    
+                    Reset(DropUser_2);
+                    Reset(InsertNomina_2);
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                                                                                                 
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Text: ="Agregar"
+                Visible: =BTN_VISIBLE = "AGREGAR"
+                Width: =186
+                X: =337
+                Y: =349
+                ZIndex: =10
+
+            Icon6_19 As icon.Person:
+                BorderColor: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =DisplayMode.View
+                Height: =40
+                Icon: =Icon.Person
+                Visible: =ModalVisiBTN = "Texto"
+                Width: =49
+                X: =221
+                Y: =189
+                ZIndex: =11
+
+            Icon10_4 As icon.Lock:
+                BorderColor: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisplayMode: =DisplayMode.View
+                Height: =40
+                Icon: =Icon.Lock
+                Visible: =ModalVisiBTN = "Texto"
+                Width: =36
+                X: =227
+                Y: =267
+                ZIndex: =12
+
+            DropUser_2 As dropdown:
+                AllowEmptySelection: =true
+                BorderColor: =RGBA(255, 255, 255, 1)
+                ChevronBackground: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(0, 0, 0, 1)
+                Default: ="Seleccione"
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                Items: =Tecnicos_App_MP //Esto me esta mandando a llamar la lista que tengo en sharepoint de los nombres de los tecnicos
+                SelectionColor: =RGBA(0, 0, 0, 1)
+                SelectionFill: =RGBA(255, 255, 255, 1)
+                Visible: =BTN_VISIBLE = "AGREGAR"
+                X: =270
+                Y: =189
+                ZIndex: =13
+
+            Label9_61 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =65
+                Size: =20
+                Text: ="Agregue sus datos"
+                Visible: =BTN_VISIBLE = "AGREGAR"
+                Width: =278
+                X: =291
+                Y: =94
+                ZIndex: =14
+
+            Label9_62 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =65
+                Size: =30
+                Text: ="Eliminar involucrado"
+                Visible: =BTN_VISIBLE = "ELIMINAR"
+                Width: =458
+                X: =214
+                ZIndex: =15
 
     Group1 As group:
         Height: =5
@@ -523,8 +782,8 @@ Datos_MP As screen:
             Text: |-
                 ="Horas Hombre:"
             Width: =254
-            X: =979
-            Y: =365
+            X: =307
+            Y: =579
             ZIndex: =13
 
         Label8_1 As label:
@@ -532,8 +791,8 @@ Datos_MP As screen:
             BorderThickness: =1
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Horas_Hombre)
             Width: =254
-            X: =979
-            Y: =405
+            X: =307
+            Y: =619
             ZIndex: =15
 
     Group6 As group:
