@@ -784,7 +784,7 @@
                     //INGRESAR DATOS A LA TABLA HALLAZGOS
                     Patch(CMXE_TablaH_MP,Defaults(CMXE_TablaH_MP),
                     {
-                    Asignado: TextInput1_7.Text,
+                    Asignado: Dropdown4.Selected.Value,
                     Localizacion: TextInput1_2.Text,
                     Proc_No: TextInput1_3.Text,
                     Nom_Maquina:TextInput1_4.Text,
@@ -821,7 +821,8 @@
                 OnSelect: |-
                     =UpdateContext({ShowPopUp: false});
                     Reset(TextInput1_6);
-                    Reset(AddMediaButton6)
+                    Reset(AddMediaButton6);
+                    Reset(Dropdown4)
                 X: =934
                 ZIndex: =6
 
@@ -1022,27 +1023,25 @@
                     Y: =417
                     ZIndex: =20
 
-            Group12_1 As group:
-                Height: =5
-                Width: =5
-                X: =-277
-                Y: =-25
-                ZIndex: =24
+            Label9_50 As label:
+                FontWeight: =FontWeight.Bold
+                Text: |-
+                    ="Asignado:"
+                Width: =218
+                X: =673
+                Y: =65
+                ZIndex: =21
 
-                Label9_50 As label:
-                    FontWeight: =FontWeight.Bold
-                    Text: |-
-                        ="Asignado:"
-                    Width: =218
-                    X: =673
-                    Y: =65
-                    ZIndex: =21
-
-                TextInput1_7 As text:
-                    Default: =Dato_Asignado
-                    DisplayMode: =DisplayMode.View
-                    Width: =290
-                    X: =673
-                    Y: =105
-                    ZIndex: =22
+            Dropdown4 As dropdown:
+                BorderColor: =RGBA(0, 40, 85, 1)
+                BorderThickness: =1
+                ChevronBackground: =RGBA(0, 40, 85, 1)
+                Default: =Operador
+                Items: |-
+                    = 
+                     Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10))
+                Width: =288
+                X: =673
+                Y: =105
+                ZIndex: =22
 
