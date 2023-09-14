@@ -555,8 +555,9 @@ Datos_MP As screen:
                 ZIndex: =8
 
             InsertNomina_2 As text:
-                BorderColor: =RGBA(255, 255, 255, 1)
+                BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =1
+                Clear: =true
                 Color: =RGBA(255, 255, 255, 1)
                 Default: =""
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -580,7 +581,7 @@ Datos_MP As screen:
                 BorderThickness: =0
                 Color: =RGBA(0, 0, 0, 1)
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =57
+                Height: =34
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
                 OnSelect: |-
@@ -615,12 +616,13 @@ Datos_MP As screen:
                 Visible: =BTN_VISIBLE = "AGREGAR"
                 Width: =186
                 X: =337
-                Y: =349
+                Y: =356
                 ZIndex: =10
 
             Icon6_19 As icon.Person:
                 BorderColor: =RGBA(255, 255, 255, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =DisplayMode.View
                 Height: =40
                 Icon: =Icon.Person
@@ -632,7 +634,8 @@ Datos_MP As screen:
 
             Icon10_4 As icon.Lock:
                 BorderColor: =RGBA(255, 255, 255, 1)
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
                 DisplayMode: =DisplayMode.View
                 Height: =40
                 Icon: =Icon.Lock
@@ -644,9 +647,9 @@ Datos_MP As screen:
 
             DropUser_2 As dropdown:
                 AllowEmptySelection: =true
-                BorderColor: =RGBA(255, 255, 255, 1)
-                ChevronBackground: =RGBA(166, 166, 166, 1)
-                ChevronFill: =RGBA(0, 0, 0, 1)
+                BorderColor: =RGBA(0, 0, 0, 1)
+                BorderThickness: =1
+                ChevronBackground: =RGBA(0, 40, 85, 1)
                 Default: ="Seleccione"
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 Items: =Tecnicos_App_MP //Esto me esta mandando a llamar la lista que tengo en sharepoint de los nombres de los tecnicos
@@ -660,13 +663,13 @@ Datos_MP As screen:
             Label9_61 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Bold
-                Height: =65
+                Height: =50
                 Size: =20
                 Text: ="Ingrese sus datos"
                 Visible: =BTN_VISIBLE = "AGREGAR"
-                Width: =278
-                X: =291
-                Y: =106
+                Width: =371
+                X: =244
+                Y: =102
                 ZIndex: =14
 
             Label9_62 As label:
