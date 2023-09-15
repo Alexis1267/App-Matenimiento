@@ -706,7 +706,9 @@ Datos_MP As screen:
         Label8_2 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Fill: =If(Label8_2.Text = "Alta", RGBA(239, 35, 60,1),Label8_2.Text = "Baja", RGBA(56, 176, 0,1),Label8_2.Text = "Media", RGBA(233, 165, 43,1))
+            Fill: |-
+                =//If(Label8_2.Text = "Alta", RGBA(239, 35, 60,1),Label8_2.Text = "Baja", RGBA(56, 176, 0,1),Label8_2.Text = "Media", RGBA(233, 165, 43,1))
+                RGBA(0, 0, 0,0)
             LineHeight: |
                 =1.2
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Prioridad)
