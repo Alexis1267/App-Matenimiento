@@ -1026,8 +1026,8 @@
             Label9_50 As label:
                 FontWeight: =FontWeight.Bold
                 Text: |-
-                    ="Asignado:"
-                Width: =218
+                    ="Persona que reporta hallazgo:"
+                Width: =290
                 X: =673
                 Y: =65
                 ZIndex: =21
@@ -1039,7 +1039,9 @@
                 Default: =Operador
                 Items: |-
                     = 
-                     Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10))
+                    // Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10))
+                    
+                    Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)& Operador),Char(10))
                 Width: =288
                 X: =673
                 Y: =105
