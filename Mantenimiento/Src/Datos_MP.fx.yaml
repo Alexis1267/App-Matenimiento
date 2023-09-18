@@ -491,27 +491,26 @@ Datos_MP As screen:
                 BorderThickness: =1
                 Clear: =true
                 Default: =""
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(255, 255, 255, 1)
                 Format: =TextFormat.Number
                 HintText: ="Nomina"
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(255, 255, 255, 1)
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
                 RadiusTopRight: =20
                 Visible: =BTN_VISIBLE = "AGREGAR"
                 X: =270
-                Y: =308
+                Y: =285
                 ZIndex: =7
 
             Button3_5 As button:
                 BorderThickness: =0
                 Color: =RGBA(0, 0, 0, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                Height: =34
+                Fill: =RGBA(97, 181, 73, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
                 OnSelect: |-
@@ -547,9 +546,9 @@ Datos_MP As screen:
                 RadiusTopRight: =20
                 Text: ="Agregar"
                 Visible: =BTN_VISIBLE = "AGREGAR"
-                Width: =186
-                X: =317
-                Y: =402
+                Width: =200
+                X: =329
+                Y: =375
                 ZIndex: =8
 
             Icon6_19 As icon.Person:
@@ -562,7 +561,7 @@ Datos_MP As screen:
                 Visible: =BTN_VISIBLE = "AGREGAR"
                 Width: =49
                 X: =221
-                Y: =230
+                Y: =207
                 ZIndex: =9
 
             Icon10_4 As icon.Lock:
@@ -575,7 +574,7 @@ Datos_MP As screen:
                 Visible: =BTN_VISIBLE = "AGREGAR"
                 Width: =36
                 X: =227
-                Y: =308
+                Y: =285
                 ZIndex: =10
 
             DropUser_2 As dropdown:
@@ -585,24 +584,25 @@ Datos_MP As screen:
                 ChevronBackground: =RGBA(0, 40, 85, 1)
                 Default: ="A"
                 DisabledColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(215, 223, 240, 1)
                 Items: =Tecnicos_App_MP //Esto me esta mandando a llamar la lista que tengo en sharepoint de los nombres de los tecnicos
                 SelectionColor: =RGBA(0, 0, 0, 1)
                 SelectionFill: =RGBA(255, 255, 255, 1)
                 Visible: =BTN_VISIBLE = "AGREGAR"
                 X: =270
-                Y: =230
+                Y: =207
                 ZIndex: =11
 
             Label9_61 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Bold
-                Height: =102
+                Height: =52
                 Size: =30
                 Text: ="INGRESE SUS DATOS"
                 Visible: =BTN_VISIBLE = "AGREGAR"
                 Width: =471
                 X: =194
-                Y: =96
+                Y: =110
                 ZIndex: =12
 
             Label9_62 As label:
