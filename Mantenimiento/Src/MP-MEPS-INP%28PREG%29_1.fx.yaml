@@ -321,7 +321,7 @@
         DisabledColor: |
             =BotonColor
         Fill: =RGBA(255,255,255,1)
-        Height: =75
+        Height: =105
         Icon: =Icon.NextArrow
         OnSelect: |+
             =//If(
@@ -370,9 +370,9 @@
             
             
             
-        Width: =67
-        X: =1271
-        Y: =685
+        Width: =85
+        X: =1252
+        Y: =655
         ZIndex: =27
 
     Resp6 As dropdown:
@@ -558,12 +558,12 @@
         ZIndex: =41
 
     Icon1_30 As icon.BackArrow:
-        Height: =75
+        Height: =86
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
-        Width: =67
+        Width: =116
         X: =26
-        Y: =685
+        Y: =673
         ZIndex: =42
 
     Image2_7 As image:

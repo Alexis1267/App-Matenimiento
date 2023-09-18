@@ -56,7 +56,12 @@ Datos_MP As screen:
         FontWeight: =FontWeight.Bold
         Height: =54
         OnSelect: |-
-            =If(Label8_8.Text = "MP_PowerApps",Navigate('MP-MEPS-INP(PREG)_1',ScreenTransition.Cover),Notify("Error",NotificationType.Error));
+            =
+            //VALIDACION PARA NAVEGAR AL RESPECTIVO MANTENIMIENTO PREVENTIVO
+            If(Label8_8.Text = "MP_Prueba20",Navigate('MP-MEPS-INP(PREG)_1',ScreenTransition.Cover),Notify("Error",NotificationType.Error));
+            
+            
+            //VALIDACION DE CAMPO INVOLUCRADOS
             If(IsBlank(Label12_15.Text),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error))
         Text: ="Contestar "
         Width: =256
