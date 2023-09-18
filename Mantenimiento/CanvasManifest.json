@@ -99,7 +99,7 @@
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
     "DocumentLayoutHeight": 768,
-    "DocumentLayoutLockOrientation": false,
+    "DocumentLayoutLockOrientation": true,
     "DocumentLayoutMaintainAspectRatio": true,
     "DocumentLayoutOrientation": "landscape",
     "DocumentLayoutScaleToFit": true,
@@ -114,7 +114,7 @@
     "Name": "CMXE-App-MP",
     "OriginatingVersion": "1.332",
     "ParserErrorCount": 0,
-    "ShowStatusBar": false
+    "ShowStatusBar": true
   },
   "PublishInfo": {
     "AppName": "CMXE-App-MP",
@@ -128,8 +128,8 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Sesion",
     "QR_Inicio",
+    "Sesion",
     "Lista_MP",
     "Datos_MP",
     "MP-MEPS-INP(PREG)_1",

@@ -3,64 +3,84 @@
     Rectangle1_28 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =59
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         ZIndex: =1
 
     Label9_20 As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =59
-        Size: =20
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =41.66
         Text: ="Descripción de las Actividades a Realizar"
-        Width: =588
-        X: =389
+        Width: =910.67
+        X: =0.00
         ZIndex: =2
 
     Rectangle2_161 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =91
         ZIndex: =3
 
     Label10_187 As label:
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Realizado"
-        Width: =119
-        X: =36
+        Width: =247.90
+        X: =74.99
         Y: =59
         ZIndex: =4
 
     Label10_189 As label:
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="No realizado"
-        Width: =125
-        X: =177
+        Width: =260.42
+        X: =368.75
         Y: =59
         ZIndex: =5
 
     Label10_186 As label:
         FontWeight: =FontWeight.Bold
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="[R] "
-        Width: =36
+        Width: =74.99
+        X: =0.00
         Y: =59
         ZIndex: =7
 
     Label10_188 As label:
         FontWeight: =FontWeight.Bold
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="[N] "
-        Width: =50
-        X: =142
+        Width: =104.16
+        X: =295.82
         Y: =59
         ZIndex: =8
 
     Label10_190 As label:
         Height: =33
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: =" Controle que no hay fugas o daños en la tubería hidráulica."
-        Width: =1031
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =103
         ZIndex: =11
 
@@ -78,17 +98,23 @@
                 IsBlank(Respuesta1_13.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =107
         ZIndex: =13
 
     Label10_191 As label:
         Height: =37
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: =" Controle que no hay fugas o daños en la tubería neumática."
-        Width: =1031
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =146
         ZIndex: =17
 
@@ -104,17 +130,23 @@
                 IsBlank(Respuesta3_12.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =197
         ZIndex: =19
 
     Label10_192 As label:
         Height: =26
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Limpie las cadenas de arrastre, la tubería hidráulica y neumática y los cables eléctricos con el aire de presión."
-        Width: =1112
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =197
         ZIndex: =20
 
@@ -130,17 +162,23 @@
                 IsBlank(Respuesta4_12.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =239
         ZIndex: =22
 
     Label10_193 As label:
         Height: =23
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Controle visualmente el estado de los acumuladores (Y4)."
-        Width: =1067
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =240
         ZIndex: =23
 
@@ -156,17 +194,23 @@
                 IsBlank(Respuesta5_12.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =283
         ZIndex: =26
 
     Label10_194 As label:
         Height: =28
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Controle visualmente el estado general de las mangueras hidráulicas y accesorios."
-        Width: =1059
-        X: =92
+        Width: =910.67
+        X: =0.00
         Y: =282
         ZIndex: =27
 
@@ -221,8 +265,10 @@
             
             
             
-        Width: =67
-        X: =1280
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =139.59
+        X: =771.08
         Y: =693
         ZIndex: =29
 
@@ -238,25 +284,34 @@
                 IsBlank(Respuesta6_11.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =330
         ZIndex: =30
 
     Label10_195 As label:
         Height: =27
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Controle el estado y la función de los sensores inductivos."
-        Width: =1068
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =329
         ZIndex: =31
 
     Label10_196 As label:
         Height: =28
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: =" Limpieza de grasa externa en los puntos de lubricación."
-        Width: =1064
-        X: =92
+        Width: =910.67
+        X: =0.00
         Y: =375
         ZIndex: =32
 
@@ -272,9 +327,12 @@
                 IsBlank(Respuesta7_11.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =376
         ZIndex: =33
 
@@ -290,17 +348,23 @@
                 IsBlank(Respuesta8_8.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =422
         ZIndex: =34
 
     Label10_197 As label:
         Height: =24
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Limpie y engrase tornillo sin fin así como la chumacera."
-        Width: =1064
-        X: =92
+        Width: =910.67
+        X: =0.00
         Y: =423
         ZIndex: =35
 
@@ -316,17 +380,23 @@
                 IsBlank(Respuesta9_8.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =471
         ZIndex: =36
 
     Label10_198 As label:
         Height: =20
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Revisión del estado de las chapas de las puertas de las consolas, cambiar si es necesario."
-        Width: =1060
-        X: =92
+        Width: =910.67
+        X: =0.00
         Y: =474
         ZIndex: =37
 
@@ -342,17 +412,23 @@
                 IsBlank(Respuesta10_8.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =522
         ZIndex: =38
 
     Label10_199 As label:
         Height: =22
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: =" Compruebe la correcta operación de los pistones de las puertas cada consola cuenta con 2 piezas."
-        Width: =1059
-        X: =92
+        Width: =910.67
+        X: =0.00
         Y: =524
         ZIndex: =39
 
@@ -368,17 +444,23 @@
                 IsBlank(Respuesta11_10.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =574
         ZIndex: =40
 
     Label10_200 As label:
         Height: =26
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Revisión de servomotor que cuente con toda su tornillería y bien sujeto en su base, de ser necesario cambiar de tornillería. "
-        Width: =1059
-        X: =92
+        Width: =910.67
+        X: =0.00
         Y: =574
         ZIndex: =41
 
@@ -386,16 +468,20 @@
         Height: =75
         Icon: =Icon.BackArrow
         OnSelect: =Navigate('MEPS1-04-2M-CONZOLAS-Y',ScreenTransition.Fade)
-        Width: =67
-        X: =26
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =139.59
+        X: =54.18
         Y: =693
         ZIndex: =44
 
     Image2_27 As image:
         Height: =41
         Image: =carrier_logo_300
-        Width: =209
-        X: =1157
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =435.41
+        X: =475.25
         Y: =9
         ZIndex: =45
 
@@ -405,10 +491,13 @@
         Height: =34
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta3_12.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =189
         ZIndex: =48
 
@@ -423,9 +512,12 @@
               IsBlank(Hallazgo1_13.Text),
               true
             )
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: =If(Respuesta1_13.Selected.Value = "N", true, false) 
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =104
         ZIndex: =50
 
@@ -435,10 +527,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta2_13.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =150
         ZIndex: =51
 
@@ -448,10 +543,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta4_12.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =237
         ZIndex: =52
 
@@ -461,10 +559,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta5_12.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =282
         ZIndex: =53
 
@@ -474,10 +575,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta6_11.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =327
         ZIndex: =54
 
@@ -487,10 +591,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta7_11.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =375
         ZIndex: =55
 
@@ -500,10 +607,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta8_8.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =419
         ZIndex: =56
 
@@ -513,10 +623,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta9_8.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =466
         ZIndex: =57
 
@@ -526,10 +639,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta10_8.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =524
         ZIndex: =58
 
@@ -539,10 +655,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta11_10.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =569
         ZIndex: =59
 
@@ -558,86 +677,100 @@
                 IsBlank(Respuesta1_13.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =151
         ZIndex: =61
 
     Rectangle2_162 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =140
         ZIndex: =62
 
     Rectangle2_163 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =187
         ZIndex: =63
 
     Rectangle2_164 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =232
         ZIndex: =64
 
     Rectangle2_165 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =273
         ZIndex: =65
 
     Rectangle2_166 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =319
         ZIndex: =66
 
     Rectangle2_167 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =367
         ZIndex: =67
 
     Rectangle2_168 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =409
         ZIndex: =68
 
     Rectangle2_169 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =457
         ZIndex: =69
 
     Rectangle2_170 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =509
         ZIndex: =70
 
     Rectangle2_171 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =561
         ZIndex: =71
 
     Rectangle2_172 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =610
         ZIndex: =72
 
@@ -653,19 +786,25 @@
                 IsBlank(Respuesta11_11.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =628
         ZIndex: =73
 
     Label10_201 As label:
         Height: =26
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: |-
             ="Verificar reapriete en toda la tornillería, Marcar testigo.
             "
-        Width: =1059
-        X: =92
+        Width: =910.67
+        X: =0.00
         Y: =628
         ZIndex: =74
 
@@ -675,17 +814,21 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta11_11.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1109
+        Width: =435.41
+        X: =475.25
         Y: =622
         ZIndex: =75
 
     Rectangle2_173 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =664
         ZIndex: =76
 

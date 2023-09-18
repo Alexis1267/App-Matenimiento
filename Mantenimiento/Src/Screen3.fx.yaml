@@ -3,21 +3,32 @@ Screen3 As screen:
 
     ListBox2 As listbox:
         Items: =Tecnicos_App_MP
-        X: =270
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Size: =27.08
+        Width: =683.34
+        X: =227.32
         Y: =219
         ZIndex: =1
 
     ComboBox2 As combobox:
         DisplayFields: =["{Name}"]
         Items: =Tecnicos_App_MP
+        PaddingRight: =10.41
+        PaddingTop: =10.41
         SearchFields: =["{Name}"]
         SearchItems: =Search(Tecnicos_App_MP,ComboBox2.SearchText,"{Name}")
-        X: =288
+        Size: =27.08
+        Width: =683.34
+        X: =227.32
         Y: =432
         ZIndex: =3
 
     Label12_1 As label:
         Height: =176
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: |
             =/*Left(
                 Concat(ComboBox2.SelectedItems,Name&",",Char(10)),
@@ -26,15 +37,19 @@ Screen3 As screen:
                
                 Concat(ComboBox2.SelectedItems,Name&"",Char(10))
                 
-        Width: =323
-        X: =781
+        Width: =672.90
+        X: =237.77
         Y: =256
         ZIndex: =4
 
     Dropdown1 As dropdown:
         Items: |
             = Split(Concat(ComboBox2.SelectedItems, "" & Name & Char(10)), Char(10))
-        X: =681
+        PaddingRight: =20.85
+        PaddingTop: =20.85
+        Size: =27.08
+        Width: =683.34
+        X: =227.32
         Y: =576
         ZIndex: =5
 

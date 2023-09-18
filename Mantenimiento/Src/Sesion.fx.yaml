@@ -22,8 +22,11 @@ Sesion As screen:
             
             
             
-        Width: =1365
-        X: =1
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =22.93
+        Width: =910.67
+        X: =0.00
         ZIndex: =1
 
     HtmlText1_5 As htmlViewer:
@@ -77,8 +80,11 @@ Sesion As screen:
             
             
             
-        Width: =1365
-        X: =1
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =22.93
+        Width: =910.67
+        X: =0.00
         ZIndex: =2
 
     Timer1_3 As timer:
@@ -88,9 +94,13 @@ Sesion As screen:
             =If(Line = 360,
             UpdateContext({Line:0}),
             UpdateContext({Line:Line+2}))
+        PaddingRight: =10.41
+        PaddingTop: =10.41
         Repeat: =true
+        Size: =27.08
         Visible: =false
-        X: =61
+        Width: =333.33
+        X: =127.09
         Y: =54
         ZIndex: =3
 
@@ -107,11 +117,15 @@ Sesion As screen:
         HoverBorderColor: =RGBA(255, 255, 255, 1)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
+        PaddingRight: =10.41
+        PaddingTop: =10.41
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        X: =533
+        Size: =27.08
+        Width: =666.66
+        X: =308.66999999999996
         Y: =463
         ZIndex: =5
 
@@ -128,12 +142,16 @@ Sesion As screen:
             
             Set(Operador,DropUser.SelectedText.Value) //Esto es una variable global, lo que quiere decir que va funcionar dentro de toda la aplicacion
                                                                                          
+        PaddingRight: =10.41
+        PaddingTop: =10.41
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
+        Size: =31.26
         Text: ="Ingresar"
-        X: =613
+        Width: =333.33
+        X: =730.3299999999999
         Y: =545
         ZIndex: =6
 
@@ -145,10 +163,12 @@ Sesion As screen:
         Font: =Font.'Lato Light'
         FontWeight: =FontWeight.Lighter
         Height: =50
-        Size: =35
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =72.90
         Text: ="INICIO DE SESION"
-        Width: =417
-        X: =484
+        Width: =868.74
+        X: =53.039999999999964
         Y: =268
         ZIndex: =7
 
@@ -158,8 +178,10 @@ Sesion As screen:
         DisplayMode: =DisplayMode.View
         Height: =40
         Icon: =Icon.Person
-        Width: =49
-        X: =484
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =102.07
+        X: =808.60
         Y: =369
         ZIndex: =8
 
@@ -169,8 +191,10 @@ Sesion As screen:
         DisplayMode: =DisplayMode.View
         Height: =40
         Icon: =Icon.Lock
-        Width: =36
-        X: =490
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =74.99
+        X: =835.68
         Y: =463
         ZIndex: =9
 
@@ -178,8 +202,10 @@ Sesion As screen:
         DisplayMode: =DisplayMode.View
         Height: =132
         Image: =carrier_logo_300
-        Width: =238
-        X: =573
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =495.84
+        X: =414.83
         Y: =94
         ZIndex: =10
 
@@ -191,9 +217,13 @@ Sesion As screen:
         Default: ="Seleccione"
         DisabledColor: =RGBA(0, 0, 0, 1)
         Items: =Tecnicos_App_MP //Esto me esta mandando a llamar la lista que tengo en sharepoint de los nombres de los tecnicos
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionColor: =RGBA(0, 0, 0, 1)
         SelectionFill: =RGBA(255, 255, 255, 1)
-        X: =533
+        Size: =27.08
+        Width: =683.34
+        X: =227.32
         Y: =369
         ZIndex: =11
 

@@ -3,66 +3,86 @@
     Rectangle1_40 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =59
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         ZIndex: =1
 
     Label9_30 As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =59
-        Size: =20
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =41.66
         Text: ="Descripción de las Actividades a Realizar"
-        Width: =588
-        X: =389
+        Width: =910.67
+        X: =0.00
         ZIndex: =2
 
     Rectangle2_260 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =91
         ZIndex: =3
 
     Label10_302 As label:
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Realizado"
-        Width: =119
-        X: =36
+        Width: =247.90
+        X: =74.99
         Y: =59
         ZIndex: =4
 
     Label10_304 As label:
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="No realizado"
-        Width: =125
-        X: =177
+        Width: =260.42
+        X: =368.75
         Y: =59
         ZIndex: =5
 
     Label10_301 As label:
         FontWeight: =FontWeight.Bold
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="[R] "
-        Width: =36
+        Width: =74.99
+        X: =0.00
         Y: =59
         ZIndex: =7
 
     Label10_303 As label:
         FontWeight: =FontWeight.Bold
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="[N] "
-        Width: =50
-        X: =142
+        Width: =104.16
+        X: =295.82
         Y: =59
         ZIndex: =8
 
     Label10_306 As label:
         Height: =65
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: |-
             ="Verificar fugas neumáticas en tambor de giro, reparar si es necesario
             ."
-        Width: =1031
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =155
         ZIndex: =11
 
@@ -80,19 +100,25 @@
                 IsBlank(Respuesta1_21.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =160
         ZIndex: =13
 
     Label10_307 As label:
         Height: =52
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: |-
             ="Lubricar cadena de tambor.
             "
-        Width: =1031
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =202
         ZIndex: =17
 
@@ -108,17 +134,23 @@
                 IsBlank(Respuesta3_20.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =262
         ZIndex: =19
 
     Label10_308 As label:
         Height: =48
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Realizar limpieza general.."
-        Width: =1112
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =251
         ZIndex: =20
 
@@ -173,8 +205,10 @@
             
             
             
-        Width: =67
-        X: =1280
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =139.59
+        X: =771.08
         Y: =693
         ZIndex: =29
 
@@ -182,16 +216,20 @@
         Height: =75
         Icon: =Icon.BackArrow
         OnSelect: =Navigate('MEPS1-04-2M-BANDA TRNSP-TAMBOR(PREG2)',ScreenTransition.Fade)
-        Width: =67
-        X: =26
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =139.59
+        X: =54.18
         Y: =693
         ZIndex: =44
 
     Image2_39 As image:
         Height: =41
         Image: =carrier_logo_300
-        Width: =209
-        X: =1157
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =435.41
+        X: =475.25
         Y: =9
         ZIndex: =45
 
@@ -201,10 +239,13 @@
         Height: =24
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta3_20.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1112
+        Width: =435.41
+        X: =475.25
         Y: =264
         ZIndex: =48
 
@@ -219,9 +260,12 @@
               IsBlank(Hallazgo1_21.Text),
               true
             )
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: =If(Respuesta1_21.Selected.Value = "N", true, false) 
-        Width: =209
-        X: =1112
+        Width: =435.41
+        X: =475.25
         Y: =157
         ZIndex: =50
 
@@ -231,10 +275,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta2_21.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1112
+        Width: =435.41
+        X: =475.25
         Y: =210
         ZIndex: =51
 
@@ -250,37 +297,44 @@
                 IsBlank(Respuesta1_21.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =217
         ZIndex: =61
 
     Rectangle2_262 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =207
         ZIndex: =62
 
     Rectangle2_263 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =250
         ZIndex: =63
 
     Rectangle2_264 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =306
         ZIndex: =64
 
     Rectangle2_261 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =127
         ZIndex: =73
 
@@ -288,10 +342,12 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Height: =27
-        Size: =20
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =41.66
         Text: ="Tambor"
-        Width: =299
-        X: =533
+        Width: =622.92
+        X: =287.75
         Y: =99
         ZIndex: =74
 

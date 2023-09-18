@@ -27,7 +27,8 @@ Lista_MP As screen:
         TemplateFill: =If(ThisItem.IsSelected,RGBA(186,192,208,1), RGBA(0,0,0,0)) //En esta parte se realiza una validacion, solo con la finalidad de estetica, ya que lo que realiza este codigo es de que me esta diciendo que si se selecciona este item, que me lo colore a un color tono gris 
         TemplatePadding: =0
         TemplateSize: =213
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =167
         ZIndex: =1
 
@@ -37,12 +38,13 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: =ThisItem.Proc_No
             VerticalAlign: =VerticalAlign.Top
-            Width: =342
-            X: =313
+            Width: =712.51
+            X: =652.09
             Y: =37
             ZIndex: =1
 
@@ -52,13 +54,13 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: =ThisItem.Nom_Equipo
             VerticalAlign: =VerticalAlign.Top
-            Width: =342
-            X: =313
+            Width: =712.51
+            X: =652.09
             Y: =64
             ZIndex: =2
 
@@ -68,13 +70,13 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: =ThisItem.Clas_Mantenimineto
             VerticalAlign: =VerticalAlign.Top
-            Width: =342
-            X: =313
+            Width: =712.51
+            X: =652.09
             Y: =92
             ZIndex: =3
 
@@ -86,12 +88,12 @@ Lista_MP As screen:
             OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade) //En esta parte lo que se hace es de que cuando se le de click a la flecha, me rediriga a la pantalla "DatosMP" 
             PaddingBottom: =16
             PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
+            PaddingRight: =33.34
+            PaddingTop: =33.34
             Tooltip: ="View item details"
             Visible: =If(ThisItem.IsSelected,true)
-            Width: =79
-            X: =1275
+            Width: =164.58
+            X: =2656.24
             Y: =60
             ZIndex: =4
 
@@ -100,7 +102,8 @@ Lista_MP As screen:
             BorderThickness: =1
             Height: =1
             OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
+            Width: =2845.83
+            X: =0.00
             Y: =Parent.TemplateHeight - Self.Height
             ZIndex: =5
 
@@ -108,7 +111,8 @@ Lista_MP As screen:
             Height: =Parent.TemplateHeight - Separator3.Height
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
-            Width: =4
+            Width: =8.32
+            X: =0.00
             Y: =1
             ZIndex: =6
 
@@ -118,13 +122,13 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: =ThisItem.Fecha_Inicio
             VerticalAlign: =VerticalAlign.Top
-            Width: =342
-            X: =313
+            Width: =712.51
+            X: =652.09
             Y: =119
             ZIndex: =7
 
@@ -134,13 +138,13 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: =ThisItem.Fecha_Programada
             VerticalAlign: =VerticalAlign.Top
-            Width: =342
-            X: =313
+            Width: =712.51
+            X: =652.09
             Y: =149
             ZIndex: =8
 
@@ -150,13 +154,13 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: =ThisItem.Estatus
             VerticalAlign: =VerticalAlign.Top
-            Width: =342
-            X: =313
+            Width: =712.51
+            X: =652.09
             Y: =178
             ZIndex: =9
 
@@ -166,13 +170,14 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: |-
                 ="Proc.No:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =240
-            X: =23
+            Width: =499.99
+            X: =47.90
             Y: =37
             ZIndex: =10
 
@@ -182,14 +187,14 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: |-
                 ="Nombre del equipo:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =240
-            X: =23
+            Width: =499.99
+            X: =47.90
             Y: =64
             ZIndex: =11
 
@@ -199,14 +204,14 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: |-
                 ="Clase de Mantenimiento:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =240
-            X: =23
+            Width: =499.99
+            X: =47.90
             Y: =92
             ZIndex: =12
 
@@ -216,14 +221,14 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: |-
                 ="Fecha de Inicio:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =240
-            X: =23
+            Width: =499.99
+            X: =47.90
             Y: =119
             ZIndex: =13
 
@@ -233,14 +238,14 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: |-
                 ="Fecha Programada:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =240
-            X: =23
+            Width: =499.99
+            X: =47.90
             Y: =149
             ZIndex: =14
 
@@ -250,14 +255,14 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =14
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: |-
                 ="Estatus del Mantenimiento:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =261
-            X: =23
+            Width: =543.74
+            X: =47.90
             Y: =178
             ZIndex: =15
 
@@ -267,13 +272,14 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: |-
                 ="Localizacion:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =219
-            X: =23
+            Width: =456.26
+            X: =47.90
             Y: =9
             ZIndex: =16
 
@@ -283,12 +289,13 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: =ThisItem.Localizacion
             VerticalAlign: =VerticalAlign.Top
-            Width: =342
-            X: =313
+            Width: =712.51
+            X: =652.09
             Y: =9
             ZIndex: =17
 
@@ -298,13 +305,14 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: |-
                 ="ID:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =46
-            X: =898
+            Width: =95.83
+            X: =1870.84
             Y: =9
             ZIndex: =18
 
@@ -314,19 +322,21 @@ Lista_MP As screen:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =29.17
             Text: =ThisItem.Folio_Maq
             VerticalAlign: =VerticalAlign.Top
-            Width: =24
-            X: =956
+            Width: =50.02
+            X: =1991.67
             Y: =9
             ZIndex: =19
 
     Rectangle1_61 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         ZIndex: =6
 
     Label1_20 As label:
@@ -334,36 +344,48 @@ Lista_MP As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =92
-        Size: =20
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =41.66
         Text: |-
             ="ORDEN DE TRABAJO 
             MANTENIMIENTO PREVENTIVO ACTIVO"
-        Width: =527
-        X: =419
+        Width: =910.67
+        X: =0.00
         ZIndex: =7
 
     Image2_60 As image:
         Height: =58
         Image: =carrier_logo_300
-        Width: =194
-        X: =1138
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =404.16
+        X: =506.51
         Y: =17
         ZIndex: =9
 
     MAQUINA_QR As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: |-
             =//Maquina_QR //Esta variable me esta trayendo lo que el QR tiene almacenado
             "MP"
-        X: =56
+        Width: =312.50
+        X: =116.68
         ZIndex: =10
 
     MAQUINA_QR_3Letras As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: =Left(MAQUINA_QR.Text,3) //En esta parte lo unico que se esta haciendo es recortar la palabra de la variable "Maquina" esto solo con la finalidad de realizar los filtros de las maquinas.
-        X: =56
+        Width: =312.50
+        X: =116.68
         Y: =40
         ZIndex: =11
 
@@ -377,7 +399,11 @@ Lista_MP As screen:
         Buscador As text:
             Default: =""
             HintText: ="Filtro"
-            X: =16
+            PaddingRight: =10.41
+            PaddingTop: =10.41
+            Size: =27.08
+            Width: =666.66
+            X: =33.34
             Y: =103
             ZIndex: =12
 
@@ -385,8 +411,10 @@ Lista_MP As screen:
             DisplayMode: =DisplayMode.View
             Height: =40
             Icon: =Icon.Search
-            Width: =33
-            X: =287
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =68.75
+            X: =597.91
             Y: =101
             ZIndex: =13
 

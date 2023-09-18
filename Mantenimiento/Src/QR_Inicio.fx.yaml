@@ -53,8 +53,11 @@
             
             
             
-        Width: =1365
-        X: =1
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =22.93
+        Width: =910.67
+        X: =0.00
         Y: =92
         ZIndex: =1
 
@@ -108,6 +111,8 @@
                 // Si el código QR no coincide con ninguna URL esperada, muestra un mensaje o realiza una acción por defecto
                 //Notify("Código QR inválido.", NotificationType.Error)
             //)
+        PaddingRight: =10.41
+        PaddingTop: =10.41
         PressedBorderColor: =RGBA(56, 96, 178, 1)
         PressedContentColor: =RGBA(56, 96, 178, 1)
         PressedFillColor: =RGBA(255, 255, 255, 1)
@@ -115,15 +120,16 @@
         Text: ="Escanear QR"
         TextAlignment: =Align.Center
         TextColor: =RGBA(255, 255, 255, 1)
-        Width: =310
-        X: =556
+        Width: =645.85
+        X: =264.82
         Y: =563
         ZIndex: =2
 
     Rectangle1_58 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         ZIndex: =3
 
     Label1_14 As label:
@@ -131,25 +137,31 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =92
-        Size: =35
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =72.90
         Text: ="MATENIMIENTO PREVENTIVO "
-        Width: =802
-        X: =282
+        Width: =910.67
+        X: =0.00
         ZIndex: =4
 
     Image2_57 As image:
         Height: =80
         Image: =carrier_logo_300
-        Width: =223
-        X: =1112
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =464.58
+        X: =446.08
         Y: =6
         ZIndex: =5
 
     Image1 As image:
         Height: =286
         Image: =mantenimiento
-        Width: =434
-        X: =494
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =904.16
+        X: =6.51
         Y: =247
         ZIndex: =6
 
@@ -160,9 +172,13 @@
             =If(Line = 360,
             UpdateContext({Line:0}),
             UpdateContext({Line:Line+2}))
+        PaddingRight: =10.41
+        PaddingTop: =10.41
         Repeat: =true
+        Size: =27.08
         Visible: =false
-        X: =31
+        Width: =333.33
+        X: =64.58
         Y: =26
         ZIndex: =7
 
@@ -170,11 +186,13 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Height: =63
-        Size: =35
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =72.90
         Text: |-
             ="Tecnico encargado:"
-        Width: =463
-        X: =479
+        Width: =910.67
+        X: =0.00
         Y: =92
         ZIndex: =8
 
@@ -182,10 +200,12 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Height: =63
-        Size: =25
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =52.09
         Text: =Operador //En esta parte lo que hago es poner la variable que se creo en la pantalla de "Sesion" donde me toma el nombre de la persona que hizo el inicio de sesion y lo muestra en la pantalla
-        Width: =543
-        X: =439
+        Width: =910.67
+        X: =0.00
         Y: =155
         ZIndex: =9
 

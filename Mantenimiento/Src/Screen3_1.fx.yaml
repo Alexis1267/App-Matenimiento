@@ -6,8 +6,12 @@ Screen3_1 As screen:
             =UpdateContext({Modal:true});
             
             Set(ModalVisiBTN,"Texto")
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =31.26
         Text: ="Abrir modal "
-        X: =35
+        Width: =333.33
+        X: =72.90
         Y: =695
         ZIndex: =1
 
@@ -15,9 +19,11 @@ Screen3_1 As screen:
         ContentLanguage: =ModalVisiBTN
         Fill: =RGBA(202, 202, 202, 1)
         Height: =339
+        PaddingRight: =0.00
+        PaddingTop: =0.00
         Visible: =Modal
-        Width: =681
-        X: =375
+        Width: =910.67
+        X: =0.00
         Y: =160
         ZIndex: =2
 
@@ -32,8 +38,8 @@ Screen3_1 As screen:
             TemplatePadding: =0
             TemplateSize: =87
             Visible: =ModalVisiBTN = "Eliminar"
-            Width: =629
-            X: =24
+            Width: =1310.42
+            X: =50.02
             Y: =115
             ZIndex: =1
 
@@ -43,12 +49,13 @@ Screen3_1 As screen:
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Size: =29.17
                 Text: =ThisItem.Nombre
                 VerticalAlign: =VerticalAlign.Top
-                Width: =Parent.TemplateWidth - 86
-                X: =16
+                Width: =1131.25
+                X: =33.34
                 Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                 ZIndex: =1
 
@@ -62,18 +69,19 @@ Screen3_1 As screen:
                     Remove(Add_Involucrado,ThisItem)
                 PaddingBottom: =12
                 PaddingLeft: =12
-                PaddingRight: =12
-                PaddingTop: =12
+                PaddingRight: =25.00
+                PaddingTop: =25.00
                 Tooltip: ="View item details"
-                Width: =50
-                X: =534
+                Width: =104.16
+                X: =1112.52
                 Y: =14
                 ZIndex: =2
 
             Separator6 As rectangle:
                 Height: =8
                 OnSelect: =Select(Parent)
-                Width: =Parent.TemplateWidth
+                Width: =1310.42
+                X: =0.00
                 Y: =Parent.TemplateHeight - Self.Height
                 ZIndex: =3
 
@@ -81,7 +89,8 @@ Screen3_1 As screen:
                 Height: =Parent.TemplateHeight - Separator6.Height
                 OnSelect: =Select(Parent)
                 Visible: =ThisItem.IsSelected
-                Width: =4
+                Width: =8.32
+                X: =0.00
                 ZIndex: =4
 
         InsertNomina_1 As text:
@@ -97,12 +106,16 @@ Screen3_1 As screen:
             HoverBorderColor: =RGBA(255, 255, 255, 1)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
+            PaddingRight: =10.41
+            PaddingTop: =10.41
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
+            Size: =27.08
             Visible: =ModalVisiBTN = "Texto"
-            X: =199
+            Width: =666.66
+            X: =414.59
             Y: =169
             ZIndex: =1
 
@@ -137,14 +150,17 @@ Screen3_1 As screen:
                 
                 
                                                                                              
+            PaddingRight: =10.41
+            PaddingTop: =10.41
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
+            Size: =31.26
             Text: ="Agregar"
             Visible: =ModalVisiBTN = "Texto"
-            Width: =186
-            X: =266
+            Width: =387.51
+            X: =554.18
             Y: =251
             ZIndex: =2
 
@@ -154,9 +170,11 @@ Screen3_1 As screen:
             DisplayMode: =DisplayMode.View
             Height: =40
             Icon: =Icon.Person
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =ModalVisiBTN = "Texto"
-            Width: =49
-            X: =150
+            Width: =102.07
+            X: =312.50
             Y: =75
             ZIndex: =3
 
@@ -166,9 +184,11 @@ Screen3_1 As screen:
             DisplayMode: =DisplayMode.View
             Height: =40
             Icon: =Icon.Lock
+            PaddingRight: =0.00
+            PaddingTop: =0.00
             Visible: =ModalVisiBTN = "Texto"
-            Width: =36
-            X: =156
+            Width: =74.99
+            X: =325.01
             Y: =169
             ZIndex: =4
 
@@ -180,10 +200,14 @@ Screen3_1 As screen:
             Default: ="Seleccione"
             DisabledColor: =RGBA(0, 0, 0, 1)
             Items: =Tecnicos_App_MP //Esto me esta mandando a llamar la lista que tengo en sharepoint de los nombres de los tecnicos
+            PaddingRight: =20.85
+            PaddingTop: =20.85
             SelectionColor: =RGBA(0, 0, 0, 1)
             SelectionFill: =RGBA(255, 255, 255, 1)
+            Size: =27.08
             Visible: =ModalVisiBTN = "Texto"
-            X: =199
+            Width: =683.34
+            X: =414.59
             Y: =75
             ZIndex: =5
 
@@ -194,17 +218,23 @@ Screen3_1 As screen:
                 
                 Reset(DropUser_1);
                 Reset(InsertNomina_1);
-            X: =612
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =133.33
+            X: =1275.02
             ZIndex: =6
 
     Label10 As label:
         BorderThickness: =1
         Height: =152
         Overflow: =Overflow.Scroll
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: |
             =Text(Concat(Add_Involucrado,Nombre,Char(10)))
-        Width: =300
-        X: =1005
+        Width: =625.00
+        X: =285.66
         Y: =565
         ZIndex: =3
 
@@ -213,24 +243,34 @@ Screen3_1 As screen:
             =UpdateContext({Modal:true});
             
             Set(ModalVisiBTN,"Eliminar")
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =31.26
         Text: ="Eliminar usuario"
-        Width: =206
-        X: =328
+        Width: =429.18
+        X: =481.49
         Y: =695
         ZIndex: =4
 
     Dropdown3 As dropdown:
         Default: =Operador
         Items: =Concatenate(Add_Involucrado)
-        X: =40
+        PaddingRight: =20.85
+        PaddingTop: =20.85
+        Size: =27.08
+        Width: =683.34
+        X: =83.35
         Y: =40
         ZIndex: =5
 
     Label12 As label:
         Height: =41
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: =Operador
-        Width: =208
-        X: =225
+        Width: =433.33
+        X: =468.73
         Y: =192
         ZIndex: =6
 
@@ -263,8 +303,11 @@ Screen3_1 As screen:
             
             
             
-        Width: =288
-        X: =658
+        PaddingRight: =20.85
+        PaddingTop: =20.85
+        Size: =27.08
+        Width: =600.00
+        X: =310.67
         Y: =302
         ZIndex: =7
 

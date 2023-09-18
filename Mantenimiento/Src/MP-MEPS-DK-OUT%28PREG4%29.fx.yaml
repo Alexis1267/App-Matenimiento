@@ -3,64 +3,84 @@
     Rectangle1_17 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =59
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         ZIndex: =1
 
     Label9_12 As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =59
-        Size: =20
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =41.66
         Text: ="Descripción de las Actividades a Realizar"
-        Width: =588
-        X: =389
+        Width: =910.67
+        X: =0.00
         ZIndex: =2
 
     Rectangle2_95 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =91
         ZIndex: =3
 
     Label10_118 As label:
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Realizado"
-        Width: =119
-        X: =36
+        Width: =247.90
+        X: =74.99
         Y: =59
         ZIndex: =4
 
     Label10_120 As label:
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="No realizado"
-        Width: =125
-        X: =177
+        Width: =260.42
+        X: =368.75
         Y: =59
         ZIndex: =5
 
     Label10_117 As label:
         FontWeight: =FontWeight.Bold
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="[R] "
-        Width: =36
+        Width: =74.99
+        X: =0.00
         Y: =59
         ZIndex: =7
 
     Label10_119 As label:
         FontWeight: =FontWeight.Bold
         Height: =32
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="[N] "
-        Width: =50
-        X: =142
+        Width: =104.16
+        X: =295.82
         Y: =59
         ZIndex: =8
 
     Label10_122 As label:
         Height: =30
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Verifica movimiento y limpieza de rodillos"
-        Width: =1031
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =140
         ZIndex: =11
 
@@ -78,16 +98,22 @@
                 IsBlank(Respuesta1_8.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =142
         ZIndex: =13
 
     Label10_123 As label:
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: =" Verificar estado del tope de partes (final del transportador de rodillos)"
-        Width: =1031
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =183
         ZIndex: =17
 
@@ -103,17 +129,23 @@
                 IsBlank(Respuesta3_7.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =237
         ZIndex: =19
 
     Label10_124 As label:
         Height: =41
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: =" Verificar el nivel de aceite en moto reductor y volver a llenar de ser necesario"
-        Width: =1112
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =230
         ZIndex: =20
 
@@ -129,17 +161,23 @@
                 IsBlank(Respuesta4_7.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =287
         ZIndex: =22
 
     Label10_125 As label:
         Height: =34
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: =" Verificar movimiento y limpieza de poleas"
-        Width: =1064
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =283
         ZIndex: =23
 
@@ -155,17 +193,23 @@
                 IsBlank(Respuesta5_7.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =337
         ZIndex: =26
 
     Label10_126 As label:
         Height: =33
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Verificar la tensión de la correa en el transportador de rodillos, revisar tension y anotar numero de parte"
-        Width: =1059
-        X: =92
+        Width: =910.67
+        X: =0.00
         Y: =333
         ZIndex: =27
 
@@ -220,8 +264,10 @@
             
             
             
-        Width: =67
-        X: =1280
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =139.59
+        X: =771.08
         Y: =693
         ZIndex: =29
 
@@ -237,25 +283,34 @@
                 IsBlank(Respuesta6_7.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =385
         ZIndex: =30
 
     Label10_127 As label:
         Height: =29
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Realizar Limpieza General al terminar Mantenimiento preventivo"
-        Width: =1064
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =383
         ZIndex: =31
 
     Label10_128 As label:
         Height: =30
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="verificar cepillos centradores que esnten en buenas condicines."
-        Width: =1064
-        X: =93
+        Width: =910.67
+        X: =0.00
         Y: =437
         ZIndex: =32
 
@@ -271,9 +326,12 @@
                 IsBlank(Respuesta7_7.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =439
         ZIndex: =33
 
@@ -281,16 +339,20 @@
         Height: =75
         Icon: =Icon.BackArrow
         OnSelect: =Navigate('MP-MEPS-DK-OUT(PREG3)',ScreenTransition.Fade)
-        Width: =67
-        X: =26
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =139.59
+        X: =54.18
         Y: =693
         ZIndex: =44
 
     Image2_17 As image:
         Height: =41
         Image: =carrier_logo_300
-        Width: =209
-        X: =1157
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =435.41
+        X: =475.25
         Y: =9
         ZIndex: =45
 
@@ -300,10 +362,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta3_7.Selected.Value = "N", true, false)
-        Width: =194
-        X: =1124
+        Width: =404.16
+        X: =506.51
         Y: =239
         ZIndex: =48
 
@@ -318,9 +383,12 @@
               IsBlank(Hallazgo1_8.Text),
               true
             )
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: =If(Respuesta1_8.Selected.Value = "N", true, false) 
-        Width: =209
-        X: =1124
+        Width: =435.41
+        X: =475.25
         Y: =140
         ZIndex: =50
 
@@ -330,10 +398,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta2_8.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1124
+        Width: =435.41
+        X: =475.25
         Y: =189
         ZIndex: =51
 
@@ -343,10 +414,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta4_7.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1124
+        Width: =435.41
+        X: =475.25
         Y: =286
         ZIndex: =52
 
@@ -356,10 +430,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta5_7.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1124
+        Width: =435.41
+        X: =475.25
         Y: =337
         ZIndex: =53
 
@@ -369,10 +446,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta6_7.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1124
+        Width: =435.41
+        X: =475.25
         Y: =387
         ZIndex: =54
 
@@ -388,75 +468,88 @@
                 IsBlank(Respuesta1_8.Selected),
                 true
             )
+        PaddingRight: =20.85
+        PaddingTop: =20.85
         SelectionFill: =RGBA(92, 103, 125, 1)
-        Width: =75
-        X: =5
+        Size: =27.08
+        Width: =156.26
+        X: =10.41
         Y: =190
         ZIndex: =61
 
     Rectangle2_97 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =177
         ZIndex: =62
 
     Rectangle2_98 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =227
         ZIndex: =63
 
     Rectangle2_99 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =276
         ZIndex: =64
 
     Rectangle2_100 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =325
         ZIndex: =65
 
     Rectangle2_101 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =376
         ZIndex: =66
 
     Rectangle2_102 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =426
         ZIndex: =67
 
     Rectangle2_103 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =477
         ZIndex: =68
 
     Rectangle2_96 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         Y: =127
         ZIndex: =73
 
     Label10_121 As label:
         FontWeight: =FontWeight.Bold
         Height: =29
-        Size: =20
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =41.66
         Text: ="MESA DE RODILLO"
-        Width: =263
-        X: =517
+        Width: =547.93
+        X: =362.74
         Y: =99
         ZIndex: =74
 
@@ -466,10 +559,13 @@
         Height: =31
         HintText: ="¿Por qué?"
         OnChange: =
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Visible: |
             =If(Respuesta7_7.Selected.Value = "N", true, false)
-        Width: =209
-        X: =1124
+        Width: =435.41
+        X: =475.25
         Y: =439
         ZIndex: =75
 

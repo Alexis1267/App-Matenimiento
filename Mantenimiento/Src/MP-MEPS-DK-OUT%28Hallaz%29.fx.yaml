@@ -3,10 +3,12 @@
     Label12_4 As label:
         FontWeight: =FontWeight.Bold
         Height: =47
-        Size: =16
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =33.34
         Text: ="Observaciones y/o hallazgos"
-        Width: =399
-        X: =517
+        Width: =831.26
+        X: =100.45000000000005
         Y: =495
         ZIndex: =1
 
@@ -16,8 +18,11 @@
         EnableSpellCheck: =true
         Height: =123
         Mode: =TextMode.MultiLine
-        Width: =850
-        X: =258
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
+        Width: =910.67
+        X: =0.00
         Y: =542
         ZIndex: =2
 
@@ -26,12 +31,16 @@
         BorderThickness: =10
         Fill: =RGBA(127, 178, 57, 1)
         OnSelect: =Notify("Se ha enviado correctamente.",NotificationType.Success)
+        PaddingRight: =10.41
+        PaddingTop: =10.41
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
+        Size: =31.26
         Text: ="Enviar"
-        X: =602
+        Width: =333.33
+        X: =730.3299999999999
         Y: =702
         ZIndex: =3
 
@@ -45,8 +54,10 @@
         UploadedImage2_2 As image:
             Height: =318
             Image: =If(IsBlank(AddMediaButton2_2.Media), SampleImage, AddMediaButton2_2.Media)
-            Width: =508
-            X: =AddMediaButton2_2.X
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =910.67
+            X: =0.00
             Y: =109
             ZIndex: =5
 
@@ -58,10 +69,10 @@
             Fill: =RGBA(255, 255, 255, 0)
             Height: =133
             HoverBorderColor: =ColorFade(Self.BorderColor, 0%)
-            Size: =25
+            Size: =52.09
             Text: ="Adjuntar Evidencia"
-            Width: =508
-            X: =429
+            Width: =910.67
+            X: =0.00
             Y: =201
             ZIndex: =6
 
@@ -69,42 +80,52 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Height: =46
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =27.08
         Text: ="Adjuntar foto de evidencia"
-        Width: =473
-        X: =446
+        Width: =910.67
+        X: =0.00
         Y: =427
         ZIndex: =7
 
     Rectangle1_18 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =67
-        Width: =1366
+        Width: =910.67
+        X: =0.00
         ZIndex: =8
 
     Label9_13 As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =67
-        Size: =20
+        PaddingRight: =10.41
+        PaddingTop: =10.41
+        Size: =41.66
         Text: ="Descripción de las Actividades a Realizar"
-        Width: =588
-        X: =423
+        Width: =910.67
+        X: =0.00
         ZIndex: =9
 
     Icon7_2 As icon.BackArrow:
         Height: =75
         Icon: =Icon.BackArrow
         OnSelect: =Navigate('MP-MEPS-DK-OUT(PREG4)',ScreenTransition.UnCoverRight)
-        Width: =67
-        X: =40
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =139.59
+        X: =83.35
         Y: =684
         ZIndex: =10
 
     Image2_2 As image:
         Height: =58
         Image: =carrier_logo_300
-        Width: =209
-        X: =1157
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =435.41
+        X: =475.25
         Y: =4
         ZIndex: =11
 
