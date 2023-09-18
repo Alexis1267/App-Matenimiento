@@ -1,6 +1,10 @@
 {
   "FormatVersion": "0.24",
   "Header": {
+    "AnalysisOptions": {
+      "DataflowAnalysisEnabled": false,
+      "DataflowAnalysisFlagStateToggledByUser": false
+    },
     "DocVersion": "1.334",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
@@ -20,6 +24,7 @@
       "classiccontrols": false,
       "consistentreturnschemafortabularfunctions": true,
       "copyandmerge": true,
+      "dataflowanalysisenabled": false,
       "datatablev2control": true,
       "dataverseactionsenabled": true,
       "delaycontrolrendering": true,
@@ -46,7 +51,6 @@
       "enableruntimepolicies": true,
       "enablesaveloadcleardataonweb": false,
       "enableupdateifdelegation": false,
-      "enhanceddelegation": true,
       "enhancedgalleryinitialization": true,
       "errorhandling": true,
       "expandedsavedatasupport": true,
@@ -94,13 +98,13 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 76,
+    "BindingErrorCount": 77,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
     "DocumentLayoutHeight": 768,
-    "DocumentLayoutLockOrientation": true,
-    "DocumentLayoutMaintainAspectRatio": true,
+    "DocumentLayoutLockOrientation": false,
+    "DocumentLayoutMaintainAspectRatio": false,
     "DocumentLayoutOrientation": "landscape",
     "DocumentLayoutScaleToFit": true,
     "DocumentLayoutWidth": 1366,
@@ -114,7 +118,7 @@
     "Name": "CMXE-App-MP",
     "OriginatingVersion": "1.332",
     "ParserErrorCount": 0,
-    "ShowStatusBar": true
+    "ShowStatusBar": false
   },
   "PublishInfo": {
     "AppName": "CMXE-App-MP",

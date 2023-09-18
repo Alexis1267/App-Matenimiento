@@ -3,12 +3,12 @@
     Label12_10 As label:
         FontWeight: =FontWeight.Bold
         Height: =47
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =33.34
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =20.41
         Text: ="Observaciones y/o hallazgos"
-        Width: =831.26
-        X: =100.45000000000005
+        Width: =508.90
+        X: =61.50
         Y: =495
         ZIndex: =1
 
@@ -18,10 +18,10 @@
         EnableSpellCheck: =true
         Height: =123
         Mode: =TextMode.MultiLine
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
-        Width: =910.67
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Width: =557.51
         X: =0.00
         Y: =542
         ZIndex: =2
@@ -31,16 +31,16 @@
         BorderThickness: =10
         Fill: =RGBA(127, 178, 57, 1)
         OnSelect: =Notify("Se ha enviado correctamente.",NotificationType.Success)
-        PaddingRight: =10.41
-        PaddingTop: =10.41
+        PaddingRight: =6.37
+        PaddingTop: =6.37
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
         RadiusTopRight: =20
-        Size: =31.26
+        Size: =19.14
         Text: ="Enviar"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =702
         ZIndex: =3
 
@@ -56,7 +56,7 @@
             Image: =If(IsBlank(AddMediaButton2_8.Media), SampleImage, AddMediaButton2_8.Media)
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =910.67
+            Width: =557.51
             X: =0.00
             Y: =109
             ZIndex: =5
@@ -69,9 +69,9 @@
             Fill: =RGBA(255, 255, 255, 0)
             Height: =133
             HoverBorderColor: =ColorFade(Self.BorderColor, 0%)
-            Size: =52.09
+            Size: =31.89
             Text: ="Adjuntar Evidencia"
-            Width: =910.67
+            Width: =557.51
             X: =0.00
             Y: =201
             ZIndex: =6
@@ -80,11 +80,11 @@
         Align: =Align.Center
         FontWeight: =FontWeight.Bold
         Height: =46
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="Adjuntar foto de evidencia"
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         Y: =427
         ZIndex: =7
@@ -92,7 +92,7 @@
     Rectangle1_46 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =67
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         ZIndex: =8
 
@@ -100,11 +100,11 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =67
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =41.66
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =25.51
         Text: ="Descripción de las Actividades a Realizar"
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         ZIndex: =9
 
@@ -114,8 +114,8 @@
         OnSelect: =Navigate('MEPS1-04-2M-CONZOLAS-Z(PREG3)',ScreenTransition.UnCoverRight)
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =139.59
-        X: =83.35
+        Width: =85.46
+        X: =51.03
         Y: =684
         ZIndex: =10
 
@@ -124,8 +124,8 @@
         Image: =carrier_logo_300
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =435.41
-        X: =475.25
+        Width: =266.56
+        X: =290.95
         Y: =4
         ZIndex: =11
 

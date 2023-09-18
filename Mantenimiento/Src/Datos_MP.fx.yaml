@@ -8,12 +8,12 @@ Datos_MP As screen:
     Label8_4 As label:
         BorderColor: =RGBA(0, 0, 0, 1)
         BorderThickness: =1
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Asignado)
-        Width: =529.17
-        X: =381.50
+        Width: =323.96
+        X: =326.92
         Y: =618
         ZIndex: =1
 
@@ -21,8 +21,8 @@ Datos_MP As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(166, 166, 166, 1)
         Height: =18
-        Width: =910.67
-        X: =0.00
+        Width: =557.51
+        X: =93.66
         Y: =328
         ZIndex: =2
 
@@ -30,16 +30,16 @@ Datos_MP As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(116, 116, 116, 1)
         Height: =36
-        Width: =458.33
-        X: =0.00
+        Width: =280.59
+        X: =370.39
         Y: =319
         ZIndex: =3
 
     Rectangle1_60 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
-        Width: =910.67
-        X: =0.00
+        Width: =557.51
+        X: =93.66
         ZIndex: =5
 
     Label1_16 As label:
@@ -47,14 +47,14 @@ Datos_MP As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =92
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =41.66
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =25.51
         Text: |-
             ="ORDEN DE TRABAJO 
             MANTENIMIENTO PREVENTIVO ACTIVO"
-        Width: =910.67
-        X: =0.00
+        Width: =557.51
+        X: =93.66
         ZIndex: =6
 
     Button1_15 As button:
@@ -71,12 +71,12 @@ Datos_MP As screen:
             
             //VALIDACION DE CAMPO INVOLUCRADOS
             If(IsBlank(Label12_15.Text),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error))
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =31.26
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =19.14
         Text: ="Contestar "
-        Width: =533.33
-        X: =377.33
+        Width: =326.51
+        X: =324.47
         Y: =698
         ZIndex: =7
 
@@ -85,8 +85,8 @@ Datos_MP As screen:
         Image: =carrier_logo_300
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =404.16
-        X: =506.51
+        Width: =247.42
+        X: =403.44
         Y: =17
         ZIndex: =8
 
@@ -96,13 +96,13 @@ Datos_MP As screen:
         Height: =45
         OnSelect: |-
             =UpdateContext({TimerGo: true})
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =31.26
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =19.14
         Text: ="Iniciar"
         Visible: =false
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =707
         ZIndex: =9
 
@@ -110,12 +110,12 @@ Datos_MP As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =36
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =41.66
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =25.51
         Text: ="Datos del MP"
-        Width: =410.42
-        X: =47.90
+        Width: =251.26
+        X: =399.77
         Y: =319
         ZIndex: =31
 
@@ -125,13 +125,13 @@ Datos_MP As screen:
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(0, 40, 85, 1)
         FontWeight: =FontWeight.Bold
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Asignado a:"
-        Width: =529.17
-        X: =381.50
+        Width: =323.96
+        X: =326.92
         Y: =578
         ZIndex: =32
 
@@ -139,8 +139,8 @@ Datos_MP As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(166, 166, 166, 1)
         Height: =18
-        Width: =910.67
-        X: =0.00
+        Width: =557.51
+        X: =93.66
         Y: =111
         ZIndex: =33
 
@@ -156,11 +156,11 @@ Datos_MP As screen:
             BorderThickness: =1
             DefaultDate: =LookUp(CMXE_MP_N,Proc_No =Label8_8.Text,Fecha_Programada)
             DisplayMode: =DisplayMode.Disabled
-            PaddingRight: =10.41
+            PaddingRight: =6.37
             PaddingTop: =0.00
-            Size: =29.17
-            Width: =529.17
-            X: =381.50
+            Size: =17.86
+            Width: =323.96
+            X: =326.92
             Y: =405
             ZIndex: =15
 
@@ -170,13 +170,13 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Fecha Programada:"
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =365
             ZIndex: =22
 
@@ -192,11 +192,11 @@ Datos_MP As screen:
             BorderThickness: =1
             DefaultDate: =LookUp(CMXE_MP_N,Proc_No =Label8_8.Text,Fecha_Proxima)
             DisplayMode: =DisplayMode.Disabled
-            PaddingRight: =10.41
+            PaddingRight: =6.37
             PaddingTop: =0.00
-            Size: =29.17
-            Width: =529.17
-            X: =381.50
+            Size: =17.86
+            Width: =323.96
+            X: =326.92
             Y: =405
             ZIndex: =20
 
@@ -206,13 +206,13 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Fecha Proxima MP:"
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =365
             ZIndex: =21
 
@@ -220,8 +220,8 @@ Datos_MP As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(116, 116, 116, 1)
         Height: =36
-        Width: =743.73
-        X: =0.00
+        Width: =455.31
+        X: =195.91
         Y: =102
         ZIndex: =34
 
@@ -229,12 +229,12 @@ Datos_MP As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =36
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =41.66
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =25.51
         Text: ="Datos de la Maquina"
-        Width: =893.75
-        X: =16.92
+        Width: =547.16
+        X: =104.08
         Y: =102
         ZIndex: =35
 
@@ -253,13 +253,13 @@ Datos_MP As screen:
             Font: =Font.Arial
             FontWeight: =FontWeight.Bold
             Height: =61
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Proc.No.:"
-            Width: =245.82
-            X: =47.90
+            Width: =150.49
+            X: =205.70
             Y: =148
             ZIndex: =23
 
@@ -269,15 +269,15 @@ Datos_MP As screen:
             BorderThickness: =1
             Font: =Font.Arial
             Height: =61
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 =//Text(Maquina)
                 //"MEPS1-10-56D"
                 MAQUINA //Esta variable es la que se toma de la pantalla "ListaMP" que me agarra el Proc.No, esto para poder mandar a llamar todos los campos que restan de la pantalla de su respectiva maquina o folio
-            Width: =481.27
-            X: =293.76
+            Width: =294.64
+            X: =356.30
             Y: =148
             ZIndex: =24
 
@@ -294,26 +294,26 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Activo No:"
-            Width: =529.17
-            X: =47.90
+            Width: =323.96
+            X: =326.92
             Y: =224
             ZIndex: =25
 
         Label8_9 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |
                 =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Proc_No) //Esto lo que me hace es de que me encuentre el registo del Proc.No.:
-            Width: =529.17
-            X: =47.90
+            Width: =323.96
+            X: =326.92
             Y: =264
             ZIndex: =26
 
@@ -323,8 +323,8 @@ Datos_MP As screen:
         OnSelect: =Navigate(Lista_MP,ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =156.26
-        X: =91.66
+        Width: =95.66
+        X: =555.27
         Y: =14
         ZIndex: =38
 
@@ -341,24 +341,24 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: ="Nombre del Activo"
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =224
             ZIndex: =27
 
         Label8_10 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Nom_Equipo)
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =264
             ZIndex: =28
 
@@ -374,8 +374,8 @@ Datos_MP As screen:
             Set(BTN_VISIBLE,"AGREGAR")
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =77.07
-        X: =833.59
+        Width: =47.18
+        X: =603.64
         Y: =473
         ZIndex: =41
 
@@ -392,24 +392,24 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: ="Localización"
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =224
             ZIndex: =29
 
         Label8_11 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Localizacion)
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =264
             ZIndex: =30
 
@@ -425,8 +425,8 @@ Datos_MP As screen:
             Set(BTN_VISIBLE, "ELIMINAR");
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =81.25
-        X: =829.42
+        Width: =49.74
+        X: =601.18
         Y: =471
         ZIndex: =42
 
@@ -435,8 +435,8 @@ Datos_MP As screen:
         PaddingRight: =0.00
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
-        Width: =910.67
-        X: =0.00
+        Width: =557.51
+        X: =93.66
         ZIndex: =43
 
         HtmlText3_15 As htmlViewer:
@@ -454,9 +454,9 @@ Datos_MP As screen:
             PaddingLeft: =0
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Size: =22.93
+            Size: =14.04
             Visible: =ModalPop_Datos
-            Width: =2845.83
+            Width: =1742.23
             X: =0.00
             ZIndex: =1
 
@@ -465,8 +465,8 @@ Datos_MP As screen:
             Height: =467
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =1706.27
-            X: =568.74
+            Width: =1044.58
+            X: =348.19
             Y: =150
             ZIndex: =2
 
@@ -480,7 +480,7 @@ Datos_MP As screen:
                 TemplatePadding: =0
                 TemplateSize: =80
                 Visible: =BTN_VISIBLE = "ELIMINAR"
-                Width: =971.14
+                Width: =594.54
                 X: =0.00
                 Y: =65
                 ZIndex: =2
@@ -493,11 +493,11 @@ Datos_MP As screen:
                     PaddingLeft: =0
                     PaddingRight: =0.00
                     PaddingTop: =0.00
-                    Size: =29.17
+                    Size: =17.86
                     Text: =ThisItem.Nombre
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =1527.09
-                    X: =33.34
+                    Width: =934.89
+                    X: =20.41
                     Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                     ZIndex: =1
 
@@ -511,17 +511,17 @@ Datos_MP As screen:
                         Notify("Se a eliminado con exito",NotificationType.Success)
                     PaddingBottom: =12
                     PaddingLeft: =12
-                    PaddingRight: =25.00
-                    PaddingTop: =25.00
+                    PaddingRight: =15.30
+                    PaddingTop: =15.30
                     Tooltip: ="View item details"
-                    Width: =152.10
-                    X: =1466.66
+                    Width: =93.12
+                    X: =897.90
                     ZIndex: =2
 
                 Separator2 As rectangle:
                     Height: =8
                     OnSelect: =Select(Parent)
-                    Width: =1706.27
+                    Width: =1044.58
                     X: =0.00
                     Y: =Parent.TemplateHeight - Self.Height
                     ZIndex: =3
@@ -530,14 +530,14 @@ Datos_MP As screen:
                     Height: =Parent.TemplateHeight - Separator2.Height
                     OnSelect: =Select(Parent)
                     Visible: =ThisItem.IsSelected
-                    Width: =8.32
+                    Width: =5.09
                     X: =0.00
                     ZIndex: =4
 
             Rectangle3_2 As rectangle:
                 Fill: =RGBA(0, 40, 85, 1)
                 Height: =65
-                Width: =1708.34
+                Width: =1045.85
                 X: =0.00
                 ZIndex: =3
 
@@ -552,8 +552,8 @@ Datos_MP As screen:
                     Reset(InsertNomina_2)
                 PaddingRight: =0.00
                 PaddingTop: =0.00
-                Width: =133.33
-                X: =1558.34
+                Width: =81.63
+                X: =954.02
                 ZIndex: =4
 
             Image4_2 As image:
@@ -561,21 +561,21 @@ Datos_MP As screen:
                 Image: =carrier_logo_300
                 PaddingRight: =0.00
                 PaddingTop: =0.00
-                Width: =245.82
-                X: =41.66
+                Width: =150.49
+                X: =25.51
                 ZIndex: =5
 
             Label9_60 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =65
-                PaddingRight: =10.41
-                PaddingTop: =10.41
-                Size: =62.49
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =38.26
                 Text: ="Agregar Involucrados"
                 Visible: =BTN_VISIBLE = "AGREGAR"
-                Width: =954.17
-                X: =445.82
+                Width: =584.15
+                X: =272.93
                 ZIndex: =6
 
             InsertNomina_2 As text:
@@ -590,16 +590,16 @@ Datos_MP As screen:
                 HintText: ="Nomina"
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
-                PaddingRight: =10.41
-                PaddingTop: =10.41
+                PaddingRight: =6.37
+                PaddingTop: =6.37
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
                 RadiusTopRight: =20
-                Size: =27.08
+                Size: =16.58
                 Visible: =BTN_VISIBLE = "AGREGAR"
-                Width: =666.66
-                X: =562.50
+                Width: =408.13
+                X: =344.37
                 Y: =285
                 ZIndex: =7
 
@@ -636,17 +636,17 @@ Datos_MP As screen:
                     
                     
                                                                                                  
-                PaddingRight: =10.41
-                PaddingTop: =10.41
+                PaddingRight: =6.37
+                PaddingTop: =6.37
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
                 RadiusTopRight: =20
-                Size: =31.26
+                Size: =19.14
                 Text: ="Agregar"
                 Visible: =BTN_VISIBLE = "AGREGAR"
-                Width: =416.68
-                X: =685.43
+                Width: =255.09
+                X: =419.63
                 Y: =375
                 ZIndex: =8
 
@@ -660,8 +660,8 @@ Datos_MP As screen:
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Visible: =BTN_VISIBLE = "AGREGAR"
-                Width: =102.07
-                X: =460.42
+                Width: =62.49
+                X: =281.87
                 Y: =207
                 ZIndex: =9
 
@@ -675,8 +675,8 @@ Datos_MP As screen:
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Visible: =BTN_VISIBLE = "AGREGAR"
-                Width: =74.99
-                X: =472.91
+                Width: =45.90
+                X: =289.52
                 Y: =285
                 ZIndex: =10
 
@@ -689,14 +689,14 @@ Datos_MP As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(215, 223, 240, 1)
                 Items: =Tecnicos_App_MP //Esto me esta mandando a llamar la lista que tengo en sharepoint de los nombres de los tecnicos
-                PaddingRight: =20.85
-                PaddingTop: =20.85
+                PaddingRight: =12.76
+                PaddingTop: =12.76
                 SelectionColor: =RGBA(0, 0, 0, 1)
                 SelectionFill: =RGBA(255, 255, 255, 1)
-                Size: =27.08
+                Size: =16.58
                 Visible: =BTN_VISIBLE = "AGREGAR"
-                Width: =683.34
-                X: =562.50
+                Width: =418.35
+                X: =344.37
                 Y: =207
                 ZIndex: =11
 
@@ -704,13 +704,13 @@ Datos_MP As screen:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Bold
                 Height: =52
-                PaddingRight: =10.41
-                PaddingTop: =10.41
-                Size: =62.49
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =38.26
                 Text: ="INGRESE SUS DATOS"
                 Visible: =BTN_VISIBLE = "AGREGAR"
-                Width: =981.26
-                X: =404.16
+                Width: =600.73
+                X: =247.42
                 Y: =110
                 ZIndex: =12
 
@@ -718,13 +718,13 @@ Datos_MP As screen:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =65
-                PaddingRight: =10.41
-                PaddingTop: =10.41
-                Size: =62.49
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =38.26
                 Text: ="Eliminar involucrado"
                 Visible: =BTN_VISIBLE = "ELIMINAR"
-                Width: =954.17
-                X: =445.82
+                Width: =584.15
+                X: =272.93
                 ZIndex: =13
 
     Group3_10 As group:
@@ -740,13 +740,13 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Condición del equipo:"
-            Width: =529.17
-            X: =47.90
+            Width: =323.96
+            X: =326.92
             Y: =578
             ZIndex: =36
 
@@ -755,13 +755,13 @@ Datos_MP As screen:
             BorderThickness: =1
             Color: =If(Label8_24.Text = "Off",RGBA(168,0,0,1),Label8_24.Text = "On",RGBA(97,180,93,100))
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |
                 =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Cond_Equipo)
-            Width: =529.17
-            X: =47.90
+            Width: =323.96
+            X: =326.92
             Y: =618
             ZIndex: =37
 
@@ -777,12 +777,12 @@ Datos_MP As screen:
             BorderThickness: =1
             Height: =145
             Overflow: =Overflow.Scroll
-            PaddingRight: =5.93
-            PaddingTop: =5.93
-            Size: =15.41
+            PaddingRight: =3.63
+            PaddingTop: =3.63
+            Size: =9.44
             Text: =Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
-            Width: =442.29
-            X: =468.38
+            Width: =270.78
+            X: =380.18
             Y: =514
             ZIndex: =39
 
@@ -794,13 +794,13 @@ Datos_MP As screen:
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
             Height: =43
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Tecnicos Involucrados:"
-            Width: =910.67
-            X: =0.00
+            Width: =557.51
+            X: =93.66
             Y: =471
             ZIndex: =40
 
@@ -817,13 +817,13 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Prioridad:"
-            Width: =529.17
-            X: =47.90
+            Width: =323.96
+            X: =326.92
             Y: =471
             ZIndex: =16
 
@@ -835,12 +835,12 @@ Datos_MP As screen:
                 RGBA(0, 0, 0,0)
             LineHeight: |
                 =1.2
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Prioridad)
-            Width: =529.17
-            X: =47.90
+            Width: =323.96
+            X: =326.92
             Y: =511
             ZIndex: =17
 
@@ -857,25 +857,25 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Clase de Mantenimiento:"
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =471
             ZIndex: =11
 
         Label8 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Clas_Mantenimineto)
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =511
             ZIndex: =13
 
@@ -892,25 +892,25 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Clasificación:"
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =471
             ZIndex: =18
 
         Label8_3 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Clasificacion)
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =511
             ZIndex: =19
 
@@ -927,25 +927,25 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Horas Hombre:"
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =579
             ZIndex: =12
 
         Label8_1 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Horas_Hombre)
-            Width: =529.17
-            X: =381.50
+            Width: =323.96
+            X: =326.92
             Y: =619
             ZIndex: =14
 
@@ -961,11 +961,11 @@ Datos_MP As screen:
             BorderThickness: =1
             DefaultDate: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Fecha_Inicio)
             DisplayMode: =DisplayMode.Disabled
-            PaddingRight: =10.41
+            PaddingRight: =6.37
             PaddingTop: =0.00
-            Size: =29.17
-            Width: =529.17
-            X: =47.90
+            Size: =17.86
+            Width: =323.96
+            X: =326.92
             Y: =405
             ZIndex: =4
 
@@ -975,13 +975,13 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Fecha Inicio:"
-            Width: =529.17
-            X: =47.90
+            Width: =323.96
+            X: =326.92
             Y: =365
             ZIndex: =10
 

@@ -3,12 +3,12 @@
     Label12_2 As label:
         FontWeight: =FontWeight.Bold
         Height: =42
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =33.34
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =20.41
         Text: ="Observaciones y/o hallazgos"
-        Width: =654.17
-        X: =256.49
+        Width: =400.49
+        X: =157.03
         Y: =476
         ZIndex: =1
 
@@ -18,10 +18,10 @@
         EnableSpellCheck: =true
         Height: =123
         Mode: =TextMode.MultiLine
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
-        Width: =910.67
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Width: =557.51
         X: =0.00
         Y: =539
         ZIndex: =2
@@ -29,7 +29,7 @@
     Rectangle1_7 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =67
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         ZIndex: =8
 
@@ -37,11 +37,11 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =67
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =41.66
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =25.51
         Text: ="Descripción de las Actividades a Realizar"
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         ZIndex: =9
 
@@ -50,20 +50,20 @@
         Image: =carrier_logo_300
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =435.41
-        X: =475.25
+        Width: =266.56
+        X: =290.95
         Y: =4
         ZIndex: =11
 
     Label12_14 As label:
         FontWeight: =FontWeight.Bold
         Height: =54
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =52.09
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =31.89
         Text: ="Adjuntar Evidencia"
-        Width: =679.19
-        X: =231.47
+        Width: =415.80
+        X: =141.71
         Y: =398
         ZIndex: =12
 
@@ -72,8 +72,8 @@
         Image: =
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =683.34
-        X: =227.32
+        Width: =418.35
+        X: =139.17
         Y: =AddMediaButton1.Y
         ZIndex: =14
 
@@ -90,27 +90,27 @@
             ImagePosition: =ImagePosition.Fill
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =683.34
-            X: =227.32
+            Width: =418.35
+            X: =139.17
             Y: =120
             ZIndex: =16
 
         AddMediaButton1 As addMedia:
-            Size: =52.09
-            Width: =683.34
-            X: =227.32
+            Size: =31.89
+            Width: =418.35
+            X: =139.17
             Y: =120
             ZIndex: =17
 
     Button3_3 As button:
         OnSelect: |-
             =Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"})
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =31.26
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =19.14
         Text: ="Enviar"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =701
         ZIndex: =20
 
@@ -120,8 +120,8 @@
         OnSelect: =Navigate('MP-MEPS-INP(PREG)_1',ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =241.66
-        X: =54.18
+        Width: =147.95
+        X: =33.17
         Y: =673
         ZIndex: =22
 

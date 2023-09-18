@@ -4,14 +4,14 @@
     Rectangle1_13 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         ZIndex: =1
 
     Rectangle2_57 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =35
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         Y: =146
         ZIndex: =2
@@ -19,7 +19,7 @@
     Rectangle2_58 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         Y: =216
         ZIndex: =3
@@ -29,26 +29,26 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =92
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =41.66
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =25.51
         Text: |-
             ="ORDEN DE TRABAJO 
             MANTENIMIENTO PREVENTIVO ACTIVO"
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         ZIndex: =4
 
     Label2_4 As label:
         FontWeight: =FontWeight.Bold
         Height: =31
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =29.17
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17.86
         Text: |-
             ="Proc. No.: MEPS1-04-1M-DK-OUT"
-        Width: =633.33
-        X: =277.34
+        Width: =387.73
+        X: =169.79
         Y: =105
         ZIndex: =5
 
@@ -57,12 +57,12 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =29.17
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17.86
         Text: ="Activo No."
-        Width: =312.50
-        X: =14.57
+        Width: =191.32
+        X: =8.93
         Y: =148
         ZIndex: =6
 
@@ -71,12 +71,12 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =29.17
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17.86
         Text: ="Nombre del Activo"
-        Width: =395.83
-        X: =514.83
+        Width: =242.33
+        X: =315.18
         Y: =148
         ZIndex: =7
 
@@ -85,25 +85,25 @@
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =29.17
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17.86
         Text: |-
             ="Localización
             "
-        Width: =312.50
-        X: =598.17
+        Width: =191.32
+        X: =366.21
         Y: =146
         ZIndex: =8
 
     Label3_9 As label:
         Align: =Align.Center
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="MEPS1-04"
-        Width: =312.50
+        Width: =191.32
         X: =0.00
         Y: =179
         ZIndex: =9
@@ -111,24 +111,24 @@
     Label4_9 As label:
         Align: =Align.Center
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="Pivatic Puncher"
-        Width: =395.83
-        X: =514.83
+        Width: =242.33
+        X: =315.18
         Y: =184
         ZIndex: =10
 
     Label5_9 As label:
         Align: =Align.Center
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="PRENSAS"
-        Width: =312.50
-        X: =598.17
+        Width: =191.32
+        X: =366.21
         Y: =179
         ZIndex: =11
 
@@ -136,20 +136,20 @@
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =30
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Asignado a:"
-        Width: =222.92
-        X: =43.74
+        Width: =136.48
+        X: =26.78
         Y: =557
         ZIndex: =17
 
     Rectangle2_59 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         Y: =528
         ZIndex: =18
@@ -158,13 +158,13 @@
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Prioridad:"
-        Width: =247.90
-        X: =662.77
+        Width: =151.76
+        X: =405.75
         Y: =257
         ZIndex: =19
 
@@ -172,13 +172,13 @@
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Tipo de Trabajo:"
-        Width: =383.35
-        X: =527.32
+        Width: =234.69
+        X: =322.83
         Y: =293
         ZIndex: =20
 
@@ -186,13 +186,13 @@
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Clase Mtto:"
-        Width: =383.35
-        X: =527.32
+        Width: =234.69
+        X: =322.83
         Y: =332
         ZIndex: =21
 
@@ -200,13 +200,13 @@
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Hrs. Maq. Prog:"
-        Width: =295.82
-        X: =614.84
+        Width: =181.10
+        X: =376.41
         Y: =370
         ZIndex: =22
 
@@ -214,13 +214,13 @@
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Hrs. Hom. Prog:"
-        Width: =293.76
-        X: =616.91
+        Width: =179.84
+        X: =377.68
         Y: =404
         ZIndex: =23
 
@@ -228,13 +228,13 @@
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Clasificación:"
-        Width: =266.65
-        X: =644.01
+        Width: =163.24
+        X: =394.26
         Y: =448
         ZIndex: =24
 
@@ -242,124 +242,124 @@
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =33
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Descripción:"
-        Width: =252.09
-        X: =18.76
+        Width: =154.33
+        X: =11.48
         Y: =604
         ZIndex: =28
 
     Label6_94 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="Cada 8 Semana(s) | Lunes"
-        Width: =535.42
-        X: =375.25
+        Width: =327.78
+        X: =229.73
         Y: =257
         ZIndex: =29
 
     Label6_101 As label:
         Height: =26
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="07/08/2023"
-        Width: =535.42
-        X: =375.25
+        Width: =327.78
+        X: =229.73
         Y: =301
         ZIndex: =30
 
     Label6_105 As label:
         FontWeight: =FontWeight.Bold
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="32"
-        Width: =535.42
-        X: =375.25
+        Width: =327.78
+        X: =229.73
         Y: =358
         ZIndex: =31
 
     Label6_112 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="02/10/2023"
-        Width: =535.42
-        X: =375.25
+        Width: =327.78
+        X: =229.73
         Y: =427
         ZIndex: =32
 
     Label6_96 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="Alta"
-        Width: =139.59
-        X: =771.08
+        Width: =85.46
+        X: =472.06
         Y: =257
         ZIndex: =33
 
     Label6_100 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="PREVENTIVO"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =293
         ZIndex: =34
 
     Label6_103 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="Preventivo"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =329
         ZIndex: =35
 
     Label6_108 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="6.00"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =370
         ZIndex: =36
 
     Label6_111 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="6.00"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =406
         ZIndex: =37
 
     Label6_114 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="A"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =445
         ZIndex: =38
 
@@ -368,31 +368,31 @@
         DisabledBorderColor: =RGBA(41, 191, 18, 1)
         Fill: =RGBA(152, 208, 70, 1)
         OnSelect: =Navigate('MP-MEPS-DK-OUT(PREG1)',ScreenTransition.Cover)
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =31.26
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =19.14
         Text: ="Contestar "
-        Width: =504.16
-        X: =406.50
+        Width: =308.64
+        X: =248.86
         Y: =712
         ZIndex: =39
 
     Rectangle2_60 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         Y: =664
         ZIndex: =40
 
     Label6_118 As label:
         Height: =38
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="MANTENIMIENTO PREVENTIVO DESTACKER"
-        Width: =852.10
-        X: =58.56
+        Width: =521.66
+        X: =35.86
         Y: =603
         ZIndex: =41
 
@@ -401,8 +401,8 @@
         Image: =carrier_logo_300
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =435.41
-        X: =475.25
+        Width: =266.56
+        X: =290.95
         Y: =19
         ZIndex: =42
 
@@ -419,7 +419,7 @@
             
         TemplatePadding: =0
         TemplateSize: =53
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         Y: =80
         ZIndex: =43
@@ -434,7 +434,7 @@
             RadiusBottomRight: =8
             RadiusTopLeft: =8
             RadiusTopRight: =8
-            Width: =2.09
+            Width: =1.28
             X: =0.00
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
@@ -451,11 +451,11 @@
             PaddingLeft: =0
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Size: =29.17
+            Size: =17.86
             Text: =ThisItem.Titulo
             VerticalAlign: =VerticalAlign.Top
-            Width: =1045.84
-            X: =2.09
+            Width: =640.27
+            X: =1.28
             Y: =14
             ZIndex: =2
 
@@ -463,7 +463,7 @@
             BorderThickness: =1
             Height: =0
             OnSelect: =Select(Parent)
-            Width: =1333.33
+            Width: =816.28
             X: =0.00
             Y: =53
             ZIndex: =4
@@ -472,7 +472,7 @@
             Height: =Parent.TemplateHeight - Separator8_5.Height
             OnSelect: =Select(Parent)
             Visible: =If(ThisItem.IsSelected, true, false)
-            Width: =2.09
+            Width: =1.28
             X: =0.00
             ZIndex: =5
 
@@ -482,19 +482,19 @@
         OnSelect: =Set(reducir,!reducir) //Esto me va permitir que la hamburguesa reduzca el menu, lo que dice aqui es de que si se da clic va reducirse y cuando se vuelva dar clic se va quitar
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =133.33
-        X: =58.34
+        Width: =81.63
+        X: =35.71
         Y: =8
         ZIndex: =44
 
     Label6_116 As label:
         Height: =44
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: =User().Email
-        Width: =431.25
-        X: =316.67
+        Width: =264.02
+        X: =193.86
         Y: =555
         ZIndex: =45
 
@@ -506,8 +506,8 @@
             UpdateContext({PopUp:true})
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =72.90
-        X: =837.77
+        Width: =44.63
+        X: =512.89
         Y: =553
         ZIndex: =47
 
@@ -515,16 +515,16 @@
         Default: =""
         Height: =47
         Items: =Lista_Usuarios
-        PaddingRight: =20.85
-        PaddingTop: =20.85
-        Size: =27.08
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        Size: =16.58
         Visible: |+
             =If(Drop_CantUsuario_2.Selected.Value >= 1, true,false)
             
             
             
-        Width: =512.49
-        X: =398.18
+        Width: =313.75
+        X: =243.77
         Y: =549
         ZIndex: =48
 
@@ -533,16 +533,16 @@
         Height: =47
         Items: |
             =Lista_Usuarios
-        PaddingRight: =20.85
-        PaddingTop: =20.85
-        Size: =27.08
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        Size: =16.58
         Visible: |+
             =If(Drop_CantUsuario_2.Selected.Value >= 2, true, false)
             
             
             
-        Width: =512.49
-        X: =398.18
+        Width: =313.75
+        X: =243.77
         Y: =549
         ZIndex: =49
 
@@ -551,12 +551,12 @@
         Height: =47
         Items: |
             =Lista_Usuarios
-        PaddingRight: =20.85
-        PaddingTop: =20.85
-        Size: =27.08
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        Size: =16.58
         Visible: =If(Drop_CantUsuario_2.Selected.Value >= 4, true, false)
-        Width: =512.49
-        X: =398.18
+        Width: =313.75
+        X: =243.77
         Y: =610
         ZIndex: =50
 
@@ -565,12 +565,12 @@
         Height: =47
         Items: |
             =Lista_Usuarios
-        PaddingRight: =20.85
-        PaddingTop: =20.85
-        Size: =27.08
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        Size: =16.58
         Visible: =If(Drop_CantUsuario_2.Selected.Value >= 5, true, false)
-        Width: =512.49
-        X: =398.18
+        Width: =313.75
+        X: =243.77
         Y: =610
         ZIndex: =51
 
@@ -579,16 +579,16 @@
         Height: =47
         Items: |
             =Lista_Usuarios
-        PaddingRight: =20.85
-        PaddingTop: =20.85
-        Size: =27.08
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        Size: =16.58
         Visible: |+
             =If(Drop_CantUsuario_2.Selected.Value >= 3, true, false)
             
             
             
-        Width: =512.49
-        X: =398.18
+        Width: =313.75
+        X: =243.77
         Y: =549
         ZIndex: =52
 
@@ -597,13 +597,13 @@
         AutoStart: =TimerGo
         OnTimerEnd: =TimerGo 
         OnTimerStart: =TimerGo
-        PaddingRight: =10.41
-        PaddingTop: =10.41
+        PaddingRight: =6.37
+        PaddingTop: =6.37
         Reset: =true
-        Size: =27.08
+        Size: =16.58
         Start: =TimerGo
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =259
         ZIndex: =53
 
@@ -613,13 +613,13 @@
         Height: =45
         OnSelect: |-
             =UpdateContext({TimerGo: true})
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =31.26
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =19.14
         Text: ="Iniciar"
         Visible: =false
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =707
         ZIndex: =54
 
@@ -628,22 +628,22 @@
         DisplayMode: =DisplayMode.Disabled
         Format: ="dd/mm/yyyy"
         Height: =26
-        PaddingRight: =10.41
+        PaddingRight: =6.37
         PaddingTop: =0.00
-        Size: =29.17
-        Width: =406.24
-        X: =422.91
+        Size: =17.86
+        Width: =248.70
+        X: =258.91
         Y: =334
         ZIndex: =55
 
     DatePicker2_2 As datepicker:
         Format: ="dd/mm/yyyy"
         Height: =26
-        PaddingRight: =10.41
+        PaddingRight: =6.37
         PaddingTop: =0.00
-        Size: =29.17
-        Width: =406.24
-        X: =422.91
+        Size: =17.86
+        Width: =248.70
+        X: =258.91
         Y: =405
         ZIndex: =56
 
@@ -658,13 +658,13 @@
             Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =43
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Frecuencia:"
-            Width: =247.90
-            X: =16.67
+            Width: =151.76
+            X: =10.20
             Y: =259
             ZIndex: =12
 
@@ -672,25 +672,25 @@
             Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =35
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Fecha de Inicio:"
-            Width: =325.01
-            X: =4.17
+            Width: =198.98
+            X: =2.56
             Y: =328
             ZIndex: =13
 
         Label6_98 As label:
             Align: =Align.Right
             FontWeight: =FontWeight.Semibold
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Fecha Programada:"
-            Width: =400.01
+            Width: =244.89
             X: =0.00
             Y: =291
             ZIndex: =14
@@ -699,12 +699,12 @@
             Align: =Align.Right
             FontWeight: =FontWeight.Bold
             Height: =38
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Semana:"
-            Width: =218.75
+            Width: =133.92
             X: =0.00
             Y: =362
             ZIndex: =15
@@ -713,13 +713,13 @@
             Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =39
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Fecha Prox. MP:"
-            Width: =304.17
-            X: =33.34
+            Width: =186.22
+            X: =20.41
             Y: =432
             ZIndex: =16
 
@@ -727,13 +727,13 @@
             Align: =Align.Right
             FontWeight: =FontWeight.Semibold
             Height: =34
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =27.08
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
             Text: |-
                 ="Fecha de Cierre:"
-            Width: =310.41
-            X: =33.34
+            Width: =190.04
+            X: =20.41
             Y: =397
             ZIndex: =46
 
@@ -759,9 +759,9 @@
             PaddingLeft: =0
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Size: =22.93
+            Size: =14.04
             Visible: =PopUp
-            Width: =910.67
+            Width: =557.51
             X: =0.00
             ZIndex: =57
 
@@ -771,7 +771,7 @@
             Fill: =RGBA(255, 255, 255, 1)
             Height: =295
             Visible: =PopUp
-            Width: =910.67
+            Width: =557.51
             X: =0.00
             Y: =216
             ZIndex: =58
@@ -785,12 +785,12 @@
             OnSelect: |
                 =Set(Cancelar ,false);
                 UpdateContext({PopUp:false})
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =31.26
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =19.14
             Text: ="Cancelar"
             Visible: =PopUp
-            Width: =910.67
+            Width: =557.51
             X: =0.00
             Y: =434
             ZIndex: =59
@@ -804,12 +804,12 @@
                 =
                 UpdateContext({PopUp:false});
                 
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =31.26
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =19.14
             Text: ="Aceptar"
             Visible: =PopUp
-            Width: =910.67
+            Width: =557.51
             X: =0.00
             Y: =434
             ZIndex: =60
@@ -818,7 +818,7 @@
             Fill: =RGBA(0, 40, 85, 1)
             Height: =72
             Visible: =PopUp
-            Width: =910.67
+            Width: =557.51
             X: =0.00
             Y: =216
             ZIndex: =61
@@ -828,12 +828,12 @@
             Color: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
             Height: =72
-            PaddingRight: =10.41
-            PaddingTop: =10.41
-            Size: =31.26
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =19.14
             Text: ="¿Cuantos usuarios deseas agregar?"
             Visible: =PopUp
-            Width: =910.67
+            Width: =557.51
             X: =0.00
             Y: =216
             ZIndex: =62
@@ -846,12 +846,12 @@
             Height: =37
             HoverFill: =RGBA(151, 157, 172, 1)
             Items: =[0,1,2,3,4,5,6]
-            PaddingRight: =20.85
-            PaddingTop: =20.85
+            PaddingRight: =12.76
+            PaddingTop: =12.76
             SelectionFill: =RGBA(92, 103, 125, 1)
-            Size: =27.08
+            Size: =16.58
             Visible: =PopUp
-            Width: =910.67
+            Width: =557.51
             X: =0.00
             Y: =353
             ZIndex: =63

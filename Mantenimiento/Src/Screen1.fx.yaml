@@ -4,14 +4,14 @@ Screen1 As screen:
     Rectangle1 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         ZIndex: =1
 
     Rectangle2 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =35
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         Y: =146
         ZIndex: =2
@@ -19,7 +19,7 @@ Screen1 As screen:
     Rectangle2_1 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         Y: =216
         ZIndex: =3
@@ -29,26 +29,26 @@ Screen1 As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =92
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =41.66
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =25.51
         Text: |-
             ="ORDEN DE TRABAJO 
             MANTENIMIENTO PREVENTIVO ACTIVO"
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         ZIndex: =4
 
     Label2 As label:
         FontWeight: =FontWeight.Bold
         Height: =31
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =29.17
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17.86
         Text: |-
             ="Proc. No.: MEPS1-04-2M-INP"
-        Width: =560.42
-        X: =350.25
+        Width: =343.09
+        X: =214.43
         Y: =104
         ZIndex: =5
 
@@ -57,12 +57,12 @@ Screen1 As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =29.17
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17.86
         Text: ="Activo No."
-        Width: =312.50
-        X: =131.25
+        Width: =191.32
+        X: =80.35
         Y: =146
         ZIndex: =6
 
@@ -71,12 +71,12 @@ Screen1 As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =29.17
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17.86
         Text: ="Nombre del Activo"
-        Width: =395.83
-        X: =514.83
+        Width: =242.33
+        X: =315.18
         Y: =146
         ZIndex: =7
 
@@ -85,50 +85,50 @@ Screen1 As screen:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =29.17
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17.86
         Text: |-
             ="Localización
             "
-        Width: =312.50
-        X: =598.17
+        Width: =191.32
+        X: =366.21
         Y: =146
         ZIndex: =8
 
     Label3_1 As label:
         Align: =Align.Center
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="MEPS1-04"
-        Width: =312.50
-        X: =131.25
+        Width: =191.32
+        X: =80.35
         Y: =181
         ZIndex: =9
 
     Label4_1 As label:
         Align: =Align.Center
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="Pivatic Puncher"
-        Width: =395.83
-        X: =514.83
+        Width: =242.33
+        X: =315.18
         Y: =181
         ZIndex: =10
 
     Label5_1 As label:
         Align: =Align.Center
         Height: =35
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="PRENSAS"
-        Width: =312.50
-        X: =598.17
+        Width: =191.32
+        X: =366.21
         Y: =181
         ZIndex: =11
 
@@ -136,13 +136,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Frecuencia:"
-        Width: =247.90
-        X: =218.75
+        Width: =151.76
+        X: =133.92
         Y: =257
         ZIndex: =12
 
@@ -150,13 +150,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Fecha de Inicio:"
-        Width: =383.35
-        X: =83.35
+        Width: =234.69
+        X: =51.03
         Y: =295
         ZIndex: =13
 
@@ -164,13 +164,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Fecha Programada:"
-        Width: =383.35
-        X: =83.35
+        Width: =234.69
+        X: =51.03
         Y: =334
         ZIndex: =14
 
@@ -178,13 +178,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Bold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Semana:"
-        Width: =383.35
-        X: =83.35
+        Width: =234.69
+        X: =51.03
         Y: =412
         ZIndex: =16
 
@@ -192,13 +192,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Fecha Prox. MP:"
-        Width: =383.35
-        X: =83.35
+        Width: =234.69
+        X: =51.03
         Y: =451
         ZIndex: =17
 
@@ -206,20 +206,20 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =30
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Asignado a:"
-        Width: =222.92
-        X: =14.57
+        Width: =136.48
+        X: =8.93
         Y: =560
         ZIndex: =19
 
     Rectangle2_2 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         Y: =527
         ZIndex: =20
@@ -228,13 +228,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Prioridad:"
-        Width: =247.90
-        X: =662.77
+        Width: =151.76
+        X: =405.75
         Y: =255
         ZIndex: =21
 
@@ -242,13 +242,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Tipo de Trabajo:"
-        Width: =383.35
-        X: =527.32
+        Width: =234.69
+        X: =322.83
         Y: =293
         ZIndex: =22
 
@@ -256,13 +256,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Clase Mtto:"
-        Width: =383.35
-        X: =527.32
+        Width: =234.69
+        X: =322.83
         Y: =332
         ZIndex: =23
 
@@ -270,13 +270,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Hrs. Maq. Prog:"
-        Width: =383.35
-        X: =527.32
+        Width: =234.69
+        X: =322.83
         Y: =371
         ZIndex: =24
 
@@ -284,13 +284,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Hrs. Hom. Prog:"
-        Width: =383.35
-        X: =527.32
+        Width: =234.69
+        X: =322.83
         Y: =410
         ZIndex: =25
 
@@ -298,13 +298,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Clasificación:"
-        Width: =383.35
-        X: =527.32
+        Width: =234.69
+        X: =322.83
         Y: =449
         ZIndex: =26
 
@@ -312,13 +312,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Bold
         Height: =45
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Fecha Ejecución:"
-        Width: =350.01
-        X: =560.65
+        Width: =214.28
+        X: =343.23
         Y: =315
         ZIndex: =27
 
@@ -326,13 +326,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Bold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Turno Ejecución:"
-        Width: =429.18
-        X: =481.49
+        Width: =262.75
+        X: =294.77
         Y: =356
         ZIndex: =28
 
@@ -340,13 +340,13 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Bold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Tiempo(Hrs. Maq):"
-        Width: =429.18
-        X: =481.49
+        Width: =262.75
+        X: =294.77
         Y: =394
         ZIndex: =29
 
@@ -354,135 +354,135 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =33
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Descripción:"
-        Width: =252.09
+        Width: =154.33
         X: =0.00
         Y: =606
         ZIndex: =30
 
     Label6_17 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="Cada 8 Semana(s) | Lunes"
-        Width: =535.42
-        X: =375.25
+        Width: =327.78
+        X: =229.73
         Y: =257
         ZIndex: =31
 
     Label6_18 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="07/08/2023"
-        Width: =535.42
-        X: =375.25
+        Width: =327.78
+        X: =229.73
         Y: =291
         ZIndex: =32
 
     Label6_19 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="07/08/2023"
-        Width: =535.42
-        X: =375.25
+        Width: =327.78
+        X: =229.73
         Y: =332
         ZIndex: =33
 
     Label6_20 As label:
         FontWeight: =FontWeight.Bold
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="32"
-        Width: =535.42
-        X: =375.25
+        Width: =327.78
+        X: =229.73
         Y: =412
         ZIndex: =34
 
     Label6_21 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="02/10/2023"
-        Width: =535.42
-        X: =375.25
+        Width: =327.78
+        X: =229.73
         Y: =451
         ZIndex: =35
 
     Label6_22 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="Alta"
-        Width: =139.59
-        X: =771.08
+        Width: =85.46
+        X: =472.06
         Y: =257
         ZIndex: =36
 
     Label6_23 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="PREVENTIVO"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =291
         ZIndex: =37
 
     Label6_24 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="Preventivo"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =330
         ZIndex: =38
 
     Label6_25 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="6.00"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =371
         ZIndex: =39
 
     Label6_26 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="6.00"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =409
         ZIndex: =40
 
     Label6_27 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="A"
-        Width: =333.33
-        X: =730.3299999999999
+        Width: =204.07
+        X: =447.11
         Y: =447
         ZIndex: =41
 
@@ -491,31 +491,31 @@ Screen1 As screen:
         DisabledBorderColor: =RGBA(41, 191, 18, 1)
         Fill: =RGBA(152, 208, 70, 1)
         OnSelect: =Navigate('MP-MEPS-INP(PREG)',ScreenTransition.Cover)
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =31.26
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =19.14
         Text: ="Contestar "
-        Width: =504.16
-        X: =406.50
+        Width: =308.64
+        X: =248.86
         Y: =712
         ZIndex: =42
 
     Rectangle2_3 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         Y: =664
         ZIndex: =43
 
     Label6_28 As label:
         Height: =38
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="MANTENIMIENTO PREVENTIVO CARROS PALLET"
-        Width: =852.10
-        X: =58.56
+        Width: =521.66
+        X: =35.86
         Y: =603
         ZIndex: =44
 
@@ -524,8 +524,8 @@ Screen1 As screen:
         Image: =carrier_logo_300
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =435.41
-        X: =475.25
+        Width: =266.56
+        X: =290.95
         Y: =19
         ZIndex: =46
 
@@ -542,7 +542,7 @@ Screen1 As screen:
             
         TemplatePadding: =0
         TemplateSize: =53
-        Width: =910.67
+        Width: =557.51
         X: =0.00
         Y: =80
         ZIndex: =47
@@ -557,8 +557,8 @@ Screen1 As screen:
             RadiusBottomRight: =8
             RadiusTopLeft: =8
             RadiusTopRight: =8
-            Width: =100.01
-            X: =56.26
+            Width: =61.23
+            X: =34.44
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =1
 
@@ -574,11 +574,11 @@ Screen1 As screen:
             PaddingLeft: =0
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Size: =29.17
+            Size: =17.86
             Text: =ThisItem.Titulo
             VerticalAlign: =VerticalAlign.Top
-            Width: =947.94
-            X: =191.67
+            Width: =580.33
+            X: =117.34
             Y: =14
             ZIndex: =2
 
@@ -586,7 +586,7 @@ Screen1 As screen:
             BorderThickness: =1
             Height: =0
             OnSelect: =Select(Parent)
-            Width: =1333.33
+            Width: =816.28
             X: =0.00
             Y: =53
             ZIndex: =4
@@ -595,7 +595,7 @@ Screen1 As screen:
             Height: =Parent.TemplateHeight - Separator8_1.Height
             OnSelect: =Select(Parent)
             Visible: =If(ThisItem.IsSelected, true, false)
-            Width: =8.32
+            Width: =5.09
             X: =0.00
             ZIndex: =5
 
@@ -605,19 +605,19 @@ Screen1 As screen:
         OnSelect: =Set(reducir,!reducir) //Esto me va permitir que la hamburguesa reduzca el menu, lo que dice aqui es de que si se da clic va reducirse y cuando se vuelva dar clic se va quitar
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =133.33
-        X: =58.34
+        Width: =81.63
+        X: =35.71
         Y: =8
         ZIndex: =48
 
     Label6_29 As label:
         Height: =44
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: =User().Email
-        Width: =431.25
-        X: =237.48
+        Width: =264.02
+        X: =145.39
         Y: =553
         ZIndex: =49
 
@@ -625,24 +625,24 @@ Screen1 As screen:
         Align: =Align.Right
         FontWeight: =FontWeight.Semibold
         Height: =39
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: |-
             ="Fecha de Cierre:"
-        Width: =383.35
-        X: =83.35
+        Width: =234.69
+        X: =51.03
         Y: =375
         ZIndex: =50
 
     Label6_37 As label:
         Height: =43
-        PaddingRight: =10.41
-        PaddingTop: =10.41
-        Size: =27.08
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
         Text: ="09/08/2023"
-        Width: =535.42
-        X: =375.25
+        Width: =327.78
+        X: =229.73
         Y: =375
         ZIndex: =51
 
@@ -650,11 +650,11 @@ Screen1 As screen:
         Default: ="Marieth,Alexis,Claudia,Raul"
         Height: =47
         Items: =[Operador,"Juan","Armando","Jose","Martin"]
-        PaddingRight: =20.85
-        PaddingTop: =20.85
-        Size: =27.08
-        Width: =512.49
-        X: =398.18
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        Size: =16.58
+        Width: =313.75
+        X: =243.77
         Y: =549
         ZIndex: =52
 
@@ -662,11 +662,11 @@ Screen1 As screen:
         Default: ="Marieth,Alexis,Claudia,Raul"
         Height: =47
         Items: =[Operador]
-        PaddingRight: =20.85
-        PaddingTop: =20.85
-        Size: =27.08
-        Width: =512.49
-        X: =398.18
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        Size: =16.58
+        Width: =313.75
+        X: =243.77
         Y: =549
         ZIndex: =54
 
@@ -674,11 +674,11 @@ Screen1 As screen:
         Default: ="Marieth,Alexis,Claudia,Raul"
         Height: =47
         Items: =[Operador]
-        PaddingRight: =20.85
-        PaddingTop: =20.85
-        Size: =27.08
-        Width: =512.49
-        X: =398.18
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        Size: =16.58
+        Width: =313.75
+        X: =243.77
         Y: =549
         ZIndex: =55
 
@@ -686,11 +686,11 @@ Screen1 As screen:
         Default: ="Marieth,Alexis,Claudia,Raul"
         Height: =47
         Items: =[Operador]
-        PaddingRight: =20.85
-        PaddingTop: =20.85
-        Size: =27.08
-        Width: =512.49
-        X: =398.18
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        Size: =16.58
+        Width: =313.75
+        X: =243.77
         Y: =610
         ZIndex: =56
 
@@ -698,11 +698,11 @@ Screen1 As screen:
         Default: ="Marieth,Alexis,Claudia,Raul"
         Height: =47
         Items: =[Operador]
-        PaddingRight: =20.85
-        PaddingTop: =20.85
-        Size: =27.08
-        Width: =512.49
-        X: =398.18
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        Size: =16.58
+        Width: =313.75
+        X: =243.77
         Y: =606
         ZIndex: =57
 
