@@ -1,5 +1,5 @@
 "'MP-MEPS-INP(PREG)_1' As screen":
-    OnVisible: |-
+    OnVisible: |
         =//Variables para traerme los datos de los inputs que se encuentran en la pantalla "Datos_MP"
         Set(Dato_Localizacion,Label8_11.Text);
         Set(Dato_NomMaquina,Label8_10.Text);
@@ -11,7 +11,7 @@
         
         Set(DropdownAsig,Split(Concat(AsignadoOp, "" & NombreOp & Char(10)),Char(10)));
         
-        ClearCollect(AsignadoOp,{NombreOp:Operador})
+        ClearCollect(ColeccionNombres, Gallery2.AllItems, {Nombre: Operador})
 
     Btn3 As button:
         Fill: =RGBA(0, 18, 107, 1)
@@ -1062,12 +1062,7 @@
                         Char(10)
                     )*/
                     
-                    Split(
-                        Concatenate(
-                            ForAll(Gallery2.AllItems,, Text(Resultado, "[$-en-US]0") & Char(10)) & Text(Operador, "[$-en-US]0") & Char(10)
-                        ),
-                        Char(10)
-                    )
+                    
                     
                     
                     
