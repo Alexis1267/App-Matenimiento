@@ -5,13 +5,13 @@
         Set(Dato_NomMaquina,Label8_10.Text);
         Set(Dato_ClassMtto,Label8.Text);
         Set(Dato_Proc_No,Label8_9.Text);
-        Set(Dato_Asignado,Label8_13.Text);
+        
         
         Set(DropdownInvolu,Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)),Char(10)));
         
-        //Set(DropdownAsig,Split(Concat(AsignadoOp, "" & NombreOp & Char(10)),Char(10)));
+        Set(DropdownAsig,Split(Concat(AsignadoOP, "" & NombreOp & Char(10)),Char(10)));
         
-        Collect(ColeccionNombres, Gallery2.AllItems, {Nombre: Operador})
+        ClearCollect(AsignadoOP,{NombreOp: Operador})
 
     Btn3 As button:
         Fill: =RGBA(0, 18, 107, 1)
@@ -790,7 +790,7 @@
                     //INGRESAR DATOS A LA TABLA HALLAZGOS
                     Patch(CMXE_TablaH_MP,Defaults(CMXE_TablaH_MP),
                     {
-                    Asignado: Dropdown4.Selected.Value,
+                    Asignado: Dropdown4_2.Selected.Value,
                     Localizacion: TextInput1_2.Text,
                     Proc_No: TextInput1_3.Text,
                     Nom_Maquina:TextInput1_4.Text,
@@ -828,7 +828,7 @@
                     =UpdateContext({ShowPopUp: false});
                     Reset(TextInput1_6);
                     Reset(AddMediaButton6);
-                    Reset(Dropdown4)
+                    Reset(Dropdown4_2)
                 X: =934
                 ZIndex: =6
 
@@ -1038,14 +1038,14 @@
                 Y: =65
                 ZIndex: =21
 
-            Dropdown4 As dropdown:
+            Dropdown4_2 As dropdown:
                 BorderColor: =RGBA(0, 40, 85, 1)
                 BorderThickness: =1
                 ChevronBackground: =RGBA(0, 40, 85, 1)
                 Default: =Operador
                 Items: |+
                     = 
-                     //Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10))
+                     Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10))
                     
                     //Concatenate(DropdownAsig,DropdownInvolu)
                     
@@ -1062,7 +1062,6 @@
                         Char(10)
                     )*/
                     
-                    ColeccionNombres
                     
                     
                     

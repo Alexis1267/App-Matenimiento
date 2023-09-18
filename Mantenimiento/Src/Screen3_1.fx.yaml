@@ -234,3 +234,37 @@ Screen3_1 As screen:
         Y: =192
         ZIndex: =6
 
+    Dropdown4_1 As dropdown:
+        BorderColor: =RGBA(0, 40, 85, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        Default: =Operador
+        Items: |+
+            = 
+             Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10))
+            
+            //Concatenate(DropdownAsig,DropdownInvolu)
+            
+            //Split(Concat(Gallery2.AllItems , "" & Title2 & Char(10)),Concat(AsignadoOp,"" & NombreOp & Char(10), Char(10)))
+            
+             //Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)&Operador), Char(10))
+            
+            //Concatenate(Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10)))
+            
+            /*Split(
+                Concatenate(
+                    Text(Title2, "[$-en-US]0") &Char(10) & Text(Operador, "[$-en-US]0") & Char(10)
+                ),
+                Char(10)
+            )*/
+            
+            
+            
+            
+            
+            
+        Width: =288
+        X: =658
+        Y: =302
+        ZIndex: =7
+
