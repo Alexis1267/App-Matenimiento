@@ -22,7 +22,6 @@ Datos_MP As screen:
         Fill: =RGBA(166, 166, 166, 1)
         Height: =18
         Width: =557.51
-        X: =93.66
         Y: =328
         ZIndex: =2
 
@@ -30,16 +29,15 @@ Datos_MP As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(116, 116, 116, 1)
         Height: =36
-        Width: =280.59
-        X: =370.39
+        Width: =1248
+        X: =117
         Y: =319
         ZIndex: =3
 
     Rectangle1_60 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
-        Width: =557.51
-        X: =93.66
+        Width: =1366
         ZIndex: =5
 
     Label1_16 As label:
@@ -53,8 +51,7 @@ Datos_MP As screen:
         Text: |-
             ="ORDEN DE TRABAJO 
             MANTENIMIENTO PREVENTIVO ACTIVO"
-        Width: =557.51
-        X: =93.66
+        Width: =1366
         ZIndex: =6
 
     Button1_15 As button:
@@ -86,8 +83,8 @@ Datos_MP As screen:
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =247.42
-        X: =403.44
-        Y: =17
+        X: =1119
+        Y: =14
         ZIndex: =8
 
     Button5_13 As button:
@@ -138,10 +135,9 @@ Datos_MP As screen:
     Rectangle1_65 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(166, 166, 166, 1)
-        Height: =18
-        Width: =557.51
-        X: =93.66
-        Y: =111
+        Height: =16
+        Width: =650
+        Y: =112
         ZIndex: =33
 
     Group7 As group:
@@ -220,8 +216,8 @@ Datos_MP As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(116, 116, 116, 1)
         Height: =36
-        Width: =455.31
-        X: =195.91
+        Width: =1249
+        X: =117
         Y: =102
         ZIndex: =34
 
@@ -234,7 +230,7 @@ Datos_MP As screen:
         Size: =25.51
         Text: ="Datos de la Maquina"
         Width: =547.16
-        X: =104.08
+        X: =205
         Y: =102
         ZIndex: =35
 
@@ -324,7 +320,7 @@ Datos_MP As screen:
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =95.66
-        X: =555.27
+        X: =22
         Y: =14
         ZIndex: =38
 
@@ -435,8 +431,7 @@ Datos_MP As screen:
         PaddingRight: =0.00
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
-        Width: =557.51
-        X: =93.66
+        Width: =1366
         ZIndex: =43
 
         HtmlText3_15 As htmlViewer:
@@ -461,12 +456,12 @@ Datos_MP As screen:
 
         ModalPop_Datos2 As groupContainer.manualLayoutContainer:
             Fill: =RGBA(227, 234, 243, 1)
-            Height: =467
+            Height: =465
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =1044.58
-            X: =348.19
-            Y: =150
+            Width: =871
+            X: =300
+            Y: =152
             ZIndex: =2
 
             "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
