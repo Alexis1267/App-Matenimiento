@@ -9,9 +9,9 @@
         
         Set(DropdownInvolu,Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)),Char(10)));
         
-        Set(DropdownAsig,Split(Concat(AsignadoOp, "" & NombreOp & Char(10)),Char(10)));
+        //Set(DropdownAsig,Split(Concat(AsignadoOp, "" & NombreOp & Char(10)),Char(10)));
         
-        ClearCollect(ColeccionNombres, Gallery2.AllItems, {Nombre: Operador})
+        Collect(ColeccionNombres, Gallery2.AllItems, {Nombre: Operador})
 
     Btn3 As button:
         Fill: =RGBA(0, 18, 107, 1)
