@@ -220,9 +220,17 @@ Screen3_1 As screen:
         ZIndex: =4
 
     Dropdown3 As dropdown:
-        Default: =5
-        Items: =["1"]
+        Default: =Operador
+        Items: =Concatenate(Add_Involucrado)
         X: =40
         Y: =40
         ZIndex: =5
+
+    Label12 As label:
+        Height: =41
+        Text: =Operador
+        Width: =208
+        X: =225
+        Y: =192
+        ZIndex: =6
 

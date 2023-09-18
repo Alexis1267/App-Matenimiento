@@ -5,7 +5,13 @@
         Set(Dato_NomMaquina,Label8_10.Text);
         Set(Dato_ClassMtto,Label8.Text);
         Set(Dato_Proc_No,Label8_9.Text);
-        Set(Dato_Asignado,Label8_13.Text)
+        Set(Dato_Asignado,Label8_13.Text);
+        
+        Set(DropdownInvolu,Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)),Char(10)));
+        
+        Set(DropdownAsig,Split(Concat(AsignadoOp, "" & NombreOp & Char(10)),Char(10)));
+        
+        ClearCollect(AsignadoOp,{NombreOp:Operador})
 
     Btn3 As button:
         Fill: =RGBA(0, 18, 107, 1)
@@ -1041,7 +1047,9 @@
                     = 
                     // Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10))
                     
-                    Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)& Operador),Char(10))
+                    //Concatenate(DropdownAsig,DropdownInvolu)
+                    
+                    DropdownInvolu
                 Width: =288
                 X: =673
                 Y: =105
