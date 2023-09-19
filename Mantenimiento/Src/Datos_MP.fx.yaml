@@ -329,47 +329,13 @@ Datos_MP As screen:
             Y: =262
             ZIndex: =28
 
-    Group3_3 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =41
-
-        Label7_28 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(0, 40, 85, 1)
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: ="Localización"
-            Width: =323.96
-            X: =774
-            Y: =222
-            ZIndex: =29
-
-        Label8_11 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Localizacion)
-            Width: =323.96
-            X: =774
-            Y: =262
-            ZIndex: =30
-
     ModalPop_Datos As groupContainer.manualLayoutContainer:
         Height: =768
         PaddingRight: =0.00
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
         Width: =1366
-        ZIndex: =43
+        ZIndex: =41
 
         HtmlText3_15 As htmlViewer:
             Height: =768
@@ -502,7 +468,7 @@ Datos_MP As screen:
                 Height: =65
                 PaddingRight: =6.37
                 PaddingTop: =6.37
-                Size: =38.26
+                Size: =35
                 Text: ="Agregar Involucrados"
                 Visible: =BTN_VISIBLE = "AGREGAR"
                 Width: =575
@@ -658,6 +624,40 @@ Datos_MP As screen:
                 X: =221
                 ZIndex: =13
 
+    Group3_3 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =41
+
+        Label7_28 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 40, 85, 1)
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: ="Localización"
+            Width: =323.96
+            X: =774
+            Y: =222
+            ZIndex: =29
+
+        Label8_11 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Localizacion)
+            Width: =323.96
+            X: =774
+            Y: =262
+            ZIndex: =30
+
     Group3_10 As group:
         Height: =5
         Width: =5
@@ -677,8 +677,8 @@ Datos_MP As screen:
             Text: |-
                 ="Condición del equipo:"
             Width: =323.96
-            X: =22
-            Y: =676
+            X: =720
+            Y: =565
             ZIndex: =36
 
         Label8_24 As label:
@@ -692,8 +692,8 @@ Datos_MP As screen:
             Text: |
                 =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Cond_Equipo)
             Width: =323.96
-            X: =22
-            Y: =716
+            X: =720
+            Y: =605
             ZIndex: =37
 
     Group16 As group:
@@ -706,15 +706,15 @@ Datos_MP As screen:
         Label12_15 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Height: =140
+            Height: =226
             Overflow: =Overflow.Scroll
             PaddingRight: =3.63
             PaddingTop: =3.63
-            Size: =9.44
+            Size: =16.58
             Text: =Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
-            Width: =352
-            X: =999
-            Y: =616
+            Width: =255
+            X: =1076
+            Y: =419
             ZIndex: =39
 
         Label7_18 As label:
@@ -724,20 +724,20 @@ Datos_MP As screen:
             Color: =RGBA(255, 255, 255, 1)
             Fill: =RGBA(0, 40, 85, 1)
             FontWeight: =FontWeight.Bold
-            Height: =43
+            Height: =54
             PaddingRight: =6.37
             PaddingTop: =6.37
             Size: =16.58
             Text: |-
                 ="Tecnicos Involucrados:"
-            Width: =352
-            X: =999
-            Y: =573
+            Width: =255
+            X: =1076
+            Y: =364
             ZIndex: =40
 
         Icon8 As icon.AddUser:
             Color: =RGBA(255, 255, 255, 1)
-            Height: =41
+            Height: =48
             Icon: =Icon.AddUser
             OnSelect: |-
                 =//ABRE EL MODALPOP
@@ -747,10 +747,10 @@ Datos_MP As screen:
                 Set(BTN_VISIBLE,"AGREGAR")
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =47.18
-            X: =1005
-            Y: =579
-            ZIndex: =41
+            Width: =36
+            X: =1083
+            Y: =371
+            ZIndex: =43
 
         Icon9 As icon.Trash:
             Color: =RGBA(255, 255, 255, 1)
@@ -764,10 +764,10 @@ Datos_MP As screen:
                 Set(BTN_VISIBLE, "ELIMINAR");
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =49.74
-            X: =1303
-            Y: =576
-            ZIndex: =42
+            Width: =32
+            X: =1291
+            Y: =373
+            ZIndex: =44
 
     Group5 As group:
         Height: =5
