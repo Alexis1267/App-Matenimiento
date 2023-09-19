@@ -397,6 +397,18 @@ Lista_MP As screen:
         Y: =40
         ZIndex: =6
 
+    Dropdown4 As dropdown:
+        Items: =DropDownSample
+        X: =456
+        Y: =103
+        ZIndex: =9
+
+    Dropdown4_3 As dropdown:
+        Items: =DropDownSample
+        X: =817
+        Y: =103
+        ZIndex: =10
+
     Group9 As group:
         Height: =5
         Width: =5
