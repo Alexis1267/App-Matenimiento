@@ -8,8 +8,8 @@
         Size: =20.41
         Text: ="Observaciones y/o hallazgos"
         Width: =400.49
-        X: =157.03
-        Y: =476
+        X: =483
+        Y: =478
         ZIndex: =1
 
     TextInput3_2 As text:
@@ -22,18 +22,19 @@
         PaddingTop: =6.37
         Size: =16.58
         Width: =557.51
-        X: =0.00
-        Y: =539
+        X: =404
+        Y: =535
         ZIndex: =2
 
     Rectangle1_7 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =67
-        Width: =557.51
+        Width: =1366
         X: =0.00
         ZIndex: =8
 
     Label9_5 As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =67
@@ -41,7 +42,7 @@
         PaddingTop: =6.37
         Size: =25.51
         Text: ="Descripción de las Actividades a Realizar"
-        Width: =557.51
+        Width: =1366
         X: =0.00
         ZIndex: =9
 
@@ -50,8 +51,8 @@
         Image: =carrier_logo_300
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =266.56
-        X: =290.95
+        Width: =187
+        X: =1179
         Y: =4
         ZIndex: =11
 
@@ -63,8 +64,8 @@
         Size: =31.89
         Text: ="Adjuntar Evidencia"
         Width: =415.80
-        X: =141.71
-        Y: =398
+        X: =475
+        Y: =406
         ZIndex: =12
 
     UploadedImage1 As image:
@@ -91,14 +92,14 @@
             PaddingRight: =0.00
             PaddingTop: =0.00
             Width: =418.35
-            X: =139.17
+            X: =474
             Y: =120
             ZIndex: =16
 
         AddMediaButton1 As addMedia:
             Size: =31.89
             Width: =418.35
-            X: =139.17
+            X: =474
             Y: =120
             ZIndex: =17
 
@@ -108,10 +109,10 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =19.14
-        Text: ="Enviar"
-        Width: =204.07
-        X: =447.11
-        Y: =701
+        Text: ="Finalizar Preventivo"
+        Width: =278
+        X: =557
+        Y: =696
         ZIndex: =20
 
     Icon1_32 As icon.BackArrow:
@@ -121,7 +122,7 @@
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95
-        X: =33.17
+        X: =15
         Y: =673
         ZIndex: =22
 
