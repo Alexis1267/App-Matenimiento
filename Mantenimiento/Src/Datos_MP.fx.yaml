@@ -5,18 +5,6 @@ Datos_MP As screen:
         
         Set(ID_Maquina,Value(Title3_5.Text)) //Esta variable se utiliza para almacenar el "ID" de la maquina, para que despues en la pantalla de los botones cuando finalizan las actividades se pueda hacer el update de "Com_Mantenimiento"
 
-    Label8_4 As label:
-        BorderColor: =RGBA(0, 0, 0, 1)
-        BorderThickness: =1
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =16.58
-        Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Asignado)
-        Width: =323.96
-        X: =326.92
-        Y: =618
-        ZIndex: =1
-
     Rectangle1_64 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(166, 166, 166, 1)
@@ -73,8 +61,8 @@ Datos_MP As screen:
         Size: =19.14
         Text: ="Contestar "
         Width: =326.51
-        X: =324.47
-        Y: =698
+        X: =520
+        Y: =707
         ZIndex: =7
 
     Image2_59 As image:
@@ -99,8 +87,7 @@ Datos_MP As screen:
         Text: ="Iniciar"
         Visible: =false
         Width: =204.07
-        X: =447.11
-        Y: =707
+        Y: =723
         ZIndex: =9
 
     Label1_19 As label:
@@ -115,22 +102,6 @@ Datos_MP As screen:
         X: =399.77
         Y: =319
         ZIndex: =31
-
-    Label7_30 As label:
-        BorderColor: =RGBA(0, 0, 0, 1)
-        BorderThickness: =1
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(0, 40, 85, 1)
-        FontWeight: =FontWeight.Bold
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =16.58
-        Text: |-
-            ="Asignado a:"
-        Width: =323.96
-        X: =326.92
-        Y: =578
-        ZIndex: =32
 
     Rectangle1_65 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -156,8 +127,8 @@ Datos_MP As screen:
             PaddingTop: =0.00
             Size: =17.86
             Width: =323.96
-            X: =326.92
-            Y: =405
+            X: =22
+            Y: =417
             ZIndex: =15
 
         Label7_12 As label:
@@ -172,8 +143,8 @@ Datos_MP As screen:
             Text: |-
                 ="Fecha Programada:"
             Width: =323.96
-            X: =326.92
-            Y: =365
+            X: =22
+            Y: =377
             ZIndex: =22
 
     Group8 As group:
@@ -192,8 +163,8 @@ Datos_MP As screen:
             PaddingTop: =0.00
             Size: =17.86
             Width: =323.96
-            X: =326.92
-            Y: =405
+            X: =723
+            Y: =417
             ZIndex: =20
 
         Label7_17 As label:
@@ -208,8 +179,8 @@ Datos_MP As screen:
             Text: |-
                 ="Fecha Proxima MP:"
             Width: =323.96
-            X: =326.92
-            Y: =365
+            X: =723
+            Y: =377
             ZIndex: =21
 
     Rectangle1_71 As rectangle:
@@ -255,8 +226,8 @@ Datos_MP As screen:
             Text: |-
                 ="Proc.No.:"
             Width: =150.49
-            X: =205.70
-            Y: =148
+            X: =22
+            Y: =145
             ZIndex: =23
 
         Label8_8 As label:
@@ -273,8 +244,8 @@ Datos_MP As screen:
                 //"MEPS1-10-56D"
                 MAQUINA //Esta variable es la que se toma de la pantalla "ListaMP" que me agarra el Proc.No, esto para poder mandar a llamar todos los campos que restan de la pantalla de su respectiva maquina o folio
             Width: =294.64
-            X: =356.30
-            Y: =148
+            X: =173
+            Y: =145
             ZIndex: =24
 
     Group3_1 As group:
@@ -296,8 +267,8 @@ Datos_MP As screen:
             Text: |-
                 ="Activo No:"
             Width: =323.96
-            X: =326.92
-            Y: =224
+            X: =22
+            Y: =222
             ZIndex: =25
 
         Label8_9 As label:
@@ -309,8 +280,8 @@ Datos_MP As screen:
             Text: |
                 =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Proc_No) //Esto lo que me hace es de que me encuentre el registo del Proc.No.:
             Width: =323.96
-            X: =326.92
-            Y: =264
+            X: =22
+            Y: =262
             ZIndex: =26
 
     Icon6 As icon.BackArrow:
@@ -342,8 +313,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: ="Nombre del Activo"
             Width: =323.96
-            X: =326.92
-            Y: =224
+            X: =399
+            Y: =222
             ZIndex: =27
 
         Label8_10 As label:
@@ -354,8 +325,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Nom_Equipo)
             Width: =323.96
-            X: =326.92
-            Y: =264
+            X: =399
+            Y: =262
             ZIndex: =28
 
     Icon8 As icon.AddUser:
@@ -371,8 +342,8 @@ Datos_MP As screen:
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =47.18
-        X: =603.64
-        Y: =473
+        X: =999
+        Y: =526
         ZIndex: =41
 
     Group3_3 As group:
@@ -393,8 +364,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: ="Localización"
             Width: =323.96
-            X: =326.92
-            Y: =224
+            X: =774
+            Y: =222
             ZIndex: =29
 
         Label8_11 As label:
@@ -405,8 +376,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Localizacion)
             Width: =323.96
-            X: =326.92
-            Y: =264
+            X: =774
+            Y: =262
             ZIndex: =30
 
     Icon9 As icon.Trash:
@@ -422,8 +393,8 @@ Datos_MP As screen:
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =49.74
-        X: =601.18
-        Y: =471
+        X: =1297
+        Y: =523
         ZIndex: =42
 
     ModalPop_Datos As groupContainer.manualLayoutContainer:
@@ -740,8 +711,8 @@ Datos_MP As screen:
             Text: |-
                 ="Condición del equipo:"
             Width: =323.96
-            X: =326.92
-            Y: =578
+            X: =22
+            Y: =676
             ZIndex: =36
 
         Label8_24 As label:
@@ -755,9 +726,44 @@ Datos_MP As screen:
             Text: |
                 =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Cond_Equipo)
             Width: =323.96
-            X: =326.92
-            Y: =618
+            X: =22
+            Y: =716
             ZIndex: =37
+
+    Group5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =44
+
+        Label8_4 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Asignado)
+            Width: =323.96
+            X: =880
+            Y: =698
+            ZIndex: =1
+
+        Label7_30 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 40, 85, 1)
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: |-
+                ="Asignado a:"
+            Width: =323.96
+            X: =880
+            Y: =658
+            ZIndex: =32
 
     Group16 As group:
         Height: =5
@@ -769,15 +775,15 @@ Datos_MP As screen:
         Label12_15 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
-            Height: =145
+            Height: =140
             Overflow: =Overflow.Scroll
             PaddingRight: =3.63
             PaddingTop: =3.63
             Size: =9.44
             Text: =Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
-            Width: =270.78
-            X: =380.18
-            Y: =514
+            Width: =352
+            X: =993
+            Y: =567
             ZIndex: =39
 
         Label7_18 As label:
@@ -793,9 +799,9 @@ Datos_MP As screen:
             Size: =16.58
             Text: |-
                 ="Tecnicos Involucrados:"
-            Width: =557.51
-            X: =93.66
-            Y: =471
+            Width: =352
+            X: =993
+            Y: =524
             ZIndex: =40
 
     Group1 As group:
@@ -817,8 +823,8 @@ Datos_MP As screen:
             Text: |-
                 ="Prioridad:"
             Width: =323.96
-            X: =326.92
-            Y: =471
+            X: =372
+            Y: =575
             ZIndex: =16
 
         Label8_2 As label:
@@ -834,8 +840,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Prioridad)
             Width: =323.96
-            X: =326.92
-            Y: =511
+            X: =372
+            Y: =615
             ZIndex: =17
 
     Group2 As group:
@@ -857,8 +863,8 @@ Datos_MP As screen:
             Text: |-
                 ="Clase de Mantenimiento:"
             Width: =323.96
-            X: =326.92
-            Y: =471
+            X: =22
+            Y: =475
             ZIndex: =11
 
         Label8 As label:
@@ -869,8 +875,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Clas_Mantenimineto)
             Width: =323.96
-            X: =326.92
-            Y: =511
+            X: =22
+            Y: =515
             ZIndex: =13
 
     Group3 As group:
@@ -892,8 +898,8 @@ Datos_MP As screen:
             Text: |-
                 ="Clasificación:"
             Width: =323.96
-            X: =326.92
-            Y: =471
+            X: =22
+            Y: =575
             ZIndex: =18
 
         Label8_3 As label:
@@ -904,8 +910,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Clasificacion)
             Width: =323.96
-            X: =326.92
-            Y: =511
+            X: =22
+            Y: =615
             ZIndex: =19
 
     Group4 As group:
@@ -927,8 +933,8 @@ Datos_MP As screen:
             Text: |-
                 ="Horas Hombre:"
             Width: =323.96
-            X: =326.92
-            Y: =579
+            X: =372
+            Y: =475
             ZIndex: =12
 
         Label8_1 As label:
@@ -939,8 +945,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Horas_Hombre)
             Width: =323.96
-            X: =326.92
-            Y: =619
+            X: =372
+            Y: =515
             ZIndex: =14
 
     Group6 As group:
@@ -959,8 +965,8 @@ Datos_MP As screen:
             PaddingTop: =0.00
             Size: =17.86
             Width: =323.96
-            X: =326.92
-            Y: =405
+            X: =372
+            Y: =418
             ZIndex: =4
 
         Label7 As label:
@@ -975,7 +981,7 @@ Datos_MP As screen:
             Text: |-
                 ="Fecha Inicio:"
             Width: =323.96
-            X: =326.92
-            Y: =365
+            X: =372
+            Y: =378
             ZIndex: =10
 
