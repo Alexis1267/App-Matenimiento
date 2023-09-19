@@ -61,6 +61,78 @@
         Y: =92
         ZIndex: =1
 
+    Rectangle1_58 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =92
+        Width: =1366
+        X: =0.00
+        ZIndex: =3
+
+    Label1_14 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =92
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =44.63
+        Text: ="MATENIMIENTO PREVENTIVO "
+        Width: =1366
+        X: =0.00
+        ZIndex: =4
+
+    Image2_57 As image:
+        Height: =66
+        Image: =carrier_logo_300
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =180
+        X: =12
+        Y: =13
+        ZIndex: =5
+
+    Timer1_2 As timer:
+        AutoStart: =true
+        Duration: =50
+        OnTimerEnd: |-
+            =If(Line = 360,
+            UpdateContext({Line:0}),
+            UpdateContext({Line:Line+2}))
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Repeat: =true
+        Size: =16.58
+        Visible: =false
+        Width: =204.07
+        Y: =133
+        ZIndex: =7
+
+    Label1_17 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =143
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =44.63
+        Text: =""
+        Width: =623
+        X: =389
+        Y: =81
+        ZIndex: =8
+
+    Label1_18 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Bold
+        Height: =63
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =31.89
+        Text: =Operador //En esta parte lo que hago es poner la variable que se creo en la pantalla de "Sesion" donde me toma el nombre de la persona que hizo el inicio de sesion y lo muestra en la pantalla
+        Width: =557.51
+        X: =0.00
+        Y: =144
+        ZIndex: =9
+
     "BarcodeReader1_2 As 'Barcode Reader'":
         BarcodeType: ='BarcodeReader.BarcodeType'.Auto
         BorderFillColor: =RGBA(47, 81, 151, 1)
@@ -71,7 +143,7 @@
         DisabledFillColor: =RGBA(244, 244, 244, 1)
         DisplayMode: =DisplayMode.Edit
         FillColor: =RGBA(0, 40, 85, 1)
-        Height: =60
+        Height: =95
         HoverBorderColor: =RGBA(88, 115, 171, 1)
         HoverContentColor: =RGBA(255, 255, 255, 1)
         HoverFillColor: =RGBA(47, 81, 151, 1)
@@ -120,90 +192,16 @@
         Text: ="Escanear QR"
         TextAlignment: =Align.Center
         TextColor: =RGBA(255, 255, 255, 1)
-        Width: =300
-        X: =550
-        Y: =577
-        ZIndex: =2
-
-    Rectangle1_58 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
-        Height: =92
-        Width: =1366
-        X: =0.00
-        ZIndex: =3
-
-    Label1_14 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =92
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =44.63
-        Text: ="MATENIMIENTO PREVENTIVO "
-        Width: =1366
-        X: =0.00
-        ZIndex: =4
-
-    Image2_57 As image:
-        Height: =66
-        Image: =carrier_logo_300
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =180
-        X: =12
-        Y: =13
-        ZIndex: =5
+        Width: =335
+        X: =533
+        Y: =555
+        ZIndex: =10
 
     Image1 As image:
-        Height: =289
+        Height: =331
         Image: =mantenimiento
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =278
-        X: =561
-        Y: =178
-        ZIndex: =6
-
-    Timer1_2 As timer:
-        AutoStart: =true
-        Duration: =50
-        OnTimerEnd: |-
-            =If(Line = 360,
-            UpdateContext({Line:0}),
-            UpdateContext({Line:Line+2}))
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Repeat: =true
-        Size: =16.58
-        Visible: =false
-        Width: =204.07
-        Y: =133
-        ZIndex: =7
-
-    Label1_17 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Bold
-        Height: =143
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =44.63
-        Text: =""
-        Width: =623
-        X: =389
-        Y: =81
-        ZIndex: =8
-
-    Label1_18 As label:
-        Align: =Align.Center
-        FontWeight: =FontWeight.Bold
-        Height: =63
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =31.89
-        Text: =Operador //En esta parte lo que hago es poner la variable que se creo en la pantalla de "Sesion" donde me toma el nombre de la persona que hizo el inicio de sesion y lo muestra en la pantalla
-        Width: =557.51
-        X: =0.00
+        Width: =365
+        X: =500
         Y: =144
-        ZIndex: =9
+        ZIndex: =11
 
