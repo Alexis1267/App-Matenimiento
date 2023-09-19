@@ -71,7 +71,7 @@
         DisabledFillColor: =RGBA(244, 244, 244, 1)
         DisplayMode: =DisplayMode.Edit
         FillColor: =RGBA(0, 40, 85, 1)
-        Height: =82
+        Height: =95
         HoverBorderColor: =RGBA(88, 115, 171, 1)
         HoverContentColor: =RGBA(255, 255, 255, 1)
         HoverFillColor: =RGBA(47, 81, 151, 1)
@@ -120,9 +120,9 @@
         Text: ="Escanear QR"
         TextAlignment: =Align.Center
         TextColor: =RGBA(255, 255, 255, 1)
-        Width: =395.40
-        X: =485
-        Y: =599
+        Width: =344
+        X: =528
+        Y: =566
         ZIndex: =2
 
     Rectangle1_58 As rectangle:
@@ -156,13 +156,13 @@
         ZIndex: =5
 
     Image1 As image:
-        Height: =286
+        Height: =289
         Image: =mantenimiento
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =289
-        X: =538
-        Y: =260
+        Width: =278
+        X: =561
+        Y: =178
         ZIndex: =6
 
     Timer1_2 As timer:
@@ -188,8 +188,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =44.63
-        Text: |-
-            ="Tecnico encargado:"
+        Text: =""
         Width: =623
         X: =389
         Y: =81
