@@ -126,7 +126,7 @@ Datos_MP As screen:
             PaddingRight: =6.37
             PaddingTop: =0.00
             Size: =17.86
-            Width: =323.96
+            Width: =295
             X: =22
             Y: =404
             ZIndex: =15
@@ -142,7 +142,7 @@ Datos_MP As screen:
             Size: =16.58
             Text: |-
                 ="Fecha Programada:"
-            Width: =323.96
+            Width: =295
             X: =22
             Y: =364
             ZIndex: =22
@@ -162,8 +162,8 @@ Datos_MP As screen:
             PaddingRight: =6.37
             PaddingTop: =0.00
             Size: =17.86
-            Width: =323.96
-            X: =722
+            Width: =295
+            X: =656
             Y: =404
             ZIndex: =20
 
@@ -178,8 +178,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: |-
                 ="Fecha Proxima MP:"
-            Width: =323.96
-            X: =722
+            Width: =295
+            X: =656
             Y: =364
             ZIndex: =21
 
@@ -329,13 +329,47 @@ Datos_MP As screen:
             Y: =262
             ZIndex: =28
 
+    Group3_3 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =41
+
+        Label7_28 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 40, 85, 1)
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: ="Localización"
+            Width: =323.96
+            X: =774
+            Y: =222
+            ZIndex: =29
+
+        Label8_11 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Localizacion)
+            Width: =323.96
+            X: =774
+            Y: =262
+            ZIndex: =30
+
     ModalPop_Datos As groupContainer.manualLayoutContainer:
         Height: =768
         PaddingRight: =0.00
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
         Width: =1366
-        ZIndex: =41
+        ZIndex: =43
 
         HtmlText3_15 As htmlViewer:
             Height: =768
@@ -624,40 +658,6 @@ Datos_MP As screen:
                 X: =221
                 ZIndex: =13
 
-    Group3_3 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =41
-
-        Label7_28 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(0, 40, 85, 1)
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: ="Localización"
-            Width: =323.96
-            X: =774
-            Y: =222
-            ZIndex: =29
-
-        Label8_11 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Localizacion)
-            Width: =323.96
-            X: =774
-            Y: =262
-            ZIndex: =30
-
     Group3_10 As group:
         Height: =5
         Width: =5
@@ -676,8 +676,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: |-
                 ="Condición del equipo:"
-            Width: =323.96
-            X: =720
+            Width: =295
+            X: =656
             Y: =565
             ZIndex: =36
 
@@ -691,8 +691,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: |
                 =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Cond_Equipo)
-            Width: =323.96
-            X: =720
+            Width: =295
+            X: =656
             Y: =605
             ZIndex: =37
 
@@ -712,8 +712,8 @@ Datos_MP As screen:
             PaddingTop: =3.63
             Size: =16.58
             Text: =Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
-            Width: =255
-            X: =1076
+            Width: =371
+            X: =976
             Y: =419
             ZIndex: =39
 
@@ -730,14 +730,14 @@ Datos_MP As screen:
             Size: =16.58
             Text: |-
                 ="Tecnicos Involucrados:"
-            Width: =255
-            X: =1076
+            Width: =371
+            X: =976
             Y: =364
             ZIndex: =40
 
         Icon8 As icon.AddUser:
             Color: =RGBA(255, 255, 255, 1)
-            Height: =48
+            Height: =45
             Icon: =Icon.AddUser
             OnSelect: |-
                 =//ABRE EL MODALPOP
@@ -747,10 +747,10 @@ Datos_MP As screen:
                 Set(BTN_VISIBLE,"AGREGAR")
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =36
-            X: =1083
+            Width: =43
+            X: =989
             Y: =371
-            ZIndex: =43
+            ZIndex: =41
 
         Icon9 As icon.Trash:
             Color: =RGBA(255, 255, 255, 1)
@@ -764,10 +764,10 @@ Datos_MP As screen:
                 Set(BTN_VISIBLE, "ELIMINAR");
             PaddingRight: =0.00
             PaddingTop: =0.00
-            Width: =32
-            X: =1291
-            Y: =373
-            ZIndex: =44
+            Width: =42
+            X: =1299
+            Y: =372
+            ZIndex: =42
 
     Group5 As group:
         Height: =5
@@ -783,8 +783,8 @@ Datos_MP As screen:
             PaddingTop: =6.37
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Asignado)
-            Width: =323.96
-            X: =720
+            Width: =296
+            X: =655
             Y: =504
             ZIndex: =1
 
@@ -799,8 +799,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: |-
                 ="Asignado a:"
-            Width: =323.96
-            X: =720
+            Width: =296
+            X: =655
             Y: =464
             ZIndex: =32
 
@@ -822,8 +822,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: |-
                 ="Prioridad:"
-            Width: =323.96
-            X: =372
+            Width: =295
+            X: =341
             Y: =565
             ZIndex: =16
 
@@ -839,8 +839,8 @@ Datos_MP As screen:
             PaddingTop: =6.37
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Prioridad)
-            Width: =323.96
-            X: =372
+            Width: =295
+            X: =341
             Y: =605
             ZIndex: =17
 
@@ -862,7 +862,7 @@ Datos_MP As screen:
             Size: =16.58
             Text: |-
                 ="Clase de Mantenimiento:"
-            Width: =323.96
+            Width: =295
             X: =22
             Y: =464
             ZIndex: =11
@@ -874,7 +874,7 @@ Datos_MP As screen:
             PaddingTop: =6.37
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Clas_Mantenimineto)
-            Width: =323.96
+            Width: =295
             X: =22
             Y: =504
             ZIndex: =13
@@ -897,7 +897,7 @@ Datos_MP As screen:
             Size: =16.58
             Text: |-
                 ="Clasificación:"
-            Width: =323.96
+            Width: =295
             X: =22
             Y: =565
             ZIndex: =18
@@ -909,7 +909,7 @@ Datos_MP As screen:
             PaddingTop: =6.37
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Clasificacion)
-            Width: =323.96
+            Width: =295
             X: =22
             Y: =605
             ZIndex: =19
@@ -932,8 +932,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: |-
                 ="Horas Hombre:"
-            Width: =323.96
-            X: =372
+            Width: =295
+            X: =341
             Y: =464
             ZIndex: =12
 
@@ -944,8 +944,8 @@ Datos_MP As screen:
             PaddingTop: =6.37
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Horas_Hombre)
-            Width: =323.96
-            X: =372
+            Width: =295
+            X: =341
             Y: =504
             ZIndex: =14
 
@@ -964,8 +964,8 @@ Datos_MP As screen:
             PaddingRight: =6.37
             PaddingTop: =0.00
             Size: =17.86
-            Width: =323.96
-            X: =372
+            Width: =295
+            X: =341
             Y: =404
             ZIndex: =4
 
@@ -980,8 +980,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: |-
                 ="Fecha Inicio:"
-            Width: =323.96
-            X: =372
+            Width: =295
+            X: =341
             Y: =364
             ZIndex: =10
 
