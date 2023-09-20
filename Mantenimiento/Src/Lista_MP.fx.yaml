@@ -11,10 +11,10 @@ Lista_MP As screen:
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =591
-        Items: |-
+        Items: |+
             =//Search(CMXE_MP_N, Buscador.Text,"Proc_No")
             
-            //Filter( CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado") //Esta parte del codigo es solamente para que me filtre todos los preventivos de las maquinas que estan en proceso
+            Filter( CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado") //Esta parte del codigo es solamente para que me filtre todos los preventivos de las maquinas que estan en proceso
             
             //Sort(Filter(Search(CMXE_MP_N, Buscador.Text,"Proc_No","Nom_Equipo","Clas_Mantenimineto"),StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "En Proceso"),Fecha_Inicio,SortOrder.Descending)
             
@@ -24,7 +24,8 @@ Lista_MP As screen:
             
             //Filter(CMXE_MP_N, Clas_Mantenimineto = DropdownMTTO.Selected.Value && Nom_Equipo = DropdownNom_equi.Selected.Value && Proc_No = DropdownProcNo.Selected.Value )
             
-            Filter( CMXE_MP_N, StartsWith( Proc_No, Maquina_QR),Estatus = "Finalizado")
+            //Filter( CMXE_MP_N, StartsWith( Proc_No, Maquina_QR),Estatus = "Finalizado")
+            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
@@ -382,8 +383,9 @@ Lista_MP As screen:
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =16.58
-        Text: |
-            =Maquina_QR //Esta variable me esta trayendo lo que el QR tiene almacenado
+        Text: |-
+            =//Maquina_QR //Esta variable me esta trayendo lo que el QR tiene almacenado
+            "MEPS-01"
         Width: =191.32
         X: =71.43
         ZIndex: =5
@@ -456,7 +458,7 @@ Lista_MP As screen:
         ZIndex: =15
 
         DropdownNom_equi As dropdown:
-            Items: =Distinct(CMXE_MP_N,Nom_Equipo)
+            Items: =Distinct(Filter(CMXE_MP_N,Proc_No = DropdownProcNo.Selected.Value),Proc_No)
             Width: =231
             X: =511
             Y: =124
@@ -486,7 +488,7 @@ Lista_MP As screen:
         ZIndex: =17
 
         DropdownProcNo As dropdown:
-            Items: =Distinct(CMXE_MP_N,Proc_No)
+            Items: =Distinct(Filter(CMXE_MP_N,Localizacion = Dropdown4_3.Selected.Value),Proc_No)
             Width: =231
             X: =259
             Y: =124
