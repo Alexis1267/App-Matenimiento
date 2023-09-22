@@ -26,7 +26,9 @@ Lista_MP As screen:
             
             //Filter( CMXE_MP_N, StartsWith( Proc_No, Maquina_QR),Estatus = "Finalizado")
             
-            Filter(CMXE_MP_N,Localizacion = DropdownLocali.Selected.Value || Proc_No = DropdownProcNo.Selected.Value || Nom_Equipo = DropdownNom_equi.Selected.Value || Clas_Mantenimineto = DropdownMTTO.Selected.Value ) 
+            //Filter(CMXE_MP_N,Localizacion = DropdownLocali.Selected.Value || Proc_No = DropdownProcNo.Selected.Value || Nom_Equipo = DropdownNom_equi.Selected.Value || Clas_Mantenimineto = DropdownMTTO.Selected.Value ) 
+            
+            Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text)
             
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
