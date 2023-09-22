@@ -278,7 +278,7 @@ Datos_MP As screen:
             PaddingTop: =6.37
             Size: =16.58
             Text: |
-                =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Proc_No) //Esto lo que me hace es de que me encuentre el registo del Proc.No.:
+                =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,ID_Maq) //Esto lo que me hace es de que me encuentre el registo del Proc.No.:
             Width: =323.96
             X: =22
             Y: =262
