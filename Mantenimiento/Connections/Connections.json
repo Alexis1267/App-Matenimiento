@@ -92,10 +92,9 @@
       "displayName": "SQL Server",
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
-        "apiVer": 2,
         "appVer": "3.23091.14",
-        "modifiedOn": "2023-09-25 14:13:19",
-        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"]}}",
+        "modifiedOn": "2023-09-25 14:19:39",
+        "policy": "{\"type\":\"unused\"}",
         "version": 1
       },
       "gatewayObjectIdHint": "263dc832-5fea-479a-9fac-23670d346397",
