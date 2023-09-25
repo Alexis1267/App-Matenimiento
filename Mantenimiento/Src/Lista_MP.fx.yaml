@@ -422,6 +422,8 @@ Lista_MP As screen:
 
         DropdownMTTO As dropdown:
             BorderThickness: =1
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(0, 18, 107, 1)
             Items: =Distinct(CMXE_MP_N,Clas_Mantenimineto)
             Width: =231
             X: =761
@@ -448,6 +450,8 @@ Lista_MP As screen:
         DropdownLocali As dropdown:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(0, 18, 107, 1)
             Items: |+
                 =Distinct(CMXE_MP_N,Localizacion)
                 
@@ -476,6 +480,8 @@ Lista_MP As screen:
 
         DropdownNom_equi As dropdown:
             BorderThickness: =1
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(0, 18, 107, 1)
             Items: =Distinct(Filter(CMXE_MP_N,Proc_No = DropdownProcNo.Selected.Value),Nom_Equipo)
             Width: =231
             X: =511
@@ -501,6 +507,8 @@ Lista_MP As screen:
 
         DropdownProcNo As dropdown:
             BorderThickness: =1
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(0, 18, 107, 1)
             Items: =Distinct(Filter(CMXE_MP_N,Localizacion = DropdownLocali.Selected.Value),Proc_No)
             Width: =231
             X: =259
