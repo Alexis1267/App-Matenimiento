@@ -10,7 +10,7 @@ Lista_MP As screen:
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =591
+        Height: =582
         Items: |+
             =//Search(CMXE_MP_N, Buscador.Text,"Proc_No")
             
@@ -38,8 +38,8 @@ Lista_MP As screen:
         TemplateSize: =226
         Width: =1366
         X: =0.00
-        Y: =168
-        ZIndex: =1
+        Y: =176
+        ZIndex: =2
 
         Title3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -361,7 +361,7 @@ Lista_MP As screen:
         Height: =92
         Width: =1366
         X: =0.00
-        ZIndex: =2
+        ZIndex: =3
 
     Label1_20 As label:
         Align: =Align.Center
@@ -376,7 +376,7 @@ Lista_MP As screen:
             MANTENIMIENTO PREVENTIVO ACTIVO"
         Width: =1366
         X: =0.00
-        ZIndex: =3
+        ZIndex: =4
 
     Image2_60 As image:
         Height: =58
@@ -386,7 +386,7 @@ Lista_MP As screen:
         Width: =247.42
         X: =1118
         Y: =17
-        ZIndex: =4
+        ZIndex: =5
 
     MAQUINA_QR As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -399,7 +399,7 @@ Lista_MP As screen:
             "MEPS-01"
         Width: =191.32
         X: =71.43
-        ZIndex: =5
+        ZIndex: =6
 
     MAQUINA_QR_3Letras As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -411,7 +411,7 @@ Lista_MP As screen:
         Width: =191.32
         X: =71.43
         Y: =40
-        ZIndex: =6
+        ZIndex: =7
 
     Group17 As group:
         Height: =5
@@ -421,11 +421,12 @@ Lista_MP As screen:
         ZIndex: =13
 
         DropdownMTTO As dropdown:
+            BorderThickness: =1
             Items: =Distinct(CMXE_MP_N,Clas_Mantenimineto)
             Width: =231
             X: =761
             Y: =124
-            ZIndex: =9
+            ZIndex: =8
 
         Label11_13 As label:
             FontWeight: =FontWeight.Bold
@@ -435,7 +436,7 @@ Lista_MP As screen:
             Width: =231
             X: =761
             Y: =96
-            ZIndex: =12
+            ZIndex: =11
 
     Group18 As group:
         Height: =5
@@ -445,15 +446,18 @@ Lista_MP As screen:
         ZIndex: =13
 
         DropdownLocali As dropdown:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
             Items: |+
                 =Distinct(CMXE_MP_N,Localizacion)
                 
             Width: =231
             X: =11
             Y: =123
-            ZIndex: =10
+            ZIndex: =9
 
         Label11 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
             FontWeight: =FontWeight.Bold
             Height: =27
             Text: |-
@@ -461,7 +465,7 @@ Lista_MP As screen:
             Width: =231
             X: =11
             Y: =95
-            ZIndex: =11
+            ZIndex: =10
 
     Group17_1 As group:
         Height: =5
@@ -471,11 +475,12 @@ Lista_MP As screen:
         ZIndex: =15
 
         DropdownNom_equi As dropdown:
+            BorderThickness: =1
             Items: =Distinct(Filter(CMXE_MP_N,Proc_No = DropdownProcNo.Selected.Value),Nom_Equipo)
             Width: =231
             X: =511
             Y: =124
-            ZIndex: =13
+            ZIndex: =12
 
         Label11_14 As label:
             FontWeight: =FontWeight.Bold
@@ -485,7 +490,7 @@ Lista_MP As screen:
             Width: =231
             X: =511
             Y: =96
-            ZIndex: =14
+            ZIndex: =13
 
     Group17_2 As group:
         Height: =5
@@ -495,11 +500,12 @@ Lista_MP As screen:
         ZIndex: =17
 
         DropdownProcNo As dropdown:
+            BorderThickness: =1
             Items: =Distinct(Filter(CMXE_MP_N,Localizacion = DropdownLocali.Selected.Value),Proc_No)
             Width: =231
             X: =259
             Y: =124
-            ZIndex: =15
+            ZIndex: =14
 
         Label11_15 As label:
             FontWeight: =FontWeight.Bold
@@ -508,5 +514,5 @@ Lista_MP As screen:
             Width: =231
             X: =259
             Y: =96
-            ZIndex: =16
+            ZIndex: =15
 
