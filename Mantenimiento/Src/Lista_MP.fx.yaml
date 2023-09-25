@@ -28,7 +28,7 @@ Lista_MP As screen:
             
             //Filter(CMXE_MP_N,Localizacion = DropdownLocali.Selected.Value || Proc_No = DropdownProcNo.Selected.Value || Nom_Equipo = DropdownNom_equi.Selected.Value || Clas_Mantenimineto = DropdownMTTO.Selected.Value ) 
             
-            Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text)
+            Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text,Estatus = "En Proceso")
             
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -38,12 +38,12 @@ Lista_MP As screen:
         TemplateSize: =226
         Width: =1366
         X: =0.00
-        Y: =176
+        Y: =168
         ZIndex: =1
 
         Title3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =24
+            Height: =30
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -52,14 +52,14 @@ Lista_MP As screen:
             Size: =17.86
             Text: =ThisItem.Proc_No
             VerticalAlign: =VerticalAlign.Top
-            Width: =436.21
-            X: =399.22
-            Y: =37
+            Width: =285
+            X: =372
+            Y: =45
             ZIndex: =1
 
         Subtitle3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =50
+            Height: =30
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -68,14 +68,14 @@ Lista_MP As screen:
             Size: =17.86
             Text: =ThisItem.Nom_Equipo
             VerticalAlign: =VerticalAlign.Top
-            Width: =436.21
-            X: =399.22
-            Y: =64
+            Width: =285
+            X: =372
+            Y: =105
             ZIndex: =2
 
         Body2 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =43
+            Height: =30
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -84,9 +84,9 @@ Lista_MP As screen:
             Size: =17.86
             Text: =ThisItem.Clas_Mantenimineto
             VerticalAlign: =VerticalAlign.Top
-            Width: =436.21
-            X: =399.22
-            Y: =92
+            Width: =285
+            X: =372
+            Y: =135
             ZIndex: =3
 
         Separator3 As rectangle:
@@ -119,30 +119,14 @@ Lista_MP As screen:
             Size: =17.86
             Text: =ThisItem.Fecha_Inicio
             VerticalAlign: =VerticalAlign.Top
-            Width: =436.21
-            X: =399.22
-            Y: =119
+            Width: =285
+            X: =372
+            Y: =165
             ZIndex: =6
-
-        Body2_2 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            Size: =17.86
-            Text: =ThisItem.Fecha_Programada
-            VerticalAlign: =VerticalAlign.Top
-            Width: =436.21
-            X: =399.22
-            Y: =149
-            ZIndex: =7
 
         Body2_3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =33
+            Height: =30
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -151,14 +135,15 @@ Lista_MP As screen:
             Size: =17.86
             Text: =ThisItem.Estatus
             VerticalAlign: =VerticalAlign.Top
-            Width: =436.21
-            X: =399.22
-            Y: =178
+            Width: =285
+            X: =372
+            Y: =195
             ZIndex: =8
 
         Title3_1 As label:
+            Align: =Align.Right
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =24
+            Height: =30
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -168,14 +153,15 @@ Lista_MP As screen:
             Text: |-
                 ="Proc.No:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =306.10
-            X: =29.32
-            Y: =37
+            Width: =332.89
+            X: =29
+            Y: =45
             ZIndex: =9
 
         Subtitle3_1 As label:
+            Align: =Align.Right
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =28
+            Height: =30
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -185,14 +171,15 @@ Lista_MP As screen:
             Text: |-
                 ="Nombre del equipo:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =306.10
-            X: =29.32
-            Y: =64
+            Width: =332.89
+            X: =29
+            Y: =105
             ZIndex: =10
 
         Body2_4 As label:
+            Align: =Align.Right
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =43
+            Height: =30
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -202,12 +189,13 @@ Lista_MP As screen:
             Text: |-
                 ="Clase de Mantenimiento:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =306.10
+            Width: =332.89
             X: =29.32
-            Y: =92
+            Y: =135
             ZIndex: =11
 
         Body2_5 As label:
+            Align: =Align.Right
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =30
             OnSelect: =Select(Parent)
@@ -219,31 +207,15 @@ Lista_MP As screen:
             Text: |-
                 ="Fecha de Inicio:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =306.10
-            X: =29.32
-            Y: =119
+            Width: =332.89
+            X: =29
+            Y: =165
             ZIndex: =12
 
-        Body2_6 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            Size: =17.86
-            Text: |-
-                ="Fecha Programada:"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =306.10
-            X: =29.32
-            Y: =149
-            ZIndex: =13
-
         Body2_7 As label:
+            Align: =Align.Right
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =33
+            Height: =30
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -255,12 +227,13 @@ Lista_MP As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =332.89
             X: =29.32
-            Y: =178
+            Y: =195
             ZIndex: =14
 
         Title3_2 As label:
+            Align: =Align.Right
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =24
+            Height: =30
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -270,14 +243,14 @@ Lista_MP As screen:
             Text: |-
                 ="Localizacion:"
             VerticalAlign: =VerticalAlign.Top
-            Width: =279.32
+            Width: =332.89
             X: =29.32
-            Y: =9
+            Y: =15
             ZIndex: =15
 
         Title3_3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =24
+            Height: =30
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -286,9 +259,9 @@ Lista_MP As screen:
             Size: =17.86
             Text: =ThisItem.Localizacion
             VerticalAlign: =VerticalAlign.Top
-            Width: =436.21
-            X: =403
-            Y: =9
+            Width: =285
+            X: =372
+            Y: =15
             ZIndex: =16
 
         Title3_4 As label:
@@ -348,6 +321,40 @@ Lista_MP As screen:
             X: =1266
             Y: =81
             ZIndex: =20
+
+        Subtitle3_4 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =30
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =17.86
+            Text: =ThisItem.ID_Maq
+            VerticalAlign: =VerticalAlign.Top
+            Width: =285
+            X: =372
+            Y: =75
+            ZIndex: =21
+
+        Subtitle3_5 As label:
+            Align: =Align.Right
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =30
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =17.86
+            Text: |-
+                ="Activo.No:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =332.89
+            X: =29
+            Y: =75
+            ZIndex: =22
 
     Rectangle1_61 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -479,12 +486,6 @@ Lista_MP As screen:
             X: =511
             Y: =96
             ZIndex: =14
-
-    Rectangle4 As rectangle:
-        Height: =5
-        Width: =1365
-        Y: =171
-        ZIndex: =17
 
     Group17_2 As group:
         Height: =5
