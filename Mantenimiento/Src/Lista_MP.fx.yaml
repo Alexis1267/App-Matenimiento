@@ -425,7 +425,7 @@ Lista_MP As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
-            Items: =Distinct(CMXE_MP_N,Clas_Mantenimineto)
+            Items: =Distinct(Filter(CMXE_MP_N,Nom_Equipo = DropdownNom_equi.Selected.Value),Clas_Mantenimineto)
             Width: =231
             X: =1044
             Y: =124
