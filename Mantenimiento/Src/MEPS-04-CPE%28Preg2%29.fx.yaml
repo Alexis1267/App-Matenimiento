@@ -13,173 +13,22 @@
         
         ClearCollect(AsignadoOP,{NombreOp: Operador})
 
-    Btn3_3 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(BotonActivo,"Boton3");
-            Set(Pregunta,Preg3_3.Text);
-            UpdateContext({ShowPopUp : true});
+    Preg1_15 As label:
+        Height: =46
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp3_3.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =209
+        Size: =11
+        Text: ="13."
+        Width: =33
+        Y: =106
         ZIndex: =1
-
-    Btn4_3 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(Pregunta,Preg4_3.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp4_3.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =255
-        ZIndex: =2
-
-    Btn5_3 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(Pregunta,Preg5_3.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp5_3.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =306
-        ZIndex: =3
-
-    Btn6_3 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(Pregunta,Preg6_3.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp6_3.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =356
-        ZIndex: =4
-
-    Btn7_3 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(Pregunta,Preg7_3.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp7_3.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =403
-        ZIndex: =5
-
-    Btn8_3 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(Pregunta,Preg8_3.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp8_3.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =450
-        ZIndex: =6
-
-    Btn9_3 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(Pregunta,Preg9_3.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp9_3.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =493
-        ZIndex: =7
-
-    Btn10_3 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(Pregunta,Preg10_3.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp10_3.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =534
-        ZIndex: =8
-
-    Btn11_3 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(Pregunta,Preg11_3.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp11_3.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =576
-        ZIndex: =9
-
-    Btn12_3 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(Pregunta,Preg12_3.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp12_3.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =620
-        ZIndex: =10
 
     Rectangle1_68 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =59
         Width: =1366
         X: =0.00
-        ZIndex: =11
+        ZIndex: =23
 
     Label9_81 As label:
         Align: =Align.Center
@@ -192,7 +41,7 @@
         Text: ="Descripción de las Actividades a Realizar"
         Width: =1366
         X: =0.00
-        ZIndex: =12
+        ZIndex: =24
 
     Rectangle2_435 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -200,7 +49,7 @@
         Width: =1366
         X: =0.00
         Y: =99
-        ZIndex: =13
+        ZIndex: =25
 
     Label10_427 As label:
         PaddingRight: =6.37
@@ -210,7 +59,7 @@
         Width: =151.76
         X: =45.90
         Y: =59
-        ZIndex: =14
+        ZIndex: =26
 
     Label10_444 As label:
         PaddingRight: =6.37
@@ -220,7 +69,7 @@
         Width: =159.43
         X: =225.75
         Y: =59
-        ZIndex: =15
+        ZIndex: =27
 
     Label10_426 As label:
         FontWeight: =FontWeight.Bold
@@ -231,7 +80,7 @@
         Width: =45.90
         X: =0.00
         Y: =59
-        ZIndex: =16
+        ZIndex: =28
 
     Label10_428 As label:
         FontWeight: =FontWeight.Bold
@@ -242,18 +91,17 @@
         Width: =63.77
         X: =181.10
         Y: =59
-        ZIndex: =17
+        ZIndex: =29
 
-    Preg1_15 As label:
+    Preg1_16 As label:
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: |
-            ="Reapriete y verificación de funcionamiento de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)."
+        Text: =" Inspeccionar que el carro cuente con 4 barras de imanes esto ayuda a mantener en posición la lámina."
         Width: =1081
         X: =101
         Y: =106
-        ZIndex: =18
+        ZIndex: =30
 
     Resp1_3 As dropdown:
         AllowEmptySelection: =true
@@ -276,7 +124,7 @@
         Width: =67
         X: =33
         Y: =117
-        ZIndex: =19
+        ZIndex: =31
 
     Icon3_35 As icon.NextArrow:
         AutoDisableOnSelect: |
@@ -325,7 +173,7 @@
             //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            Navigate('MP-MEPS-INP(Hallaz)',ScreenTransition.CoverRight)
+            Navigate('MEPS-04-CPE(Preg3)',ScreenTransition.CoverRight)
             
             
             
@@ -343,18 +191,18 @@
         Width: =88
         X: =1237
         Y: =672
-        ZIndex: =27
+        ZIndex: =39
 
     Icon1_35 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
+        OnSelect: =Navigate('MEPS-04-CPE(Preg1)',ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95
         X: =33.17
         Y: =673
-        ZIndex: =42
+        ZIndex: =54
 
     Image2_64 As image:
         Height: =41
@@ -364,7 +212,7 @@
         Width: =266.56
         X: =1099.44
         Y: =9
-        ZIndex: =43
+        ZIndex: =55
 
     Rectangle2_436 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -372,7 +220,7 @@
         Width: =1366
         X: =0.00
         Y: =150
-        ZIndex: =46
+        ZIndex: =57
 
     Btn1_4 As button:
         AutoDisableOnSelect: =
@@ -380,7 +228,7 @@
         Height: =29
         OnSelect: |
             =Set(BotonActivo,"Boton1");
-            Set(Pregunta,Preg1_15.Text); //Variable que me trae la pregunta
+            Set(Pregunta,Preg1_16.Text); //Variable que me trae la pregunta
             UpdateContext({ShowPopUp : true}); //Variable para habilitar el ModalPopUp
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -390,24 +238,7 @@
         Width: =173
         X: =1182
         Y: =115
-        ZIndex: =58
-
-    Btn2_4 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(BotonActivo,"Boton2");
-            Set(Pregunta,Preg2_3.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp2_3.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =164
-        ZIndex: =59
+        ZIndex: =69
 
     Container1_4 As groupContainer.manualLayoutContainer:
         Height: =768
@@ -416,7 +247,7 @@
         Visible: =ShowPopUp
         Width: =1366
         X: =0.00
-        ZIndex: =60
+        ZIndex: =71
 
         HtmlText3_18 As htmlViewer:
             Height: =768
@@ -518,9 +349,7 @@
                     Reset(AddMediaButton6_4);
                     
                     
-                    If(BotonActivo = "Boton1", Btn1_4.DisplayMode.View);
-                    If(BotonActivo = "Boton2",Btn2_4.DisplayMode.Disabled, true);
-                    If(BotonActivo = "Boton3", Btn3_3.DisplayMode.Disabled, true);
+                    
                     
                     Set(BotonActivo, "");
                     
@@ -571,6 +400,189 @@
                 X: =369.88
                 ZIndex: =8
 
+            AddMediaWithImage6_4 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                UploadedImage7_4 As image:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
+                    Height: =139
+                    Image: =If(IsBlank(AddMediaButton6_4.Media), SampleImage, AddMediaButton6_4.Media)
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =239.78
+                    X: =988.47
+                    Y: =380
+                    ZIndex: =19
+
+                AddMediaButton6_4 As addMedia:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
+                    ChangePictureText: ="Cambiar fotografia"
+                    Height: =64
+                    Size: =19.77
+                    Text: ="Adjuntar evidencia"
+                    Width: =247.77
+                    X: =711
+                    Y: =417
+                    ZIndex: =20
+
+            Group10_4 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_86 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="Nombre de la maquina:"
+                    Width: =295.91
+                    X: =25.51
+                    Y: =155
+                    ZIndex: =14
+
+                TextInput1_26 As text:
+                    Default: =Dato_NomMaquina
+                    DisplayMode: =DisplayMode.View
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =470.62
+                    X: =25.51
+                    Y: =195
+                    ZIndex: =15
+
+            Group11_4 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_87 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="Clase de mantenimiento:"
+                    Width: =318.86
+                    X: =580.33
+                    Y: =155
+                    ZIndex: =16
+
+                TextInput1_27 As text:
+                    Default: =Dato_ClassMtto
+                    DisplayMode: =DisplayMode.View
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =438.75
+                    X: =580.33
+                    Y: =195
+                    ZIndex: =17
+
+            Group12_5 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_84 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="Proc_No:"
+                    Width: =278.06
+                    X: =404.31
+                    Y: =65
+                    ZIndex: =12
+
+                TextInput1_25 As text:
+                    Default: =Dato_Proc_No
+                    DisplayMode: =DisplayMode.View
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =369.88
+                    X: =404.31
+                    Y: =105
+                    ZIndex: =13
+
+            Group13_4 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_83 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="Localización:"
+                    Width: =233.41
+                    X: =25.51
+                    Y: =65
+                    ZIndex: =10
+
+                TextInput1_24 As text:
+                    Default: =Dato_Localizacion
+                    DisplayMode: =DisplayMode.View
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =311.19
+                    X: =25.51
+                    Y: =105
+                    ZIndex: =11
+
+            Group14_4 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                ACT_3 As text:
+                    Default: =Pregunta
+                    DisplayMode: =DisplayMode.View
+                    Height: =68
+                    Mode: =TextMode.MultiLine
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =1200.18
+                    X: =25.51
+                    Y: =283
+                    ZIndex: =9
+
+                Label9_88 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="Actividad:"
+                    Width: =191.32
+                    X: =25.51
+                    Y: =243
+                    ZIndex: =18
+
             Group15_4 As group:
                 Height: =5
                 Width: =5
@@ -606,189 +618,6 @@
                     X: =26.36
                     Y: =399
                     ZIndex: =3
-
-            Group14_4 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =19
-
-                ACT_3 As text:
-                    Default: =Pregunta
-                    DisplayMode: =DisplayMode.View
-                    Height: =68
-                    Mode: =TextMode.MultiLine
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Width: =1200.18
-                    X: =25.51
-                    Y: =283
-                    ZIndex: =9
-
-                Label9_88 As label:
-                    FontWeight: =FontWeight.Bold
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Text: |-
-                        ="Actividad:"
-                    Width: =191.32
-                    X: =25.51
-                    Y: =243
-                    ZIndex: =18
-
-            Group13_4 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =19
-
-                Label9_83 As label:
-                    FontWeight: =FontWeight.Bold
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Text: |-
-                        ="Localización:"
-                    Width: =233.41
-                    X: =25.51
-                    Y: =65
-                    ZIndex: =10
-
-                TextInput1_24 As text:
-                    Default: =Dato_Localizacion
-                    DisplayMode: =DisplayMode.View
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Width: =311.19
-                    X: =25.51
-                    Y: =105
-                    ZIndex: =11
-
-            Group12_5 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =19
-
-                Label9_84 As label:
-                    FontWeight: =FontWeight.Bold
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Text: |-
-                        ="Proc_No:"
-                    Width: =278.06
-                    X: =404.31
-                    Y: =65
-                    ZIndex: =12
-
-                TextInput1_25 As text:
-                    Default: =Dato_Proc_No
-                    DisplayMode: =DisplayMode.View
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Width: =369.88
-                    X: =404.31
-                    Y: =105
-                    ZIndex: =13
-
-            Group11_4 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =19
-
-                Label9_87 As label:
-                    FontWeight: =FontWeight.Bold
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Text: |-
-                        ="Clase de mantenimiento:"
-                    Width: =318.86
-                    X: =580.33
-                    Y: =155
-                    ZIndex: =16
-
-                TextInput1_27 As text:
-                    Default: =Dato_ClassMtto
-                    DisplayMode: =DisplayMode.View
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Width: =438.75
-                    X: =580.33
-                    Y: =195
-                    ZIndex: =17
-
-            Group10_4 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =19
-
-                Label9_86 As label:
-                    FontWeight: =FontWeight.Bold
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Text: |-
-                        ="Nombre de la maquina:"
-                    Width: =295.91
-                    X: =25.51
-                    Y: =155
-                    ZIndex: =14
-
-                TextInput1_26 As text:
-                    Default: =Dato_NomMaquina
-                    DisplayMode: =DisplayMode.View
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Width: =470.62
-                    X: =25.51
-                    Y: =195
-                    ZIndex: =15
-
-            AddMediaWithImage6_4 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =19
-
-                UploadedImage7_4 As image:
-                    BorderColor: =RGBA(0, 0, 0, 1)
-                    BorderThickness: =1
-                    Height: =139
-                    Image: =If(IsBlank(AddMediaButton6_4.Media), SampleImage, AddMediaButton6_4.Media)
-                    PaddingRight: =0.00
-                    PaddingTop: =0.00
-                    Width: =239.78
-                    X: =988.47
-                    Y: =380
-                    ZIndex: =19
-
-                AddMediaButton6_4 As addMedia:
-                    BorderColor: =RGBA(0, 0, 0, 1)
-                    BorderThickness: =1
-                    ChangePictureText: ="Cambiar fotografia"
-                    Height: =64
-                    Size: =19.77
-                    Text: ="Adjuntar evidencia"
-                    Width: =247.77
-                    X: =711
-                    Y: =417
-                    ZIndex: =20
 
             Label9_85 As label:
                 FontWeight: =FontWeight.Bold
@@ -838,14 +667,4 @@
                 X: =858.36
                 Y: =105
                 ZIndex: =22
-
-    Preg1_16 As label:
-        Height: =46
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =11
-        Text: ="13."
-        Width: =33
-        Y: =106
-        ZIndex: =61
 
