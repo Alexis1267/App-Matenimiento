@@ -658,6 +658,22 @@ Datos_MP As screen:
                 X: =221
                 ZIndex: =13
 
+    Label8_12 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        Font: =Font.Arial
+        Height: =61
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Text: |
+            =Split(Label8_8, "-")
+        Width: =294.64
+        X: =480
+        Y: =145
+        ZIndex: =44
+
     Group3_10 As group:
         Height: =5
         Width: =5
