@@ -396,8 +396,8 @@ Lista_MP As screen:
         PaddingTop: =6.37
         Size: =16.58
         Text: |-
-            =//Maquina_QR //Esta variable me esta trayendo lo que el QR tiene almacenado
-            "MEPS-01"
+            =//Maquina_QR
+            "MEPS-04"
         Width: =191.32
         X: =71.43
         ZIndex: =6
@@ -426,7 +426,7 @@ Lista_MP As screen:
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
             Items: =Distinct(Filter(CMXE_MP_N,Nom_Equipo = DropdownNom_equi.Selected.Value),Clas_Mantenimineto)
-            Width: =231
+            Width: =242
             X: =1044
             Y: =124
             ZIndex: =8
@@ -436,7 +436,7 @@ Lista_MP As screen:
             Height: =27
             Text: |-
                 ="Clase de Mtto:"
-            Width: =231
+            Width: =242
             X: =1044
             Y: =96
             ZIndex: =11

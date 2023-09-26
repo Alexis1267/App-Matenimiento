@@ -51,7 +51,7 @@ Datos_MP As screen:
         OnSelect: |-
             =
             //VALIDACION PARA NAVEGAR AL RESPECTIVO MANTENIMIENTO PREVENTIVO
-            If(Label8_8.Text = "MP_Prueba20",Navigate('MP-MEPS-INP(PREG)_1',ScreenTransition.Cover),Notify("Error",NotificationType.Error));
+            If(Label8_8.Text = "CPE",Navigate('MP-MEPS-INP(PREG)_1',ScreenTransition.Cover),Notify("Error",NotificationType.Error));
             
             
             //VALIDACION DE CAMPO INVOLUCRADOS

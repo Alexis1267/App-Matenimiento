@@ -135,7 +135,7 @@
             =
             RGBA(0, 18, 107, 1)
         DisabledColor: |
-            =BotonColor
+            =
         Fill: =RGBA(255,255,255,1)
         Height: =87
         Icon: =Icon.NextArrow
@@ -173,7 +173,7 @@
             //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            Navigate('Final(Observacion)',ScreenTransition.CoverRight)
+            Navigate('MEPS-04-CPE(Final)',ScreenTransition.CoverRight)
             
             
             
