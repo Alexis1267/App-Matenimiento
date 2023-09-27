@@ -1,9 +1,29 @@
 Datos_MP As screen:
     OnHidden: =Set(Maq,Label8_8.Text)
-    OnVisible: |-
+    OnVisible: |+
         =Set(MAQUINA,Title3.Text); //Esta variable se utiliza para almacenar el "Proc.No" que esta en la pantalla de ListaMP
         
-        Set(ID_Maquina,Value(Title3_5.Text)) //Esta variable se utiliza para almacenar el "ID" de la maquina, para que despues en la pantalla de los botones cuando finalizan las actividades se pueda hacer el update de "Com_Mantenimiento"
+        Set(ID_Maquina,Value(Title3_5.Text)); //Esta variable se utiliza para almacenar el "ID" de la maquina, para que despues en la pantalla de los botones cuando finalizan las actividades se pueda hacer el update de "Com_Mantenimiento"
+        
+        
+        /*
+        // Tu cadena
+        Set( CadenaCompleta, "MEPS-04-2M-CPE");
+        
+        // Encuentra la posición del último guion en la cadena
+        Set(PosicionGuion, Len(CadenaCompleta) - Len(Mid(CadenaCompleta, Len(CadenaCompleta), 1)) + 1);
+        
+        // Obtiene la última parte de la cadena
+        Set(UltimaParte, Mid(CadenaCompleta, PosicionGuion + 1, Len(CadenaCompleta) - PosicionGuion));
+        
+        */
+        
+        Set( CadenaCompleta, MAQUINA);
+        Set( UltimasTresLetrasMAQ, Right(CadenaCompleta, 3));
+        
+        
+        
+        
 
     Rectangle1_64 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -48,14 +68,19 @@ Datos_MP As screen:
         Fill: =RGBA(97, 181, 73, 1)
         FontWeight: =FontWeight.Bold
         Height: =54
-        OnSelect: |-
+        OnSelect: |
             =
-            //VALIDACION PARA NAVEGAR AL RESPECTIVO MANTENIMIENTO PREVENTIVO
-            If(Label8_8.Text = "CPE",Navigate('MP-MEPS-INP(PREG)_1',ScreenTransition.Cover),Notify("Error",NotificationType.Error));
-            
             
             //VALIDACION DE CAMPO INVOLUCRADOS
-            If(IsBlank(Label12_15.Text),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error))
+            If(IsBlank(Label12_15.Text),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error));
+            
+            
+            //VALIDACION PARA NAVEGAR AL RESPECTIVO MANTENIMIENTO PREVENTIVO
+            
+            If(Label8_12.Text = "CPE",Navigate('MEPS-04-CPE(Preg1)',ScreenTransition.Cover),Notify("Error",NotificationType.Error));
+            
+            
+            //HACER UNA VALIDACION DE QUE CON LA FUNCION "FIND" ENCONTRAR EN TODO EL TEXTO DEL PROC.NO LA ULTIMA PALABRA PARA LUEGO VALIDAR
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =19.14
@@ -363,13 +388,29 @@ Datos_MP As screen:
             Y: =262
             ZIndex: =30
 
+    Label8_12 As label:
+        Align: =Align.Center
+        AutoHeight: =true
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        Font: =Font.Arial
+        Height: =61
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Text: =UltimasTresLetrasMAQ
+        Width: =294.64
+        X: =1053
+        Y: =145
+        ZIndex: =43
+
     ModalPop_Datos As groupContainer.manualLayoutContainer:
         Height: =768
         PaddingRight: =0.00
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
         Width: =1366
-        ZIndex: =43
+        ZIndex: =44
 
         HtmlText3_15 As htmlViewer:
             Height: =768
@@ -657,22 +698,6 @@ Datos_MP As screen:
                 Width: =584.15
                 X: =221
                 ZIndex: =13
-
-    Label8_12 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 1)
-        BorderThickness: =1
-        Font: =Font.Arial
-        Height: =61
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =16.58
-        Text: |
-            =Split(Label8_8, "-")
-        Width: =294.64
-        X: =480
-        Y: =145
-        ZIndex: =44
 
     Group3_10 As group:
         Height: =5
