@@ -1757,7 +1757,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "MP-MEPS-INP(Hallaz)": {
+    "MEPS-04-2M-CPS(Hallaz)": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -1777,18 +1777,13 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "MP-MEPS-INP(Hallaz)",
+      "Name": "MEPS-04-2M-CPS(Hallaz)",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Height",
+          "PropertyName": "Fill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1798,17 +1793,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Fill",
+          "PropertyName": "Height",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "LoadingSpinner",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "LoadingSpinnerColor",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1819,6 +1809,16 @@
         {
           "Category": "Design",
           "PropertyName": "Orientation",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinner",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinnerColor",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -2656,5 +2656,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "MP-MEPS-INP(Hallaz)"
+  "TopParentName": "MEPS-04-2M-CPS(Hallaz)"
 }

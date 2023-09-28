@@ -1,4 +1,4 @@
-"'MP-MEPS-INP(Hallaz)' As screen":
+"'MEPS-04-2M-CPS(Hallaz)' As screen":
 
     Label12_2 As label:
         FontWeight: =FontWeight.Bold
@@ -118,7 +118,7 @@
     Icon1_32 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('MP-MEPS-INP(PREG)_1',ScreenTransition.Fade)
+        OnSelect: =Navigate('MEPS-04-2M-CPS(Preg1)',ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95

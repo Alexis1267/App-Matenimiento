@@ -10269,7 +10269,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "MP-MEPS-INP(PREG)_3": {
+    "MEPS-04-2M-CPS(Preg2)": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -10297,18 +10297,18 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "MP-MEPS-INP(PREG)_3",
+      "Name": "MEPS-04-2M-CPS(Preg2)",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Design",
-          "PropertyName": "Fill",
+          "PropertyName": "LoadingSpinner",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "ImagePosition",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -10318,7 +10318,17 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Width",
+          "PropertyName": "ImagePosition",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinnerColor",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Fill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -10329,16 +10339,6 @@
         {
           "Category": "Design",
           "PropertyName": "Orientation",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "LoadingSpinner",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "LoadingSpinnerColor",
           "RuleProviderType": "Unknown"
         },
         {
@@ -21255,5 +21255,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "MP-MEPS-INP(PREG)_3"
+  "TopParentName": "MEPS-04-2M-CPS(Preg2)"
 }
