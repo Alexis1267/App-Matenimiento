@@ -1,4 +1,4 @@
-"'MEPS-04-DKE(ImgEjem1)' As screen":
+"'MEPS-04-DKE(ImgEjem2)' As screen":
     OnVisible: |
         =//Variables para traerme los datos de los inputs que se encuentran en la pantalla "Datos_MP"
         Set(Dato_Localizacion,Label8_11.Text);
@@ -13,14 +13,14 @@
         
         ClearCollect(AsignadoOP,{NombreOp: Operador})
 
-    Rectangle1_73 As rectangle:
+    Rectangle1_74 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =59
         Width: =1366
         X: =0.00
         ZIndex: =24
 
-    Label9_109 As label:
+    Label9_110 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -33,7 +33,7 @@
         X: =0.00
         ZIndex: =25
 
-    Icon3_38 As icon.NextArrow:
+    Icon3_39 As icon.NextArrow:
         AutoDisableOnSelect: |
             =//If(
              // IsBlank(Respuesta1.Selected) || IsBlank(Respuesta2.Selected) || IsBlank(Respuesta3.Selected) || IsBlank(Respuesta4.Selected) || IsBlank(Respuesta5.Selected) || IsBlank(Respuesta6.Selected) || IsBlank(Respuesta7.Selected) || IsBlank(Respuesta8.Selected) || IsBlank(Respuesta9.Selected) || IsBlank(Respuesta10.Selected) || IsBlank(Respuesta11.Selected) || IsBlank(Respuesta12.Selected),true, false
@@ -80,7 +80,7 @@
             //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            Navigate('MEPS-04-DKE(ImgEjem2)',ScreenTransition.CoverRight)
+            Navigate('MEPS-04-CPE(Preg2)',ScreenTransition.CoverRight)
             
             
             
@@ -100,10 +100,10 @@
         Y: =672
         ZIndex: =40
 
-    Icon1_39 As icon.BackArrow:
+    Icon1_40 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
+        OnSelect: =Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95
@@ -111,7 +111,7 @@
         Y: =673
         ZIndex: =55
 
-    Image2_67 As image:
+    Image2_68 As image:
         Height: =41
         Image: =carrier_logo_300
         PaddingRight: =0.00
@@ -121,67 +121,39 @@
         Y: =9
         ZIndex: =56
 
-    Image3 As image:
+    Image13 As image:
+        BorderThickness: =1
         Height: =250
-        Image: ='DKE-IMG1'
+        Image: ='DKE-IMG9'
         Width: =330
-        X: =27
-        Y: =101
+        X: =12
+        Y: =59
         ZIndex: =57
 
-    Image6 As image:
+    Image14 As image:
+        BorderThickness: =1
         Height: =250
-        Image: ='DKE-IMG4'
+        Image: ='DKE-IMG10'
         Width: =330
-        X: =1028
-        Y: =101
+        X: =354
+        Y: =59
         ZIndex: =58
 
-    Image7 As image:
+    Image15 As image:
+        BorderThickness: =1
         Height: =250
-        Image: ='DKE-IMG2'
-        Width: =330
-        X: =361
-        Y: =101
-        ZIndex: =59
-
-    Image8 As image:
-        Height: =250
-        Image: ='DKE-IMG3'
+        Image: ='DKE-IMG11'
         Width: =330
         X: =695
-        Y: =101
+        Y: =59
+        ZIndex: =59
+
+    Image16 As image:
+        BorderThickness: =1
+        Height: =250
+        Image: ='DKE-IMG12'
+        Width: =330
+        X: =1036
+        Y: =59
         ZIndex: =60
-
-    Image9 As image:
-        Height: =250
-        Image: ='DKE-IMG5'
-        Width: =330
-        X: =27
-        Y: =389
-        ZIndex: =61
-
-    Image10 As image:
-        Height: =250
-        Image: ='DKE-IMG6'
-        Width: =330
-        X: =364
-        Y: =389
-        ZIndex: =62
-
-    Image11 As image:
-        Height: =250
-        Image: ='DKE-IMG7'
-        Width: =330
-        X: =696
-        Y: =389
-        ZIndex: =63
-
-    Image12 As image:
-        Height: =250
-        Image: ='DKE-IMG8'
-        Width: =330
-        X: =1028
-        Y: =389
-        ZIndex: =64
 
