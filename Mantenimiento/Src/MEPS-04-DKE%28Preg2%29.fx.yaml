@@ -13,6 +13,47 @@
         
         ClearCollect(AsignadoOP,{NombreOp: Operador})
 
+    Label10_475 As label:
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Text: ="Realizado"
+        Width: =151.76
+        X: =45
+        Y: =58
+        ZIndex: =1
+
+    Label10_476 As label:
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Text: ="No realizado"
+        Width: =159.43
+        X: =225
+        Y: =58
+        ZIndex: =2
+
+    Label10_477 As label:
+        FontWeight: =FontWeight.Bold
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Text: ="[R] "
+        Width: =45.90
+        Y: =58
+        ZIndex: =3
+
+    Label10_478 As label:
+        FontWeight: =FontWeight.Bold
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Text: ="[N] "
+        Width: =63.77
+        X: =181
+        Y: =58
+        ZIndex: =4
+
     Label10_464 As label:
         FontWeight: =FontWeight.Bold
         PaddingRight: =6.37
@@ -22,7 +63,7 @@
         Width: =283
         X: =541
         Y: =58
-        ZIndex: =1
+        ZIndex: =5
 
     Preg1_47 As label:
         Height: =46
@@ -32,7 +73,7 @@
         Text: ="N."
         Width: =33
         Y: =107
-        ZIndex: =3
+        ZIndex: =6
 
     Preg1_48 As label:
         Height: =46
@@ -42,7 +83,7 @@
         Text: ="O."
         Width: =33
         Y: =155
-        ZIndex: =4
+        ZIndex: =7
 
     Preg1_49 As label:
         Height: =46
@@ -52,7 +93,7 @@
         Text: ="P."
         Width: =33
         Y: =202
-        ZIndex: =5
+        ZIndex: =8
 
     Preg1_50 As label:
         Height: =46
@@ -62,7 +103,7 @@
         Text: ="Q."
         Width: =33
         Y: =249
-        ZIndex: =6
+        ZIndex: =9
 
     Preg1_51 As label:
         Height: =46
@@ -72,7 +113,7 @@
         Text: ="R."
         Width: =33
         Y: =300
-        ZIndex: =7
+        ZIndex: =10
 
     Preg1_52 As label:
         Height: =46
@@ -82,7 +123,7 @@
         Text: ="S."
         Width: =33
         Y: =349
-        ZIndex: =8
+        ZIndex: =11
 
     Btn3_5 As button:
         Fill: =RGBA(0, 18, 107, 1)
@@ -99,7 +140,7 @@
         Width: =173
         X: =1182
         Y: =164
-        ZIndex: =14
+        ZIndex: =12
 
     Btn4_5 As button:
         Fill: =RGBA(0, 18, 107, 1)
@@ -115,7 +156,7 @@
         Width: =173
         X: =1182
         Y: =210
-        ZIndex: =15
+        ZIndex: =13
 
     Btn5_5 As button:
         Fill: =RGBA(0, 18, 107, 1)
@@ -131,7 +172,7 @@
         Width: =173
         X: =1182
         Y: =261
-        ZIndex: =16
+        ZIndex: =14
 
     Btn6_5 As button:
         Fill: =RGBA(0, 18, 107, 1)
@@ -147,7 +188,7 @@
         Width: =173
         X: =1182
         Y: =311
-        ZIndex: =17
+        ZIndex: =15
 
     Btn7_5 As button:
         Fill: =RGBA(0, 18, 107, 1)
@@ -163,7 +204,7 @@
         Width: =173
         X: =1182
         Y: =358
-        ZIndex: =18
+        ZIndex: =16
 
     Preg2_5 As label:
         Height: =48
@@ -173,7 +214,7 @@
         Width: =1081
         X: =101
         Y: =106
-        ZIndex: =33
+        ZIndex: =17
 
     Resp3_5 As dropdown:
         AllowEmptySelection: =true
@@ -194,7 +235,7 @@
         Width: =67
         X: =33
         Y: =164
-        ZIndex: =34
+        ZIndex: =18
 
     Preg3_5 As label:
         Height: =47
@@ -204,7 +245,7 @@
         Width: =1081
         X: =101
         Y: =154
-        ZIndex: =35
+        ZIndex: =19
 
     Resp4_5 As dropdown:
         AllowEmptySelection: =true
@@ -225,7 +266,7 @@
         Width: =67
         X: =33
         Y: =211
-        ZIndex: =36
+        ZIndex: =20
 
     Preg4_5 As label:
         Height: =43
@@ -235,7 +276,7 @@
         Width: =1081
         X: =100
         Y: =202
-        ZIndex: =37
+        ZIndex: =21
 
     Resp5_5 As dropdown:
         AllowEmptySelection: =true
@@ -256,7 +297,7 @@
         Width: =67
         X: =33
         Y: =259
-        ZIndex: =38
+        ZIndex: =22
 
     Preg5_5 As label:
         Height: =52
@@ -266,7 +307,7 @@
         Width: =1081
         X: =101
         Y: =246
-        ZIndex: =39
+        ZIndex: =23
 
     Resp6_5 As dropdown:
         AllowEmptySelection: =true
@@ -287,7 +328,7 @@
         Width: =67
         X: =33
         Y: =310
-        ZIndex: =41
+        ZIndex: =24
 
     Preg6_5 As label:
         Height: =48
@@ -297,7 +338,7 @@
         Width: =1081
         X: =101
         Y: =299
-        ZIndex: =42
+        ZIndex: =25
 
     Preg7_5 As label:
         Height: =47
@@ -307,7 +348,7 @@
         Width: =1081
         X: =101
         Y: =348
-        ZIndex: =43
+        ZIndex: =26
 
     Resp7_5 As dropdown:
         AllowEmptySelection: =true
@@ -328,7 +369,7 @@
         Width: =67
         X: =33
         Y: =357
-        ZIndex: =44
+        ZIndex: =27
 
     Resp2_5 As dropdown:
         AllowEmptySelection: =true
@@ -349,7 +390,7 @@
         Width: =67
         X: =33
         Y: =118
-        ZIndex: =57
+        ZIndex: =28
 
     Rectangle2_467 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -357,7 +398,7 @@
         Width: =1366
         X: =0.00
         Y: =153
-        ZIndex: =59
+        ZIndex: =29
 
     Rectangle2_468 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -365,7 +406,7 @@
         Width: =1366
         X: =0.00
         Y: =201
-        ZIndex: =60
+        ZIndex: =30
 
     Rectangle2_469 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -373,7 +414,7 @@
         Width: =1366
         X: =0.00
         Y: =245
-        ZIndex: =61
+        ZIndex: =31
 
     Rectangle2_470 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -381,7 +422,7 @@
         Width: =1366
         X: =0.00
         Y: =298
-        ZIndex: =62
+        ZIndex: =32
 
     Rectangle2_471 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -389,7 +430,7 @@
         Width: =1366
         X: =0.00
         Y: =347
-        ZIndex: =63
+        ZIndex: =33
 
     Rectangle2_472 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -397,7 +438,7 @@
         Width: =1366
         X: =0.00
         Y: =395
-        ZIndex: =64
+        ZIndex: =34
 
     Btn2_6 As button:
         Fill: =RGBA(0, 18, 107, 1)
@@ -414,7 +455,7 @@
         Width: =173
         X: =1182
         Y: =119
-        ZIndex: =71
+        ZIndex: =35
 
     Label9_150 As label:
         Align: =Align.Center
@@ -428,7 +469,7 @@
         Text: ="Descripción de las Actividades a Realizar"
         Width: =1366
         X: =0.00
-        ZIndex: =72
+        ZIndex: =36
 
     Rectangle2_494 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -436,7 +477,7 @@
         Width: =1366
         X: =0.00
         Y: =99
-        ZIndex: =73
+        ZIndex: =37
 
     Image2_74 As image:
         Height: =41
@@ -446,7 +487,7 @@
         Width: =266.56
         X: =1099
         Y: =9
-        ZIndex: =74
+        ZIndex: =38
 
     Container1_11 As groupContainer.manualLayoutContainer:
         Height: =768
@@ -455,7 +496,7 @@
         Visible: =ShowPopUp
         Width: =1366
         X: =0.00
-        ZIndex: =75
+        ZIndex: =39
 
         HtmlText3_25 As htmlViewer:
             Height: =768
@@ -878,47 +919,6 @@
                 Y: =105
                 ZIndex: =22
 
-    Label10_475 As label:
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =16.58
-        Text: ="Realizado"
-        Width: =151.76
-        X: =45
-        Y: =58
-        ZIndex: =76
-
-    Label10_476 As label:
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =16.58
-        Text: ="No realizado"
-        Width: =159.43
-        X: =225
-        Y: =58
-        ZIndex: =77
-
-    Label10_477 As label:
-        FontWeight: =FontWeight.Bold
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =16.58
-        Text: ="[R] "
-        Width: =45.90
-        Y: =58
-        ZIndex: =78
-
-    Label10_478 As label:
-        FontWeight: =FontWeight.Bold
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =16.58
-        Text: ="[N] "
-        Width: =63.77
-        X: =181
-        Y: =58
-        ZIndex: =79
-
     Icon3_46 As icon.NextArrow:
         AutoDisableOnSelect: |
             =//If(
@@ -984,7 +984,7 @@
         Width: =88
         X: =1256.83
         Y: =681
-        ZIndex: =80
+        ZIndex: =40
 
     Icon1_48 As icon.BackArrow:
         Height: =86
@@ -995,5 +995,5 @@
         Width: =147.95
         X: =53
         Y: =682
-        ZIndex: =81
+        ZIndex: =41
 
