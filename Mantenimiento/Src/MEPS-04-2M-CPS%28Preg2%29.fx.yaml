@@ -1,4 +1,4 @@
-"'MEPS-04-DKE(Preg1)' As screen":
+"'MEPS-04-2M-CPS(Preg2)' As screen":
     OnVisible: |
         =//Variables para traerme los datos de los inputs que se encuentran en la pantalla "Datos_MP"
         Set(Dato_Localizacion,Label8_11.Text);
