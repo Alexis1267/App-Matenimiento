@@ -122,9 +122,38 @@
         ZIndex: =56
 
     Image3 As image:
-        Height: =290
+        BorderThickness: =1
+        Height: =237
         Image: ='DKE-IMG1'
-        Width: =411
-        Y: =59
+        Width: =310
+        X: =27
+        Y: =73
         ZIndex: =57
+
+    Image6 As image:
+        BorderThickness: =1
+        Height: =237
+        Image: ='DKE-IMG4'
+        Width: =310
+        X: =1028
+        Y: =73
+        ZIndex: =58
+
+    Image7 As image:
+        BorderThickness: =1
+        Height: =237
+        Image: ='DKE-IMG2'
+        Width: =310
+        X: =361
+        Y: =73
+        ZIndex: =59
+
+    Image8 As image:
+        BorderThickness: =1
+        Height: =237
+        Image: ='DKE-IMG3'
+        Width: =310
+        X: =695
+        Y: =73
+        ZIndex: =60
 
