@@ -1,4 +1,4 @@
-"'MEPS-04-DKE(Preg2)' As screen":
+"'MEPS-04-DKE(Preg3)' As screen":
     OnVisible: |
         =//Variables para traerme los datos de los inputs que se encuentran en la pantalla "Datos_MP"
         Set(Dato_Localizacion,Label8_11.Text);
@@ -13,7 +13,7 @@
         
         ClearCollect(AsignadoOP,{NombreOp: Operador})
 
-    Label10_464 As label:
+    Label10_470 As label:
         FontWeight: =FontWeight.Bold
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -24,165 +24,295 @@
         Y: =58
         ZIndex: =1
 
-    Preg1_45 As label:
+    Preg1_61 As label:
         Height: =46
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="M."
+        Text: ="A."
         Width: =33
         Y: =106
         ZIndex: =2
 
-    Preg1_47 As label:
+    Preg1_63 As label:
         Height: =46
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="N."
+        Text: ="B."
         Width: =33
         Y: =152
         ZIndex: =3
 
-    Preg1_48 As label:
+    Preg1_64 As label:
         Height: =46
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="O."
+        Text: ="C."
         Width: =33
         Y: =200
         ZIndex: =4
 
-    Preg1_49 As label:
+    Preg1_65 As label:
         Height: =46
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="P."
+        Text: ="D."
         Width: =33
         Y: =247
         ZIndex: =5
 
-    Preg1_50 As label:
+    Preg1_66 As label:
         Height: =46
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="Q."
+        Text: ="E."
         Width: =33
         Y: =294
         ZIndex: =6
 
-    Preg1_51 As label:
+    Preg1_67 As label:
         Height: =46
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="R."
+        Text: ="F."
         Width: =33
         Y: =345
         ZIndex: =7
 
-    Preg1_52 As label:
+    Preg1_68 As label:
         Height: =46
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="S."
+        Text: ="G."
         Width: =33
         Y: =394
         ZIndex: =8
 
-    Btn3_5 As button:
+    Preg1_69 As label:
+        Height: =46
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =11
+        Text: ="H."
+        Width: =33
+        Y: =439
+        ZIndex: =9
+
+    Preg1_70 As label:
+        Height: =46
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =11
+        Text: ="I."
+        Width: =33
+        Y: =482
+        ZIndex: =10
+
+    Preg1_71 As label:
+        Height: =38
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =11
+        Text: ="J."
+        Width: =33
+        Y: =528
+        ZIndex: =11
+
+    Preg1_72 As label:
+        Height: =46
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =11
+        Text: ="K."
+        Width: =33
+        Y: =566
+        ZIndex: =12
+
+    Preg1_73 As label:
+        Height: =46
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =11
+        Text: ="L."
+        Width: =33
+        Y: =611
+        ZIndex: =13
+
+    Btn3_7 As button:
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
             =Set(BotonActivo,"Boton3");
-            Set(Pregunta,Preg3_5.Text);
+            Set(Pregunta,Preg3_7.Text);
             UpdateContext({ShowPopUp : true});
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
-        Visible: =If(Resp3_5.Selected.Value = "N", true, false) 
+        Visible: =If(Resp3_7.Selected.Value = "N", true, false) 
         Width: =173
         X: =1182
         Y: =209
         ZIndex: =14
 
-    Btn4_5 As button:
+    Btn4_7 As button:
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
-            =Set(Pregunta,Preg4_5.Text);
+            =Set(Pregunta,Preg4_7.Text);
             UpdateContext({ShowPopUp : true});
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
-        Visible: =If(Resp4_5.Selected.Value = "N", true, false) 
+        Visible: =If(Resp4_7.Selected.Value = "N", true, false) 
         Width: =173
         X: =1182
         Y: =255
         ZIndex: =15
 
-    Btn5_5 As button:
+    Btn5_7 As button:
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
-            =Set(Pregunta,Preg5_5.Text);
+            =Set(Pregunta,Preg5_7.Text);
             UpdateContext({ShowPopUp : true});
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
-        Visible: =If(Resp5_5.Selected.Value = "N", true, false) 
+        Visible: =If(Resp5_7.Selected.Value = "N", true, false) 
         Width: =173
         X: =1182
         Y: =306
         ZIndex: =16
 
-    Btn6_5 As button:
+    Btn6_7 As button:
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
-            =Set(Pregunta,Preg6_5.Text);
+            =Set(Pregunta,Preg6_7.Text);
             UpdateContext({ShowPopUp : true});
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
-        Visible: =If(Resp6_5.Selected.Value = "N", true, false) 
+        Visible: =If(Resp6_7.Selected.Value = "N", true, false) 
         Width: =173
         X: =1182
         Y: =356
         ZIndex: =17
 
-    Btn7_5 As button:
+    Btn7_7 As button:
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
-            =Set(Pregunta,Preg7_5.Text);
+            =Set(Pregunta,Preg7_7.Text);
             UpdateContext({ShowPopUp : true});
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
-        Visible: =If(Resp7_5.Selected.Value = "N", true, false) 
+        Visible: =If(Resp7_7.Selected.Value = "N", true, false) 
         Width: =173
         X: =1182
         Y: =403
         ZIndex: =18
 
-    Rectangle1_77 As rectangle:
+    Btn8_5 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =29
+        OnSelect: |-
+            =Set(Pregunta,Preg8_5.Text);
+            UpdateContext({ShowPopUp : true});
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17
+        Text: ="Justificación"
+        Visible: =If(Resp8_5.Selected.Value = "N", true, false) 
+        Width: =173
+        X: =1182
+        Y: =450
+        ZIndex: =19
+
+    Btn9_5 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =29
+        OnSelect: |-
+            =Set(Pregunta,Preg9_5.Text);
+            UpdateContext({ShowPopUp : true});
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17
+        Text: ="Justificación"
+        Visible: =If(Resp9_5.Selected.Value = "N", true, false) 
+        Width: =173
+        X: =1182
+        Y: =493
+        ZIndex: =20
+
+    Btn10_5 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =29
+        OnSelect: |-
+            =Set(Pregunta,Preg10_5.Text);
+            UpdateContext({ShowPopUp : true});
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17
+        Text: ="Justificación"
+        Visible: =If(Resp10_5.Selected.Value = "N", true, false) 
+        Width: =173
+        X: =1182
+        Y: =534
+        ZIndex: =21
+
+    Btn11_5 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =29
+        OnSelect: |-
+            =Set(Pregunta,Preg11_5.Text);
+            UpdateContext({ShowPopUp : true});
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17
+        Text: ="Justificación"
+        Visible: =If(Resp11_5.Selected.Value = "N", true, false) 
+        Width: =173
+        X: =1182
+        Y: =576
+        ZIndex: =22
+
+    Btn12_5 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =29
+        OnSelect: |-
+            =Set(Pregunta,Preg12_5.Text);
+            UpdateContext({ShowPopUp : true});
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17
+        Text: ="Justificación"
+        Visible: =If(Resp12_5.Selected.Value = "N", true, false) 
+        Width: =173
+        X: =1182
+        Y: =620
+        ZIndex: =23
+
+    Rectangle1_79 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =59
         Width: =1366
         X: =0.00
         ZIndex: =24
 
-    Label9_122 As label:
+    Label9_140 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -195,7 +325,7 @@
         X: =0.00
         ZIndex: =25
 
-    Rectangle2_465 As rectangle:
+    Rectangle2_481 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
         Width: =1366
@@ -203,7 +333,7 @@
         Y: =99
         ZIndex: =26
 
-    Label10_461 As label:
+    Label10_472 As label:
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =16.58
@@ -213,7 +343,7 @@
         Y: =59
         ZIndex: =27
 
-    Label10_463 As label:
+    Label10_474 As label:
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =16.58
@@ -223,7 +353,7 @@
         Y: =59
         ZIndex: =28
 
-    Label10_460 As label:
+    Label10_471 As label:
         FontWeight: =FontWeight.Bold
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -234,7 +364,7 @@
         Y: =59
         ZIndex: =29
 
-    Label10_462 As label:
+    Label10_473 As label:
         FontWeight: =FontWeight.Bold
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -245,7 +375,7 @@
         Y: =59
         ZIndex: =30
 
-    Preg1_46 As label:
+    Preg1_62 As label:
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -255,7 +385,7 @@
         Y: =106
         ZIndex: =31
 
-    Resp1_7 As dropdown:
+    Resp1_9 As dropdown:
         AllowEmptySelection: =true
         BorderColor: =RGBA(0, 40, 85, 1)
         ChevronBackground: =RGBA(0, 40, 85, 1)
@@ -266,7 +396,7 @@
         Items: =["R","N"]
         OnSelect: |
             =If(
-                IsBlank(Resp1_7.Selected),
+                IsBlank(Resp1_9.Selected),
                 true
             )
         PaddingRight: =12.76
@@ -278,7 +408,7 @@
         Y: =117
         ZIndex: =32
 
-    Preg2_5 As label:
+    Preg2_7 As label:
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -288,7 +418,7 @@
         Y: =151
         ZIndex: =33
 
-    Resp3_5 As dropdown:
+    Resp3_7 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -297,7 +427,7 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Resp3_5.Selected),
+                IsBlank(Resp3_7.Selected),
                 true
             )
         PaddingRight: =12.76
@@ -309,7 +439,7 @@
         Y: =209
         ZIndex: =34
 
-    Preg3_5 As label:
+    Preg3_7 As label:
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -319,7 +449,7 @@
         Y: =199
         ZIndex: =35
 
-    Resp4_5 As dropdown:
+    Resp4_7 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -328,7 +458,7 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Resp4_5.Selected),
+                IsBlank(Resp4_7.Selected),
                 true
             )
         PaddingRight: =12.76
@@ -340,7 +470,7 @@
         Y: =256
         ZIndex: =36
 
-    Preg4_5 As label:
+    Preg4_7 As label:
         Height: =43
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -350,7 +480,7 @@
         Y: =247
         ZIndex: =37
 
-    Resp5_5 As dropdown:
+    Resp5_7 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -359,7 +489,7 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Resp5_5.Selected),
+                IsBlank(Resp5_7.Selected),
                 true
             )
         PaddingRight: =12.76
@@ -371,7 +501,7 @@
         Y: =304
         ZIndex: =38
 
-    Preg5_5 As label:
+    Preg5_7 As label:
         Height: =52
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -381,7 +511,7 @@
         Y: =291
         ZIndex: =39
 
-    Icon3_42 As icon.NextArrow:
+    Icon3_44 As icon.NextArrow:
         AutoDisableOnSelect: |
             =//If(
              // IsBlank(Respuesta1.Selected) || IsBlank(Respuesta2.Selected) || IsBlank(Respuesta3.Selected) || IsBlank(Respuesta4.Selected) || IsBlank(Respuesta5.Selected) || IsBlank(Respuesta6.Selected) || IsBlank(Respuesta7.Selected) || IsBlank(Respuesta8.Selected) || IsBlank(Respuesta9.Selected) || IsBlank(Respuesta10.Selected) || IsBlank(Respuesta11.Selected) || IsBlank(Respuesta12.Selected),true, false
@@ -428,7 +558,7 @@
             //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            Navigate(MEPS,ScreenTransition.CoverRight)
+            Navigate('MEPS-04-DKE(Preg2)',ScreenTransition.CoverRight)
             
             
             
@@ -448,7 +578,7 @@
         Y: =672
         ZIndex: =40
 
-    Resp6_5 As dropdown:
+    Resp6_7 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -457,7 +587,7 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Resp6_5.Selected),
+                IsBlank(Resp6_7.Selected),
                 true
             )
         PaddingRight: =12.76
@@ -469,7 +599,7 @@
         Y: =355
         ZIndex: =41
 
-    Preg6_5 As label:
+    Preg6_7 As label:
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -479,7 +609,7 @@
         Y: =344
         ZIndex: =42
 
-    Preg7_5 As label:
+    Preg7_7 As label:
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -489,7 +619,7 @@
         Y: =393
         ZIndex: =43
 
-    Resp7_5 As dropdown:
+    Resp7_7 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -498,7 +628,7 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Resp7_5.Selected),
+                IsBlank(Resp7_7.Selected),
                 true
             )
         PaddingRight: =12.76
@@ -510,10 +640,165 @@
         Y: =402
         ZIndex: =44
 
-    Icon1_43 As icon.BackArrow:
+    Resp8_5 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Resp8_5.Selected),
+                true
+            )
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Size: =16.58
+        Width: =67
+        X: =33
+        Y: =450
+        ZIndex: =45
+
+    Preg8_5 As label:
+        Height: =44
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Text: ="Realizar limpieza en guía lineal de movimiento horizontal y vertical del D-Stacker, eliminar grasa acumulada y verificar condiciones físicas, lubricar con grasa de litio blanco luego de inspeccionar (Cambiar de ser necesario)."
+        Width: =1081
+        X: =101
+        Y: =440
+        ZIndex: =46
+
+    Resp9_5 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Resp9_5.Selected),
+                true
+            )
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Size: =16.58
+        Width: =67
+        X: =33
+        Y: =494
+        ZIndex: =47
+
+    Preg9_5 As label:
+        Height: =42
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Text: ="Reapriete y verificación de tornillos de sujeción de guía lineal de movimiento horizontal y vertical del De-Stacker (marcar testigo en caso de no encontrarse)."
+        Width: =1081
+        X: =101
+        Y: =483
+        ZIndex: =48
+
+    Resp10_5 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Resp10_5.Selected),
+                true
+            )
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Size: =16.58
+        Width: =67
+        X: =33
+        Y: =535
+        ZIndex: =49
+
+    Preg10_5 As label:
+        Height: =39
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Text: ="Limpieza y verificación visual de baleros lineales de movimiento horizontal y vertical de De-Stacker 2 (Cambiar de ser necesario)."
+        Width: =1081
+        X: =101
+        Y: =528
+        ZIndex: =50
+
+    Resp11_5 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Resp11_5.Selected),
+                true
+            )
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Size: =16.58
+        Width: =67
+        X: =33
+        Y: =578
+        ZIndex: =51
+
+    Preg11_5 As label:
+        Height: =43
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Text: ="Lubricación de baleros lineales de movimiento horizontal y vertical de De-Stacker (Verificar tipo de lubricante y cantidad a suministrar)."
+        Width: =1081
+        X: =101
+        Y: =568
+        ZIndex: =52
+
+    Resp12_5 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Resp12_5.Selected),
+                true
+            )
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Size: =16.58
+        Width: =67
+        X: =33
+        Y: =623
+        ZIndex: =53
+
+    Preg12_5 As label:
+        Height: =42
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Text: ="Verificar montaje de ventosa. Reapriete y verificación de arandela y tuerca, válvula check, conector push lock y marcar testigo si no tienen."
+        Width: =1081
+        X: =101
+        Y: =612
+        ZIndex: =54
+
+    Icon1_45 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('MEPS-04-DKE(Preg1)',ScreenTransition.Fade)
+        OnSelect: =Navigate('MEPS-04-DKE(ImgEjem3)',ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95
@@ -521,7 +806,7 @@
         Y: =673
         ZIndex: =55
 
-    Image2_71 As image:
+    Image2_73 As image:
         Height: =41
         Image: =carrier_logo_300
         PaddingRight: =0.00
@@ -531,7 +816,7 @@
         Y: =9
         ZIndex: =56
 
-    Resp2_5 As dropdown:
+    Resp2_7 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
@@ -540,7 +825,7 @@
         Items: =["R","N"]
         OnSelect: |-
             =If(
-                IsBlank(Resp1_7.Selected),
+                IsBlank(Resp1_9.Selected),
                 true
             )
         PaddingRight: =12.76
@@ -552,7 +837,7 @@
         Y: =163
         ZIndex: =57
 
-    Rectangle2_466 As rectangle:
+    Rectangle2_482 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
@@ -560,7 +845,7 @@
         Y: =150
         ZIndex: =58
 
-    Rectangle2_467 As rectangle:
+    Rectangle2_483 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
@@ -568,7 +853,7 @@
         Y: =198
         ZIndex: =59
 
-    Rectangle2_468 As rectangle:
+    Rectangle2_484 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
@@ -576,7 +861,7 @@
         Y: =246
         ZIndex: =60
 
-    Rectangle2_469 As rectangle:
+    Rectangle2_485 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
@@ -584,7 +869,7 @@
         Y: =290
         ZIndex: =61
 
-    Rectangle2_470 As rectangle:
+    Rectangle2_486 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
@@ -592,7 +877,7 @@
         Y: =343
         ZIndex: =62
 
-    Rectangle2_471 As rectangle:
+    Rectangle2_487 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
@@ -600,7 +885,7 @@
         Y: =392
         ZIndex: =63
 
-    Rectangle2_472 As rectangle:
+    Rectangle2_488 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
@@ -608,42 +893,82 @@
         Y: =440
         ZIndex: =64
 
-    Btn1_8 As button:
+    Rectangle2_489 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        X: =0.00
+        Y: =484
+        ZIndex: =65
+
+    Rectangle2_490 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        X: =0.00
+        Y: =527
+        ZIndex: =66
+
+    Rectangle2_491 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        X: =0.00
+        Y: =567
+        ZIndex: =67
+
+    Rectangle2_492 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        X: =0.00
+        Y: =611
+        ZIndex: =68
+
+    Rectangle2_493 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        X: =0.00
+        Y: =654
+        ZIndex: =69
+
+    Btn1_10 As button:
         AutoDisableOnSelect: =
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |
             =Set(BotonActivo,"Boton1");
-            Set(Pregunta,Preg1_46.Text); //Variable que me trae la pregunta
+            Set(Pregunta,Preg1_62.Text); //Variable que me trae la pregunta
             UpdateContext({ShowPopUp : true}); //Variable para habilitar el ModalPopUp
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
-        Visible: =If(Resp1_7.Selected.Value = "N", true, false) 
+        Visible: =If(Resp1_9.Selected.Value = "N", true, false) 
         Width: =173
         X: =1182
         Y: =115
         ZIndex: =70
 
-    Btn2_6 As button:
+    Btn2_8 As button:
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
             =Set(BotonActivo,"Boton2");
-            Set(Pregunta,Preg2_5.Text);
+            Set(Pregunta,Preg2_7.Text);
             UpdateContext({ShowPopUp : true});
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
-        Visible: =If(Resp2_5.Selected.Value = "N", true, false) 
+        Visible: =If(Resp2_7.Selected.Value = "N", true, false) 
         Width: =173
         X: =1182
         Y: =164
         ZIndex: =71
 
-    Container1_8 As groupContainer.manualLayoutContainer:
+    Container1_10 As groupContainer.manualLayoutContainer:
         Height: =768
         PaddingRight: =0.00
         PaddingTop: =0.00
@@ -652,7 +977,7 @@
         X: =0.00
         ZIndex: =72
 
-        HtmlText3_22 As htmlViewer:
+        HtmlText3_24 As htmlViewer:
             Height: =768
             HtmlText: |-
                 ="<div style=""
@@ -672,7 +997,7 @@
             Width: =1366
             ZIndex: =1
 
-        Container2_8 As groupContainer.manualLayoutContainer:
+        Container2_10 As groupContainer.manualLayoutContainer:
             Fill: =RGBA(227, 234, 243, 1)
             Height: =595
             PaddingRight: =0.00
@@ -682,18 +1007,18 @@
             Y: =112
             ZIndex: =2
 
-            Rectangle3_9 As rectangle:
+            Rectangle3_11 As rectangle:
                 Fill: =RGBA(0, 40, 85, 1)
                 Height: =65
                 Width: =1272.89
                 X: =0.00
                 ZIndex: =4
 
-            Button7_8 As button:
+            Button7_10 As button:
                 BorderStyle: =BorderStyle.None
                 DisplayMode: |-
                     =//Validacion de boton de que debe cumplir y escribir en justificacion
-                    If(IsBlank(TextInput1_49),DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
+                    If(IsBlank(TextInput1_59),DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
                 Fill: =RGBA(97, 181, 73, 1)
                 FontWeight: =FontWeight.Bold
                 OnSelect: |+
@@ -711,12 +1036,12 @@
                     
                     
                     // Set file1 name
-                        Set(fileName1, Concatenate(TextInput1_46.Text &"_1",Now(),".jpg"));
+                        Set(fileName1, Concatenate(TextInput1_56.Text &"_1",Now(),".jpg"));
                     
                      
                     
                         // Get file1 binary data and convert it to base64
-                        Set(attachmentValue1, JSON(UploadedImage7_8.Image, JSONFormat.IncludeBinaryData));
+                        Set(attachmentValue1, JSON(UploadedImage7_10.Image, JSONFormat.IncludeBinaryData));
                         Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
                     
                      
@@ -735,26 +1060,26 @@
                     //INGRESAR DATOS A LA TABLA HALLAZGOS
                     Patch(CMXE_TablaH_MP,Defaults(CMXE_TablaH_MP),
                     {
-                    Asignado: Dropdown4_9.Selected.Value,
-                    Localizacion: TextInput1_45.Text,
-                    Proc_No: TextInput1_46.Text,
-                    Nom_Maquina:TextInput1_47.Text,
-                    Clas_Mantenimiento: TextInput1_48.Text,
+                    Asignado: Dropdown4_11.Selected.Value,
+                    Localizacion: TextInput1_55.Text,
+                    Proc_No: TextInput1_56.Text,
+                    Nom_Maquina:TextInput1_57.Text,
+                    Clas_Mantenimiento: TextInput1_58.Text,
                     Fecha_Inicio: Now(),
-                    Justificacion: TextInput1_49.Text,
+                    Justificacion: TextInput1_59.Text,
                     Imagenes: attachment1Link,
-                    Actividad: ACT_7.Text,
+                    Actividad: ACT_9.Text,
                     Estatus: "Abierto"
                     });
                     
                     UpdateContext({ShowPopUp: false}); //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
-                    Reset(TextInput1_49);
-                    Reset(AddMediaButton6_8);
+                    Reset(TextInput1_59);
+                    Reset(AddMediaButton6_10);
                     
                     
-                    If(BotonActivo = "Boton1", Btn1_8.DisplayMode.View);
-                    If(BotonActivo = "Boton2",Btn2_6.DisplayMode.Disabled, true);
-                    If(BotonActivo = "Boton3", Btn3_5.DisplayMode.Disabled, true);
+                    If(BotonActivo = "Boton1", Btn1_10.DisplayMode.View);
+                    If(BotonActivo = "Boton2",Btn2_8.DisplayMode.Disabled, true);
+                    If(BotonActivo = "Boton3", Btn3_7.DisplayMode.Disabled, true);
                     
                     Set(BotonActivo, "");
                     
@@ -769,22 +1094,22 @@
                 Y: =538
                 ZIndex: =5
 
-            Icon4_9 As icon.Cancel:
+            Icon4_11 As icon.Cancel:
                 Color: =RGBA(255, 255, 255, 1)
                 Height: =65
                 Icon: =Icon.Cancel
                 OnSelect: |-
                     =UpdateContext({ShowPopUp: false});
-                    Reset(TextInput1_49);
-                    Reset(AddMediaButton6_8);
-                    Reset(Dropdown4_9)
+                    Reset(TextInput1_59);
+                    Reset(AddMediaButton6_10);
+                    Reset(Dropdown4_11)
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =81.63
                 X: =1191.25
                 ZIndex: =6
 
-            Image4_9 As image:
+            Image4_11 As image:
                 Height: =65
                 Image: =carrier_logo_300
                 PaddingRight: =0.00
@@ -793,7 +1118,7 @@
                 X: =25.51
                 ZIndex: =7
 
-            Label9_123 As label:
+            Label9_141 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =65
@@ -805,14 +1130,14 @@
                 X: =369.88
                 ZIndex: =8
 
-            Group15_8 As group:
+            Group15_10 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_130 As label:
+                Label9_148 As label:
                     FontWeight: =FontWeight.Bold
                     Height: =48
                     PaddingRight: =6.37
@@ -825,7 +1150,7 @@
                     Y: =351
                     ZIndex: =2
 
-                TextInput1_49 As text:
+                TextInput1_59 As text:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderThickness: =1
                     Clear: =true
@@ -841,14 +1166,14 @@
                     Y: =399
                     ZIndex: =3
 
-            Group14_8 As group:
+            Group14_10 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                ACT_7 As text:
+                ACT_9 As text:
                     Default: =Pregunta
                     DisplayMode: =DisplayMode.View
                     Height: =68
@@ -861,7 +1186,7 @@
                     Y: =283
                     ZIndex: =9
 
-                Label9_129 As label:
+                Label9_147 As label:
                     FontWeight: =FontWeight.Bold
                     PaddingRight: =6.37
                     PaddingTop: =6.37
@@ -873,14 +1198,14 @@
                     Y: =243
                     ZIndex: =18
 
-            Group13_9 As group:
+            Group13_11 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_124 As label:
+                Label9_142 As label:
                     FontWeight: =FontWeight.Bold
                     PaddingRight: =6.37
                     PaddingTop: =6.37
@@ -892,7 +1217,7 @@
                     Y: =65
                     ZIndex: =10
 
-                TextInput1_45 As text:
+                TextInput1_55 As text:
                     Default: =Dato_Localizacion
                     DisplayMode: =DisplayMode.View
                     PaddingRight: =6.37
@@ -903,14 +1228,14 @@
                     Y: =105
                     ZIndex: =11
 
-            Group12_9 As group:
+            Group12_11 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_125 As label:
+                Label9_143 As label:
                     FontWeight: =FontWeight.Bold
                     PaddingRight: =6.37
                     PaddingTop: =6.37
@@ -922,7 +1247,7 @@
                     Y: =65
                     ZIndex: =12
 
-                TextInput1_46 As text:
+                TextInput1_56 As text:
                     Default: =Dato_Proc_No
                     DisplayMode: =DisplayMode.View
                     PaddingRight: =6.37
@@ -933,14 +1258,14 @@
                     Y: =105
                     ZIndex: =13
 
-            Group11_8 As group:
+            Group11_10 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_128 As label:
+                Label9_146 As label:
                     FontWeight: =FontWeight.Bold
                     PaddingRight: =6.37
                     PaddingTop: =6.37
@@ -952,7 +1277,7 @@
                     Y: =155
                     ZIndex: =16
 
-                TextInput1_48 As text:
+                TextInput1_58 As text:
                     Default: =Dato_ClassMtto
                     DisplayMode: =DisplayMode.View
                     PaddingRight: =6.37
@@ -963,14 +1288,14 @@
                     Y: =195
                     ZIndex: =17
 
-            Group10_8 As group:
+            Group10_10 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_127 As label:
+                Label9_145 As label:
                     FontWeight: =FontWeight.Bold
                     PaddingRight: =6.37
                     PaddingTop: =6.37
@@ -982,7 +1307,7 @@
                     Y: =155
                     ZIndex: =14
 
-                TextInput1_47 As text:
+                TextInput1_57 As text:
                     Default: =Dato_NomMaquina
                     DisplayMode: =DisplayMode.View
                     PaddingRight: =6.37
@@ -993,18 +1318,18 @@
                     Y: =195
                     ZIndex: =15
 
-            AddMediaWithImage6_8 As group:
+            AddMediaWithImage6_10 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                UploadedImage7_8 As image:
+                UploadedImage7_10 As image:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderThickness: =1
                     Height: =139
-                    Image: =If(IsBlank(AddMediaButton6_8.Media), SampleImage, AddMediaButton6_8.Media)
+                    Image: =If(IsBlank(AddMediaButton6_10.Media), SampleImage, AddMediaButton6_10.Media)
                     PaddingRight: =0.00
                     PaddingTop: =0.00
                     Width: =239.78
@@ -1012,7 +1337,7 @@
                     Y: =380
                     ZIndex: =19
 
-                AddMediaButton6_8 As addMedia:
+                AddMediaButton6_10 As addMedia:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderThickness: =1
                     ChangePictureText: ="Cambiar fotografia"
@@ -1024,7 +1349,7 @@
                     Y: =417
                     ZIndex: =20
 
-            Label9_126 As label:
+            Label9_144 As label:
                 FontWeight: =FontWeight.Bold
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -1036,7 +1361,7 @@
                 Y: =65
                 ZIndex: =21
 
-            Dropdown4_9 As dropdown:
+            Dropdown4_11 As dropdown:
                 BorderColor: =RGBA(0, 40, 85, 1)
                 BorderThickness: =1
                 ChevronBackground: =RGBA(0, 40, 85, 1)
