@@ -534,46 +534,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'MEPS-04-DKE(Preg2)'.Icon3_42.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MEPS-04-DKE(Preg2)'.Icon3_42.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 4,
-                  "charOffset": 3386,
-                  "snippet": {
-                    "text": "MEPS"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "MEPS-04-DKE(Preg2)",
-                "type": "'MEPS-04-DKE(Preg2)'.Icon3_42"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "MEPS"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'MEPS-04-DKE(Preg2)_1'.Container1_9.Container2_9.Icon4_10.AccessibleLabel"
                 }
               ],
@@ -9795,6 +9755,66 @@
                 "member": "TabIndex",
                 "module": "MEPS-04-DKE(Preg3)",
                 "type": "'MEPS-04-DKE(Preg3)'.Icon1_45"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MEPS-04-DKE(Preg2)'.Icon3_42.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MEPS-04-DKE(Preg2)'.Icon3_42.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "MEPS-04-DKE(Preg2)",
+                "type": "'MEPS-04-DKE(Preg2)'.Icon3_42"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MEPS-04-DKE(Preg2)'.Icon3_42.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MEPS-04-DKE(Preg2)'.Icon3_42.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "MEPS-04-DKE(Preg2)",
+                "type": "'MEPS-04-DKE(Preg2)'.Icon3_42"
               }
             }
           ],

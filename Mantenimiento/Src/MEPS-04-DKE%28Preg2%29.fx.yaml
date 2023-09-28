@@ -249,7 +249,7 @@
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Realizar limpieza en cremallera de movimiento VERTICAL de De-Stacker, eliminar grasa acumulada y verificar condiciones físicas, lubricar con grasa de litio blanco luego de inspeccionar (Cualquier condición anormal reportar a su supervisor)."
+        Text: ="Verificar reapriete de tornillería de pistones, en caso de no tener testigo marcarlo."
         Width: =1081
         X: =101
         Y: =106
@@ -282,7 +282,7 @@
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar condiciones de servomotor en eje V1. Realizar reapriete de tornillería. Revisar niveles de aceite en motorreductor. Rutear conexiones eléctricas."
+        Text: ="Verificar funcionamiento de pistones del centrador en De-Stacker."
         Width: =1081
         X: =101
         Y: =151
@@ -313,7 +313,7 @@
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: =" Revisar condiciones del piñón en el eje V1."
+        Text: =" Verificar funcionamiento de sensores en pistones, Testigo de la posición y reapriete del sensor."
         Width: =1081
         X: =101
         Y: =199
@@ -344,7 +344,7 @@
         Height: =43
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Realizar limpieza en cremallera de movimiento HORIZONTAL de De-Stacker, eliminar grasa acumulada y verificar condiciones físicas, lubricar con grasa de litio blanco luego de inspeccionar (Cualquier condición anormal reportar a su supervisor)."
+        Text: =" Revisión condición y ruteo mangueras neumáticas en ventosas."
         Width: =1081
         X: =100
         Y: =247
@@ -375,7 +375,7 @@
         Height: =52
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar condiciones de servomotor en eje DS1. Realizar reapriete de tornillería. Revisar niveles de aceite en motorreductor. Rutear conexiones eléctricas."
+        Text: =") Revisar fijación del tope mecánico, base del sensor y funcionamiento del sensor fotoeléctrico en V1. En DS1 revisar fijación de tope, base del sensor y funcionamiento del sensor inductivo en De-Stacker."
         Width: =1081
         X: =101
         Y: =291
@@ -428,7 +428,7 @@
             //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            Navigate(MEPS,ScreenTransition.CoverRight)
+            Navigate('MEPS-04-CPE(Preg3)',ScreenTransition.CoverRight)
             
             
             
@@ -473,7 +473,7 @@
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar condiciones del piñón en el eje DS1."
+        Text: =" Controlar y limpiar bandejas de cables (armor blocks, power track del cableado)"
         Width: =1081
         X: =101
         Y: =344
@@ -483,7 +483,7 @@
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Reapriete y verificación de tornillos de sujeción de cremallera de movimiento horizontal y vertical de De-Stacker (marcar testigo en caso de no encontrarse)."
+        Text: ="Revisar condiciones de valvular de control de vacío. Realizar limpieza. Realizar reapriete de conexiones neumáticas"
         Width: =1081
         X: =101
         Y: =393
