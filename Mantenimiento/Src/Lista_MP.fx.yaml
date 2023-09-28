@@ -11,7 +11,7 @@ Lista_MP As screen:
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =582
+        Height: =592
         Items: |+
             =//Search(CMXE_MP_N, Buscador.Text,"Proc_No")
             
@@ -206,7 +206,7 @@ Lista_MP As screen:
             PaddingTop: =0.00
             Size: =17.86
             Text: |-
-                ="Fecha de Inicio:"
+                ="Fecha de creación:"
             VerticalAlign: =VerticalAlign.Top
             Width: =332.89
             X: =29
@@ -242,7 +242,7 @@ Lista_MP As screen:
             PaddingTop: =0.00
             Size: =17.86
             Text: |-
-                ="Localizacion:"
+                ="Localización:"
             VerticalAlign: =VerticalAlign.Top
             Width: =332.89
             X: =29.32
@@ -395,8 +395,9 @@ Lista_MP As screen:
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =16.58
-        Text: |
-            =Maquina_QR
+        Text: |-
+            =//Maquina_QR
+            "MEPS-04"
         Width: =191.32
         X: =71.43
         ZIndex: =6
