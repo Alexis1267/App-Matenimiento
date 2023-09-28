@@ -72,12 +72,12 @@ Datos_MP As screen:
             =
             
             //VALIDACION DE CAMPO INVOLUCRADOS
-            If(IsBlank(Label12_15.Text),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error));
+            If(IsBlank(Label12_15.Text),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),If(Label8_12.Text = "CPE",Navigate('MEPS-04-CPE(Preg1)',ScreenTransition.Cover),Notify("Error",NotificationType.Error)));
             
             
             //VALIDACION PARA NAVEGAR AL RESPECTIVO MANTENIMIENTO PREVENTIVO
             
-            If(Label8_12.Text = "CPE",Navigate('MEPS-04-CPE(Preg1)',ScreenTransition.Cover),Notify("Error",NotificationType.Error));
+            //If(Label8_12.Text = "CPE",Navigate('MEPS-04-CPE(Preg1)',ScreenTransition.Cover),Notify("Error",NotificationType.Error));
             
             
             //HACER UNA VALIDACION DE QUE CON LA FUNCION "FIND" ENCONTRAR EN TODO EL TEXTO DEL PROC.NO LA ULTIMA PALABRA PARA LUEGO VALIDAR
