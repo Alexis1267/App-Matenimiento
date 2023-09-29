@@ -104,26 +104,6 @@
         Y: =439
         ZIndex: =9
 
-    Preg1_115 As label:
-        Height: =46
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =11
-        Text: ="AB."
-        Width: =45
-        Y: =482
-        ZIndex: =10
-
-    Preg1_116 As label:
-        Height: =38
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =11
-        Text: ="AC."
-        Width: =45
-        Y: =528
-        ZIndex: =11
-
     Btn3_11 As button:
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
@@ -221,38 +201,6 @@
         Y: =450
         ZIndex: =19
 
-    Btn9_8 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(Pregunta,Preg9_8.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp9_8.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =493
-        ZIndex: =20
-
-    Btn10_8 As button:
-        Fill: =RGBA(0, 18, 107, 1)
-        Height: =29
-        OnSelect: |-
-            =Set(Pregunta,Preg10_8.Text);
-            UpdateContext({ShowPopUp : true});
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =17
-        Text: ="Justificación"
-        Visible: =If(Resp10_8.Selected.Value = "N", true, false) 
-        Width: =173
-        X: =1182
-        Y: =534
-        ZIndex: =21
-
     Rectangle1_87 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =59
@@ -327,7 +275,7 @@
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Realizar limpieza en cremallera de movimiento VERTICAL de De-Stacker, eliminar grasa acumulada y verificar condiciones físicas, lubricar con grasa de litio blanco luego de inspeccionar (Cualquier condición anormal reportar a su supervisor)."
+        Text: ="Asegurar colocar LOTO en interruptor de Bomba de vacío."
         Width: =1081
         X: =101
         Y: =106
@@ -360,7 +308,7 @@
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar condiciones de servomotor en eje V1. Realizar reapriete de tornillería. Revisar niveles de aceite en motorreductor. Rutear conexiones eléctricas."
+        Text: =" Limpiar cubiertas de ventilador, rotores, rejilla de alimentación, rotores y aletas de bomba de vacío."
         Width: =1081
         X: =101
         Y: =151
@@ -391,7 +339,7 @@
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: =" Revisar condiciones del piñón en el eje V1."
+        Text: ="Remover y limpiar filtro de aspiración con aire comprimido, si está en malas condiciones sustitúyalo."
         Width: =1081
         X: =101
         Y: =199
@@ -422,7 +370,7 @@
         Height: =43
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Realizar limpieza en cremallera de movimiento HORIZONTAL de De-Stacker, eliminar grasa acumulada y verificar condiciones físicas, lubricar con grasa de litio blanco luego de inspeccionar (Cualquier condición anormal reportar a su supervisor)."
+        Text: ="Limpiar carcasa de bomba de vacío (que no tenga polvo/suciedad)."
         Width: =1081
         X: =100
         Y: =247
@@ -453,7 +401,7 @@
         Height: =52
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar condiciones de servomotor en eje DS1. Realizar reapriete de tornillería. Revisar niveles de aceite en motorreductor. Rutear conexiones eléctricas."
+        Text: ="Verificar condición de paletas el ancho mínimo que debe detener las paletas debe de ser de 33 mm si tiene menos sustituirlas."
         Width: =1081
         X: =101
         Y: =291
@@ -551,7 +499,7 @@
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar condiciones del piñón en el eje DS1."
+        Text: ="Revisión y reapriete de Manguera de succión"
         Width: =1081
         X: =101
         Y: =344
@@ -561,7 +509,7 @@
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Reapriete y verificación de tornillos de sujeción de cremallera de movimiento horizontal y vertical de De-Stacker (marcar testigo en caso de no encontrarse)."
+        Text: ="Realizar reapriete de tornillería entre base y bomba. Colocar testigo."
         Width: =1081
         X: =101
         Y: =393
@@ -613,73 +561,11 @@
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Realizar limpieza en guía lineal de movimiento horizontal y vertical del D-Stacker, eliminar grasa acumulada y verificar condiciones físicas, lubricar con grasa de litio blanco luego de inspeccionar (Cambiar de ser necesario)."
+        Text: =" Realizar reapriete de tornillería entre base y estructura de De-Stacker. Colocar testigo"
         Width: =1081
         X: =101
         Y: =440
         ZIndex: =46
-
-    Resp9_8 As dropdown:
-        AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-        Height: =26
-        HoverFill: =RGBA(151, 157, 172, 1)
-        Items: =["R","N"]
-        OnSelect: |-
-            =If(
-                IsBlank(Resp9_8.Selected),
-                true
-            )
-        PaddingRight: =12.76
-        PaddingTop: =12.76
-        SelectionFill: =RGBA(92, 103, 125, 1)
-        Size: =16.58
-        Width: =67
-        X: =33
-        Y: =494
-        ZIndex: =47
-
-    Preg9_8 As label:
-        Height: =42
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Text: ="Reapriete y verificación de tornillos de sujeción de guía lineal de movimiento horizontal y vertical del De-Stacker (marcar testigo en caso de no encontrarse)."
-        Width: =1081
-        X: =101
-        Y: =483
-        ZIndex: =48
-
-    Resp10_8 As dropdown:
-        AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
-        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-        Height: =26
-        HoverFill: =RGBA(151, 157, 172, 1)
-        Items: =["R","N"]
-        OnSelect: |-
-            =If(
-                IsBlank(Resp10_8.Selected),
-                true
-            )
-        PaddingRight: =12.76
-        PaddingTop: =12.76
-        SelectionFill: =RGBA(92, 103, 125, 1)
-        Size: =16.58
-        Width: =67
-        X: =33
-        Y: =535
-        ZIndex: =49
-
-    Preg10_8 As label:
-        Height: =39
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Text: ="Limpieza y verificación visual de baleros lineales de movimiento horizontal y vertical de De-Stacker 2 (Cambiar de ser necesario)."
-        Width: =1081
-        X: =101
-        Y: =528
-        ZIndex: =50
 
     Icon1_55 As icon.BackArrow:
         Height: =86
@@ -786,22 +672,6 @@
         X: =0.00
         Y: =484
         ZIndex: =65
-
-    Rectangle2_538 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
-        Height: =1
-        Width: =1366
-        X: =0.00
-        Y: =527
-        ZIndex: =66
-
-    Rectangle2_539 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
-        Height: =1
-        Width: =1366
-        X: =0.00
-        Y: =567
-        ZIndex: =67
 
     Btn1_13 As button:
         AutoDisableOnSelect: =
