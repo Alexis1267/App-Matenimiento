@@ -1,4 +1,4 @@
-"'MEPS-04-CPS(Preg2)' As screen":
+"'MEPS-04-CPS(Preg4)' As screen":
     OnVisible: |
         =//Variables para traerme los datos de los inputs que se encuentran en la pantalla "Datos_MP"
         Set(Dato_Localizacion,Label8_11.Text);
@@ -13,19 +13,19 @@
         
         ClearCollect(AsignadoOP,{NombreOp: Operador})
 
-    Label10_508 As label:
+    Label10_518 As label:
         FontWeight: =FontWeight.Bold
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =16.58
         Text: |-
-            ="CARRO DE SALIDA #1"
+            ="CARRO DE SALIDA #2"
         Width: =283
         X: =500
         Y: =59
         ZIndex: =1
 
-    Preg1_124 As label:
+    Preg1_139 As label:
         Height: =46
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -35,14 +35,14 @@
         Y: =106
         ZIndex: =2
 
-    Rectangle1_90 As rectangle:
+    Rectangle1_92 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =59
         Width: =1366
         X: =0.00
         ZIndex: =24
 
-    Label9_123 As label:
+    Label9_125 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -55,7 +55,7 @@
         X: =0.00
         ZIndex: =25
 
-    Rectangle2_547 As rectangle:
+    Rectangle2_562 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =7
         Width: =1366
@@ -63,7 +63,7 @@
         Y: =99
         ZIndex: =26
 
-    Label10_505 As label:
+    Label10_515 As label:
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =16.58
@@ -73,7 +73,7 @@
         Y: =59
         ZIndex: =27
 
-    Label10_507 As label:
+    Label10_517 As label:
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =16.58
@@ -83,7 +83,7 @@
         Y: =59
         ZIndex: =28
 
-    Label10_504 As label:
+    Label10_514 As label:
         FontWeight: =FontWeight.Bold
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -94,7 +94,7 @@
         Y: =59
         ZIndex: =29
 
-    Label10_506 As label:
+    Label10_516 As label:
         FontWeight: =FontWeight.Bold
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -105,7 +105,7 @@
         Y: =59
         ZIndex: =30
 
-    Preg1_125 As label:
+    Preg1_140 As label:
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
@@ -115,7 +115,7 @@
         Y: =106
         ZIndex: =31
 
-    Resp1_14 As dropdown:
+    Resp1_16 As dropdown:
         AllowEmptySelection: =true
         BorderColor: =RGBA(0, 40, 85, 1)
         ChevronBackground: =RGBA(0, 40, 85, 1)
@@ -126,7 +126,7 @@
         Items: =["R","N"]
         OnSelect: |
             =If(
-                IsBlank(Resp1_14.Selected),
+                IsBlank(Resp1_16.Selected),
                 true
             )
         PaddingRight: =12.76
@@ -138,7 +138,7 @@
         Y: =117
         ZIndex: =32
 
-    Icon3_54 As icon.NextArrow:
+    Icon3_56 As icon.NextArrow:
         AutoDisableOnSelect: |
             =//If(
              // IsBlank(Respuesta1.Selected) || IsBlank(Respuesta2.Selected) || IsBlank(Respuesta3.Selected) || IsBlank(Respuesta4.Selected) || IsBlank(Respuesta5.Selected) || IsBlank(Respuesta6.Selected) || IsBlank(Respuesta7.Selected) || IsBlank(Respuesta8.Selected) || IsBlank(Respuesta9.Selected) || IsBlank(Respuesta10.Selected) || IsBlank(Respuesta11.Selected) || IsBlank(Respuesta12.Selected),true, false
@@ -205,7 +205,7 @@
         Y: =672
         ZIndex: =40
 
-    Icon1_58 As icon.BackArrow:
+    Icon1_60 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
@@ -216,7 +216,7 @@
         Y: =673
         ZIndex: =55
 
-    Image2_83 As image:
+    Image2_85 As image:
         Height: =41
         Image: =carrier_logo_300
         PaddingRight: =0.00
@@ -226,7 +226,7 @@
         Y: =9
         ZIndex: =56
 
-    Rectangle2_548 As rectangle:
+    Rectangle2_563 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =1
         Width: =1366
@@ -234,25 +234,25 @@
         Y: =150
         ZIndex: =58
 
-    Btn1_15 As button:
+    Btn1_17 As button:
         AutoDisableOnSelect: =
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |
             =Set(BotonActivo,"Boton1");
-            Set(Pregunta,Preg1_125.Text); //Variable que me trae la pregunta
+            Set(Pregunta,Preg1_140.Text); //Variable que me trae la pregunta
             UpdateContext({ShowPopUp : true}); //Variable para habilitar el ModalPopUp
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
-        Visible: =If(Resp1_14.Selected.Value = "N", true, false) 
+        Visible: =If(Resp1_16.Selected.Value = "N", true, false) 
         Width: =173
         X: =1182
         Y: =115
         ZIndex: =70
 
-    Container1_18 As groupContainer.manualLayoutContainer:
+    Container1_20 As groupContainer.manualLayoutContainer:
         Height: =768
         PaddingRight: =0.00
         PaddingTop: =0.00
@@ -261,7 +261,7 @@
         X: =0.00
         ZIndex: =71
 
-        HtmlText3_32 As htmlViewer:
+        HtmlText3_34 As htmlViewer:
             Height: =768
             HtmlText: |-
                 ="<div style=""
@@ -281,7 +281,7 @@
             Width: =1366
             ZIndex: =1
 
-        Container2_18 As groupContainer.manualLayoutContainer:
+        Container2_20 As groupContainer.manualLayoutContainer:
             Fill: =RGBA(227, 234, 243, 1)
             Height: =595
             PaddingRight: =0.00
@@ -291,18 +291,18 @@
             Y: =112
             ZIndex: =2
 
-            Rectangle3_19 As rectangle:
+            Rectangle3_21 As rectangle:
                 Fill: =RGBA(0, 40, 85, 1)
                 Height: =65
                 Width: =1272.89
                 X: =0.00
                 ZIndex: =4
 
-            Button7_18 As button:
+            Button7_20 As button:
                 BorderStyle: =BorderStyle.None
                 DisplayMode: |-
                     =//Validacion de boton de que debe cumplir y escribir en justificacion
-                    If(IsBlank(TextInput1_99),DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
+                    If(IsBlank(TextInput1_109),DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
                 Fill: =RGBA(97, 181, 73, 1)
                 FontWeight: =FontWeight.Bold
                 OnSelect: |+
@@ -320,12 +320,12 @@
                     
                     
                     // Set file1 name
-                        Set(fileName1, Concatenate(TextInput1_96.Text &"_1",Now(),".jpg"));
+                        Set(fileName1, Concatenate(TextInput1_106.Text &"_1",Now(),".jpg"));
                     
                      
                     
                         // Get file1 binary data and convert it to base64
-                        Set(attachmentValue1, JSON(UploadedImage7_18.Image, JSONFormat.IncludeBinaryData));
+                        Set(attachmentValue1, JSON(UploadedImage7_20.Image, JSONFormat.IncludeBinaryData));
                         Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
                     
                      
@@ -344,21 +344,21 @@
                     //INGRESAR DATOS A LA TABLA HALLAZGOS
                     Patch(CMXE_TablaH_MP,Defaults(CMXE_TablaH_MP),
                     {
-                    Asignado: Dropdown4_19.Selected.Value,
-                    Localizacion: TextInput1_95.Text,
-                    Proc_No: TextInput1_96.Text,
-                    Nom_Maquina:TextInput1_97.Text,
-                    Clas_Mantenimiento: TextInput1_98.Text,
+                    Asignado: Dropdown4_21.Selected.Value,
+                    Localizacion: TextInput1_105.Text,
+                    Proc_No: TextInput1_106.Text,
+                    Nom_Maquina:TextInput1_107.Text,
+                    Clas_Mantenimiento: TextInput1_108.Text,
                     Fecha_Inicio: Now(),
-                    Justificacion: TextInput1_99.Text,
+                    Justificacion: TextInput1_109.Text,
                     Imagenes: attachment1Link,
-                    Actividad: ACT_17.Text,
+                    Actividad: ACT_19.Text,
                     Estatus: "Abierto"
                     });
                     
                     UpdateContext({ShowPopUp: false}); //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
-                    Reset(TextInput1_99);
-                    Reset(AddMediaButton6_18);
+                    Reset(TextInput1_109);
+                    Reset(AddMediaButton6_20);
                     
                     
                     If(BotonActivo = "Boton1", Btn1_14.DisplayMode.View);
@@ -378,22 +378,22 @@
                 Y: =538
                 ZIndex: =5
 
-            Icon4_19 As icon.Cancel:
+            Icon4_21 As icon.Cancel:
                 Color: =RGBA(255, 255, 255, 1)
                 Height: =65
                 Icon: =Icon.Cancel
                 OnSelect: |-
                     =UpdateContext({ShowPopUp: false});
-                    Reset(TextInput1_99);
-                    Reset(AddMediaButton6_18);
-                    Reset(Dropdown4_19)
+                    Reset(TextInput1_109);
+                    Reset(AddMediaButton6_20);
+                    Reset(Dropdown4_21)
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =81.63
                 X: =1191.25
                 ZIndex: =6
 
-            Image4_19 As image:
+            Image4_21 As image:
                 Height: =65
                 Image: =carrier_logo_300
                 PaddingRight: =0.00
@@ -402,7 +402,7 @@
                 X: =25.51
                 ZIndex: =7
 
-            Label9_212 As label:
+            Label9_228 As label:
                 Color: =RGBA(255, 255, 255, 1)
                 FontWeight: =FontWeight.Bold
                 Height: =65
@@ -414,14 +414,14 @@
                 X: =369.88
                 ZIndex: =8
 
-            Group15_18 As group:
+            Group15_20 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_219 As label:
+                Label9_235 As label:
                     FontWeight: =FontWeight.Bold
                     Height: =48
                     PaddingRight: =6.37
@@ -434,7 +434,7 @@
                     Y: =351
                     ZIndex: =2
 
-                TextInput1_99 As text:
+                TextInput1_109 As text:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderThickness: =1
                     Clear: =true
@@ -450,14 +450,14 @@
                     Y: =399
                     ZIndex: =3
 
-            Group14_18 As group:
+            Group14_20 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                ACT_17 As text:
+                ACT_19 As text:
                     Default: =Pregunta
                     DisplayMode: =DisplayMode.View
                     Height: =68
@@ -470,7 +470,7 @@
                     Y: =283
                     ZIndex: =9
 
-                Label9_218 As label:
+                Label9_234 As label:
                     FontWeight: =FontWeight.Bold
                     PaddingRight: =6.37
                     PaddingTop: =6.37
@@ -482,14 +482,14 @@
                     Y: =243
                     ZIndex: =18
 
-            Group13_19 As group:
+            Group13_21 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_213 As label:
+                Label9_229 As label:
                     FontWeight: =FontWeight.Bold
                     PaddingRight: =6.37
                     PaddingTop: =6.37
@@ -501,7 +501,7 @@
                     Y: =65
                     ZIndex: =10
 
-                TextInput1_95 As text:
+                TextInput1_105 As text:
                     Default: =Dato_Localizacion
                     DisplayMode: =DisplayMode.View
                     PaddingRight: =6.37
@@ -512,14 +512,14 @@
                     Y: =105
                     ZIndex: =11
 
-            Group12_19 As group:
+            Group12_21 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_214 As label:
+                Label9_230 As label:
                     FontWeight: =FontWeight.Bold
                     PaddingRight: =6.37
                     PaddingTop: =6.37
@@ -531,7 +531,7 @@
                     Y: =65
                     ZIndex: =12
 
-                TextInput1_96 As text:
+                TextInput1_106 As text:
                     Default: =Dato_Proc_No
                     DisplayMode: =DisplayMode.View
                     PaddingRight: =6.37
@@ -542,14 +542,14 @@
                     Y: =105
                     ZIndex: =13
 
-            Group11_18 As group:
+            Group11_20 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_217 As label:
+                Label9_233 As label:
                     FontWeight: =FontWeight.Bold
                     PaddingRight: =6.37
                     PaddingTop: =6.37
@@ -561,7 +561,7 @@
                     Y: =155
                     ZIndex: =16
 
-                TextInput1_98 As text:
+                TextInput1_108 As text:
                     Default: =Dato_ClassMtto
                     DisplayMode: =DisplayMode.View
                     PaddingRight: =6.37
@@ -572,14 +572,14 @@
                     Y: =195
                     ZIndex: =17
 
-            Group10_18 As group:
+            Group10_20 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_216 As label:
+                Label9_232 As label:
                     FontWeight: =FontWeight.Bold
                     PaddingRight: =6.37
                     PaddingTop: =6.37
@@ -591,7 +591,7 @@
                     Y: =155
                     ZIndex: =14
 
-                TextInput1_97 As text:
+                TextInput1_107 As text:
                     Default: =Dato_NomMaquina
                     DisplayMode: =DisplayMode.View
                     PaddingRight: =6.37
@@ -602,18 +602,18 @@
                     Y: =195
                     ZIndex: =15
 
-            AddMediaWithImage6_18 As group:
+            AddMediaWithImage6_20 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                UploadedImage7_18 As image:
+                UploadedImage7_20 As image:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderThickness: =1
                     Height: =139
-                    Image: =If(IsBlank(AddMediaButton6_18.Media), SampleImage, AddMediaButton6_18.Media)
+                    Image: =If(IsBlank(AddMediaButton6_20.Media), SampleImage, AddMediaButton6_20.Media)
                     PaddingRight: =0.00
                     PaddingTop: =0.00
                     Width: =239.78
@@ -621,7 +621,7 @@
                     Y: =380
                     ZIndex: =19
 
-                AddMediaButton6_18 As addMedia:
+                AddMediaButton6_20 As addMedia:
                     BorderColor: =RGBA(0, 0, 0, 1)
                     BorderThickness: =1
                     ChangePictureText: ="Cambiar fotografia"
@@ -633,7 +633,7 @@
                     Y: =417
                     ZIndex: =20
 
-            Label9_215 As label:
+            Label9_231 As label:
                 FontWeight: =FontWeight.Bold
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -645,7 +645,7 @@
                 Y: =65
                 ZIndex: =21
 
-            Dropdown4_19 As dropdown:
+            Dropdown4_21 As dropdown:
                 BorderColor: =RGBA(0, 40, 85, 1)
                 BorderThickness: =1
                 ChevronBackground: =RGBA(0, 40, 85, 1)
