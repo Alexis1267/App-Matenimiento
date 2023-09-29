@@ -1,4 +1,4 @@
-"'MEPS-04-2M-CPS(Preg1)' As screen":
+"'MEPS-04-CPS(Preg1)' As screen":
     OnVisible: |
         =//Variables para traerme los datos de los inputs que se encuentran en la pantalla "Datos_MP"
         Set(Dato_Localizacion,Label8_11.Text);
@@ -561,7 +561,7 @@
             //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            Navigate('MEPS-04-2M-CPS(Final)',ScreenTransition.CoverRight)
+            Navigate('MEPS-04-CPS(Final)',ScreenTransition.CoverRight)
             
             
             
