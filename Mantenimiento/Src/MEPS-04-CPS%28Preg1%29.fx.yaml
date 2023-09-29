@@ -606,7 +606,7 @@
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Limpiar y verificar funcionamiento de sensores de guardas."
+        Text: ="Revisión de condiciones de anclaje en topes para montacargas, re apretar tuercas de sujeción."
         Width: =1081
         X: =101
         Y: =344
@@ -616,7 +616,7 @@
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar el reapriete de tornillos en las llantas de los carros (Marcar testigo en caso de no contar)"
+        Text: ="Limpiar y verificar funcionamiento de sensores de guardas."
         Width: =1081
         X: =101
         Y: =393
@@ -668,7 +668,7 @@
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisión TyperLook de llantas que este en buen estado, si no repararlo."
+        Text: ="Revisar el reapriete de tornillos en las llantas de los carros (Marcar testigo en caso de no contar)"
         Width: =1081
         X: =101
         Y: =440
@@ -699,7 +699,7 @@
         Height: =42
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: =" Revisión de riel y realizar limpieza "
+        Text: ="Revisión TyperLook de llantas que este en buen estado, si no repararlo."
         Width: =1081
         X: =101
         Y: =483
@@ -730,7 +730,7 @@
         Height: =39
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar que se encuentre en buen estado y bien montado motor de transmisión, revisar el estado de la cuña este debe estar en buen estado."
+        Text: ="Revisión de riel y realizar limpieza "
         Width: =1081
         X: =101
         Y: =527
@@ -761,7 +761,7 @@
         Height: =43
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: =" Las llantas de los carros deben contar con sus guardas en caso de no tener reportar a su supervisor en turno"
+        Text: ="Revisar que se encuentre en buen estado y bien montado motor de transmisión, revisar el estado de la cuña este debe estar en buen estado."
         Width: =1081
         X: =101
         Y: =568
@@ -792,7 +792,7 @@
         Height: =42
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: =" inspeccionar que el carro cuente con 4 barras de imanes esto ayuda a mantener en posición la lámina"
+        Text: ="Las llantas de los carros deben contar con sus guardas en caso de no tener reportar a su supervisor en turno."
         Width: =1081
         X: =101
         Y: =612
@@ -801,7 +801,7 @@
     Icon1_43 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('MEPS-04-CPE(Preg2)',ScreenTransition.Fade)
+        OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95
