@@ -80,7 +80,7 @@
             //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            Navigate('MEPS-04-DKE(Preg1)',ScreenTransition.CoverRight)
+            Navigate('MEPS-04-DKS(Preg1)',ScreenTransition.CoverRight)
             
             
             
@@ -103,7 +103,7 @@
     Icon1_51 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('MEPS-04-DKE(ImgEjem2)',ScreenTransition.Fade)
+        OnSelect: =Navigate('MEPS-04-DKS(ImgEjem2)',ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95
