@@ -469,7 +469,7 @@
             //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            Navigate('MEPS-04-CPS(Final)',ScreenTransition.CoverRight)
+            Navigate('MEPS-04-ELE(Final)',ScreenTransition.CoverRight)
             
             
             
@@ -616,7 +616,7 @@
     Icon1_71 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
+        OnSelect: =Navigate('MEPS-04-ELE(Preg2)',ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95
