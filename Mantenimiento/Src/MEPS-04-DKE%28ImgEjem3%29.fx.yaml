@@ -154,10 +154,30 @@
         ZIndex: =60
 
     Image25 As image:
-        Height: =599
+        Height: =568
         Image: ='DKE-IMG21'
-        Width: =574
-        X: =790
-        Y: =59
+        Width: =532
+        X: =821
+        Y: =97
         ZIndex: =61
+
+    Label10_596 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =31
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Text: ="AYUDA VISUAL "
+        Width: =186
+        X: =614
+        Y: =59
+        ZIndex: =62
+
+    Rectangle2_709 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        X: =0.00
+        Y: =90
+        ZIndex: =63
 
