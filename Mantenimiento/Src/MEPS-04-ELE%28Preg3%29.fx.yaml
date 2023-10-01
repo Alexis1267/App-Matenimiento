@@ -1,4 +1,4 @@
-"'MEPS-04-ELE(Preg2)_1' As screen":
+"'MEPS-04-ELE(Preg3)' As screen":
     OnVisible: |
         =//Variables para traerme los datos de los inputs que se encuentran en la pantalla "Datos_MP"
         Set(Dato_Localizacion,Label8_11.Text);
@@ -18,7 +18,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="13."
+        Text: ="1."
         Width: =33
         Y: =106
         ZIndex: =2
@@ -28,7 +28,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="14."
+        Text: ="2."
         Width: =33
         Y: =152
         ZIndex: =3
@@ -38,7 +38,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="15."
+        Text: ="3."
         Width: =33
         Y: =200
         ZIndex: =4
@@ -48,7 +48,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="16."
+        Text: ="4."
         Width: =33
         Y: =247
         ZIndex: =5
@@ -58,10 +58,50 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="17."
+        Text: ="5."
         Width: =33
         Y: =294
         ZIndex: =6
+
+    Preg1_215 As label:
+        Height: =46
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =11
+        Text: ="6."
+        Width: =33
+        Y: =345
+        ZIndex: =7
+
+    Preg1_216 As label:
+        Height: =46
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =11
+        Text: ="7."
+        Width: =33
+        Y: =394
+        ZIndex: =8
+
+    Preg1_217 As label:
+        Height: =46
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =11
+        Text: ="8."
+        Width: =33
+        Y: =439
+        ZIndex: =9
+
+    Preg1_218 As label:
+        Height: =46
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =11
+        Text: ="9."
+        Width: =33
+        Y: =482
+        ZIndex: =10
 
     Btn3_20 As button:
         Fill: =RGBA(0, 18, 107, 1)
@@ -111,6 +151,70 @@
         X: =1182
         Y: =306
         ZIndex: =16
+
+    Btn6_19 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =29
+        OnSelect: |-
+            =Set(Pregunta,Preg6_19.Text);
+            UpdateContext({ShowPopUp : true});
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17
+        Text: ="Justificación"
+        Visible: =If(Resp6_19.Selected.Value = "N", true, false) 
+        Width: =173
+        X: =1182
+        Y: =356
+        ZIndex: =17
+
+    Btn7_19 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =29
+        OnSelect: |-
+            =Set(Pregunta,Preg7_19.Text);
+            UpdateContext({ShowPopUp : true});
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17
+        Text: ="Justificación"
+        Visible: =If(Resp7_19.Selected.Value = "N", true, false) 
+        Width: =173
+        X: =1182
+        Y: =403
+        ZIndex: =18
+
+    Btn8_16 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =29
+        OnSelect: |-
+            =Set(Pregunta,Preg8_16.Text);
+            UpdateContext({ShowPopUp : true});
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17
+        Text: ="Justificación"
+        Visible: =If(Resp8_16.Selected.Value = "N", true, false) 
+        Width: =173
+        X: =1182
+        Y: =450
+        ZIndex: =19
+
+    Btn9_13 As button:
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =29
+        OnSelect: |-
+            =Set(Pregunta,Preg9_13.Text);
+            UpdateContext({ShowPopUp : true});
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =17
+        Text: ="Justificación"
+        Visible: =If(Resp9_13.Selected.Value = "N", true, false) 
+        Width: =173
+        X: =1182
+        Y: =493
+        ZIndex: =20
 
     Rectangle1_103 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
@@ -186,7 +290,7 @@
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Realizar reapriete de conexiones y cableado que se encuentren flojos."
+        Text: =" Revisar funcionamiento de SICK de seguridad, al interrumpir el equipo debe marcar alarma."
         Width: =1081
         X: =101
         Y: =106
@@ -219,7 +323,7 @@
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: =" Realizar limpieza den interior del gabinete"
+        Text: =" Revisión de condiciones de guardas de seguridad, que estén en su lugar, que no estén dañadas y reparar si es necesario."
         Width: =1081
         X: =101
         Y: =151
@@ -250,7 +354,7 @@
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar que no existan cables expuestos, registros eléctricos sin tapa ."
+        Text: ="Revisar interlock de puertas que se encuentren en buen estado, estén cerradas y aseguradas al abrir debe marcar alarma de puertas."
         Width: =1081
         X: =101
         Y: =199
@@ -281,7 +385,7 @@
         Height: =43
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Cambiar filtro azul a todos los motores eléctricos"
+        Text: =" Checar todos los paros de emergencia, que operen correctamente durante el ciclo del equipo."
         Width: =1081
         X: =100
         Y: =246
@@ -312,7 +416,7 @@
         Height: =52
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar, Reapriete Realizar Marcaje de toda la tornillería, realizar cambio de tornillería dañada"
+        Text: ="Revisar correcta operación y estado físico de las cortinas de luz."
         Width: =1081
         X: =101
         Y: =289
@@ -384,6 +488,130 @@
         X: =1237
         Y: =672
         ZIndex: =40
+
+    Resp6_19 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Resp6_19.Selected),
+                true
+            )
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Size: =16.58
+        Width: =67
+        X: =33
+        Y: =355
+        ZIndex: =41
+
+    Preg6_19 As label:
+        Height: =48
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Text: ="Asegurar las condiciones de la guarda perimetral se encuentre en buen estado."
+        Width: =1081
+        X: =101
+        Y: =344
+        ZIndex: =42
+
+    Preg7_19 As label:
+        Height: =47
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Text: ="Revisar funcionamiento de los 4 sick estén en buen estado, realizar limpieza solamente con trapo."
+        Width: =1081
+        X: =101
+        Y: =393
+        ZIndex: =43
+
+    Resp7_19 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Resp7_19.Selected),
+                true
+            )
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Size: =16.58
+        Width: =67
+        X: =33
+        Y: =402
+        ZIndex: =44
+
+    Resp8_16 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Resp8_16.Selected),
+                true
+            )
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Size: =16.58
+        Width: =67
+        X: =33
+        Y: =450
+        ZIndex: =45
+
+    Preg8_16 As label:
+        Height: =44
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Text: =" Revisar que se encuentren cables ruteados"
+        Width: =1081
+        X: =101
+        Y: =440
+        ZIndex: =46
+
+    Resp9_13 As dropdown:
+        AllowEmptySelection: =true
+        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        Height: =26
+        HoverFill: =RGBA(151, 157, 172, 1)
+        Items: =["R","N"]
+        OnSelect: |-
+            =If(
+                IsBlank(Resp9_13.Selected),
+                true
+            )
+        PaddingRight: =12.76
+        PaddingTop: =12.76
+        SelectionFill: =RGBA(92, 103, 125, 1)
+        Size: =16.58
+        Width: =67
+        X: =33
+        Y: =494
+        ZIndex: =47
+
+    Preg9_13 As label:
+        Height: =42
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Text: ="Revisar, Reapriete Realizar Marcaje de toda la tornillería, realizar cambio de tornillería dañada, colocar marca con plumón permanente, asegurar que toda la tornillería se encuentre con testigo"
+        Width: =1081
+        X: =101
+        Y: =483
+        ZIndex: =48
 
     Icon1_71 As icon.BackArrow:
         Height: =86
@@ -466,6 +694,38 @@
         X: =0.00
         Y: =343
         ZIndex: =62
+
+    Rectangle2_638 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        X: =0.00
+        Y: =392
+        ZIndex: =63
+
+    Rectangle2_639 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        X: =0.00
+        Y: =440
+        ZIndex: =64
+
+    Rectangle2_640 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        X: =0.00
+        Y: =484
+        ZIndex: =65
+
+    Rectangle2_641 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =1
+        Width: =1366
+        X: =0.00
+        Y: =527
+        ZIndex: =66
 
     Btn1_25 As button:
         AutoDisableOnSelect: =
@@ -931,4 +1191,15 @@
                 X: =858.36
                 Y: =105
                 ZIndex: =22
+
+    Label10_555 As label:
+        FontWeight: =FontWeight.Bold
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Text: ="SEGURIDAD"
+        Width: =144
+        X: =624
+        Y: =59
+        ZIndex: =73
 
