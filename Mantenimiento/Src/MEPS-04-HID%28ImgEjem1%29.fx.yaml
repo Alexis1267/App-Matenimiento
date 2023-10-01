@@ -34,7 +34,7 @@
         Height: =250
         Image: ='HID-IMG1'
         Width: =330
-        Y: =86
+        Y: =106
         ZIndex: =12
 
     Image4 As image:
@@ -42,7 +42,7 @@
         Image: ='HID-IMG2'
         Width: =330
         X: =341
-        Y: =86
+        Y: =106
         ZIndex: =13
 
     Image5 As image:
@@ -50,7 +50,7 @@
         Image: ='HID-IMG3'
         Width: =330
         X: =688
-        Y: =86
+        Y: =106
         ZIndex: =14
 
     Image26 As image:
@@ -58,14 +58,14 @@
         Image: ='HID-IMG4'
         Width: =330
         X: =1036
-        Y: =86
+        Y: =106
         ZIndex: =15
 
     Image27 As image:
         Height: =250
         Image: ='HID-IMG5'
         Width: =330
-        Y: =397
+        Y: =417
         ZIndex: =16
 
     Image28 As image:
@@ -73,7 +73,7 @@
         Image: ='HID-IMG6'
         Width: =330
         X: =341
-        Y: =397
+        Y: =417
         ZIndex: =17
 
     Image29 As image:
@@ -81,7 +81,7 @@
         Image: ='HID-IMG7'
         Width: =330
         X: =688
-        Y: =397
+        Y: =417
         ZIndex: =18
 
     Image30 As image:
@@ -89,7 +89,7 @@
         Image: ='HID-IMG8'
         Width: =330
         X: =1036
-        Y: =397
+        Y: =417
         ZIndex: =19
 
     Icon3_66 As icon.NextArrow:
@@ -169,4 +169,24 @@
         X: =33
         Y: =673
         ZIndex: =21
+
+    Label10_600 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Text: ="AYUDA VISUAL "
+        Width: =186
+        X: =614
+        Y: =67
+        ZIndex: =22
+
+    Rectangle2_713 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =7
+        Width: =1366
+        X: =0.00
+        Y: =94
+        ZIndex: =23
 
