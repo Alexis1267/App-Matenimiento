@@ -1,0 +1,129 @@
+"'MEPS-04-GX1(Final)' As screen":
+
+    Label12_27 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =20.41
+        Text: ="Observaciones y/o hallazgos"
+        Width: =400.49
+        X: =483
+        Y: =478
+        ZIndex: =1
+
+    TextInput3_18 As text:
+        Align: =Align.Justify
+        Default: =""
+        EnableSpellCheck: =true
+        Height: =123
+        Mode: =TextMode.MultiLine
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Width: =557.51
+        X: =404
+        Y: =535
+        ZIndex: =2
+
+    Rectangle1_94 As rectangle:
+        Fill: =RGBA(0, 40, 85, 1)
+        Height: =67
+        Width: =1366
+        X: =0.00
+        ZIndex: =8
+
+    Label9_244 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =25.51
+        Text: ="Descripción de las Actividades a Realizar"
+        Width: =1366
+        X: =0.00
+        ZIndex: =9
+
+    Image2_8 As image:
+        Height: =58
+        Image: =carrier_logo_300
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =187
+        X: =1179
+        Y: =4
+        ZIndex: =11
+
+    Label12_26 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =54
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =31.89
+        Text: ="Adjuntar Evidencia"
+        Width: =415.80
+        X: =475
+        Y: =406
+        ZIndex: =12
+
+    UploadedImage1_5 As image:
+        Height: =AddMediaButton1_5.Height
+        Image: =
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =418.35
+        X: =475
+        Y: =AddMediaButton1_5.Y
+        ZIndex: =14
+
+    AddMediaWithImage1_5 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =15
+
+        UploadedImage2_5 As image:
+            Height: =AddMediaButton1_5.Height
+            Image: =If(IsBlank(AddMediaButton1_5.Media), SampleImage, AddMediaButton1_5.Media)
+            ImagePosition: =ImagePosition.Fill
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =418.35
+            X: =474
+            Y: =120
+            ZIndex: =16
+
+        AddMediaButton1_5 As addMedia:
+            Size: =31.89
+            Width: =418.35
+            X: =474
+            Y: =120
+            ZIndex: =17
+
+    Button3_9 As button:
+        OnSelect: |-
+            =//UPDATE PARA LA TABLA DE CMXE_MP_N para cuando se realizo el Mantenimiento Preventivo
+            Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()})
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =19.14
+        Text: ="Finalizar Preventivo"
+        Width: =278
+        X: =557
+        Y: =696
+        ZIndex: =20
+
+    Icon1_62 As icon.BackArrow:
+        Height: =86
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate('MEPS-04-CPE(Preg4)',ScreenTransition.Fade)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =147.95
+        X: =15
+        Y: =673
+        ZIndex: =22
+
