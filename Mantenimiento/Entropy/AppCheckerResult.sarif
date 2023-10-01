@@ -23682,19 +23682,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'MEPS-04-GX2(Preg2)'.Icon3_69.AccessibleLabel"
+                  "fullyQualifiedName": "'MEPS-04-GX2(Final)'.TextInput3_23.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'MEPS-04-GX2(Preg2)'.Icon3_69.AccessibleLabel",
+                  "fullyQualifiedName": "'MEPS-04-GX2(Final)'.TextInput3_23.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "MEPS-04-GX2(Preg2)",
-                "type": "'MEPS-04-GX2(Preg2)'.Icon3_69"
+                "module": "MEPS-04-GX2(Final)",
+                "type": "'MEPS-04-GX2(Final)'.TextInput3_23"
               }
             }
           ],
@@ -23712,19 +23712,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'MEPS-04-GX2(Preg2)'.Icon3_69.TabIndex"
+                  "fullyQualifiedName": "'MEPS-04-GX2(Final)'.AddMediaButton1_10.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'MEPS-04-GX2(Preg2)'.Icon3_69.TabIndex",
+                  "fullyQualifiedName": "'MEPS-04-GX2(Final)'.AddMediaButton1_10.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "MEPS-04-GX2(Preg2)",
-                "type": "'MEPS-04-GX2(Preg2)'.Icon3_69"
+                "member": "AccessibleLabel",
+                "module": "MEPS-04-GX2(Final)",
+                "type": "'MEPS-04-GX2(Final)'.AddMediaButton1_10"
               }
             }
           ],
@@ -23734,8 +23734,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -23785,6 +23785,66 @@
                 "member": "TabIndex",
                 "module": "MEPS-04-GX2(Preg2)",
                 "type": "'MEPS-04-GX2(Preg2)'.Icon1_78"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MEPS-04-GX2(Final)'.Icon1_79.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MEPS-04-GX2(Final)'.Icon1_79.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "MEPS-04-GX2(Final)",
+                "type": "'MEPS-04-GX2(Final)'.Icon1_79"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MEPS-04-GX2(Final)'.Icon1_79.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MEPS-04-GX2(Final)'.Icon1_79.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "MEPS-04-GX2(Final)",
+                "type": "'MEPS-04-GX2(Final)'.Icon1_79"
               }
             }
           ],
