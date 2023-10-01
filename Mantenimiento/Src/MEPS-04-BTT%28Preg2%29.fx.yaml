@@ -18,9 +18,9 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =16.58
-        Text: ="GRIPPER X1"
-        Width: =156
-        X: =563
+        Text: ="TAMPOR"
+        Width: =118
+        X: =624
         Y: =59
         ZIndex: =1
 
@@ -99,7 +99,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="K."
+        Text: ="Q."
         Width: =33
         Y: =439
         ZIndex: =9
@@ -379,7 +379,7 @@
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar condiciones de Power track."
+        Text: ="Verificar el estado de la tornillería unión de la cadena del tambor."
         Width: =1081
         X: =101
         Y: =106
@@ -412,7 +412,7 @@
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Verificar condiciones de mangueras y cables que están en el interior del Power Track. Verificar acomodo del mismo."
+        Text: ="Revisar condiciones de power track y ruteo dentro del power track."
         Width: =1081
         X: =101
         Y: =151
@@ -443,7 +443,7 @@
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Verificar las condiciones de los sensores magnéticos. Reapretar opresor si lo requiere."
+        Text: ="Verificar el correcto funcionamiento de la electroválvula open/close pistón que sujeta lamina, activando de manera manual."
         Width: =1081
         X: =101
         Y: =199
@@ -474,10 +474,10 @@
         Height: =43
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar reapriete en toda la tornillería y marcar testigo en caso de no tener."
+        Text: ="Verificar el reapriete de tornillería que sujeta el cilindro neumático, marcar testigo de ser necesario."
         Width: =1081
         X: =100
-        Y: =252
+        Y: =246
         ZIndex: =37
 
     Resp5_17 As dropdown:
@@ -505,7 +505,7 @@
         Height: =52
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Verificar los baleros lineales (horizontal y vertical) que se encuentre en buenas condiciones. Limpiar y lubricar los baleros."
+        Text: ="Verificar el reapriete de tornillería que sujeta el sensor magnético en el cilindro neumático, marcar testigo de ser necesario."
         Width: =1081
         X: =101
         Y: =289
@@ -558,7 +558,7 @@
             //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            Navigate('MEPS-04-GX1(Preg2)',ScreenTransition.CoverRight)
+            Navigate('MEPS-04-BTT(Preg3)',ScreenTransition.CoverRight)
             
             
             
@@ -603,7 +603,7 @@
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Limpiar y verificar estado de guía lineal de movimiento horizontal."
+        Text: ="Verificar las condiciones de la banda así como los rodillos."
         Width: =1081
         X: =101
         Y: =344
@@ -613,7 +613,7 @@
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Limpiar y lubricar y verificar estado de Cremallera."
+        Text: ="Verificar el reapriete en la tornillería que se tiene en tambor de giro."
         Width: =1081
         X: =101
         Y: =393
@@ -665,7 +665,7 @@
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Limpiar y verificar el estado de las guías lineales de movimiento vertical."
+        Text: ="Verificar las condiciones del riel de ruedas."
         Width: =1081
         X: =101
         Y: =440
@@ -696,7 +696,7 @@
         Height: =42
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Validar que no existan fugas neumáticas en el área del gripper. En caso de encontrar alguna corregir de inmediato."
+        Text: ="Verificar las condiciones del motor, que se encuentre buen montado y anclado, rellenar de aceite al reductor si es necesario."
         Width: =1081
         X: =101
         Y: =483
@@ -727,7 +727,7 @@
         Height: =39
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Verificar el reapriete de tornillería que sujeta el cilindro neumático, marcar testigo de ser necesario."
+        Text: ="Revisar que amortiguadores se encuentren en buen estado."
         Width: =1081
         X: =101
         Y: =527
@@ -758,7 +758,7 @@
         Height: =43
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Controle el ajuste de la presión neumática del movimiento del gripper (arriba y abajo ) de manera que no presente un golpe excesivo."
+        Text: ="Revisar que los sprocket (cadena) se encuentren en buen estado cambiar si es necesario."
         Width: =1081
         X: =101
         Y: =568
@@ -789,7 +789,7 @@
         Height: =42
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Verificar funcionamiento del clampeo (Abrir y cerrar). En caso de encontrar detalles corregir de inmediato."
+        Text: ="Verificar fugas neumáticas en tambor de giro, reparar si es necesario."
         Width: =1081
         X: =101
         Y: =612
@@ -798,7 +798,7 @@
     Icon1_66 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
+        OnSelect: =Navigate('MEPS-04-BTT(Preg1)',ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95
