@@ -186,7 +186,7 @@
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Realizar lubricación en balero, chumaceras de carros de entrada y salida"
+        Text: ="Realizar lubricación en balero, chumaceras de carros de entrada y salida."
         Width: =1081
         X: =101
         Y: =106
@@ -312,7 +312,7 @@
         Height: =52
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Lubricar cremallera gripper x1 y x2 revisar que cuente con los cartuchos de grasa de no ser el caso programar cambio"
+        Text: ="Lubricar cremallera gripper x1 y x2 revisar que cuente con los cartuchos de grasa de no ser el caso programar cambio."
         Width: =1081
         X: =101
         Y: =289
@@ -365,7 +365,7 @@
             //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            Navigate('MEPS-04-ELE(Final)',ScreenTransition.CoverRight)
+            Navigate('MEPS-04-LUB(Final)',ScreenTransition.CoverRight)
             
             
             
@@ -388,7 +388,7 @@
     Icon1_75 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate('MEPS-04-ELE(Preg2)',ScreenTransition.Fade)
+        OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95
@@ -931,15 +931,4 @@
                 X: =858.36
                 Y: =105
                 ZIndex: =22
-
-    Label10_564 As label:
-        FontWeight: =FontWeight.Bold
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =16.58
-        Text: ="SEGURIDAD"
-        Width: =144
-        X: =624
-        Y: =59
-        ZIndex: =73
 
