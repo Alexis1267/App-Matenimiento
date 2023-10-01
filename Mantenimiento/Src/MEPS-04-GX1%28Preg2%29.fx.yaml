@@ -275,7 +275,7 @@
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar condiciones de Power track."
+        Text: ="Verificar el estado de las mangueras hidráulicas, las que llegan al manifold y las que van hacia el cilindro del gripper."
         Width: =1081
         X: =101
         Y: =106
@@ -308,7 +308,7 @@
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Verificar condiciones de mangueras y cables que están en el interior del Power Track. Verificar acomodo del mismo."
+        Text: ="Verificar el reapriete de las mangueras hidráulicas, marcar testigo de ser necesario."
         Width: =1081
         X: =101
         Y: =151
@@ -339,7 +339,7 @@
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Verificar las condiciones de los sensores magnéticos. Reapretar opresor si lo requiere."
+        Text: ="Realizar pruebas de agarre de lámina después de Mantenimiento preventivo."
         Width: =1081
         X: =101
         Y: =199
@@ -370,10 +370,10 @@
         Height: =43
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Revisar reapriete en toda la tornillería y marcar testigo en caso de no tener."
+        Text: ="Revisar condiciones de Servomotor (Fijación en la base, conectores de cables insertado correctamente)."
         Width: =1081
         X: =100
-        Y: =252
+        Y: =247
         ZIndex: =37
 
     Resp5_15 As dropdown:
@@ -401,7 +401,7 @@
         Height: =52
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Verificar los baleros lineales (horizontal y vertical) que se encuentre en buenas condiciones. Limpiar y lubricar los baleros."
+        Text: ="Revisar que el cableado eléctrico, mangueras neumáticas e hidráulicas se encuentre ruteado."
         Width: =1081
         X: =101
         Y: =289
@@ -499,7 +499,7 @@
         Height: =48
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Limpiar y verificar estado de guía lineal de movimiento horizontal."
+        Text: ="Realizar limpieza general en el Gripper."
         Width: =1081
         X: =101
         Y: =344
@@ -509,7 +509,7 @@
         Height: =47
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Limpiar y lubricar y verificar estado de Cremallera."
+        Text: =" Referenciar Gripper en caso de requerirlo."
         Width: =1081
         X: =101
         Y: =393
@@ -561,7 +561,7 @@
         Height: =44
         PaddingRight: =6.37
         PaddingTop: =6.37
-        Text: ="Limpiar y verificar el estado de las guías lineales de movimiento vertical."
+        Text: =" Realizar ciclos en vacío y verificar su correcta operación."
         Width: =1081
         X: =101
         Y: =440
