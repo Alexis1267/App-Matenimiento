@@ -78,14 +78,14 @@ Datos_MP As screen:
             If(Label8_12.Text = "DKS",Navigate('MEPS-04-DKS(ImgEjem1)',ScreenTransition.Cover),
             If(Label8_12.Text = "CPS",Navigate('MEPS-04-CPS(Preg1)',ScreenTransition.Cover),
             If(Label8_12.Text = "GX1",Navigate('MEPS-04-GX1(Preg1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "BTT",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "ELE",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "HID",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "LUB",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "GX2",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "MEC",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "BV3",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "BV2",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error))));
+            If(Label8_12.Text = "BTT",Navigate('MEPS-04-BTT(Preg1)',ScreenTransition.Cover),
+            If(Label8_12.Text = "ELE",Navigate('MEPS-04-ELE(Preg1)',ScreenTransition.Cover),
+            If(Label8_12.Text = "HID",Navigate('MEPS-04-HID(ImgEjem1)',ScreenTransition.Cover),
+            If(Label8_12.Text = "LUB",Navigate('MEPS-04-LUB(Preg1)',ScreenTransition.Cover),
+            If(Label8_12.Text = "GX2",Navigate('MEPS-04-GX2(Preg1)',ScreenTransition.Cover),
+            If(Label8_12.Text = "MEC",Navigate('MEPS-04-MEC(Preg1)',ScreenTransition.Cover),
+            If(Label8_12.Text = "BV3",Navigate('MEPS-04-BV3(Preg1)',ScreenTransition.Cover),
+            If(Label8_12.Text = "BV2",Navigate('MEPS-04-BV2(Preg1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error)))))))))))))));
             
             
             //VALIDACION PARA NAVEGAR AL RESPECTIVO MANTENIMIENTO PREVENTIVO
