@@ -13,17 +13,6 @@
         
         ClearCollect(AsignadoOP,{NombreOp: Operador})
 
-    Label10_560 As label:
-        FontWeight: =FontWeight.Bold
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =16.58
-        Text: ="GRIPPER X1"
-        Width: =156
-        X: =563
-        Y: =59
-        ZIndex: =1
-
     Preg1_219 As label:
         Height: =46
         PaddingRight: =6.37
@@ -506,7 +495,7 @@
             //Office365Outlook.SendEmailV2("Alexis.Silva@Carrier.com", User().FullName, "Pregunta de la app")
             
             
-            Navigate('MEPS-04-GX1(Preg2)',ScreenTransition.CoverRight)
+            Navigate('MEPS-04-HID(Final)',ScreenTransition.CoverRight)
             
             
             
@@ -684,7 +673,7 @@
     Icon1_72 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
+        OnSelect: =Navigate('MEPS-04-HID(ImgEjem1)',ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95
