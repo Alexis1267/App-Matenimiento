@@ -1,4 +1,4 @@
-"'MEPS-04-GX1(Preg1)_1' As screen":
+"'MEPS-04-BTT(Preg2)' As screen":
     OnVisible: |
         =//Variables para traerme los datos de los inputs que se encuentran en la pantalla "Datos_MP"
         Set(Dato_Localizacion,Label8_11.Text);
@@ -29,7 +29,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="A."
+        Text: ="K."
         Width: =33
         Y: =106
         ZIndex: =2
@@ -39,7 +39,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="B."
+        Text: ="L."
         Width: =33
         Y: =152
         ZIndex: =3
@@ -49,7 +49,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="C."
+        Text: ="M."
         Width: =33
         Y: =200
         ZIndex: =4
@@ -59,7 +59,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="D."
+        Text: ="N."
         Width: =33
         Y: =247
         ZIndex: =5
@@ -69,7 +69,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="E."
+        Text: ="Ñ."
         Width: =33
         Y: =294
         ZIndex: =6
@@ -79,7 +79,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="F."
+        Text: ="O."
         Width: =33
         Y: =345
         ZIndex: =7
@@ -89,7 +89,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="G."
+        Text: ="P."
         Width: =33
         Y: =394
         ZIndex: =8
@@ -99,7 +99,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="H."
+        Text: ="K."
         Width: =33
         Y: =439
         ZIndex: =9
@@ -109,7 +109,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="I."
+        Text: ="R."
         Width: =33
         Y: =482
         ZIndex: =10
@@ -119,7 +119,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="J."
+        Text: ="S."
         Width: =33
         Y: =528
         ZIndex: =11
@@ -129,7 +129,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="K."
+        Text: ="T."
         Width: =33
         Y: =566
         ZIndex: =12
@@ -139,7 +139,7 @@
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =11
-        Text: ="L."
+        Text: ="U."
         Width: =33
         Y: =611
         ZIndex: =13
