@@ -1,6 +1,6 @@
-"'MEPS-04-GX1(Final)' As screen":
+"'MEPS-04-BTT(Final)' As screen":
 
-    Label12_27 As label:
+    Label12_29 As label:
         FontWeight: =FontWeight.Bold
         Height: =42
         PaddingRight: =6.37
@@ -12,7 +12,7 @@
         Y: =478
         ZIndex: =1
 
-    TextInput3_18 As text:
+    TextInput3_19 As text:
         Align: =Align.Justify
         Default: =""
         EnableSpellCheck: =true
@@ -26,14 +26,14 @@
         Y: =535
         ZIndex: =2
 
-    Rectangle1_94 As rectangle:
+    Rectangle1_97 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =67
         Width: =1366
         X: =0.00
         ZIndex: =8
 
-    Label9_244 As label:
+    Label9_261 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
@@ -46,7 +46,7 @@
         X: =0.00
         ZIndex: =9
 
-    Image2_8 As image:
+    Image2_9 As image:
         Height: =58
         Image: =carrier_logo_300
         PaddingRight: =0.00
@@ -56,7 +56,7 @@
         Y: =4
         ZIndex: =11
 
-    Label12_26 As label:
+    Label12_28 As label:
         FontWeight: =FontWeight.Bold
         Height: =54
         PaddingRight: =6.37
@@ -68,26 +68,26 @@
         Y: =406
         ZIndex: =12
 
-    UploadedImage1_5 As image:
-        Height: =AddMediaButton1_5.Height
+    UploadedImage1_6 As image:
+        Height: =AddMediaButton1_6.Height
         Image: =
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =418.35
         X: =475
-        Y: =AddMediaButton1_5.Y
+        Y: =AddMediaButton1_6.Y
         ZIndex: =14
 
-    AddMediaWithImage1_5 As group:
+    AddMediaWithImage1_6 As group:
         Height: =5
         Width: =5
         X: =60
         Y: =60
         ZIndex: =15
 
-        UploadedImage2_5 As image:
-            Height: =AddMediaButton1_5.Height
-            Image: =If(IsBlank(AddMediaButton1_5.Media), SampleImage, AddMediaButton1_5.Media)
+        UploadedImage2_6 As image:
+            Height: =AddMediaButton1_6.Height
+            Image: =If(IsBlank(AddMediaButton1_6.Media), SampleImage, AddMediaButton1_6.Media)
             ImagePosition: =ImagePosition.Fill
             PaddingRight: =0.00
             PaddingTop: =0.00
@@ -96,14 +96,14 @@
             Y: =120
             ZIndex: =16
 
-        AddMediaButton1_5 As addMedia:
+        AddMediaButton1_6 As addMedia:
             Size: =31.89
             Width: =418.35
             X: =474
             Y: =120
             ZIndex: =17
 
-    Button3_9 As button:
+    Button3_10 As button:
         OnSelect: |-
             =//UPDATE PARA LA TABLA DE CMXE_MP_N para cuando se realizo el Mantenimiento Preventivo
             Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()})
@@ -116,7 +116,7 @@
         Y: =696
         ZIndex: =20
 
-    Icon1_62 As icon.BackArrow:
+    Icon1_65 As icon.BackArrow:
         Height: =86
         Icon: =Icon.BackArrow
         OnSelect: =Navigate('MEPS-04-GX1(Preg2)',ScreenTransition.Fade)
