@@ -1,4 +1,14 @@
 "'MEPS-04-CPE(Final)' As screen":
+    OnVisible: |-
+        =// Fecha de entrada (puedes reemplazar esto con tu propia fecha)
+        Set( FechaEntrada, Now());
+        
+        // Fecha de inicio del año actual
+        Set( FechaInicioAnio, DateValue(Year(FechaEntrada) & "-01-01"));
+        
+        // Cálculo de semanas transcurridas
+        Set( DiferenciaDias, FechaEntrada - FechaInicioAnio);
+        Set (SemanasTranscurridas, RoundUp(DiferenciaDias / 7, 0));
 
     Label12_19 As label:
         FontWeight: =FontWeight.Bold
@@ -126,4 +136,11 @@
         X: =15
         Y: =673
         ZIndex: =22
+
+    Label1_1 As label:
+        Text: |-
+            =    Concatenate("Semana: "& Text(SemanasTranscurridas,"[$-en-US]0"))
+        X: =42
+        Y: =80
+        ZIndex: =23
 

@@ -1,5 +1,17 @@
 Screen3_1 As screen:
-    OnVisible: =
+    OnVisible: |+
+        =/*
+        // Fecha de entrada (puedes reemplazar esto con tu propia fecha)
+        Set( FechaEntrada, Now());
+        
+        // Fecha de inicio del año actual
+        Set( FechaInicioAnio, DateValue(Year(FechaEntrada) & "-01-01"));
+        
+        // Cálculo de semanas transcurridas
+        Set( DiferenciaDias, FechaEntrada - FechaInicioAnio);
+        Set (SemanasTranscurridas, RoundUp(DiferenciaDias / 7, 0));
+        */
+        
 
     Dropdown3 As dropdown:
         Items: =Distinct(CMXE_MP_N,Localizacion)
@@ -36,4 +48,11 @@ Screen3_1 As screen:
         X: =844
         Y: =150
         ZIndex: =6
+
+    Label1 As label:
+        Text: |-
+            =    Concatenate("Semana: "& Text(SemanasTranscurridas,"[$-en-US]0"))
+        X: =135
+        Y: =385
+        ZIndex: =7
 
