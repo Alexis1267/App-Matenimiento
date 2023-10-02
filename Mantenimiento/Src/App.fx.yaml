@@ -1,30 +1,15 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =ClearCollect(ColImg,Table(
-        {
-            Imagen:"Home",
-            icono:carrier_logo_minsize,
-            ventana: 'MP-MEPS-INP' 
-            },
-        {
-            Titulo:"Nuevo MP", 
-            icono:carrier_logo_minsize,
-            ventana: Screen1
-            }));
+        =// Fecha de entrada (puedes reemplazar esto con tu propia fecha)
+        Set( FechaEntrada, Now());
         
-            ClearCollect(ColMenu, Table(
-        {
-            Titulo:"Home",
-            icono:carrier_logo_minsize,
-            ventana: QR_Inicio 
-            },
-        {
-            Titulo:"Nuevo MP", 
-            icono:carrier_logo_minsize,
-            ventana: Screen1
-            }));
+        // Fecha de inicio del año actual
+        Set( FechaInicioAnio, DateValue(Year(FechaEntrada) & "-01-01"));
         
+        // Cálculo de semanas transcurridas
+        Set( DiferenciaDias, FechaEntrada - FechaInicioAnio);
+        Set (SemanasTranscurridas, RoundUp(DiferenciaDias / 7, 0));
         
         //ClearCollect(Prueba,
         //{Fecha_Ini:LookUp(CMXE_MP,Proc_No="MEINS-05-30D",Fecha_inicio)},

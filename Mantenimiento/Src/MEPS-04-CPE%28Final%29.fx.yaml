@@ -1,14 +1,5 @@
 "'MEPS-04-CPE(Final)' As screen":
-    OnVisible: |-
-        =// Fecha de entrada (puedes reemplazar esto con tu propia fecha)
-        Set( FechaEntrada, Now());
-        
-        // Fecha de inicio del año actual
-        Set( FechaInicioAnio, DateValue(Year(FechaEntrada) & "-01-01"));
-        
-        // Cálculo de semanas transcurridas
-        Set( DiferenciaDias, FechaEntrada - FechaInicioAnio);
-        Set (SemanasTranscurridas, RoundUp(DiferenciaDias / 7, 0));
+    OnVisible: =
 
     Label12_19 As label:
         FontWeight: =FontWeight.Bold
@@ -32,7 +23,7 @@
         PaddingTop: =6.37
         Size: =16.58
         Width: =557.51
-        X: =404
+        X: =417
         Y: =535
         ZIndex: =2
 
@@ -116,7 +107,7 @@
     Button3_4 As button:
         OnSelect: |-
             =//UPDATE PARA LA TABLA DE CMXE_MP_N para cuando se realizo el Mantenimiento Preventivo
-            Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()})
+            Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Semana:SemanasTranscurridas },{Fecha_de_Finalizacion:Now()})
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =19.14
@@ -136,11 +127,4 @@
         X: =15
         Y: =673
         ZIndex: =22
-
-    Label1_1 As label:
-        Text: |-
-            =    Concatenate("Semana: "& Text(SemanasTranscurridas,"[$-en-US]0"))
-        X: =42
-        Y: =80
-        ZIndex: =23
 
