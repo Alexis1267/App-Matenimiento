@@ -22042,66 +22042,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'MEPS-04-CPE(Final)'.AddMediaButton1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MEPS-04-CPE(Final)'.AddMediaButton1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "MEPS-04-CPE(Final)",
-                "type": "'MEPS-04-CPE(Final)'.AddMediaButton1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MEPS-04-CPE(Final)'.TextInput3_14.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MEPS-04-CPE(Final)'.TextInput3_14.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "MEPS-04-CPE(Final)",
-                "type": "'MEPS-04-CPE(Final)'.TextInput3_14"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'MEPS-04-CPE(Final)'.Icon1_38.AccessibleLabel"
                 }
               ],
