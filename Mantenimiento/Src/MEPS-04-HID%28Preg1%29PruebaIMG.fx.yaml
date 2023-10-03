@@ -852,11 +852,11 @@
 
         Label3 As label:
             Align: =Align.Center
-            Height: =72
+            Height: =88
+            Overflow: =Overflow.Scroll
             Size: =20
             Text: =Actividad
-            Width: =1039
-            X: =163
+            Width: =1365
             Y: =108
             ZIndex: =4
 
@@ -889,6 +889,60 @@
             X: =402
             Y: =180
             ZIndex: =7
+
+        Image37 As image:
+            Height: =300
+            Image: ='HID-IMG6'
+            Visible: =ImagenVisible = "MEPS-04-HID-C"
+            Width: =350
+            X: =949
+            Y: =259
+            ZIndex: =8
+
+        Image38 As image:
+            Height: =300
+            Image: ='HID-IMG2'
+            Visible: =ImagenVisible = "MEPS-04-HID-C"
+            Width: =350
+            X: =508
+            Y: =259
+            ZIndex: =9
+
+        Image39 As image:
+            Height: =400
+            Image: ='HID-IMG7'
+            Visible: =ImagenVisible = "MEPS-04-HID-E"
+            Width: =500
+            X: =433
+            Y: =223
+            ZIndex: =10
+
+        Image41 As image:
+            Height: =400
+            Image: ='HID-IMG8' 
+            Visible: =ImagenVisible = "MEPS-04-HID-G"
+            Width: =500
+            X: =432
+            Y: =209
+            ZIndex: =11
+
+        Image42 As image:
+            Height: =400
+            Image: ='HID-IMG4'
+            Visible: =ImagenVisible = "MEPS-04-HID-H"
+            Width: =500
+            X: =449
+            Y: =209
+            ZIndex: =12
+
+        Image43 As image:
+            Height: =400
+            Image: ='HID-IMG3'
+            Visible: =ImagenVisible = "MEPS-04-HID-D"
+            Width: =500
+            X: =449
+            Y: =209
+            ZIndex: =13
 
     Botones As groupContainer.manualLayoutContainer:
         BorderThickness: =1
@@ -926,6 +980,10 @@
 
         Button4 As button:
             Height: =96
+            OnSelect: |-
+                =UpdateContext({Ilustracion : true});
+                Set(Actividad,Preg3_21.Text);
+                Set(ImagenVisible,"MEPS-04-HID-C")
             Text: ="C"
             Width: =90
             X: =344
@@ -933,6 +991,10 @@
 
         Button5 As button:
             Height: =96
+            OnSelect: |-
+                =UpdateContext({Ilustracion : true});
+                Set(Actividad,Preg4_21.Text);
+                Set(ImagenVisible,"MEPS-04-HID-D")
             Text: ="D"
             Width: =90
             X: =452
@@ -940,6 +1002,10 @@
 
         Button6 As button:
             Height: =96
+            OnSelect: |-
+                =UpdateContext({Ilustracion : true});
+                Set(Actividad,Preg5_21.Text);
+                Set(ImagenVisible,"MEPS-04-HID-E")
             Text: ="E"
             Width: =90
             X: =561
@@ -947,6 +1013,10 @@
 
         Button7 As button:
             Height: =96
+            OnSelect: |-
+                =UpdateContext({Ilustracion : true});
+                Set(Actividad,Preg7_20.Text);
+                Set(ImagenVisible,"MEPS-04-HID-G")
             Text: ="G"
             Width: =90
             X: =673
@@ -954,8 +1024,21 @@
 
         Button7_1 As button:
             Height: =96
+            OnSelect: |-
+                =UpdateContext({Ilustracion : true});
+                Set(Actividad,Preg8_17.Text);
+                Set(ImagenVisible,"MEPS-04-HID-H")
             Text: ="H"
             Width: =90
             X: =782
             ZIndex: =7
+
+    Image35_1 As image:
+        Height: =300
+        Image: ='HID-IMG5'
+        Visible: =ImagenVisible = "MEPS-04-HID-C"
+        Width: =350
+        X: =70
+        Y: =268
+        ZIndex: =63
 
