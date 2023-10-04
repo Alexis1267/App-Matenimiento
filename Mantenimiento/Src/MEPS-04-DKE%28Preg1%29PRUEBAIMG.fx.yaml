@@ -11,7 +11,10 @@
         
         Set(DropdownAsig,Split(Concat(AsignadoOP, "" & NombreOp & Char(10)),Char(10)));
         
-        ClearCollect(AsignadoOP,{NombreOp: Operador})
+        ClearCollect(AsignadoOP,{NombreOp: Operador});
+        
+        
+        Set(BotonHabilidador,true)
 
     Label10_605 As label:
         FontWeight: =FontWeight.Bold
@@ -1428,7 +1431,7 @@
             Size: =20
             Text: =Actividad
             Width: =1249
-            X: =115
+            X: =107
             Y: =106
             ZIndex: =4
 
@@ -1525,6 +1528,13 @@
             Y: =188
             ZIndex: =14
 
+        Button8 As button:
+            DisplayMode: =If()
+            Text: ="Button"
+            X: =1139
+            Y: =188
+            ZIndex: =15
+
     Botones_1 As groupContainer.manualLayoutContainer:
         BorderThickness: =1
         Height: =96
@@ -1538,6 +1548,7 @@
         ZIndex: =74
 
         Button2_1 As button:
+            Fill: =If(Checkbox1.Value,RGBA(97, 181, 73, 1),RGBA(1,1,1,1))
             Height: =96
             OnSelect: |-
                 =UpdateContext({Ilustracion : true});
@@ -1672,6 +1683,7 @@
     Checkbox1 As checkbox:
         Height: =36
         Text: =""
+        Visible: =ImagenVisible = "MEPS-04-DKE-A"
         Width: =54
         X: =55
         Y: =106
