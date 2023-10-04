@@ -1423,13 +1423,13 @@
             ZIndex: =2
 
         Label3_1 As label:
-            Align: =Align.Center
-            Height: =88
+            Height: =74
             Overflow: =Overflow.Scroll
             Size: =20
             Text: =Actividad
-            Width: =1365
-            Y: =108
+            Width: =1249
+            X: =115
+            Y: =106
             ZIndex: =4
 
         Label9_396 As label:
@@ -1668,4 +1668,32 @@
             Width: =65
             X: =942
             ZIndex: =12
+
+    Checkbox1 As checkbox:
+        Height: =36
+        Text: =""
+        Width: =54
+        X: =55
+        Y: =106
+        ZIndex: =75
+
+    Checkbox1_1 As checkbox:
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =73
+        Text: ="Realizado "
+        Width: =139
+        X: =12
+        Y: =9
+        ZIndex: =76
+
+    Checkbox1_2 As checkbox:
+        Color: =RGBA(255, 255, 255, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =73
+        Text: ="No Realizado "
+        Width: =154
+        X: =163
+        Y: =9
+        ZIndex: =77
 
