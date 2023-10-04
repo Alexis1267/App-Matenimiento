@@ -27352,6 +27352,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'MEPS-04-DKE(Preg1)PRUEBAIMG'.Container2_1.Icon1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MEPS-04-DKE(Preg1)PRUEBAIMG'.Container2_1.Icon1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "MEPS-04-DKE(Preg1)PRUEBAIMG",
+                "type": "'MEPS-04-DKE(Preg1)PRUEBAIMG'.Container2_1.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MEPS-04-DKE(Preg1)PRUEBAIMG'.Container2_1.Icon1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MEPS-04-DKE(Preg1)PRUEBAIMG'.Container2_1.Icon1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "MEPS-04-DKE(Preg1)PRUEBAIMG",
+                "type": "'MEPS-04-DKE(Preg1)PRUEBAIMG'.Container2_1.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.user_"
                 }
               ],
@@ -28396,36 +28456,6 @@
           },
           "ruleId": "app-InefficientDelayLoading",
           "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MEPS-04-DKE(Preg1)PRUEBAIMG'.Ilustracion"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MEPS-04-DKE(Preg1)PRUEBAIMG'.Ilustracion",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Ilustracion",
-                "module": "MEPS-04-DKE(Preg1)PRUEBAIMG",
-                "type": "'MEPS-04-DKE(Preg1)PRUEBAIMG'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
         },
         {
           "locations": [
