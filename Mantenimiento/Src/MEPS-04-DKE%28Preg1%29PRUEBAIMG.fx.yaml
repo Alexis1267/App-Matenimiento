@@ -1417,7 +1417,8 @@
                 Set(Actividad,Preg1_220.Text);
                 Set(ImagenVisible,"MEPS-04-HID-A")
             Text: ="A"
-            Width: =90
+            Width: =65
+            X: =55
             ZIndex: =1
 
         Button3_1 As button:
@@ -1427,8 +1428,8 @@
                 Set(Actividad,Preg2_24.Text);
                 Set(ImagenVisible,"MEPS-04-HID-B")
             Text: ="B"
-            Width: =90
-            X: =90
+            Width: =65
+            X: =134
             ZIndex: =2
 
         Button4_1 As button:
@@ -1438,8 +1439,8 @@
                 Set(Actividad,Preg3_21.Text);
                 Set(ImagenVisible,"MEPS-04-HID-C")
             Text: ="C"
-            Width: =90
-            X: =180
+            Width: =65
+            X: =215
             ZIndex: =3
 
         Button5_1 As button:
@@ -1449,8 +1450,8 @@
                 Set(Actividad,Preg4_21.Text);
                 Set(ImagenVisible,"MEPS-04-HID-D")
             Text: ="D"
-            Width: =90
-            X: =270
+            Width: =65
+            X: =295
             ZIndex: =4
 
         Button6_1 As button:
@@ -1460,8 +1461,8 @@
                 Set(Actividad,Preg5_21.Text);
                 Set(ImagenVisible,"MEPS-04-HID-E")
             Text: ="E"
-            Width: =90
-            X: =360
+            Width: =65
+            X: =378
             ZIndex: =5
 
         Button7_2 As button:
@@ -1470,9 +1471,9 @@
                 =UpdateContext({Ilustracion : true});
                 Set(Actividad,Preg7_20.Text);
                 Set(ImagenVisible,"MEPS-04-HID-G")
-            Text: ="G"
-            Width: =90
-            X: =450
+            Text: ="F"
+            Width: =65
+            X: =460
             ZIndex: =6
 
         Button7_7 As button:
@@ -1481,8 +1482,8 @@
                 =UpdateContext({Ilustracion : true});
                 Set(Actividad,Preg8_17.Text);
                 Set(ImagenVisible,"MEPS-04-HID-H")
-            Text: ="H"
-            Width: =90
+            Text: ="G"
+            Width: =65
             X: =540
             ZIndex: =7
 
@@ -1493,8 +1494,8 @@
                 Set(Actividad,Preg8_17.Text);
                 Set(ImagenVisible,"MEPS-04-HID-H")
             Text: ="H"
-            Width: =90
-            X: =630
+            Width: =65
+            X: =620
             ZIndex: =8
 
         Button7_38 As button:
@@ -1503,9 +1504,9 @@
                 =UpdateContext({Ilustracion : true});
                 Set(Actividad,Preg8_17.Text);
                 Set(ImagenVisible,"MEPS-04-HID-H")
-            Text: ="H"
-            Width: =90
-            X: =720
+            Text: ="I"
+            Width: =65
+            X: =700
             ZIndex: =9
 
         Button7_39 As button:
@@ -1514,9 +1515,9 @@
                 =UpdateContext({Ilustracion : true});
                 Set(Actividad,Preg8_17.Text);
                 Set(ImagenVisible,"MEPS-04-HID-H")
-            Text: ="H"
-            Width: =90
-            X: =810
+            Text: ="J"
+            Width: =65
+            X: =780
             ZIndex: =10
 
         Button7_40 As button:
@@ -1525,9 +1526,9 @@
                 =UpdateContext({Ilustracion : true});
                 Set(Actividad,Preg8_17.Text);
                 Set(ImagenVisible,"MEPS-04-HID-H")
-            Text: ="H"
-            Width: =90
-            X: =900
+            Text: ="K"
+            Width: =65
+            X: =860
             ZIndex: =11
 
         Button7_41 As button:
@@ -1536,8 +1537,8 @@
                 =UpdateContext({Ilustracion : true});
                 Set(Actividad,Preg8_17.Text);
                 Set(ImagenVisible,"MEPS-04-HID-H")
-            Text: ="H"
-            Width: =90
-            X: =40
+            Text: ="L"
+            Width: =65
+            X: =942
             ZIndex: =12
 
