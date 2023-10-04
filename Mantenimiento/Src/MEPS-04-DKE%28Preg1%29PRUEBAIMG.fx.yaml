@@ -1517,11 +1517,12 @@
             ZIndex: =13
 
         Image31 As image:
-            Height: =374
+            Height: =406
             Image: ='DKE-IMG1'
-            Width: =441
-            X: =478
-            Y: =196
+            Visible: =ImagenVisible = "MEPS-04-DKE-A"
+            Width: =485
+            X: =456
+            Y: =188
             ZIndex: =14
 
     Botones_1 As groupContainer.manualLayoutContainer:
@@ -1541,7 +1542,7 @@
             OnSelect: |-
                 =UpdateContext({Ilustracion : true});
                 Set(Actividad,Preg1_220.Text);
-                Set(ImagenVisible,"MEPS-04-DKE-E")
+                Set(ImagenVisible,"MEPS-04-DKE-A")
             Text: ="A"
             Width: =65
             X: =55
