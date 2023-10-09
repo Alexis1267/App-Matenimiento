@@ -31,7 +31,7 @@ Datos_MP As screen:
         Height: =18
         Width: =557.51
         Y: =328
-        ZIndex: =2
+        ZIndex: =4
 
     Rectangle1_63 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -40,13 +40,13 @@ Datos_MP As screen:
         Width: =1248
         X: =117
         Y: =319
-        ZIndex: =3
+        ZIndex: =5
 
     Rectangle1_60 As rectangle:
         Fill: =RGBA(0, 40, 85, 1)
         Height: =92
         Width: =1366
-        ZIndex: =5
+        ZIndex: =7
 
     Label1_16 As label:
         Align: =Align.Center
@@ -60,7 +60,7 @@ Datos_MP As screen:
             ="ORDEN DE TRABAJO 
             MANTENIMIENTO PREVENTIVO ACTIVO"
         Width: =1366
-        ZIndex: =6
+        ZIndex: =8
 
     Button1_15 As button:
         BorderThickness: =0
@@ -101,7 +101,7 @@ Datos_MP As screen:
         Width: =326.51
         X: =520
         Y: =707
-        ZIndex: =7
+        ZIndex: =9
 
     Image2_59 As image:
         Height: =58
@@ -111,7 +111,7 @@ Datos_MP As screen:
         Width: =247.42
         X: =1119
         Y: =14
-        ZIndex: =8
+        ZIndex: =10
 
     Button5_13 As button:
         Color: =RGBA(0, 0, 0, 1)
@@ -126,7 +126,7 @@ Datos_MP As screen:
         Visible: =false
         Width: =204.07
         Y: =723
-        ZIndex: =9
+        ZIndex: =11
 
     Label1_19 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -139,14 +139,6 @@ Datos_MP As screen:
         Width: =251.26
         X: =399.77
         Y: =319
-        ZIndex: =31
-
-    Rectangle1_65 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(166, 166, 166, 1)
-        Height: =16
-        Width: =650
-        Y: =112
         ZIndex: =33
 
     Group7 As group:
@@ -167,7 +159,7 @@ Datos_MP As screen:
             Width: =295
             X: =22
             Y: =404
-            ZIndex: =15
+            ZIndex: =17
 
         Label7_12 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -183,7 +175,7 @@ Datos_MP As screen:
             Width: =295
             X: =22
             Y: =364
-            ZIndex: =22
+            ZIndex: =24
 
     Group8 As group:
         Height: =5
@@ -203,7 +195,7 @@ Datos_MP As screen:
             Width: =295
             X: =656
             Y: =404
-            ZIndex: =20
+            ZIndex: =22
 
         Label7_17 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -219,28 +211,14 @@ Datos_MP As screen:
             Width: =295
             X: =656
             Y: =364
-            ZIndex: =21
+            ZIndex: =23
 
-    Rectangle1_71 As rectangle:
+    Rectangle1_65 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
-        Fill: =RGBA(116, 116, 116, 1)
-        Height: =36
-        Width: =1249
-        X: =117
-        Y: =102
-        ZIndex: =34
-
-    Label1_23 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =36
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =25.51
-        Text: ="Datos de la Maquina"
-        Width: =547.16
-        X: =205
-        Y: =102
+        Fill: =RGBA(166, 166, 166, 1)
+        Height: =16
+        Width: =650
+        Y: =112
         ZIndex: =35
 
     Group2_1 As group:
@@ -266,7 +244,7 @@ Datos_MP As screen:
             Width: =150.49
             X: =22
             Y: =145
-            ZIndex: =23
+            ZIndex: =25
 
         Label8_8 As label:
             Align: =Align.Center
@@ -284,7 +262,29 @@ Datos_MP As screen:
             Width: =294.64
             X: =173
             Y: =145
-            ZIndex: =24
+            ZIndex: =26
+
+    Rectangle1_71 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(116, 116, 116, 1)
+        Height: =36
+        Width: =1249
+        X: =117
+        Y: =102
+        ZIndex: =36
+
+    Label1_23 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =25.51
+        Text: ="Datos de la Maquina"
+        Width: =547.16
+        X: =205
+        Y: =102
+        ZIndex: =37
 
     Group3_1 As group:
         Height: =5
@@ -307,7 +307,7 @@ Datos_MP As screen:
             Width: =323.96
             X: =22
             Y: =222
-            ZIndex: =25
+            ZIndex: =27
 
         Label8_9 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -320,18 +320,7 @@ Datos_MP As screen:
             Width: =323.96
             X: =22
             Y: =262
-            ZIndex: =26
-
-    Icon6 As icon.BackArrow:
-        Color: =RGBA(255, 255, 255, 1)
-        Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Lista_MP,ScreenTransition.Fade)
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =95.66
-        X: =22
-        Y: =14
-        ZIndex: =38
+            ZIndex: =28
 
     Group3_2 As group:
         Height: =5
@@ -353,7 +342,7 @@ Datos_MP As screen:
             Width: =323.96
             X: =399
             Y: =222
-            ZIndex: =27
+            ZIndex: =29
 
         Label8_10 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -365,7 +354,18 @@ Datos_MP As screen:
             Width: =323.96
             X: =399
             Y: =262
-            ZIndex: =28
+            ZIndex: =30
+
+    Icon6 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Lista_MP,ScreenTransition.Fade)
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =95.66
+        X: =22
+        Y: =14
+        ZIndex: =40
 
     Group3_3 As group:
         Height: =5
@@ -387,7 +387,7 @@ Datos_MP As screen:
             Width: =323.96
             X: =774
             Y: =222
-            ZIndex: =29
+            ZIndex: =31
 
         Label8_11 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -399,7 +399,153 @@ Datos_MP As screen:
             Width: =323.96
             X: =774
             Y: =262
-            ZIndex: =30
+            ZIndex: =32
+
+    Group3_10 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =44
+
+        Label7_44 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 40, 85, 1)
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: |-
+                ="Condición del equipo:"
+            Width: =295
+            X: =656
+            Y: =565
+            ZIndex: =38
+
+        Label8_24 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =If(Label8_24.Text = "Off",RGBA(168,0,0,1),Label8_24.Text = "On",RGBA(97,180,93,100))
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: |
+                =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Cond_Equipo)
+            Width: =295
+            X: =656
+            Y: =605
+            ZIndex: =39
+
+    Group16 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =44
+
+        Label12_15 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Height: =146
+            Overflow: =Overflow.Scroll
+            PaddingRight: =3.63
+            PaddingTop: =3.63
+            Size: =16.58
+            Text: =Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
+            Width: =371
+            X: =976
+            Y: =499
+            ZIndex: =41
+
+        Label7_18 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 40, 85, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: |-
+                ="Tecnicos Involucrados:"
+            Width: =371
+            X: =976
+            Y: =464
+            ZIndex: =42
+
+        Icon8 As icon.AddUser:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =29
+            Icon: =Icon.AddUser
+            OnSelect: |-
+                =//ABRE EL MODALPOP
+                UpdateContext({ModalPop_Datos:true});
+                
+                //VARIABLE PARA MOSTRAR SOLAMENTE LOS BOTONES DE AGREGAR USUARIO
+                Set(BTN_VISIBLE,"AGREGAR")
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =43
+            X: =989
+            Y: =469
+            ZIndex: =43
+
+        Icon9 As icon.Trash:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =28
+            Icon: =Icon.Trash
+            OnSelect: |-
+                =//ABRE MODALPOP
+                UpdateContext({ModalPop_Datos:true});
+                
+                //VARIABLE PARA MOSTRAR SOLAMENTE LOS BOTONES DE ELIMINAR USUARIO
+                Set(BTN_VISIBLE, "ELIMINAR");
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =42
+            X: =1299
+            Y: =469
+            ZIndex: =44
+
+    Group5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =44
+
+        Label8_4 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Asignado)
+            Width: =296
+            X: =655
+            Y: =504
+            ZIndex: =3
+
+        Label7_30 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 40, 85, 1)
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: |-
+                ="Asignado a:"
+            Width: =296
+            X: =655
+            Y: =464
+            ZIndex: =34
 
     Label8_12 As label:
         Align: =Align.Center
@@ -414,7 +560,7 @@ Datos_MP As screen:
         Width: =294.64
         X: =1053
         Y: =145
-        ZIndex: =43
+        ZIndex: =45
 
     ModalPop_Datos As groupContainer.manualLayoutContainer:
         Height: =768
@@ -422,7 +568,7 @@ Datos_MP As screen:
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
         Width: =1366
-        ZIndex: =44
+        ZIndex: =46
 
         HtmlText3_15 As htmlViewer:
             Height: =768
@@ -711,137 +857,26 @@ Datos_MP As screen:
                 X: =221
                 ZIndex: =13
 
-    Group3_10 As group:
+    Group5_1 As group:
         Height: =5
         Width: =5
         X: =20
         Y: =20
-        ZIndex: =44
+        ZIndex: =47
 
-        Label7_44 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(0, 40, 85, 1)
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: |-
-                ="Condición del equipo:"
-            Width: =295
-            X: =656
-            Y: =565
-            ZIndex: =36
-
-        Label8_24 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =If(Label8_24.Text = "Off",RGBA(168,0,0,1),Label8_24.Text = "On",RGBA(97,180,93,100))
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: |
-                =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Cond_Equipo)
-            Width: =295
-            X: =656
-            Y: =605
-            ZIndex: =37
-
-    Group16 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =44
-
-        Label12_15 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Height: =226
-            Overflow: =Overflow.Scroll
-            PaddingRight: =3.63
-            PaddingTop: =3.63
-            Size: =16.58
-            Text: =Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
-            Width: =371
-            X: =976
-            Y: =419
-            ZIndex: =39
-
-        Label7_18 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(0, 40, 85, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =54
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: |-
-                ="Tecnicos Involucrados:"
-            Width: =371
-            X: =976
-            Y: =364
-            ZIndex: =40
-
-        Icon8 As icon.AddUser:
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =45
-            Icon: =Icon.AddUser
-            OnSelect: |-
-                =//ABRE EL MODALPOP
-                UpdateContext({ModalPop_Datos:true});
-                
-                //VARIABLE PARA MOSTRAR SOLAMENTE LOS BOTONES DE AGREGAR USUARIO
-                Set(BTN_VISIBLE,"AGREGAR")
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            Width: =43
-            X: =989
-            Y: =371
-            ZIndex: =41
-
-        Icon9 As icon.Trash:
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =43
-            Icon: =Icon.Trash
-            OnSelect: |-
-                =//ABRE MODALPOP
-                UpdateContext({ModalPop_Datos:true});
-                
-                //VARIABLE PARA MOSTRAR SOLAMENTE LOS BOTONES DE ELIMINAR USUARIO
-                Set(BTN_VISIBLE, "ELIMINAR");
-            PaddingRight: =0.00
-            PaddingTop: =0.00
-            Width: =42
-            X: =1299
-            Y: =372
-            ZIndex: =42
-
-    Group5 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =44
-
-        Label8_4 As label:
+        Label8_5 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             PaddingRight: =6.37
             PaddingTop: =6.37
             Size: =16.58
-            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Asignado)
+            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Semana)
             Width: =296
-            X: =655
-            Y: =504
+            X: =977
+            Y: =404
             ZIndex: =1
 
-        Label7_30 As label:
+        Label7_31 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Color: =RGBA(255, 255, 255, 1)
@@ -851,11 +886,11 @@ Datos_MP As screen:
             PaddingTop: =6.37
             Size: =16.58
             Text: |-
-                ="Asignado a:"
+                ="Semana:"
             Width: =296
-            X: =655
-            Y: =464
-            ZIndex: =32
+            X: =977
+            Y: =364
+            ZIndex: =2
 
     Group1 As group:
         Height: =5
@@ -878,7 +913,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =565
-            ZIndex: =16
+            ZIndex: =18
 
         Label8_2 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -895,7 +930,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =605
-            ZIndex: =17
+            ZIndex: =19
 
     Group2 As group:
         Height: =5
@@ -918,7 +953,7 @@ Datos_MP As screen:
             Width: =295
             X: =22
             Y: =464
-            ZIndex: =11
+            ZIndex: =13
 
         Label8 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -930,7 +965,7 @@ Datos_MP As screen:
             Width: =295
             X: =22
             Y: =504
-            ZIndex: =13
+            ZIndex: =15
 
     Group3 As group:
         Height: =5
@@ -953,7 +988,7 @@ Datos_MP As screen:
             Width: =295
             X: =22
             Y: =565
-            ZIndex: =18
+            ZIndex: =20
 
         Label8_3 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -965,7 +1000,7 @@ Datos_MP As screen:
             Width: =295
             X: =22
             Y: =605
-            ZIndex: =19
+            ZIndex: =21
 
     Group4 As group:
         Height: =5
@@ -988,7 +1023,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =464
-            ZIndex: =12
+            ZIndex: =14
 
         Label8_1 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1000,7 +1035,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =504
-            ZIndex: =14
+            ZIndex: =16
 
     Group6 As group:
         Height: =5
@@ -1020,7 +1055,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =404
-            ZIndex: =4
+            ZIndex: =6
 
         Label7 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1036,5 +1071,5 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =364
-            ZIndex: =10
+            ZIndex: =12
 
