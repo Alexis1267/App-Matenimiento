@@ -29,7 +29,7 @@ Lista_MP As screen:
             
             //Filter(CMXE_MP_N,Localizacion = DropdownLocali.Selected.Value || Proc_No = DropdownProcNo.Selected.Value || Nom_Equipo = DropdownNom_equi.Selected.Value || Clas_Mantenimineto = DropdownMTTO.Selected.Value ) 
             
-            Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text,Estatus = "En Proceso")
+            //Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text,Estatus = "En Proceso")
             
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -461,7 +461,7 @@ Lista_MP As screen:
             ChevronFill: =RGBA(0, 18, 107, 1)
             Items: =Distinct(Filter(CMXE_MP_N,Nom_Equipo = DropdownNom_equi.Selected.Value),Clas_Mantenimineto)
             Width: =242
-            X: =1044
+            X: =778
             Y: =124
             ZIndex: =8
 
@@ -471,7 +471,7 @@ Lista_MP As screen:
             Text: |-
                 ="Clase de Mtto:"
             Width: =242
-            X: =1044
+            X: =778
             Y: =96
             ZIndex: =11
 
@@ -515,10 +515,10 @@ Lista_MP As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
-            Items: =Distinct(Filter(CMXE_MP_N,Proc_No = DropdownProcNo.Selected.Value),Nom_Equipo)
+            Items: =Distinct(Filter(CMXE_MP_N,ID_Maq = DropdownActivo.Selected.Value),Nom_Equipo)
             Width: =231
-            X: =786
-            Y: =124
+            X: =524
+            Y: =122
             ZIndex: =12
 
         Label11_14 As label:
@@ -527,8 +527,8 @@ Lista_MP As screen:
             Text: |-
                 ="Nombre del equipo:"
             Width: =231
-            X: =786
-            Y: =96
+            X: =524
+            Y: =94
             ZIndex: =13
 
     Icon3 As icon.Reload:
@@ -551,7 +551,7 @@ Lista_MP As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
-            Items: =Distinct(CMXE_MP_N,ID_Maq)
+            Items: =Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),ID_Maq)
             Width: =231
             X: =262
             Y: =124
