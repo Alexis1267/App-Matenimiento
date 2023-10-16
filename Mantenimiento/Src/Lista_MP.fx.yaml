@@ -584,8 +584,9 @@ Lista_MP As screen:
         Y: =92
         ZIndex: =20
 
-    TextInput1 As text:
+    Filtro_Sema As text:
         Default: =""
+        Format: =TextFormat.Number
         HintText: =""
         Width: =150
         X: =1060
