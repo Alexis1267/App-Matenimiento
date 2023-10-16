@@ -576,3 +576,19 @@ Lista_MP As screen:
             Y: =96
             ZIndex: =17
 
+    Label11_15 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        Text: ="N.º de Semana"
+        X: =1060
+        Y: =92
+        ZIndex: =20
+
+    TextInput1 As text:
+        Default: =""
+        HintText: =""
+        Width: =150
+        X: =1060
+        Y: =122
+        ZIndex: =21
+
