@@ -12,7 +12,7 @@ Lista_MP As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Height: =592
-        Items: |
+        Items: |-
             =//Search(CMXE_MP_N, Buscador.Text,"Proc_No")
             
             ////////Filter( CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado") //Esta parte del codigo es solamente para que me filtre todos los preventivos de las maquinas que estan en proceso
@@ -33,7 +33,8 @@ Lista_MP As screen:
             
             //Search(CMXE_MP_N,DropdownMTTO.SelectedText.Value,"Clas_Mantenimineto")
             
-            If(IsBlank(DropdownMTTO.SelectedText.Value) && IsBlank(Filtro_Sema.Text),CMXE_MP_N,Search(CMXE_MP_N,DropdownMTTO.SelectedText.Value,"Clas_Mantenimineto"))
+            //If(IsBlank(DropdownMTTO.SelectedText.Value) && IsBlank(Filtro_Sema.Text),CMXE_MP_N,Search(CMXE_MP_N,DropdownMTTO.SelectedText.Value,"Clas_Mantenimineto"))
+            Filter(CMXE_MP_N,Filtro_Sema.Text = Semana)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
