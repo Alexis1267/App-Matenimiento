@@ -870,6 +870,7 @@
             Size: =25.51
             Text: ="Ilustracion de imagenes"
             Width: =1262
+            X: =52
             ZIndex: =5
 
         Image35 As image:
@@ -951,8 +952,8 @@
         RadiusBottomRight: =10
         RadiusTopLeft: =10
         RadiusTopRight: =10
-        Width: =957
-        X: =225
+        Width: =1109
+        X: =147
         Y: =672
         ZIndex: =62
 
@@ -964,7 +965,7 @@
                 Set(ImagenVisible,"MEPS-04-HID-A")
             Text: ="A"
             Width: =90
-            X: =120
+            X: =48
             ZIndex: =1
 
         Button3 As button:
@@ -975,7 +976,7 @@
                 Set(ImagenVisible,"MEPS-04-HID-B")
             Text: ="B"
             Width: =90
-            X: =232
+            X: =149
             ZIndex: =2
 
         Button4 As button:
@@ -986,7 +987,7 @@
                 Set(ImagenVisible,"MEPS-04-HID-C")
             Text: ="C"
             Width: =90
-            X: =344
+            X: =250
             ZIndex: =3
 
         Button5 As button:
@@ -997,7 +998,7 @@
                 Set(ImagenVisible,"MEPS-04-HID-D")
             Text: ="D"
             Width: =90
-            X: =452
+            X: =352
             ZIndex: =4
 
         Button6 As button:
@@ -1008,7 +1009,7 @@
                 Set(ImagenVisible,"MEPS-04-HID-E")
             Text: ="E"
             Width: =90
-            X: =561
+            X: =456
             ZIndex: =5
 
         Button7 As button:
@@ -1019,7 +1020,7 @@
                 Set(ImagenVisible,"MEPS-04-HID-G")
             Text: ="G"
             Width: =90
-            X: =673
+            X: =661
             ZIndex: =6
 
         Button7_1 As button:
@@ -1030,8 +1031,41 @@
                 Set(ImagenVisible,"MEPS-04-HID-H")
             Text: ="H"
             Width: =90
-            X: =782
+            X: =764
             ZIndex: =7
+
+        Button6_2 As button:
+            Height: =96
+            OnSelect: |-
+                =UpdateContext({Ilustracion : true});
+                Set(Actividad,Preg5_21.Text);
+                Set(ImagenVisible,"MEPS-04-HID-E")
+            Text: ="F"
+            Width: =90
+            X: =558
+            ZIndex: =8
+
+        Button7_42 As button:
+            Height: =96
+            OnSelect: |-
+                =UpdateContext({Ilustracion : true});
+                Set(Actividad,Preg8_17.Text);
+                Set(ImagenVisible,"MEPS-04-HID-H")
+            Text: ="I"
+            Width: =90
+            X: =866
+            ZIndex: =9
+
+        Button7_43 As button:
+            Height: =96
+            OnSelect: |-
+                =UpdateContext({Ilustracion : true});
+                Set(Actividad,Preg8_17.Text);
+                Set(ImagenVisible,"MEPS-04-HID-H")
+            Text: ="J"
+            Width: =90
+            X: =969
+            ZIndex: =10
 
     Image35_1 As image:
         Height: =300
