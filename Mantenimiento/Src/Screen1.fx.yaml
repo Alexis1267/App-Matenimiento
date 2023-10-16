@@ -615,3 +615,10 @@ Screen1 As screen:
                 Y: =105
                 ZIndex: =22
 
+    Icon2 As icon.Document:
+        Icon: =Icon.Document
+        OnSelect: =Launch(sway.office.com/aDhBALjzyCp0FKLq)
+        X: =495
+        Y: =280
+        ZIndex: =9
+
