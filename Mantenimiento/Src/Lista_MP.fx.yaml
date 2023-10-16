@@ -12,7 +12,7 @@ Lista_MP As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Height: =592
-        Items: |+
+        Items: |
             =//Search(CMXE_MP_N, Buscador.Text,"Proc_No")
             
             ////////Filter( CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado") //Esta parte del codigo es solamente para que me filtre todos los preventivos de las maquinas que estan en proceso
@@ -31,6 +31,9 @@ Lista_MP As screen:
             
             //Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text,Estatus = "En Proceso")
             
+            //Search(CMXE_MP_N,DropdownMTTO.SelectedText.Value,"Clas_Mantenimineto")
+            
+            If(IsBlank(DropdownMTTO.SelectedText.Value),CMXE_MP_N,Search(CMXE_MP_N,DropdownMTTO.SelectedText.Value,"Clas_Mantenimineto"))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
@@ -456,6 +459,7 @@ Lista_MP As screen:
         ZIndex: =13
 
         DropdownMTTO As dropdown:
+            AllowEmptySelection: =true
             BorderThickness: =1
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
@@ -487,6 +491,7 @@ Lista_MP As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
+            DisplayMode: =DisplayMode.Disabled
             Items: =Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),Localizacion)
             Width: =231
             X: =11
@@ -495,6 +500,7 @@ Lista_MP As screen:
 
         Label11 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
+            DisplayMode: =DisplayMode.Disabled
             FontWeight: =FontWeight.Bold
             Height: =27
             Text: |-
@@ -515,6 +521,7 @@ Lista_MP As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
+            DisplayMode: =DisplayMode.Disabled
             Items: =Distinct(Filter(CMXE_MP_N,ID_Maq = DropdownActivo.Selected.Value),Nom_Equipo)
             Width: =231
             X: =524
@@ -522,6 +529,7 @@ Lista_MP As screen:
             ZIndex: =12
 
         Label11_14 As label:
+            DisplayMode: =DisplayMode.Disabled
             FontWeight: =FontWeight.Bold
             Height: =27
             Text: |-
@@ -551,6 +559,7 @@ Lista_MP As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
+            DisplayMode: =DisplayMode.Disabled
             Items: =Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),ID_Maq)
             Width: =231
             X: =262
@@ -558,6 +567,7 @@ Lista_MP As screen:
             ZIndex: =16
 
         Label11_20 As label:
+            DisplayMode: =DisplayMode.Disabled
             FontWeight: =FontWeight.Bold
             Height: =27
             Text: ="Activo.No"
