@@ -33,7 +33,7 @@ Lista_MP As screen:
             
             //Search(CMXE_MP_N,DropdownMTTO.SelectedText.Value,"Clas_Mantenimineto")
             
-            If(IsBlank(DropdownMTTO.SelectedText.Value),CMXE_MP_N,Search(CMXE_MP_N,DropdownMTTO.SelectedText.Value,"Clas_Mantenimineto"))
+            If(IsBlank(DropdownMTTO.SelectedText.Value) && IsBlank(Filtro_Sema.Text),CMXE_MP_N,Search(CMXE_MP_N,DropdownMTTO.SelectedText.Value,"Clas_Mantenimineto"))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
