@@ -146,6 +146,7 @@
         ZIndex: =13
 
     Btn3_2 As button:
+        DisplayMode: =If(ModalAbierto,DisplayMode.Disabled,DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
@@ -937,10 +938,12 @@
 
     Btn1_3 As button:
         AutoDisableOnSelect: =
+        DisplayMode: =If(ModalAbierto,DisplayMode.Disabled,DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |
-            =Set(BotonActivo,"Boton1");
+            =Set(ModalAbierto,true);
+            Set(BotonActivo,"Boton1");
             Set(Pregunta,Preg1_2.Text); //Variable que me trae la pregunta
             UpdateContext({ShowPopUp : true}); //Variable para habilitar el ModalPopUp
         PaddingRight: =6.37
@@ -954,10 +957,12 @@
         ZIndex: =70
 
     Btn2_3 As button:
+        DisplayMode: =If(ModalAbierto,DisplayMode.Disabled,DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
-            =Set(BotonActivo,"Boton2");
+            =Set(ModalAbierto,true);
+            Set(BotonActivo,"Boton2");
             Set(Pregunta,Preg2_2.Text);
             UpdateContext({ShowPopUp : true});
         PaddingRight: =6.37
@@ -988,8 +993,8 @@
                   color: #fff;
                   box-shadow: 0px 0px 25px #222;
                   backdrop-filter: blur(10px);
-                height:"& App.Height &"px;
-                width:"&App.Width &"px;""></div>"
+                height:"& 1920 &"px;
+                width:"&1080 &"px;""></div>"
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0.00
@@ -1084,6 +1089,7 @@
                     If(BotonActivo = "Boton3", Btn3_2.DisplayMode.Disabled, true);
                     
                     Set(BotonActivo, "");
+                    Set(ModalAbierto,false);
                     
                     
                     

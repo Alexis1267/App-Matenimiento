@@ -1073,3 +1073,11 @@
                 Y: =105
                 ZIndex: =22
 
+    Button9_1 As button:
+        Height: =100
+        OnSelect: =Set(TiempoFinal,Now())
+        Text: ="Final de temporizador"
+        X: =440
+        Y: =555
+        ZIndex: =73
+
