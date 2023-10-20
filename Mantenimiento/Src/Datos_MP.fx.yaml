@@ -21,6 +21,8 @@ Datos_MP As screen:
         Set( CadenaCompleta, MAQUINA);
         Set( UltimasTresLetrasMAQ, Right(CadenaCompleta, 3));
         
+        Set(PrimerasLetrasMAQ,Left(CadenaCompleta,8));
+        
         
         
         
@@ -383,11 +385,17 @@ Datos_MP As screen:
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =16.58
-        Text: =UltimasTresLetrasMAQ
-        Visible: =false
+        Text: |-
+            =Right(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta)
+                ) - 1
+            )
         Width: =294.64
-        X: =1072
-        Y: =96
+        X: =1053
+        Y: =149
         ZIndex: =42
 
     ModalPop_Datos As groupContainer.manualLayoutContainer:
@@ -845,6 +853,28 @@ Datos_MP As screen:
             X: =655
             Y: =488
             ZIndex: =32
+
+    Label8_13 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        Font: =Font.Arial
+        Height: =61
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =16.58
+        Text: |
+            =Left(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta) + 1
+                )-1
+            ) 
+        Width: =294.64
+        X: =736
+        Y: =151
+        ZIndex: =45
 
     Group5_1 As group:
         Height: =5

@@ -27591,6 +27591,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.PrimerasLetrasMAQ"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.PrimerasLetrasMAQ",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "PrimerasLetrasMAQ",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.UltimasTresLetrasMAQ"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.UltimasTresLetrasMAQ",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "UltimasTresLetrasMAQ",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Maq"
                 }
               ],

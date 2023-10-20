@@ -9,6 +9,7 @@ Lista_MP As screen:
         
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+        BorderColor: =RGBA(21, 44, 115, 1)
         BorderThickness: =1
         DelayItemLoading: =true
         Height: =598
@@ -61,7 +62,7 @@ Lista_MP As screen:
         OnSelect: =
         TemplateFill: =If(ThisItem.IsSelected,RGBA(186,192,208,1), RGBA(0,0,0,0)) //En esta parte se realiza una validacion, solo con la finalidad de estetica, ya que lo que realiza este codigo es de que me esta diciendo que si se selecciona este item, que me lo colore a un color tono gris 
         TemplatePadding: =0
-        TemplateSize: =218
+        TemplateSize: =220
         Width: =1366
         X: =0.00
         Y: =170
@@ -78,7 +79,7 @@ Lista_MP As screen:
             Size: =17.86
             Text: =ThisItem.Proc_No
             VerticalAlign: =VerticalAlign.Top
-            Width: =285
+            Width: =403
             X: =372
             Y: =37
             ZIndex: =1
@@ -605,7 +606,10 @@ Lista_MP As screen:
     Icon2 As icon.Undo:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Undo
-        OnSelect: =Navigate(QR_Inicio)
+        OnSelect: |-
+            =Navigate(QR_Inicio);
+            Reset(DropdownMTTO);
+            Reset(Filtro_Sema);
         X: =1281
         Y: =14
         ZIndex: =23
