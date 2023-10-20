@@ -93,8 +93,8 @@
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
-        "appVer": "3.23094.31",
-        "modifiedOn": "2023-10-17 20:14:03",
+        "appVer": "3.23101.23",
+        "modifiedOn": "2023-10-20 14:03:56",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
@@ -113,6 +113,9 @@
           "CMXE_TablaH_MP": {
             "tableName": "[dbo].[CMXE_TablaH_MP]"
           },
+          "PreventivSure_Tecnicos": {
+            "tableName": "[dbo].[PreventivSure_Tecnicos]"
+          },
           "Prueba_Img_MP": {
             "tableName": "[dbo].[Prueba_Img_MP]"
           }
@@ -122,7 +125,8 @@
     "dataSources": [
       "CMXE_TablaH_MP",
       "Prueba_Img_MP",
-      "CMXE_MP_N"
+      "CMXE_MP_N",
+      "PreventivSure_Tecnicos"
     ],
     "dependencies": {},
     "dependents": [],
