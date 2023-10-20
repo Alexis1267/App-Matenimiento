@@ -858,6 +858,12 @@ Datos_MP As screen:
                 X: =221
                 ZIndex: =13
 
+            Label4 As label:
+                Text: =LookUp(PreventivSure_Tecnicos,DropUser_2.SelectedText.Value = Tecnico,Num_Empleado)
+                X: =698
+                Y: =200
+                ZIndex: =14
+
     Group5_1 As group:
         Height: =5
         Width: =5
