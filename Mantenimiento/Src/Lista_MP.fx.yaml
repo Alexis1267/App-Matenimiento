@@ -419,7 +419,7 @@ Lista_MP As screen:
             ZIndex: =24
 
     Rectangle1_61 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
+        Fill: =RGBA(21, 44, 115, 1)
         Height: =92
         Width: =1366
         X: =0.00
@@ -436,19 +436,9 @@ Lista_MP As screen:
         Text: |-
             ="ORDEN DE TRABAJO 
             MANTENIMIENTO PREVENTIVO ACTIVO"
-        Width: =1366
+        Width: =1345
         X: =0.00
         ZIndex: =4
-
-    Image2_60 As image:
-        Height: =75
-        Image: =carrier_logo_300
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =247.42
-        X: =1119
-        Y: =8
-        ZIndex: =5
 
     MAQUINA_QR As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -457,10 +447,11 @@ Lista_MP As screen:
         PaddingTop: =6.37
         Size: =16.58
         Text: |-
-            =//Maquina_QR
-            "MEPS-04"
+            =Maquina_QR
+            //"MEPS-04"
         Width: =191.32
-        X: =71.43
+        X: =1120
+        Y: =6
         ZIndex: =6
 
     MAQUINA_QR_3Letras As label:
@@ -472,8 +463,8 @@ Lista_MP As screen:
         Text: ="MP"
         Visible: =false
         Width: =191.32
-        X: =71.43
-        Y: =40
+        X: =1120
+        Y: =46
         ZIndex: =7
 
     Group17 As group:
@@ -490,8 +481,8 @@ Lista_MP As screen:
             ChevronFill: =RGBA(0, 18, 107, 1)
             Items: =Distinct(Filter(CMXE_MP_N,Nom_Equipo = DropdownNom_equi.Selected.Value),Clas_Mantenimineto)
             Width: =242
-            X: =778
-            Y: =120
+            X: =913
+            Y: =121
             ZIndex: =8
 
         Label11_13 As label:
@@ -500,8 +491,8 @@ Lista_MP As screen:
             Text: |-
                 ="Clase de Mtto:"
             Width: =242
-            X: =778
-            Y: =92
+            X: =913
+            Y: =93
             ZIndex: =11
 
     Group18 As group:
@@ -519,8 +510,8 @@ Lista_MP As screen:
             DisplayMode: =DisplayMode.Disabled
             Items: =Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),Localizacion)
             Width: =231
-            X: =11
-            Y: =122
+            X: =146
+            Y: =123
             ZIndex: =9
 
         Label11 As label:
@@ -531,8 +522,8 @@ Lista_MP As screen:
             Text: |-
                 ="Localización:"
             Width: =231
-            X: =11
-            Y: =95
+            X: =146
+            Y: =96
             ZIndex: =10
 
     Group17_1 As group:
@@ -550,8 +541,8 @@ Lista_MP As screen:
             Height: =39
             Items: =Distinct(Filter(CMXE_MP_N,ID_Maq = DropdownActivo.Selected.Value),Nom_Equipo)
             Width: =231
-            X: =524
-            Y: =120
+            X: =659
+            Y: =121
             ZIndex: =12
 
         Label11_14 As label:
@@ -561,17 +552,16 @@ Lista_MP As screen:
             Text: |-
                 ="Nombre del equipo:"
             Width: =231
-            X: =524
-            Y: =92
+            X: =659
+            Y: =93
             ZIndex: =13
 
     Icon3 As icon.Reload:
-        Height: =65
+        Color: =RGBA(21, 44, 115, 1)
         Icon: =Icon.Reload
         OnSelect: =Refresh(CMXE_MP_N)
-        Width: =59
-        X: =1271
-        Y: =97
+        X: =25
+        Y: =99
         ZIndex: =18
 
     Group17_6 As group:
@@ -588,8 +578,8 @@ Lista_MP As screen:
             DisplayMode: =DisplayMode.Disabled
             Items: =Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),ID_Maq)
             Width: =231
-            X: =262
-            Y: =121
+            X: =397
+            Y: =122
             ZIndex: =16
 
         Label11_20 As label:
@@ -598,24 +588,48 @@ Lista_MP As screen:
             Height: =27
             Text: ="Activo.No"
             Width: =231
-            X: =262
-            Y: =93
+            X: =397
+            Y: =94
             ZIndex: =17
 
-    Label11_15 As label:
-        FontWeight: =FontWeight.Bold
-        Height: =28
-        Text: ="N.º de Semana"
-        X: =1060
-        Y: =92
-        ZIndex: =20
+    Image2_58 As image:
+        Height: =92
+        Image: =carrier_logo_300
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =159
+        X: =44
+        ZIndex: =22
 
-    Filtro_Sema As text:
-        Default: =""
-        Format: =TextFormat.Number
-        HintText: =""
-        Width: =150
-        X: =1060
-        Y: =122
-        ZIndex: =21
+    Icon2 As icon.Undo:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Undo
+        OnSelect: =Navigate(QR_Inicio)
+        X: =1281
+        Y: =14
+        ZIndex: =23
+
+    Group9 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        Label11_15 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            Text: ="N.º de Semana"
+            X: =1195
+            Y: =93
+            ZIndex: =20
+
+        Filtro_Sema As text:
+            Default: =""
+            Format: =TextFormat.Number
+            HintText: =""
+            Width: =150
+            X: =1195
+            Y: =119
+            ZIndex: =21
 
