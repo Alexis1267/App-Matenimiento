@@ -146,7 +146,7 @@
         ZIndex: =13
 
     Btn3_2 As button:
-        DisplayMode: =If(ModalAbierto,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
@@ -308,7 +308,7 @@
         ZIndex: =23
 
     Rectangle1_67 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
+        Fill: =RGBA(21, 44, 115, 1)
         Height: =59
         Width: =1366
         X: =0.00
@@ -328,7 +328,7 @@
         ZIndex: =25
 
     Rectangle2_422 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
+        Fill: =RGBA(21, 44, 115, 1)
         Height: =7
         Width: =1366
         X: =0.00
@@ -391,7 +391,7 @@
     Resp1_2 As dropdown:
         AllowEmptySelection: =true
         BorderColor: =RGBA(0, 40, 85, 1)
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         DisabledFill: =RGBA(255, 255, 255, 1)
         Height: =26
@@ -423,7 +423,7 @@
 
     Resp3_2 As dropdown:
         AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
@@ -454,7 +454,7 @@
 
     Resp4_2 As dropdown:
         AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
@@ -485,7 +485,7 @@
 
     Resp5_2 As dropdown:
         AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
@@ -577,13 +577,13 @@
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =88
-        X: =1237
+        X: =1255
         Y: =672
         ZIndex: =40
 
     Resp6_2 As dropdown:
         AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
@@ -624,7 +624,7 @@
 
     Resp7_2 As dropdown:
         AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
@@ -645,7 +645,7 @@
 
     Resp8_2 As dropdown:
         AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
@@ -676,7 +676,7 @@
 
     Resp9_2 As dropdown:
         AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
@@ -707,7 +707,7 @@
 
     Resp10_2 As dropdown:
         AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
@@ -738,7 +738,7 @@
 
     Resp11_2 As dropdown:
         AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
@@ -769,7 +769,7 @@
 
     Resp12_2 As dropdown:
         AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
@@ -799,29 +799,19 @@
         ZIndex: =54
 
     Icon1_34 As icon.BackArrow:
-        Height: =86
+        Height: =85
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
-        Width: =147.95
-        X: =33.17
-        Y: =673
+        Width: =85
+        X: =22
+        Y: =674
         ZIndex: =55
-
-    Image2_63 As image:
-        Height: =41
-        Image: =carrier_logo_300
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =266.56
-        X: =1099.44
-        Y: =9
-        ZIndex: =56
 
     Resp2_2 As dropdown:
         AllowEmptySelection: =true
-        ChevronBackground: =RGBA(0, 40, 85, 1)
+        ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
@@ -938,11 +928,11 @@
 
     Btn1_3 As button:
         AutoDisableOnSelect: =
-        DisplayMode: =If(ModalAbierto,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |
-            =Set(ModalAbierto,true);
+            =
             Set(BotonActivo,"Boton1");
             Set(Pregunta,Preg1_2.Text); //Variable que me trae la pregunta
             UpdateContext({ShowPopUp : true}); //Variable para habilitar el ModalPopUp
@@ -957,7 +947,7 @@
         ZIndex: =70
 
     Btn2_3 As button:
-        DisplayMode: =If(ModalAbierto,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
@@ -1434,4 +1424,11 @@
                     X: =26
                     Y: =194
                     ZIndex: =24
+
+    Image34 As image:
+        Height: =58
+        Image: =carrier_logo_300
+        Width: =117
+        X: =33
+        ZIndex: =73
 

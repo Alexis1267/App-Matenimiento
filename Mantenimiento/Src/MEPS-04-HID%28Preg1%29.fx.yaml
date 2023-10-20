@@ -243,7 +243,7 @@
         ZIndex: =21
 
     Rectangle1_119 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
+        Fill: =RGBA(21, 44, 115, 1)
         Height: =59
         Width: =1366
         X: =0.00
@@ -258,7 +258,7 @@
         PaddingTop: =6.37
         Size: =25.51
         Text: ="Descripción de las Actividades a Realizar"
-        Width: =1159
+        Width: =1366
         X: =0.00
         ZIndex: =25
 
@@ -681,16 +681,6 @@
         Y: =673
         ZIndex: =55
 
-    Image2_102 As image:
-        Height: =41
-        Image: =carrier_logo_300
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =266.56
-        X: =1099.44
-        Y: =9
-        ZIndex: =56
-
     Resp2_30 As dropdown:
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(0, 40, 85, 1)
@@ -867,7 +857,7 @@
             ZIndex: =2
 
             Rectangle3_38 As rectangle:
-                Fill: =RGBA(0, 40, 85, 1)
+                Fill: =RGBA(21, 44, 115, 1)
                 Height: =65
                 Width: =1272.89
                 X: =0.00
@@ -1223,7 +1213,7 @@
             Dropdown4_38 As dropdown:
                 BorderColor: =RGBA(0, 40, 85, 1)
                 BorderThickness: =1
-                ChevronBackground: =RGBA(0, 40, 85, 1)
+                ChevronBackground: =RGBA(21, 44, 115, 1)
                 Default: =Operador
                 Items: |+
                     = 

@@ -27561,6 +27561,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.ModalAbierto"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.ModalAbierto",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ModalAbierto",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Maq"
                 }
               ],

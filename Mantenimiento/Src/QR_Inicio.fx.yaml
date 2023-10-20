@@ -62,7 +62,7 @@
         ZIndex: =1
 
     Rectangle1_58 As rectangle:
-        Fill: =RGBA(0, 40, 85, 1)
+        Fill: =RGBA(21, 44, 115, 1)
         Height: =92
         Width: =1366
         X: =0.00
@@ -87,7 +87,7 @@
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =159
-        X: =44
+        X: =22
         ZIndex: =5
 
     Timer1_2 As timer:
@@ -141,7 +141,7 @@
         DisabledContentColor: =RGBA(166, 166, 166, 1)
         DisabledFillColor: =RGBA(244, 244, 244, 1)
         DisplayMode: =DisplayMode.Edit
-        FillColor: =RGBA(0, 40, 85, 1)
+        FillColor: =RGBA(21, 44, 115, 1)
         Height: =95
         HoverBorderColor: =RGBA(88, 115, 171, 1)
         HoverContentColor: =RGBA(255, 255, 255, 1)
@@ -187,7 +187,7 @@
         PressedBorderColor: =RGBA(56, 96, 178, 1)
         PressedContentColor: =RGBA(56, 96, 178, 1)
         PressedFillColor: =RGBA(255, 255, 255, 1)
-        ScanningMode: ='BarcodeReader.ScanningMode'.SelectToScan
+        ScanningMode: ='BarcodeReader.ScanningMode'.AutomaticallyScan
         Text: ="Escanear QR"
         TextAlignment: =Align.Center
         TextColor: =RGBA(255, 255, 255, 1)
