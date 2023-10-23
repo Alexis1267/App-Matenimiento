@@ -876,6 +876,25 @@ Datos_MP As screen:
         Y: =151
         ZIndex: =45
 
+    Label6_1 As label:
+        Text: |-
+            =Concatenate(Left(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta) +1
+                )-1
+            ) & Right(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta)
+                ) - 1
+            ) )
+        X: =1163
+        Y: =228
+        ZIndex: =47
+
     Group5_1 As group:
         Height: =5
         Width: =5
