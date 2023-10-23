@@ -79,19 +79,19 @@ Datos_MP As screen:
             
             //VALIDACION DE CAMPO INVOLUCRADOS
             If(IsBlank(Label12_15.Text),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
-            If(Label8_12.Text = "CPE",Navigate('MEPS-04-CPE(Preg1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "DKE",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "DKS",Navigate('MEPS-04-DKS(ImgEjem1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "CPS",Navigate('MEPS-04-CPS(Preg1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "GX1",Navigate('MEPS-04-GX1(Preg1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "BTT",Navigate('MEPS-04-BTT(Preg1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "ELE",Navigate('MEPS-04-ELE(Preg1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "HID",Navigate('MEPS-04-HID(ImgEjem1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "LUB",Navigate('MEPS-04-LUB(Preg1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "GX2",Navigate('MEPS-04-GX2(Preg1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "MEC",Navigate('MEPS-04-MEC(Preg1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "BV3",Navigate('MEPS-04-BV3(Preg1)',ScreenTransition.Cover),
-            If(Label8_12.Text = "BV2",Navigate('MEPS-04-BV2(Preg1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error)))))))))))))));
+            If(Label6_1.Text = "MEPS-04-CPE",Navigate('MEPS-04-CPE(Preg1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-DKE",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-DKS",Navigate('MEPS-04-DKS(ImgEjem1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-CPS",Navigate('MEPS-04-CPS(Preg1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-GX1",Navigate('MEPS-04-GX1(Preg1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-BTT",Navigate('MEPS-04-BTT(Preg1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-ELE",Navigate('MEPS-04-ELE(Preg1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-HID",Navigate('MEPS-04-HID(ImgEjem1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-LUB",Navigate('MEPS-04-LUB(Preg1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-GX2",Navigate('MEPS-04-GX2(Preg1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-MEC",Navigate('MEPS-04-MEC(Preg1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-BV3",Navigate('MEPS-04-BV3(Preg1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-BV2",Navigate('MEPS-04-BV2(Preg1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error)))))))))))))));
             
             
             //VALIDACION PARA NAVEGAR AL RESPECTIVO MANTENIMIENTO PREVENTIVO
@@ -375,28 +375,6 @@ Datos_MP As screen:
             X: =774
             Y: =268
             ZIndex: =31
-
-    Label8_12 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 1)
-        BorderThickness: =1
-        Font: =Font.Arial
-        Height: =61
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =16.58
-        Text: |-
-            =Right(
-                CadenaCompleta,                            // El texto original
-                Find("-",
-                    CadenaCompleta,
-                    Find("-", CadenaCompleta)
-                ) - 1
-            )
-        Width: =294.64
-        X: =1053
-        Y: =149
-        ZIndex: =42
 
     ModalPop_Datos As groupContainer.manualLayoutContainer:
         Height: =768
@@ -854,28 +832,6 @@ Datos_MP As screen:
             Y: =488
             ZIndex: =32
 
-    Label8_13 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 1)
-        BorderThickness: =1
-        Font: =Font.Arial
-        Height: =61
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =16.58
-        Text: |
-            =Left(
-                CadenaCompleta,                            // El texto original
-                Find("-",
-                    CadenaCompleta,
-                    Find("-", CadenaCompleta) + 1
-                )-1
-            ) 
-        Width: =294.64
-        X: =736
-        Y: =151
-        ZIndex: =45
-
     Label6_1 As label:
         Text: |-
             =Concatenate(Left(
@@ -891,8 +847,8 @@ Datos_MP As screen:
                     Find("-", CadenaCompleta)
                 ) - 1
             ) )
-        X: =1163
-        Y: =228
+        X: =1171
+        Y: =96
         ZIndex: =47
 
     Group5_1 As group:

@@ -64,7 +64,6 @@ Lista_MP As screen:
         TemplatePadding: =0
         TemplateSize: =220
         Width: =1366
-        X: =0.00
         Y: =170
         ZIndex: =2
 
@@ -303,7 +302,6 @@ Lista_MP As screen:
             Text: |-
                 ="ID:"
             VerticalAlign: =VerticalAlign.Top
-            Visible: =false
             Width: =58.66
             X: =1145.34
             Y: =9
@@ -320,7 +318,6 @@ Lista_MP As screen:
             Size: =17.86
             Text: =ThisItem.Folio_Maq
             VerticalAlign: =VerticalAlign.Top
-            Visible: =false
             Width: =30.62
             X: =1219.31
             Y: =9
