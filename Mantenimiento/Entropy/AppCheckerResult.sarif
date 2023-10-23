@@ -114,49 +114,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'MEPS-04-BV3(Final)'.Icon1_84.AccessibleLabel"
+                  "fullyQualifiedName": "'MP-FINAL'.Icon1_84.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'MEPS-04-BV3(Final)'.Icon1_84.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "MEPS-04-BV3(Final)",
-                "type": "'MEPS-04-BV3(Final)'.Icon1_84"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'MEPS-04-BV3(Final)'.Icon1_84.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'MEPS-04-BV3(Final)'.Icon1_84.TabIndex",
+                  "fullyQualifiedName": "'MP-FINAL'.Icon1_84.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "MEPS-04-BV3(Final)",
-                "type": "'MEPS-04-BV3(Final)'.Icon1_84"
+                "module": "MP-FINAL",
+                "type": "'MP-FINAL'.Icon1_84"
               }
             }
           ],
@@ -168,6 +138,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'MP-FINAL'.Icon1_84.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'MP-FINAL'.Icon1_84.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "MP-FINAL",
+                "type": "'MP-FINAL'.Icon1_84"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
