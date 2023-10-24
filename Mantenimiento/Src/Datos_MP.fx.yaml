@@ -75,7 +75,7 @@ Datos_MP As screen:
         FontWeight: =FontWeight.Bold
         Height: =54
         OnSelect: |
-            =
+            =Set(ContadorHH,true);
             
             //VALIDACION DE CAMPO INVOLUCRADOS
             If(IsBlank(Label12_15.Text),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
@@ -812,7 +812,7 @@ Datos_MP As screen:
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Asignado)
             Width: =296
-            X: =655
+            X: =338
             Y: =528
             ZIndex: =5
 
@@ -828,7 +828,7 @@ Datos_MP As screen:
             Text: |-
                 ="Asignado a:"
             Width: =296
-            X: =655
+            X: =338
             Y: =488
             ZIndex: =32
 
@@ -886,6 +886,23 @@ Datos_MP As screen:
             X: =977
             Y: =388
             ZIndex: =4
+
+    Button10 As button:
+        OnSelect: =Set(ContadorHH,true)
+        Text: ="Inic"
+        X: =607
+        Y: =165
+        ZIndex: =48
+
+    Timer1 As timer:
+        AutoPause: =false
+        AutoStart: =ContadorHH
+        OnTimerEnd: =ContadorHH
+        OnTimerStart: =true
+        Start: =ContadorHH
+        X: =937
+        Y: =165
+        ZIndex: =49
 
     Group1 As group:
         Height: =5

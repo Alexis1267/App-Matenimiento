@@ -59,7 +59,10 @@
         Height: =152
         OnSelect: |-
             =//UPDATE PARA LA TABLA DE CMXE_MP_N para cuando se realizo el Mantenimiento Preventivo
-            Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Semana:SemanasTranscurridas },{Fecha_de_Finalizacion:Now()})
+            //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Semana:SemanasTranscurridas },{Fecha_de_Finalizacion:Now()})
+            
+            Set(ContadorHH,false);
+            Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:Timer1.Text})
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =30
@@ -74,4 +77,10 @@
         X: =608
         Y: =181
         ZIndex: =24
+
+    Label6 As label:
+        Text: =Timer1.Text
+        X: =263
+        Y: =181
+        ZIndex: =25
 
