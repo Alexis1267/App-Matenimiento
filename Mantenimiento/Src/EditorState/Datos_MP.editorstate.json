@@ -17164,6 +17164,14 @@
           "InvariantPropertyName": "AutoPause",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Duration",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -17197,6 +17205,11 @@
         {
           "Category": "Data",
           "PropertyName": "AutoPause",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Duration",
           "RuleProviderType": "Unknown"
         },
         {

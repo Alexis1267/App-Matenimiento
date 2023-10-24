@@ -897,6 +897,7 @@ Datos_MP As screen:
     Timer1 As timer:
         AutoPause: =false
         AutoStart: =ContadorHH
+        Duration: =86400000
         OnTimerEnd: =ContadorHH
         OnTimerStart: =true
         Start: =ContadorHH
