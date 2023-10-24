@@ -833,6 +833,7 @@ Datos_MP As screen:
             ZIndex: =32
 
     Label6_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
         Text: |-
             =Concatenate(Left(
                 CadenaCompleta,                            // El texto original
@@ -995,41 +996,6 @@ Datos_MP As screen:
             X: =22
             Y: =629
             ZIndex: =20
-
-    Group4 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =74
-
-        Label7_14 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(21, 44, 115, 1)
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: |-
-                ="Horas Hombre:"
-            Width: =295
-            X: =341
-            Y: =488
-            ZIndex: =13
-
-        Label8_1 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: =LookUp(CMXE_MP_N,Proc_No = Label8_8.Text,Horas_Hombre)
-            Width: =295
-            X: =341
-            Y: =528
-            ZIndex: =15
 
     Group6 As group:
         Height: =5
