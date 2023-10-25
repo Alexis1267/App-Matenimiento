@@ -342,7 +342,7 @@ Lista_MP As screen:
 
         Icon7 As icon.ChevronRight:
             Icon: =Icon.ChevronRight
-            OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
+            OnSelect: =Navigate(Pantalla_Carga,ScreenTransition.Fade)
             Visible: =If(ThisItem.IsSelected,true)
             X: =1266
             Y: =81

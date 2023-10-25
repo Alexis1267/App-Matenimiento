@@ -938,7 +938,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "QR_Inicio_1": {
+    "Pantalla_Carga": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -966,7 +966,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "QR_Inicio_1",
+      "Name": "Pantalla_Carga",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -987,6 +987,16 @@
         },
         {
           "Category": "Design",
+          "PropertyName": "Width",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "LoadingSpinner",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
           "PropertyName": "Size",
           "RuleProviderType": "Unknown"
         },
@@ -997,17 +1007,7 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
           "PropertyName": "Orientation",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "LoadingSpinner",
           "RuleProviderType": "Unknown"
         },
         {
@@ -1293,5 +1293,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "QR_Inicio_1"
+  "TopParentName": "Pantalla_Carga"
 }

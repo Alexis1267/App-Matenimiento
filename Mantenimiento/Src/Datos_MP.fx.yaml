@@ -709,7 +709,7 @@ Datos_MP As screen:
                 ="Condición del equipo:"
             Width: =295
             X: =656
-            Y: =589
+            Y: =493
             ZIndex: =35
 
         Label8_24 As label:
@@ -724,7 +724,7 @@ Datos_MP As screen:
                 =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Cond_Equipo)
             Width: =295
             X: =656
-            Y: =629
+            Y: =533
             ZIndex: =36
 
     Group16 As group:
@@ -815,8 +815,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Asignado)
             Width: =296
-            X: =338
-            Y: =528
+            X: =22
+            Y: =533
             ZIndex: =5
 
         Label7_30 As label:
@@ -831,8 +831,8 @@ Datos_MP As screen:
             Text: |-
                 ="Asignado a:"
             Width: =296
-            X: =338
-            Y: =488
+            X: =22
+            Y: =493
             ZIndex: =32
 
     Label6_1 As label:
@@ -965,8 +965,8 @@ Datos_MP As screen:
             Text: |-
                 ="Clase de Mantenimiento:"
             Width: =295
-            X: =22
-            Y: =488
+            X: =341
+            Y: =493
             ZIndex: =12
 
         Label8 As label:
@@ -977,8 +977,8 @@ Datos_MP As screen:
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Clas_Mantenimineto)
             Width: =295
-            X: =22
-            Y: =528
+            X: =341
+            Y: =533
             ZIndex: =14
 
     Group3 As group:
