@@ -27031,6 +27031,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Carga_Circulo"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Carga_Circulo",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Carga_Circulo",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'MEPS-04-DKE(Preg3)'.Container1_12.Container2_12.Dropdown4_13.Items"
                 }
               ],

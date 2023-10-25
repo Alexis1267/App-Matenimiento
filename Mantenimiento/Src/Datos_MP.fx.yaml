@@ -149,7 +149,7 @@ Datos_MP As screen:
             PaddingTop: =0.00
             Size: =17.86
             Width: =295
-            X: =22
+            X: =976
             Y: =428
             ZIndex: =16
 
@@ -165,7 +165,7 @@ Datos_MP As screen:
             Text: |-
                 ="Fecha Programada:"
             Width: =295
-            X: =22
+            X: =976
             Y: =388
             ZIndex: =23
 
@@ -873,7 +873,7 @@ Datos_MP As screen:
             Size: =16.58
             Text: =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Semana)
             Width: =296
-            X: =977
+            X: =22
             Y: =428
             ZIndex: =3
 
@@ -889,7 +889,7 @@ Datos_MP As screen:
             Text: |-
                 ="Semana:"
             Width: =296
-            X: =977
+            X: =22
             Y: =388
             ZIndex: =4
 
@@ -897,7 +897,6 @@ Datos_MP As screen:
         AutoPause: =false
         AutoStart: =ContadorHH
         BorderThickness: =0
-        DisplayMode: =DisplayMode.View
         Duration: =86400000
         Fill: =RGBA(0, 0, 0, 0)
         OnTimerEnd: =ContadorHH
@@ -906,49 +905,6 @@ Datos_MP As screen:
         X: =1166
         Y: =26
         ZIndex: =49
-
-    Group2_2 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =52
-
-        Label7_29 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(21, 44, 115, 1)
-            Font: =Font.Arial
-            FontWeight: =FontWeight.Bold
-            Height: =61
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: ="ID"
-            Width: =54
-            X: =1032
-            Y: =154
-            ZIndex: =50
-
-        Label8_12 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Font: =Font.Arial
-            Height: =61
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: |-
-                =//Text(Maquina)
-                //"MEPS1-10-56D"
-                ID_MAQUINA //Esta variable es la que se toma de la pantalla "ListaMP" que me agarra el Proc.No, esto para poder mandar a llamar todos los campos que restan de la pantalla de su respectiva maquina o folio
-            Width: =267
-            X: =1086
-            Y: =154
-            ZIndex: =51
 
     Group1 As group:
         Height: =5
