@@ -2,7 +2,7 @@ Lista_MP As screen:
     OnHidden: =
     OnVisible: |+
         =//Set(MaQ,Left(MAQUINA_QR.Text,5)); //Esta variable es solo para guardar el nombre de la maquina y despues tomar la variable y pasarla 
-        
+        Set(CargaVisible,true);
         
         
         
