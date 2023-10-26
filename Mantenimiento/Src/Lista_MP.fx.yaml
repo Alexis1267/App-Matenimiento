@@ -754,7 +754,7 @@ Lista_MP As screen:
 
     TimerCarga_1 As timer:
         AutoStart: =true
-        Duration: =10000
+        Duration: =5000
         OnTimerEnd: =Set(CargaVisible,false)
         X: =1032
         Y: =26
