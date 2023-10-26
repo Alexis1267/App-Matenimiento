@@ -28,13 +28,49 @@ Datos_MP As screen:
         
         
 
+    Label6_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =47
+        Text: |-
+            =Concatenate(Left(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta) +1
+                )-1
+            ) & Right(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta)
+                ) - 1
+            ) )
+        Width: =263
+        X: =1103
+        Y: =96
+        ZIndex: =1
+
+    TimerHorasHombre As timer:
+        AutoPause: =false
+        AutoStart: =ContadorHH
+        BorderThickness: =0
+        Duration: =86400000
+        Fill: =RGBA(0, 0, 0, 0)
+        OnTimerEnd: =ContadorHH
+        OnTimerStart: =true
+        Start: =ContadorHH
+        X: =1166
+        Y: =26
+        ZIndex: =2
+
     Rectangle1_76 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(97, 112, 128, 1)
         Height: =47
         Width: =1366
         Y: =326
-        ZIndex: =1
+        ZIndex: =3
 
     Label1_24 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -47,13 +83,13 @@ Datos_MP As screen:
         Width: =664
         X: =22
         Y: =326
-        ZIndex: =2
+        ZIndex: =4
 
     Rectangle1_60 As rectangle:
         Fill: =RGBA(21, 44, 115, 1)
         Height: =92
         Width: =1366
-        ZIndex: =7
+        ZIndex: =9
 
     Label1_16 As label:
         Align: =Align.Center
@@ -67,7 +103,7 @@ Datos_MP As screen:
             ="ORDEN DE TRABAJO 
             MANTENIMIENTO PREVENTIVO ACTIVO"
         Width: =1366
-        ZIndex: =8
+        ZIndex: =10
 
     Button1_15 As button:
         BorderThickness: =0
@@ -108,7 +144,7 @@ Datos_MP As screen:
         Width: =326.51
         X: =520
         Y: =691
-        ZIndex: =9
+        ZIndex: =11
 
     Button5_13 As button:
         Color: =RGBA(0, 0, 0, 1)
@@ -123,7 +159,7 @@ Datos_MP As screen:
         Visible: =false
         Width: =204.07
         Y: =723
-        ZIndex: =10
+        ZIndex: =12
 
     Rectangle1_71 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -266,8 +302,8 @@ Datos_MP As screen:
         Height: =85
         Icon: =Icon.BackArrow
         OnSelect: |-
-            =Reset(Timer1);
-            Reset(Timer2);
+            =Reset(TimerHorasHombre);
+            Reset(TimerCarga);
             Navigate(Lista_MP,ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
@@ -386,7 +422,7 @@ Datos_MP As screen:
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
         Width: =1366
-        ZIndex: =43
+        ZIndex: =42
 
         HtmlText3_15 As htmlViewer:
             Height: =768
@@ -688,7 +724,122 @@ Datos_MP As screen:
         PaddingTop: =0.00
         Width: =159
         X: =44
+        ZIndex: =43
+
+    Pantalla_Carg As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        Visible: =CargaVisible
+        Width: =1366
         ZIndex: =44
+
+        HtmlText1_7 As htmlViewer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            HtmlText: |+
+                ="<div style = ""
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                margin-left: -500px;
+                margin-top: 230px;
+                transform-origin: 50% 48%;
+                border-radius: 43%;
+                height:"& 1000 &"px;
+                width:"&1000 &"px;
+                background-color:RGBA(173, 181, 189, 0);
+                transform: rotate("&Line&"deg);
+                ""></div>
+                
+                
+                <div style = ""
+                position: absolute;
+                top: 40%;
+                left: 10%;
+                margin-left: -500px;
+                margin-top: 230px;
+                transform-origin: 50% 48%;
+                border-radius: 43%;
+                height:"& 1000 &"px;
+                width:"&1000 &"px;
+                background-color:RGBA(173, 181, 189, 0.1);
+                transform: rotate("&Line&"deg);
+                ""></div>
+                
+                <div style = ""
+                position: absolute;
+                top: -140%;
+                left: 110%;
+                margin-left: -500px;
+                margin-top: 500px;
+                transform-origin: 50% 48%;
+                border-radius: 43%;
+                height:"& 1000 &"px;
+                width:"&1000 &"px;
+                background-color:RGBA(173, 181, 189, 0.1);
+                transform: rotate("&Line&"deg);
+                ""></div>"
+                
+                
+                
+                
+                
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =14.04
+            Width: =1366
+            X: =0.00
+            ZIndex: =1
+
+        Timer1_5 As timer:
+            AutoStart: =true
+            Duration: =50
+            OnTimerEnd: |-
+                =If(Line = 360,
+                UpdateContext({Line:0}),
+                UpdateContext({Line:Line+2}))
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Repeat: =true
+            Size: =16.58
+            Visible: =false
+            Width: =204.07
+            Y: =133
+            ZIndex: =2
+
+        Label1_22 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =63
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =31.89
+            Text: =Operador //En esta parte lo que hago es poner la variable que se creo en la pantalla de "Sesion" donde me toma el nombre de la persona que hizo el inicio de sesion y lo muestra en la pantalla
+            Width: =557.51
+            X: =0.00
+            Y: =144
+            ZIndex: =3
+
+        Image36_1 As image:
+            Height: =260
+            Image: =Carga_Engranage
+            Width: =260
+            X: =553
+            Y: =194
+            ZIndex: =4
+
+        Label1_19 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =92
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =44.63
+            Text: ="Cargando..."
+            Width: =353
+            X: =506
+            Y: =454
+            ZIndex: =5
 
     Group3_10 As group:
         Height: =5
@@ -818,7 +969,7 @@ Datos_MP As screen:
             Width: =296
             X: =22
             Y: =533
-            ZIndex: =5
+            ZIndex: =7
 
         Label7_30 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -836,28 +987,14 @@ Datos_MP As screen:
             Y: =493
             ZIndex: =32
 
-    Label6_1 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =47
-        Text: |-
-            =Concatenate(Left(
-                CadenaCompleta,                            // El texto original
-                Find("-",
-                    CadenaCompleta,
-                    Find("-", CadenaCompleta) +1
-                )-1
-            ) & Right(
-                CadenaCompleta,                            // El texto original
-                Find("-",
-                    CadenaCompleta,
-                    Find("-", CadenaCompleta)
-                ) - 1
-            ) )
-        Width: =263
-        X: =1103
-        Y: =96
-        ZIndex: =47
+    TimerCarga As timer:
+        AutoStart: =true
+        Duration: =5000
+        OnTimerEnd: =Set(CargaVisible,false)
+        Visible: =false
+        X: =1032
+        Y: =26
+        ZIndex: =45
 
     Group5_1 As group:
         Height: =5
@@ -876,7 +1013,7 @@ Datos_MP As screen:
             Width: =296
             X: =22
             Y: =428
-            ZIndex: =3
+            ZIndex: =5
 
         Label7_31 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -892,143 +1029,7 @@ Datos_MP As screen:
             Width: =296
             X: =22
             Y: =388
-            ZIndex: =4
-
-    Timer1 As timer:
-        AutoPause: =false
-        AutoStart: =ContadorHH
-        BorderThickness: =0
-        Duration: =86400000
-        Fill: =RGBA(0, 0, 0, 0)
-        OnTimerEnd: =ContadorHH
-        OnTimerStart: =true
-        Start: =ContadorHH
-        X: =1166
-        Y: =26
-        ZIndex: =49
-
-    Pantalla_Carg As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =768
-        Visible: =CargaVisible
-        Width: =1366
-        ZIndex: =50
-
-        HtmlText1_7 As htmlViewer:
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =768
-            HtmlText: |+
-                ="<div style = ""
-                position: absolute;
-                top: 10%;
-                left: 50%;
-                margin-left: -500px;
-                margin-top: 230px;
-                transform-origin: 50% 48%;
-                border-radius: 43%;
-                height:"& 1000 &"px;
-                width:"&1000 &"px;
-                background-color:RGBA(173, 181, 189, 0);
-                transform: rotate("&Line&"deg);
-                ""></div>
-                
-                
-                <div style = ""
-                position: absolute;
-                top: 40%;
-                left: 10%;
-                margin-left: -500px;
-                margin-top: 230px;
-                transform-origin: 50% 48%;
-                border-radius: 43%;
-                height:"& 1000 &"px;
-                width:"&1000 &"px;
-                background-color:RGBA(173, 181, 189, 0.1);
-                transform: rotate("&Line&"deg);
-                ""></div>
-                
-                <div style = ""
-                position: absolute;
-                top: -140%;
-                left: 110%;
-                margin-left: -500px;
-                margin-top: 500px;
-                transform-origin: 50% 48%;
-                border-radius: 43%;
-                height:"& 1000 &"px;
-                width:"&1000 &"px;
-                background-color:RGBA(173, 181, 189, 0.1);
-                transform: rotate("&Line&"deg);
-                ""></div>"
-                
-                
-                
-                
-                
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =14.04
-            Width: =1366
-            X: =0.00
-            ZIndex: =1
-
-        Timer1_5 As timer:
-            AutoStart: =true
-            Duration: =50
-            OnTimerEnd: |-
-                =If(Line = 360,
-                UpdateContext({Line:0}),
-                UpdateContext({Line:Line+2}))
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Repeat: =true
-            Size: =16.58
-            Visible: =false
-            Width: =204.07
-            Y: =133
-            ZIndex: =2
-
-        Label1_22 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Height: =63
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =31.89
-            Text: =Operador //En esta parte lo que hago es poner la variable que se creo en la pantalla de "Sesion" donde me toma el nombre de la persona que hizo el inicio de sesion y lo muestra en la pantalla
-            Width: =557.51
-            X: =0.00
-            Y: =144
-            ZIndex: =3
-
-        Image36_1 As image:
-            Height: =260
-            Image: =Carga_Engranage
-            Width: =260
-            X: =553
-            Y: =194
-            ZIndex: =4
-
-        Label1_19 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Height: =92
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =44.63
-            Text: ="Cargando..."
-            Width: =353
-            X: =506
-            Y: =454
-            ZIndex: =5
-
-    Timer2 As timer:
-        AutoStart: =true
-        Duration: =5000
-        OnTimerEnd: =Set(CargaVisible,false)
-        X: =1032
-        Y: =26
-        ZIndex: =51
+            ZIndex: =6
 
     Group1 As group:
         Height: =5
@@ -1091,7 +1092,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =493
-            ZIndex: =12
+            ZIndex: =14
 
         Label8 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1103,7 +1104,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =533
-            ZIndex: =14
+            ZIndex: =15
 
     Group3 As group:
         Height: =5
@@ -1158,7 +1159,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =428
-            ZIndex: =6
+            ZIndex: =8
 
         Label7 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1174,5 +1175,5 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =388
-            ZIndex: =11
+            ZIndex: =13
 
