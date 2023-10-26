@@ -6,7 +6,7 @@ Datos_MP As screen:
         
         Set(ID_Maquina,Value(Title3_5.Text)); //Esta variable se utiliza para almacenar el "ID" de la maquina, para que despues en la pantalla de los botones cuando finalizan las actividades se pueda hacer el update de "Com_Mantenimiento"
         
-        
+        Set(CargaVisible,true);
         /*
         // Tu cadena
         Set( CadenaCompleta, "MEPS-04-2M-CPE");
@@ -267,6 +267,7 @@ Datos_MP As screen:
         Icon: =Icon.BackArrow
         OnSelect: |-
             =Reset(Timer1);
+            Reset(Timer2);
             Navigate(Lista_MP,ScreenTransition.Fade)
         PaddingRight: =0.00
         PaddingTop: =0.00
@@ -905,6 +906,129 @@ Datos_MP As screen:
         X: =1166
         Y: =26
         ZIndex: =49
+
+    Pantalla_Carg As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        Visible: =CargaVisible
+        Width: =1366
+        ZIndex: =50
+
+        HtmlText1_7 As htmlViewer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            HtmlText: |+
+                ="<div style = ""
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                margin-left: -500px;
+                margin-top: 230px;
+                transform-origin: 50% 48%;
+                border-radius: 43%;
+                height:"& 1000 &"px;
+                width:"&1000 &"px;
+                background-color:RGBA(173, 181, 189, 0);
+                transform: rotate("&Line&"deg);
+                ""></div>
+                
+                
+                <div style = ""
+                position: absolute;
+                top: 40%;
+                left: 10%;
+                margin-left: -500px;
+                margin-top: 230px;
+                transform-origin: 50% 48%;
+                border-radius: 43%;
+                height:"& 1000 &"px;
+                width:"&1000 &"px;
+                background-color:RGBA(173, 181, 189, 0.1);
+                transform: rotate("&Line&"deg);
+                ""></div>
+                
+                <div style = ""
+                position: absolute;
+                top: -140%;
+                left: 110%;
+                margin-left: -500px;
+                margin-top: 500px;
+                transform-origin: 50% 48%;
+                border-radius: 43%;
+                height:"& 1000 &"px;
+                width:"&1000 &"px;
+                background-color:RGBA(173, 181, 189, 0.1);
+                transform: rotate("&Line&"deg);
+                ""></div>"
+                
+                
+                
+                
+                
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =14.04
+            Width: =1366
+            X: =0.00
+            ZIndex: =1
+
+        Timer1_5 As timer:
+            AutoStart: =true
+            Duration: =50
+            OnTimerEnd: |-
+                =If(Line = 360,
+                UpdateContext({Line:0}),
+                UpdateContext({Line:Line+2}))
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Repeat: =true
+            Size: =16.58
+            Visible: =false
+            Width: =204.07
+            Y: =133
+            ZIndex: =2
+
+        Label1_22 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =63
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =31.89
+            Text: =Operador //En esta parte lo que hago es poner la variable que se creo en la pantalla de "Sesion" donde me toma el nombre de la persona que hizo el inicio de sesion y lo muestra en la pantalla
+            Width: =557.51
+            X: =0.00
+            Y: =144
+            ZIndex: =3
+
+        Image36_1 As image:
+            Height: =260
+            Image: =Carga_Engranage
+            Width: =260
+            X: =553
+            Y: =194
+            ZIndex: =4
+
+        Label1_19 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =92
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =44.63
+            Text: ="Cargando..."
+            Width: =353
+            X: =506
+            Y: =454
+            ZIndex: =5
+
+    Timer2 As timer:
+        AutoStart: =true
+        Duration: =5000
+        OnTimerEnd: =Set(CargaVisible,false)
+        X: =1032
+        Y: =26
+        ZIndex: =51
 
     Group1 As group:
         Height: =5
