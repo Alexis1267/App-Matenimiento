@@ -6,7 +6,7 @@ Datos_MP As screen:
         
         Set(ID_Maquina,Value(Title3_5.Text)); //Esta variable se utiliza para almacenar el "ID" de la maquina, para que despues en la pantalla de los botones cuando finalizan las actividades se pueda hacer el update de "Com_Mantenimiento"
         
-        Set(CargaVisible,true);
+        Set(CargaVisible,true); //Variable para activar y desactivar el contenedor Pantalla_Carga
         /*
         // Tu cadena
         Set( CadenaCompleta, "MEPS-04-2M-CPE");
@@ -27,6 +27,12 @@ Datos_MP As screen:
         
         
         
+
+    Rectangle1_60 As rectangle:
+        Fill: =RGBA(21, 44, 115, 1)
+        Height: =92
+        Width: =1366
+        ZIndex: =1
 
     Label6_1 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -49,7 +55,7 @@ Datos_MP As screen:
         Width: =263
         X: =1103
         Y: =96
-        ZIndex: =1
+        ZIndex: =2
 
     TimerHorasHombre As timer:
         AutoPause: =false
@@ -62,7 +68,7 @@ Datos_MP As screen:
         Start: =ContadorHH
         X: =1166
         Y: =26
-        ZIndex: =2
+        ZIndex: =3
 
     Rectangle1_76 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -70,7 +76,7 @@ Datos_MP As screen:
         Height: =47
         Width: =1366
         Y: =326
-        ZIndex: =3
+        ZIndex: =4
 
     Label1_24 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -83,13 +89,7 @@ Datos_MP As screen:
         Width: =664
         X: =22
         Y: =326
-        ZIndex: =4
-
-    Rectangle1_60 As rectangle:
-        Fill: =RGBA(21, 44, 115, 1)
-        Height: =92
-        Width: =1366
-        ZIndex: =9
+        ZIndex: =5
 
     Label1_16 As label:
         Align: =Align.Center
@@ -416,13 +416,22 @@ Datos_MP As screen:
             Y: =277
             ZIndex: =31
 
+    Image2_59 As image:
+        Height: =92
+        Image: =carrier_logo_300
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =159
+        X: =44
+        ZIndex: =42
+
     ModalPop_Datos As groupContainer.manualLayoutContainer:
         Height: =768
         PaddingRight: =0.00
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
         Width: =1366
-        ZIndex: =42
+        ZIndex: =43
 
         HtmlText3_15 As htmlViewer:
             Height: =768
@@ -449,6 +458,10 @@ Datos_MP As screen:
             Height: =465
             PaddingRight: =0.00
             PaddingTop: =0.00
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
             Width: =874
             X: =246
             Y: =151
@@ -519,9 +532,9 @@ Datos_MP As screen:
                     ZIndex: =4
 
             Rectangle3_2 As rectangle:
-                Fill: =RGBA(0, 40, 85, 1)
+                Fill: =RGBA(21, 44, 115, 1)
                 Height: =65
-                Width: =942
+                Width: =874
                 X: =0.00
                 ZIndex: =3
 
@@ -537,7 +550,7 @@ Datos_MP As screen:
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =81.63
-                X: =805
+                X: =793
                 ZIndex: =4
 
             Image4_2 As image:
@@ -571,25 +584,24 @@ Datos_MP As screen:
                 DisabledColor: =RGBA(0, 0, 0, 1)
                 DisabledFill: =RGBA(255, 255, 255, 1)
                 Format: =TextFormat.Number
-                HintText: ="Nomina"
+                HintText: ="Trabajador No."
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
                 PaddingRight: =6.37
                 PaddingTop: =6.37
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
                 Size: =16.58
                 Visible: =BTN_VISIBLE = "AGREGAR"
-                Width: =408.13
+                Width: =418
                 X: =234
                 Y: =286
                 ZIndex: =7
 
             Button3_5 As button:
                 BorderThickness: =0
-                Color: =RGBA(0, 0, 0, 1)
                 DisabledBorderColor: =RGBA(97, 181, 73, 1)
                 Fill: =RGBA(97, 181, 73, 1)
                 HoverFill: =ColorFade(RGBA(255, 255, 255, 1), -20%)
@@ -603,10 +615,10 @@ Datos_MP As screen:
                         Notify("El usuario se agregó con éxito.", NotificationType.Success)
                     ); 
                     //VALIDA SI HAY ALGO QUE NO COINCIDA CON LOS DATOS DEL USUARIO
-                    If(Valida = InsertNomina_2.Text,Collect(Add_Involucrado,{Nombre: DropUser_2.SelectedText.Value}),Notify("El nombre y/o el numero de nomina no coinciden, no se puede agregar al usuario, compruebe sus datos.",NotificationType.Error));
+                    If(Valida = InsertNomina_2.Text,Collect(Add_Involucrado,{Nombre: DropUser_2.SelectedText.Value}),Notify("El nombre y/o el número de nómina no coinciden. No se puede agregar al usuario. Por favor, compruebe sus datos.",NotificationType.Error));
                     
-                    Reset(DropUser_2);
-                    Reset(InsertNomina_2);
+                    //Reset(DropUser_2);
+                    //Reset(InsertNomina_2);
                     
                     
                     
@@ -668,15 +680,16 @@ Datos_MP As screen:
                 AllowEmptySelection: =true
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =1
-                ChevronBackground: =RGBA(0, 40, 85, 1)
-                Default: ="A"
-                DisabledColor: =RGBA(0, 0, 0, 1)
+                ChevronBackground: =RGBA(0, 0, 0, 0)
+                ChevronFill: =RGBA(0, 18, 107, 1)
+                Default: ="Eliga"
+                DisabledColor: =RGBA(168, 0, 0, 1)
                 HoverFill: =RGBA(215, 223, 240, 1)
-                Items: =Tecnicos_App_MP //Esto me esta mandando a llamar la lista que tengo en sharepoint de los nombres de los tecnicos
+                Items: =PreventivSure_Tecnicos //Esto me esta mandando a llamar la lista que tengo en sharepoint de los nombres de los tecnicos
                 PaddingRight: =12.76
                 PaddingTop: =12.76
                 SelectionColor: =RGBA(0, 0, 0, 1)
-                SelectionFill: =RGBA(255, 255, 255, 1)
+                SelectionFill: =RGBA(186, 202, 226, 1)
                 Size: =16.58
                 Visible: =BTN_VISIBLE = "AGREGAR"
                 Width: =418.35
@@ -687,15 +700,15 @@ Datos_MP As screen:
             Label9_61 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Bold
-                Height: =52
+                Height: =97
                 PaddingRight: =6.37
                 PaddingTop: =6.37
                 Size: =38.26
-                Text: ="INGRESE SUS DATOS"
+                Text: ="USUARIO"
                 Visible: =BTN_VISIBLE = "AGREGAR"
-                Width: =600.73
-                X: =137
-                Y: =111
+                Width: =427
+                X: =223
+                Y: =88
                 ZIndex: =12
 
             Label9_62 As label:
@@ -708,7 +721,7 @@ Datos_MP As screen:
                 Text: ="Eliminar involucrado"
                 Visible: =BTN_VISIBLE = "ELIMINAR"
                 Width: =584.15
-                X: =221
+                X: =191
                 ZIndex: =13
 
             Label4 As label:
@@ -717,18 +730,29 @@ Datos_MP As screen:
                 Y: =200
                 ZIndex: =14
 
-    Image2_59 As image:
-        Height: =92
-        Image: =carrier_logo_300
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =159
-        X: =44
-        ZIndex: =43
+            Rectangle3_3 As rectangle:
+                Fill: =RGBA(21, 44, 115, 1)
+                Height: =10
+                Width: =118
+                X: =191
+                Y: =131
+                ZIndex: =15
+
+            Rectangle3_9 As rectangle:
+                Fill: =RGBA(21, 44, 115, 1)
+                Height: =10
+                Width: =118
+                X: =564
+                Y: =131
+                ZIndex: =16
 
     Pantalla_Carg As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =768
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Visible: =CargaVisible
         Width: =1366
         ZIndex: =44
@@ -969,7 +993,7 @@ Datos_MP As screen:
             Width: =296
             X: =22
             Y: =533
-            ZIndex: =7
+            ZIndex: =8
 
         Label7_30 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1013,7 +1037,7 @@ Datos_MP As screen:
             Width: =296
             X: =22
             Y: =428
-            ZIndex: =5
+            ZIndex: =6
 
         Label7_31 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1029,7 +1053,7 @@ Datos_MP As screen:
             Width: =296
             X: =22
             Y: =388
-            ZIndex: =6
+            ZIndex: =7
 
     Group1 As group:
         Height: =5
@@ -1159,7 +1183,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =428
-            ZIndex: =8
+            ZIndex: =9
 
         Label7 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
