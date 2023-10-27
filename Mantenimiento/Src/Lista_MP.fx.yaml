@@ -756,7 +756,8 @@ Lista_MP As screen:
         AutoStart: =true
         Duration: =5000
         OnTimerEnd: =Set(CargaVisible,false)
-        X: =1032
-        Y: =26
+        Visible: =false
+        X: =954
+        Y: =6
         ZIndex: =25
 

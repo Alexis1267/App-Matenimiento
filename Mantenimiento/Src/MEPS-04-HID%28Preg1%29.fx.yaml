@@ -1,5 +1,5 @@
 "'MEPS-04-HID(Preg1)' As screen":
-    OnVisible: |
+    OnVisible: |-
         =//Variables para traerme los datos de los inputs que se encuentran en la pantalla "Datos_MP"
         Set(Dato_Localizacion,Label8_11.Text);
         Set(Dato_NomMaquina,Label8_10.Text);
@@ -12,7 +12,11 @@
         
         Set(DropdownAsig,Split(Concat(AsignadoOP, "" & NombreOp & Char(10)),Char(10)));
         
-        ClearCollect(AsignadoOP,{NombreOp: Operador})
+        ClearCollect(AsignadoOP,{NombreOp: Operador});
+        
+        
+        //BOTONES 
+        Set(BtnDeshabilitado,0)
 
     Preg1_284 As label:
         Height: =46
@@ -786,10 +790,14 @@
         AutoDisableOnSelect: =
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
-        OnSelect: |
-            =Set(BotonActivo,"Boton1");
+        OnSelect: |-
+            =Set(BotonActivo,Btn1_34.DisplayMode);
             Set(Pregunta,Preg1_285.Text); //Variable que me trae la pregunta
             UpdateContext({ShowPopUp : true}); //Variable para habilitar el ModalPopUp
+            
+            
+            //BOTONES
+            Set(BtnDeshabilitado,1)
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -971,7 +979,7 @@
                 Height: =65
                 PaddingRight: =6.37
                 PaddingTop: =6.37
-                Size: =38.26
+                Size: =35
                 Text: ="Reporte de hallazgo"
                 Width: =531.85
                 X: =369.88
