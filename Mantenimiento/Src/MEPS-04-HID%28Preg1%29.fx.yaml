@@ -16,7 +16,7 @@
         
         
         //BOTONES 
-        Set(BtnDeshabilitado,0)
+        ClearCollect(BotonesDeshabilitados,{})
 
     Preg1_284 As label:
         Height: =46
@@ -119,12 +119,19 @@
         ZIndex: =10
 
     Btn3_27 As button:
+        DisplayMode: |
+            =//If(CountIf(BotonesDeshabilitados, Boton = 3) > 0, DisplayMode.Disabled, DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
             =Set(BotonActivo,"Boton3");
             Set(Pregunta,Preg3_27.Text);
             UpdateContext({ShowPopUp : true});
+            
+            
+            //(Collect(BotonesDeshabilitados, { Boton: 3 })  
+            
+            Set(BTN_Presionado,"btn3")  
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -136,11 +143,18 @@
         ZIndex: =11
 
     Btn4_27 As button:
+        DisplayMode: |
+            =
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
             =Set(Pregunta,Preg4_27.Text);
             UpdateContext({ShowPopUp : true});
+            
+            
+            //Collect(BotonesDeshabilitados, { Boton: 4 })
+            
+            Set(BTN_Presionado,"btn4")
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -788,6 +802,10 @@
 
     Btn1_34 As button:
         AutoDisableOnSelect: =
+        DisplayMode: |
+            =//If(CountIf(BotonesDeshabilitados, Boton = 1) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+            
+            If(BTN_Desactivar = "btn1", DisplayMode.Disabled, DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
@@ -797,7 +815,9 @@
             
             
             //BOTONES
-            Set(BtnDeshabilitado,1)
+                //Collect(BotonesDeshabilitados, { Boton: 1 }) // Cambia el número (en este caso, 2) al número del botón correspondiente
+            
+            Set(BTN_Presionado,"btn1")
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -809,12 +829,19 @@
         ZIndex: =58
 
     Btn2_31 As button:
+        DisplayMode: |+
+            =//If(CountIf(BotonesDeshabilitados, Boton = 2) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+            
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
             =Set(BotonActivo,"Boton2");
             Set(Pregunta,Preg2_30.Text);
             UpdateContext({ShowPopUp : true});
+            
+            //Collect(BotonesDeshabilitados, { Boton: 2 })
+            
+            Set(BTN_Presionado,"btn2")
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -884,9 +911,12 @@
 
             Button7_37 As button:
                 BorderStyle: =BorderStyle.None
-                DisplayMode: |-
+                DisplayMode: |
                     =//Validacion de boton de que debe cumplir y escribir en justificacion
                     If(IsBlank(TextInput1_194),DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
+                    
+                    
+                    //BOTONES
                 Fill: =RGBA(97, 181, 73, 1)
                 FontWeight: =FontWeight.Bold
                 OnSelect: |+
@@ -936,7 +966,8 @@
                     Reset(TextInput1_194);
                     Reset(AddMediaButton6_37);
                     
-                    
+                    //BOTONES
+                    Set(BTN_Desactivar,BTN_Presionado)
                     
                     
                     
