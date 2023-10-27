@@ -119,8 +119,10 @@
         ZIndex: =10
 
     Btn3_27 As button:
-        DisplayMode: |
-            =//If(CountIf(BotonesDeshabilitados, Boton = 3) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+        DisplayMode: |+
+            =If(CountIf(BotonesDeshabilitados, Boton = 3) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+            
+            
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
@@ -129,9 +131,7 @@
             UpdateContext({ShowPopUp : true});
             
             
-            //(Collect(BotonesDeshabilitados, { Boton: 3 })  
-            
-            Set(BTN_Presionado,"btn3")  
+            Collect(BotonesDeshabilitados, { Boton: 3 })
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -154,7 +154,7 @@
             
             //Collect(BotonesDeshabilitados, { Boton: 4 })
             
-            Set(BTN_Presionado,"btn4")
+            //Set(BTN_Presionado,"btn4")
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -802,22 +802,26 @@
 
     Btn1_34 As button:
         AutoDisableOnSelect: =
-        DisplayMode: |
-            =//If(CountIf(BotonesDeshabilitados, Boton = 1) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+        DisplayMode: |+
+            =If(CountIf(BotonesDeshabilitados, Boton = 1) > 0, DisplayMode.Disabled, DisplayMode.Edit)
             
-            If(BTN_Desactivar = "btn1", DisplayMode.Disabled, DisplayMode.Edit)
+            
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
-        OnSelect: |-
+        OnSelect: |+
             =Set(BotonActivo,Btn1_34.DisplayMode);
             Set(Pregunta,Preg1_285.Text); //Variable que me trae la pregunta
             UpdateContext({ShowPopUp : true}); //Variable para habilitar el ModalPopUp
             
             
             //BOTONES
-                //Collect(BotonesDeshabilitados, { Boton: 1 }) // Cambia el número (en este caso, 2) al número del botón correspondiente
+                 // Cambia el número (en este caso, 2) al número del botón correspondiente
             
-            Set(BTN_Presionado,"btn1")
+            Collect(BotonesDeshabilitados, { Boton: 1 });
+            
+            
+            //BOTON PRUEBA 2 
+            
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -830,18 +834,19 @@
 
     Btn2_31 As button:
         DisplayMode: |+
-            =//If(CountIf(BotonesDeshabilitados, Boton = 2) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+            =If(CountIf(BotonesDeshabilitados, Boton = 2) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+            
+            
             
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
-        OnSelect: |-
+        OnSelect: |+
             =Set(BotonActivo,"Boton2");
             Set(Pregunta,Preg2_30.Text);
             UpdateContext({ShowPopUp : true});
             
-            //Collect(BotonesDeshabilitados, { Boton: 2 })
+            Collect(BotonesDeshabilitados, { Boton: 2 })
             
-            Set(BTN_Presionado,"btn2")
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -967,7 +972,10 @@
                     Reset(AddMediaButton6_37);
                     
                     //BOTONES
-                    Set(BTN_Desactivar,BTN_Presionado)
+                    Set(Boton1,true);
+                    Set(Boton2,true)
+                    
+                    
                     
                     
                     
@@ -984,11 +992,12 @@
                 Color: =RGBA(255, 255, 255, 1)
                 Height: =65
                 Icon: =Icon.Cancel
-                OnSelect: |-
+                OnSelect: |+
                     =UpdateContext({ShowPopUp: false});
                     Reset(TextInput1_194);
                     Reset(AddMediaButton6_37);
-                    Reset(Dropdown4_38)
+                    Reset(Dropdown4_38);
+                    
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Width: =81.63
