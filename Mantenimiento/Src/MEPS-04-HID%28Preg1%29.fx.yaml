@@ -138,13 +138,13 @@
         Text: ="Justificación"
         Visible: =If(Resp3_27.Selected.Value = "N", true, false) 
         Width: =173
-        X: =1182
+        X: =1180
         Y: =209
         ZIndex: =11
 
     Btn4_27 As button:
         DisplayMode: |
-            =
+            =If(CountIf(BotonesDeshabilitados, Boton = 4) > 0, DisplayMode.Disabled, DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
@@ -152,7 +152,7 @@
             UpdateContext({ShowPopUp : true});
             
             
-            //Collect(BotonesDeshabilitados, { Boton: 4 })
+            Collect(BotonesDeshabilitados, { Boton: 4 })
             
             //Set(BTN_Presionado,"btn4")
         PaddingRight: =6.37
@@ -161,103 +161,130 @@
         Text: ="Justificación"
         Visible: =If(Resp4_27.Selected.Value = "N", true, false) 
         Width: =173
-        X: =1182
+        X: =1180
         Y: =255
         ZIndex: =12
 
     Btn5_27 As button:
+        DisplayMode: |
+            =If(CountIf(BotonesDeshabilitados, Boton = 5) > 0, DisplayMode.Disabled, DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
             =Set(Pregunta,Preg5_27.Text);
             UpdateContext({ShowPopUp : true});
+            
+            
+            Collect(BotonesDeshabilitados, { Boton: 5 })
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
         Visible: =If(Resp5_27.Selected.Value = "N", true, false) 
         Width: =173
-        X: =1182
+        X: =1180
         Y: =306
         ZIndex: =13
 
     Btn6_25 As button:
+        DisplayMode: |
+            =If(CountIf(BotonesDeshabilitados, Boton = 6) > 0, DisplayMode.Disabled, DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
             =Set(Pregunta,Preg6_25.Text);
             UpdateContext({ShowPopUp : true});
+            
+            
+            Collect(BotonesDeshabilitados, { Boton: 6 })
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
         Visible: =If(Resp6_25.Selected.Value = "N", true, false) 
         Width: =173
-        X: =1182
+        X: =1180
         Y: =356
         ZIndex: =14
 
     Btn7_25 As button:
+        DisplayMode: |
+            =If(CountIf(BotonesDeshabilitados, Boton = 7) > 0, DisplayMode.Disabled, DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
             =Set(Pregunta,Preg7_25.Text);
             UpdateContext({ShowPopUp : true});
+            
+            Collect(BotonesDeshabilitados, { Boton: 7 })
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
         Visible: =If(Resp7_25.Selected.Value = "N", true, false) 
         Width: =173
-        X: =1182
+        X: =1180
         Y: =403
         ZIndex: =15
 
     Btn8_22 As button:
+        DisplayMode: |
+            =If(CountIf(BotonesDeshabilitados, Boton = 8) > 0, DisplayMode.Disabled, DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
             =Set(Pregunta,Preg8_22.Text);
             UpdateContext({ShowPopUp : true});
+            
+            Collect(BotonesDeshabilitados, { Boton: 8 })
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
         Visible: =If(Resp8_22.Selected.Value = "N", true, false) 
         Width: =173
-        X: =1182
+        X: =1180
         Y: =450
         ZIndex: =16
 
     Btn9_17 As button:
+        DisplayMode: |
+            =If(CountIf(BotonesDeshabilitados, Boton = 9) > 0, DisplayMode.Disabled, DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
             =Set(Pregunta,Preg9_17.Text);
             UpdateContext({ShowPopUp : true});
+            
+            Collect(BotonesDeshabilitados, { Boton: 9 })
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
         Visible: =If(Resp9_17.Selected.Value = "N", true, false) 
         Width: =173
-        X: =1182
+        X: =1180
         Y: =493
         ZIndex: =17
 
     Btn10_16 As button:
+        DisplayMode: |
+            =If(CountIf(BotonesDeshabilitados, Boton = 10) > 0, DisplayMode.Disabled, DisplayMode.Edit)
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
         OnSelect: |-
             =Set(Pregunta,Preg10_16.Text);
             UpdateContext({ShowPopUp : true});
+            
+            
+            Collect(BotonesDeshabilitados, { Boton: 10 })
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
         Text: ="Justificación"
         Visible: =If(Resp10_16.Selected.Value = "N", true, false) 
         Width: =173
-        X: =1182
+        X: =1180
         Y: =534
         ZIndex: =18
 
@@ -828,7 +855,7 @@
         Text: ="Justificación"
         Visible: =If(Resp1_33.Selected.Value = "N", true, false) 
         Width: =173
-        X: =1182
+        X: =1180
         Y: =115
         ZIndex: =58
 
@@ -853,7 +880,7 @@
         Text: ="Justificación"
         Visible: =If(Resp2_30.Selected.Value = "N", true, false) 
         Width: =173
-        X: =1182
+        X: =1180
         Y: =164
         ZIndex: =59
 
@@ -972,8 +999,7 @@
                     Reset(AddMediaButton6_37);
                     
                     //BOTONES
-                    Set(Boton1,true);
-                    Set(Boton2,true)
+                    
                     
                     
                     
