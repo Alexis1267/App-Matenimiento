@@ -425,7 +425,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =If(Btn3_27.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -458,7 +458,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =If(Btn4_27.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -581,7 +581,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =If(Btn6_25.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -623,7 +623,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =If(Btn7_25.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -645,7 +645,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =If(Btn8_22.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -677,7 +677,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =If(Btn9_17.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -709,7 +709,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =If(Btn10_16.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -1018,7 +1018,7 @@
                     Estatus: "Abierto"
                     });
                     
-                    Notify("Se ha enviado con éxito.", NotificationType.Success);
+                    Notify("El reporte se ha enviado con éxito.", NotificationType.Success);
                     
                     
                     UpdateContext({ShowPopUp: false}); //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp

@@ -1,0 +1,2315 @@
+"Screen2 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+
+    RectQuickActionBar1 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    LblAppName1 As label:
+        Align: =Align.Center
+        Height: =88
+        Text: ="[Title]"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+        ZIndex: =3
+
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1498
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Preg1_32 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="1."
+                Width: =33
+                Y: =16
+                ZIndex: =1
+
+            Preg1_33 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="2."
+                Width: =33
+                Y: =62
+                ZIndex: =2
+
+            Preg1_308 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="3."
+                Width: =33
+                Y: =110
+                ZIndex: =3
+
+            Preg1_309 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="4."
+                Width: =33
+                Y: =157
+                ZIndex: =4
+
+            Preg1_310 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="5."
+                Width: =33
+                Y: =204
+                ZIndex: =5
+
+            Preg1_311 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="6."
+                Width: =33
+                Y: =255
+                ZIndex: =6
+
+            Preg1_312 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="7."
+                Width: =33
+                Y: =304
+                ZIndex: =7
+
+            Preg1_313 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="8."
+                Width: =33
+                Y: =349
+                ZIndex: =8
+
+            Preg1_314 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="9."
+                Width: =33
+                Y: =392
+                ZIndex: =9
+
+            Preg1_315 As label:
+                Height: =33
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="10."
+                Width: =33
+                Y: =437
+                ZIndex: =10
+
+            Preg1_316 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="11."
+                Width: =33
+                Y: =476
+                ZIndex: =11
+
+            Preg1_317 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="12."
+                Width: =33
+                Y: =521
+                ZIndex: =12
+
+            Btn3_29 As button:
+                DisplayMode: =
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =25
+                OnSelect: |-
+                    =Set(BotonActivo,"Boton3");
+                    Set(Pregunta,Preg3_29.Text);
+                    UpdateContext({ShowPopUp : true});
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp3_29.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =118
+                ZIndex: =13
+
+            Btn4_29 As button:
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =25
+                OnSelect: |-
+                    =Set(Pregunta,Preg4_29.Text);
+                    UpdateContext({ShowPopUp : true});
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp4_29.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =164
+                ZIndex: =14
+
+            Btn5_29 As button:
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =25
+                OnSelect: |-
+                    =Set(Pregunta,Preg5_29.Text);
+                    UpdateContext({ShowPopUp : true});
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp5_29.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =215
+                ZIndex: =15
+
+            Btn6_27 As button:
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =25
+                OnSelect: |-
+                    =Set(Pregunta,Preg6_27.Text);
+                    UpdateContext({ShowPopUp : true});
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp6_27.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =265
+                ZIndex: =16
+
+            Btn7_27 As button:
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =25
+                OnSelect: |-
+                    =Set(Pregunta,Preg7_27.Text);
+                    UpdateContext({ShowPopUp : true});
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp7_27.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =312
+                ZIndex: =17
+
+            Btn8_24 As button:
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =25
+                OnSelect: |-
+                    =Set(Pregunta,Preg8_24.Text);
+                    UpdateContext({ShowPopUp : true});
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp8_24.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =359
+                ZIndex: =18
+
+            Btn9_19 As button:
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =25
+                OnSelect: |-
+                    =Set(Pregunta,Preg9_19.Text);
+                    UpdateContext({ShowPopUp : true});
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp9_19.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =402
+                ZIndex: =19
+
+            Btn10_18 As button:
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =24
+                OnSelect: |-
+                    =Set(Pregunta,Preg10_18.Text);
+                    UpdateContext({ShowPopUp : true});
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp10_18.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =443
+                ZIndex: =20
+
+            Btn11_14 As button:
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =24
+                OnSelect: |-
+                    =Set(Pregunta,Preg11_14.Text);
+                    UpdateContext({ShowPopUp : true});
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp11_14.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =485
+                ZIndex: =21
+
+            Btn12_14 As button:
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =24
+                OnSelect: |-
+                    =Set(Pregunta,Preg12_14.Text);
+                    UpdateContext({ShowPopUp : true});
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp12_14.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =529
+                ZIndex: =22
+
+            Preg1_318 As label:
+                Height: =38
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: |
+                    ="Reapriete y verificación de funcionamiento de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)."
+                Width: =1081
+                X: =101
+                Y: =16
+                ZIndex: =23
+
+            Resp1_6 As dropdown:
+                AllowEmptySelection: =true
+                BorderColor: =RGBA(0, 40, 85, 1)
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |
+                    =If(
+                        IsBlank(Resp1_6.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =25
+                ZIndex: =24
+
+            Preg2_32 As label:
+                Height: =42
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Reapriete y verificación de tornillos de brackets de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)."
+                Width: =1081
+                X: =101
+                Y: =61
+                ZIndex: =25
+
+            Resp3_29 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp3_29.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =117
+                ZIndex: =26
+
+            Preg3_29 As label:
+                Height: =41
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Limpieza y lubricación de chumaceras de carro de alimentación 8 en total y validar sujeción mecánica que no estén flojas o dañadas si es así cambiar."
+                Width: =1081
+                X: =101
+                Y: =109
+                ZIndex: =27
+
+            Resp4_29 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp4_29.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =164
+                ZIndex: =28
+
+            Preg4_29 As label:
+                Height: =37
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Reapriete y verificación de tornillos de chumaceras, Flecha transmisión (marcar testigo en caso de no encontrarse)."
+                Width: =1081
+                X: =100
+                Y: =162
+                ZIndex: =29
+
+            Resp5_29 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp5_29.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =212
+                ZIndex: =30
+
+            Preg5_29 As label:
+                Height: =45
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Validar sujeción mecánica del interruptor y revisar power track (oruga) del carro. En caso de encontrar hallazgos corregir."
+                Width: =1081
+                X: =101
+                Y: =202
+                ZIndex: =31
+
+            Resp6_27 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp6_27.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =263
+                ZIndex: =32
+
+            Preg6_27 As label:
+                Height: =42
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Revisión de condiciones de anclaje en topes para montacargas, reapretar tuercas de sujeción"
+                Width: =1081
+                X: =101
+                Y: =254
+                ZIndex: =33
+
+            Preg7_27 As label:
+                Height: =41
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: =" Limpiar y verificar funcionamiento de cortinas de luz carro 1 y 2, validar que cambien de estado en led, señal que estén funcionando correctamente."
+                Width: =1081
+                X: =101
+                Y: =303
+                ZIndex: =34
+
+            Resp7_27 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp7_27.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =310
+                ZIndex: =35
+
+            Resp8_24 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp8_24.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =358
+                ZIndex: =36
+
+            Preg8_24 As label:
+                Height: =38
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Revisar el reapriete de tornillos en las llantas de los carros y validar que estén en buenas condiciones. (Marcar testigo en caso de no contar)"
+                Width: =1081
+                X: =101
+                Y: =350
+                ZIndex: =37
+
+            Resp9_19 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp9_19.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =402
+                ZIndex: =38
+
+            Preg9_19 As label:
+                Height: =36
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Revisión Typer Look , apriete de tornillería y que este todo bien, sino es así reparar si no se cuenta con algo para su reparación comentarlo."
+                Width: =1081
+                X: =101
+                Y: =393
+                ZIndex: =39
+
+            Resp10_18 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp10_18.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =443
+                ZIndex: =40
+
+            Preg10_18 As label:
+                Height: =34
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Revisión de Riel y pista y realizar limpieza"
+                Width: =1081
+                X: =101
+                Y: =437
+                ZIndex: =41
+
+            Resp11_14 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp11_14.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =486
+                ZIndex: =42
+
+            Preg11_14 As label:
+                Height: =37
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Revisar que se encuentre en buen estado y bien montado motor de transmisión, revisar el estado de la cuña este debe estar en buen estado."
+                Width: =1081
+                X: =101
+                Y: =478
+                ZIndex: =43
+
+            Resp12_14 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp12_14.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =531
+                ZIndex: =44
+
+            Preg12_14 As label:
+                Height: =36
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Llantas de los carros deben contar con guardas en caso de no tener levantar orden a kaizen para su fabricación."
+                Width: =1081
+                X: =101
+                Y: =522
+                ZIndex: =45
+
+            Resp2_32 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp1_6.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =71
+                ZIndex: =46
+
+            Rectangle2_452 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =55
+                ZIndex: =47
+
+            Rectangle2_453 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =103
+                ZIndex: =48
+
+            Rectangle2_738 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =151
+                ZIndex: =49
+
+            Rectangle2_739 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =195
+                ZIndex: =50
+
+            Rectangle2_740 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =248
+                ZIndex: =51
+
+            Rectangle2_741 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =297
+                ZIndex: =52
+
+            Rectangle2_742 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =345
+                ZIndex: =53
+
+            Rectangle2_743 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =389
+                ZIndex: =54
+
+            Rectangle2_744 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =432
+                ZIndex: =55
+
+            Rectangle2_745 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =472
+                ZIndex: =56
+
+            Rectangle2_746 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =516
+                ZIndex: =57
+
+            Rectangle2_747 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =559
+                ZIndex: =58
+
+            Btn1_7 As button:
+                AutoDisableOnSelect: =
+                DisplayMode: =
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =25
+                OnSelect: |
+                    =
+                    Set(BotonActivo,"Boton1");
+                    Set(Pregunta,Preg1_318.Text); //Variable que me trae la pregunta
+                    UpdateContext({ShowPopUp : true}); //Variable para habilitar el ModalPopUp
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp1_6.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =24
+                ZIndex: =59
+
+            Btn2_33 As button:
+                DisplayMode: =
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =25
+                OnSelect: |-
+                    =Set(ModalAbierto,true);
+                    Set(BotonActivo,"Boton2");
+                    Set(Pregunta,Preg2_32.Text);
+                    UpdateContext({ShowPopUp : true});
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp2_32.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =1182
+                Y: =73
+                ZIndex: =60
+
+            Container1_8 As groupContainer.manualLayoutContainer:
+                Height: =674
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Visible: =ShowPopUp
+                Width: =1366
+                X: =0.00
+                ZIndex: =61
+
+                HtmlText3_22 As htmlViewer:
+                    Height: =768
+                    HtmlText: |-
+                        ="<div style=""
+                        position: absolute;
+                          text-align: center;
+                          color: #fff;
+                          box-shadow: 0px 0px 25px #222;
+                          backdrop-filter: blur(10px);
+                        height:"& 1920 &"px;
+                        width:"&1080 &"px;""></div>"
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =14.04
+                    Visible: =ShowPopUp
+                    Width: =1366
+                    ZIndex: =1
+
+                Container2_8 As groupContainer.manualLayoutContainer:
+                    Fill: =RGBA(227, 234, 243, 1)
+                    Height: =595
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =1272.89
+                    X: =56
+                    Y: =112
+                    ZIndex: =2
+
+                    Rectangle3_40 As rectangle:
+                        Fill: =RGBA(0, 40, 85, 1)
+                        Height: =65
+                        Width: =1272.89
+                        X: =0.00
+                        ZIndex: =4
+
+                    Button7_50 As button:
+                        BorderStyle: =BorderStyle.None
+                        DisplayMode: |-
+                            =//Validacion de boton de que debe cumplir y escribir en justificacion
+                            If(IsBlank(TextInput1_202),DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
+                        Fill: =RGBA(97, 181, 73, 1)
+                        FontWeight: =FontWeight.Bold
+                        OnSelect: |+
+                            =/*
+                            // Set file1 name
+                                Set(fileName1, Concatenate(TextInput1_3.Text &"_1",Now(),".jpg"));  //NOMBRE_1_09/05/2023_.JPG
+                            
+                            //CONVERTIR ARCHIVO
+                            Set(attachmentValue1, JSON(UploadedImage7.Image, JSONFormat.IncludeBinaryData)); 
+                                Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
+                            
+                                  // Upload file1 and get url
+                            Set(attachment1Link,Insert_Img_MP.Run(fileName1,attachment1Base64Only).imagenh);
+                            */
+                            
+                            
+                            // Set file1 name
+                                Set(fileName1, Concatenate(TextInput1_48.Text &"_1",Now(),".jpg"));
+                            
+                             
+                            
+                                // Get file1 binary data and convert it to base64
+                                Set(attachmentValue1, JSON(UploadedImage7_8.Image, JSONFormat.IncludeBinaryData));
+                                Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
+                            
+                             
+                            
+                                // Upload file1 and get url
+                                //Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
+                            
+                            Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            //INGRESAR DATOS A LA TABLA HALLAZGOS
+                            Patch(CMXE_TablaH_MP,Defaults(CMXE_TablaH_MP),
+                            {
+                            Asignado: Dropdown4_9.Selected.Value,
+                            Localizacion: TextInput1_47.Text,
+                            Proc_No: TextInput1_48.Text,
+                            Nom_Maquina:TextInput1_200.Text,
+                            Clas_Mantenimiento: TextInput1_201.Text,
+                            Fecha_Inicio: Now(),
+                            Justificacion: TextInput1_202.Text,
+                            Imagenes: attachment1Link,
+                            Actividad: ACT_7.Text,
+                            Estatus: "Abierto"
+                            });
+                            
+                            UpdateContext({ShowPopUp: false}); //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
+                            Reset(TextInput1_202);
+                            Reset(AddMediaButton6_8);
+                            
+                            
+                            If(BotonActivo = "Boton1", Btn1_7.DisplayMode.View);
+                            If(BotonActivo = "Boton2",Btn2_33.DisplayMode.Disabled, true);
+                            If(BotonActivo = "Boton3", Btn3_29.DisplayMode.Disabled, true);
+                            
+                            Set(BotonActivo, "");
+                            Set(ModalAbierto,false);
+                            
+                            
+                            
+                        PaddingRight: =6.37
+                        PaddingTop: =6.37
+                        Size: =19.14
+                        Text: ="Enviar"
+                        Width: =204.07
+                        X: =534.40
+                        Y: =538
+                        ZIndex: =5
+
+                    Icon4_9 As icon.Cancel:
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =65
+                        Icon: =Icon.Cancel
+                        OnSelect: |-
+                            =UpdateContext({ShowPopUp: false});
+                            Reset(TextInput1_202);
+                            Reset(AddMediaButton6_8);
+                            Reset(Dropdown4_9)
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =81.63
+                        X: =1191.25
+                        ZIndex: =6
+
+                    Image4_9 As image:
+                        Height: =65
+                        Image: =carrier_logo_300
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =150.49
+                        X: =25.51
+                        ZIndex: =7
+
+                    Label9_108 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =65
+                        PaddingRight: =6.37
+                        PaddingTop: =6.37
+                        Size: =38.26
+                        Text: ="Reporte de hallazgo"
+                        Width: =531.85
+                        X: =369.88
+                        ZIndex: =8
+
+                    Group15_8 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        Label9_326 As label:
+                            FontWeight: =FontWeight.Bold
+                            Height: =48
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Justificación:"
+                            Width: =443.84
+                            X: =25.51
+                            Y: =351
+                            ZIndex: =2
+
+                        TextInput1_202 As text:
+                            BorderColor: =RGBA(0, 0, 0, 1)
+                            BorderThickness: =1
+                            Clear: =true
+                            Default: =
+                            Height: =120
+                            Mode: =TextMode.MultiLine
+                            PaddingRight: =6.59
+                            PaddingTop: =6.59
+                            Reset: =true
+                            Size: =17.13
+                            Width: =632.62
+                            X: =26.36
+                            Y: =399
+                            ZIndex: =3
+
+                    Group14_8 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        ACT_7 As text:
+                            Default: =Pregunta
+                            DisplayMode: =DisplayMode.View
+                            Height: =68
+                            Mode: =TextMode.MultiLine
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =1200.18
+                            X: =25.51
+                            Y: =283
+                            ZIndex: =9
+
+                        Label9_315 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Actividad:"
+                            Width: =191.32
+                            X: =25.51
+                            Y: =243
+                            ZIndex: =18
+
+                    Group13_41 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        Label9_115 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Localización:"
+                            Width: =233.41
+                            X: =25.51
+                            Y: =65
+                            ZIndex: =10
+
+                        TextInput1_47 As text:
+                            Default: =Dato_Localizacion
+                            DisplayMode: =DisplayMode.View
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =311.19
+                            X: =25.51
+                            Y: =105
+                            ZIndex: =11
+
+                    Group12_9 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        Label9_119 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Proc_No:"
+                            Width: =278.06
+                            X: =404.31
+                            Y: =65
+                            ZIndex: =12
+
+                        TextInput1_48 As text:
+                            Default: =Dato_ProcNo
+                            DisplayMode: =DisplayMode.View
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =369.88
+                            X: =404.31
+                            Y: =105
+                            ZIndex: =13
+
+                    Group11_8 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        Label9_261 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Clase de mantenimiento:"
+                            Width: =318.86
+                            X: =789
+                            Y: =154
+                            ZIndex: =16
+
+                        TextInput1_201 As text:
+                            Default: =Dato_ClassMtto
+                            DisplayMode: =DisplayMode.View
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =438.75
+                            X: =789
+                            Y: =194
+                            ZIndex: =17
+
+                    Group10_8 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        Label9_287 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Nombre de la maquina:"
+                            Width: =320
+                            X: =369
+                            Y: =155
+                            ZIndex: =14
+
+                        TextInput1_200 As text:
+                            Default: =Dato_NomMaquina
+                            DisplayMode: =DisplayMode.View
+                            Height: =41
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =387
+                            X: =369
+                            Y: =194
+                            ZIndex: =15
+
+                    AddMediaWithImage6_8 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        UploadedImage7_8 As image:
+                            BorderColor: =RGBA(0, 0, 0, 1)
+                            BorderThickness: =1
+                            Height: =139
+                            Image: =If(IsBlank(AddMediaButton6_8.Media), SampleImage, AddMediaButton6_8.Media)
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =239.78
+                            X: =988.47
+                            Y: =380
+                            ZIndex: =19
+
+                        AddMediaButton6_8 As addMedia:
+                            BorderColor: =RGBA(0, 0, 0, 1)
+                            ChangePictureText: ="Cambiar fotografia"
+                            Height: =64
+                            Size: =19.77
+                            Text: ="Adjuntar evidencia"
+                            Width: =247.77
+                            X: =711
+                            Y: =417
+                            ZIndex: =20
+
+                    Label9_149 As label:
+                        FontWeight: =FontWeight.Bold
+                        PaddingRight: =6.37
+                        PaddingTop: =6.37
+                        Size: =16.58
+                        Text: |-
+                            ="Persona que reporta hallazgo:"
+                        Width: =369.88
+                        X: =858.36
+                        Y: =65
+                        ZIndex: =21
+
+                    Dropdown4_9 As dropdown:
+                        BorderColor: =RGBA(0, 40, 85, 1)
+                        BorderThickness: =0
+                        ChevronBackground: =RGBA(0, 40, 85, 1)
+                        Default: =Operador
+                        Items: |+
+                            = 
+                             Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10))
+                            
+                            //Concatenate(DropdownAsig,DropdownInvolu)
+                            
+                            //Split(Concat(Gallery2.AllItems , "" & Title2 & Char(10)),Concat(AsignadoOp,"" & NombreOp & Char(10), Char(10)))
+                            
+                             //Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)&Operador), Char(10))
+                            
+                            //Concatenate(Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10)))
+                            
+                            /*Split(
+                                Concatenate(
+                                    Text(Title2, "[$-en-US]0") &Char(10) & Text(Operador, "[$-en-US]0") & Char(10)
+                                ),
+                                Char(10)
+                            )*/
+                            
+                            
+                            
+                            
+                            
+                            
+                        PaddingRight: =12.76
+                        PaddingTop: =12.76
+                        Size: =16.58
+                        Width: =367.32
+                        X: =858.36
+                        Y: =105
+                        ZIndex: =22
+
+                    Group13_42 As group:
+                        Height: =5
+                        Width: =5
+                        X: =14.489999999999998
+                        Y: =-25
+                        ZIndex: =25
+
+                        Label9_244 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: ="Activo.No"
+                            Width: =233.41
+                            X: =26
+                            Y: =154
+                            ZIndex: =23
+
+                        TextInput1_49 As text:
+                            Default: =Dato_Activo
+                            DisplayMode: =DisplayMode.View
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =311.19
+                            X: =26
+                            Y: =194
+                            ZIndex: =24
+
+            Preg1_319 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="1."
+                Width: =33
+                Y: =569
+                ZIndex: =62
+
+            Preg1_320 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="2."
+                Width: =33
+                Y: =615
+                ZIndex: =63
+
+            Preg1_321 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="3."
+                Width: =33
+                Y: =663
+                ZIndex: =64
+
+            Preg1_322 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="4."
+                Width: =33
+                Y: =710
+                ZIndex: =65
+
+            Preg1_323 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="5."
+                Width: =33
+                Y: =757
+                ZIndex: =66
+
+            Preg1_324 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="6."
+                Width: =33
+                Y: =808
+                ZIndex: =67
+
+            Preg1_325 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="7."
+                Width: =33
+                Y: =857
+                ZIndex: =68
+
+            Preg1_326 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="8."
+                Width: =33
+                Y: =902
+                ZIndex: =69
+
+            Preg1_327 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="9."
+                Width: =33
+                Y: =945
+                ZIndex: =70
+
+            Preg1_328 As label:
+                Height: =33
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="10."
+                Width: =33
+                Y: =990
+                ZIndex: =71
+
+            Preg1_329 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="11."
+                Width: =33
+                Y: =1029
+                ZIndex: =72
+
+            Preg1_330 As label:
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="12."
+                Width: =33
+                Y: =1074
+                ZIndex: =73
+
+            Preg1_331 As label:
+                Height: =38
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: |
+                    ="Reapriete y verificación de funcionamiento de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)."
+                Width: =1081
+                X: =101
+                Y: =569
+                ZIndex: =74
+
+            Resp1_35 As dropdown:
+                AllowEmptySelection: =true
+                BorderColor: =RGBA(0, 40, 85, 1)
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |
+                    =If(
+                        IsBlank(Resp1_35.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =578
+                ZIndex: =75
+
+            Preg2_33 As label:
+                Height: =42
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Reapriete y verificación de tornillos de brackets de sensores de carros de alimentación (marcar testigo en caso de no encontrarse)."
+                Width: =1081
+                X: =101
+                Y: =614
+                ZIndex: =76
+
+            Resp3_30 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp3_30.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =670
+                ZIndex: =77
+
+            Preg3_30 As label:
+                Height: =41
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Limpieza y lubricación de chumaceras de carro de alimentación 8 en total y validar sujeción mecánica que no estén flojas o dañadas si es así cambiar."
+                Width: =1081
+                X: =101
+                Y: =662
+                ZIndex: =78
+
+            Resp4_30 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp4_30.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =717
+                ZIndex: =79
+
+            Preg4_30 As label:
+                Height: =37
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Reapriete y verificación de tornillos de chumaceras, Flecha transmisión (marcar testigo en caso de no encontrarse)."
+                Width: =1081
+                X: =100
+                Y: =715
+                ZIndex: =80
+
+            Resp5_30 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp5_30.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =765
+                ZIndex: =81
+
+            Preg5_30 As label:
+                Height: =45
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Validar sujeción mecánica del interruptor y revisar power track (oruga) del carro. En caso de encontrar hallazgos corregir."
+                Width: =1081
+                X: =101
+                Y: =755
+                ZIndex: =82
+
+            Resp6_28 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp6_28.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =816
+                ZIndex: =83
+
+            Preg6_28 As label:
+                Height: =42
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Revisión de condiciones de anclaje en topes para montacargas, reapretar tuercas de sujeción"
+                Width: =1081
+                X: =101
+                Y: =807
+                ZIndex: =84
+
+            Preg7_28 As label:
+                Height: =41
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: =" Limpiar y verificar funcionamiento de cortinas de luz carro 1 y 2, validar que cambien de estado en led, señal que estén funcionando correctamente."
+                Width: =1081
+                X: =101
+                Y: =856
+                ZIndex: =85
+
+            Resp7_28 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp7_28.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =863
+                ZIndex: =86
+
+            Resp8_25 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp8_25.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =911
+                ZIndex: =87
+
+            Preg8_25 As label:
+                Height: =38
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Revisar el reapriete de tornillos en las llantas de los carros y validar que estén en buenas condiciones. (Marcar testigo en caso de no contar)"
+                Width: =1081
+                X: =101
+                Y: =903
+                ZIndex: =88
+
+            Resp9_20 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp9_20.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =955
+                ZIndex: =89
+
+            Preg9_20 As label:
+                Height: =36
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Revisión Typer Look , apriete de tornillería y que este todo bien, sino es así reparar si no se cuenta con algo para su reparación comentarlo."
+                Width: =1081
+                X: =101
+                Y: =946
+                ZIndex: =90
+
+            Resp10_19 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp10_19.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =996
+                ZIndex: =91
+
+            Preg10_19 As label:
+                Height: =34
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Revisión de Riel y pista y realizar limpieza"
+                Width: =1081
+                X: =101
+                Y: =990
+                ZIndex: =92
+
+            Resp11_15 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp11_15.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =1039
+                ZIndex: =93
+
+            Preg11_15 As label:
+                Height: =37
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Revisar que se encuentre en buen estado y bien montado motor de transmisión, revisar el estado de la cuña este debe estar en buen estado."
+                Width: =1081
+                X: =101
+                Y: =1031
+                ZIndex: =94
+
+            Resp12_15 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp12_15.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =1084
+                ZIndex: =95
+
+            Preg12_15 As label:
+                Height: =36
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Llantas de los carros deben contar con guardas en caso de no tener levantar orden a kaizen para su fabricación."
+                Width: =1081
+                X: =101
+                Y: =1075
+                ZIndex: =96
+
+            Resp2_33 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Height: =22
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: =["R","N"]
+                OnSelect: |-
+                    =If(
+                        IsBlank(Resp1_35.Selected),
+                        true
+                    )
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =33
+                Y: =624
+                ZIndex: =97
+
+            Rectangle2_748 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =608
+                ZIndex: =98
+
+            Rectangle2_749 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =656
+                ZIndex: =99
+
+            Rectangle2_750 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =704
+                ZIndex: =100
+
+            Rectangle2_751 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =748
+                ZIndex: =101
+
+            Rectangle2_752 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =801
+                ZIndex: =102
+
+            Rectangle2_753 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =850
+                ZIndex: =103
+
+            Rectangle2_754 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =898
+                ZIndex: =104
+
+            Rectangle2_755 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =942
+                ZIndex: =105
+
+            Rectangle2_756 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =985
+                ZIndex: =106
+
+            Rectangle2_757 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =1025
+                ZIndex: =107
+
+            Rectangle2_758 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =1069
+                ZIndex: =108
+
+            Rectangle2_759 As rectangle:
+                Fill: =RGBA(0, 40, 85, 1)
+                Height: =0
+                Width: =1366
+                X: =0.00
+                Y: =1112
+                ZIndex: =109
+
+            Container1_39 As groupContainer.manualLayoutContainer:
+                Height: =674
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Visible: =ShowPopUp
+                Width: =1366
+                X: =0.00
+                Y: =553
+                ZIndex: =110
+
+                HtmlText3_53 As htmlViewer:
+                    Height: =768
+                    HtmlText: |-
+                        ="<div style=""
+                        position: absolute;
+                          text-align: center;
+                          color: #fff;
+                          box-shadow: 0px 0px 25px #222;
+                          backdrop-filter: blur(10px);
+                        height:"& 1920 &"px;
+                        width:"&1080 &"px;""></div>"
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Size: =14.04
+                    Visible: =ShowPopUp
+                    Width: =1366
+                    ZIndex: =1
+
+                Container2_39 As groupContainer.manualLayoutContainer:
+                    Fill: =RGBA(227, 234, 243, 1)
+                    Height: =595
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =1272.89
+                    X: =56
+                    Y: =112
+                    ZIndex: =2
+
+                    Rectangle3_41 As rectangle:
+                        Fill: =RGBA(0, 40, 85, 1)
+                        Height: =65
+                        Width: =1272.89
+                        X: =0.00
+                        ZIndex: =4
+
+                    Button7_51 As button:
+                        BorderStyle: =BorderStyle.None
+                        DisplayMode: |-
+                            =//Validacion de boton de que debe cumplir y escribir en justificacion
+                            If(IsBlank(TextInput1_208),DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
+                        Fill: =RGBA(97, 181, 73, 1)
+                        FontWeight: =FontWeight.Bold
+                        OnSelect: |+
+                            =/*
+                            // Set file1 name
+                                Set(fileName1, Concatenate(TextInput1_3.Text &"_1",Now(),".jpg"));  //NOMBRE_1_09/05/2023_.JPG
+                            
+                            //CONVERTIR ARCHIVO
+                            Set(attachmentValue1, JSON(UploadedImage7.Image, JSONFormat.IncludeBinaryData)); 
+                                Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
+                            
+                                  // Upload file1 and get url
+                            Set(attachment1Link,Insert_Img_MP.Run(fileName1,attachment1Base64Only).imagenh);
+                            */
+                            
+                            
+                            // Set file1 name
+                                Set(fileName1, Concatenate(TextInput1_204.Text &"_1",Now(),".jpg"));
+                            
+                             
+                            
+                                // Get file1 binary data and convert it to base64
+                                Set(attachmentValue1, JSON(UploadedImage7_39.Image, JSONFormat.IncludeBinaryData));
+                                Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
+                            
+                             
+                            
+                                // Upload file1 and get url
+                                //Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
+                            
+                            Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            //INGRESAR DATOS A LA TABLA HALLAZGOS
+                            Patch(CMXE_TablaH_MP,Defaults(CMXE_TablaH_MP),
+                            {
+                            Asignado: Dropdown4_40.Selected.Value,
+                            Localizacion: TextInput1_203.Text,
+                            Proc_No: TextInput1_204.Text,
+                            Nom_Maquina:TextInput1_206.Text,
+                            Clas_Mantenimiento: TextInput1_207.Text,
+                            Fecha_Inicio: Now(),
+                            Justificacion: TextInput1_208.Text,
+                            Imagenes: attachment1Link,
+                            Actividad: ACT_38.Text,
+                            Estatus: "Abierto"
+                            });
+                            
+                            UpdateContext({ShowPopUp: false}); //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
+                            Reset(TextInput1_208);
+                            Reset(AddMediaButton6_39);
+                            
+                            
+                            If(BotonActivo = "Boton1", Btn1_7.DisplayMode.View);
+                            If(BotonActivo = "Boton2",Btn2_33.DisplayMode.Disabled, true);
+                            If(BotonActivo = "Boton3", Btn3_29.DisplayMode.Disabled, true);
+                            
+                            Set(BotonActivo, "");
+                            Set(ModalAbierto,false);
+                            
+                            
+                            
+                        PaddingRight: =6.37
+                        PaddingTop: =6.37
+                        Size: =19.14
+                        Text: ="Enviar"
+                        Width: =204.07
+                        X: =534.40
+                        Y: =538
+                        ZIndex: =5
+
+                    Icon4_40 As icon.Cancel:
+                        Color: =RGBA(255, 255, 255, 1)
+                        Height: =65
+                        Icon: =Icon.Cancel
+                        OnSelect: |-
+                            =UpdateContext({ShowPopUp: false});
+                            Reset(TextInput1_208);
+                            Reset(AddMediaButton6_39);
+                            Reset(Dropdown4_40)
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =81.63
+                        X: =1191.25
+                        ZIndex: =6
+
+                    Image4_40 As image:
+                        Height: =65
+                        Image: =carrier_logo_300
+                        PaddingRight: =0.00
+                        PaddingTop: =0.00
+                        Width: =150.49
+                        X: =25.51
+                        ZIndex: =7
+
+                    Label9_345 As label:
+                        Color: =RGBA(255, 255, 255, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =65
+                        PaddingRight: =6.37
+                        PaddingTop: =6.37
+                        Size: =38.26
+                        Text: ="Reporte de hallazgo"
+                        Width: =531.85
+                        X: =369.88
+                        ZIndex: =8
+
+                    Group15_39 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        Label9_417 As label:
+                            FontWeight: =FontWeight.Bold
+                            Height: =48
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Justificación:"
+                            Width: =443.84
+                            X: =25.51
+                            Y: =351
+                            ZIndex: =2
+
+                        TextInput1_208 As text:
+                            BorderColor: =RGBA(0, 0, 0, 1)
+                            BorderThickness: =1
+                            Clear: =true
+                            Default: =
+                            Height: =120
+                            Mode: =TextMode.MultiLine
+                            PaddingRight: =6.59
+                            PaddingTop: =6.59
+                            Reset: =true
+                            Size: =17.13
+                            Width: =632.62
+                            X: =26.36
+                            Y: =399
+                            ZIndex: =3
+
+                    Group14_39 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        ACT_38 As text:
+                            Default: =Pregunta
+                            DisplayMode: =DisplayMode.View
+                            Height: =68
+                            Mode: =TextMode.MultiLine
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =1200.18
+                            X: =25.51
+                            Y: =283
+                            ZIndex: =9
+
+                        Label9_416 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Actividad:"
+                            Width: =191.32
+                            X: =25.51
+                            Y: =243
+                            ZIndex: =18
+
+                    Group13_43 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        Label9_355 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Localización:"
+                            Width: =233.41
+                            X: =25.51
+                            Y: =65
+                            ZIndex: =10
+
+                        TextInput1_203 As text:
+                            Default: =Dato_Localizacion
+                            DisplayMode: =DisplayMode.View
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =311.19
+                            X: =25.51
+                            Y: =105
+                            ZIndex: =11
+
+                    Group12_40 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        Label9_384 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Proc_No:"
+                            Width: =278.06
+                            X: =404.31
+                            Y: =65
+                            ZIndex: =12
+
+                        TextInput1_204 As text:
+                            Default: =Dato_ProcNo
+                            DisplayMode: =DisplayMode.View
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =369.88
+                            X: =404.31
+                            Y: =105
+                            ZIndex: =13
+
+                    Group11_39 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        Label9_414 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Clase de mantenimiento:"
+                            Width: =318.86
+                            X: =789
+                            Y: =154
+                            ZIndex: =16
+
+                        TextInput1_207 As text:
+                            Default: =Dato_ClassMtto
+                            DisplayMode: =DisplayMode.View
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =438.75
+                            X: =789
+                            Y: =194
+                            ZIndex: =17
+
+                    Group10_39 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        Label9_415 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: |-
+                                ="Nombre de la maquina:"
+                            Width: =320
+                            X: =369
+                            Y: =155
+                            ZIndex: =14
+
+                        TextInput1_206 As text:
+                            Default: =Dato_NomMaquina
+                            DisplayMode: =DisplayMode.View
+                            Height: =41
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =387
+                            X: =369
+                            Y: =194
+                            ZIndex: =15
+
+                    AddMediaWithImage6_39 As group:
+                        Height: =5
+                        Width: =5
+                        X: =40
+                        Y: =40
+                        ZIndex: =19
+
+                        UploadedImage7_39 As image:
+                            BorderColor: =RGBA(0, 0, 0, 1)
+                            BorderThickness: =1
+                            Height: =139
+                            Image: =If(IsBlank(AddMediaButton6_39.Media), SampleImage, AddMediaButton6_39.Media)
+                            PaddingRight: =0.00
+                            PaddingTop: =0.00
+                            Width: =239.78
+                            X: =988.47
+                            Y: =380
+                            ZIndex: =19
+
+                        AddMediaButton6_39 As addMedia:
+                            BorderColor: =RGBA(0, 0, 0, 1)
+                            ChangePictureText: ="Cambiar fotografia"
+                            Height: =64
+                            Size: =19.77
+                            Text: ="Adjuntar evidencia"
+                            Width: =247.77
+                            X: =711
+                            Y: =417
+                            ZIndex: =20
+
+                    Label9_412 As label:
+                        FontWeight: =FontWeight.Bold
+                        PaddingRight: =6.37
+                        PaddingTop: =6.37
+                        Size: =16.58
+                        Text: |-
+                            ="Persona que reporta hallazgo:"
+                        Width: =369.88
+                        X: =858.36
+                        Y: =65
+                        ZIndex: =21
+
+                    Dropdown4_40 As dropdown:
+                        BorderColor: =RGBA(0, 40, 85, 1)
+                        BorderThickness: =0
+                        ChevronBackground: =RGBA(0, 40, 85, 1)
+                        Default: =Operador
+                        Items: |+
+                            = 
+                             Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10))
+                            
+                            //Concatenate(DropdownAsig,DropdownInvolu)
+                            
+                            //Split(Concat(Gallery2.AllItems , "" & Title2 & Char(10)),Concat(AsignadoOp,"" & NombreOp & Char(10), Char(10)))
+                            
+                             //Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)&Operador), Char(10))
+                            
+                            //Concatenate(Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10)))
+                            
+                            /*Split(
+                                Concatenate(
+                                    Text(Title2, "[$-en-US]0") &Char(10) & Text(Operador, "[$-en-US]0") & Char(10)
+                                ),
+                                Char(10)
+                            )*/
+                            
+                            
+                            
+                            
+                            
+                            
+                        PaddingRight: =12.76
+                        PaddingTop: =12.76
+                        Size: =16.58
+                        Width: =367.32
+                        X: =858.36
+                        Y: =105
+                        ZIndex: =22
+
+                    Group13_44 As group:
+                        Height: =5
+                        Width: =5
+                        X: =14.489999999999998
+                        Y: =-25
+                        ZIndex: =25
+
+                        Label9_413 As label:
+                            FontWeight: =FontWeight.Bold
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Text: ="Activo.No"
+                            Width: =233.41
+                            X: =26
+                            Y: =154
+                            ZIndex: =23
+
+                        TextInput1_205 As text:
+                            Default: =Dato_Activo
+                            DisplayMode: =DisplayMode.View
+                            PaddingRight: =6.37
+                            PaddingTop: =6.37
+                            Size: =16.58
+                            Width: =311.19
+                            X: =26
+                            Y: =194
+                            ZIndex: =24
+
