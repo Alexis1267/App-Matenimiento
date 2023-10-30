@@ -417,6 +417,7 @@
                 IsBlank(Resp3_27.Selected),
                 true
             );
+            If(Resp3_27.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
             
         PaddingRight: =12.76
         PaddingTop: =12.76
@@ -449,7 +450,7 @@
                 IsBlank(Resp4_27.Selected),
                 true
             );
-            If(Resp1_33.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
+            If(Resp4_27.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -481,7 +482,7 @@
                 IsBlank(Resp5_27.Selected),
                 true
             );
-            If(Resp1_33.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
+            If(Resp5_27.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -572,7 +573,7 @@
                 IsBlank(Resp6_25.Selected),
                 true
             );
-            If(Resp1_33.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
+            If(Resp6_25.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -614,7 +615,7 @@
                 IsBlank(Resp7_25.Selected),
                 true
             );
-            If(Resp1_33.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
+            If(Resp7_25.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -636,7 +637,7 @@
                 IsBlank(Resp8_22.Selected),
                 true
             );
-            If(Resp1_33.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
+            If(Resp8_22.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -668,7 +669,7 @@
                 IsBlank(Resp9_17.Selected),
                 true
             );
-            If(Resp1_33.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
+            If(Resp9_17.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -700,7 +701,7 @@
                 IsBlank(Resp10_16.Selected),
                 true
             );
-            If(Resp1_33.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
+            If(Resp10_16.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
