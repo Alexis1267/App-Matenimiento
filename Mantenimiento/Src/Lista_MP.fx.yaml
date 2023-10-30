@@ -14,31 +14,7 @@ Lista_MP As screen:
         DelayItemLoading: =true
         Height: =598
         Items: |
-            =//Search(CMXE_MP_N, Buscador.Text,"Proc_No")
-            
-            ////////Filter( CMXE_MP_N, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado") //Esta parte del codigo es solamente para que me filtre todos los preventivos de las maquinas que estan en proceso
-            
-            //Sort(Filter(Search(CMXE_MP_N, Buscador.Text,"Proc_No","Nom_Equipo","Clas_Mantenimineto"),StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "En Proceso"),Fecha_Inicio,SortOrder.Descending)
-            
-            //Filter(Search(CMXE_MP_N, Buscador.Text,"Proc_No","Nom_Equipo","Clas_Mantenimineto"),Nom_Equipo = Dropdown3.SelectedText.Value, StartsWith( Proc_No, MAQUINA_QR_3Letras.Text),Estatus = "Finalizado")
-            
-            //Filter(CMXE_MP_N,If(IsBlank(Dropdown3.SelectedText.Value),Nom_Equipo = Dropdown3.SelectedText.Value))
-            
-            //Filter(CMXE_MP_N, Clas_Mantenimineto = DropdownMTTO.Selected.Value && Nom_Equipo = DropdownNom_equi.Selected.Value && Proc_No = DropdownProcNo.Selected.Value )
-            
-            //Filter( CMXE_MP_N, StartsWith( Proc_No, Maquina_QR),Estatus = "Finalizado")
-            
-            //Filter(CMXE_MP_N,Localizacion = DropdownLocali.Selected.Value || Proc_No = DropdownProcNo.Selected.Value || Nom_Equipo = DropdownNom_equi.Selected.Value || Clas_Mantenimineto = DropdownMTTO.Selected.Value ) 
-            
-            //Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text,Estatus = "En Proceso")
-            
-            //Search(CMXE_MP_N,DropdownMTTO.SelectedText.Value,"Clas_Mantenimineto")
-            
-            //If(IsBlank(DropdownMTTO.SelectedText.Value) && IsBlank(Filtro_Sema.Text),CMXE_MP_N,Search(CMXE_MP_N,DropdownMTTO.SelectedText.Value,"Clas_Mantenimineto"))
-            
-            
-            //Filter(CMXE_MP_N,Filtro_Sema.Text = Semana)
-            
+            =
             If(
                 IsBlank(DropdownMTTO.Selected.Value) && IsBlank(Filtro_Sema.Text),
                 Filter(CMXE_MP_N, Estatus = "En proceso"), // Mostrar todo si ambos están en blanco
@@ -477,7 +453,10 @@ Lista_MP As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
-            Items: =Distinct(Filter(CMXE_MP_N,Nom_Equipo = DropdownNom_equi.Selected.Value),Clas_Mantenimineto)
+            Items: |-
+                =//En esta parte me va traer todas las clases de mantenimiento que existen de el texto del dropdown de nombre del equipo 
+                
+                Distinct(Filter(CMXE_MP_N,Nom_Equipo = DropdownNom_equi.Selected.Value),Clas_Mantenimineto)
             Width: =242
             X: =913
             Y: =121
@@ -506,7 +485,10 @@ Lista_MP As screen:
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
             DisplayMode: =DisplayMode.Disabled
-            Items: =Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),Localizacion)
+            Items: |-
+                =//En esta parte del codigo lo que se hace es que con la funcion distinct me trae los valores unicos de la columna localizacion, luego de eso me hace el filtro con el ID_Maq haciendolo con la condicion de que si el mismo que esta en el input text que me traiga su localizacion
+                
+                Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),Localizacion)
             Width: =231
             X: =146
             Y: =123
@@ -537,7 +519,10 @@ Lista_MP As screen:
             ChevronFill: =RGBA(0, 18, 107, 1)
             DisplayMode: =DisplayMode.Disabled
             Height: =39
-            Items: =Distinct(Filter(CMXE_MP_N,ID_Maq = DropdownActivo.Selected.Value),Nom_Equipo)
+            Items: |-
+                =//Me trae el nombre del equipo del ID_Maq
+                
+                Distinct(Filter(CMXE_MP_N,ID_Maq = DropdownActivo.Selected.Value),Nom_Equipo)
             Width: =231
             X: =659
             Y: =121
@@ -577,7 +562,10 @@ Lista_MP As screen:
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
             DisplayMode: =DisplayMode.Disabled
-            Items: =Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),ID_Maq)
+            Items: |-
+                =//Me trae el valor unico de ID_Maq
+                
+                Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),ID_Maq)
             Width: =231
             X: =397
             Y: =122
