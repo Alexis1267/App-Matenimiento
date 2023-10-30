@@ -34,29 +34,6 @@ Datos_MP As screen:
         Width: =1366
         ZIndex: =1
 
-    Label6_1 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =47
-        Text: |-
-            =Concatenate(Left(
-                CadenaCompleta,                            // El texto original
-                Find("-",
-                    CadenaCompleta,
-                    Find("-", CadenaCompleta) +1
-                )-1
-            ) & Right(
-                CadenaCompleta,                            // El texto original
-                Find("-",
-                    CadenaCompleta,
-                    Find("-", CadenaCompleta)
-                ) - 1
-            ) )
-        Width: =263
-        X: =1103
-        Y: =96
-        ZIndex: =2
-
     TimerHorasHombre As timer:
         AutoPause: =false
         AutoStart: =ContadorHH
@@ -68,7 +45,7 @@ Datos_MP As screen:
         Start: =ContadorHH
         X: =1166
         Y: =26
-        ZIndex: =3
+        ZIndex: =2
 
     Rectangle1_76 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -76,7 +53,7 @@ Datos_MP As screen:
         Height: =47
         Width: =1366
         Y: =326
-        ZIndex: =4
+        ZIndex: =3
 
     Label1_24 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -89,7 +66,7 @@ Datos_MP As screen:
         Width: =664
         X: =22
         Y: =326
-        ZIndex: =5
+        ZIndex: =4
 
     Label1_16 As label:
         Align: =Align.Center
@@ -103,7 +80,7 @@ Datos_MP As screen:
             ="ORDEN DE TRABAJO 
             MANTENIMIENTO PREVENTIVO ACTIVO"
         Width: =1366
-        ZIndex: =10
+        ZIndex: =9
 
     Button1_15 As button:
         BorderThickness: =0
@@ -144,7 +121,7 @@ Datos_MP As screen:
         Width: =326.51
         X: =520
         Y: =691
-        ZIndex: =11
+        ZIndex: =10
 
     Button5_13 As button:
         Color: =RGBA(0, 0, 0, 1)
@@ -159,13 +136,26 @@ Datos_MP As screen:
         Visible: =false
         Width: =204.07
         Y: =723
-        ZIndex: =12
+        ZIndex: =11
 
     Rectangle1_71 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 1)
         Fill: =RGBA(97, 112, 128, 1)
         Height: =47
         Width: =1366
+        Y: =96
+        ZIndex: =32
+
+    Label1_23 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =47
+        PaddingRight: =6.37
+        PaddingTop: =6.37
+        Size: =23
+        Text: ="Datos de la Maquina"
+        Width: =664
+        X: =22
         Y: =96
         ZIndex: =33
 
@@ -187,7 +177,7 @@ Datos_MP As screen:
             Width: =295
             X: =976
             Y: =428
-            ZIndex: =16
+            ZIndex: =15
 
         Label7_12 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -203,7 +193,7 @@ Datos_MP As screen:
             Width: =295
             X: =976
             Y: =388
-            ZIndex: =23
+            ZIndex: =22
 
     Group8 As group:
         Height: =5
@@ -223,7 +213,7 @@ Datos_MP As screen:
             Width: =295
             X: =656
             Y: =428
-            ZIndex: =21
+            ZIndex: =20
 
         Label7_17 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -239,20 +229,7 @@ Datos_MP As screen:
             Width: =295
             X: =656
             Y: =388
-            ZIndex: =22
-
-    Label1_23 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =47
-        PaddingRight: =6.37
-        PaddingTop: =6.37
-        Size: =23
-        Text: ="Datos de la Maquina"
-        Width: =664
-        X: =22
-        Y: =96
-        ZIndex: =34
+            ZIndex: =21
 
     Group2_1 As group:
         Height: =5
@@ -277,7 +254,7 @@ Datos_MP As screen:
             Width: =150.49
             X: =22
             Y: =151
-            ZIndex: =24
+            ZIndex: =23
 
         Label8_8 As label:
             Align: =Align.Center
@@ -295,7 +272,7 @@ Datos_MP As screen:
             Width: =294.64
             X: =173
             Y: =151
-            ZIndex: =25
+            ZIndex: =24
 
     Icon6 As icon.BackArrow:
         Color: =RGBA(21, 44, 115, 1)
@@ -310,7 +287,7 @@ Datos_MP As screen:
         Width: =85
         X: =12
         Y: =676
-        ZIndex: =37
+        ZIndex: =36
 
     Group3_1 As group:
         Height: =5
@@ -333,7 +310,7 @@ Datos_MP As screen:
             Width: =323.96
             X: =375
             Y: =237
-            ZIndex: =26
+            ZIndex: =25
 
         Label8_9 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -346,7 +323,7 @@ Datos_MP As screen:
             Width: =323.96
             X: =375
             Y: =277
-            ZIndex: =27
+            ZIndex: =26
 
     Group3_2 As group:
         Height: =5
@@ -368,7 +345,7 @@ Datos_MP As screen:
             Width: =323.96
             X: =728
             Y: =237
-            ZIndex: =28
+            ZIndex: =27
 
         Label8_10 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -380,7 +357,16 @@ Datos_MP As screen:
             Width: =323.96
             X: =728
             Y: =277
-            ZIndex: =29
+            ZIndex: =28
+
+    Image2_59 As image:
+        Height: =92
+        Image: =carrier_logo_300
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =159
+        X: =44
+        ZIndex: =41
 
     Group3_3 As group:
         Height: =5
@@ -402,7 +388,7 @@ Datos_MP As screen:
             Width: =323.96
             X: =22
             Y: =237
-            ZIndex: =30
+            ZIndex: =29
 
         Label8_11 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -414,16 +400,7 @@ Datos_MP As screen:
             Width: =323.96
             X: =22
             Y: =277
-            ZIndex: =31
-
-    Image2_59 As image:
-        Height: =92
-        Image: =carrier_logo_300
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =159
-        X: =44
-        ZIndex: =42
+            ZIndex: =30
 
     ModalPop_Datos As groupContainer.manualLayoutContainer:
         Height: =768
@@ -431,7 +408,7 @@ Datos_MP As screen:
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
         Width: =1366
-        ZIndex: =43
+        ZIndex: =42
 
         HtmlText3_15 As htmlViewer:
             Height: =768
@@ -755,7 +732,7 @@ Datos_MP As screen:
         RadiusTopRight: =0
         Visible: =CargaVisible
         Width: =1366
-        ZIndex: =44
+        ZIndex: =43
 
         HtmlText1_7 As htmlViewer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -865,6 +842,15 @@ Datos_MP As screen:
             Y: =454
             ZIndex: =5
 
+    TimerCarga As timer:
+        AutoStart: =true
+        Duration: =5000
+        OnTimerEnd: =Set(CargaVisible,false)
+        Visible: =false
+        X: =1032
+        Y: =26
+        ZIndex: =44
+
     Group3_10 As group:
         Height: =5
         Width: =5
@@ -886,7 +872,7 @@ Datos_MP As screen:
             Width: =295
             X: =656
             Y: =493
-            ZIndex: =35
+            ZIndex: =34
 
         Label8_24 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -901,7 +887,7 @@ Datos_MP As screen:
             Width: =295
             X: =656
             Y: =533
-            ZIndex: =36
+            ZIndex: =35
 
     Group16 As group:
         Height: =5
@@ -922,7 +908,7 @@ Datos_MP As screen:
             Width: =371
             X: =976
             Y: =523
-            ZIndex: =38
+            ZIndex: =37
 
         Label7_18 As label:
             Align: =Align.Center
@@ -940,7 +926,7 @@ Datos_MP As screen:
             Width: =371
             X: =976
             Y: =488
-            ZIndex: =39
+            ZIndex: =38
 
         Icon8 As icon.AddUser:
             Color: =RGBA(255, 255, 255, 1)
@@ -957,7 +943,7 @@ Datos_MP As screen:
             Width: =43
             X: =989
             Y: =493
-            ZIndex: =40
+            ZIndex: =39
 
         Icon9 As icon.Trash:
             Color: =RGBA(255, 255, 255, 1)
@@ -974,7 +960,7 @@ Datos_MP As screen:
             Width: =42
             X: =1299
             Y: =493
-            ZIndex: =41
+            ZIndex: =40
 
     Group5 As group:
         Height: =5
@@ -993,7 +979,7 @@ Datos_MP As screen:
             Width: =296
             X: =22
             Y: =533
-            ZIndex: =8
+            ZIndex: =7
 
         Label7_30 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1009,15 +995,29 @@ Datos_MP As screen:
             Width: =296
             X: =22
             Y: =493
-            ZIndex: =32
+            ZIndex: =31
 
-    TimerCarga As timer:
-        AutoStart: =true
-        Duration: =5000
-        OnTimerEnd: =Set(CargaVisible,false)
-        Visible: =false
-        X: =1032
-        Y: =26
+    Label6_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =47
+        Text: |-
+            =Concatenate(Left(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta) +1
+                )-1
+            ) & Right(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta)
+                ) - 1
+            ) )
+        Width: =263
+        X: =1103
+        Y: =96
         ZIndex: =45
 
     Group5_1 As group:
@@ -1037,7 +1037,7 @@ Datos_MP As screen:
             Width: =296
             X: =22
             Y: =428
-            ZIndex: =6
+            ZIndex: =5
 
         Label7_31 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1053,7 +1053,7 @@ Datos_MP As screen:
             Width: =296
             X: =22
             Y: =388
-            ZIndex: =7
+            ZIndex: =6
 
     Group1 As group:
         Height: =5
@@ -1076,7 +1076,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =589
-            ZIndex: =17
+            ZIndex: =16
 
         Label8_2 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1093,7 +1093,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =629
-            ZIndex: =18
+            ZIndex: =17
 
     Group2 As group:
         Height: =5
@@ -1116,7 +1116,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =493
-            ZIndex: =14
+            ZIndex: =13
 
         Label8 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1128,7 +1128,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =533
-            ZIndex: =15
+            ZIndex: =14
 
     Group3 As group:
         Height: =5
@@ -1151,7 +1151,7 @@ Datos_MP As screen:
             Width: =295
             X: =22
             Y: =589
-            ZIndex: =19
+            ZIndex: =18
 
         Label8_3 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1163,7 +1163,7 @@ Datos_MP As screen:
             Width: =295
             X: =22
             Y: =629
-            ZIndex: =20
+            ZIndex: =19
 
     Group6 As group:
         Height: =5
@@ -1183,7 +1183,7 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =428
-            ZIndex: =9
+            ZIndex: =8
 
         Label7 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -1199,5 +1199,5 @@ Datos_MP As screen:
             Width: =295
             X: =341
             Y: =388
-            ZIndex: =13
+            ZIndex: =12
 

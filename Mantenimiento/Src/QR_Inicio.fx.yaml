@@ -146,28 +146,12 @@
         HoverBorderColor: =RGBA(88, 115, 171, 1)
         HoverContentColor: =RGBA(255, 255, 255, 1)
         HoverFillColor: =RGBA(47, 81, 151, 1)
-        OnScan: |-
-            =Set(Maquina_QR,First(BarcodeReader1_2.Barcodes).Value);//En esta parte lo que se es haciendo es almacenar el valor del QR en una variable para despues hacer uso de ella en los filtros de la pantalla "Lista_MP". 
-            Navigate(Lista_MP,ScreenTransition.Cover) //En esta parte del codigo lo unico que se hace es de me que dirija a la pantalla en donde se encuentran los MP generados con su respectivo filtro, que el filtro depende del valor que tome la variable "Maquina" que esta en la primera linea del codigo.
+        OnScan: |+
+            =//En esta parte lo que se es haciendo es almacenar el valor del QR en una variable para despues hacer uso de ella en los filtros de la pantalla "Lista_MP". 
+            Set(Maquina_QR,First(BarcodeReader1_2.Barcodes).Value);
             
-            
-            
-            //Set(Maqui,First(BarcodeReader1_2.Barcodes).Value);
-            //ClearCollect(ColeccionFilaSQL,Filter(CMXE_MP,Proc_No=First(BarcodeReader1_2.Barcodes).Value))
-            /*Switch(First(BarcodeReader1_2.Barcodes).Value,
-            "MP-MEPS-INP",Navigate('MP-MEPS-INP',ScreenTransition.Cover), 
-            "MP-MEPS-DK-IN",Navigate('MP-MEPS-DK-IN',ScreenTransition.Cover), 
-            "MP-MEPS-DK-OUT",Navigate('MP-MEPS-DK-OUT',ScreenTransition.Cover),
-            "MP-MEPS-OUT",Navigate('MP-MEPS-OUT',ScreenTransition.Cover), 
-            "MEPS1-04-2M-CONZOLAS-Z",Navigate('MEPS1-04-2M-CONZOLAS-Z',ScreenTransition.Cover),
-            "MEPS1-04-2M-CONZOLAS-Y",Navigate('MEPS1-04-2M-CONZOLAS-Y',ScreenTransition.Cover),
-            "MEPS1-04-2M-GP-X1",Navigate('MEPS1-04-2M-GP-X1',ScreenTransition.Cover),
-            "MEPS1-04-2M-BANDA TRNSP-TAMBOR",Navigate('MEPS1-04-2M-BANDA TRNSP-TAMBOR',ScreenTransition.Cover),
-            "MEPS1-04-2M-SISTEMA ELECTRICO",Navigate('MEPS1-04-2M-SISTEMA ELECTRICO',ScreenTransition.Cover),
-            "MEPS1-04-2M-HIDRAULICO",Navigate('MEPS1-04-2M-HIDRAULICO',ScreenTransition.Cover),
-            "MP-MEPS-RT-LB",Navigate('MP-MEPS-RT-LB',ScreenTransition.Cover),
-            "MP-MEPS-GP-X2",Navigate('MP-MEPS-GP-X2',ScreenTransition.Cover),
-            Notify("Valor de código no reconocido", NotificationType.Error))*/
+            //En esta parte del codigo lo unico que se hace es de me que dirija a la pantalla en donde se encuentran los MP generados con su respectivo filtro, que el filtro depende del valor que tome la variable "Maquina_QR" que esta en la primera linea del codigo.
+            Navigate(Lista_MP,ScreenTransition.Cover) 
             
             
             
@@ -175,13 +159,10 @@
             
             
             
-            //Switch(First(BarcodeReader1_2.Barcodes).Value)
-              //  First(BarcodeReader1.Barcodes).Value,
-                //"", Navigate('MP-MEPS-DK-IN'),
-                // Otras opciones aquí
-                // Si el código QR no coincide con ninguna URL esperada, muestra un mensaje o realiza una acción por defecto
-                //Notify("Código QR inválido.", NotificationType.Error)
-            //)
+            
+            
+            
+            
         PaddingRight: =6.37
         PaddingTop: =6.37
         PressedBorderColor: =RGBA(56, 96, 178, 1)
