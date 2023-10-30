@@ -56,7 +56,7 @@ Lista_MP As screen:
         TemplateSize: =220
         Width: =1366
         Y: =170
-        ZIndex: =2
+        ZIndex: =1
 
         Title3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -412,7 +412,7 @@ Lista_MP As screen:
         Height: =92
         Width: =1366
         X: =0.00
-        ZIndex: =3
+        ZIndex: =2
 
     Label1_20 As label:
         Align: =Align.Center
@@ -427,7 +427,7 @@ Lista_MP As screen:
             MANTENIMIENTO PREVENTIVO ACTIVO"
         Width: =1345
         X: =0.00
-        ZIndex: =4
+        ZIndex: =3
 
     MAQUINA_QR As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -436,12 +436,18 @@ Lista_MP As screen:
         PaddingTop: =6.37
         Size: =16.58
         Text: |-
-            =//Maquina_QR
-            "MEPS-04"
+            =
+            //Esta variable almacena el valor del código QR que ha sido escaneado.
+            
+            Maquina_QR
+            
+            
+            
+            //"MEPS-04"
         Width: =191.32
         X: =1120
         Y: =6
-        ZIndex: =6
+        ZIndex: =4
 
     MAQUINA_QR_3Letras As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -454,7 +460,7 @@ Lista_MP As screen:
         Width: =191.32
         X: =1120
         Y: =46
-        ZIndex: =7
+        ZIndex: =5
 
     Group17 As group:
         Height: =5
@@ -475,7 +481,7 @@ Lista_MP As screen:
             Width: =242
             X: =913
             Y: =121
-            ZIndex: =8
+            ZIndex: =6
 
         Label11_13 As label:
             FontWeight: =FontWeight.Bold
@@ -485,7 +491,7 @@ Lista_MP As screen:
             Width: =242
             X: =913
             Y: =93
-            ZIndex: =11
+            ZIndex: =9
 
     Group18 As group:
         Height: =5
@@ -507,7 +513,7 @@ Lista_MP As screen:
             Width: =231
             X: =146
             Y: =123
-            ZIndex: =9
+            ZIndex: =7
 
         Label11 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -519,7 +525,20 @@ Lista_MP As screen:
             Width: =231
             X: =146
             Y: =96
-            ZIndex: =10
+            ZIndex: =8
+
+    Icon3 As icon.Reload:
+        Color: =RGBA(21, 44, 115, 1)
+        Height: =49
+        Icon: =Icon.Reload
+        OnSelect: |-
+            =//Esto me sirve solo para hacer un refresh a los mantenimientos preventivos
+            
+            Refresh(CMXE_MP_N)
+        Width: =49
+        X: =31
+        Y: =96
+        ZIndex: =14
 
     Group17_1 As group:
         Height: =5
@@ -541,7 +560,7 @@ Lista_MP As screen:
             Width: =231
             X: =659
             Y: =121
-            ZIndex: =12
+            ZIndex: =10
 
         Label11_14 As label:
             DisplayMode: =DisplayMode.Disabled
@@ -552,17 +571,31 @@ Lista_MP As screen:
             Width: =231
             X: =659
             Y: =93
-            ZIndex: =13
+            ZIndex: =11
 
-    Icon3 As icon.Reload:
-        Color: =RGBA(21, 44, 115, 1)
-        Icon: =Icon.Reload
+    Image2_58 As image:
+        Height: =92
+        Image: =carrier_logo_300
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =159
+        X: =44
+        ZIndex: =17
+
+    Icon2 As icon.Undo:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.Undo
         OnSelect: |-
-            =//Esto me sirve solo para hacer un refresh a los mantenimientos preventivos
+            =//Esto me devuelve a la pantalla de QR para que pueda volver a scanear ya sea el mismo QR o otro diferente.
             
-            Refresh(CMXE_MP_N)
-        X: =25
-        Y: =99
+            Navigate(QR_Inicio);
+            
+            
+            //Resetear los 2 filtros que son de clase de mantenimiento y de semana de MP.
+            Reset(DropdownMTTO);
+            Reset(Filtro_Sema);
+        X: =1281
+        Y: =14
         ZIndex: =18
 
     Group17_6 As group:
@@ -584,7 +617,7 @@ Lista_MP As screen:
             Width: =231
             X: =397
             Y: =122
-            ZIndex: =16
+            ZIndex: =12
 
         Label11_20 As label:
             DisplayMode: =DisplayMode.Disabled
@@ -594,56 +627,18 @@ Lista_MP As screen:
             Width: =231
             X: =397
             Y: =94
-            ZIndex: =17
+            ZIndex: =13
 
-    Image2_58 As image:
-        Height: =92
-        Image: =carrier_logo_300
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =159
-        X: =44
-        ZIndex: =22
-
-    Icon2 As icon.Undo:
-        Color: =RGBA(255, 255, 255, 1)
-        Icon: =Icon.Undo
-        OnSelect: |-
-            =//Esto me devuelve a la pantalla de QR para que pueda volver a scanear ya sea el mismo QR o otro diferente.
-            
-            Navigate(QR_Inicio);
-            
-            
-            //Resetear los 2 filtros que son de clase de mantenimiento y de semana de MP.
-            Reset(DropdownMTTO);
-            Reset(Filtro_Sema);
-        X: =1281
-        Y: =14
-        ZIndex: =23
-
-    Group9 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =23
-
-        Label11_15 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =24
-            Text: ="N.º de Semana"
-            X: =1195
-            Y: =93
-            ZIndex: =20
-
-        Filtro_Sema As text:
-            Default: =""
-            Format: =TextFormat.Number
-            HintText: =""
-            Width: =150
-            X: =1195
-            Y: =119
-            ZIndex: =21
+    Label11_1 As label:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisplayMode: =DisplayMode.View
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        Text: ="Refresh"
+        Width: =79
+        X: =16
+        Y: =143
+        ZIndex: =19
 
     Pantalla_Carg_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -654,7 +649,7 @@ Lista_MP As screen:
         RadiusTopRight: =0
         Visible: =CargaVisible
         Width: =1366
-        ZIndex: =24
+        ZIndex: =20
 
         HtmlText1_8 As htmlViewer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -770,5 +765,29 @@ Lista_MP As screen:
         Visible: =false
         X: =954
         Y: =6
-        ZIndex: =25
+        ZIndex: =21
+
+    Group9 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =23
+
+        Label11_15 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =24
+            Text: ="N.º de Semana"
+            X: =1195
+            Y: =93
+            ZIndex: =15
+
+        Filtro_Sema As text:
+            Default: =""
+            Format: =TextFormat.Number
+            HintText: =""
+            Width: =150
+            X: =1195
+            Y: =119
+            ZIndex: =16
 

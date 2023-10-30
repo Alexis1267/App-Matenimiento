@@ -402,13 +402,36 @@ Datos_MP As screen:
             Y: =277
             ZIndex: =30
 
+    Label6_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =47
+        Text: |-
+            =Concatenate(Left(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta) +1
+                )-1
+            ) & Right(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta)
+                ) - 1
+            ) )
+        Width: =263
+        X: =1103
+        Y: =96
+        ZIndex: =42
+
     ModalPop_Datos As groupContainer.manualLayoutContainer:
         Height: =768
         PaddingRight: =0.00
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
         Width: =1366
-        ZIndex: =42
+        ZIndex: =43
 
         HtmlText3_15 As htmlViewer:
             Height: =768
@@ -732,7 +755,7 @@ Datos_MP As screen:
         RadiusTopRight: =0
         Visible: =CargaVisible
         Width: =1366
-        ZIndex: =43
+        ZIndex: =44
 
         HtmlText1_7 As htmlViewer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -841,15 +864,6 @@ Datos_MP As screen:
             X: =506
             Y: =454
             ZIndex: =5
-
-    TimerCarga As timer:
-        AutoStart: =true
-        Duration: =5000
-        OnTimerEnd: =Set(CargaVisible,false)
-        Visible: =false
-        X: =1032
-        Y: =26
-        ZIndex: =44
 
     Group3_10 As group:
         Height: =5
@@ -997,27 +1011,13 @@ Datos_MP As screen:
             Y: =493
             ZIndex: =31
 
-    Label6_1 As label:
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =47
-        Text: |-
-            =Concatenate(Left(
-                CadenaCompleta,                            // El texto original
-                Find("-",
-                    CadenaCompleta,
-                    Find("-", CadenaCompleta) +1
-                )-1
-            ) & Right(
-                CadenaCompleta,                            // El texto original
-                Find("-",
-                    CadenaCompleta,
-                    Find("-", CadenaCompleta)
-                ) - 1
-            ) )
-        Width: =263
-        X: =1103
-        Y: =96
+    TimerCarga As timer:
+        AutoStart: =true
+        Duration: =5000
+        OnTimerEnd: =Set(CargaVisible,false)
+        Visible: =false
+        X: =1032
+        Y: =26
         ZIndex: =45
 
     Group5_1 As group:
