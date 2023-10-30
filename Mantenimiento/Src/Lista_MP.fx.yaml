@@ -425,7 +425,7 @@ Lista_MP As screen:
         Text: |-
             ="ORDEN DE TRABAJO 
             MANTENIMIENTO PREVENTIVO ACTIVO"
-        Width: =1345
+        Width: =1366
         X: =0.00
         ZIndex: =3
 
@@ -439,11 +439,11 @@ Lista_MP As screen:
             =
             //Esta variable almacena el valor del código QR que ha sido escaneado.
             
-            Maquina_QR
+            //Maquina_QR
             
             
             
-            //"MEPS-04"
+            "MEPS-04"
         Width: =191.32
         X: =1120
         Y: =6
