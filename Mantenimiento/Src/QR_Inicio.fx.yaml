@@ -147,10 +147,12 @@
         HoverContentColor: =RGBA(255, 255, 255, 1)
         HoverFillColor: =RGBA(47, 81, 151, 1)
         OnScan: |+
-            =//En esta parte lo que se es haciendo es almacenar el valor del QR en una variable para despues hacer uso de ella en los filtros de la pantalla "Lista_MP". 
+            =//En esta parte lo que se es haciendo es almacenar el valor del QR en una variable para despues hacer uso de ella en los filtros de la pantalla "Lista_MP".
+             
             Set(Maquina_QR,First(BarcodeReader1_2.Barcodes).Value);
             
             //En esta parte del codigo lo unico que se hace es de me que dirija a la pantalla en donde se encuentran los MP generados con su respectivo filtro, que el filtro depende del valor que tome la variable "Maquina_QR" que esta en la primera linea del codigo.
+            
             Navigate(Lista_MP,ScreenTransition.Cover) 
             
             

@@ -557,7 +557,10 @@ Lista_MP As screen:
     Icon3 As icon.Reload:
         Color: =RGBA(21, 44, 115, 1)
         Icon: =Icon.Reload
-        OnSelect: =Refresh(CMXE_MP_N)
+        OnSelect: |-
+            =//Esto me sirve solo para hacer un refresh a los mantenimientos preventivos
+            
+            Refresh(CMXE_MP_N)
         X: =25
         Y: =99
         ZIndex: =18
@@ -603,7 +606,12 @@ Lista_MP As screen:
         Color: =RGBA(255, 255, 255, 1)
         Icon: =Icon.Undo
         OnSelect: |-
-            =Navigate(QR_Inicio);
+            =//Esto me devuelve a la pantalla de QR para que pueda volver a scanear ya sea el mismo QR o otro diferente.
+            
+            Navigate(QR_Inicio);
+            
+            
+            //Resetear los 2 filtros que son de clase de mantenimiento y de semana de MP.
             Reset(DropdownMTTO);
             Reset(Filtro_Sema);
         X: =1281
