@@ -390,6 +390,7 @@
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
         DisabledFill: =RGBA(255, 255, 255, 1)
+        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -424,6 +425,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -456,6 +458,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -578,6 +581,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -619,6 +623,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -640,6 +645,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -671,6 +677,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -702,6 +709,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        DisplayMode: =If(Btn1_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
@@ -745,6 +753,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        DisplayMode: =If(Btn2_31.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
