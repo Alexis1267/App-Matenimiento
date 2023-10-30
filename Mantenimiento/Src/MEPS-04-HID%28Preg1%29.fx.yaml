@@ -131,7 +131,9 @@
             UpdateContext({ShowPopUp : true});
             
             
-            Collect(BotonesDeshabilitados, { Boton: 3 })
+            Collect(BotonesDeshabilitados, { Boton: 3 });
+            
+            Set(NumBoton,3)
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -152,7 +154,9 @@
             UpdateContext({ShowPopUp : true});
             
             
-            Collect(BotonesDeshabilitados, { Boton: 4 })
+            Collect(BotonesDeshabilitados, { Boton: 4 });
+            
+            Set(NumBoton,4)
             
             //Set(BTN_Presionado,"btn4")
         PaddingRight: =6.37
@@ -175,7 +179,9 @@
             UpdateContext({ShowPopUp : true});
             
             
-            Collect(BotonesDeshabilitados, { Boton: 5 })
+            Collect(BotonesDeshabilitados, { Boton: 5 });
+            
+            Set(NumBoton,5)
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -196,7 +202,9 @@
             UpdateContext({ShowPopUp : true});
             
             
-            Collect(BotonesDeshabilitados, { Boton: 6 })
+            Collect(BotonesDeshabilitados, { Boton: 6 });
+            
+            Set(NumBoton,6)
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -216,7 +224,9 @@
             =Set(Pregunta,Preg7_25.Text);
             UpdateContext({ShowPopUp : true});
             
-            Collect(BotonesDeshabilitados, { Boton: 7 })
+            Collect(BotonesDeshabilitados, { Boton: 7 });
+            
+            Set(NumBoton,7)
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -236,7 +246,9 @@
             =Set(Pregunta,Preg8_22.Text);
             UpdateContext({ShowPopUp : true});
             
-            Collect(BotonesDeshabilitados, { Boton: 8 })
+            Collect(BotonesDeshabilitados, { Boton: 8 });
+            
+            Set(NumBoton,8)
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -256,7 +268,9 @@
             =Set(Pregunta,Preg9_17.Text);
             UpdateContext({ShowPopUp : true});
             
-            Collect(BotonesDeshabilitados, { Boton: 9 })
+            Collect(BotonesDeshabilitados, { Boton: 9 });
+            
+            Set(NumBoton,9)
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -277,7 +291,9 @@
             UpdateContext({ShowPopUp : true});
             
             
-            Collect(BotonesDeshabilitados, { Boton: 10 })
+            Collect(BotonesDeshabilitados, { Boton: 10 });
+            
+            Set(NumBoton,10)
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -383,7 +399,6 @@
                 true
             );
             
-            If(Resp1_33.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
             
             
         PaddingRight: =12.76
@@ -417,7 +432,6 @@
                 IsBlank(Resp3_27.Selected),
                 true
             );
-            If(Resp3_27.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 3))
             
         PaddingRight: =12.76
         PaddingTop: =12.76
@@ -450,7 +464,6 @@
                 IsBlank(Resp4_27.Selected),
                 true
             );
-            If(Resp4_27.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 4))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -482,7 +495,6 @@
                 IsBlank(Resp5_27.Selected),
                 true
             );
-            If(Resp5_27.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 5))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -573,7 +585,6 @@
                 IsBlank(Resp6_25.Selected),
                 true
             );
-            If(Resp6_25.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 6))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -615,7 +626,6 @@
                 IsBlank(Resp7_25.Selected),
                 true
             );
-            If(Resp7_25.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 7))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -637,7 +647,6 @@
                 IsBlank(Resp8_22.Selected),
                 true
             );
-            If(Resp8_22.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 8))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -669,7 +678,6 @@
                 IsBlank(Resp9_17.Selected),
                 true
             );
-            If(Resp9_17.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 9))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -701,7 +709,6 @@
                 IsBlank(Resp10_16.Selected),
                 true
             );
-            If(Resp10_16.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 10))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -745,7 +752,6 @@
                 IsBlank(Resp1_33.Selected),
                 true
             );
-            If(Resp2_30.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 2))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -854,6 +860,7 @@
             
             Collect(BotonesDeshabilitados, { Boton: 1 });
             
+            Set(NumBoton,1)
             
             //BOTON PRUEBA 2 
             
@@ -876,13 +883,14 @@
             
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
-        OnSelect: |+
+        OnSelect: |-
             =Set(BotonActivo,"Boton2");
             Set(Pregunta,Preg2_30.Text);
             UpdateContext({ShowPopUp : true});
             
-            Collect(BotonesDeshabilitados, { Boton: 2 })
+            Collect(BotonesDeshabilitados, { Boton: 2 });
             
+            Set(NumBoton,2)
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -1034,6 +1042,7 @@
                     Reset(Dropdown4_38);
                     
                     
+                    RemoveIf(BotonesDeshabilitados,Boton = NumBoton)
                     
                     
                     

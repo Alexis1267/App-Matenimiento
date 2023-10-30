@@ -383,7 +383,7 @@
                 true
             );
             
-            If(Resp1_35.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
+            //If(Resp1_35.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
             
             
         PaddingRight: =12.76
@@ -855,6 +855,7 @@
             Collect(BotonesDeshabilitados, { Boton: 1 });
             
             
+            Set(NumBoton,1)
             //BOTON PRUEBA 2 
             
             
@@ -876,13 +877,14 @@
             
         Fill: =RGBA(0, 18, 107, 1)
         Height: =29
-        OnSelect: |+
+        OnSelect: |
             =Set(BotonActivo,"Boton2");
             Set(Pregunta,Preg2_32.Text);
             UpdateContext({ShowPopUp : true});
             
-            Collect(BotonesDeshabilitados, { Boton: 2 })
+            Collect(BotonesDeshabilitados, { Boton: 2 });
             
+            Set(NumBoton,2)
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =17
@@ -1033,7 +1035,7 @@
                     Reset(AddMediaButton6_39);
                     Reset(Dropdown4_40);
                     
-                    
+                    RemoveIf(BotonesDeshabilitados, Boton = NumBoton)
                     
                     
                     
@@ -1331,4 +1333,10 @@
                 X: =858.36
                 Y: =105
                 ZIndex: =22
+
+            Label5 As label:
+                Text: =NumBoton
+                X: =1075
+                Y: =194
+                ZIndex: =23
 
