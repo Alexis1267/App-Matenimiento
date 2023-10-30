@@ -412,11 +412,12 @@
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
-        OnSelect: |-
+        OnSelect: |
             =If(
                 IsBlank(Resp3_27.Selected),
                 true
-            )
+            );
+            If(Resp1_33.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -443,11 +444,12 @@
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
-        OnSelect: |-
+        OnSelect: |
             =If(
                 IsBlank(Resp4_27.Selected),
                 true
-            )
+            );
+            If(Resp1_33.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
@@ -731,11 +733,12 @@
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
-        OnSelect: |-
+        OnSelect: |
             =If(
                 IsBlank(Resp1_33.Selected),
                 true
-            )
+            );
+            If(Resp1_33.Selected.Value = "R",RemoveIf(BotonesDeshabilitados, Boton = 1))
         PaddingRight: =12.76
         PaddingTop: =12.76
         SelectionFill: =RGBA(92, 103, 125, 1)
