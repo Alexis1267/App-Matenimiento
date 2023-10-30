@@ -487,6 +487,7 @@
         AllowEmptySelection: =true
         ChevronBackground: =RGBA(21, 44, 115, 1)
         ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+        DisplayMode: =If(Btn5_27.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
         Height: =26
         HoverFill: =RGBA(151, 157, 172, 1)
         Items: =["R","N"]
