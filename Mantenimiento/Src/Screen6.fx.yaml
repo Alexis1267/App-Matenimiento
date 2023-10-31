@@ -870,8 +870,19 @@
                     
                     //VALIDACION DE Actividades
                     If(
-                        IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  || IsBlank(Resp2_34
-                    .Selected)|| Btn2_34.Visible = true && Btn2_34.DisplayMode = DisplayMode.Edit || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit , Notify("Debes de contestar todos los campos.",NotificationType.Error) && Set(BtnFinal_MP,true),Notify("OKK",NotificationType.Success));
+                        IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  
+                        || IsBlank(Resp2_34.Selected)|| Btn2_34.Visible = true && Btn2_34.DisplayMode = DisplayMode.Edit 
+                        || IsBlank(Resp3_31.Selected)|| Btn3_30.Visible = true && Btn3_30.DisplayMode = DisplayMode.Edit 
+                        || IsBlank(Resp4_31.Selected)|| Btn4_30.Visible = true && Btn4_30.DisplayMode = DisplayMode.Edit  
+                        || IsBlank(Resp5_31.Selected)|| Btn5_30.Visible = true && Btn5_30.DisplayMode = DisplayMode.Edit  
+                        || IsBlank(Resp6_29.Selected)|| Btn6_28.Visible = true && Btn6_28.DisplayMode = DisplayMode.Edit  
+                        || IsBlank(Resp7_29.Selected)|| Btn7_28.Visible = true && Btn7_28.DisplayMode = DisplayMode.Edit  
+                        || IsBlank(Resp8_26.Selected)|| Btn8_25.Visible = true && Btn8_25.DisplayMode = DisplayMode.Edit 
+                        || IsBlank(Resp9_21.Selected)|| Btn9_20.Visible = true && Btn9_20.DisplayMode = DisplayMode.Edit 
+                        || IsBlank(Resp10_20.Selected)|| Resp10_20.Visible = true && Resp10_20.DisplayMode = DisplayMode.Edit, 
+                        Notify("Debes de contestar todas las actividades.",NotificationType.Error) && Set(BtnFinal_MP,true),
+                        Notify("OKK",NotificationType.Success)
+                    );
                     
                     
                     
