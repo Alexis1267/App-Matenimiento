@@ -100,7 +100,7 @@ Datos_MP As screen:
             If(Label6_1.Text = "MEPS-04-GX1",Navigate('MEPS-04-GX1(Preg1)',ScreenTransition.Cover),
             If(Label6_1.Text = "MEPS-04-BTT",Navigate('MEPS-04-BTT(Preg1)',ScreenTransition.Cover),
             If(Label6_1.Text = "MEPS-04-ELE",Navigate('MEPS-04-ELE(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-HID",Navigate('MEPS-04-HID(ImgEjem1)',ScreenTransition.Cover),
+            If(Label6_1.Text = "MEPS-04-HID",Navigate(Screen6,ScreenTransition.Cover),
             If(Label6_1.Text = "MEPS-04-LUB",Navigate('MEPS-04-LUB(Preg1)',ScreenTransition.Cover),
             If(Label6_1.Text = "MEPS-04-GX2",Navigate('MEPS-04-GX2(Preg1)',ScreenTransition.Cover),
             If(Label6_1.Text = "MEPS-04-MEC",Navigate('MEPS-04-MEC(Preg1)',ScreenTransition.Cover),

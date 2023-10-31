@@ -1308,6 +1308,12 @@
                         Y: =105
                         ZIndex: =22
 
+            Label5 As label:
+                Text: =TimerHorasHombre.Text
+                X: =928
+                Y: =684
+                ZIndex: =58
+
     Label9_421 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -1322,11 +1328,11 @@
         ZIndex: =4
 
     Image34_4 As image:
-        Height: =60
+        Height: =86
         Image: =carrier_logo_300
-        Width: =120
-        X: =1205
-        Y: =14
+        Width: =152
+        X: =1082
+        Y: =1
         ZIndex: =5
 
     Icon1_76 As icon.BackArrow:
