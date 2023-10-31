@@ -173,8 +173,8 @@
                 Text: ="Justificación"
                 Visible: =If(Resp3_31.Selected.Value = "N", true, false) 
                 Width: =173
-                X: =1182
-                Y: =178
+                X: =1180
+                Y: =179
                 ZIndex: =11
 
             Btn4_30 As button:
@@ -201,7 +201,7 @@
                 Visible: =If(Resp4_31.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =1180
-                Y: =235
+                Y: =239
                 ZIndex: =12
 
             Btn5_30 As button:
@@ -226,7 +226,7 @@
                 Visible: =If(Resp5_31.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =1180
-                Y: =293
+                Y: =296
                 ZIndex: =13
 
             Btn6_28 As button:
@@ -251,7 +251,7 @@
                 Visible: =If(Resp6_29.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =1180
-                Y: =388
+                Y: =356
                 ZIndex: =14
 
             Btn7_28 As button:
@@ -275,7 +275,7 @@
                 Visible: =If(Resp7_29.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =1180
-                Y: =435
+                Y: =418
                 ZIndex: =15
 
             Btn8_25 As button:
@@ -299,7 +299,7 @@
                 Visible: =If(Resp8_26.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =1180
-                Y: =482
+                Y: =474
                 ZIndex: =16
 
             Btn9_20 As button:
@@ -323,7 +323,7 @@
                 Visible: =If(Resp9_21.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =1180
-                Y: =525
+                Y: =540
                 ZIndex: =17
 
             Btn10_19 As button:
@@ -348,7 +348,7 @@
                 Visible: =If(Resp10_20.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =1180
-                Y: =566
+                Y: =601
                 ZIndex: =18
 
             Rectangle2_760 As rectangle:
@@ -398,7 +398,6 @@
                 ZIndex: =25
 
             Preg1_342 As label:
-                BorderThickness: =1
                 Height: =50
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -436,7 +435,6 @@
                 ZIndex: =27
 
             Preg2_34 As label:
-                BorderThickness: =1
                 Height: =50
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -470,7 +468,6 @@
                 ZIndex: =29
 
             Preg3_31 As label:
-                BorderThickness: =1
                 Height: =50
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -503,7 +500,6 @@
                 ZIndex: =31
 
             Preg4_31 As label:
-                BorderThickness: =1
                 Height: =50
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -536,7 +532,6 @@
                 ZIndex: =33
 
             Preg5_31 As label:
-                BorderThickness: =1
                 Height: =50
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -569,7 +564,6 @@
                 ZIndex: =35
 
             Preg6_29 As label:
-                BorderThickness: =1
                 Height: =50
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -580,7 +574,6 @@
                 ZIndex: =36
 
             Preg7_29 As label:
-                BorderThickness: =1
                 Height: =50
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -635,7 +628,6 @@
                 ZIndex: =39
 
             Preg8_26 As label:
-                BorderThickness: =1
                 Height: =50
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -668,7 +660,6 @@
                 ZIndex: =41
 
             Preg9_21 As label:
-                BorderThickness: =1
                 Height: =50
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -701,7 +692,6 @@
                 ZIndex: =43
 
             Preg10_20 As label:
-                BorderThickness: =1
                 Height: =50
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -1233,8 +1223,80 @@
             Rectangle1 As rectangle:
                 Height: =5
                 Width: =1366
-                Y: =17
+                Y: =103
                 ZIndex: =60
+
+            Rectangle1_1 As rectangle:
+                Height: =5
+                Width: =1366
+                Y: =162
+                ZIndex: =61
+
+            Rectangle1_2 As rectangle:
+                Height: =5
+                Width: =1366
+                Y: =220
+                ZIndex: =62
+
+            Rectangle1_3 As rectangle:
+                Height: =5
+                Width: =1366
+                Y: =279
+                ZIndex: =63
+
+            Rectangle1_4 As rectangle:
+                Height: =5
+                Width: =1366
+                Y: =338
+                ZIndex: =64
+
+            Rectangle1_5 As rectangle:
+                Height: =5
+                Width: =1366
+                Y: =400
+                ZIndex: =65
+
+            Rectangle1_6 As rectangle:
+                Height: =5
+                Width: =1366
+                Y: =460
+                ZIndex: =66
+
+            Rectangle1_7 As rectangle:
+                Height: =5
+                Width: =1366
+                Y: =521
+                ZIndex: =67
+
+            Rectangle1_8 As rectangle:
+                Height: =5
+                Width: =1366
+                Y: =583
+                ZIndex: =68
+
+            Rectangle1_9 As rectangle:
+                Height: =5
+                Width: =1366
+                Y: =645
+                ZIndex: =69
+
+            Button3_17 As button:
+                Fill: =RGBA(97, 181, 73, 1)
+                Height: =50
+                OnSelect: |-
+                    =//UPDATE PARA LA TABLA DE CMXE_MP_N para cuando se realizo el Mantenimiento Preventivo
+                    //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Semana:SemanasTranscurridas },{Fecha_de_Finalizacion:Now()})
+                    
+                    Set(ContadorHH,false);
+                    Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text})
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =20
+                Text: ="Finalizar Preventivo"
+                Width: =336
+                X: =515
+                Y: =718
+                ZIndex: =70
 
     Label9_421 As label:
         Align: =Align.Center
