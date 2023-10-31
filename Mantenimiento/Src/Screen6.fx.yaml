@@ -1,5 +1,5 @@
 "Screen6 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    OnVisible: |-
+    OnVisible: |+
         =//Variables para traerme los datos de los inputs que se encuentran en la pantalla "Datos_MP"
         Set(Dato_Localizacion,Label8_11.Text);
         Set(Dato_NomMaquina,Label8_10.Text);
@@ -16,7 +16,9 @@
         
         
         //BOTONES 
-        ClearCollect(BotonesDeshabilitados,{})
+        ClearCollect(BotonesDeshabilitados,{});
+        
+        
 
     RectQuickActionBar3 As rectangle:
         Height: =88
@@ -865,16 +867,17 @@
                     =Set(ContadorHH,false);
                     
                     
+                    
+                    //VALIDACION DE Actividades
                     If(
                         IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  || IsBlank(Resp2_34
-                    .Selected)|| Btn2_34.Visible = true && Btn2_34.DisplayMode = DisplayMode.Edit , Notify("Debes de contestar todos los campos.",NotificationType.Error),Notify("OKK",NotificationType.Success));
+                    .Selected)|| Btn2_34.Visible = true && Btn2_34.DisplayMode = DisplayMode.Edit || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit || IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit , Notify("Debes de contestar todos los campos.",NotificationType.Error) && Set(BtnFinal_MP,true),Notify("OKK",NotificationType.Success));
                     
                     
                     
-                    //UPDATE PARA LA TABLA DE CMXE_MP_N para cuando se realizo el Mantenimiento Preventivo
-                    //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Semana:SemanasTranscurridas },{Fecha_de_Finalizacion:Now()})
                     
                     
+                    //ESTE ES EL QUE FUNCIONA :)
                     //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text})
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -1349,7 +1352,9 @@
         Color: =RGBA(255, 255, 255, 1)
         Height: =71
         Icon: =Icon.BackArrow
-        OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
+        OnSelect: |
+            =//Navigate(Datos_MP,ScreenTransition.Fade)
+            If(Btn1_39.DisplayMode = DisplayMode.Disabled || Btn2_34.DisplayMode = DisplayMode.Disabled ,Notify("No es posible regresar a la pantalla anterior debido a la presencia de hallazgos ya registrados en el MP.",NotificationType.Information),Navigate(Datos_MP,ScreenTransition.Fade))
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =73
