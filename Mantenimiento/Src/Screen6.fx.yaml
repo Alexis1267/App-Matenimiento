@@ -858,14 +858,24 @@
                 ZIndex: =55
 
             Button3_17 As button:
+                DisplayMode: =
                 Fill: =RGBA(97, 181, 73, 1)
                 Height: =50
                 OnSelect: |-
-                    =//UPDATE PARA LA TABLA DE CMXE_MP_N para cuando se realizo el Mantenimiento Preventivo
+                    =Set(ContadorHH,false);
+                    
+                    
+                    If(
+                        IsBlank(Resp1_36.Selected)|| Btn1_39.Visible = true && Btn1_39.DisplayMode = DisplayMode.Edit  || IsBlank(Resp2_34
+                    .Selected)|| Btn2_34.Visible = true && Btn2_34.DisplayMode = DisplayMode.Edit , Notify("Debes de contestar todos los campos.",NotificationType.Error),Notify("OKK",NotificationType.Success));
+                    
+                    
+                    
+                    //UPDATE PARA LA TABLA DE CMXE_MP_N para cuando se realizo el Mantenimiento Preventivo
                     //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Semana:SemanasTranscurridas },{Fecha_de_Finalizacion:Now()})
                     
-                    Set(ContadorHH,false);
-                    Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text})
+                    
+                    //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text})
                 PaddingRight: =6.37
                 PaddingTop: =6.37
                 Size: =20
