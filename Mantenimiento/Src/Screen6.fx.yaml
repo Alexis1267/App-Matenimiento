@@ -474,7 +474,7 @@
 
             Resp3_31 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp1_36.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp3_31.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
