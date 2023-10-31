@@ -153,6 +153,9 @@
 
             Btn3_30 As button:
                 BorderThickness: =0
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(168, 0, 0, 1)
                 DisplayMode: |+
                     =If(CountIf(BotonesDeshabilitados, Boton = 3) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                     
@@ -181,6 +184,9 @@
 
             Btn4_30 As button:
                 BorderThickness: =0
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(168, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 4) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
@@ -208,6 +214,9 @@
 
             Btn5_30 As button:
                 BorderThickness: =0
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(168, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 5) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
@@ -233,6 +242,9 @@
 
             Btn6_28 As button:
                 BorderThickness: =0
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(168, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 6) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
@@ -258,6 +270,9 @@
 
             Btn7_28 As button:
                 BorderThickness: =0
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(168, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 7) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
@@ -282,6 +297,9 @@
 
             Btn8_25 As button:
                 BorderThickness: =0
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(168, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 8) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
@@ -306,6 +324,9 @@
 
             Btn9_20 As button:
                 BorderThickness: =0
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(168, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 9) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
@@ -330,6 +351,9 @@
 
             Btn10_19 As button:
                 BorderThickness: =0
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(168, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 10) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
@@ -413,7 +437,9 @@
                 AllowEmptySelection: =true
                 BorderColor: =RGBA(0, 40, 85, 1)
                 ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisabledFill: =RGBA(255, 255, 255, 1)
                 DisplayMode: =If(Btn1_39.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
@@ -449,7 +475,9 @@
             Resp3_31 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn3_30.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
@@ -482,7 +510,9 @@
             Resp4_31 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn4_30.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
@@ -514,7 +544,9 @@
             Resp5_31 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn5_30.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
@@ -546,7 +578,9 @@
             Resp6_29 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn6_28.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
@@ -588,7 +622,9 @@
             Resp7_29 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn7_28.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
@@ -610,7 +646,9 @@
             Resp8_26 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn8_25.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
@@ -642,7 +680,9 @@
             Resp9_21 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn9_20.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
@@ -674,7 +714,9 @@
             Resp10_20 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn10_19.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
@@ -706,7 +748,9 @@
             Resp2_34 As dropdown:
                 AllowEmptySelection: =true
                 ChevronBackground: =RGBA(21, 44, 115, 1)
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn2_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
@@ -728,6 +772,9 @@
             Btn1_39 As button:
                 AutoDisableOnSelect: =
                 BorderThickness: =0
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(168, 0, 0, 1)
                 DisplayMode: |+
                     =If(CountIf(BotonesDeshabilitados, Boton = 1) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                     
@@ -763,6 +810,9 @@
 
             Btn2_34 As button:
                 BorderThickness: =0
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledFill: =RGBA(168, 0, 0, 1)
                 DisplayMode: |+
                     =If(CountIf(BotonesDeshabilitados, Boton = 2) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                     
@@ -879,9 +929,9 @@
                         || IsBlank(Resp7_29.Selected)|| Btn7_28.Visible = true && Btn7_28.DisplayMode = DisplayMode.Edit  
                         || IsBlank(Resp8_26.Selected)|| Btn8_25.Visible = true && Btn8_25.DisplayMode = DisplayMode.Edit 
                         || IsBlank(Resp9_21.Selected)|| Btn9_20.Visible = true && Btn9_20.DisplayMode = DisplayMode.Edit 
-                        || IsBlank(Resp10_20.Selected)|| Resp10_20.Visible = true && Resp10_20.DisplayMode = DisplayMode.Edit, 
-                        Notify("Debes de contestar todas las actividades.",NotificationType.Error) && Set(BtnFinal_MP,true),
-                        Notify("OKK",NotificationType.Success)
+                        || IsBlank(Resp10_20.Selected)|| Btn10_19.Visible = true && Btn10_19.DisplayMode = DisplayMode.Edit, 
+                        Notify("Es necesario completar todas las actividades.",NotificationType.Error),
+                        Notify("El mantenimiento ha concluido con éxito",NotificationType.Success)
                     );
                     
                     
@@ -1365,7 +1415,18 @@
         Icon: =Icon.BackArrow
         OnSelect: |
             =//Navigate(Datos_MP,ScreenTransition.Fade)
-            If(Btn1_39.DisplayMode = DisplayMode.Disabled || Btn2_34.DisplayMode = DisplayMode.Disabled ,Notify("No es posible regresar a la pantalla anterior debido a la presencia de hallazgos ya registrados en el MP.",NotificationType.Information),Navigate(Datos_MP,ScreenTransition.Fade))
+            If(Btn1_39.DisplayMode = DisplayMode.Disabled 
+            || Btn2_34.DisplayMode = DisplayMode.Disabled 
+            || Btn3_30.DisplayMode = DisplayMode.Disabled
+            || Btn4_30.DisplayMode = DisplayMode.Disabled
+            || Btn5_30.DisplayMode = DisplayMode.Disabled
+            || Btn6_28.DisplayMode = DisplayMode.Disabled
+            || Btn7_28.DisplayMode = DisplayMode.Disabled
+            || Btn8_25.DisplayMode = DisplayMode.Disabled
+            || Btn9_20.DisplayMode = DisplayMode.Disabled
+            || Btn10_19.DisplayMode = DisplayMode.Disabled,
+            Notify("No es posible regresar a la pantalla anterior debido a la presencia de hallazgos ya registrados en el MP.",NotificationType.Information),
+            Navigate(Datos_MP,ScreenTransition.Fade))
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =73
