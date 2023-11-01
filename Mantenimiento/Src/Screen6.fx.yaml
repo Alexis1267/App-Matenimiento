@@ -45,7 +45,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =776
+            Height: =1298
             Width: =1366
             X: =0
             Y: =0
@@ -153,8 +153,8 @@
 
             Btn3_30 As button:
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |+
                     =If(CountIf(BotonesDeshabilitados, Boton = 3) > 0, DisplayMode.Disabled, DisplayMode.Edit)
@@ -184,8 +184,8 @@
 
             Btn4_30 As button:
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 4) > 0, DisplayMode.Disabled, DisplayMode.Edit)
@@ -214,8 +214,8 @@
 
             Btn5_30 As button:
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 5) > 0, DisplayMode.Disabled, DisplayMode.Edit)
@@ -242,8 +242,8 @@
 
             Btn6_28 As button:
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 6) > 0, DisplayMode.Disabled, DisplayMode.Edit)
@@ -270,8 +270,8 @@
 
             Btn7_28 As button:
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 7) > 0, DisplayMode.Disabled, DisplayMode.Edit)
@@ -297,8 +297,8 @@
 
             Btn8_25 As button:
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 8) > 0, DisplayMode.Disabled, DisplayMode.Edit)
@@ -324,8 +324,8 @@
 
             Btn9_20 As button:
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 9) > 0, DisplayMode.Disabled, DisplayMode.Edit)
@@ -351,8 +351,8 @@
 
             Btn10_19 As button:
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
                     =If(CountIf(BotonesDeshabilitados, Boton = 10) > 0, DisplayMode.Disabled, DisplayMode.Edit)
@@ -775,8 +775,8 @@
             Btn1_39 As button:
                 AutoDisableOnSelect: =
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |+
                     =If(CountIf(BotonesDeshabilitados, Boton = 1) > 0, DisplayMode.Disabled, DisplayMode.Edit)
@@ -813,8 +813,8 @@
 
             Btn2_34 As button:
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisabledColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |+
                     =If(CountIf(BotonesDeshabilitados, Boton = 2) > 0, DisplayMode.Disabled, DisplayMode.Edit)
@@ -1391,6 +1391,11 @@
                 Y: =684
                 ZIndex: =58
 
+            Rectangle2 As rectangle:
+                X: =595
+                Y: =1198
+                ZIndex: =59
+
     Label9_421 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -1436,4 +1441,20 @@
         X: =22
         Y: =8
         ZIndex: =6
+
+    Icon4 As icon.DocumentPDF:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.DocumentPDF
+        OnSelect: |-
+            =//Formato del PDF 
+            Set(varPDF2,PDF(Screen6,{Size:"A4",ExpandContainers:true}));
+            
+            //Nombre del PDF
+            //FALTA POR HACER
+            
+            //Flow de envio de PDF a carpeta de Sharepoint
+            SaveFileToSharePoint.Run({file:{name:"Preventivo.pdf", contentBytes: varPDF2}})
+        X: =1277
+        Y: =15
+        ZIndex: =7
 

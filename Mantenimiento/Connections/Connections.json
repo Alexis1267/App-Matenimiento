@@ -48,7 +48,8 @@
     "dependencies": {},
     "dependents": [
       "5bc23324-a92b-4804-9450-b13273ae77bd",
-      "80012031-53e1-42dc-a0cf-2bf547d652ef"
+      "80012031-53e1-42dc-a0cf-2bf547d652ef",
+      "72c7e8cd-1f94-4c2d-9d11-f6ddcc5f45f8"
     ],
     "id": "3781cddb-e53a-4b94-b919-4e0845a84178"
   },
@@ -86,6 +87,40 @@
     "dependents": [],
     "id": "5bc23324-a92b-4804-9450-b13273ae77bd"
   },
+  "72c7e8cd-1f94-4c2d-9d11-f6ddcc5f45f8": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "3781cddb-e53a-4b94-b919-4e0845a84178": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "30edaf29-9df7-43e7-be06-e7440bc090e1"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "3781cddb-e53a-4b94-b919-4e0845a84178"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "30edaf29-9df7-43e7-be06-e7440bc090e1"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SaveFileToSharePoint"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "3781cddb-e53a-4b94-b919-4e0845a84178"
+    },
+    "dependents": [],
+    "id": "72c7e8cd-1f94-4c2d-9d11-f6ddcc5f45f8"
+  },
   "7817e419-2139-4788-9873-a604336f6667": {
     "connectionRef": {
       "authenticationType": "sqlAuthentication",
@@ -94,7 +129,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23102.20",
-        "modifiedOn": "2023-10-31 21:55:51",
+        "modifiedOn": "2023-11-01 20:59:21",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"]}}",
         "version": 1
       },

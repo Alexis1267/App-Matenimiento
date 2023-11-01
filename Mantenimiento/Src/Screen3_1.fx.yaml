@@ -25,12 +25,6 @@ Screen3_1 As screen:
         Y: =208
         ZIndex: =2
 
-    Dropdown3_2 As dropdown:
-        Items: =Distinct(Filter(CMXE_MP_N,Nom_Equipo = Dropdown3_1.Selected.Value),Clas_Mantenimineto)
-        X: =844
-        Y: =208
-        ZIndex: =3
-
     Label12 As label:
         Text: ="Localización"
         X: =46
@@ -43,16 +37,19 @@ Screen3_1 As screen:
         Y: =150
         ZIndex: =5
 
-    Label12_17 As label:
-        Text: ="Clas_MTTO"
-        X: =844
-        Y: =150
-        ZIndex: =6
-
     Label1 As label:
         Text: |-
             =    Concatenate("Semana: "& Text(SemanasTranscurridas,"[$-en-US]0"))
         X: =135
         Y: =385
         ZIndex: =7
+
+    PdfViewer2 As pdfViewer:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Document: =ArchivoPDF
+        Fill: =RGBA(0, 0, 0, 0.5)
+        Height: =745
+        Width: =499
+        X: =865
+        ZIndex: =8
 
