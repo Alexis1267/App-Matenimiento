@@ -926,8 +926,7 @@
                 Fill: =RGBA(97, 181, 73, 1)
                 Height: =50
                 OnSelect: |+
-                    =Set(ContadorHH,false);
-                    
+                    =
                     
                     
                     
@@ -944,7 +943,8 @@
                         || IsBlank(Resp9_21.Selected)|| Btn9_20.Visible = true && Btn9_20.DisplayMode = DisplayMode.Edit 
                         || IsBlank(Resp10_20.Selected)|| Btn10_19.Visible = true && Btn10_19.DisplayMode = DisplayMode.Edit, 
                         Notify("Es necesario completar todas las actividades.",NotificationType.Error),
-                        Notify("El mantenimiento ha concluido con éxito",NotificationType.Success)&&Set(ContadorFinal,true)
+                        Notify("El mantenimiento ha concluido con éxito",NotificationType.Success)&&Set(ContadorHH,false)
+                    &&Set(ContadorFinal,true)
                      && SaveFileToSharePoint.Run({file:{name:nom_archivo_PDF, contentBytes: varPDF2}})
                     );
                     
