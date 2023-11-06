@@ -947,6 +947,8 @@
                         Notify("El mantenimiento ha concluido con éxito",NotificationType.Success) && SaveFileToSharePoint.Run({file:{name:nom_archivo_PDF, contentBytes: varPDF2}})
                     );
                     
+                    Set(ContadorFinal,true);
+                    
                     
                     
                     
@@ -1456,4 +1458,14 @@
         X: =22
         Y: =8
         ZIndex: =6
+
+    Timer3 As timer:
+        AutoPause: =false
+        AutoStart: =ContadorFinal
+        Duration: =15000
+        OnTimerEnd: =Navigate(QR_Inicio)
+        Start: =ContadorFinal
+        X: =141
+        Y: =23
+        ZIndex: =7
 
