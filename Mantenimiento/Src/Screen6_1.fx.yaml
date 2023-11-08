@@ -439,8 +439,7 @@
                 ChevronBackground: =If(Resp1_37.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: |
-                    =If(Resp1_37.DisplayMode = DisplayMode.Disabled, "n", "")
+                Default: =
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisabledFill: =RGBA(255, 255, 255, 1)
                 DisplayMode: =If(Btn1_40.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
@@ -756,6 +755,7 @@
                     If(Resp2_35.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Default: =If(Btn2_35.DisplayMode = DisplayMode.Disabled,"n","n")
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn2_35.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
