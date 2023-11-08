@@ -944,7 +944,7 @@
                         || IsBlank(Resp10_20.Selected)|| Btn10_19.Visible = true && Btn10_19.DisplayMode = DisplayMode.Edit, 
                         Notify("Es necesario completar todas las actividades.",NotificationType.Error),
                         Notify("El mantenimiento ha concluido con éxito",NotificationType.Success)&&Set(ContadorHH,false)
-                    &&Set(ContadorFinal,true)
+                    &&Set(ContadorFinal,true) && Set(varPDF2,PDF(Screen6,{Size:"A4",ExpandContainers:true}))
                      && SaveFileToSharePoint.Run({file:{name:nom_archivo_PDF, contentBytes: varPDF2}})
                     );
                     
@@ -957,7 +957,7 @@
                     //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text})
                     
                     //Formato del PDF 
-                    Set(varPDF2,PDF(Screen6,{Size:"A4",ExpandContainers:true}));
+                    
                     
                     
                     //Flow de envio de PDF a carpeta de Sharepoint
