@@ -54,7 +54,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =814
+            Height: =1243
             Width: =1366
             X: =0
             Y: =0
@@ -1412,6 +1412,11 @@
                 X: =928
                 Y: =684
                 ZIndex: =58
+
+            Rectangle2 As rectangle:
+                X: =608
+                Y: =1123
+                ZIndex: =59
 
     Label9_421 As label:
         Align: =Align.Center
