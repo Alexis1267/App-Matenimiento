@@ -1413,6 +1413,14 @@
                 Y: =684
                 ZIndex: =58
 
+            Button1 As button:
+                OnSelect: |-
+                    =Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"})
+                Text: ="Pendiente"
+                X: =1150
+                Y: =689
+                ZIndex: =59
+
     Label9_421 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
