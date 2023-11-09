@@ -54,7 +54,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =2372
+            Height: =2919
             Width: =1366
             X: =0
             Y: =0
@@ -174,7 +174,7 @@
                 Size: =11
                 Text: ="G."
                 Width: =33
-                Y: =1674
+                Y: =1804
                 ZIndex: =9
 
             Preg1_339 As label:
@@ -184,7 +184,7 @@
                 Size: =11
                 Text: ="H."
                 Width: =33
-                Y: =1736
+                Y: =2106
                 ZIndex: =10
 
             Preg1_340 As label:
@@ -194,7 +194,7 @@
                 Size: =11
                 Text: ="I."
                 Width: =33
-                Y: =1787
+                Y: =2367
                 ZIndex: =11
 
             Preg1_341 As label:
@@ -204,7 +204,7 @@
                 Size: =11
                 Text: ="J."
                 Width: =33
-                Y: =1862
+                Y: =2442
                 ZIndex: =12
 
             Btn3_30 As button:
@@ -320,8 +320,8 @@
                 Text: ="Justificación"
                 Visible: =If(Resp6_29.Selected.Value = "N", true, false) 
                 Width: =173
-                X: =1180
-                Y: =1621
+                X: =23
+                Y: =1672
                 ZIndex: =16
 
             Btn7_28 As button:
@@ -347,8 +347,8 @@
                 Text: ="Justificación"
                 Visible: =If(Resp7_29.Selected.Value = "N", true, false) 
                 Width: =173
-                X: =1180
-                Y: =1683
+                X: =23
+                Y: =1868
                 ZIndex: =17
 
             Btn8_25 As button:
@@ -374,8 +374,8 @@
                 Text: ="Justificación"
                 Visible: =If(Resp8_26.Selected.Value = "N", true, false) 
                 Width: =173
-                X: =1180
-                Y: =1739
+                X: =23
+                Y: =2171
                 ZIndex: =18
 
             Btn9_20 As button:
@@ -402,7 +402,7 @@
                 Visible: =If(Resp9_21.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =1180
-                Y: =1795
+                Y: =2375
                 ZIndex: =19
 
             Btn10_19 As button:
@@ -430,7 +430,7 @@
                 Visible: =If(Resp10_20.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =1180
-                Y: =1866
+                Y: =2446
                 ZIndex: =20
 
             Rectangle2_760 As rectangle:
@@ -672,7 +672,7 @@
                 Text: ="Realizar limpieza general (no debe de haber aceite derramado)."
                 Width: =1081
                 X: =101
-                Y: =1672
+                Y: =1802
                 ZIndex: =37
 
             Resp7_29 As dropdown:
@@ -696,7 +696,7 @@
                 Size: =16.58
                 Width: =67
                 X: =30
-                Y: =1686
+                Y: =1816
                 ZIndex: =38
 
             Resp8_26 As dropdown:
@@ -720,7 +720,7 @@
                 Size: =16.58
                 Width: =67
                 X: =30
-                Y: =1748
+                Y: =2118
                 ZIndex: =39
 
             Preg8_26 As label:
@@ -730,7 +730,7 @@
                 Text: ="Realizar pruebas en vacío para ver el comportamiento de la UH y anotar presiones, debe tener entre 160 bar y 185 bar. "
                 Width: =1081
                 X: =101
-                Y: =1734
+                Y: =2104
                 ZIndex: =40
 
             Resp9_21 As dropdown:
@@ -754,7 +754,7 @@
                 Size: =16.58
                 Width: =67
                 X: =30
-                Y: =1806
+                Y: =2386
                 ZIndex: =41
 
             Preg9_21 As label:
@@ -764,7 +764,7 @@
                 Text: ="Realizar limpieza o en su defecto cambio en filtro en puertas de gabinete."
                 Width: =1081
                 X: =101
-                Y: =1794
+                Y: =2374
                 ZIndex: =42
 
             Resp10_20 As dropdown:
@@ -788,7 +788,7 @@
                 Size: =16.58
                 Width: =67
                 X: =30
-                Y: =1868
+                Y: =2448
                 ZIndex: =43
 
             Preg10_20 As label:
@@ -798,7 +798,7 @@
                 Text: ="Asegurar funcionamiento de intercambiador, así como limpieza de este."
                 Width: =1081
                 X: =101
-                Y: =1856
+                Y: =2436
                 ZIndex: =44
 
             Resp2_34 As dropdown:
@@ -930,35 +930,35 @@
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
-                Y: =1665
+                Y: =1800
                 ZIndex: =53
 
             Rectangle1_6 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
-                Y: =1725
+                Y: =2095
                 ZIndex: =54
 
             Rectangle1_7 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
-                Y: =1786
+                Y: =2366
                 ZIndex: =55
 
             Rectangle1_8 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
-                Y: =1848
+                Y: =2428
                 ZIndex: =56
 
             Rectangle1_9 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
-                Y: =1910
+                Y: =2490
                 ZIndex: =57
 
             Button3_17 As button:
@@ -1010,8 +1010,8 @@
                 Size: =20
                 Text: ="Finalizar Preventivo"
                 Width: =336
-                X: =445
-                Y: =2285
+                X: =435
+                Y: =2825
                 ZIndex: =58
 
             Container1_39 As groupContainer.manualLayoutContainer:
@@ -1450,16 +1450,16 @@
 
             Label5 As label:
                 Text: =TimerHorasHombre.Text
-                X: =858
-                Y: =2295
+                X: =848
+                Y: =2835
                 ZIndex: =60
 
             Button1 As button:
                 OnSelect: |-
                     =Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"})
                 Text: ="Pendiente"
-                X: =1080
-                Y: =2295
+                X: =1070
+                Y: =2835
                 ZIndex: =61
 
             Image46 As image:
@@ -1583,6 +1583,134 @@
                 X: =908
                 Y: =1036
                 ZIndex: =70
+
+            Btn5_32 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitados, Boton = 5) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg5_31.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitados, { Boton: 5 });
+                    
+                    Set(NumBoton,5)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo hallazgo?"
+                Visible: =If(Resp5_31.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =23
+                Y: =1425
+                ZIndex: =71
+
+            Image54 As image:
+                Height: =200
+                Image: ='HID-IMG7'
+                Width: =360
+                X: =908
+                Y: =1359
+                ZIndex: =72
+
+            Btn6_30 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitados, Boton = 6) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg6_29.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitados, { Boton: 6 });
+                    
+                    Set(NumBoton,6)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: |-
+                    ="¿Hubo hallazo?
+                    "
+                Visible: =If(Resp6_29.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =23
+                Y: =1725
+                ZIndex: =73
+
+            Btn7_30 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitados, Boton = 7) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg7_29.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    Collect(BotonesDeshabilitados, { Boton: 7 });
+                    
+                    Set(NumBoton,7)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo hallazgo?"
+                Visible: =If(Resp7_29.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =23
+                Y: =1925
+                ZIndex: =74
+
+            Image55 As image:
+                Height: =200
+                Image: ='HID-IMG8'
+                Width: =360
+                X: =908
+                Y: =1852
+                ZIndex: =75
+
+            Btn8_27 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitados, Boton = 8) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg8_26.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    Collect(BotonesDeshabilitados, { Boton: 8 });
+                    
+                    Set(NumBoton,8)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo halazgo?"
+                Visible: =If(Resp8_26.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =23
+                Y: =2223
+                ZIndex: =76
 
     Label9_421 As label:
         Align: =Align.Center
