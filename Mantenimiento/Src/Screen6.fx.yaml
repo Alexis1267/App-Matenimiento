@@ -60,6 +60,98 @@
             Y: =0
             ZIndex: =1
 
+            Btn3_32 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |+
+                    =If(CountIf(BotonesDeshabilitados, Boton = 3) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    
+                    
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(BotonActivo,"Boton3");
+                    Set(Pregunta,Preg3_31.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitados, { Boton: 3 });
+                    
+                    Set(NumBoton,3)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo hallazgo?"
+                Visible: =If(Resp3_31.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =33
+                Y: =625
+                ZIndex: =1
+
+            Btn4_32 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitados, Boton = 4) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg4_31.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitados, { Boton: 4 });
+                    
+                    Set(NumBoton,4)
+                    
+                    //Set(BTN_Presionado,"btn4")
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo hallazgo?"
+                Visible: =If(Resp4_31.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =33
+                Y: =1052
+                ZIndex: =2
+
+            Image46 As image:
+                Height: =200
+                Image: ='HID-IMG5'
+                Width: =360
+                Y: =710
+                ZIndex: =3
+
+            Image48 As image:
+                Height: =200
+                Image: ='HID-IMG2'
+                Width: =370
+                X: =498
+                Y: =711
+                ZIndex: =4
+
+            Image51 As image:
+                Height: =200
+                Image: ='HID-IMG6'
+                Width: =370
+                X: =996
+                Y: =711
+                ZIndex: =5
+
+            Image53 As image:
+                Height: =200
+                Image: ='HID-IMG3'
+                Width: =360
+                X: =908
+                Y: =1036
+                ZIndex: =6
+
             Btn1_41 As button:
                 AutoDisableOnSelect: =
                 BorderThickness: =0
@@ -97,7 +189,7 @@
                 Width: =170
                 X: =23
                 Y: =173
-                ZIndex: =1
+                ZIndex: =7
 
             Image32 As image:
                 Height: =200
@@ -105,7 +197,7 @@
                 Width: =360
                 X: =908
                 Y: =79
-                ZIndex: =2
+                ZIndex: =8
 
             Preg1_332 As label:
                 Height: =46
@@ -115,7 +207,7 @@
                 Text: ="A."
                 Width: =33
                 Y: =51
-                ZIndex: =3
+                ZIndex: =9
 
             Preg1_333 As label:
                 Height: =46
@@ -125,7 +217,7 @@
                 Text: ="B."
                 Width: =33
                 Y: =322
-                ZIndex: =4
+                ZIndex: =10
 
             Preg1_334 As label:
                 Height: =46
@@ -135,7 +227,7 @@
                 Text: ="C."
                 Width: =33
                 Y: =508
-                ZIndex: =5
+                ZIndex: =11
 
             Preg1_335 As label:
                 Height: =46
@@ -145,7 +237,7 @@
                 Text: ="D."
                 Width: =33
                 Y: =929
-                ZIndex: =6
+                ZIndex: =12
 
             Preg1_336 As label:
                 Height: =46
@@ -155,7 +247,7 @@
                 Text: ="E."
                 Width: =33
                 Y: =1298
-                ZIndex: =7
+                ZIndex: =13
 
             Preg1_337 As label:
                 Height: =46
@@ -165,7 +257,7 @@
                 Text: ="F."
                 Width: =33
                 Y: =1613
-                ZIndex: =8
+                ZIndex: =14
 
             Preg1_338 As label:
                 Height: =46
@@ -175,7 +267,7 @@
                 Text: ="G."
                 Width: =33
                 Y: =1804
-                ZIndex: =9
+                ZIndex: =15
 
             Preg1_339 As label:
                 Height: =46
@@ -185,7 +277,7 @@
                 Text: ="H."
                 Width: =33
                 Y: =2106
-                ZIndex: =10
+                ZIndex: =16
 
             Preg1_340 As label:
                 Height: =46
@@ -195,7 +287,7 @@
                 Text: ="I."
                 Width: =33
                 Y: =2367
-                ZIndex: =11
+                ZIndex: =17
 
             Preg1_341 As label:
                 Height: =38
@@ -204,8 +296,8 @@
                 Size: =11
                 Text: ="J."
                 Width: =33
-                Y: =2442
-                ZIndex: =12
+                Y: =2572
+                ZIndex: =18
 
             Btn3_30 As button:
                 BorderThickness: =0
@@ -236,7 +328,7 @@
                 Width: =173
                 X: =23
                 Y: =577
-                ZIndex: =13
+                ZIndex: =19
 
             Btn4_30 As button:
                 BorderThickness: =0
@@ -266,7 +358,7 @@
                 Width: =173
                 X: =23
                 Y: =1003
-                ZIndex: =14
+                ZIndex: =20
 
             Btn5_30 As button:
                 BorderThickness: =0
@@ -294,7 +386,7 @@
                 Width: =173
                 X: =23
                 Y: =1363
-                ZIndex: =15
+                ZIndex: =21
 
             Btn6_28 As button:
                 BorderThickness: =0
@@ -322,7 +414,7 @@
                 Width: =173
                 X: =23
                 Y: =1672
-                ZIndex: =16
+                ZIndex: =22
 
             Btn7_28 As button:
                 BorderThickness: =0
@@ -349,7 +441,7 @@
                 Width: =173
                 X: =23
                 Y: =1868
-                ZIndex: =17
+                ZIndex: =23
 
             Btn8_25 As button:
                 BorderThickness: =0
@@ -376,7 +468,7 @@
                 Width: =173
                 X: =23
                 Y: =2171
-                ZIndex: =18
+                ZIndex: =24
 
             Btn9_20 As button:
                 BorderThickness: =0
@@ -401,9 +493,9 @@
                 Text: ="Justificación"
                 Visible: =If(Resp9_21.Selected.Value = "N", true, false) 
                 Width: =173
-                X: =1180
-                Y: =2375
-                ZIndex: =19
+                X: =23
+                Y: =2435
+                ZIndex: =25
 
             Btn10_19 As button:
                 BorderThickness: =0
@@ -429,9 +521,9 @@
                 Text: ="Justificación"
                 Visible: =If(Resp10_20.Selected.Value = "N", true, false) 
                 Width: =173
-                X: =1180
-                Y: =2446
-                ZIndex: =20
+                X: =23
+                Y: =2630
+                ZIndex: =26
 
             Rectangle2_760 As rectangle:
                 Fill: =RGBA(21, 44, 115, 1)
@@ -439,7 +531,7 @@
                 Width: =1366
                 X: =0.00
                 Y: =40
-                ZIndex: =21
+                ZIndex: =27
 
             Label10_610 As label:
                 PaddingRight: =6.37
@@ -448,7 +540,7 @@
                 Text: ="Realizado"
                 Width: =151.76
                 X: =45.9
-                ZIndex: =22
+                ZIndex: =28
 
             Label10_611 As label:
                 PaddingRight: =6.37
@@ -457,7 +549,7 @@
                 Text: ="No realizado"
                 Width: =159.43
                 X: =225.75
-                ZIndex: =23
+                ZIndex: =29
 
             Label10_612 As label:
                 FontWeight: =FontWeight.Bold
@@ -467,7 +559,7 @@
                 Text: ="[R] "
                 Width: =45.90
                 X: =0.00
-                ZIndex: =24
+                ZIndex: =30
 
             Label10_613 As label:
                 FontWeight: =FontWeight.Bold
@@ -477,7 +569,7 @@
                 Text: ="[N] "
                 Width: =63.77
                 X: =181.1
-                ZIndex: =25
+                ZIndex: =31
 
             Preg1_342 As label:
                 Height: =50
@@ -487,7 +579,7 @@
                 Width: =1079
                 X: =101
                 Y: =51
-                ZIndex: =26
+                ZIndex: =32
 
             Resp1_36 As dropdown:
                 AllowEmptySelection: =true
@@ -516,7 +608,7 @@
                 Width: =67
                 X: =30
                 Y: =62
-                ZIndex: =27
+                ZIndex: =33
 
             Preg2_34 As label:
                 Height: =50
@@ -526,7 +618,7 @@
                 Width: =1081
                 X: =101
                 Y: =320
-                ZIndex: =28
+                ZIndex: =34
 
             Resp3_31 As dropdown:
                 AllowEmptySelection: =true
@@ -551,7 +643,7 @@
                 Width: =67
                 X: =30
                 Y: =517
-                ZIndex: =29
+                ZIndex: =35
 
             Preg3_31 As label:
                 Height: =50
@@ -561,7 +653,7 @@
                 Width: =1184
                 X: =101
                 Y: =506
-                ZIndex: =30
+                ZIndex: =36
 
             Resp4_31 As dropdown:
                 AllowEmptySelection: =true
@@ -585,7 +677,7 @@
                 Width: =67
                 X: =31
                 Y: =944
-                ZIndex: =31
+                ZIndex: =37
 
             Preg4_31 As label:
                 Height: =50
@@ -595,7 +687,7 @@
                 Width: =1081
                 X: =101
                 Y: =933
-                ZIndex: =32
+                ZIndex: =38
 
             Resp5_31 As dropdown:
                 AllowEmptySelection: =true
@@ -619,7 +711,7 @@
                 Width: =67
                 X: =30
                 Y: =1308
-                ZIndex: =33
+                ZIndex: =39
 
             Preg5_31 As label:
                 Height: =50
@@ -629,7 +721,7 @@
                 Width: =1081
                 X: =101
                 Y: =1296
-                ZIndex: =34
+                ZIndex: =40
 
             Resp6_29 As dropdown:
                 AllowEmptySelection: =true
@@ -653,7 +745,7 @@
                 Width: =67
                 X: =30
                 Y: =1625
-                ZIndex: =35
+                ZIndex: =41
 
             Preg6_29 As label:
                 Height: =50
@@ -663,7 +755,7 @@
                 Width: =1081
                 X: =101
                 Y: =1611
-                ZIndex: =36
+                ZIndex: =42
 
             Preg7_29 As label:
                 Height: =50
@@ -673,7 +765,7 @@
                 Width: =1081
                 X: =101
                 Y: =1802
-                ZIndex: =37
+                ZIndex: =43
 
             Resp7_29 As dropdown:
                 AllowEmptySelection: =true
@@ -697,7 +789,7 @@
                 Width: =67
                 X: =30
                 Y: =1816
-                ZIndex: =38
+                ZIndex: =44
 
             Resp8_26 As dropdown:
                 AllowEmptySelection: =true
@@ -721,7 +813,7 @@
                 Width: =67
                 X: =30
                 Y: =2118
-                ZIndex: =39
+                ZIndex: =45
 
             Preg8_26 As label:
                 Height: =50
@@ -731,7 +823,7 @@
                 Width: =1081
                 X: =101
                 Y: =2104
-                ZIndex: =40
+                ZIndex: =46
 
             Resp9_21 As dropdown:
                 AllowEmptySelection: =true
@@ -755,7 +847,7 @@
                 Width: =67
                 X: =30
                 Y: =2386
-                ZIndex: =41
+                ZIndex: =47
 
             Preg9_21 As label:
                 Height: =50
@@ -765,7 +857,7 @@
                 Width: =1081
                 X: =101
                 Y: =2374
-                ZIndex: =42
+                ZIndex: =48
 
             Resp10_20 As dropdown:
                 AllowEmptySelection: =true
@@ -788,8 +880,8 @@
                 Size: =16.58
                 Width: =67
                 X: =30
-                Y: =2448
-                ZIndex: =43
+                Y: =2578
+                ZIndex: =49
 
             Preg10_20 As label:
                 Height: =50
@@ -798,8 +890,8 @@
                 Text: ="Asegurar funcionamiento de intercambiador, así como limpieza de este."
                 Width: =1081
                 X: =101
-                Y: =2436
-                ZIndex: =44
+                Y: =2566
+                ZIndex: =50
 
             Resp2_34 As dropdown:
                 AllowEmptySelection: =true
@@ -826,7 +918,7 @@
                 Width: =67
                 X: =30
                 Y: =332
-                ZIndex: =45
+                ZIndex: =51
 
             Btn1_39 As button:
                 AutoDisableOnSelect: =
@@ -865,7 +957,7 @@
                 Width: =173
                 X: =23
                 Y: =122
-                ZIndex: =46
+                ZIndex: =52
 
             Btn2_34 As button:
                 BorderThickness: =0
@@ -896,70 +988,70 @@
                 Width: =173
                 X: =23
                 Y: =378
-                ZIndex: =47
+                ZIndex: =53
 
             Rectangle1 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =318
-                ZIndex: =48
+                ZIndex: =54
 
             Rectangle1_2 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =932
-                ZIndex: =50
+                ZIndex: =55
 
             Rectangle1_3 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =1289
-                ZIndex: =51
+                ZIndex: =56
 
             Rectangle1_4 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =1603
-                ZIndex: =52
+                ZIndex: =57
 
             Rectangle1_5 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =1800
-                ZIndex: =53
+                ZIndex: =58
 
             Rectangle1_6 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =2095
-                ZIndex: =54
+                ZIndex: =59
 
             Rectangle1_7 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =2366
-                ZIndex: =55
+                ZIndex: =60
 
             Rectangle1_8 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
-                Y: =2428
-                ZIndex: =56
+                Y: =2558
+                ZIndex: =61
 
             Rectangle1_9 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
-                Y: =2490
-                ZIndex: =57
+                Y: =2745
+                ZIndex: =62
 
             Button3_17 As button:
                 DisplayMode: =
@@ -1012,7 +1104,7 @@
                 Width: =336
                 X: =435
                 Y: =2825
-                ZIndex: =58
+                ZIndex: =63
 
             Container1_39 As groupContainer.manualLayoutContainer:
                 Height: =768
@@ -1022,7 +1114,7 @@
                 Width: =1366
                 X: =0.00
                 Y: =618
-                ZIndex: =59
+                ZIndex: =64
 
                 HtmlText3_53 As htmlViewer:
                     Height: =768
@@ -1452,7 +1544,7 @@
                 Text: =TimerHorasHombre.Text
                 X: =848
                 Y: =2835
-                ZIndex: =60
+                ZIndex: =65
 
             Button1 As button:
                 OnSelect: |-
@@ -1460,14 +1552,7 @@
                 Text: ="Pendiente"
                 X: =1070
                 Y: =2835
-                ZIndex: =61
-
-            Image46 As image:
-                Height: =200
-                Image: ='HID-IMG5'
-                Width: =360
-                Y: =710
-                ZIndex: =63
+                ZIndex: =66
 
             Btn2_36 As button:
                 BorderThickness: =0
@@ -1497,92 +1582,7 @@
                 Visible: =If(Resp2_34.Selected.Value = "R", true, false) 
                 X: =34
                 Y: =431
-                ZIndex: =64
-
-            Btn3_32 As button:
-                BorderThickness: =0
-                DisabledBorderColor: =RGBA(184, 0, 0, 1)
-                DisabledColor: =RGBA(255, 255, 255, 1)
-                DisabledFill: =RGBA(184, 0, 0, 1)
-                DisplayMode: |+
-                    =If(CountIf(BotonesDeshabilitados, Boton = 3) > 0, DisplayMode.Disabled, DisplayMode.Edit)
-                    
-                    
-                Fill: =RGBA(0, 18, 107, 1)
-                Height: =60
-                OnSelect: |-
-                    =Set(BotonActivo,"Boton3");
-                    Set(Pregunta,Preg3_31.Text);
-                    UpdateContext({ShowPopUp : true});
-                    
-                    
-                    Collect(BotonesDeshabilitados, { Boton: 3 });
-                    
-                    Set(NumBoton,3)
-                PaddingBottom: =10
-                PaddingRight: =6.37
-                PaddingTop: =6.37
-                Size: =17
-                Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp3_31.Selected.Value = "R", true, false) 
-                Width: =170
-                X: =33
-                Y: =625
-                ZIndex: =65
-
-            Image48 As image:
-                Height: =200
-                Image: ='HID-IMG2'
-                Width: =370
-                X: =498
-                Y: =711
                 ZIndex: =67
-
-            Image51 As image:
-                Height: =200
-                Image: ='HID-IMG6'
-                Width: =370
-                X: =996
-                Y: =711
-                ZIndex: =68
-
-            Btn4_32 As button:
-                BorderThickness: =0
-                DisabledBorderColor: =RGBA(184, 0, 0, 1)
-                DisabledColor: =RGBA(255, 255, 255, 1)
-                DisabledFill: =RGBA(184, 0, 0, 1)
-                DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitados, Boton = 4) > 0, DisplayMode.Disabled, DisplayMode.Edit)
-                Fill: =RGBA(0, 18, 107, 1)
-                Height: =60
-                OnSelect: |-
-                    =Set(Pregunta,Preg4_31.Text);
-                    UpdateContext({ShowPopUp : true});
-                    
-                    
-                    Collect(BotonesDeshabilitados, { Boton: 4 });
-                    
-                    Set(NumBoton,4)
-                    
-                    //Set(BTN_Presionado,"btn4")
-                PaddingBottom: =10
-                PaddingRight: =6.37
-                PaddingTop: =6.37
-                Size: =17
-                Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp4_31.Selected.Value = "R", true, false) 
-                Width: =170
-                X: =33
-                Y: =1052
-                ZIndex: =69
-
-            Image53 As image:
-                Height: =200
-                Image: ='HID-IMG3'
-                Width: =360
-                X: =908
-                Y: =1036
-                ZIndex: =70
 
             Btn5_32 As button:
                 BorderThickness: =0
@@ -1610,7 +1610,7 @@
                 Width: =170
                 X: =23
                 Y: =1425
-                ZIndex: =71
+                ZIndex: =68
 
             Image54 As image:
                 Height: =200
@@ -1618,7 +1618,7 @@
                 Width: =360
                 X: =908
                 Y: =1359
-                ZIndex: =72
+                ZIndex: =69
 
             Btn6_30 As button:
                 BorderThickness: =0
@@ -1648,7 +1648,7 @@
                 Width: =170
                 X: =23
                 Y: =1725
-                ZIndex: =73
+                ZIndex: =70
 
             Btn7_30 As button:
                 BorderThickness: =0
@@ -1675,7 +1675,7 @@
                 Width: =170
                 X: =23
                 Y: =1925
-                ZIndex: =74
+                ZIndex: =71
 
             Image55 As image:
                 Height: =200
@@ -1683,7 +1683,7 @@
                 Width: =360
                 X: =908
                 Y: =1852
-                ZIndex: =75
+                ZIndex: =72
 
             Btn8_27 As button:
                 BorderThickness: =0
@@ -1705,11 +1705,74 @@
                 PaddingRight: =6.37
                 PaddingTop: =6.37
                 Size: =17
-                Text: ="¿Hubo halazgo?"
+                Text: ="¿Hubo hallazgo?"
                 Visible: =If(Resp8_26.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =2223
+                ZIndex: =73
+
+            Image56 As image:
+                Height: =200
+                Image: ='HID-IMG4'
+                Width: =360
+                X: =908
+                Y: =2154
+                ZIndex: =74
+
+            Btn9_22 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitados, Boton = 9) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg9_21.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    Collect(BotonesDeshabilitados, { Boton: 9 });
+                    
+                    Set(NumBoton,9)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo hallazgo?"
+                Visible: =If(Resp9_21.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =23
+                Y: =2480
+                ZIndex: =75
+
+            Btn10_21 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitados, Boton = 10) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg10_20.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitados, { Boton: 10 });
+                    
+                    Set(NumBoton,10)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo hallazgo?"
+                Visible: =If(Resp10_20.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =23
+                Y: =2673
                 ZIndex: =76
 
     Label9_421 As label:
