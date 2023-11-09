@@ -1525,7 +1525,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp3_31.Selected.Value = "N", true, false) 
+                Visible: =If(Resp3_31.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =33
                 Y: =640
