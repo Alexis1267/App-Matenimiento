@@ -155,11 +155,12 @@
             Btn1_41 As button:
                 AutoDisableOnSelect: =
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledBorderColor: =RGBA(141, 198, 63, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
-                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisabledFill: =RGBA(237, 237, 237, 1)
                 DisplayMode: |+
-                    =If(CountIf(BotonesDeshabilitados, Boton = 1) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 1) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    
                     
                     
                 Fill: =RGBA(0, 18, 107, 1)
@@ -173,9 +174,9 @@
                     //BOTONES
                          // Cambia el número (en este caso, 2) al número del botón correspondiente
                     
-                    Collect(BotonesDeshabilitados, { Boton: 1 });
+                    Collect(BotonesDeshabilitadosR, { Boton: 1 });
                     
-                    Set(NumBoton,1)
+                    Set(NumBotonR,1)
                     
                     //BOTON PRUEBA 2 
                     
@@ -585,11 +586,11 @@
                 AllowEmptySelection: =true
                 BorderColor: =RGBA(0, 40, 85, 1)
                 ChevronBackground: =If(Resp1_36.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
-                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
+                ChevronDisabledBackground: =RGBA(219, 219, 219, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisabledBorderColor: =RGBA(219, 219, 219, 1)
                 DisabledFill: =RGBA(255, 255, 255, 1)
-                DisplayMode: =If(Btn1_39.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn1_39.DisplayMode || Btn1_41.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: =["R","N"]
@@ -1241,7 +1242,9 @@
                             Reset(Dropdown4_40);
                             
                             
-                            RemoveIf(BotonesDeshabilitados,Boton = NumBoton)
+                            RemoveIf(BotonesDeshabilitados,Boton = NumBoton);
+                            RemoveIf(BotonesDeshabilitadosR,Boton = NumBotonR)
+                            
                             
                             
                             
@@ -1286,9 +1289,9 @@
                             PaddingTop: =6.37
                             Size: =16.58
                             Text: |-
-                                ="Justificación:"
+                                ="*Justificación:"
                             Width: =443.84
-                            X: =25.51
+                            X: =20
                             Y: =351
                             ZIndex: =2
 
@@ -1305,7 +1308,7 @@
                             Reset: =true
                             Size: =17.13
                             Width: =632.62
-                            X: =26.36
+                            X: =21
                             Y: =399
                             ZIndex: =3
 
