@@ -1554,8 +1554,8 @@
                     =Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"});
                     
                     
-                    //lOGICA DEL CODIGO : 
-                    Patch(PruebaPreg_PreventivSure,{Folio_Maq: ID_Maquina},{Act1: If(Resp1_38.DisplayMode = DisplayMode.Disabled,"n",Resp9_23.Selected.Value)})
+                    //lOGICA DEL CODIGO : SI EL DROPDOWN ESTA DESABILIDATO, QUE ME ENVIE EL DATO "n" SI NO QUE ME ENVIE EL VALOR QUE TIENE EL DROPDOWN SELECCIONADO
+                    Patch(PruebaPreg_PreventivSure,{Folio_Maq: ID_Maquina},{Act1: If(Btn1_42.DisplayMode = DisplayMode.Disabled,"n",Resp9_23.Selected.Value)})
                 Text: ="Pendiente"
                 X: =1070
                 Y: =2835
