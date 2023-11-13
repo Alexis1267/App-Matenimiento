@@ -11,7 +11,6 @@ App As appinfo:
         Set( DiferenciaDias, FechaEntrada - FechaInicioAnio);
         Set (SemanasTranscurridas, RoundUp(DiferenciaDias / 7, 0));
         
-        Set(Id_Preg,LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,id_preventivsure))
         
         
         

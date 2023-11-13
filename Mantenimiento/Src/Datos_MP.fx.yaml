@@ -24,6 +24,7 @@ Datos_MP As screen:
         
         Set(PrimerasLetrasMAQ,Left(CadenaCompleta,8));
         
+        Set(Id_Preg,LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,id_preventivsure))
         
         
         
