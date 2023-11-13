@@ -11,19 +11,7 @@ App As appinfo:
         Set( DiferenciaDias, FechaEntrada - FechaInicioAnio);
         Set (SemanasTranscurridas, RoundUp(DiferenciaDias / 7, 0));
         
-        //ClearCollect(Prueba,
-        //{Fecha_Ini:LookUp(CMXE_MP,Proc_No="MEINS-05-30D",Fecha_inicio)},
-        //{Fecha_prog:LookUp(CMXE_MP,Proc_No="MEINS-05-30D",Fecha_Programada)},
-        //{Condicion:LookUp(CMXE_MP,Proc_No="MEINS-05-30D",Cond_Equipo)})
-        
-        //ClearCollect(Prueba2,Table(
-          //  {
-            //    Nombre: LookUp(CMXE_MP,Proc_No="MEINS-05-30D",Nom_equipo),
-              //  Fecha: LookUp(CMXE_MP,Proc_No="MEINS-05-30D",Fecha_inicio),
-               // FechaPROG: LookUp(CMXE_MP,Proc_No="MEINS-05-30D",Fecha_Programada),
-                //Condicion: Filter(CMXE_MP,Proc_No="MEINS-05-30D")
-            //}))
-        
+        Set(Id_Preg,LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,id_preventivsure))
         
         
         

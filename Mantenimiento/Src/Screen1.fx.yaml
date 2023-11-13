@@ -1,13 +1,16 @@
 Screen1 As screen:
 
     Dropdown2 As dropdown:
-        Items: =[LookUp(PreventivSure_Preg, ID_Preg = 9).Act10]
+        Items: =[LookUp(PreventivSure_Preg,Folio_Maq=36).ACT1]
         X: =84
         Y: =54
         ZIndex: =1
 
     Dropdown2_1 As dropdown:
-        Items: =["R","N", Coalesce(LookUp(PreventivSure_Preg, ID_Preg = 9).Act11)]
+        Items: |-
+            =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = 36).ACT1)]
+            
+            //["R","N", Coalesce(LookUp(PreventivSure_Preg, ID_Preg = 9 || folio_Maq = Id_Maquina).Act11)]
         X: =84
         Y: =125
         ZIndex: =2
