@@ -629,7 +629,7 @@
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn3_30.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn3_30.DisplayMode = DisplayMode.Disabled|| Btn3_32.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: =["R","N"]
@@ -664,7 +664,7 @@
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn4_30.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn4_30.DisplayMode = DisplayMode.Disabled|| Btn4_32.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: =["R","N"]
@@ -698,7 +698,7 @@
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn5_30.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn5_30.DisplayMode = DisplayMode.Disabled|| Btn5_32.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: =["R","N"]
@@ -732,7 +732,7 @@
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn6_28.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn6_28.DisplayMode = DisplayMode.Disabled|| Btn6_30.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: =["R","N"]
@@ -776,7 +776,7 @@
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn7_28.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn7_28.DisplayMode = DisplayMode.Disabled|| Btn7_30,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: =["R","N"]
@@ -800,7 +800,7 @@
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn8_25.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn8_25.DisplayMode = DisplayMode.Disabled|| Btn8_27.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: =["R","N"]
@@ -834,7 +834,7 @@
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn9_20.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn9_20.DisplayMode = DisplayMode.Disabled|| Btn9_22.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: =["R","N"]
@@ -868,7 +868,7 @@
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_19.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_19.DisplayMode = DisplayMode.Disabled|| Btn10_21.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: =["R","N"]
@@ -905,7 +905,7 @@
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn2_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn2_34.DisplayMode = DisplayMode.Disabled || Btn2_36.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: =["R","N"]
@@ -1552,16 +1552,16 @@
                 ZIndex: =65
 
             Button1 As button:
-                OnSelect: |-
+                OnSelect: |+
                     =Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"});
                     
-                    Patch(PruebaPreg_PreventivSure,Defaults(PruebaPreg_PreventivSure),
+                    Patch(Preg_PreventivSure,Defaults(Preg_PreventivSure),
                     {
-                    Folio_Maq:ID_Maquina,
-                    Act1: If(Btn1_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn1_41.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value)) 
+                    Folio_Maq_P:ID_Maquina,
+                    Act1: If(Btn1_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn1_41.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value)),
+                    Act2: If(Btn1_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn1_41.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value))
                     });
                     
-                    //&& If(Btn1_41.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value)
                 Text: ="Pendiente"
                 X: =1070
                 Y: =2835
