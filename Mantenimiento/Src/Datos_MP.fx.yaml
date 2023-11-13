@@ -88,7 +88,7 @@ Datos_MP As screen:
         Fill: =RGBA(97, 181, 73, 1)
         FontWeight: =FontWeight.Bold
         Height: =54
-        OnSelect: |
+        OnSelect: |+
             =Set(ContadorHH,true);
             
             //VALIDACION DE CAMPO INVOLUCRADOS
@@ -108,12 +108,7 @@ Datos_MP As screen:
             If(Label6_1.Text = "MEPS-04-BV2",Navigate('MEPS-04-BV2(Preg1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error)))))))))))))));
             
             
-            //VALIDACION PARA NAVEGAR AL RESPECTIVO MANTENIMIENTO PREVENTIVO
             
-            //If(Label8_12.Text = "CPE",Navigate('MEPS-04-CPE(Preg1)',ScreenTransition.Cover),Notify("Error",NotificationType.Error));
-            
-            
-            //HACER UNA VALIDACION DE QUE CON LA FUNCION "FIND" ENCONTRAR EN TODO EL TEXTO DEL PROC.NO LA ULTIMA PALABRA PARA LUEGO VALIDAR
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =19.14

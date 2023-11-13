@@ -1,0 +1,14 @@
+Screen1 As screen:
+
+    Dropdown2 As dropdown:
+        Items: =[LookUp(PreventivSure_Preg, ID_Preg = 9).Act10]
+        X: =84
+        Y: =54
+        ZIndex: =1
+
+    Dropdown2_1 As dropdown:
+        Items: =["R","N", Coalesce(LookUp(PreventivSure_Preg, ID_Preg = 9).Act11)]
+        X: =84
+        Y: =125
+        ZIndex: =2
+
