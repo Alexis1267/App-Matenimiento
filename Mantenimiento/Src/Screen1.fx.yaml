@@ -7,6 +7,7 @@ Screen1 As screen:
         ZIndex: =1
 
     Dropdown2_1 As dropdown:
+        Default: =" Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = 36).ACT1)"
         Items: |-
             =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = 36).ACT1)]
             
@@ -14,4 +15,12 @@ Screen1 As screen:
         X: =84
         Y: =125
         ZIndex: =2
+
+    Dropdown4 As dropdown:
+        Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = 36).ACT1)
+        Items: |
+            =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = 36).ACT1)]
+        X: =84
+        Y: =228
+        ZIndex: =3
 
