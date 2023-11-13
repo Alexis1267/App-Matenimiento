@@ -129,8 +129,8 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23104.18",
-        "modifiedOn": "2023-11-10 17:20:08",
-        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[pruebapreg_preventivsure]\":[\"post\",\"patch\",\"get\"]}}",
+        "modifiedOn": "2023-11-13 14:22:57",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"]}}",
         "version": 1
       },
       "gatewayObjectIdHint": "263dc832-5fea-479a-9fac-23670d346397",
@@ -148,14 +148,14 @@
           "CMXE_TablaH_MP": {
             "tableName": "[dbo].[CMXE_TablaH_MP]"
           },
+          "Preg_PreventivSure": {
+            "tableName": "[dbo].[Preg_PreventivSure]"
+          },
           "PreventivSure_Tecnicos": {
             "tableName": "[dbo].[PreventivSure_Tecnicos]"
           },
           "Prueba_Img_MP": {
             "tableName": "[dbo].[Prueba_Img_MP]"
-          },
-          "PruebaPreg_PreventivSure": {
-            "tableName": "[dbo].[PruebaPreg_PreventivSure]"
           }
         }
       }
@@ -165,7 +165,7 @@
       "Prueba_Img_MP",
       "CMXE_MP_N",
       "PreventivSure_Tecnicos",
-      "PruebaPreg_PreventivSure"
+      "Preg_PreventivSure"
     ],
     "dependencies": {},
     "dependents": [],

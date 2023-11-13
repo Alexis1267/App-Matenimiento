@@ -19,6 +19,8 @@
         
         //BOTONES 
         ClearCollect(BotonesDeshabilitados,{});
+        ClearCollect(BotonesDeshabilitadosR,{});
+        
         
         
         
@@ -590,7 +592,7 @@
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 DisabledBorderColor: =RGBA(219, 219, 219, 1)
                 DisabledFill: =RGBA(255, 255, 255, 1)
-                DisplayMode: =If(Btn1_39.DisplayMode || Btn1_41.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn1_39.DisplayMode = DisplayMode.Disabled || Btn1_41.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: =["R","N"]
@@ -1551,7 +1553,15 @@
 
             Button1 As button:
                 OnSelect: |-
-                    =Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"})
+                    =Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"});
+                    
+                    Patch(PruebaPreg_PreventivSure,Defaults(PruebaPreg_PreventivSure),
+                    {
+                    Folio_Maq:ID_Maquina,
+                    Act1: If(Btn1_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn1_41.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value)) 
+                    });
+                    
+                    //&& If(Btn1_41.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value)
                 Text: ="Pendiente"
                 X: =1070
                 Y: =2835
