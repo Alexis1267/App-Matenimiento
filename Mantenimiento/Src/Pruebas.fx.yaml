@@ -590,7 +590,7 @@
                 ChevronBackground: =If(Resp1_39.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(219, 219, 219, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: ="Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1)"
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1)
                 DisabledBorderColor: =RGBA(219, 219, 219, 1)
                 DisabledFill: =RGBA(255, 255, 255, 1)
                 DisplayMode: =If(Btn1_44.DisplayMode = DisplayMode.Disabled || Btn1_45.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
@@ -630,7 +630,7 @@
                 ChevronBackground: =If(Resp3_34.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: ="Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT3)"
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT3)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn3_35.DisplayMode = DisplayMode.Disabled|| Btn3_36.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
@@ -667,7 +667,7 @@
                 ChevronBackground: =If(Resp4_34.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: ="Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT4)"
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT4)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn4_35.DisplayMode = DisplayMode.Disabled|| Btn4_36.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
@@ -703,7 +703,7 @@
                 ChevronBackground: =If(Resp5_34.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: ="Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT5)"
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT5)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn5_35.DisplayMode = DisplayMode.Disabled|| Btn5_36.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
@@ -739,7 +739,7 @@
                 ChevronBackground: =If(Resp6_32.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: ="Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT6)"
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT6)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn6_33.DisplayMode = DisplayMode.Disabled|| Btn6_34.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
@@ -785,7 +785,7 @@
                 ChevronBackground: =If(Resp7_32.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: ="Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT7)"
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT7)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn7_33.DisplayMode = DisplayMode.Disabled|| Btn7_34,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
@@ -811,7 +811,7 @@
                 ChevronBackground: =If(Resp8_29.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: ="Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT8)"
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT8)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn8_30.DisplayMode = DisplayMode.Disabled|| Btn8_31.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
@@ -847,7 +847,7 @@
                 ChevronBackground: =If(Resp9_24.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: ="Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT9)"
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT9)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn9_25.DisplayMode = DisplayMode.Disabled|| Btn9_26.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
@@ -883,7 +883,7 @@
                 ChevronBackground: =If(Resp10_23.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: ="Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)"
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn10_24.DisplayMode = DisplayMode.Disabled|| Btn10_25.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
@@ -922,7 +922,7 @@
                     If(Resp2_37.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: ="Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2)"
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn2_39.DisplayMode = DisplayMode.Disabled || Btn2_40.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
