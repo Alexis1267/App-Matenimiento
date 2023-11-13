@@ -1555,11 +1555,20 @@
                 OnSelect: |+
                     =Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"});
                     
-                    Patch(Preg_PreventivSure,Defaults(Preg_PreventivSure),
+                    Patch(PreventivSure_Preg,Defaults(PreventivSure_Preg),
                     {
                     Folio_Maq_P:ID_Maquina,
+                    TempoHH:TimerHorasHombre.Text,
                     Act1: If(Btn1_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn1_41.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value)),
-                    Act2: If(Btn1_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn1_41.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value))
+                    Act2: If(Btn2_34.DisplayMode = DisplayMode.Disabled,"n",If(Btn2_36.DisplayMode = DisplayMode.Disabled,"r",Resp2_34.Selected.Value)),
+                    Act3: If(Btn3_30.DisplayMode = DisplayMode.Disabled,"n",If(Btn3_32.DisplayMode = DisplayMode.Disabled,"r",Resp3_31.Selected.Value)),
+                    Act4: If(Btn4_30.DisplayMode = DisplayMode.Disabled,"n",If(Btn4_32.DisplayMode = DisplayMode.Disabled,"r",Resp4_31.Selected.Value)),
+                    Act5: If(Btn5_30.DisplayMode = DisplayMode.Disabled,"n",If(Btn5_32.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value)),
+                    Act6: If(Btn6_28.DisplayMode = DisplayMode.Disabled,"n",If(Btn6_30.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value)),
+                    Act7: If(Btn7_28.DisplayMode = DisplayMode.Disabled,"n",If(Btn7_30.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value)),
+                    Act8: If(Btn8_25.DisplayMode = DisplayMode.Disabled,"n",If(Btn8_27.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value)),
+                    Act9: If(Btn9_20.DisplayMode = DisplayMode.Disabled,"n",If(Btn9_22.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value)),
+                    Act10: If(Btn10_19.DisplayMode = DisplayMode.Disabled,"n",If(Btn10_21.DisplayMode = DisplayMode.Disabled,"r",Resp1_36.Selected.Value))
                     });
                     
                 Text: ="Pendiente"
