@@ -597,7 +597,15 @@
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |
-                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1)]
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1, "N") = "N",
+                            ["R","N"],
+                            ["R", "N"]
+                        )
+                    )
                 OnSelect: |+
                     =If(
                         IsBlank(Resp1_39.Selected),
