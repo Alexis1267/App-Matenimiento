@@ -68,7 +68,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |+
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 3) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 3) > 0 || Resp3_34.Selected.Value = "r" , DisplayMode.Disabled, DisplayMode.Edit)
                     
                     
                 Fill: =RGBA(0, 18, 107, 1)
@@ -99,7 +99,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 4) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 4) > 0 || Resp4_34.Selected.Value = "r" , DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -596,16 +596,9 @@
                 DisplayMode: =If(Btn1_44.DisplayMode = DisplayMode.Disabled || Btn1_45.DisplayMode || Resp1_39.Selected.Value = "r" || Resp1_39.Selected.Value = "n"  , DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
-                Items: |
-                    =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1, "R") = "R",
-                        ["N","R"],
-                        If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1, "N") = "N",
-                            ["R","N"],
-                            ["R", "N"]
-                        )
-                    )
+                Items: |+
+                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1)]
+                    
                 OnSelect: |+
                     =If(
                         IsBlank(Resp1_39.Selected),
@@ -933,10 +926,12 @@
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn2_39.DisplayMode = DisplayMode.Disabled || Btn2_40.DisplayMode = DisplayMode.Disabled || Resp2_37.Selected.Value = "r"||Resp2_37.Selected.Value = "n",DisplayMode.Disabled,DisplayMode.Edit)
+                FontWeight: =FontWeight.Lighter
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |
-                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2)]
+                    =
+                         [Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2)]
                 OnSelect: |
                     =If(
                         IsBlank(Resp1_39.Selected),
@@ -1640,7 +1635,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 5) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 5) > 0 || Resp5_34.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -1676,7 +1671,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 6) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 6) > 0 || Resp6_32.Selected.Value = "r" , DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -1706,7 +1701,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 7) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 7) > 0 || Resp7_32.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -1741,7 +1736,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 8) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 8) > 0 || Resp8_29.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -1776,7 +1771,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 9) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 9) > 0 || Resp9_24.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -1803,7 +1798,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_23.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
