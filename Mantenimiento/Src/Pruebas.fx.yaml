@@ -161,7 +161,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(237, 237, 237, 1)
                 DisplayMode: |+
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 1) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 1) > 0 || Resp1_39.Selected.Value = "r" , DisplayMode.Disabled, DisplayMode.Edit)
                     
                     
                     
@@ -590,10 +590,10 @@
                 ChevronBackground: =If(Resp1_39.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(219, 219, 219, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
-                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1)
+                Default: =Coalesce(LookUp(PreventivSure_Preg, id_preventivsure = Id_Preg).ACT1)
                 DisabledBorderColor: =RGBA(219, 219, 219, 1)
                 DisabledFill: =RGBA(255, 255, 255, 1)
-                DisplayMode: =If(Btn1_44.DisplayMode = DisplayMode.Disabled || Btn1_45.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn1_44.DisplayMode = DisplayMode.Disabled || Btn1_45.DisplayMode || Resp1_39.Selected.Value = "r" || Resp1_39.Selected.Value = "n"  , DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |
@@ -632,7 +632,7 @@
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT3)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn3_35.DisplayMode = DisplayMode.Disabled|| Btn3_36.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn3_35.DisplayMode = DisplayMode.Disabled|| Btn3_36.DisplayMode = DisplayMode.Disabled||Resp3_34.Selected.Value = "r"||Resp3_34.Selected.Value = "n",DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |
@@ -669,7 +669,7 @@
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT4)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn4_35.DisplayMode = DisplayMode.Disabled|| Btn4_36.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn4_35.DisplayMode = DisplayMode.Disabled|| Btn4_36.DisplayMode = DisplayMode.Disabled||Resp4_34.Selected.Value = "r" || Resp4_34.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |
@@ -924,7 +924,7 @@
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn2_39.DisplayMode = DisplayMode.Disabled || Btn2_40.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn2_39.DisplayMode = DisplayMode.Disabled || Btn2_40.DisplayMode = DisplayMode.Disabled || Resp2_37.Selected.Value = "r"||Resp2_37.Selected.Value = "n",DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |
@@ -1602,7 +1602,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |+
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 2) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 2) > 0 ||  Resp2_37.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                     
                     
                     
