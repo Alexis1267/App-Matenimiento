@@ -1119,14 +1119,10 @@
                     
                     
                     
-                    
-                    Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text},{Tecnicos:Label12_15.Text})
-                    
-                    //Formato del PDF 
+                    //Funciona
+                    //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text},{Tecnicos:Label12_15.Text})
                     
                     
-                    
-                    //Flow de envio de PDF a carpeta de Sharepoint
                     
                     
                     
