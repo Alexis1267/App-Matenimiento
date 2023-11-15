@@ -914,7 +914,9 @@ Datos_MP As screen:
             PaddingRight: =3.63
             PaddingTop: =3.63
             Size: =16.58
-            Text: =Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
+            Text: |
+                =//Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
+                Text(Concat(Add_Involucrado,"- "&Nombre,Char(10))) & Char(10) & LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos)
             Width: =371
             X: =976
             Y: =523
@@ -1015,6 +1017,14 @@ Datos_MP As screen:
         X: =1032
         Y: =26
         ZIndex: =45
+
+    Label10 As label:
+        Height: =80
+        Text: =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Tecnicos)
+        Width: =235
+        X: =1091
+        Y: =187
+        ZIndex: =46
 
     Group5_1 As group:
         Height: =5

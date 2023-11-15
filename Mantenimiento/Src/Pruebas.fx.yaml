@@ -1577,7 +1577,10 @@
             Button1_2 As button:
                 OnSelect: |+
                     =//Poner el preventivo en estatus PENDIENTE
-                    Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"});
+                    //funciona
+                    //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"});
+                    Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"},{Tecnicos:Label12_15.Text});
+                    
                     
                     //Ingresar las respuestas del preventivo cuando se quede pendiente el preventivo
                     Patch(PreventivSure_Preg,{id_preventivsure:Id_Preg},

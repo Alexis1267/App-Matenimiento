@@ -62,7 +62,7 @@
             //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Semana:SemanasTranscurridas },{Fecha_de_Finalizacion:Now()})
             
             Set(ContadorHH,false);
-            Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text})
+            Patch(CMXE_MP_N,{Folio_Maq: 3},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text},{Tecnicos:Label12_15.Text})
         PaddingRight: =6.37
         PaddingTop: =6.37
         Size: =30
