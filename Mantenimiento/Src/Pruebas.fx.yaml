@@ -62,6 +62,14 @@
             Y: =0
             ZIndex: =1
 
+            Image54_2 As image:
+                Height: =200
+                Image: ='HID-IMG7'
+                Width: =360
+                X: =908
+                Y: =1359
+                ZIndex: =1
+
             Btn3_36 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
@@ -91,7 +99,7 @@
                 Width: =170
                 X: =33
                 Y: =625
-                ZIndex: =1
+                ZIndex: =2
 
             Btn4_36 As button:
                 BorderThickness: =0
@@ -121,14 +129,14 @@
                 Width: =170
                 X: =33
                 Y: =1052
-                ZIndex: =2
+                ZIndex: =3
 
             Image46_2 As image:
                 Height: =200
                 Image: ='HID-IMG5'
                 Width: =360
                 Y: =710
-                ZIndex: =3
+                ZIndex: =4
 
             Image48_2 As image:
                 Height: =200
@@ -136,7 +144,7 @@
                 Width: =370
                 X: =498
                 Y: =711
-                ZIndex: =4
+                ZIndex: =5
 
             Image51_2 As image:
                 Height: =200
@@ -144,7 +152,7 @@
                 Width: =370
                 X: =996
                 Y: =711
-                ZIndex: =5
+                ZIndex: =6
 
             Image53_2 As image:
                 Height: =200
@@ -152,7 +160,7 @@
                 Width: =360
                 X: =908
                 Y: =1036
-                ZIndex: =6
+                ZIndex: =7
 
             Btn1_45 As button:
                 AutoDisableOnSelect: =
@@ -192,7 +200,7 @@
                 Width: =170
                 X: =23
                 Y: =173
-                ZIndex: =7
+                ZIndex: =8
 
             Image32_2 As image:
                 Height: =200
@@ -200,7 +208,7 @@
                 Width: =360
                 X: =908
                 Y: =79
-                ZIndex: =8
+                ZIndex: =9
 
             Preg1_365 As label:
                 Height: =46
@@ -210,7 +218,7 @@
                 Text: ="A."
                 Width: =33
                 Y: =51
-                ZIndex: =9
+                ZIndex: =10
 
             Preg1_367 As label:
                 Height: =46
@@ -220,7 +228,7 @@
                 Text: ="B."
                 Width: =33
                 Y: =322
-                ZIndex: =10
+                ZIndex: =11
 
             Preg1_368 As label:
                 Height: =46
@@ -230,7 +238,7 @@
                 Text: ="C."
                 Width: =33
                 Y: =508
-                ZIndex: =11
+                ZIndex: =12
 
             Preg1_369 As label:
                 Height: =46
@@ -240,7 +248,7 @@
                 Text: ="D."
                 Width: =33
                 Y: =929
-                ZIndex: =12
+                ZIndex: =13
 
             Preg1_370 As label:
                 Height: =46
@@ -250,7 +258,7 @@
                 Text: ="E."
                 Width: =33
                 Y: =1298
-                ZIndex: =13
+                ZIndex: =14
 
             Preg1_371 As label:
                 Height: =46
@@ -260,7 +268,7 @@
                 Text: ="F."
                 Width: =33
                 Y: =1613
-                ZIndex: =14
+                ZIndex: =15
 
             Preg1_372 As label:
                 Height: =46
@@ -270,7 +278,7 @@
                 Text: ="G."
                 Width: =33
                 Y: =1804
-                ZIndex: =15
+                ZIndex: =16
 
             Preg1_373 As label:
                 Height: =46
@@ -280,7 +288,7 @@
                 Text: ="H."
                 Width: =33
                 Y: =2106
-                ZIndex: =16
+                ZIndex: =17
 
             Preg1_374 As label:
                 Height: =46
@@ -290,7 +298,7 @@
                 Text: ="I."
                 Width: =33
                 Y: =2367
-                ZIndex: =17
+                ZIndex: =18
 
             Preg1_375 As label:
                 Height: =38
@@ -300,7 +308,7 @@
                 Text: ="J."
                 Width: =33
                 Y: =2572
-                ZIndex: =18
+                ZIndex: =19
 
             Btn3_35 As button:
                 BorderThickness: =0
@@ -331,7 +339,7 @@
                 Width: =173
                 X: =23
                 Y: =577
-                ZIndex: =19
+                ZIndex: =20
 
             Btn4_35 As button:
                 BorderThickness: =0
@@ -361,7 +369,7 @@
                 Width: =173
                 X: =23
                 Y: =1003
-                ZIndex: =20
+                ZIndex: =21
 
             Btn5_35 As button:
                 BorderThickness: =0
@@ -389,7 +397,7 @@
                 Width: =173
                 X: =23
                 Y: =1363
-                ZIndex: =21
+                ZIndex: =22
 
             Btn6_33 As button:
                 BorderThickness: =0
@@ -417,7 +425,7 @@
                 Width: =173
                 X: =23
                 Y: =1672
-                ZIndex: =22
+                ZIndex: =23
 
             Btn7_33 As button:
                 BorderThickness: =0
@@ -444,7 +452,7 @@
                 Width: =173
                 X: =23
                 Y: =1868
-                ZIndex: =23
+                ZIndex: =24
 
             Btn8_30 As button:
                 BorderThickness: =0
@@ -471,7 +479,7 @@
                 Width: =173
                 X: =23
                 Y: =2171
-                ZIndex: =24
+                ZIndex: =25
 
             Btn9_25 As button:
                 BorderThickness: =0
@@ -498,7 +506,7 @@
                 Width: =173
                 X: =23
                 Y: =2435
-                ZIndex: =25
+                ZIndex: =26
 
             Btn10_24 As button:
                 BorderThickness: =0
@@ -526,7 +534,7 @@
                 Width: =173
                 X: =23
                 Y: =2630
-                ZIndex: =26
+                ZIndex: =27
 
             Rectangle2_763 As rectangle:
                 Fill: =RGBA(21, 44, 115, 1)
@@ -534,7 +542,7 @@
                 Width: =1366
                 X: =0.00
                 Y: =40
-                ZIndex: =27
+                ZIndex: =28
 
             Label10_623 As label:
                 PaddingRight: =6.37
@@ -543,7 +551,7 @@
                 Text: ="Realizado"
                 Width: =151.76
                 X: =45.9
-                ZIndex: =28
+                ZIndex: =29
 
             Label10_625 As label:
                 PaddingRight: =6.37
@@ -552,7 +560,7 @@
                 Text: ="No realizado"
                 Width: =159.43
                 X: =225.75
-                ZIndex: =29
+                ZIndex: =30
 
             Label10_622 As label:
                 FontWeight: =FontWeight.Bold
@@ -562,7 +570,7 @@
                 Text: ="[R] "
                 Width: =45.90
                 X: =0.00
-                ZIndex: =30
+                ZIndex: =31
 
             Label10_624 As label:
                 FontWeight: =FontWeight.Bold
@@ -572,7 +580,7 @@
                 Text: ="[N] "
                 Width: =63.77
                 X: =181.1
-                ZIndex: =31
+                ZIndex: =32
 
             Preg1_366 As label:
                 Height: =50
@@ -582,7 +590,7 @@
                 Width: =1079
                 X: =101
                 Y: =51
-                ZIndex: =32
+                ZIndex: =33
 
             Resp1_39 As dropdown:
                 AllowEmptySelection: =true
@@ -614,7 +622,7 @@
                 Width: =67
                 X: =30
                 Y: =62
-                ZIndex: =33
+                ZIndex: =34
 
             Preg2_37 As label:
                 Height: =50
@@ -624,7 +632,7 @@
                 Width: =1081
                 X: =101
                 Y: =320
-                ZIndex: =34
+                ZIndex: =35
 
             Resp3_34 As dropdown:
                 AllowEmptySelection: =true
@@ -651,7 +659,7 @@
                 Width: =67
                 X: =30
                 Y: =517
-                ZIndex: =35
+                ZIndex: =36
 
             Preg3_34 As label:
                 Height: =50
@@ -661,7 +669,7 @@
                 Width: =1184
                 X: =101
                 Y: =506
-                ZIndex: =36
+                ZIndex: =37
 
             Resp4_34 As dropdown:
                 AllowEmptySelection: =true
@@ -687,7 +695,7 @@
                 Width: =67
                 X: =31
                 Y: =944
-                ZIndex: =37
+                ZIndex: =38
 
             Preg4_34 As label:
                 Height: =50
@@ -697,7 +705,7 @@
                 Width: =1081
                 X: =101
                 Y: =933
-                ZIndex: =38
+                ZIndex: =39
 
             Resp5_34 As dropdown:
                 AllowEmptySelection: =true
@@ -723,7 +731,7 @@
                 Width: =67
                 X: =30
                 Y: =1308
-                ZIndex: =39
+                ZIndex: =40
 
             Preg5_34 As label:
                 Height: =50
@@ -733,7 +741,7 @@
                 Width: =1081
                 X: =101
                 Y: =1296
-                ZIndex: =40
+                ZIndex: =41
 
             Resp6_32 As dropdown:
                 AllowEmptySelection: =true
@@ -759,7 +767,7 @@
                 Width: =67
                 X: =30
                 Y: =1625
-                ZIndex: =41
+                ZIndex: =42
 
             Preg6_32 As label:
                 Height: =50
@@ -769,7 +777,7 @@
                 Width: =1081
                 X: =101
                 Y: =1611
-                ZIndex: =42
+                ZIndex: =43
 
             Preg7_32 As label:
                 Height: =50
@@ -779,7 +787,7 @@
                 Width: =1081
                 X: =101
                 Y: =1802
-                ZIndex: =43
+                ZIndex: =44
 
             Resp7_32 As dropdown:
                 AllowEmptySelection: =true
@@ -805,7 +813,7 @@
                 Width: =67
                 X: =30
                 Y: =1816
-                ZIndex: =44
+                ZIndex: =45
 
             Resp8_29 As dropdown:
                 AllowEmptySelection: =true
@@ -831,7 +839,7 @@
                 Width: =67
                 X: =30
                 Y: =2118
-                ZIndex: =45
+                ZIndex: =46
 
             Preg8_29 As label:
                 Height: =50
@@ -841,7 +849,7 @@
                 Width: =1081
                 X: =101
                 Y: =2104
-                ZIndex: =46
+                ZIndex: =47
 
             Resp9_24 As dropdown:
                 AllowEmptySelection: =true
@@ -867,7 +875,7 @@
                 Width: =67
                 X: =30
                 Y: =2386
-                ZIndex: =47
+                ZIndex: =48
 
             Preg9_24 As label:
                 Height: =50
@@ -877,7 +885,7 @@
                 Width: =1081
                 X: =101
                 Y: =2374
-                ZIndex: =48
+                ZIndex: =49
 
             Resp10_23 As dropdown:
                 AllowEmptySelection: =true
@@ -903,7 +911,7 @@
                 Width: =67
                 X: =30
                 Y: =2578
-                ZIndex: =49
+                ZIndex: =50
 
             Preg10_23 As label:
                 Height: =50
@@ -913,7 +921,7 @@
                 Width: =1081
                 X: =101
                 Y: =2566
-                ZIndex: =50
+                ZIndex: =51
 
             Resp2_37 As dropdown:
                 AllowEmptySelection: =true
@@ -944,7 +952,7 @@
                 Width: =67
                 X: =30
                 Y: =332
-                ZIndex: =51
+                ZIndex: =52
 
             Btn1_44 As button:
                 AutoDisableOnSelect: =
@@ -983,7 +991,7 @@
                 Width: =173
                 X: =23
                 Y: =122
-                ZIndex: =52
+                ZIndex: =53
 
             Btn2_39 As button:
                 BorderThickness: =0
@@ -1014,70 +1022,70 @@
                 Width: =173
                 X: =23
                 Y: =378
-                ZIndex: =53
+                ZIndex: =54
 
             Rectangle1_28 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =318
-                ZIndex: =54
+                ZIndex: =55
 
             Rectangle1_29 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =932
-                ZIndex: =55
+                ZIndex: =56
 
             Rectangle1_30 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =1289
-                ZIndex: =56
+                ZIndex: =57
 
             Rectangle1_31 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =1603
-                ZIndex: =57
+                ZIndex: =58
 
             Rectangle1_32 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =1800
-                ZIndex: =58
+                ZIndex: =59
 
             Rectangle1_33 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =2095
-                ZIndex: =59
+                ZIndex: =60
 
             Rectangle1_34 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =2366
-                ZIndex: =60
+                ZIndex: =61
 
             Rectangle1_35 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =2558
-                ZIndex: =61
+                ZIndex: =62
 
             Rectangle1_36 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
                 Y: =2745
-                ZIndex: =62
+                ZIndex: =63
 
             Button3_20 As button:
                 DisplayMode: =
@@ -1111,8 +1119,8 @@
                     
                     
                     
-                    //ESTE ES EL QUE FUNCIONA :)
-                    //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text})
+                    
+                    Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text},{Tecnicos:Label12_15.Text})
                     
                     //Formato del PDF 
                     
@@ -1130,7 +1138,7 @@
                 Width: =336
                 X: =435
                 Y: =2825
-                ZIndex: =63
+                ZIndex: =64
 
             Container1_42 As groupContainer.manualLayoutContainer:
                 Height: =768
@@ -1140,7 +1148,7 @@
                 Width: =1366
                 X: =0.00
                 Y: =618
-                ZIndex: =64
+                ZIndex: =65
 
                 HtmlText3_56 As htmlViewer:
                     Height: =768
@@ -1572,7 +1580,7 @@
                 Text: =TimerHorasHombre.Text
                 X: =848
                 Y: =2835
-                ZIndex: =65
+                ZIndex: =66
 
             Button1_2 As button:
                 OnSelect: |+
@@ -1600,7 +1608,7 @@
                 Text: ="Pendiente"
                 X: =1070
                 Y: =2835
-                ZIndex: =66
+                ZIndex: =67
 
             Btn2_40 As button:
                 BorderThickness: =0
@@ -1630,7 +1638,7 @@
                 Visible: =If(Resp2_37.Selected.Value = "R", true, false) 
                 X: =34
                 Y: =431
-                ZIndex: =67
+                ZIndex: =68
 
             Btn5_36 As button:
                 BorderThickness: =0
@@ -1658,14 +1666,6 @@
                 Width: =170
                 X: =23
                 Y: =1425
-                ZIndex: =68
-
-            Image54_2 As image:
-                Height: =200
-                Image: ='HID-IMG7'
-                Width: =360
-                X: =908
-                Y: =1359
                 ZIndex: =69
 
             Btn6_34 As button:
