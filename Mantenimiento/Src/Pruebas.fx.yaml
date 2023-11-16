@@ -654,8 +654,18 @@
                 DisplayMode: =If(Btn3_35.DisplayMode = DisplayMode.Disabled|| Btn3_36.DisplayMode = DisplayMode.Disabled||Resp3_34.Selected.Value = "r"||Resp3_34.Selected.Value = "n",DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
-                Items: |
-                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT3)]
+                Items: |-
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT3, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT3, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT3)]
+                    
+                    
+                        )
+                    )
                 OnSelect: |+
                     =If(
                         IsBlank(Resp3_34.Selected),
@@ -691,8 +701,18 @@
                 DisplayMode: =If(Btn4_35.DisplayMode = DisplayMode.Disabled|| Btn4_36.DisplayMode = DisplayMode.Disabled||Resp4_34.Selected.Value = "r" || Resp4_34.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
-                Items: |
-                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT4)]
+                Items: |-
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT4, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT4, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT4)]
+                    
+                    
+                        )
+                    )
                 OnSelect: |
                     =If(
                         IsBlank(Resp4_34.Selected),
@@ -727,8 +747,18 @@
                 DisplayMode: =If(Btn5_35.DisplayMode = DisplayMode.Disabled|| Btn5_36.DisplayMode = DisplayMode.Disabled ||Resp5_34.Selected.Value = "r" ||Resp5_34.Selected.Value = "n"  ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
-                Items: |
-                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT5)]
+                Items: |-
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT5, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT5, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT5)]
+                    
+                    
+                        )
+                    )
                 OnSelect: |
                     =If(
                         IsBlank(Resp5_34.Selected),
@@ -763,8 +793,18 @@
                 DisplayMode: =If(Btn6_33.DisplayMode = DisplayMode.Disabled|| Btn6_34.DisplayMode = DisplayMode.Disabled || Resp6_32.Selected.Value = "r" ||  Resp6_32.Selected.Value = "n",DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
-                Items: |
-                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT6)]
+                Items: |-
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT6, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT6, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT6)]
+                    
+                    
+                        )
+                    )
                 OnSelect: |
                     =If(
                         IsBlank(Resp6_32.Selected),
@@ -809,8 +849,18 @@
                 DisplayMode: =If(Btn7_33.DisplayMode = DisplayMode.Disabled|| Btn7_34.DisplayMode = DisplayMode.Disabled || Resp7_32.Selected.Value = "r" || Resp7_32.Selected.Value = "n",DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
-                Items: |
-                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT7)]
+                Items: |-
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT7, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT7, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT7)]
+                    
+                    
+                        )
+                    )
                 OnSelect: |
                     =If(
                         IsBlank(Resp7_32.Selected),
@@ -835,8 +885,18 @@
                 DisplayMode: =If(Btn8_30.DisplayMode = DisplayMode.Disabled|| Btn8_31.DisplayMode = DisplayMode.Disabled || Resp8_29.Selected.Value = "r" || Resp8_29.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
-                Items: |
-                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT8)]
+                Items: |-
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT8, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT8, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT8)]
+                    
+                    
+                        )
+                    )
                 OnSelect: |
                     =If(
                         IsBlank(Resp8_29.Selected),
@@ -871,8 +931,18 @@
                 DisplayMode: =If(Btn9_25.DisplayMode = DisplayMode.Disabled|| Btn9_26.DisplayMode = DisplayMode.Disabled || Resp9_24.Selected.Value = "r" || Resp9_24.Selected.Value = "n"  ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
-                Items: |
-                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT9)]
+                Items: |-
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT9, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT9, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT9)]
+                    
+                    
+                        )
+                    )
                 OnSelect: |
                     =If(
                         IsBlank(Resp9_24.Selected),
@@ -907,8 +977,18 @@
                 DisplayMode: =If(Btn10_24.DisplayMode = DisplayMode.Disabled|| Btn10_25.DisplayMode = DisplayMode.Disabled || Resp10_23.Selected.Value = "r" || Resp10_23.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
-                Items: |
-                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                Items: |-
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                    
+                    
+                        )
+                    )
                 OnSelect: |
                     =If(
                         IsBlank(Resp10_23.Selected),
