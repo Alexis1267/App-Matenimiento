@@ -1164,7 +1164,7 @@
                         BorderStyle: =BorderStyle.None
                         DisplayMode: |
                             =//Validacion de boton de que debe cumplir y escribir en justificacion
-                            If(IsBlank(TextInput1_207),DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
+                            If(IsBlank(TextInput1_207.Text) || IsBlank(Dropdown4_40.Selected.Value) ,DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
                             
                             
                             //BOTONES
