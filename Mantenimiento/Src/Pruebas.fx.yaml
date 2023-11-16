@@ -605,7 +605,17 @@
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |+
-                    =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1)]
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT1)]
+                    
+                    
+                        )
+                    )
                     
                 OnSelect: |+
                     =If(
@@ -937,9 +947,28 @@
                 FontWeight: =FontWeight.Lighter
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
-                Items: |
+                Items: |+
                     =
-                         [Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2)]
+                         //[Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2)]
+                        // ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2)]
+                    
+                        If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2)]
+                    
+                    
+                        )
+                    )
+                    
+                    
+                     
+                    
+                    
+                    
                 OnSelect: |
                     =If(
                         IsBlank(Resp1_39.Selected),

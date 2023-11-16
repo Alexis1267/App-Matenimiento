@@ -514,6 +514,7 @@ Datos_MP As screen:
                 Separator2 As rectangle:
                     Height: =8
                     OnSelect: =Select(Parent)
+                    Visible: =BTN_VISIBLE = "AGREGAR"
                     Width: =1044.58
                     X: =0.00
                     Y: =Parent.TemplateHeight - Self.Height
@@ -729,6 +730,7 @@ Datos_MP As screen:
             Rectangle3_3 As rectangle:
                 Fill: =RGBA(21, 44, 115, 1)
                 Height: =10
+                Visible: =BTN_VISIBLE = "AGREGAR"
                 Width: =118
                 X: =191
                 Y: =131
@@ -737,6 +739,7 @@ Datos_MP As screen:
             Rectangle3_9 As rectangle:
                 Fill: =RGBA(21, 44, 115, 1)
                 Height: =10
+                Visible: =BTN_VISIBLE = "AGREGAR"
                 Width: =118
                 X: =564
                 Y: =131
@@ -1017,14 +1020,6 @@ Datos_MP As screen:
         X: =1032
         Y: =26
         ZIndex: =45
-
-    Label10 As label:
-        Height: =80
-        Text: =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Tecnicos)
-        Width: =294
-        X: =1072
-        Y: =156
-        ZIndex: =46
 
     Group5_1 As group:
         Height: =5
