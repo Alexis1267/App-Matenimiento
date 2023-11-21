@@ -1,4 +1,7 @@
 Screen1 As screen:
+    OnVisible: |-
+        =Set(BtnPruebaA,false);
+        UpdateContext({BTNPRUEBAA: false})
 
     Dropdown2 As dropdown:
         Items: =[LookUp(PreventivSure_Preg,Folio_Maq=36).ACT1]
@@ -23,4 +26,49 @@ Screen1 As screen:
         X: =84
         Y: =228
         ZIndex: =3
+
+    Button9 As button:
+        DisplayMode: =If(BtnPruebaA,DisplayMode.Disabled,DisplayMode.Edit)
+        OnSelect: =Set(BtnPruebaA,true)
+        Text: ="Button"
+        X: =1065
+        Y: =96
+        ZIndex: =4
+
+    Icon4 As icon.Cancel:
+        Icon: =Icon.Cancel
+        OnSelect: =Set(BtnPruebaA,false)
+        X: =807
+        Y: =84
+        ZIndex: =5
+
+    Label10 As label:
+        Text: ="VAR  ""SET"""
+        X: =925
+        Y: =30
+        ZIndex: =6
+
+    Label10_1 As label:
+        Text: ="VAR  ""UpdateContext"""
+        Width: =212
+        X: =915
+        Y: =188
+        ZIndex: =7
+
+    Button10 As button:
+        DisplayMode: =If(BTNPRUEBAA,DisplayMode.Disabled,DisplayMode.Edit)
+        OnSelect: |-
+            =UpdateContext({BTNPRUEBAA: true})
+        Text: ="Button"
+        X: =1065
+        Y: =268
+        ZIndex: =8
+
+    Icon5 As icon.Cancel:
+        Icon: =Icon.Cancel
+        OnSelect: |-
+            =UpdateContext({BTNPRUEBAA: false})
+        X: =807
+        Y: =268
+        ZIndex: =9
 

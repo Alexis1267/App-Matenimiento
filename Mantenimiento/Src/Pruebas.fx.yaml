@@ -28,6 +28,9 @@
         
         Set(NavegarDespuesDe10Segundos, false);
         
+        //Variable de contexto para desactivar boton de pendiente
+        UpdateContext({btnPendiente:false})
+        
         
         
 
@@ -601,7 +604,7 @@
                 Default: =Coalesce(LookUp(PreventivSure_Preg, id_preventivsure = Id_Preg).ACT1)
                 DisabledBorderColor: =RGBA(219, 219, 219, 1)
                 DisabledFill: =RGBA(255, 255, 255, 1)
-                DisplayMode: =If(Btn1_44.DisplayMode = DisplayMode.Disabled || Btn1_45.DisplayMode || Resp1_39.Selected.Value = "r" || Resp1_39.Selected.Value = "n"  , DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn1_44.DisplayMode = DisplayMode.Disabled || Btn1_45.DisplayMode || Resp1_39.Selected.Value = "r" || Resp1_39.Selected.Value = "n"  , DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |+
@@ -1024,7 +1027,6 @@
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT2)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
                 DisplayMode: =If(Btn2_39.DisplayMode = DisplayMode.Disabled || Btn2_40.DisplayMode = DisplayMode.Disabled || Resp2_37.Selected.Value = "r"||Resp2_37.Selected.Value = "n",DisplayMode.Disabled,DisplayMode.Edit)
-                FontWeight: =FontWeight.Lighter
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |+
@@ -1202,9 +1204,6 @@
                 Height: =50
                 OnSelect: |+
                     =
-                    
-                    
-                    
                     //VALIDACION DE Actividades
                     If(
                         IsBlank(Resp1_39.Selected)|| Btn1_44.Visible = true && Btn1_44.DisplayMode = DisplayMode.Edit  
@@ -1220,7 +1219,7 @@
                         Notify("Es necesario completar todas las actividades.",NotificationType.Error),
                         Notify("El mantenimiento ha concluido con éxito",NotificationType.Success)&&Set(ContadorHH,false)
                     &&Set(ContadorFinal,true) && Set(varPDF2,PDF(Canvas3_3,{Size:"A4",ExpandContainers:true}))
-                     && SaveFileToSharePoint.Run({file:{name:nom_archivo_PDF, contentBytes: varPDF2}})
+                     
                     );
                     
                     
@@ -1232,7 +1231,8 @@
                     //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Com_Matenimiento: "Si"},{Estatus:"Completado"},{Fecha_de_Finalizacion:Now()},{Horas_Hombre:TimerHorasHombre.Text},{Tecnicos:Label12_15.Text})
                     
                     
-                    
+                    //funcion para imprimir pdf
+                    //SaveFileToSharePoint.Run({file:{name:nom_archivo_PDF, contentBytes: varPDF2}})
                     
                     
                     
@@ -1688,6 +1688,7 @@
                 ZIndex: =66
 
             Button1_2 As button:
+                DisplayMode: =If(btnPendiente,DisplayMode.Disabled,DisplayMode.Edit)
                 OnSelect: |+
                     =//Poner el preventivo en estatus PENDIENTE
                     //funciona
@@ -1710,9 +1711,14 @@
                     {ACT10: If(Btn10_24.DisplayMode = DisplayMode.Disabled,"n",If(Btn10_25.DisplayMode = DisplayMode.Disabled,"r",Resp10_23.Selected.Value))
                     });
                     
+                    
+                    
+                    //variable de contexto para boton de pendiente
+                    UpdateContext({btnPendiente:true})
+                    
                 Text: ="Pendiente"
                 X: =1070
-                Y: =2835
+                Y: =2830
                 ZIndex: =67
 
             Btn2_40 As button:
