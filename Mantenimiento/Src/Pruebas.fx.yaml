@@ -168,9 +168,9 @@
             Btn1_45 As button:
                 AutoDisableOnSelect: =
                 BorderThickness: =0
-                DisabledBorderColor: =RGBA(141, 198, 63, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
-                DisabledFill: =RGBA(237, 237, 237, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |+
                     =If(CountIf(BotonesDeshabilitadosR, Boton = 1) > 0 || Resp1_39.Selected.Value = "r" , DisplayMode.Disabled, DisplayMode.Edit)
                     
@@ -599,12 +599,12 @@
                 AllowEmptySelection: =true
                 BorderColor: =RGBA(0, 40, 85, 1)
                 ChevronBackground: =If(Resp1_39.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
-                ChevronDisabledBackground: =RGBA(219, 219, 219, 1)
+                ChevronDisabledBackground: =RGBA(184, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, id_preventivsure = Id_Preg).ACT1)
-                DisabledBorderColor: =RGBA(219, 219, 219, 1)
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledFill: =RGBA(255, 255, 255, 1)
-                DisplayMode: =If(Btn1_44.DisplayMode = DisplayMode.Disabled || Btn1_45.DisplayMode || Resp1_39.Selected.Value = "r" || Resp1_39.Selected.Value = "n"  , DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn1_44.DisplayMode = DisplayMode.Disabled || Btn1_45.DisplayMode = DisplayMode.Disabled || Resp1_39.Selected.Value = "r" || Resp1_39.Selected.Value = "n"  , DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |+
@@ -1205,7 +1205,7 @@
                 OnSelect: |+
                     =
                     //VALIDACION DE Actividades
-                    If(
+                    /*If(
                         IsBlank(Resp1_39.Selected)|| Btn1_44.Visible = true && Btn1_44.DisplayMode = DisplayMode.Edit  
                         || IsBlank(Resp2_37.Selected)|| Btn2_39.Visible = true && Btn2_39.DisplayMode = DisplayMode.Edit 
                         || IsBlank(Resp3_34.Selected)|| Btn3_35.Visible = true && Btn3_35.DisplayMode = DisplayMode.Edit 
@@ -1218,9 +1218,50 @@
                         || IsBlank(Resp10_23.Selected)|| Btn10_24.Visible = true && Btn10_24.DisplayMode = DisplayMode.Edit, 
                         Notify("Es necesario completar todas las actividades.",NotificationType.Error),
                         Notify("El mantenimiento ha concluido con éxito",NotificationType.Success)&&Set(ContadorHH,false)
-                    &&Set(ContadorFinal,true) && Set(varPDF2,PDF(Canvas3_3,{Size:"A4",ExpandContainers:true}))
+                    &&Set(ContadorFinal,true)
+                    
                      
                     );
+                    */
+                    
+                    If(
+                        IsBlank(Resp1_39.Selected) || Btn1_44.Visible = true && Btn1_44.DisplayMode = DisplayMode.Edit  
+                        || IsBlank(Resp2_37.Selected) || Btn2_39.Visible = true && Btn2_39.DisplayMode = DisplayMode.Edit 
+                        || IsBlank(Resp3_34.Selected) || Btn3_35.Visible = true && Btn3_35.DisplayMode = DisplayMode.Edit 
+                        || IsBlank(Resp4_34.Selected) || Btn4_35.Visible = true && Btn4_35.DisplayMode = DisplayMode.Edit  
+                        || IsBlank(Resp5_34.Selected) || Btn5_35.Visible = true && Btn5_35.DisplayMode = DisplayMode.Edit  
+                        || IsBlank(Resp6_32.Selected) || Btn6_33.Visible = true && Btn6_33.DisplayMode = DisplayMode.Edit  
+                        || IsBlank(Resp7_32.Selected) || Btn7_33.Visible = true && Btn7_33.DisplayMode = DisplayMode.Edit  
+                        || IsBlank(Resp8_29.Selected) || Btn8_30.Visible = true && Btn8_30.DisplayMode = DisplayMode.Edit 
+                        || IsBlank(Resp9_24.Selected) || Btn9_25.Visible = true && Btn9_25.DisplayMode = DisplayMode.Edit 
+                        || IsBlank(Resp10_23.Selected) || Btn10_24.Visible = true && Btn10_24.DisplayMode = DisplayMode.Edit, 
+                        Notify("Es necesario completar todas las actividades.", NotificationType.Error),
+                        Patch(
+                            CMXE_MP_N,
+                            { Folio_Maq: ID_Maquina },
+                            { Com_Matenimiento: "Si" },
+                            { Estatus: "Completado" },
+                            { Fecha_de_Finalizacion: Now() },
+                            { Horas_Hombre: TimerHorasHombre.Text },
+                            { Tecnicos: Label12_15.Text }
+                        );
+                        Notify("El mantenimiento ha concluido con éxito", NotificationType.Success);
+                        Set(ContadorHH, false);
+                        Set(ContadorFinal, true);
+                        Patch(PreventivSure_Preg,{id_preventivsure:Id_Preg},
+                    {TempoHH:TimerHorasHombre.Text},
+                    {ACT1: If(Btn1_44.DisplayMode = DisplayMode.Disabled,"n",If(Btn1_45.DisplayMode = DisplayMode.Disabled,"r",Resp1_39.Selected.Value))},
+                    {ACT2: If(Btn2_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn2_40.DisplayMode = DisplayMode.Disabled,"r",Resp2_37.Selected.Value))},
+                    {ACT3: If(Btn3_35.DisplayMode = DisplayMode.Disabled,"n",If(Btn3_36.DisplayMode = DisplayMode.Disabled,"r",Resp3_34.Selected.Value))},
+                    {ACT4: If(Btn4_35.DisplayMode = DisplayMode.Disabled,"n",If(Btn4_36.DisplayMode = DisplayMode.Disabled,"r",Resp4_34.Selected.Value))},
+                    {ACT5: If(Btn5_35.DisplayMode = DisplayMode.Disabled,"n",If(Btn5_36.DisplayMode = DisplayMode.Disabled,"r",Resp5_34.Selected.Value))},
+                    {ACT6: If(Btn6_33.DisplayMode = DisplayMode.Disabled,"n",If(Btn6_34.DisplayMode = DisplayMode.Disabled,"r",Resp6_32.Selected.Value))},
+                    {ACT7: If(Btn7_33.DisplayMode = DisplayMode.Disabled,"n",If(Btn7_34.DisplayMode = DisplayMode.Disabled,"r",Resp7_32.Selected.Value))},
+                    {ACT8: If(Btn8_30.DisplayMode = DisplayMode.Disabled,"n",If(Btn8_31.DisplayMode = DisplayMode.Disabled,"r",Resp8_29.Selected.Value))},
+                    {ACT9: If(Btn9_25.DisplayMode = DisplayMode.Disabled,"n",If(Btn9_26.DisplayMode = DisplayMode.Disabled,"r",Resp9_24.Selected.Value))},
+                    {ACT10: If(Btn10_24.DisplayMode = DisplayMode.Disabled,"n",If(Btn10_25.DisplayMode = DisplayMode.Disabled,"r",Resp10_23.Selected.Value))
+                    });
+                    )
                     
                     
                     
@@ -1232,6 +1273,7 @@
                     
                     
                     //funcion para imprimir pdf
+                    //Set(varPDF2,PDF(Canvas3_3,{Size:"A4",ExpandContainers:true})
                     //SaveFileToSharePoint.Run({file:{name:nom_archivo_PDF, contentBytes: varPDF2}})
                     
                     
