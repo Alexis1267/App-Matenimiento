@@ -1762,6 +1762,8 @@
                     {ACT10: If(Btn10_24.DisplayMode = DisplayMode.Disabled,"n",If(Btn10_25.DisplayMode = DisplayMode.Disabled,"r",Resp10_23.Selected.Value))
                     });
                     
+                    Set(ContadorFinal, true);
+                    
                     
                     
                     //variable de contexto para boton de pendiente
