@@ -59,18 +59,18 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =2919
+            Height: =3023
             Width: =1366
             X: =0
             Y: =0
             ZIndex: =1
 
             Image54_2 As image:
-                Height: =200
+                Height: =271
                 Image: ='HID-IMG7'
-                Width: =360
-                X: =908
-                Y: =1359
+                Width: =444
+                X: =866
+                Y: =1325
                 ZIndex: =1
 
             Btn3_36 As button:
@@ -135,34 +135,34 @@
                 ZIndex: =3
 
             Image46_2 As image:
-                Height: =200
+                Height: =232
                 Image: ='HID-IMG5'
-                Width: =360
-                Y: =710
+                Width: =435
+                Y: =693
                 ZIndex: =4
 
             Image48_2 As image:
-                Height: =200
+                Height: =232
                 Image: ='HID-IMG2'
-                Width: =370
-                X: =498
-                Y: =711
+                Width: =435
+                X: =465
+                Y: =693
                 ZIndex: =5
 
             Image51_2 As image:
-                Height: =200
+                Height: =232
                 Image: ='HID-IMG6'
-                Width: =370
-                X: =996
-                Y: =711
+                Width: =435
+                X: =908
+                Y: =693
                 ZIndex: =6
 
             Image53_2 As image:
-                Height: =200
+                Height: =271
                 Image: ='HID-IMG3'
-                Width: =360
-                X: =908
-                Y: =1036
+                Width: =444
+                X: =866
+                Y: =990
                 ZIndex: =7
 
             Btn1_45 As button:
@@ -206,11 +206,11 @@
                 ZIndex: =8
 
             Image32_2 As image:
-                Height: =200
+                Height: =271
                 Image: ='HID-IMG1'
-                Width: =360
-                X: =908
-                Y: =79
+                Width: =444
+                X: =866
+                Y: =47
                 ZIndex: =9
 
             Preg1_365 As label:
@@ -300,7 +300,8 @@
                 Size: =11
                 Text: ="I."
                 Width: =33
-                Y: =2367
+                X: =1
+                Y: =2466
                 ZIndex: =18
 
             Preg1_375 As label:
@@ -310,7 +311,8 @@
                 Size: =11
                 Text: ="J."
                 Width: =33
-                Y: =2572
+                X: =1
+                Y: =2662
                 ZIndex: =19
 
             Btn3_35 As button:
@@ -508,7 +510,7 @@
                 Visible: =If(Resp9_24.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
-                Y: =2435
+                Y: =2525
                 ZIndex: =26
 
             Btn10_24 As button:
@@ -536,7 +538,7 @@
                 Visible: =If(Resp10_23.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
-                Y: =2630
+                Y: =2720
                 ZIndex: =27
 
             Rectangle2_763 As rectangle:
@@ -781,7 +783,7 @@
                 PaddingRight: =6.37
                 PaddingTop: =6.37
                 Text: ="Revisar y registrar la presión del tanque de nitrógeno, en caso de que no estén entre 1600 y 1750 PSI. En caso de presentar menos presión proceder a rellenarlo con el equipo apropiado."
-                Width: =1081
+                Width: =833
                 X: =101
                 Y: =1296
                 ZIndex: =41
@@ -957,7 +959,7 @@
                 Size: =16.58
                 Width: =67
                 X: =30
-                Y: =2386
+                Y: =2476
                 ZIndex: =48
 
             Preg9_24 As label:
@@ -967,7 +969,7 @@
                 Text: ="Realizar limpieza o en su defecto cambio en filtro en puertas de gabinete."
                 Width: =1081
                 X: =101
-                Y: =2374
+                Y: =2464
                 ZIndex: =49
 
             Resp10_23 As dropdown:
@@ -1003,7 +1005,7 @@
                 Size: =16.58
                 Width: =67
                 X: =30
-                Y: =2578
+                Y: =2668
                 ZIndex: =50
 
             Preg10_23 As label:
@@ -1013,7 +1015,7 @@
                 Text: ="Asegurar funcionamiento de intercambiador, así como limpieza de este."
                 Width: =1081
                 X: =101
-                Y: =2566
+                Y: =2656
                 ZIndex: =51
 
             Resp2_37 As dropdown:
@@ -1181,21 +1183,21 @@
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
-                Y: =2366
+                Y: =2456
                 ZIndex: =61
 
             Rectangle1_35 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
-                Y: =2558
+                Y: =2648
                 ZIndex: =62
 
             Rectangle1_36 As rectangle:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =1
                 Width: =1366
-                Y: =2745
+                Y: =2835
                 ZIndex: =63
 
             Button3_20 As button:
@@ -1284,7 +1286,7 @@
                 Text: ="Finalizar Preventivo"
                 Width: =336
                 X: =435
-                Y: =2825
+                Y: =2880
                 ZIndex: =64
 
             Container1_42 As groupContainer.manualLayoutContainer:
@@ -1726,7 +1728,7 @@
             Label5_3 As label:
                 Text: =TimerHorasHombre.Text
                 X: =848
-                Y: =2835
+                Y: =2890
                 ZIndex: =66
 
             Button1_2 As button:
@@ -1760,7 +1762,7 @@
                     
                 Text: ="Pendiente"
                 X: =1070
-                Y: =2830
+                Y: =2885
                 ZIndex: =67
 
             Btn2_40 As button:
@@ -1879,11 +1881,11 @@
                 ZIndex: =71
 
             Image55_2 As image:
-                Height: =200
+                Height: =271
                 Image: ='HID-IMG8'
-                Width: =360
-                X: =908
-                Y: =1852
+                Width: =444
+                X: =866
+                Y: =1815
                 ZIndex: =72
 
             Btn8_31 As button:
@@ -1914,11 +1916,11 @@
                 ZIndex: =73
 
             Image56_2 As image:
-                Height: =200
+                Height: =271
                 Image: ='HID-IMG4'
-                Width: =360
-                X: =908
-                Y: =2154
+                Width: =444
+                X: =866
+                Y: =2160
                 ZIndex: =74
 
             Btn9_26 As button:
@@ -1945,7 +1947,7 @@
                 Visible: =If(Resp9_24.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
-                Y: =2480
+                Y: =2570
                 ZIndex: =75
 
             Btn10_25 As button:
@@ -1973,7 +1975,7 @@
                 Visible: =If(Resp10_23.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
-                Y: =2673
+                Y: =2763
                 ZIndex: =76
 
     Label9_440 As label:
