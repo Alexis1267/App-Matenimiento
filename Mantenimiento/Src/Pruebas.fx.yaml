@@ -29,7 +29,11 @@
         Set(NavegarDespuesDe10Segundos, false);
         
         //Variable de contexto para desactivar boton de pendiente
-        UpdateContext({btnPendiente:false})
+        UpdateContext({btnPendiente:false});
+        
+        //Nombres limpios del text
+        
+        
         
         
         
@@ -1695,7 +1699,10 @@
                         Default: =Operador
                         Items: |+
                             = 
-                             Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10))
+                             //Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10) & Char(10) & Label12_15.Text)
+                             Split(Label12_15.Text, Char(10))
+                            
+                             
                             
                             //Concatenate(DropdownAsig,DropdownInvolu)
                             
