@@ -6,7 +6,7 @@
         Set(Dato_ClassMtto,Label8.Text);
         Set(Dato_Proc_No,Label8_9.Text);
         Set(Dato_Semana,Label8_5.Text);
-        Set(Dato_Proc_No_class,Label6_1.Text);
+        Set(Dato_Proc_No_class,PruebaNomencla.Text);
         
         
         //Parte para poner en el dropdown del modalpop de reporte de hallazgo
@@ -1734,6 +1734,7 @@
 
             Label5_3 As label:
                 Text: =TimerHorasHombre.Text
+                Visible: =false
                 X: =908
                 Y: =2930
                 ZIndex: =66
@@ -1745,7 +1746,7 @@
                     =//Poner el preventivo en estatus PENDIENTE
                     //funciona
                     //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"});
-                    Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"},{Tecnicos:Label12_15.Text});
+                    Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"Pendiente"},{Tecnicos:Label12_15.Text},{ Horas_Hombre: TimerHorasHombre.Text });
                     
                     
                     //Ingresar las respuestas del preventivo cuando se quede pendiente el preventivo
@@ -2048,6 +2049,7 @@
         Duration: =15000
         OnTimerEnd: =Navigate(Lista_MP)
         Start: =ContadorFinal
+        Visible: =false
         X: =141
         Y: =23
         ZIndex: =7
@@ -2056,6 +2058,7 @@
         Color: =RGBA(255, 0, 0, 1)
         FontWeight: =FontWeight.Bold
         Text: ="PRUEBAS"
+        Visible: =false
         X: =1030
         Y: =23
         ZIndex: =8
@@ -2064,6 +2067,7 @@
         Color: =RGBA(255, 0, 0, 1)
         FontWeight: =FontWeight.Bold
         Text: =Text(Id_Preg)
+        Visible: =false
         X: =1162
         Y: =48
         ZIndex: =9

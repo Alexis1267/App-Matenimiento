@@ -44,6 +44,7 @@ Datos_MP As screen:
         OnTimerEnd: =ContadorHH
         OnTimerStart: =true
         Start: =ContadorHH
+        Visible: =false
         X: =1166
         Y: =26
         ZIndex: =2
@@ -94,19 +95,19 @@ Datos_MP As screen:
             
             //VALIDACION DE CAMPO INVOLUCRADOS
             If(IsBlank(Label12_15.Text),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
-            If(Label6_1.Text = "MEPS-04-CPE",Navigate('MEPS-04-CPE(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-DKE",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-DKS",Navigate('MEPS-04-DKS(ImgEjem1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-CPS",Navigate('MEPS-04-CPS(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-GX1",Navigate('MEPS-04-GX1(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-BTT",Navigate('MEPS-04-BTT(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-ELE",Navigate('MEPS-04-ELE(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-HID",Navigate(Pruebas,ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-LUB",Navigate('MEPS-04-LUB(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-GX2",Navigate('MEPS-04-GX2(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-MEC",Navigate('MEPS-04-MEC(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-BV3",Navigate('MEPS-04-BV3(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-BV2",Navigate('MEPS-04-BV2(Preg1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error)))))))))))))));
+            If(PruebaNomencla.Text = "MEPS-04-CPE",Navigate('MEPS-04-CPE(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-DKE",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-DKS",Navigate('MEPS-04-DKS(ImgEjem1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-CPS",Navigate('MEPS-04-CPS(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-GX1",Navigate('MEPS-04-GX1(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-BTT",Navigate('MEPS-04-BTT(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-ELE",Navigate('MEPS-04-ELE(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-HID",Navigate(Pruebas,ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-LUB",Navigate('MEPS-04-LUB(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-GX2",Navigate('MEPS-04-GX2(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-MEC",Navigate('MEPS-04-MEC(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-BV3",Navigate('MEPS-04-BV3(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-BV2",Navigate('MEPS-04-BV2(Preg1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error)))))))))))))));
             
             
             
@@ -398,7 +399,7 @@ Datos_MP As screen:
             Y: =277
             ZIndex: =30
 
-    Label6_1 As label:
+    PruebaNomencla As label:
         Color: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
         Height: =47
@@ -416,6 +417,7 @@ Datos_MP As screen:
                     Find("-", CadenaCompleta)
                 ) - 1
             ) )
+        Visible: =false
         Width: =263
         X: =1103
         Y: =96

@@ -34,19 +34,19 @@
         Height: =86
         Icon: =Icon.BackArrow
         OnSelect: |-
-            =If(Label6_1.Text = "MEPS-04-CPE",Navigate('MEPS-04-CPE(Preg4)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-DKE",Navigate('MEPS-04-DKE(Preg3)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-DKS",Navigate('MEPS-04-DKS(Preg4)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-CPS",Navigate('MEPS-04-CPS(Preg4)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-GX1",Navigate('MEPS-04-GX1(Preg2)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-BTT",Navigate('MEPS-04-BTT(Preg3)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-ELE",Navigate('MEPS-04-ELE(Preg3)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-HID",Navigate('MEPS-04-HID(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-LUB",Navigate('MEPS-04-LUB(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-GX2",Navigate('MEPS-04-GX2(Preg2)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-MEC",Navigate('MEPS-04-MEC(Preg2)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-BV3",Navigate('MEPS-04-BV3(Preg1)',ScreenTransition.Cover),
-            If(Label6_1.Text = "MEPS-04-BV2",Navigate('MEPS-04-BV2(Preg1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error))))))))))))));
+            =If(PruebaNomencla.Text = "MEPS-04-CPE",Navigate('MEPS-04-CPE(Preg4)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-DKE",Navigate('MEPS-04-DKE(Preg3)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-DKS",Navigate('MEPS-04-DKS(Preg4)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-CPS",Navigate('MEPS-04-CPS(Preg4)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-GX1",Navigate('MEPS-04-GX1(Preg2)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-BTT",Navigate('MEPS-04-BTT(Preg3)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-ELE",Navigate('MEPS-04-ELE(Preg3)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-HID",Navigate('MEPS-04-HID(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-LUB",Navigate('MEPS-04-LUB(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-GX2",Navigate('MEPS-04-GX2(Preg2)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-MEC",Navigate('MEPS-04-MEC(Preg2)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-BV3",Navigate('MEPS-04-BV3(Preg1)',ScreenTransition.Cover),
+            If(PruebaNomencla.Text = "MEPS-04-BV2",Navigate('MEPS-04-BV2(Preg1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error))))))))))))));
         PaddingRight: =0.00
         PaddingTop: =0.00
         Width: =147.95

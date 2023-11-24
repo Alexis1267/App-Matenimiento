@@ -293,12 +293,15 @@ Lista_MP As screen:
             Text: |-
                 ="ID:"
             VerticalAlign: =VerticalAlign.Top
+            Visible: =false
             Width: =58.66
             X: =1145.34
             Y: =9
             ZIndex: =17
 
         Title3_5 As label:
+            Color: =RGBA(0, 0, 0, 0)
+            DisplayMode: =DisplayMode.View
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =24
             OnSelect: =Select(Parent)
@@ -443,11 +446,12 @@ Lista_MP As screen:
             =
             //Esta variable almacena el valor del código QR que ha sido escaneado.
             
-            //Maquina_QR
+            Maquina_QR
             
             
             
-            "MEPS-04"
+            //"MEPS-04"
+        Visible: =false
         Width: =191.32
         X: =1120
         Y: =6
