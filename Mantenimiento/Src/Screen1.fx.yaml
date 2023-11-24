@@ -72,3 +72,14 @@ Screen1 As screen:
         Y: =268
         ZIndex: =9
 
+    Timer1 As timer:
+        X: =144
+        Y: =369
+        ZIndex: =10
+
+    Label14 As label:
+        Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH)
+        X: =661
+        Y: =525
+        ZIndex: =11
+
