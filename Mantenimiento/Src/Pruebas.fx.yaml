@@ -63,7 +63,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =3023
+            Height: =3015
             Width: =1366
             X: =0
             Y: =0
@@ -1207,7 +1207,7 @@
             Button3_20 As button:
                 DisplayMode: =
                 Fill: =RGBA(97, 181, 73, 1)
-                Height: =50
+                Height: =94
                 OnSelect: |+
                     =
                     //VALIDACION DE Actividades
@@ -1289,8 +1289,8 @@
                 Size: =20
                 Text: ="Finalizar Preventivo"
                 Width: =336
-                X: =435
-                Y: =2880
+                X: =514
+                Y: =2876
                 ZIndex: =64
 
             Container1_42 As groupContainer.manualLayoutContainer:
@@ -1734,12 +1734,13 @@
 
             Label5_3 As label:
                 Text: =TimerHorasHombre.Text
-                X: =848
-                Y: =2890
+                X: =908
+                Y: =2930
                 ZIndex: =66
 
             Button1_2 As button:
                 DisplayMode: =If(btnPendiente,DisplayMode.Disabled,DisplayMode.Edit)
+                Fill: =RGBA(233, 165, 43, 1)
                 OnSelect: |+
                     =//Poner el preventivo en estatus PENDIENTE
                     //funciona
@@ -1770,8 +1771,8 @@
                     UpdateContext({btnPendiente:true})
                     
                 Text: ="Pendiente"
-                X: =1070
-                Y: =2885
+                X: =1101
+                Y: =2876
                 ZIndex: =67
 
             Btn2_40 As button:
@@ -1986,6 +1987,15 @@
                 X: =23
                 Y: =2763
                 ZIndex: =76
+
+            Label13 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Text: ="Dejar el Mantenimiento Preventivo en espera."
+                Width: =234
+                X: =1064
+                Y: =2930
+                ZIndex: =77
 
     Label9_440 As label:
         Align: =Align.Center
