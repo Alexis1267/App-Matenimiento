@@ -1765,7 +1765,7 @@
                     
                     Set(ContadorFinal, true);
                     Set(ContadorHH, false);
-                    
+                    Clear(Add_Involucrado);
                     
                     //variable de contexto para boton de pendiente
                     UpdateContext({btnPendiente:true})
@@ -2046,7 +2046,7 @@
         AutoPause: =false
         AutoStart: =ContadorFinal
         Duration: =15000
-        OnTimerEnd: =Navigate(QR_Inicio)
+        OnTimerEnd: =Navigate(Lista_MP)
         Start: =ContadorFinal
         X: =141
         Y: =23
