@@ -1737,8 +1737,10 @@
                         ZIndex: =22
 
             TempoHH_Contador As label:
+                Align: =Align.Center
                 Text: =TimerHorasHombre.Text
-                X: =196
+                Width: =113
+                X: =203
                 Y: =2956
                 ZIndex: =66
 
@@ -2026,8 +2028,8 @@
 
             TempoHH_BD As label:
                 Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH)
-                X: =30
-                Y: =2956
+                X: =23
+                Y: =2849
                 ZIndex: =78
 
             Label20 As label:
@@ -2057,6 +2059,13 @@
                 X: =332
                 Y: =2956
                 ZIndex: =82
+
+            Label18 As label:
+                Text: |-
+                    =Text(TimeValue(TempoHH_BD.Text),"hh:mm:ss")
+                X: =23
+                Y: =2956
+                ZIndex: =83
 
     Label9_440 As label:
         Align: =Align.Center
