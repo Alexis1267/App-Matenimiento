@@ -1,5 +1,5 @@
 Screen1 As screen:
-    OnVisible: |
+    OnVisible: |-
         =Set(BtnPruebaA,false);
         UpdateContext({BTNPRUEBAA: false});
         
@@ -10,6 +10,14 @@ Screen1 As screen:
         Set(Horas, Hour(Value(LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH))));
         Set(Minutos, Minute(Value(LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH))));
         Set(Segundos, Second(Value(LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH))));
+        
+        
+        //TEMPORIZADOR SUMA 
+        
+        Set(Tempo1,TimeValue(Label14));
+        Set(Tempo2,TimeValue(Label15));
+        
+        Set(SumaTempo,Tempo1 + Tempo2);
 
     Dropdown2 As dropdown:
         Items: =[LookUp(PreventivSure_Preg,Folio_Maq=36).ACT1]
@@ -85,8 +93,8 @@ Screen1 As screen:
         Height: =48
         Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH)
         Width: =182
-        X: =559
-        Y: =467
+        X: =450
+        Y: =553
         ZIndex: =11
 
     Timer6 As timer:
@@ -98,4 +106,47 @@ Screen1 As screen:
         X: =168
         Y: =395
         ZIndex: =12
+
+    Label15 As label:
+        Text: |-
+            ="00:10:10"
+        X: =703
+        Y: =561
+        ZIndex: =13
+
+    Label14_1 As label:
+        Align: =Align.Center
+        Height: =48
+        Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH)
+        Width: =182
+        X: =960
+        Y: =483
+        ZIndex: =14
+
+    Label16 As label:
+        Height: =60
+        Text: |-
+            =Text(SumaTempo,"hh:mm:ss")
+        Width: =164
+        X: =581
+        Y: =651
+        ZIndex: =16
+
+    Label17 As label:
+        Text: ="Tempo1"
+        X: =482
+        Y: =517
+        ZIndex: =17
+
+    Label17_1 As label:
+        Text: ="Tempo2"
+        X: =698
+        Y: =517
+        ZIndex: =18
+
+    Label17_2 As label:
+        Text: ="Suma de ambos"
+        X: =569
+        Y: =611
+        ZIndex: =19
 

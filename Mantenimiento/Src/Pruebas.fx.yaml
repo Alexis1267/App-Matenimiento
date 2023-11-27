@@ -1732,11 +1732,10 @@
                         Y: =105
                         ZIndex: =22
 
-            Label5_3 As label:
+            TempoHH_Contador As label:
                 Text: =TimerHorasHombre.Text
-                Visible: =false
-                X: =908
-                Y: =2930
+                X: =196
+                Y: =2956
                 ZIndex: =66
 
             Button1_2 As button:
@@ -1997,6 +1996,39 @@
                 X: =1064
                 Y: =2930
                 ZIndex: =77
+
+            TempoHH_BD As label:
+                Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH)
+                X: =30
+                Y: =2956
+                ZIndex: =78
+
+            Label20 As label:
+                Height: =53
+                Text: ="Tiempo que traigo de BD"
+                X: =23
+                Y: =2903
+                ZIndex: =79
+
+            Label20_1 As label:
+                Height: =53
+                Text: ="Tiempo del contador"
+                X: =206
+                Y: =2903
+                ZIndex: =80
+
+            Label20_2 As label:
+                Height: =53
+                Text: ="Suma de ambos tiempo"
+                X: =346
+                Y: =2903
+                ZIndex: =81
+
+            TempoHH_Total As label:
+                Text: =TimerHorasHombre.Text
+                X: =332
+                Y: =2956
+                ZIndex: =82
 
     Label9_440 As label:
         Align: =Align.Center
