@@ -90,17 +90,18 @@ Screen1 As screen:
 
     Label14 As label:
         Align: =Align.Center
+        BorderThickness: =1
         Height: =48
         Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH)
         Width: =182
-        X: =450
-        Y: =553
+        X: =399
+        Y: =400
         ZIndex: =11
 
     Timer6 As timer:
         AutoPause: =false
         AutoStart: =true
-        Start: =true
+        Start: =Second(1)
         Text: |-
             =Text(TimeValue(Label14.Text), "hh:mm:ss")
         X: =168
@@ -108,6 +109,7 @@ Screen1 As screen:
         ZIndex: =12
 
     Label15 As label:
+        FocusedBorderThickness: =1
         Text: |-
             ="00:10:10"
         X: =703
@@ -149,4 +151,20 @@ Screen1 As screen:
         X: =569
         Y: =611
         ZIndex: =19
+
+    Label19 As label:
+        BorderThickness: =1
+        Text: =Text(Label14.Text)
+        X: =440
+        Y: =561
+        ZIndex: =20
+
+    Timer1 As timer:
+        Height: =62
+        Text: |-
+            =Text(Time(0, 0, Self.Value/1000) + TimeValue(Label19.Text) , "hh:mm:ss")
+        Width: =209
+        X: =871
+        Y: =606
+        ZIndex: =21
 
