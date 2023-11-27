@@ -94,7 +94,7 @@ Datos_MP As screen:
             =Set(ContadorHH,true);
             
             //VALIDACION DE CAMPO INVOLUCRADOS
-            If(IsBlank(Label12_15.Text),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
+            If(IsBlank(Trim(Label12_15.Text)),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
             If(PruebaNomencla.Text = "MEPS-04-CPE",Navigate('MEPS-04-CPE(Preg1)',ScreenTransition.Cover),
             If(PruebaNomencla.Text = "MEPS-04-DKE",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
             If(PruebaNomencla.Text = "MEPS-04-DKS",Navigate('MEPS-04-DKS(ImgEjem1)',ScreenTransition.Cover),
@@ -921,7 +921,7 @@ Datos_MP As screen:
             Size: =16.58
             Text: |
                 =//Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
-                Text(Concat(Add_Involucrado,"- "&Nombre,Char(10))) & Char(10) & LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos)
+                Text(Trim(Concat(Add_Involucrado,"- "&Nombre,Char(10))) & Char(10) & LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos))
             Width: =371
             X: =976
             Y: =523
