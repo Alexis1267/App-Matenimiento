@@ -1784,7 +1784,7 @@
                     
                     
                     Patch(PreventivSure_Preg,{id_preventivsure:Id_Preg},
-                    {TempoHH:},
+                    {TempoHH:If(IsBlank(TempoHH_Total.Text),TimerHorasHombre.Text,SumaTemporizadores)},
                     {ACT1: If(Btn1_44.DisplayMode = DisplayMode.Disabled,"n",If(Btn1_45.DisplayMode = DisplayMode.Disabled,"r",Resp1_39.Selected.Value))},
                     {ACT2: If(Btn2_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn2_40.DisplayMode = DisplayMode.Disabled,"r",Resp2_37.Selected.Value))},
                     {ACT3: If(Btn3_35.DisplayMode = DisplayMode.Disabled,"n",If(Btn3_36.DisplayMode = DisplayMode.Disabled,"r",Resp3_34.Selected.Value))},
