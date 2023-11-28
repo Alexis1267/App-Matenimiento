@@ -1750,7 +1750,11 @@
                     =//Poner el preventivo en estatus PENDIENTE
                     //funciona
                     //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"PENDIENTE"});
-                    //Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"Pendiente"},{Tecnicos:Label12_15.Text},{ Horas_Hombre: TimerHorasHombre.Text });
+                    
+                    
+                    
+                    //Actualizacion de la tabla MP
+                    Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"Pendiente"},{Tecnicos:Label12_15.Text},{ Horas_Hombre: TimerHorasHombre.Text });
                     
                     
                     //Ingresar las respuestas del preventivo cuando se quede pendiente el preventivo
@@ -2012,12 +2016,6 @@
                 X: =1064
                 Y: =2930
                 ZIndex: =77
-
-            TempoHH_BD As label:
-                Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH)
-                X: =23
-                Y: =2849
-                ZIndex: =78
 
     Label9_440 As label:
         Align: =Align.Center
