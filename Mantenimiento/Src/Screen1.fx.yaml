@@ -168,3 +168,10 @@ Screen1 As screen:
         Y: =606
         ZIndex: =21
 
+    Timer2 As timer:
+        Text: |-
+            =Text(Time(0, 0, Self.Value/1000) + TimeValue(Label14.Text),"hh:mm:ss")
+        X: =134
+        Y: =601
+        ZIndex: =22
+

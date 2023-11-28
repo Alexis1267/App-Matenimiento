@@ -1754,7 +1754,7 @@
                     
                     
                     //Ingresar las respuestas del preventivo cuando se quede pendiente el preventivo
-                    /*Patch(PreventivSure_Preg,{id_preventivsure:Id_Preg},
+                    Patch(PreventivSure_Preg,{id_preventivsure:Id_Preg},
                     {TempoHH:TimerHorasHombre.Text},
                     {ACT1: If(Btn1_44.DisplayMode = DisplayMode.Disabled,"n",If(Btn1_45.DisplayMode = DisplayMode.Disabled,"r",Resp1_39.Selected.Value))},
                     {ACT2: If(Btn2_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn2_40.DisplayMode = DisplayMode.Disabled,"r",Resp2_37.Selected.Value))},
@@ -1766,7 +1766,7 @@
                     {ACT8: If(Btn8_30.DisplayMode = DisplayMode.Disabled,"n",If(Btn8_31.DisplayMode = DisplayMode.Disabled,"r",Resp8_29.Selected.Value))},
                     {ACT9: If(Btn9_25.DisplayMode = DisplayMode.Disabled,"n",If(Btn9_26.DisplayMode = DisplayMode.Disabled,"r",Resp9_24.Selected.Value))},
                     {ACT10: If(Btn10_24.DisplayMode = DisplayMode.Disabled,"n",If(Btn10_25.DisplayMode = DisplayMode.Disabled,"r",Resp10_23.Selected.Value))
-                    });*/
+                    });
                     
                     Set(ContadorFinal, true);
                     Set(ContadorHH, false);
@@ -1784,19 +1784,7 @@
                     
                     
                     
-                    Patch(PreventivSure_Preg,{id_preventivsure:Id_Preg},
-                    {TempoHH:},
-                    {ACT1: If(Btn1_44.DisplayMode = DisplayMode.Disabled,"n",If(Btn1_45.DisplayMode = DisplayMode.Disabled,"r",Resp1_39.Selected.Value))},
-                    {ACT2: If(Btn2_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn2_40.DisplayMode = DisplayMode.Disabled,"r",Resp2_37.Selected.Value))},
-                    {ACT3: If(Btn3_35.DisplayMode = DisplayMode.Disabled,"n",If(Btn3_36.DisplayMode = DisplayMode.Disabled,"r",Resp3_34.Selected.Value))},
-                    {ACT4: If(Btn4_35.DisplayMode = DisplayMode.Disabled,"n",If(Btn4_36.DisplayMode = DisplayMode.Disabled,"r",Resp4_34.Selected.Value))},
-                    {ACT5: If(Btn5_35.DisplayMode = DisplayMode.Disabled,"n",If(Btn5_36.DisplayMode = DisplayMode.Disabled,"r",Resp5_34.Selected.Value))},
-                    {ACT6: If(Btn6_33.DisplayMode = DisplayMode.Disabled,"n",If(Btn6_34.DisplayMode = DisplayMode.Disabled,"r",Resp6_32.Selected.Value))},
-                    {ACT7: If(Btn7_33.DisplayMode = DisplayMode.Disabled,"n",If(Btn7_34.DisplayMode = DisplayMode.Disabled,"r",Resp7_32.Selected.Value))},
-                    {ACT8: If(Btn8_30.DisplayMode = DisplayMode.Disabled,"n",If(Btn8_31.DisplayMode = DisplayMode.Disabled,"r",Resp8_29.Selected.Value))},
-                    {ACT9: If(Btn9_25.DisplayMode = DisplayMode.Disabled,"n",If(Btn9_26.DisplayMode = DisplayMode.Disabled,"r",Resp9_24.Selected.Value))},
-                    {ACT10: If(Btn10_24.DisplayMode = DisplayMode.Disabled,"n",If(Btn10_25.DisplayMode = DisplayMode.Disabled,"r",Resp10_23.Selected.Value))
-                    });
+                    
                     
                 Text: ="Pendiente"
                 X: =1101
