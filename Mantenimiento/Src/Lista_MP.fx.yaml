@@ -13,7 +13,7 @@ Lista_MP As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Height: =598
-        Items: |
+        Items: |+
             =//"Mostrar todos los MP en estado 'En proceso' si ambos campos están en blanco."
             
             If
@@ -48,6 +48,11 @@ Lista_MP As screen:
                     )
                 )
             )
+            
+            
+            
+            
+            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =
@@ -485,8 +490,8 @@ Lista_MP As screen:
                 
                 Distinct(Filter(CMXE_MP_N,Nom_Equipo = DropdownNom_equi.Selected.Value),Clas_Mantenimineto)
             Width: =242
-            X: =913
-            Y: =121
+            X: =621
+            Y: =126
             ZIndex: =6
 
         Label11_13 As label:
@@ -495,43 +500,9 @@ Lista_MP As screen:
             Text: |-
                 ="Clase de Mtto:"
             Width: =242
-            X: =913
-            Y: =93
+            X: =621
+            Y: =98
             ZIndex: =9
-
-    Group18 As group:
-        Height: =5
-        Width: =5
-        X: =60
-        Y: =60
-        ZIndex: =13
-
-        DropdownLocali As dropdown:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            ChevronBackground: =RGBA(0, 0, 0, 0)
-            ChevronFill: =RGBA(0, 18, 107, 1)
-            DisplayMode: =DisplayMode.Disabled
-            Items: |-
-                =//En esta parte del codigo lo que se hace es que con la funcion distinct me trae los valores unicos de la columna localizacion, luego de eso me hace el filtro con el ID_Maq haciendolo con la condicion de que si el mismo que esta en el input text que me traiga su localizacion
-                
-                Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),Localizacion)
-            Width: =231
-            X: =146
-            Y: =123
-            ZIndex: =7
-
-        Label11 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            DisplayMode: =DisplayMode.Disabled
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Text: |-
-                ="Localización:"
-            Width: =231
-            X: =146
-            Y: =96
-            ZIndex: =8
 
     Icon3 As icon.Reload:
         Color: =RGBA(21, 44, 115, 1)
@@ -564,8 +535,8 @@ Lista_MP As screen:
                 
                 Distinct(Filter(CMXE_MP_N,ID_Maq = DropdownActivo.Selected.Value),Nom_Equipo)
             Width: =231
-            X: =659
-            Y: =121
+            X: =375
+            Y: =126
             ZIndex: =10
 
         Label11_14 As label:
@@ -575,8 +546,8 @@ Lista_MP As screen:
             Text: |-
                 ="Nombre del equipo:"
             Width: =231
-            X: =659
-            Y: =93
+            X: =375
+            Y: =98
             ZIndex: =11
 
     Image2_58 As image:
@@ -621,8 +592,8 @@ Lista_MP As screen:
                 
                 Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),ID_Maq)
             Width: =231
-            X: =397
-            Y: =122
+            X: =123
+            Y: =125
             ZIndex: =12
 
         Label11_20 As label:
@@ -631,8 +602,8 @@ Lista_MP As screen:
             Height: =27
             Text: ="Activo.No"
             Width: =231
-            X: =397
-            Y: =94
+            X: =123
+            Y: =97
             ZIndex: =13
 
     Label11_1 As label:
@@ -796,4 +767,32 @@ Lista_MP As screen:
             X: =1195
             Y: =119
             ZIndex: =16
+
+    Group17_2 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =24
+
+        DropdownEstatus As dropdown:
+            AllowEmptySelection: =true
+            BorderThickness: =1
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(0, 18, 107, 1)
+            Items: =["En Proceso", "Pendiente"]
+            Width: =242
+            X: =883
+            Y: =126
+            ZIndex: =22
+
+        Label11_16 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Text: |-
+                ="Estatus:"
+            Width: =242
+            X: =883
+            Y: =98
+            ZIndex: =23
 
