@@ -473,6 +473,19 @@ Lista_MP As screen:
         Y: =46
         ZIndex: =5
 
+    Icon3 As icon.Reload:
+        Color: =RGBA(21, 44, 115, 1)
+        Height: =49
+        Icon: =Icon.Reload
+        OnSelect: |-
+            =//Esto me sirve solo para hacer un refresh a los mantenimientos preventivos
+            
+            Refresh(CMXE_MP_N)
+        Width: =49
+        X: =31
+        Y: =96
+        ZIndex: =12
+
     Group17 As group:
         Height: =5
         Width: =5
@@ -502,20 +515,16 @@ Lista_MP As screen:
             Width: =242
             X: =621
             Y: =98
-            ZIndex: =9
+            ZIndex: =7
 
-    Icon3 As icon.Reload:
-        Color: =RGBA(21, 44, 115, 1)
-        Height: =49
-        Icon: =Icon.Reload
-        OnSelect: |-
-            =//Esto me sirve solo para hacer un refresh a los mantenimientos preventivos
-            
-            Refresh(CMXE_MP_N)
-        Width: =49
-        X: =31
-        Y: =96
-        ZIndex: =14
+    Image2_58 As image:
+        Height: =92
+        Image: =carrier_logo_300
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =159
+        X: =44
+        ZIndex: =15
 
     Group17_1 As group:
         Height: =5
@@ -537,7 +546,7 @@ Lista_MP As screen:
             Width: =231
             X: =375
             Y: =126
-            ZIndex: =10
+            ZIndex: =8
 
         Label11_14 As label:
             DisplayMode: =DisplayMode.Disabled
@@ -548,16 +557,7 @@ Lista_MP As screen:
             Width: =231
             X: =375
             Y: =98
-            ZIndex: =11
-
-    Image2_58 As image:
-        Height: =92
-        Image: =carrier_logo_300
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =159
-        X: =44
-        ZIndex: =17
+            ZIndex: =9
 
     Icon2 As icon.Undo:
         Color: =RGBA(255, 255, 255, 1)
@@ -573,38 +573,7 @@ Lista_MP As screen:
             Reset(Filtro_Sema);
         X: =1281
         Y: =14
-        ZIndex: =18
-
-    Group17_6 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =18
-
-        DropdownActivo As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(0, 0, 0, 0)
-            ChevronFill: =RGBA(0, 18, 107, 1)
-            DisplayMode: =DisplayMode.Disabled
-            Items: |-
-                =//Me trae el valor unico de ID_Maq
-                
-                Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),ID_Maq)
-            Width: =231
-            X: =123
-            Y: =125
-            ZIndex: =12
-
-        Label11_20 As label:
-            DisplayMode: =DisplayMode.Disabled
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Text: ="Activo.No"
-            Width: =231
-            X: =123
-            Y: =97
-            ZIndex: =13
+        ZIndex: =16
 
     Label11_1 As label:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -615,7 +584,7 @@ Lista_MP As screen:
         Width: =79
         X: =16
         Y: =143
-        ZIndex: =19
+        ZIndex: =17
 
     Pantalla_Carg_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -626,7 +595,7 @@ Lista_MP As screen:
         RadiusTopRight: =0
         Visible: =CargaVisible
         Width: =1366
-        ZIndex: =20
+        ZIndex: =18
 
         HtmlText1_8 As htmlViewer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -735,6 +704,37 @@ Lista_MP As screen:
             Y: =454
             ZIndex: =5
 
+    Group17_6 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =18
+
+        DropdownActivo As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(0, 18, 107, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Items: |-
+                =//Me trae el valor unico de ID_Maq
+                
+                Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),ID_Maq)
+            Width: =231
+            X: =123
+            Y: =125
+            ZIndex: =10
+
+        Label11_20 As label:
+            DisplayMode: =DisplayMode.Disabled
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Text: ="Activo.No"
+            Width: =231
+            X: =123
+            Y: =97
+            ZIndex: =11
+
     TimerCarga_1 As timer:
         AutoStart: =true
         Duration: =5000
@@ -742,7 +742,7 @@ Lista_MP As screen:
         Visible: =false
         X: =954
         Y: =6
-        ZIndex: =21
+        ZIndex: =19
 
     Group9 As group:
         Height: =5
@@ -757,7 +757,7 @@ Lista_MP As screen:
             Text: ="N.º de Semana"
             X: =1195
             Y: =93
-            ZIndex: =15
+            ZIndex: =13
 
         Filtro_Sema As text:
             Default: =""
@@ -766,33 +766,5 @@ Lista_MP As screen:
             Width: =150
             X: =1195
             Y: =119
-            ZIndex: =16
-
-    Group17_2 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =24
-
-        DropdownEstatus As dropdown:
-            AllowEmptySelection: =true
-            BorderThickness: =1
-            ChevronBackground: =RGBA(0, 0, 0, 0)
-            ChevronFill: =RGBA(0, 18, 107, 1)
-            Items: =["En Proceso", "Pendiente"]
-            Width: =242
-            X: =883
-            Y: =126
-            ZIndex: =22
-
-        Label11_16 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Text: |-
-                ="Estatus:"
-            Width: =242
-            X: =883
-            Y: =98
-            ZIndex: =23
+            ZIndex: =14
 
