@@ -1722,8 +1722,24 @@
                     {ACT7: If(Btn7_37.DisplayMode = DisplayMode.Disabled,"n",If(Btn7_38.DisplayMode = DisplayMode.Disabled,"r",Resp7_34.Selected.Value))},
                     {ACT8: If(Btn8_34.DisplayMode = DisplayMode.Disabled,"n",If(Btn8_35.DisplayMode = DisplayMode.Disabled,"r",Resp8_31.Selected.Value))},
                     {ACT9: If(Btn9_29.DisplayMode = DisplayMode.Disabled,"n",If(Btn9_30.DisplayMode = DisplayMode.Disabled,"r",Resp9_26.Selected.Value))},
-                    {ACT10: If(Btn10_28.DisplayMode = DisplayMode.Disabled,"n",If(Btn10_29.DisplayMode = DisplayMode.Disabled,"r",Resp10_25.Selected.Value))
-                    });
+                    {ACT10: If(Btn10_28.DisplayMode = DisplayMode.Disabled,"n",If(Btn10_29.DisplayMode = DisplayMode.Disabled,"r",Resp10_25.Selected.Value))},
+                    {ACT11: If(Btn1_48.DisplayMode = DisplayMode.Disabled,"n",If(Btn11.DisplayMode = DisplayMode.Disabled,"r",Resp11.Selected.Value))},
+                    {ACT12: If(Btn2_43.DisplayMode = DisplayMode.Disabled,"n",If(Btn12.DisplayMode = DisplayMode.Disabled,"r",Resp12.Selected.Value))},
+                    {ACT13: If(Btn3_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn13.DisplayMode = DisplayMode.Disabled,"r",Resp13.Selected.Value))},
+                    {ACT14: If(Btn4_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn14.DisplayMode = DisplayMode.Disabled,"r",Resp14.Selected.Value))},
+                    {ACT15: If(Btn5_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn15.DisplayMode = DisplayMode.Disabled,"r",Resp15.Selected.Value))},
+                    {ACT16: If(Btn6_37.DisplayMode = DisplayMode.Disabled,"n",If(Btn16.DisplayMode = DisplayMode.Disabled,"r",Resp16.Selected.Value))},
+                    {ACT17: If(Btn7_37.DisplayMode = DisplayMode.Disabled,"n",If(Btn17.DisplayMode = DisplayMode.Disabled,"r",Resp17.Selected.Value))},
+                    {ACT18: If(Btn8_34.DisplayMode = DisplayMode.Disabled,"n",If(Btn18.DisplayMode = DisplayMode.Disabled,"r",Resp18.Selected.Value))},
+                    {ACT19: If(Btn9_29.DisplayMode = DisplayMode.Disabled,"n",If(Btn19.DisplayMode = DisplayMode.Disabled,"r",Resp19.Selected.Value))},
+                    {ACT20: If(Btn2_43.DisplayMode = DisplayMode.Disabled,"n",If(Btn20.DisplayMode = DisplayMode.Disabled,"r",Resp20.Selected.Value))},
+                    {ACT21: If(Btn3_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn21.DisplayMode = DisplayMode.Disabled,"r",Resp21.Selected.Value))},
+                    {ACT22: If(Btn4_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn22.DisplayMode = DisplayMode.Disabled,"r",Resp22.Selected.Value))},
+                    {ACT23: If(Btn5_39.DisplayMode = DisplayMode.Disabled,"n",If(Btn23.DisplayMode = DisplayMode.Disabled,"r",Resp23.Selected.Value))},
+                    {ACT24: If(Btn6_37.DisplayMode = DisplayMode.Disabled,"n",If(Btn24.DisplayMode = DisplayMode.Disabled,"r",Resp24.Selected.Value))},
+                    {ACT25: If(Btn7_37.DisplayMode = DisplayMode.Disabled,"n",If(Btn25.DisplayMode = DisplayMode.Disabled,"r",Resp25.Selected.Value))},
+                    {ACT26: If(Btn8_34.DisplayMode = DisplayMode.Disabled,"n",If(Btn26.DisplayMode = DisplayMode.Disabled,"r",Resp26.Selected.Value))}
+                    );
                     
                     Set(ContadorFinal, true);
                     Set(ContadorHH, false);
@@ -1994,20 +2010,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_26.Selected.Value = "N", true, false) 
+                Visible: =If(Resp11.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =2908
                 ZIndex: =80
 
-            Resp10_26 As dropdown:
+            Resp11 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_26.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp11.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_30.DisplayMode = DisplayMode.Disabled|| Btn10_31.DisplayMode = DisplayMode.Disabled || Resp10_26.Selected.Value = "r" || Resp10_26.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_30.DisplayMode = DisplayMode.Disabled|| Btn11.DisplayMode = DisplayMode.Disabled || Resp11.Selected.Value = "r" || Resp11.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -2024,7 +2040,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_26.Selected),
+                        IsBlank(Resp11.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -2060,13 +2076,13 @@
                 Y: =3023
                 ZIndex: =84
 
-            Btn10_31 As button:
+            Btn11 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_26.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp11.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2082,10 +2098,10 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_26.Selected.Value = "R", true, false) 
+                Visible: =If(Resp11.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
-                Y: =2951
+                Y: =2955
                 ZIndex: =85
 
             Preg1_399 As label:
@@ -2121,20 +2137,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_27.Selected.Value = "N", true, false) 
+                Visible: =If(Resp12.Selected.Value = "N", true, false) 
                 Width: =173
-                X: =23
-                Y: =132
+                X: =21
+                Y: =3094
                 ZIndex: =87
 
-            Resp10_27 As dropdown:
+            Resp12 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_27.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp12.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_32.DisplayMode = DisplayMode.Disabled|| Btn10_33.DisplayMode = DisplayMode.Disabled || Resp10_27.Selected.Value = "r" || Resp10_27.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_32.DisplayMode = DisplayMode.Disabled|| Btn12.DisplayMode = DisplayMode.Disabled || Resp12.Selected.Value = "r" || Resp12.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -2151,7 +2167,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_27.Selected),
+                        IsBlank(Resp12.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -2187,13 +2203,13 @@
                 Y: =3217
                 ZIndex: =91
 
-            Btn10_33 As button:
+            Btn12 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_27.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp12.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2209,10 +2225,10 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_27.Selected.Value = "R", true, false) 
+                Visible: =If(Resp12.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
-                Y: =175
+                Y: =3146
                 ZIndex: =92
 
             Preg1_400 As label:
@@ -2248,20 +2264,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_28.Selected.Value = "N", true, false) 
+                Visible: =If(Resp13.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =3290
                 ZIndex: =94
 
-            Resp10_28 As dropdown:
+            Resp13 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_28.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp13.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_34.DisplayMode = DisplayMode.Disabled|| Btn10_35.DisplayMode = DisplayMode.Disabled || Resp10_28.Selected.Value = "r" || Resp10_28.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_34.DisplayMode = DisplayMode.Disabled|| Btn13.DisplayMode = DisplayMode.Disabled || Resp13.Selected.Value = "r" || Resp13.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -2278,7 +2294,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_28.Selected),
+                        IsBlank(Resp13.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -2314,13 +2330,13 @@
                 Y: =3405
                 ZIndex: =98
 
-            Btn10_35 As button:
+            Btn13 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_28.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp13.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2336,7 +2352,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_28.Selected.Value = "R", true, false) 
+                Visible: =If(Resp13.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =3333
@@ -2375,20 +2391,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_29.Selected.Value = "N", true, false) 
+                Visible: =If(Resp14.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =3537
                 ZIndex: =101
 
-            Resp10_29 As dropdown:
+            Resp14 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_29.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp14.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_36.DisplayMode = DisplayMode.Disabled|| Btn10_37.DisplayMode = DisplayMode.Disabled || Resp10_29.Selected.Value = "r" || Resp10_29.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_36.DisplayMode = DisplayMode.Disabled|| Btn14.DisplayMode = DisplayMode.Disabled || Resp14.Selected.Value = "r" || Resp14.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -2405,7 +2421,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_29.Selected),
+                        IsBlank(Resp14.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -2441,13 +2457,13 @@
                 Y: =3652
                 ZIndex: =105
 
-            Btn10_37 As button:
+            Btn14 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_29.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp14.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2463,7 +2479,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_29.Selected.Value = "R", true, false) 
+                Visible: =If(Resp14.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =3580
@@ -2513,20 +2529,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_30.Selected.Value = "N", true, false) 
+                Visible: =If(Resp15.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =3724
                 ZIndex: =109
 
-            Resp10_30 As dropdown:
+            Resp15 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_30.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp15.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_38.DisplayMode = DisplayMode.Disabled|| Btn10_39.DisplayMode = DisplayMode.Disabled || Resp10_30.Selected.Value = "r" || Resp10_30.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_38.DisplayMode = DisplayMode.Disabled|| Btn15.DisplayMode = DisplayMode.Disabled || Resp15.Selected.Value = "r" || Resp15.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -2543,7 +2559,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_30.Selected),
+                        IsBlank(Resp15.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -2579,13 +2595,13 @@
                 Y: =3839
                 ZIndex: =113
 
-            Btn10_39 As button:
+            Btn15 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_30.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp15.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2601,7 +2617,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_30.Selected.Value = "R", true, false) 
+                Visible: =If(Resp15.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =3767
@@ -2640,20 +2656,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_31.Selected.Value = "N", true, false) 
+                Visible: =If(Resp16.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =3911
                 ZIndex: =116
 
-            Resp10_31 As dropdown:
+            Resp16 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_31.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp16.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_40.DisplayMode = DisplayMode.Disabled|| Btn10_41.DisplayMode = DisplayMode.Disabled || Resp10_31.Selected.Value = "r" || Resp10_31.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_40.DisplayMode = DisplayMode.Disabled|| Btn16.DisplayMode = DisplayMode.Disabled || Resp16.Selected.Value = "r" || Resp16.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -2670,7 +2686,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_31.Selected),
+                        IsBlank(Resp16.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -2708,13 +2724,13 @@
                 Y: =4026
                 ZIndex: =120
 
-            Btn10_41 As button:
+            Btn16 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_31.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp16.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2730,7 +2746,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_31.Selected.Value = "R", true, false) 
+                Visible: =If(Resp16.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =3954
@@ -2806,20 +2822,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_32.Selected.Value = "N", true, false) 
+                Visible: =If(Resp17.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =4099
                 ZIndex: =125
 
-            Resp10_32 As dropdown:
+            Resp17 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_32.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp17.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_42.DisplayMode = DisplayMode.Disabled|| Btn10_43.DisplayMode = DisplayMode.Disabled || Resp10_32.Selected.Value = "r" || Resp10_32.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_42.DisplayMode = DisplayMode.Disabled|| Btn17.DisplayMode = DisplayMode.Disabled || Resp17.Selected.Value = "r" || Resp17.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -2836,7 +2852,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_32.Selected),
+                        IsBlank(Resp17.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -2872,13 +2888,13 @@
                 Y: =4214
                 ZIndex: =129
 
-            Btn10_43 As button:
+            Btn17 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_32.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp17.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2894,7 +2910,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_32.Selected.Value = "R", true, false) 
+                Visible: =If(Resp17.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =4142
@@ -2933,20 +2949,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_33.Selected.Value = "N", true, false) 
+                Visible: =If(Resp18.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =4286
                 ZIndex: =132
 
-            Resp10_33 As dropdown:
+            Resp18 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_33.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp18.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_44.DisplayMode = DisplayMode.Disabled|| Btn10_45.DisplayMode = DisplayMode.Disabled || Resp10_33.Selected.Value = "r" || Resp10_33.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_44.DisplayMode = DisplayMode.Disabled|| Btn18.DisplayMode = DisplayMode.Disabled || Resp18.Selected.Value = "r" || Resp18.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -2963,7 +2979,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_33.Selected),
+                        IsBlank(Resp18.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -2999,13 +3015,13 @@
                 Y: =4401
                 ZIndex: =136
 
-            Btn10_45 As button:
+            Btn18 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_33.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp18.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3021,7 +3037,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_33.Selected.Value = "R", true, false) 
+                Visible: =If(Resp18.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =4329
@@ -3097,20 +3113,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_34.Selected.Value = "N", true, false) 
+                Visible: =If(Resp19.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =4474
                 ZIndex: =141
 
-            Resp10_34 As dropdown:
+            Resp19 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_34.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp19.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_46.DisplayMode = DisplayMode.Disabled|| Btn10_47.DisplayMode = DisplayMode.Disabled || Resp10_34.Selected.Value = "r" || Resp10_34.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_46.DisplayMode = DisplayMode.Disabled|| Btn19.DisplayMode = DisplayMode.Disabled || Resp19.Selected.Value = "r" || Resp19.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -3127,7 +3143,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_34.Selected),
+                        IsBlank(Resp19.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -3163,13 +3179,13 @@
                 Y: =4589
                 ZIndex: =145
 
-            Btn10_47 As button:
+            Btn19 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_34.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp19.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3185,7 +3201,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_34.Selected.Value = "R", true, false) 
+                Visible: =If(Resp19.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =4517
@@ -3224,20 +3240,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_35.Selected.Value = "N", true, false) 
+                Visible: =If(Resp20.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =4661
                 ZIndex: =148
 
-            Resp10_35 As dropdown:
+            Resp20 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_35.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp20.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_48.DisplayMode = DisplayMode.Disabled|| Btn10_49.DisplayMode = DisplayMode.Disabled || Resp10_35.Selected.Value = "r" || Resp10_35.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_48.DisplayMode = DisplayMode.Disabled|| Btn20.DisplayMode = DisplayMode.Disabled || Resp20.Selected.Value = "r" || Resp20.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -3254,7 +3270,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_35.Selected),
+                        IsBlank(Resp20.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -3290,13 +3306,13 @@
                 Y: =4776
                 ZIndex: =152
 
-            Btn10_49 As button:
+            Btn20 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_35.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp20.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3312,7 +3328,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_35.Selected.Value = "R", true, false) 
+                Visible: =If(Resp20.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =4704
@@ -3388,20 +3404,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_36.Selected.Value = "N", true, false) 
+                Visible: =If(Resp21.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =4849
                 ZIndex: =157
 
-            Resp10_36 As dropdown:
+            Resp21 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_36.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp21.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_50.DisplayMode = DisplayMode.Disabled|| Btn10_51.DisplayMode = DisplayMode.Disabled || Resp10_36.Selected.Value = "r" || Resp10_36.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_50.DisplayMode = DisplayMode.Disabled|| Btn21.DisplayMode = DisplayMode.Disabled || Resp21.Selected.Value = "r" || Resp21.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -3418,7 +3434,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_36.Selected),
+                        IsBlank(Resp21.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -3456,13 +3472,13 @@
                 Y: =4964
                 ZIndex: =161
 
-            Btn10_51 As button:
+            Btn21 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_36.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp21.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3478,7 +3494,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_36.Selected.Value = "R", true, false) 
+                Visible: =If(Resp21.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =4892
@@ -3554,20 +3570,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_37.Selected.Value = "N", true, false) 
+                Visible: =If(Resp22.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =5037
                 ZIndex: =166
 
-            Resp10_37 As dropdown:
+            Resp22 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_37.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp22.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_52.DisplayMode = DisplayMode.Disabled|| Btn10_53.DisplayMode = DisplayMode.Disabled || Resp10_37.Selected.Value = "r" || Resp10_37.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_52.DisplayMode = DisplayMode.Disabled|| Btn22.DisplayMode = DisplayMode.Disabled || Resp22.Selected.Value = "r" || Resp22.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -3584,7 +3600,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_37.Selected),
+                        IsBlank(Resp22.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -3622,13 +3638,13 @@
                 Y: =5152
                 ZIndex: =170
 
-            Btn10_53 As button:
+            Btn22 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_37.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp22.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3644,7 +3660,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_37.Selected.Value = "R", true, false) 
+                Visible: =If(Resp22.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =5080
@@ -3683,20 +3699,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_38.Selected.Value = "N", true, false) 
+                Visible: =If(Resp23.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =5224
                 ZIndex: =173
 
-            Resp10_38 As dropdown:
+            Resp23 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_38.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp23.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_54.DisplayMode = DisplayMode.Disabled|| Btn10_55.DisplayMode = DisplayMode.Disabled || Resp10_38.Selected.Value = "r" || Resp10_38.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_54.DisplayMode = DisplayMode.Disabled|| Btn23.DisplayMode = DisplayMode.Disabled || Resp23.Selected.Value = "r" || Resp23.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -3713,7 +3729,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_38.Selected),
+                        IsBlank(Resp23.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -3749,13 +3765,13 @@
                 Y: =5339
                 ZIndex: =177
 
-            Btn10_55 As button:
+            Btn23 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_38.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp23.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3771,7 +3787,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_38.Selected.Value = "R", true, false) 
+                Visible: =If(Resp23.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =5267
@@ -3847,20 +3863,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_39.Selected.Value = "N", true, false) 
+                Visible: =If(Resp24.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =5412
                 ZIndex: =182
 
-            Resp10_39 As dropdown:
+            Resp24 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_39.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp24.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_56.DisplayMode = DisplayMode.Disabled|| Btn10_57.DisplayMode = DisplayMode.Disabled || Resp10_39.Selected.Value = "r" || Resp10_39.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_56.DisplayMode = DisplayMode.Disabled|| Btn24.DisplayMode = DisplayMode.Disabled || Resp24.Selected.Value = "r" || Resp24.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -3877,7 +3893,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_39.Selected),
+                        IsBlank(Resp24.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -3916,13 +3932,13 @@
                 Y: =5527
                 ZIndex: =186
 
-            Btn10_57 As button:
+            Btn24 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_39.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp24.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3938,7 +3954,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_39.Selected.Value = "R", true, false) 
+                Visible: =If(Resp24.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =5455
@@ -4014,20 +4030,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_40.Selected.Value = "N", true, false) 
+                Visible: =If(Resp25.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =5600
                 ZIndex: =191
 
-            Resp10_40 As dropdown:
+            Resp25 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_40.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp25.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_58.DisplayMode = DisplayMode.Disabled|| Btn10_59.DisplayMode = DisplayMode.Disabled || Resp10_40.Selected.Value = "r" || Resp10_40.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_58.DisplayMode = DisplayMode.Disabled|| Btn25.DisplayMode = DisplayMode.Disabled || Resp25.Selected.Value = "r" || Resp25.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -4044,7 +4060,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_40.Selected),
+                        IsBlank(Resp25.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -4080,13 +4096,13 @@
                 Y: =5715
                 ZIndex: =195
 
-            Btn10_59 As button:
+            Btn25 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_40.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp25.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -4102,7 +4118,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_40.Selected.Value = "R", true, false) 
+                Visible: =If(Resp25.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =5643
@@ -4141,20 +4157,20 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="Justificación"
-                Visible: =If(Resp10_41.Selected.Value = "N", true, false) 
+                Visible: =If(Resp26.Selected.Value = "N", true, false) 
                 Width: =173
                 X: =23
                 Y: =5787
                 ZIndex: =198
 
-            Resp10_41 As dropdown:
+            Resp26 As dropdown:
                 AllowEmptySelection: =true
-                ChevronBackground: =If(Resp10_41.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronBackground: =If(Resp26.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
                 ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
                 ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
                 Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
                 DisabledBorderColor: =RGBA(168, 0, 0, 1)
-                DisplayMode: =If(Btn10_60.DisplayMode = DisplayMode.Disabled|| Btn10_61.DisplayMode = DisplayMode.Disabled || Resp10_41.Selected.Value = "r" || Resp10_41.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                DisplayMode: =If(Btn10_60.DisplayMode = DisplayMode.Disabled|| Btn26.DisplayMode = DisplayMode.Disabled || Resp26.Selected.Value = "r" || Resp26.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
                 Height: =26
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
@@ -4171,7 +4187,7 @@
                     )
                 OnSelect: |
                     =If(
-                        IsBlank(Resp10_41.Selected),
+                        IsBlank(Resp26.Selected),
                         true
                     );
                 PaddingRight: =12.76
@@ -4207,13 +4223,13 @@
                 Y: =5902
                 ZIndex: =202
 
-            Btn10_61 As button:
+            Btn26 As button:
                 BorderThickness: =0
                 DisabledBorderColor: =RGBA(184, 0, 0, 1)
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_41.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp26.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -4229,7 +4245,7 @@
                 PaddingTop: =6.37
                 Size: =17
                 Text: ="¿Hubo hallazgo?"
-                Visible: =If(Resp10_41.Selected.Value = "R", true, false) 
+                Visible: =If(Resp26.Selected.Value = "R", true, false) 
                 Width: =170
                 X: =23
                 Y: =5830
