@@ -66,7 +66,7 @@
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =5736
+            Height: =6110
             Width: =1366
             X: =0
             Y: =0
@@ -1245,8 +1245,8 @@
                 Size: =20
                 Text: ="Finalizar Preventivo"
                 Width: =336
-                X: =455
-                Y: =5613
+                X: =424
+                Y: =5960
                 ZIndex: =64
 
             Container1_44 As groupContainer.manualLayoutContainer:
@@ -1744,8 +1744,8 @@
                     
                     
                 Text: ="Pendiente"
-                X: =1042
-                Y: =5613
+                X: =1011
+                Y: =5960
                 ZIndex: =67
 
             Btn2_44 As button:
@@ -1950,8 +1950,8 @@
                 FontWeight: =FontWeight.Bold
                 Text: ="Dejar el Mantenimiento Preventivo en espera."
                 Width: =234
-                X: =1005
-                Y: =5667
+                X: =974
+                Y: =6014
                 ZIndex: =77
 
             Rectangle1_55 As rectangle:
@@ -3776,6 +3776,464 @@
                 X: =23
                 Y: =5267
                 ZIndex: =178
+
+            Btn4_45 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 4) > 0 || Resp4_36.Selected.Value = "r" , DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg4_36.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitadosR, { Boton: 4 });
+                    
+                    Set(NumBotonR,4)
+                    
+                    //Set(BTN_Presionado,"btn4")
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo hallazgo?"
+                Visible: =If(Resp4_36.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =33
+                Y: =5366
+                ZIndex: =179
+
+            Rectangle1_133 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =1366
+                Y: =5340
+                ZIndex: =180
+
+            Preg1_411 As label:
+                Height: =38
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="11."
+                Width: =33
+                X: =1
+                Y: =5354
+                ZIndex: =181
+
+            Btn10_56 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitados, Boton = 10) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =29
+                OnSelect: |-
+                    =Set(Pregunta,Preg10_39.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitados, { Boton: 10 });
+                    
+                    Set(NumBoton,10)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp10_39.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =23
+                Y: =5412
+                ZIndex: =182
+
+            Resp10_39 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =If(Resp10_39.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisplayMode: =If(Btn10_56.DisplayMode = DisplayMode.Disabled|| Btn10_57.DisplayMode = DisplayMode.Disabled || Resp10_39.Selected.Value = "r" || Resp10_39.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                Height: =26
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: |-
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                    
+                    
+                        )
+                    )
+                OnSelect: |
+                    =If(
+                        IsBlank(Resp10_39.Selected),
+                        true
+                    );
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =30
+                Y: =5360
+                ZIndex: =183
+
+            Preg10_39 As label:
+                Height: =50
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: |-
+                    ="Revisar que se encuentre en buen estado y bien montado motor de transmisión, revisar el estado de la cuña este debe estar en 
+                    buen estado.
+                    "
+                Width: =1081
+                X: =101
+                Y: =5348
+                ZIndex: =184
+
+            Rectangle1_134 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =1366
+                Y: =5340
+                ZIndex: =185
+
+            Rectangle1_135 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =1366
+                Y: =5527
+                ZIndex: =186
+
+            Btn10_57 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_39.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg10_39.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitadosR, { Boton: 10 });
+                    
+                    Set(NumBotonR,10)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo hallazgo?"
+                Visible: =If(Resp10_39.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =23
+                Y: =5455
+                ZIndex: =187
+
+            Btn4_46 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 4) > 0 || Resp4_36.Selected.Value = "r" , DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg4_36.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitadosR, { Boton: 4 });
+                    
+                    Set(NumBotonR,4)
+                    
+                    //Set(BTN_Presionado,"btn4")
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo hallazgo?"
+                Visible: =If(Resp4_36.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =33
+                Y: =5741
+                ZIndex: =188
+
+            Rectangle1_136 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =1366
+                Y: =5528
+                ZIndex: =189
+
+            Preg1_412 As label:
+                Height: =38
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="12."
+                Width: =33
+                X: =1
+                Y: =5542
+                ZIndex: =190
+
+            Btn10_58 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitados, Boton = 10) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =29
+                OnSelect: |-
+                    =Set(Pregunta,Preg10_40.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitados, { Boton: 10 });
+                    
+                    Set(NumBoton,10)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp10_40.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =23
+                Y: =5600
+                ZIndex: =191
+
+            Resp10_40 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =If(Resp10_40.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisplayMode: =If(Btn10_58.DisplayMode = DisplayMode.Disabled|| Btn10_59.DisplayMode = DisplayMode.Disabled || Resp10_40.Selected.Value = "r" || Resp10_40.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                Height: =26
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: |-
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                    
+                    
+                        )
+                    )
+                OnSelect: |
+                    =If(
+                        IsBlank(Resp10_40.Selected),
+                        true
+                    );
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =30
+                Y: =5548
+                ZIndex: =192
+
+            Preg10_40 As label:
+                Height: =50
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: ="Llantas de los carros deben contar con guardas en caso de no tener levantar orden a kaizen para su fabricación."
+                Width: =1079
+                X: =101
+                Y: =5536
+                ZIndex: =193
+
+            Rectangle1_137 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =1366
+                Y: =5528
+                ZIndex: =194
+
+            Rectangle1_138 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =1366
+                Y: =5715
+                ZIndex: =195
+
+            Btn10_59 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_40.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg10_40.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitadosR, { Boton: 10 });
+                    
+                    Set(NumBotonR,10)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo hallazgo?"
+                Visible: =If(Resp10_40.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =23
+                Y: =5643
+                ZIndex: =196
+
+            Preg1_413 As label:
+                Height: =38
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =11
+                Text: ="13."
+                Width: =33
+                X: =1
+                Y: =5729
+                ZIndex: =197
+
+            Btn10_60 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitados, Boton = 10) > 0, DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =29
+                OnSelect: |-
+                    =Set(Pregunta,Preg10_41.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitados, { Boton: 10 });
+                    
+                    Set(NumBoton,10)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="Justificación"
+                Visible: =If(Resp10_41.Selected.Value = "N", true, false) 
+                Width: =173
+                X: =23
+                Y: =5787
+                ZIndex: =198
+
+            Resp10_41 As dropdown:
+                AllowEmptySelection: =true
+                ChevronBackground: =If(Resp10_41.Selected.Value = "R",RGBA(97, 181, 73, 1),RGBA(21, 44, 115, 1))
+                ChevronDisabledBackground: =RGBA(168, 0, 0, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(0, 40, 85, 1), -20%)
+                Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)
+                DisabledBorderColor: =RGBA(168, 0, 0, 1)
+                DisplayMode: =If(Btn10_60.DisplayMode = DisplayMode.Disabled|| Btn10_61.DisplayMode = DisplayMode.Disabled || Resp10_41.Selected.Value = "r" || Resp10_41.Selected.Value = "n" ,DisplayMode.Disabled,DisplayMode.Edit)
+                Height: =26
+                HoverFill: =RGBA(151, 157, 172, 1)
+                Items: |-
+                    =If(
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        ["N","R"],
+                        If(
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            ["R","N"],
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                    
+                    
+                        )
+                    )
+                OnSelect: |
+                    =If(
+                        IsBlank(Resp10_41.Selected),
+                        true
+                    );
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                SelectionFill: =RGBA(92, 103, 125, 1)
+                Size: =16.58
+                Width: =67
+                X: =30
+                Y: =5735
+                ZIndex: =199
+
+            Preg10_41 As label:
+                Height: =50
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Text: =" Inspeccionar que el carro cuente con 4 barras de imanes esto ayuda a mantener en posición la lámina."
+                Width: =1081
+                X: =101
+                Y: =5723
+                ZIndex: =200
+
+            Rectangle1_139 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =1366
+                Y: =5715
+                ZIndex: =201
+
+            Rectangle1_140 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =1366
+                Y: =5902
+                ZIndex: =202
+
+            Btn10_61 As button:
+                BorderThickness: =0
+                DisabledBorderColor: =RGBA(184, 0, 0, 1)
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(184, 0, 0, 1)
+                DisplayMode: |
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp10_41.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =60
+                OnSelect: |-
+                    =Set(Pregunta,Preg10_41.Text);
+                    UpdateContext({ShowPopUp : true});
+                    
+                    
+                    Collect(BotonesDeshabilitadosR, { Boton: 10 });
+                    
+                    Set(NumBotonR,10)
+                PaddingBottom: =10
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =17
+                Text: ="¿Hubo hallazgo?"
+                Visible: =If(Resp10_41.Selected.Value = "R", true, false) 
+                Width: =170
+                X: =23
+                Y: =5830
+                ZIndex: =203
 
     Label9_458 As label:
         Align: =Align.Center
