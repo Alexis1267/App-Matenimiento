@@ -2028,12 +2028,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT11, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT11, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT11)]
                     
                     
                         )
@@ -2155,12 +2155,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT12, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT12, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT12)]
                     
                     
                         )
@@ -2282,12 +2282,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT13, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT13, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT13)]
                     
                     
                         )
@@ -2409,12 +2409,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT14, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT14, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT14)]
                     
                     
                         )
@@ -2547,12 +2547,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT15, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT15, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT15)]
                     
                     
                         )
@@ -2674,12 +2674,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT16, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT16, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT16)]
                     
                     
                         )
@@ -2840,12 +2840,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT17, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT17, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT17)]
                     
                     
                         )
@@ -2967,12 +2967,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT18, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT18, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT18)]
                     
                     
                         )
@@ -3131,12 +3131,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT19, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT19, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT19)]
                     
                     
                         )
@@ -3258,12 +3258,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT20, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT20, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT20)]
                     
                     
                         )
@@ -3422,12 +3422,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT21, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT21, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT21)]
                     
                     
                         )
@@ -3588,12 +3588,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT22, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT22, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT22)]
                     
                     
                         )
@@ -3717,12 +3717,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT23, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT23, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT23)]
                     
                     
                         )
@@ -3881,12 +3881,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT24, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT24, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT24)]
                     
                     
                         )
@@ -4048,12 +4048,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT25, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT25, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT25)]
                     
                     
                         )
@@ -4175,12 +4175,12 @@
                 HoverFill: =RGBA(151, 157, 172, 1)
                 Items: |-
                     =If(
-                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "R") = "R",
+                        Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT26, "R") = "R",
                         ["N","R"],
                         If(
-                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10, "N") = "N",
+                            Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT26, "N") = "N",
                             ["R","N"],
-                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT10)]
+                                 ["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = ID_Maquina).ACT26)]
                     
                     
                         )
