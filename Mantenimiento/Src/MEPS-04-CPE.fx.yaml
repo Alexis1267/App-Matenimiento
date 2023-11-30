@@ -3737,17 +3737,18 @@
                 ZIndex: =188
 
             Container1_44 As groupContainer.manualLayoutContainer:
-                Height: =App.Height
+                Height: |
+                    =1080
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Visible: =ShowPopUp
-                Width: =App.Width
+                Width: =1920
                 X: =0.00
                 Y: =PosicionYmodal
                 ZIndex: =189
 
                 HtmlText3_58 As htmlViewer:
-                    Height: =765
+                    Height: =1080
                     HtmlText: |-
                         ="<div style=""
                         position: absolute;
@@ -3755,15 +3756,15 @@
                           color: #fff;
                           box-shadow: 0px 0px 25px #222;
                           backdrop-filter: blur(10px);
-                        height:"& App.Height &"px;
-                        width:"&App.Width &"px;""></div>"
+                        height:"& 1080 &"px;
+                        width:"&1920 &"px;""></div>"
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0.00
                     PaddingTop: =0.00
                     Size: =14.04
                     Visible: =ShowPopUp
-                    Width: =1366
+                    Width: =1920
                     ZIndex: =1
 
                 Container2_44 As groupContainer.manualLayoutContainer:
