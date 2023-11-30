@@ -3737,17 +3737,17 @@
                 ZIndex: =188
 
             Container1_44 As groupContainer.manualLayoutContainer:
-                Height: =765
+                Height: =App.Height
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Visible: =ShowPopUp
-                Width: =1366
+                Width: =App.Width
                 X: =0.00
                 Y: =PosicionYmodal
                 ZIndex: =189
 
                 HtmlText3_58 As htmlViewer:
-                    Height: =768
+                    Height: =765
                     HtmlText: |-
                         ="<div style=""
                         position: absolute;
