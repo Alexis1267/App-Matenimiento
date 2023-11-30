@@ -2082,7 +2082,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp11.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 11) > 0 || Resp11.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2209,7 +2209,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp12.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 12) > 0 || Resp12.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2336,7 +2336,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp13.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 13) > 0 || Resp13.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2463,7 +2463,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp14.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 14) > 0 || Resp14.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2601,7 +2601,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp15.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 15) > 0 || Resp15.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2730,7 +2730,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp16.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 16) > 0 || Resp16.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2864,7 +2864,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp17.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 17) > 0 || Resp17.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -2991,7 +2991,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp18.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 18) > 0 || Resp18.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3125,7 +3125,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp19.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 19) > 0 || Resp19.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3252,7 +3252,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp20.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 20) > 0 || Resp20.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3388,7 +3388,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp21.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 21) > 0 || Resp21.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3524,7 +3524,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp22.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 22) > 0 || Resp22.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3651,7 +3651,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp23.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 23) > 0 || Resp23.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3788,7 +3788,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp24.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 24) > 0 || Resp24.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -3922,7 +3922,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp25.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 25) > 0 || Resp25.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
@@ -4049,7 +4049,7 @@
                 DisabledColor: =RGBA(255, 255, 255, 1)
                 DisabledFill: =RGBA(184, 0, 0, 1)
                 DisplayMode: |
-                    =If(CountIf(BotonesDeshabilitadosR, Boton = 10) > 0 || Resp26.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
+                    =If(CountIf(BotonesDeshabilitadosR, Boton = 26) > 0 || Resp26.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
                 OnSelect: |-
