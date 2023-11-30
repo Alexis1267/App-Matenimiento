@@ -2405,14 +2405,16 @@
                     =If(CountIf(BotonesDeshabilitados, Boton = 17) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =29
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_32.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitados, { Boton: 17 });
                     
-                    Set(NumBoton,17)
+                    Set(NumBoton,17);
+                    
+                    UpdateContext({PosicionYmodal: Resp17.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -2493,14 +2495,16 @@
                     =If(CountIf(BotonesDeshabilitadosR, Boton = 17) > 0 || Resp17.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_32.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitadosR, { Boton: 17 });
                     
-                    Set(NumBotonR,17)
+                    Set(NumBotonR,17);
+                    
+                    UpdateContext({PosicionYmodal: Resp17.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -2532,14 +2536,16 @@
                     =If(CountIf(BotonesDeshabilitados, Boton = 18) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =29
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_33.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitados, { Boton: 18 });
                     
-                    Set(NumBoton,18)
+                    Set(NumBoton,18);
+                    
+                    UpdateContext({PosicionYmodal: Resp18.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -2620,14 +2626,16 @@
                     =If(CountIf(BotonesDeshabilitadosR, Boton = 18) > 0 || Resp18.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_33.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitadosR, { Boton: 18 });
                     
-                    Set(NumBotonR,18)
+                    Set(NumBotonR,18);
+                    
+                    UpdateContext({PosicionYmodal: Resp18.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -2666,14 +2674,16 @@
                     =If(CountIf(BotonesDeshabilitados, Boton = 19) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =29
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_34.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitados, { Boton: 19 });
                     
-                    Set(NumBoton,19)
+                    Set(NumBoton,19);
+                    
+                    UpdateContext({PosicionYmodal: Resp19.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -2754,14 +2764,16 @@
                     =If(CountIf(BotonesDeshabilitadosR, Boton = 19) > 0 || Resp19.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_34.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitadosR, { Boton: 19 });
                     
-                    Set(NumBotonR,19)
+                    Set(NumBotonR,19);
+                    
+                    UpdateContext({PosicionYmodal: Resp19.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -2793,14 +2805,16 @@
                     =If(CountIf(BotonesDeshabilitados, Boton = 20) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =29
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_35.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitados, { Boton: 20 });
                     
-                    Set(NumBoton,20)
+                    Set(NumBoton,20);
+                    
+                    UpdateContext({PosicionYmodal: Resp20.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -2881,14 +2895,16 @@
                     =If(CountIf(BotonesDeshabilitadosR, Boton = 20) > 0 || Resp20.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_35.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitadosR, { Boton: 20 });
                     
-                    Set(NumBotonR,20)
+                    Set(NumBotonR,20);
+                    
+                    UpdateContext({PosicionYmodal: Resp20.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -2927,14 +2943,16 @@
                     =If(CountIf(BotonesDeshabilitados, Boton = 21) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =29
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_36.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitados, { Boton: 21 });
                     
-                    Set(NumBoton,21)
+                    Set(NumBoton,21);
+                    
+                    UpdateContext({PosicionYmodal: Resp21.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -3017,14 +3035,15 @@
                     =If(CountIf(BotonesDeshabilitadosR, Boton = 21) > 0 || Resp21.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_36.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitadosR, { Boton: 21 });
                     
-                    Set(NumBotonR,21)
+                    Set(NumBotonR,21);
+                    UpdateContext({PosicionYmodal: Resp21.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -3063,14 +3082,16 @@
                     =If(CountIf(BotonesDeshabilitados, Boton = 22) > 0, DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =29
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_37.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitados, { Boton: 22 });
                     
-                    Set(NumBoton,22)
+                    Set(NumBoton,22);
+                    
+                    UpdateContext({PosicionYmodal: Resp22.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -3153,14 +3174,16 @@
                     =If(CountIf(BotonesDeshabilitadosR, Boton = 22) > 0 || Resp22.Selected.Value = "r", DisplayMode.Disabled, DisplayMode.Edit)
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
-                OnSelect: |-
+                OnSelect: |
                     =Set(Pregunta,Preg10_37.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     
                     Collect(BotonesDeshabilitadosR, { Boton: 22 });
                     
-                    Set(NumBotonR,22)
+                    Set(NumBotonR,22);
+                    
+                    UpdateContext({PosicionYmodal: Resp22.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
