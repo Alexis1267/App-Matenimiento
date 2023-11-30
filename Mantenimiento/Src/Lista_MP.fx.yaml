@@ -498,23 +498,24 @@ Lista_MP As screen:
             BorderThickness: =1
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
+            Height: =37
             Items: |-
                 =//En esta parte me va traer todas las clases de mantenimiento que existen de el texto del dropdown de nombre del equipo 
                 
                 Distinct(Filter(CMXE_MP_N,Nom_Equipo = DropdownNom_equi.Selected.Value),Clas_Mantenimineto)
             Width: =242
             X: =621
-            Y: =126
+            Y: =118
             ZIndex: =6
 
         Label11_13 As label:
             FontWeight: =FontWeight.Bold
-            Height: =27
+            Height: =25
             Text: |-
                 ="Clase de Mtto:"
             Width: =242
             X: =621
-            Y: =98
+            Y: =92
             ZIndex: =7
 
     Image2_58 As image:
@@ -538,25 +539,25 @@ Lista_MP As screen:
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
             DisplayMode: =DisplayMode.Disabled
-            Height: =39
+            Height: =37
             Items: |-
                 =//Me trae el nombre del equipo del ID_Maq
                 
                 Distinct(Filter(CMXE_MP_N,ID_Maq = DropdownActivo.Selected.Value),Nom_Equipo)
             Width: =231
             X: =375
-            Y: =126
+            Y: =118
             ZIndex: =8
 
         Label11_14 As label:
             DisplayMode: =DisplayMode.Disabled
             FontWeight: =FontWeight.Bold
-            Height: =27
+            Height: =25
             Text: |-
                 ="Nombre del equipo:"
             Width: =231
             X: =375
-            Y: =98
+            Y: =92
             ZIndex: =9
 
     Icon2 As icon.Undo:
@@ -716,23 +717,24 @@ Lista_MP As screen:
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 18, 107, 1)
             DisplayMode: =DisplayMode.Disabled
+            Height: =37
             Items: |-
                 =//Me trae el valor unico de ID_Maq
                 
                 Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),ID_Maq)
             Width: =231
             X: =123
-            Y: =125
+            Y: =118
             ZIndex: =10
 
         Label11_20 As label:
             DisplayMode: =DisplayMode.Disabled
             FontWeight: =FontWeight.Bold
-            Height: =27
+            Height: =25
             Text: ="Activo.No"
             Width: =231
             X: =123
-            Y: =97
+            Y: =92
             ZIndex: =11
 
     TimerCarga_1 As timer:
