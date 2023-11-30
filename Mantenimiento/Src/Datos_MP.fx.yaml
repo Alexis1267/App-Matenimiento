@@ -587,11 +587,11 @@ Datos_MP As screen:
             ZIndex: =33
 
     ModalPop_Datos As groupContainer.manualLayoutContainer:
-        Height: =App.DesignHeight
+        Height: =768
         PaddingRight: =0.00
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
-        Width: =App.Width
+        Width: =1366
         ZIndex: =45
 
         HtmlText3_15 As htmlViewer:
@@ -913,7 +913,7 @@ Datos_MP As screen:
             Label20 As label:
                 Color: =RGBA(168, 0, 0, 1)
                 FontWeight: =FontWeight.Bold
-                Text: ="PRUEBA 2"
+                Text: ="PRUEBA 3"
                 X: =39
                 Y: =200
                 ZIndex: =17
