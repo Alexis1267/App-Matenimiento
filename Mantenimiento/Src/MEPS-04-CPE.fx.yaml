@@ -83,7 +83,7 @@
                     
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
-                OnSelect: |-
+                OnSelect: |
                     =Set(BotonActivo,"Boton3");
                     Set(Pregunta,Preg3_36.Text);
                     UpdateContext({ShowPopUp : true});
@@ -91,7 +91,9 @@
                     
                     Collect(BotonesDeshabilitadosR, { Boton: 3 });
                     
-                    Set(NumBotonR,3)
+                    Set(NumBotonR,3);
+                    
+                    UpdateContext({PosicionYmodal: Resp3_36.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -161,7 +163,7 @@
                     
                     
                     
-                    UpdateContext({PosicionYmodal: 176})
+                    UpdateContext({PosicionYmodal: Resp1_41.Y})
                     
                     
                 PaddingBottom: =10
@@ -288,7 +290,7 @@
                     
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =29
-                OnSelect: |-
+                OnSelect: |
                     =Set(BotonActivo,"Boton3");
                     Set(Pregunta,Preg3_36.Text);
                     UpdateContext({ShowPopUp : true});
@@ -296,7 +298,9 @@
                     
                     Collect(BotonesDeshabilitados, { Boton: 3 });
                     
-                    Set(NumBoton,3)
+                    Set(NumBoton,3);
+                    
+                    UpdateContext({PosicionYmodal: Resp3_36.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -1056,7 +1060,7 @@
                     
                     //Posicion del modalPop
                     
-                    UpdateContext({PosicionYmodal: 176})
+                    UpdateContext({PosicionYmodal: Resp1_41.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -1089,7 +1093,7 @@
                     
                     Set(NumBoton,2);
                     
-                    UpdateContext({PosicionYmodal: 226})
+                    UpdateContext({PosicionYmodal: Resp2_39.Y})
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
@@ -1341,14 +1345,17 @@
                     
                 Fill: =RGBA(0, 18, 107, 1)
                 Height: =60
-                OnSelect: |-
+                OnSelect: |+
                     =Set(BotonActivo,"Boton2");
                     Set(Pregunta,Preg2_39.Text);
                     UpdateContext({ShowPopUp : true});
                     
                     Collect(BotonesDeshabilitadosR, { Boton: 2 });
                     
-                    Set(NumBotonR,2)
+                    Set(NumBotonR,2);
+                    
+                    UpdateContext({PosicionYmodal: Resp2_39.Y})
+                    
                 PaddingBottom: =10
                 PaddingRight: =6.37
                 PaddingTop: =6.37
