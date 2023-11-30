@@ -16573,18 +16573,18 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Screen7"
+                  "fullyQualifiedName": "Screen4"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Screen7",
+                  "fullyQualifiedName": "Screen4",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "module": "Screen7",
-                "type": "Screen7"
+                "module": "Screen4",
+                "type": "Screen4"
               }
             }
           ],
@@ -32492,6 +32492,36 @@
           },
           "ruleId": "app-InefficientDelayLoading",
           "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen4.SumaPosicionY"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen4.SumaPosicionY",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "SumaPosicionY",
+                "module": "Screen4",
+                "type": "Screen4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 9
         },
         {
           "locations": [

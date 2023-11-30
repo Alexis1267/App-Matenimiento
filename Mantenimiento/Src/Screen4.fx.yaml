@@ -1,0 +1,93 @@
+"Screen4 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: |-
+        =UpdateContext({SumaPosicionY: 20 + 240})
+
+    RectQuickActionBar1 As rectangle:
+        Height: =88
+        Width: =Parent.Width
+        ZIndex: =1
+
+    LblAppName1 As label:
+        Align: =Align.Center
+        Height: =88
+        Text: ="[Title]"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+        ZIndex: =3
+
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1187
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Button11 As button:
+                OnSelect: |+
+                    =UpdateContext({PruebaPoP:true});
+                    
+                    
+                    Set(PosicionPredeterminadaY, 40);
+                    
+                    // En el evento OnSelect del Botón 1
+                    /*If(PosicionPredeterminadaY = PosicionPredeterminadaY, 
+                       Set(PosicionY, PosicionPredeterminadaY)
+                    )*/
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                Text: ="Button"
+                X: =170
+                Y: =88
+                ZIndex: =1
+
+            Button11_1 As button:
+                Height: =42
+                OnSelect: |
+                    =UpdateContext({PruebaPoP:true});
+                Text: ="Button"
+                X: =126
+                Y: =946
+                ZIndex: =2
+
+            Button11_2 As button:
+                OnSelect: |+
+                    =UpdateContext({PruebaPoP:true});
+                    
+                    
+                    Set(PosicionPredeterminadaY, 310);
+                    
+                    // En el evento OnSelect del Botón 1
+                    /*If(PosicionPredeterminadaY = PosicionPredeterminadaY, 
+                       Set(PosicionY, PosicionPredeterminadaY)
+                      
+                    )*/
+                    
+                Text: ="Button"
+                X: =170
+                Y: =397
+                ZIndex: =6
+
+            Rectangle3 As rectangle:
+                Height: =207
+                Visible: =PruebaPoP
+                Width: =362
+                X: =743
+                Y: =PosicionPredeterminadaY
+                ZIndex: =7
+
