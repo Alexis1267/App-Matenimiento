@@ -794,7 +794,7 @@ Datos_MP As screen:
                         Notify("El usuario se agregó con éxito.", NotificationType.Success)
                     ); 
                     //VALIDA SI HAY ALGO QUE NO COINCIDA CON LOS DATOS DEL USUARIO
-                    If(Valida = InsertNomina_2.Text,Collect(Add_Involucrado,{Nombre: DropUser_2.SelectedText.Value}),Notify("El nombre y/o el número de nómina no coinciden. No se puede agregar al usuario. Por favor, compruebe sus datos.",NotificationType.Error));
+                    If(Valida = InsertNomina_2.Text,Collect(Add_Involucrado,{Nombre:Coalesce( DropUser_2.SelectedText.Value)}),Notify("El nombre y/o el número de nómina no coinciden. No se puede agregar al usuario. Por favor, compruebe sus datos.",NotificationType.Error));
                     
                     //Reset(DropUser_2);
                     //Reset(InsertNomina_2);
