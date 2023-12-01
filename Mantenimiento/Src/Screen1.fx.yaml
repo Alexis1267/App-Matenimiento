@@ -1,197 +1,116 @@
-Screen1 As screen:
-    OnVisible: |-
-        =Set(BtnPruebaA,false);
-        UpdateContext({BTNPRUEBAA: false});
-        
-        
-        Set(TiempoActual, LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH));
-        
-        
-        Set(Horas, Hour(Value(LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH))));
-        Set(Minutos, Minute(Value(LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH))));
-        Set(Segundos, Second(Value(LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH))));
-        
-        
-        //TEMPORIZADOR SUMA 
-        
-        Set(Tempo1,TimeValue(Label14));
-        Set(Tempo2,TimeValue(Label15));
-        
-        Set(SumaTempo,Tempo1 + Tempo2);
+"Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    Dropdown2 As dropdown:
-        Items: =[LookUp(PreventivSure_Preg,Folio_Maq=36).ACT1]
-        X: =84
-        Y: =54
+    RectQuickActionBar1 As rectangle:
+        Height: =88
+        Width: =Parent.Width
         ZIndex: =1
 
-    Dropdown2_1 As dropdown:
-        Default: =" Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = 36).ACT1)"
-        Items: |-
-            =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = 36).ACT1)]
-            
-            //["R","N", Coalesce(LookUp(PreventivSure_Preg, ID_Preg = 9 || folio_Maq = Id_Maquina).Act11)]
-        X: =84
-        Y: =125
+    LblAppName1 As label:
+        Align: =Align.Center
+        Height: =88
+        Text: ="[Title]"
+        Width: =Parent.Width
         ZIndex: =2
 
-    Dropdown4 As dropdown:
-        Default: =Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = 36).ACT3)
-        Items: |
-            =["R","N", Coalesce(LookUp(PreventivSure_Preg, Folio_Maq = 36).ACT3)]
-        X: =84
-        Y: =228
+    Canvas1 As fluidGrid.fluidGridWithBlankCard:
+        BorderThickness: =0
+        Height: =Parent.Height - Self.Y
+        Width: =Parent.Width
+        Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
         ZIndex: =3
 
-    Button9 As button:
-        DisplayMode: =If(BtnPruebaA,DisplayMode.Disabled,DisplayMode.Edit)
-        OnSelect: =Set(BtnPruebaA,true)
-        Text: ="Button"
-        X: =1065
-        Y: =96
+        DataCard1 As dataCard:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1022
+            Width: =Parent.Width
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+    "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =104
+        Width: =1344
+        Y: =88
         ZIndex: =4
 
-    Icon4 As icon.Cancel:
-        Icon: =Icon.Cancel
-        OnSelect: =Set(BtnPruebaA,false)
-        X: =807
-        Y: =84
-        ZIndex: =5
+        Image3 As image:
+            Height: =72
+            OnSelect: =Select(Parent)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =72
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
 
-    Label10 As label:
-        Text: ="VAR  ""SET"""
-        X: =925
-        Y: =30
-        ZIndex: =6
+        Title4 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleHeading
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 173
+            X: =103
+            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
+            ZIndex: =2
 
-    Label10_1 As label:
-        Text: ="VAR  ""UpdateContext"""
-        Width: =212
-        X: =915
-        Y: =188
-        ZIndex: =7
+        Subtitle2 As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.SampleText
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title4.Width
+            X: =Title4.X
+            Y: =Title4.Y + Title4.Height
+            ZIndex: =3
 
-    Button10 As button:
-        DisplayMode: =If(BTNPRUEBAA,DisplayMode.Disabled,DisplayMode.Edit)
-        OnSelect: |-
-            =UpdateContext({BTNPRUEBAA: true})
-        Text: ="Button"
-        X: =1065
-        Y: =268
-        ZIndex: =8
+        NextArrow4 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
 
-    Icon5 As icon.Cancel:
-        Icon: =Icon.Cancel
-        OnSelect: |-
-            =UpdateContext({BTNPRUEBAA: false})
-        X: =807
-        Y: =268
-        ZIndex: =9
+        Separator4 As rectangle:
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
 
-    Label14 As label:
-        Align: =Align.Center
-        BorderThickness: =1
-        Height: =48
-        Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH)
-        Width: =182
-        X: =399
-        Y: =400
-        ZIndex: =11
-
-    Timer6 As timer:
-        AutoPause: =false
-        AutoStart: =true
-        Start: =Second(1)
-        Text: |-
-            =Text(TimeValue(Label14.Text), "hh:mm:ss")
-        X: =168
-        Y: =395
-        ZIndex: =12
-
-    Label15 As label:
-        FocusedBorderThickness: =1
-        Text: |-
-            ="00:10:10"
-        X: =703
-        Y: =561
-        ZIndex: =13
-
-    Label14_1 As label:
-        Align: =Align.Center
-        Height: =48
-        Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH)
-        Width: =182
-        X: =960
-        Y: =483
-        ZIndex: =14
-
-    Label16 As label:
-        Height: =60
-        Text: |-
-            =Text(SumaTempo,"hh:mm:ss")
-        Width: =164
-        X: =581
-        Y: =651
-        ZIndex: =16
-
-    Label17 As label:
-        Text: ="Tempo1"
-        X: =482
-        Y: =517
-        ZIndex: =17
-
-    Label17_1 As label:
-        Text: ="Tempo2"
-        X: =698
-        Y: =517
-        ZIndex: =18
-
-    Label17_2 As label:
-        Text: ="Suma de ambos"
-        X: =569
-        Y: =611
-        ZIndex: =19
-
-    Label19 As label:
-        BorderThickness: =1
-        Text: =Text(Label14.Text)
-        X: =440
-        Y: =561
-        ZIndex: =20
-
-    Timer1 As timer:
-        Height: =62
-        Text: |-
-            =Text(Time(0, 0, Self.Value/1000) + TimeValue(Label19.Text) , "hh:mm:ss")
-        Width: =209
-        X: =871
-        Y: =606
-        ZIndex: =21
-
-    Timer2 As timer:
-        Text: |-
-            =Text(Time(0, 0, Self.Value/1000) + TimeValue(Label14.Text),"hh:mm:ss")
-        X: =134
-        Y: =601
-        ZIndex: =22
-
-    HtmlText3_59 As htmlViewer:
-        Height: =765
-        HtmlText: |-
-            ="<div style=""
-            position: absolute;
-              text-align: center;
-              color: #fff;
-              box-shadow: 0px 0px 25px #222;
-              backdrop-filter: blur(10px);
-            height:"& App.Height &"px;
-            width:"&App.Width &"px;""></div>"
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Size: =14.04
-        Visible: =
-        Width: =1366
-        ZIndex: =23
+        Rectangle2 As rectangle:
+            Height: =Parent.TemplateHeight - Separator4.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
 
