@@ -495,7 +495,21 @@ Datos_MP As screen:
                 =//Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
                 //Text(Trim(Concat(Add_Involucrado,"- "&Nombre,Char(10))) & Char(10) & LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos))
                 
-                Text(Trim(Concat(Add_Involucrado, "- " & Nombre, Char(10))) & Char(10) & Trim(LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos)))
+                //Text(Trim(Concat(Add_Involucrado, "- " & Nombre, Char(10))) & Char(10) & Trim(LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos)))
+                
+                Text(
+                    Trim(
+                        LookUp(CMXE_MP_N, Folio_Maq = ID_Maquina, Tecnicos)
+                    ) & Char(10) &
+                    Trim(
+                        Concat(
+                            Filter(Add_Involucrado, !IsBlank(Nombre)),
+                            "- " & Nombre,
+                            Char(10)
+                        )
+                    )
+                )
+                
                 
             Width: =371
             X: =976
