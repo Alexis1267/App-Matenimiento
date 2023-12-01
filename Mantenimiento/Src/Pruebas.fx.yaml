@@ -1614,17 +1614,17 @@
                 ZIndex: =76
 
             Container1_42 As groupContainer.manualLayoutContainer:
-                Height: =768
+                Height: =1080
                 PaddingRight: =0.00
                 PaddingTop: =0.00
                 Visible: =ShowPopUp
-                Width: =1366
+                Width: =1920
                 X: =0.00
                 Y: =PosicionYmodal
                 ZIndex: =77
 
                 HtmlText3_56 As htmlViewer:
-                    Height: =768
+                    Height: =1080
                     HtmlText: |-
                         ="<div style=""
                         position: absolute;
@@ -1632,15 +1632,15 @@
                           color: #fff;
                           box-shadow: 0px 0px 25px #222;
                           backdrop-filter: blur(10px);
-                        height:"& App.Height &"px;
-                        width:"&App.Width &"px;""></div>"
+                        height:"& 1080 &"px;
+                        width:"& 1920 &"px;""></div>"
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0.00
                     PaddingTop: =0.00
                     Size: =14.04
                     Visible: =ShowPopUp
-                    Width: =1366
+                    Width: =1920
                     ZIndex: =1
 
                 Container2_42 As groupContainer.manualLayoutContainer:
@@ -1979,7 +1979,6 @@
 
                         UploadedImage7_42 As image:
                             BorderColor: =RGBA(0, 0, 0, 1)
-                            BorderThickness: =1
                             Height: =139
                             Image: =If(IsBlank(AddMediaButton6_42.Media), SampleImage, AddMediaButton6_42.Media)
                             PaddingRight: =0.00
