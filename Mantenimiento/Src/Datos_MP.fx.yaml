@@ -491,9 +491,12 @@ Datos_MP As screen:
             PaddingRight: =3.63
             PaddingTop: =3.63
             Size: =16.58
-            Text: |
+            Text: |+
                 =//Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
-                Text(Trim(Concat(Add_Involucrado,"- "&Nombre,Char(10))) & Char(10) & LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos))
+                //Text(Trim(Concat(Add_Involucrado,"- "&Nombre,Char(10))) & Char(10) & LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos))
+                
+                Text(Trim(Concat(Add_Involucrado, "- " & Nombre, Char(10))) & Char(10) & Trim(LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos)))
+                
             Width: =371
             X: =976
             Y: =523

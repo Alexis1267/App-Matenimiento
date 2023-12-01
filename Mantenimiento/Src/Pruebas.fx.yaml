@@ -1668,7 +1668,7 @@
                         BorderStyle: =BorderStyle.None
                         DisplayMode: |
                             =//Validacion de boton de que debe cumplir y escribir en justificacion
-                            If(IsBlank(TextInput1_222),DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
+                            If(IsBlank(TextInput1_222.Text) && IsBlank(Dropdown4_43.Selected.Value) ,DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
                             
                             
                             //BOTONES
@@ -2020,7 +2020,10 @@
                         Items: |+
                             = 
                              //Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10) & Char(10) & Label12_15.Text)
-                             Split(Label12_15.Text, Char(10))
+                             //Split(Label12_15.Text, Char(10))
+                            
+                            Filter(Split(Label12_15.Text, Char(10)), !IsBlank(Value))
+                            
                             
                              
                             
@@ -2087,7 +2090,18 @@
             || Btn7_33.DisplayMode = DisplayMode.Disabled
             || Btn8_30.DisplayMode = DisplayMode.Disabled
             || Btn9_25.DisplayMode = DisplayMode.Disabled
-            || Btn10_24.DisplayMode = DisplayMode.Disabled,
+            || Btn10_24.DisplayMode = DisplayMode.Disabled
+            
+            || Btn1_45.DisplayMode = DisplayMode.Disabled
+            || Btn2_40.DisplayMode = DisplayMode.Disabled 
+            || Btn3_36.DisplayMode = DisplayMode.Disabled
+            || Btn4_36.DisplayMode = DisplayMode.Disabled
+            || Btn5_36.DisplayMode = DisplayMode.Disabled
+            || Btn6_34.DisplayMode = DisplayMode.Disabled
+            || Btn7_34.DisplayMode = DisplayMode.Disabled
+            || Btn8_31.DisplayMode = DisplayMode.Disabled
+            || Btn9_26.DisplayMode = DisplayMode.Disabled
+            || Btn10_25.DisplayMode = DisplayMode.Disabled,
             Notify("No es posible regresar a la pantalla anterior debido a la presencia de hallazgos ya registrados en el MP.",NotificationType.Information),
             Navigate(Datos_MP,ScreenTransition.Fade))
         PaddingRight: =0.00

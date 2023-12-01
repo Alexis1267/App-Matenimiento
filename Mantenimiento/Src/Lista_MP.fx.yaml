@@ -345,6 +345,7 @@ Lista_MP As screen:
                 
                 Set(ContadorHH, false); //Detiene el contador de horas hombre
                 Set(ContadorFinal, false); //Detiene el contador de espera para que vuelva a la pantalla de QR
+                Reset(TimerHorasHombre)
             Visible: =If(ThisItem.IsSelected,true)
             X: =1266
             Y: =81
