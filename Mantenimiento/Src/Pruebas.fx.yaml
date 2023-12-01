@@ -1316,7 +1316,9 @@
 
             TempoHH_Contador As label:
                 Align: =Align.Center
+                Color: =RGBA(0, 0, 0, 0)
                 Text: =TimerHorasHombre.Text
+                Visible: =false
                 Width: =113
                 X: =196
                 Y: =2903

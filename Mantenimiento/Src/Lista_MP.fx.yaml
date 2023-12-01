@@ -287,6 +287,7 @@ Lista_MP As screen:
             ZIndex: =16
 
         Title3_4 As label:
+            Color: =RGBA(0, 0, 0, 0)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =24
             OnSelect: =Select(Parent)
@@ -304,7 +305,7 @@ Lista_MP As screen:
             ZIndex: =17
 
         Title3_5 As label:
-            Color: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 0)
             DisplayMode: =DisplayMode.View
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =24
