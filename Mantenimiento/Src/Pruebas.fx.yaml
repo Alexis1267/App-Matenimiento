@@ -12,7 +12,7 @@
         //Parte para poner en el dropdown del modalpop de reporte de hallazgo
         Set(DropdownInvolu,Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)),Char(10)));
         
-        Set(DropdownAsig,Split(Concat(AsignadoOP, "" & NombreOp & Char(10)),Char(10)));
+        
         
         
         
