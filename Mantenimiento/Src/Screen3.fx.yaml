@@ -226,15 +226,17 @@ Screen3 As screen:
             DisplayMode: |+
                 =//If(Radio1.Selected.Value = "No realizado" || Button1.DisplayMode = DisplayMode.Edit, DisplayMode.Disabled,DisplayMode.Edit)
                 
-                //If(Radio1.Selected.Value = "No realizado" || Button1.DisplayMode = DisplayMode.Edit ,DisplayMode.Disabled,DisplayMode.Edit)
+                //If(Radio1.Selected.Value = "No realizado" || Button1.DisplayMode = DisplayMode.Edit  ,DisplayMode.Disabled,DisplayMode.Edit)}
                 
                 
                 
-                If(Radio1.Selected.Value = "No realizado" || Button1.DisplayMode = DisplayMode.Edit ,DisplayMode.Disabled,If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Edit),DisplayMode.Edit)
+                
+                
+                
                 
             Fill: =RGBA(97, 181, 73, 1)
             Height: =50
-            OnSelect: =
+            OnSelect: =If(Radio1.Selected.Value = "No realizado" && Button1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),Navigate(Screen1))
             Size: =20
             Text: ="Finalizar Actividad"
             Width: =307
