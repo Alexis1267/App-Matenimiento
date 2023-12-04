@@ -32,26 +32,16 @@ Screen3 As screen:
             X: =1161
             ZIndex: =2
 
-        Icon1 As icon.BackArrow:
-            Height: =75
-            Icon: =Icon.BackArrow
-            OnSelect: |-
-                =Navigate(Screen1);
-                Reset(Radio1)
-            Width: =82
-            Y: =3
-            ZIndex: =3
-
     Actividad As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =124
+        Height: =158
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
         RadiusTopRight: =30
         Width: =1330
         X: =20
-        Y: =115
+        Y: =110
         ZIndex: =2
 
         Container7 As groupContainer.manualLayoutContainer:
@@ -110,7 +100,7 @@ Screen3 As screen:
         RadiusTopRight: =30
         Width: =1330
         X: =20
-        Y: =373
+        Y: =280
         ZIndex: =3
 
         Container9 As groupContainer.manualLayoutContainer:
@@ -126,4 +116,26 @@ Screen3 As screen:
                 Text: ="Ayuda Visual"
                 Width: =1330
                 ZIndex: =1
+
+    Titulo_1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =80
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Width: =1330
+        X: =20
+        Y: =670
+        ZIndex: =4
+
+        Icon1_1 As icon.BackArrow:
+            Height: =75
+            Icon: =Icon.BackArrow
+            OnSelect: |-
+                =Navigate(Screen1);
+                Reset(Radio1)
+            Width: =82
+            Y: =3
+            ZIndex: =3
 
