@@ -911,7 +911,6 @@ Datos_MP As screen:
 
             Label4 As label:
                 Text: =LookUp(PreventivSure_Tecnicos,DropUser_2.SelectedText.Value = Tecnico,Num_Empleado)
-                Visible: =false
                 X: =698
                 Y: =200
                 ZIndex: =14
