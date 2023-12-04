@@ -1,6 +1,6 @@
 Screen3 As screen:
     Fill: =RGBA(21, 44, 115, 1)
-    OnVisible: =Set(ActividadMP,Title4.Text)
+    OnVisible: =Set(ActividadMP,Subtitle1.Text)
 
     Titulo As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -112,6 +112,7 @@ Screen3 As screen:
             OnSelect: |
                 =UpdateContext({BotonHallazgo: false});
             Text: ="Deshabilitar boton"
+            Visible: =false
             Width: =278
             X: =1052
             Y: =128

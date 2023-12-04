@@ -18,7 +18,7 @@
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =90
-        Width: =1328
+        Width: =1366
         Y: =88
         ZIndex: =1
 
@@ -87,8 +87,45 @@
 
     LblAppName1 As label:
         Align: =Align.Center
+        Fill: =RGBA(21, 44, 115, 1)
+        FontWeight: =FontWeight.Bold
         Height: =88
-        Text: ="[Title]"
+        Size: =30
+        Text: ="Lista de actividades"
         Width: =Parent.Width
         ZIndex: =2
+
+    Image2_1 As image:
+        Height: =80
+        Image: =carrier_logo_300
+        Width: =158
+        X: =1170
+        Y: =4
+        ZIndex: =3
+
+    Button5 As button:
+        Fill: =RGBA(97, 181, 73, 1)
+        Height: =61
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: ="Finalizar Preventivo"
+        Width: =245
+        X: =560
+        Y: =665
+        ZIndex: =4
+
+    Button5_1 As button:
+        Fill: =RGBA(233, 165, 43, 1)
+        Height: =44
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Text: ="Pendiente "
+        Width: =155
+        X: =1015
+        Y: =682
+        ZIndex: =5
 
