@@ -212,6 +212,7 @@ Screen3 As screen:
         ZIndex: =4
 
         Icon1_1 As icon.BackArrow:
+            DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
             Height: =75
             Icon: =Icon.BackArrow
             OnSelect: |-
@@ -222,11 +223,15 @@ Screen3 As screen:
             ZIndex: =3
 
         Button2 As button:
-            DisplayMode: =If(Radio1.Selected.Value = "No realizado" && Button1.DisplayMode = DisplayMode.Edit, DisplayMode.Disabled,DisplayMode.Edit)
+            DisplayMode: =If(Radio1.Selected.Value = "No realizado" && Button1.DisplayMode = DisplayMode.Edit, DisplayMode.Disabled,DisplayMode.Disabled)
+            Fill: =RGBA(97, 181, 73, 1)
+            Height: =50
             OnSelect: =
-            Text: ="Button"
-            X: =576
-            Y: =20
+            Size: =20
+            Text: ="Finalizar Actividad"
+            Width: =307
+            X: =502
+            Y: =15
             ZIndex: =4
 
     Container1_43 As groupContainer.manualLayoutContainer:
