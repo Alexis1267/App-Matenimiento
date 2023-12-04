@@ -96,7 +96,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 11,
+    "BindingErrorCount": 4,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -113,7 +113,7 @@
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
-    "Name": "PreventivSure_QA.msapp",
+    "Name": "PreventivSure_QA",
     "OriginatingVersion": "1.332",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
@@ -131,11 +131,11 @@
   },
   "ScreenOrder": [
     "QR_Inicio",
-    "Sesion",
     "Lista_MP",
     "Datos_MP",
     "Pruebas",
     "MEPS-04-CPE",
-    "Screen1"
+    "Screen1",
+    "Screen2"
   ]
 }

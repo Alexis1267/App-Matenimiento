@@ -112,7 +112,7 @@ Datos_MP As screen:
             =Set(ContadorHH,true);
             
             //VALIDACION DE CAMPO INVOLUCRADOS
-            If(IsBlank(Trim(Label12_15.Text)),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
+            /*If(IsBlank(Trim(Label12_15.Text)),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
             If(PruebaNomencla.Text = "MEPS-04-CPE",Navigate('MEPS-04-CPE',ScreenTransition.Cover),
             If(PruebaNomencla.Text = "MEPS-04-DKE",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
             If(PruebaNomencla.Text = "MEPS-04-DKS",Navigate('MEPS-04-DKS(ImgEjem1)',ScreenTransition.Cover),
@@ -125,8 +125,12 @@ Datos_MP As screen:
             If(PruebaNomencla.Text = "MEPS-04-GX2",Navigate('MEPS-04-GX2(Preg1)',ScreenTransition.Cover),
             If(PruebaNomencla.Text = "MEPS-04-MEC",Navigate('MEPS-04-MEC(Preg1)',ScreenTransition.Cover),
             If(PruebaNomencla.Text = "MEPS-04-BV3",Navigate('MEPS-04-BV3(Preg1)',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-BV2",Navigate('MEPS-04-BV2(Preg1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error)))))))))))))));
+            If(PruebaNomencla.Text = "MEPS-04-BV2",Navigate('MEPS-04-BV2(Preg1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error)))))))))))))));*/
             
+            
+            If(IsBlank(Trim(Label12_15.Text)),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
+            
+            If(PruebaNomencla.Text = "MEPS-04-HID",Navigate(Pruebas,ScreenTransition.Cover), Notify("Error",NotificationType.Error)));
             
             
         PaddingRight: =6.37
@@ -1023,7 +1027,7 @@ Datos_MP As screen:
             PaddingRight: =6.37
             PaddingTop: =6.37
             Size: =31.89
-            Text: =Operador //En esta parte lo que hago es poner la variable que se creo en la pantalla de "Sesion" donde me toma el nombre de la persona que hizo el inicio de sesion y lo muestra en la pantalla
+            Text: =//En esta parte lo que hago es poner la variable que se creo en la pantalla de "Sesion" donde me toma el nombre de la persona que hizo el inicio de sesion y lo muestra en la pantalla
             Width: =557.51
             X: =0.00
             Y: =144

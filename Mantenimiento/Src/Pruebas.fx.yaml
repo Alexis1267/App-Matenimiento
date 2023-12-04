@@ -14,7 +14,6 @@
         
         Set(DropdownAsig,Split(Concat(AsignadoOP, "" & NombreOp & Char(10)),Char(10)));
         
-        ClearCollect(AsignadoOP,{NombreOp: Operador});
         
         
         //BOTONES 
@@ -2017,7 +2016,7 @@
                         BorderColor: =RGBA(0, 40, 85, 1)
                         BorderThickness: =1
                         ChevronBackground: =RGBA(21, 44, 115, 1)
-                        Default: =Operador
+                        Default: =
                         Items: |+
                             = 
                              //Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10) & Char(10) & Label12_15.Text)
