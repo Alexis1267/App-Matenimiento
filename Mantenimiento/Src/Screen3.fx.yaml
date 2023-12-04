@@ -63,7 +63,7 @@ Screen3 As screen:
                 ZIndex: =1
 
         Label14 As label:
-            Height: =72
+            Height: =123
             Overflow: =Overflow.Scroll
             Text: =ActividadMP
             Width: =890
@@ -72,23 +72,24 @@ Screen3 As screen:
             ZIndex: =2
 
         Radio1 As radio:
-            Height: =79
+            Height: =65
             Items: =["Realizado","No realizado"]
             PaddingBottom: =0
             PaddingTop: =0
             RadioSize: =30
             Width: =181
-            Y: =35
+            Y: =63
             ZIndex: =3
 
         Button1 As button:
+            Fill: =RGBA(234, 0, 41, 1)
             Height: =65
             OnSelect: =
             Text: ="¿Se encontro algun hallazgo?"
             Visible: =If(Radio1.Selected.Value = "Realizado" || Radio1.Selected.Value = "No realizado",true,false)
             Width: =187
-            X: =1115
-            Y: =42
+            X: =1125
+            Y: =63
             ZIndex: =4
 
     Img_Ilustrativas As groupContainer.manualLayoutContainer:
