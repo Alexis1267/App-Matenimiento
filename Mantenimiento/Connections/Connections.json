@@ -129,8 +129,8 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23105.18",
-        "modifiedOn": "2023-12-04 13:48:20",
-        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"]}}",
+        "modifiedOn": "2023-12-04 15:36:29",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"]}}",
         "version": 1
       },
       "gatewayObjectIdHint": "263dc832-5fea-479a-9fac-23670d346397",
@@ -154,6 +154,9 @@
           "PreventivSure_Preg": {
             "tableName": "[dbo].[PreventivSure_Preg]"
           },
+          "PreventivSure_PreguntasMP": {
+            "tableName": "[dbo].[PreventivSure_PreguntasMP]"
+          },
           "PreventivSure_Tecnicos": {
             "tableName": "[dbo].[PreventivSure_Tecnicos]"
           },
@@ -169,7 +172,8 @@
       "PreventivSure_Tecnicos",
       "CMXE_MP_N",
       "PreventivSure_Preg",
-      "Preguntas_MP"
+      "Preguntas_MP",
+      "PreventivSure_PreguntasMP"
     ],
     "dependencies": {},
     "dependents": [],
