@@ -72,6 +72,7 @@ Screen3 As screen:
             ZIndex: =2
 
         Radio1 As radio:
+            DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
             Height: =65
             Items: =["Realizado","No realizado"]
             PaddingBottom: =0
@@ -82,18 +83,39 @@ Screen3 As screen:
             ZIndex: =3
 
         Button1 As button:
+            DisplayMode: =If(BotonHallazgo,DisplayMode.Disabled,DisplayMode)
             Fill: =RGBA(234, 0, 41, 1)
             Height: =65
-            OnSelect: |-
+            OnSelect: |+
                 =UpdateContext({ShowPopUp : true});
                 
-                Set(ActividadMP,Label14.Text)
+                
+                
+                //Deshabilitar boton
+                UpdateContext({BotonHallazgo: false});
+                
+                
+                Set(ActividadMP,Label14.Text);
+                
+                
             Text: ="¿Se encontro algun hallazgo?"
-            Visible: =If(Radio1.Selected.Value = "Realizado" || Radio1.Selected.Value = "No realizado",true,false)
+            Visible: |+
+                =If(Radio1.Selected.Value = "Realizado" || Radio1.Selected.Value = "No realizado",true,false)
+                
             Width: =187
             X: =1125
             Y: =63
             ZIndex: =4
+
+        Button4 As button:
+            Height: =30
+            OnSelect: |
+                =UpdateContext({BotonHallazgo: false});
+            Text: ="Deshabilitar boton"
+            Width: =278
+            X: =198
+            Y: =114
+            ZIndex: =5
 
     Img_Ilustrativas As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -200,7 +222,7 @@ Screen3 As screen:
             ZIndex: =3
 
         Button2 As button:
-            DisplayMode: =If(Radio1.Selected.Value = "No realizado" && Button1.Visible = true, DisplayMode.Disabled,DisplayMode.Edit)
+            DisplayMode: =If(Radio1.Selected.Value = "No realizado" && Button1.DisplayMode = DisplayMode.Edit, DisplayMode.Disabled,DisplayMode.Edit)
             OnSelect: =
             Text: ="Button"
             X: =576
@@ -311,6 +333,9 @@ Screen3 As screen:
                     
                     Notify("El reporte se ha enviado con éxito.", NotificationType.Success);
                     
+                    
+                    //Deshabilitar botonHallazgo
+                    UpdateContext({BotonHallazgo: true});
                     
                     UpdateContext({ShowPopUp: false}); //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
                     Reset(TextInput1_227);
