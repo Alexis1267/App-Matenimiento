@@ -1,10 +1,9 @@
 "Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
-    OnVisible: |-
+    OnVisible: |+
         =Set(NomenclaturaMp,PruebaNomencla.Text);
         
         
-        //variable de actividades
-        Set(ActividadMP,Title4.Text)
+        
 
     RectQuickActionBar1 As rectangle:
         Height: =88

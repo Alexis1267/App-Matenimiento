@@ -1,5 +1,6 @@
 Screen3 As screen:
     Fill: =RGBA(21, 44, 115, 1)
+    OnVisible: =Set(ActividadMP,Title4.Text)
 
     Titulo As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -63,6 +64,7 @@ Screen3 As screen:
                 ZIndex: =1
 
         Label14 As label:
+            Align: =Align.Justify
             Height: =123
             Overflow: =Overflow.Scroll
             Text: =ActividadMP
@@ -113,8 +115,8 @@ Screen3 As screen:
                 =UpdateContext({BotonHallazgo: false});
             Text: ="Deshabilitar boton"
             Width: =278
-            X: =198
-            Y: =114
+            X: =1052
+            Y: =128
             ZIndex: =5
 
     Img_Ilustrativas As groupContainer.manualLayoutContainer:
@@ -236,10 +238,13 @@ Screen3 As screen:
                 
             Fill: =RGBA(97, 181, 73, 1)
             Height: =50
-            OnSelect: |-
+            OnSelect: |
                 =//If(Radio1.Selected.Value = "No realizado" || Button1.DisplayMode = DisplayMode.Disabled,Navigate(Screen1),Notify("Debe de dar una justificacion",NotificationType.Error))
                 
-                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),Navigate(Screen1))
+                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),Navigate(Screen1));
+                
+                Reset(Radio1);
+                UpdateContext({BotonHallazgo: false});
             Size: =20
             Text: ="Finalizar Actividad"
             Width: =307
