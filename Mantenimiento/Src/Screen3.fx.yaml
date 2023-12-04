@@ -64,24 +64,22 @@ Screen3 As screen:
                 ZIndex: =1
 
         Label14 As label:
-            Align: =Align.Justify
             Height: =123
             Overflow: =Overflow.Scroll
             Text: =ActividadMP
-            Width: =890
-            X: =217
+            Width: =1112
             Y: =35
             ZIndex: =2
 
         Radio1 As radio:
             DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =65
+            Height: =35
             Items: =["Realizado","No realizado"]
+            Layout: =Layout.Horizontal
             PaddingBottom: =0
             PaddingTop: =0
-            RadioSize: =30
-            Width: =181
-            Y: =63
+            RadioSize: =33
+            Width: =389
             ZIndex: =3
 
         Button1 As button:

@@ -6502,7 +6502,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label14",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9484,7 +9484,14 @@
         "RadioSelectionFill",
         "RadioBackgroundFill",
         "RadioBorderColor",
-        "Layout",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Layout.Vertical",
+          "InvariantPropertyName": "Layout",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BorderColor",
         "DisabledBorderColor",
         "BorderStyle",
@@ -9571,7 +9578,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Radio1",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
