@@ -3642,6 +3642,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.NomenclaturaMp"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.NomenclaturaMp",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "NomenclaturaMp",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Camera"
                 }
               ],
