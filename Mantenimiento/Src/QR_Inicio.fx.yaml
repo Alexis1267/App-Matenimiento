@@ -146,6 +146,7 @@
         HoverBorderColor: =RGBA(88, 115, 171, 1)
         HoverContentColor: =RGBA(255, 255, 255, 1)
         HoverFillColor: =RGBA(47, 81, 151, 1)
+        OnCancel: =false
         OnScan: |+
             =//En esta parte lo que se es haciendo es almacenar el valor del QR en una variable para despues hacer uso de ella en los filtros de la pantalla "Lista_MP".
              
