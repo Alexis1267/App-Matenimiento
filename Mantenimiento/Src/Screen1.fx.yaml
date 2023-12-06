@@ -13,7 +13,7 @@
     "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =511
-        Items: =Sort(Search(PreventivSure_PreguntasMP,"MEPS-04-LUB","Proc_No"),Num_Pregunta)
+        Items: =Sort(Search(PreventivSure_PreguntasMP,NomenclaturaMp,"Proc_No"),Num_Pregunta)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -144,6 +144,6 @@
         Text: ="Pendiente "
         Width: =155
         X: =1015
-        Y: =682
+        Y: =673
         ZIndex: =5
 
