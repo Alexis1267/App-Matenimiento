@@ -55,7 +55,6 @@ Datos_MP As screen:
         Start: =ContadorHH
         Text: |-
             =Text(Time(0, 0, Self.Value/1000) + TimeValue(Label23.Text),"hh:mm:ss")
-        Visible: =false
         X: =1166
         Y: =26
         ZIndex: =3
@@ -130,7 +129,7 @@ Datos_MP As screen:
             
             If(IsBlank(Trim(Label12_15.Text)),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
             
-            If(PruebaNomencla.Text = "MEPS-04-HID",Navigate(Pruebas,ScreenTransition.Cover), Notify("Error",NotificationType.Error)));
+            If(PruebaNomencla.Text = "MEPS-04-HID",Navigate(Screen1,ScreenTransition.Cover), Notify("Error",NotificationType.Error)));
             
             
         PaddingRight: =6.37
