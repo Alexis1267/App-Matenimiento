@@ -1,6 +1,8 @@
 Screen3 As screen:
     Fill: =RGBA(21, 44, 115, 1)
-    OnVisible: =Set(ActividadMP,Subtitle1.Text)
+    OnVisible: |-
+        =Set(ActividadMP,Subtitle1.Text);
+        Set(Num_PregMP,Title1_1.Text);
 
     Titulo As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -67,7 +69,8 @@ Screen3 As screen:
             Height: =123
             Overflow: =Overflow.Scroll
             Text: =ActividadMP
-            Width: =1112
+            Width: =1074
+            X: =65
             Y: =35
             ZIndex: =2
 
@@ -117,6 +120,15 @@ Screen3 As screen:
             X: =1052
             Y: =128
             ZIndex: =5
+
+        Label1 As label:
+            Align: =Align.Center
+            BorderThickness: =1
+            Text: =Num_PregMP
+            Width: =44
+            X: =4
+            Y: =39
+            ZIndex: =6
 
     Img_Ilustrativas As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
