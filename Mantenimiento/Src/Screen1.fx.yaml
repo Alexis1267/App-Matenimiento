@@ -5,41 +5,21 @@
         
         
 
-    RectQuickActionBar1 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
     "Gallery4 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
-        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderColor: =RGBA(0, 0, 0, 1)
         DelayItemLoading: =true
-        Height: =560
+        Height: =548
         Items: =Sort(Sort(Search(PreventivSure_PreguntasMP,NomenclaturaMp,"Proc_No"),Sub_Tarea),Num_Pregunta)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateFill: =If(ThisItem.IsSelected,RGBA(186,192,208,1), RGBA(0,0,0,0))
         TemplatePadding: =0
-        TemplateSize: =130
+        TemplateSize: =116
         Width: =1366
-        Y: =88
+        Y: =94
         ZIndex: =1
 
-        Title1 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Actividad
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 86
-            X: =16
-            Y: =(Parent.TemplateHeight - (Self.Size*1.8 + Subtitle1.Size*1.8 + 2 + Body1.Size*1.8)) / 2
-            ZIndex: =1
-
-        Subtitle1 As label:
+        Subtitle2 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -49,12 +29,12 @@
             PaddingTop: =0
             Text: =ThisItem.Activo_No
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
-            Y: =Title1.Y + Title1.Height
+            Width: =
+            X: =
+            Y: =
             ZIndex: =2
 
-        Body1 As label:
+        Body3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
@@ -64,12 +44,12 @@
             PaddingTop: =0
             Text: =ThisItem.Clase_MTTO
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title1.Width
-            X: =Title1.X
-            Y: =Subtitle1.Y + Subtitle1.Height
+            Width: =
+            X: =
+            Y: =Subtitle2.Y + Subtitle2.Height
             ZIndex: =3
 
-        NextArrow1 As icon.ChevronRight:
+        NextArrow4 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             Color: =RGBA(0, 0, 0, 1)
             Height: =82
@@ -80,38 +60,57 @@
             PaddingRight: =16
             PaddingTop: =16
             Tooltip: ="View item details"
-            Width: =83
-            X: =1283
-            Y: =20
+            Width: =86
+            X: =1280
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =4
 
-        Separator1 As rectangle:
-            Height: =8
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =5
-
-        Rectangle1 As rectangle:
-            Height: =Parent.TemplateHeight - Separator1.Height
+        Rectangle3 As rectangle:
+            Height: =
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =6
 
-        Rectangle2 As rectangle:
+        Rectangle4 As rectangle:
             Fill: =RGBA(0, 0, 0, 1)
-            Height: =5
+            Height: =1
             OnSelect: =Select(Parent)
             Width: =1366
-            Y: =122
+            Y: =115
             ZIndex: =7
+
+        Label6 As label:
+            Align: =Align.Center
+            BorderThickness: =1
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Num_Pregunta
+            Width: =49
+            Y: =48
+            ZIndex: =8
+
+        Label6_1 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Actividad
+            Width: =1231
+            X: =49
+            Y: =48
+            ZIndex: =9
+
+        Label6_2 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Sub_Tarea
+            Width: =1231
+            X: =4
+            Y: =4
+            ZIndex: =10
 
     LblAppName1 As label:
         Align: =Align.Center
         Fill: =RGBA(21, 44, 115, 1)
         FontWeight: =FontWeight.Bold
-        Height: =88
+        Height: =84
         Size: =30
         Text: ="Lista de actividades"
         Width: =Parent.Width

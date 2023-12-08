@@ -143,6 +143,83 @@
                   "relativeAddress": 0
                 },
                 "region": {
+                  "charLength": 9,
+                  "charOffset": 16,
+                  "snippet": {
+                    "text": "Subtitle1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "Screen3",
+                "type": "Screen3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Subtitle1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 25,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "Screen3",
+                "type": "Screen3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
                   "charLength": 8,
                   "charOffset": 48,
                   "snippet": {
@@ -220,6 +297,43 @@
                   "relativeAddress": 0
                 },
                 "region": {
+                  "charLength": 31,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Set(ActividadMP,Subtitle1.Text)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "Screen3",
+                "type": "Screen3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.OnVisible",
+                  "relativeAddress": 0
+                },
+                "region": {
                   "charLength": 29,
                   "charOffset": 33,
                   "snippet": {
@@ -242,6 +356,88 @@
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.Container1_43.Container2_43.ACT_42.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.Container1_43.Container2_43.ACT_42.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ActividadMP"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "Screen3",
+                "type": "Screen3.Container1_43.Container2_43.ACT_42"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.Actividad.Label14.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.Actividad.Label14.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ActividadMP"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Screen3",
+                "type": "Screen3.Actividad.Label14"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -283,6 +479,43 @@
           },
           "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Screen3.Actividad.Button1.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Screen3.Actividad.Button1.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 29,
+                  "charOffset": 100,
+                  "snippet": {
+                    "text": "Set(ActividadMP,Label14.Text)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Screen3",
+                "type": "Screen3.Actividad.Button1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 2
         },
         {
           "locations": [
