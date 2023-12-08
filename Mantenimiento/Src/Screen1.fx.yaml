@@ -83,7 +83,7 @@
         Label6 As label:
             Align: =Align.Center
             OnSelect: =Select(Parent)
-            Text: =ThisItem.Num_Pregunta & "-"
+            Text: =ThisItem.Num_Pregunta
             Width: =49
             Y: =48
             ZIndex: =8

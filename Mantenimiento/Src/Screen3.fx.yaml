@@ -3,6 +3,7 @@ Screen3 As screen:
     OnVisible: |-
         =Set(ActividadMP,Label6_1.Text);
         Set(Num_PregMP,Label6.Text);
+        Set(RegistroActividad,"ACT" & Num_PregMP)
 
     Titulo As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -123,7 +124,6 @@ Screen3 As screen:
 
         Label1 As label:
             Align: =Align.Center
-            BorderThickness: =1
             Text: =Num_PregMP
             Width: =44
             X: =4
@@ -204,6 +204,18 @@ Screen3 As screen:
             Y: =133
             ZIndex: =9
 
+        Label12 As label:
+            Text: =
+            X: =40
+            Y: =40
+            ZIndex: =10
+
+        Label15 As label:
+            Text: ="ACT" & Num_PregMP
+            X: =60
+            Y: =60
+            ZIndex: =11
+
     Titulo_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =80
@@ -241,7 +253,7 @@ Screen3 As screen:
                 
             Fill: =RGBA(97, 181, 73, 1)
             Height: =50
-            OnSelect: |
+            OnSelect: |+
                 =
                 //Validacion de boton finalizar actividad, para que se ponga deshabilitado
                 If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),Navigate(Screen1));
@@ -251,6 +263,23 @@ Screen3 As screen:
                 
                 //Volver a poner el boton en EDIT
                 UpdateContext({BotonHallazgo: false});
+                
+                
+                // Supongamos que tienes una tabla llamada TuTabla en tu base de datos SQL Server
+                // Supongamos que tienes una variable llamada NumeroVariable que contiene el número que deseas asignar
+                Set(NumeroVariable, 2);  // o cualquier otro número que desees asignar
+                
+                // Utiliza la función Patch para actualizar la tabla en la base de datos
+                Patch(
+                    PreventivSure_Preg,
+                    LookUp(PreventivSure_Preg, id_preventivsure = Value(ID_Maquina)),  // Encuentra el registro específico que deseas actualizar
+                    { ["ACT" & Text(Num_PregMP)]: "Respondido" }  // Actualiza la columna correspondiente
+                )
+                
+                
+                
+                
+                
             Size: =20
             Text: ="Finalizar Actividad"
             Width: =307
