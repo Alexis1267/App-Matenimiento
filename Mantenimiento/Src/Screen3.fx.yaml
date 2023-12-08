@@ -1,8 +1,8 @@
 Screen3 As screen:
     Fill: =RGBA(21, 44, 115, 1)
     OnVisible: |-
-        =Set(ActividadMP,Subtitle1.Text);
-        Set(Num_PregMP,Title1_1.Text);
+        =Set(ActividadMP,Label6_1.Text);
+        Set(Num_PregMP,Label6.Text);
 
     Titulo As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -66,11 +66,11 @@ Screen3 As screen:
                 ZIndex: =1
 
         Label14 As label:
-            Height: =123
+            Height: =44
             Overflow: =Overflow.Scroll
             Text: =ActividadMP
             Width: =1074
-            X: =65
+            X: =63
             Y: =35
             ZIndex: =2
 
