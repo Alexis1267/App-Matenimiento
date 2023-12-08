@@ -1,9 +1,8 @@
 Screen3 As screen:
     Fill: =RGBA(21, 44, 115, 1)
-    OnVisible: |-
+    OnVisible: |
         =Set(ActividadMP,Label6_1.Text);
-        Set(Num_PregMP,Label6.Text);
-        Set(RegistroActividad,"ACT" & Num_PregMP)
+        Set(Num_PregMP,Value(Label6.Text));
 
     Titulo As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -129,6 +128,12 @@ Screen3 As screen:
             X: =4
             Y: =39
             ZIndex: =6
+
+        Label16 As label:
+            Text: =Radio1.Selected.Value
+            X: =720
+            Y: =75
+            ZIndex: =7
 
     Img_Ilustrativas As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -265,17 +270,8 @@ Screen3 As screen:
                 UpdateContext({BotonHallazgo: false});
                 
                 
-                // Supongamos que tienes una tabla llamada TuTabla en tu base de datos SQL Server
-                // Supongamos que tienes una variable llamada NumeroVariable que contiene el número que deseas asignar
-                Set(NumeroVariable, 2);  // o cualquier otro número que desees asignar
-                
-                // Utiliza la función Patch para actualizar la tabla en la base de datos
-                Patch(
-                    PreventivSure_Preg,
-                    LookUp(PreventivSure_Preg, id_preventivsure = Value(ID_Maquina)),  // Encuentra el registro específico que deseas actualizar
-                    { ["ACT" & Text(Num_PregMP)]: "Respondido" }  // Actualiza la columna correspondiente
-                )
-                
+                Patch(PreventivSure_Preg,{id_preventivsure: Id_Preg},
+                {ACT1: If(Num_PregMP = 1,
                 
                 
                 
