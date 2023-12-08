@@ -270,9 +270,20 @@ Screen3 As screen:
                 UpdateContext({BotonHallazgo: false});
                 
                 
-                Patch(PreventivSure_Preg,{id_preventivsure: Id_Preg},
-                {ACT1: If(Num_PregMP = 1,
+                //Patch(PreventivSure_Preg,{id_preventivsure: Id_Preg},
+                //{ACT1: If(Num_PregMP = 1,If(Radio1.Selected.Value = "Realizado" && Button1.DisplayMode = DisplayMode.Disabled || Radio1.Selected.Value = "No realizado" && Button1.DisplayMode = DisplayMode.Disabled,"h",Radio1.Selected.Value
                 
+                Patch(
+                    PreventivSure_Preg,
+                    { id_preventivsure: Id_Preg },
+                    {
+                        ACT1: If(
+                            Num_PregMP = 1 && (Radio1.Selected.Value = "Realizado" && Button1.DisplayMode = DisplayMode.Disabled || Radio1.Selected.Value = "No realizado") && Button1.DisplayMode = DisplayMode.Disabled,
+                            "h",
+                            Radio1.Selected.Value
+                        )
+                    }
+                )
                 
                 
                 
