@@ -8,7 +8,7 @@
     "Gallery4 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         BorderColor: =RGBA(0, 0, 0, 1)
         DelayItemLoading: =true
-        Height: =558
+        Height: =429
         Items: =Sort(Sort(Search(PreventivSure_PreguntasMP,NomenclaturaMp,"Proc_No"),Sub_Tarea),Num_Pregunta)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -61,8 +61,8 @@
             PaddingTop: =16
             Tooltip: ="View item details"
             Width: =86
-            X: =1280
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            X: =1181
+            Y: =16
             ZIndex: =4
 
         Rectangle3 As rectangle:
@@ -104,6 +104,40 @@
             X: =4
             Y: =4
             ZIndex: =10
+
+    Gallery5 As gallery.galleryVertical:
+        DelayItemLoading: =true
+        Height: =98
+        Items: =LookUp(PreventivSure_Preg,id_preventivsure = Id_Preg)
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =93
+        Width: =1366
+        Y: =531
+        ZIndex: =1
+
+        Label17 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ACT1
+            X: =35
+            Y: =30
+            ZIndex: =1
+
+        Label17_1 As label:
+            OnSelect: =Select(Parent)
+            Text: |
+                =ThisItem.ACT2
+            X: =185
+            Y: =30
+            ZIndex: =2
+
+        Label17_2 As label:
+            OnSelect: =Select(Parent)
+            Text: |
+                =ThisItem.ACT3
+            X: =335
+            Y: =30
+            ZIndex: =3
 
     LblAppName1 As label:
         Align: =Align.Center
@@ -163,4 +197,11 @@
         X: =48
         Y: =686
         ZIndex: =7
+
+    Label19 As label:
+        Text: ="Hacer un validacion de que si son 8 en la galeria me deje pasar al boton finalizar preventivo"
+        Width: =488
+        X: =48
+        Y: =633
+        ZIndex: =8
 
