@@ -2962,7 +2962,8 @@
           "InvariantPropertyName": "NavigationStep",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        }
+        },
+        "MaxTemplateSize"
       ],
       "GalleryTemplateChildName": "galleryTemplate1",
       "HasDynamicProperties": false,
@@ -3122,6 +3123,11 @@
         {
           "Category": "Design",
           "PropertyName": "NavigationStep",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "MaxTemplateSize",
           "RuleProviderType": "Unknown"
         }
       ],
