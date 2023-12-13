@@ -112,32 +112,68 @@
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =93
-        Width: =1366
+        Width: =1360
         Y: =531
         ZIndex: =1
 
         Label17 As label:
             OnSelect: =Select(Parent)
             Text: =ThisItem.ACT1
-            X: =35
-            Y: =30
             ZIndex: =1
 
         Label17_1 As label:
             OnSelect: =Select(Parent)
-            Text: |
-                =ThisItem.ACT2
-            X: =185
-            Y: =30
+            Text: =ThisItem.ACT2
+            X: =150
             ZIndex: =2
 
         Label17_2 As label:
             OnSelect: =Select(Parent)
-            Text: |
-                =ThisItem.ACT3
-            X: =335
-            Y: =30
+            Text: =ThisItem.ACT3
+            X: =300
             ZIndex: =3
+
+        Label17_3 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ACT4
+            X: =450
+            ZIndex: =4
+
+        Label17_4 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ACT5
+            X: =600
+            ZIndex: =5
+
+        Label17_5 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ACT6
+            X: =750
+            ZIndex: =6
+
+        Label17_6 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ACT7
+            X: =900
+            ZIndex: =7
+
+        Label17_7 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ACT8
+            X: =1050
+            ZIndex: =8
+
+        Label17_8 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ACT9
+            X: =1200
+            ZIndex: =9
+
+        Label17_9 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.ACT10
+            Y: =40
+            ZIndex: =10
 
     LblAppName1 As label:
         Align: =Align.Center
@@ -199,9 +235,9 @@
         ZIndex: =7
 
     Label19 As label:
-        Text: ="Hacer un validacion de que si son 8 en la galeria me deje pasar al boton finalizar preventivo"
-        Width: =488
-        X: =48
-        Y: =633
+        Text: |
+            =
+        X: =322
+        Y: =646
         ZIndex: =8
 

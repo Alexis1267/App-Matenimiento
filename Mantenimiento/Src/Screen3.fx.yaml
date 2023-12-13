@@ -255,7 +255,7 @@ Screen3 As screen:
             OnSelect: |+
                 =
                 //Validacion de boton finalizar actividad, para que se ponga deshabilitado
-                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),Act_Res.Run(Id_Preg,Num_PregMP,Radio1.Selected.Value));
+                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),Act_Res.Run(Id_Preg,Num_PregMP,Radio1.Selected.Value) && Navigate(Screen1));
                 
                 //Resetear los Radios
                 Reset(Radio1);
