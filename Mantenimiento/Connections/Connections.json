@@ -128,8 +128,8 @@
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
-        "appVer": "3.23114.24",
-        "modifiedOn": "2023-12-12 21:19:26",
+        "appVer": "3.23114.25",
+        "modifiedOn": "2023-12-13 15:59:27",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"]}}",
         "version": 1
       },
@@ -176,7 +176,9 @@
       "PreventivSure_PreguntasMP"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "ccd1d5f0-58db-4e51-8587-17044209a576"
+    ],
     "endpoints": [
       "Vmc8107da003,CMXEDataCollection"
     ],
@@ -215,5 +217,39 @@
     },
     "dependents": [],
     "id": "80012031-53e1-42dc-a0cf-2bf547d652ef"
+  },
+  "ccd1d5f0-58db-4e51-8587-17044209a576": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "7817e419-2139-4788-9873-a604336f6667": {
+          "value": "shared_sql_1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f7912784-c371-4a1a-8944-40ac64f5d700"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sql_1": {
+          "value": "7817e419-2139-4788-9873-a604336f6667"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f7912784-c371-4a1a-8944-40ac64f5d700"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Act_Res"
+    ],
+    "dependencies": {
+      "shared_sql_1": "7817e419-2139-4788-9873-a604336f6667"
+    },
+    "dependents": [],
+    "id": "ccd1d5f0-58db-4e51-8587-17044209a576"
   }
 }

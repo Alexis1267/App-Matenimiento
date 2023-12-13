@@ -255,7 +255,7 @@ Screen3 As screen:
             OnSelect: |+
                 =
                 //Validacion de boton finalizar actividad, para que se ponga deshabilitado
-                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),Navigate(Screen1));
+                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),Act_Res.Run(Id_Preg,Num_PregMP,Radio1.Selected.Value));
                 
                 //Resetear los Radios
                 Reset(Radio1);
@@ -264,24 +264,8 @@ Screen3 As screen:
                 UpdateContext({BotonHallazgo: false});
                 
                 
-                //Patch(PreventivSure_Preg,{id_preventivsure: Id_Preg},
-                //{ACT1: If(Num_PregMP = 1,If(Radio1.Selected.Value = "Realizado" && Button1.DisplayMode = DisplayMode.Disabled || Radio1.Selected.Value = "No realizado" && Button1.DisplayMode = DisplayMode.Disabled,"h",Radio1.Selected.Value
                 
-                Patch(
-                    PreventivSure_Preg,
-                    { id_preventivsure: Id_Preg },
-                    {
-                        ACT1: If(
-                            Num_PregMP = 1,
-                            If(
-                                (Radio1.Selected.Value = "Realizado" && Button1.DisplayMode = DisplayMode.Disabled) ||
-                                (Radio1.Selected.Value = "No realizado" && Button1.DisplayMode = DisplayMode.Disabled),
-                                "h",
-                                Radio1.Selected.Value
-                            )
-                        )
-                    }
-                )
+                
                 
                 
                 
