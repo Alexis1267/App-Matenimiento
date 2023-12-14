@@ -129,7 +129,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23114.25",
-        "modifiedOn": "2023-12-14 16:21:30",
+        "modifiedOn": "2023-12-14 18:56:27",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"]}}",
         "version": 1
       },
@@ -177,7 +177,8 @@
     ],
     "dependencies": {},
     "dependents": [
-      "ccd1d5f0-58db-4e51-8587-17044209a576"
+      "ccd1d5f0-58db-4e51-8587-17044209a576",
+      "fbcc2adb-37e8-4a94-a4e0-04ce83ab2a06"
     ],
     "endpoints": [
       "Vmc8107da003,CMXEDataCollection"
@@ -251,5 +252,39 @@
     },
     "dependents": [],
     "id": "ccd1d5f0-58db-4e51-8587-17044209a576"
+  },
+  "fbcc2adb-37e8-4a94-a4e0-04ce83ab2a06": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "7817e419-2139-4788-9873-a604336f6667": {
+          "value": "shared_sql_1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "9c39e4b3-f6bf-40cb-a953-a9b67c590435"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sql_1": {
+          "value": "7817e419-2139-4788-9873-a604336f6667"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "9c39e4b3-f6bf-40cb-a953-a9b67c590435"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Actualizar_Res"
+    ],
+    "dependencies": {
+      "shared_sql_1": "7817e419-2139-4788-9873-a604336f6667"
+    },
+    "dependents": [],
+    "id": "fbcc2adb-37e8-4a94-a4e0-04ce83ab2a06"
   }
 }
