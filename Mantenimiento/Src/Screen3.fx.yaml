@@ -3,6 +3,7 @@ Screen3 As screen:
     OnVisible: |
         =Set(ActividadMP,Label6_1.Text);
         Set(Num_PregMP,Value(Label6.Text));
+        Set(Identificador_PregMP,Value(Label6_3.Text));
 
     Titulo As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -135,6 +136,14 @@ Screen3 As screen:
             Y: =75
             ZIndex: =7
 
+        Label1_1 As label:
+            Align: =Align.Center
+            Height: =35
+            Text: =Identificador_PregMP
+            Width: =44
+            X: =1286
+            ZIndex: =8
+
     Img_Ilustrativas As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =380
@@ -255,7 +264,7 @@ Screen3 As screen:
             OnSelect: |+
                 =
                 //Validacion de boton finalizar actividad, para que se ponga deshabilitado
-                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),Act_Res.Run(Id_Preg,Num_PregMP,Radio1.Selected.Value) && Navigate(Screen1));
+                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),Act_Res.Run(Id_Preg,Identificador_PregMP,Radio1.Selected.Value) && Navigate(Screen1));
                 
                 //Resetear los Radios
                 Reset(Radio1);
