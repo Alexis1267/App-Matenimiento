@@ -240,9 +240,9 @@ Screen3 As screen:
             DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
             Height: =75
             Icon: =Icon.BackArrow
-            OnSelect: |-
+            OnSelect: |
                 =Navigate(Screen1);
-                Reset(Radio1)
+                Reset(Radio1);
             Width: =82
             Y: =3
             ZIndex: =3
