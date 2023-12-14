@@ -53,6 +53,40 @@
     ],
     "id": "3781cddb-e53a-4b94-b919-4e0845a84178"
   },
+  "5aed0739-fc04-4b04-8268-4f1fb581f6b8": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "7817e419-2139-4788-9873-a604336f6667": {
+          "value": "shared_sql_1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f497a2f7-eb01-423a-a94f-ae27014f15b0"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sql_1": {
+          "value": "7817e419-2139-4788-9873-a604336f6667"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f497a2f7-eb01-423a-a94f-ae27014f15b0"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Consultar_Res"
+    ],
+    "dependencies": {
+      "shared_sql_1": "7817e419-2139-4788-9873-a604336f6667"
+    },
+    "dependents": [],
+    "id": "5aed0739-fc04-4b04-8268-4f1fb581f6b8"
+  },
   "5bc23324-a92b-4804-9450-b13273ae77bd": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -129,7 +163,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23114.25",
-        "modifiedOn": "2023-12-14 18:56:27",
+        "modifiedOn": "2023-12-14 19:40:26",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"]}}",
         "version": 1
       },
@@ -178,7 +212,8 @@
     "dependencies": {},
     "dependents": [
       "ccd1d5f0-58db-4e51-8587-17044209a576",
-      "fbcc2adb-37e8-4a94-a4e0-04ce83ab2a06"
+      "fbcc2adb-37e8-4a94-a4e0-04ce83ab2a06",
+      "5aed0739-fc04-4b04-8268-4f1fb581f6b8"
     ],
     "endpoints": [
       "Vmc8107da003,CMXEDataCollection"
