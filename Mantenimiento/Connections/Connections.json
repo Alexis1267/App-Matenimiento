@@ -53,6 +53,40 @@
     ],
     "id": "3781cddb-e53a-4b94-b919-4e0845a84178"
   },
+  "434f851c-dbaf-4eaf-a455-cbad304cab6d": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "7817e419-2139-4788-9873-a604336f6667": {
+          "value": "shared_sql_1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "2d5c57b9-058c-43d5-af56-15083725a544"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sql_1": {
+          "value": "7817e419-2139-4788-9873-a604336f6667"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "2d5c57b9-058c-43d5-af56-15083725a544"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SpUp_PreventivSure_ActualizarCompletado"
+    ],
+    "dependencies": {
+      "shared_sql_1": "7817e419-2139-4788-9873-a604336f6667"
+    },
+    "dependents": [],
+    "id": "434f851c-dbaf-4eaf-a455-cbad304cab6d"
+  },
   "44a88eb3-eae4-4a56-a58f-988a3521f17b": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -163,7 +197,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23114.25",
-        "modifiedOn": "2023-12-14 21:31:35",
+        "modifiedOn": "2023-12-15 19:53:46",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"]}}",
         "version": 1
       },
@@ -213,7 +247,8 @@
     "dependents": [
       "ccd1d5f0-58db-4e51-8587-17044209a576",
       "7bc07263-e67f-4301-b997-b8adad71d4ef",
-      "44a88eb3-eae4-4a56-a58f-988a3521f17b"
+      "44a88eb3-eae4-4a56-a58f-988a3521f17b",
+      "434f851c-dbaf-4eaf-a455-cbad304cab6d"
     ],
     "endpoints": [
       "Vmc8107da003,CMXEDataCollection"
