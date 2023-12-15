@@ -1,4 +1,5 @@
 "Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    Fill: =RGBA(21, 44, 115, 1)
     OnVisible: |-
         =Set(NomenclaturaMp,PruebaNomencla.Text);
         Refresh(PreventivSure_Preg);
@@ -175,6 +176,7 @@
 
     Cantidad_de_Actividades As label:
         Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
         Text: =CountRows(Gallery4.AllItems)
         Width: =53
         X: =1313
