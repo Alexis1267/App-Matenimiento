@@ -122,7 +122,7 @@
             PaddingTop: =16
             Tooltip: ="View item details"
             Width: =86
-            X: =1091
+            X: =1223
             Y: =16
             ZIndex: =4
 
@@ -152,7 +152,7 @@
         Label6_1 As label:
             OnSelect: =Select(Parent)
             Text: =ThisItem.Actividad
-            Width: =1231
+            Width: =1174
             X: =49
             Y: =48
             ZIndex: =9
@@ -301,4 +301,14 @@
             Width: =158
             X: =1161
             ZIndex: =2
+
+    Timer3_3 As timer:
+        AutoPause: =false
+        AutoStart: =ContadorFinal
+        Duration: =15000
+        OnTimerEnd: =Navigate(Lista_MP)
+        Start: =ContadorFinal
+        X: =221
+        Y: =40
+        ZIndex: =9
 
