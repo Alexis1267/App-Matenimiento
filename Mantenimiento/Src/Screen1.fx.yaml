@@ -199,7 +199,7 @@
             DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
             Height: =75
             Icon: =Icon.BackArrow
-            OnSelect: =
+            OnSelect: =Navigate(Datos_MP,ScreenTransition.Fade)
             Width: =82
             Y: =3
             ZIndex: =3
