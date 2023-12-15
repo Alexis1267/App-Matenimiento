@@ -244,7 +244,8 @@
         Fill: =RGBA(233, 165, 43, 1)
         Height: =44
         OnSelect: |-
-            =//Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"Pendiente"},{Tecnicos:Label12_15.Text},{ Horas_Hombre: TimerHorasHombre.Text });
+            =
+            Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"Pendiente"},{Tecnicos:Label12_15.Text},{ Horas_Hombre: TimerHorasHombre.Text });
             
             
             Set(ContadorFinal, true);
@@ -290,7 +291,7 @@
             FontWeight: =FontWeight.Bold
             Height: =79
             Size: =30
-            Text: ="Descripción de actividades a Realizar"
+            Text: ="Lista de actividades"
             Width: =1330
             ZIndex: =1
 
