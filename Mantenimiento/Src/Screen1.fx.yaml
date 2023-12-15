@@ -62,7 +62,10 @@
             Color: =RGBA(0, 0, 0, 1)
             Height: =82
             Icon: =Icon.ChevronRight
-            OnSelect: =Actualizar_Res.Run(Value(Label15.Text),Id_Preg) && Navigate(Screen3) //Este flow lo que me hace es de que a la tabla PreventivSure_Preg me actualiza a "No realizado" la cantidad de actividades que tenga
+            OnSelect: |-
+                =
+                
+                Actualizar_Res.Run(Value(Cantidad_de_Actividades.Text),Id_Preg) && Navigate(Screen3) //Este flow lo que me hace es de que a la tabla PreventivSure_Preg me actualiza a "No realizado" la cantidad de actividades que tenga
             PaddingBottom: =16
             PaddingLeft: =16
             PaddingRight: =16
@@ -213,10 +216,24 @@
         Fill: =RGBA(97, 181, 73, 1)
         Height: =61
         OnSelect: |
-            =// Obtén el ID del registro actual (asumiendo que tu fuente de datos tiene una columna llamada ID)
+            =
+            //Actualiza la columna Completado, si hay un "No Realizado" en alguna ACTN, entonces me pone un "0", sino me pone un "1"
             SpUp_PreventivSure_ActualizarCompletado.Run(Id_Preg);
             
-            If(LookUp(PreventivSure_Preg,id_preventivsure = Id_Preg).Completado = 0,Notify("Debes de responder todas",NotificationType.Success),Notify("Listo",NotificationType.Error))
+            
+            //Validacion del boton
+            If(LookUp(PreventivSure_Preg,id_preventivsure = Id_Preg).Completado = 0, //Valida si la columna completado es igual a "0"
+            
+            Notify("Debes de responder todas",NotificationType.Error), //Si es igual a "0" entonces me manda un mensaje de error
+            
+            Patch(  CMXE_MP_N,                              //Si es diferente a eso entonces me realiza el patch para mandar la informacion del MP finalizado
+                    { Folio_Maq: ID_Maquina },
+                    { Com_Matenimiento: "Si" },
+                    { Estatus: "Completado" },
+                    { Fecha_de_Finalizacion: Now() },
+                    { Horas_Hombre: TimerHorasHombre.Text },
+                    { Tecnicos: Label12_15.Text }
+                );Notify("Listo",NotificationType.Success))
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20
@@ -248,9 +265,11 @@
         Y: =673
         ZIndex: =6
 
-    Label15 As label:
+    Cantidad_de_Actividades As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
         Text: =CountRows(Gallery4.AllItems)
-        Width: =56
-        Y: =726
+        Width: =53
+        X: =1313
         ZIndex: =7
 
