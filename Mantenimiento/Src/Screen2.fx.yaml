@@ -1,11 +1,26 @@
 Screen2 As screen:
-    OnVisible: =Set(Dev,Consultar_Res.Run(1,14))
+    OnVisible: =Set(Dev,Consultar_Res.Run(1,8))
 
     Label15 As label:
         Height: =96
-        Text: =Dev.result
+        Text: =Dev.resultado
         Width: =354
-        X: =360
-        Y: =150
+        X: =267
+        Y: =81
         ZIndex: =1
+
+    Label16 As label:
+        Text: |+
+            =//Mid(Label15.Text, Find("Realizado", Label15.Text), Len("Realizado"))
+            
+            If(
+                IsBlank(Find("No Realizado", Label15.Text)),
+                Mid(Label15.Text, Find("Realizado", Label15.Text), Len("Realizado")),
+                Mid(Label15.Text, Find("No Realizado", Label15.Text), Len("No Realizado"))
+            )
+            
+            
+        X: =444
+        Y: =375
+        ZIndex: =2
 
