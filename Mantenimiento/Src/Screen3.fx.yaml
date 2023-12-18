@@ -148,12 +148,24 @@ Screen3 As screen:
             ZIndex: =9
 
         Label18 As label:
-            Text: |-
-                =If(
-                    IsBlank(Find("No Realizado", Label17.Text)),
-                    Mid(Label17.Text, Find("No realizado", Label17.Text), Len("No realizado")),
+            Text: |+
+                =/*If(
+                    IsBlank(Find("No", Label17.Text)),
+                    Mid(Label17.Text, Find("Realizado", Label17.Text), Len("Realizado")),
+                    Mid(Label17.Text, Find("No Realizado", Label17.Text), Len("No Realizado")),
+                    Mid(Label17.Text, Find("No realizado", Label17.Text), Len("No realizado"))
+                )*/
+                
+                If(
+                    IsBlank(Find("Realizado", Label17.Text)),
+                    If(
+                        IsBlank(Find("No Realizado", Label17.Text)),
+                        Mid(Label17.Text, Find("No realizado", Label17.Text), Len("No realizado")),
+                        Mid(Label17.Text, Find("No Realizado", Label17.Text), Len("No Realizado"))
+                    ),
                     Mid(Label17.Text, Find("Realizado", Label17.Text), Len("Realizado"))
                 )
+                
             X: =1180
             Y: =118
             ZIndex: =10
