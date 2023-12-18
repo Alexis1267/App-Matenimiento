@@ -153,6 +153,7 @@ Screen3 As screen:
             ZIndex: =9
 
         Label18 As label:
+            Height: =30
             Text: |+
                 =/*If(
                     IsBlank(Find("No Realizado", Label17.Text)),
@@ -187,7 +188,7 @@ Screen3 As screen:
                 
                 
             X: =1180
-            Y: =118
+            Y: =128
             ZIndex: =10
 
     Img_Ilustrativas As groupContainer.manualLayoutContainer:
