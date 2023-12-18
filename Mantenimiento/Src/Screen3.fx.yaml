@@ -150,21 +150,36 @@ Screen3 As screen:
         Label18 As label:
             Text: |+
                 =/*If(
-                    IsBlank(Find("No", Label17.Text)),
+                    IsBlank(Find("No Realizado", Label17.Text)),
                     Mid(Label17.Text, Find("Realizado", Label17.Text), Len("Realizado")),
                     Mid(Label17.Text, Find("No Realizado", Label17.Text), Len("No Realizado")),
                     Mid(Label17.Text, Find("No realizado", Label17.Text), Len("No realizado"))
-                )*/
+                )
+                */
                 
                 If(
-                    IsBlank(Find("Realizado", Label17.Text)),
+                    !IsBlank(Find("Realizado", Label17.Text)),
+                    "No Realizado",
                     If(
-                        IsBlank(Find("No Realizado", Label17.Text)),
-                        Mid(Label17.Text, Find("No realizado", Label17.Text), Len("No realizado")),
-                        Mid(Label17.Text, Find("No Realizado", Label17.Text), Len("No Realizado"))
-                    ),
-                    Mid(Label17.Text, Find("Realizado", Label17.Text), Len("Realizado"))
+                        !IsBlank(Find("No Realizado", Label17.Text)),
+                        "No Realizado",
+                        If(
+                            !IsBlank(Find("No realizado", Label17.Text)),
+                            "No realizado",
+                            ""
+                        )
+                    )
                 )
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
             X: =1180
             Y: =118
