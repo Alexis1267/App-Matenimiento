@@ -4,6 +4,8 @@ Screen3 As screen:
         =Set(ActividadMP,Label6_1.Text);
         Set(Num_PregMP,Value(Label6.Text));
         Set(Identificador_PregMP,Value(Label6_3.Text));
+        
+        Set(ConsultaRes,Consultar_Res.Run(Identificador_PregMP,Id_Preg))
 
     Titulo As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -137,6 +139,24 @@ Screen3 As screen:
             Width: =44
             X: =1286
             ZIndex: =8
+
+        Label17 As label:
+            Align: =Align.Center
+            Text: =ConsultaRes.resultado
+            Width: =388
+            X: =941
+            ZIndex: =9
+
+        Label18 As label:
+            Text: |-
+                =If(
+                    IsBlank(Find("No Realizado", Label17.Text)),
+                    Mid(Label17.Text, Find("No realizado", Label17.Text), Len("No realizado")),
+                    Mid(Label17.Text, Find("Realizado", Label17.Text), Len("Realizado"))
+                )
+            X: =1180
+            Y: =118
+            ZIndex: =10
 
     Img_Ilustrativas As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -276,7 +296,7 @@ Screen3 As screen:
             Size: =20
             Text: ="Finalizar Actividad"
             Width: =307
-            X: =502
+            X: =535
             Y: =15
             ZIndex: =4
 
