@@ -78,7 +78,12 @@ Screen3 As screen:
             ZIndex: =2
 
         Radio1 As radio:
-            DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+            DisplayMode: |
+                =If(
+                    Button1.DisplayMode = DisplayMode.Disabled || (Label18.Text = "No realizado" || Label18.Text = "Realizado"),
+                    DisplayMode.Disabled,
+                    DisplayMode.Edit
+                )
             Height: =35
             Items: =["Realizado","No realizado"]
             Layout: =Layout.Horizontal
