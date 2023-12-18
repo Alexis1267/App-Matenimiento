@@ -80,7 +80,7 @@ Screen3 As screen:
         Radio1 As radio:
             DisplayMode: |
                 =If(
-                    Button1.DisplayMode = DisplayMode.Disabled || (Label18.Text = "No realizado" || Label18.Text = "Realizado"),
+                    Button1.DisplayMode = DisplayMode.Disabled,
                     DisplayMode.Disabled,
                     DisplayMode.Edit
                 )
