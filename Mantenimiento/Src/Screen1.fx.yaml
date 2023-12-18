@@ -176,11 +176,19 @@
             Y: =76
             ZIndex: =11
 
-        Icon10 As icon.Check:
-            Icon: =Icon.Check
+        Label6_8 As label:
+            Align: =Align.Center
             OnSelect: =Select(Parent)
-            X: =860
-            Y: =34
+            Text: |
+                =JSON(
+                    {
+                        "IDENTIFICADOR_PREG": ThisItem.IDENTIFICADOR_PREG,
+                        "Id_Preg": Id_Preg
+                    }
+                )
+            Width: =49
+            X: =643
+            Y: =76
             ZIndex: =12
 
     Cantidad_de_Actividades As label:
