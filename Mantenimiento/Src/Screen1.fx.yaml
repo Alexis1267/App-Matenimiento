@@ -6,6 +6,8 @@
         UpdateContext({btnPendiente:false});
         
         
+        Set(ConsultaRes,Consultar_Res.Run(Identificador_PregMP,Id_Preg));
+        
         
         //datos de la otra pantalla
         
@@ -173,6 +175,13 @@
             Width: =49
             Y: =76
             ZIndex: =11
+
+        Icon10 As icon.Check:
+            Icon: =Icon.Check
+            OnSelect: =Select(Parent)
+            X: =860
+            Y: =34
+            ZIndex: =12
 
     Cantidad_de_Actividades As label:
         Align: =Align.Center

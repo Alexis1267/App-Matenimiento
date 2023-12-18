@@ -333,6 +333,13 @@ Screen3 As screen:
             Y: =15
             ZIndex: =4
 
+        Icon1 As icon.Check:
+            Color: =RGBA(141, 198, 63, 1)
+            Icon: =Icon.Check
+            X: =1243
+            Y: =8
+            ZIndex: =5
+
     Container1_43 As groupContainer.manualLayoutContainer:
         Height: =768
         PaddingRight: =0.00
