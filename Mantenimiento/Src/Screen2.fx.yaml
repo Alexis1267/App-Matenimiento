@@ -1,0 +1,11 @@
+Screen2 As screen:
+    OnVisible: =Set(Dev,Consultar_Res.Run(1,14))
+
+    Label15 As label:
+        Height: =96
+        Text: =Dev.result
+        Width: =354
+        X: =360
+        Y: =150
+        ZIndex: =1
+

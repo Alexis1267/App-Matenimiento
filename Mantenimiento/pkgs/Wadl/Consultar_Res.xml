@@ -8,6 +8,11 @@
         <property name="number" type="number" />
         <property name="number_1" type="number" />
       </object>
+      <string name="ResponseActionOutput_result_def" />
+      <object name="ResponseActionOutput">
+        <property name="result" type="string" />
+      </object>
+      <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/logicflows">
@@ -28,6 +33,9 @@
             </param>
           </representation>
         </request>
+        <response>
+          <representation mediaType="application/json" element="service:ResponseActionOutput" />
+        </response>
       </method>
     </resource>
   </resources>
