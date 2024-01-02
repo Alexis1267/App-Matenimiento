@@ -4,6 +4,10 @@
         =Set(NomenclaturaMp,PruebaNomencla.Text);
         Refresh(PreventivSure_Preg);
         UpdateContext({btnPendiente:false});
+        Actualizar_Res.Run(Value(Cantidad_de_Actividades.Text),Id_Preg);
+        SpUp_PreventivSure_ActualizarCompletado.Run(Id_Preg);
+        
+        
         
         
         Set(ConsultaRes,Consultar_Res.Run(Identificador_PregMP,Id_Preg));
@@ -213,7 +217,7 @@
     Button5 As button:
         Fill: =RGBA(97, 181, 73, 1)
         Height: =61
-        OnSelect: |
+        OnSelect: |+
             =
             //Actualiza la columna Completado, si hay un "No Realizado" en alguna ACTN, entonces me pone un "0", sino me pone un "1"
             SpUp_PreventivSure_ActualizarCompletado.Run(Id_Preg);
@@ -224,6 +228,9 @@
             
             Notify("Debes de responder todas",NotificationType.Error), //Si es igual a "0" entonces me manda un mensaje de error
             
+                Set(ContadorHH, false);
+                Set(ContadorFinal, true);
+            
             Patch(  CMXE_MP_N,                              //Si es diferente a eso entonces me realiza el patch para mandar la informacion del MP finalizado
                     { Folio_Maq: ID_Maquina },
                     { Com_Matenimiento: "Si" },
@@ -233,8 +240,7 @@
                     { Tecnicos: Label12_15.Text }
                 );
                 Notify("Listo",NotificationType.Success));
-                Set(ContadorHH, false);
-                Set(ContadorFinal, true);
+            
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20

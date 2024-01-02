@@ -164,7 +164,7 @@ Screen3 As screen:
                 */
                 
                 If(
-                    !IsBlank(Find("No Realizado", Label17.Text)),
+                    !IsBlank(Find("Sin Responder", Label17.Text)),
                     "No Realizado",
                     If(
                         !IsBlank(Find("No Realizado", Label17.Text)),
