@@ -59,7 +59,10 @@
         DelayItemLoading: =true
         Height: =486
         Items: |+
-            =Sort(Sort(Search(PreventivSure_PreguntasMP,NomenclaturaMp,"Proc_No"),Sub_Tarea),Num_Pregunta) 
+            =Sort(Sort(Search(PreventivSure_PreguntasMP,NomenclaturaMp,"Proc_No"),Sub_Tarea),Num_Pregunta)
+            
+            
+            
             
             
             
@@ -175,21 +178,6 @@
             Width: =49
             Y: =76
             ZIndex: =11
-
-        Label6_8 As label:
-            Align: =Align.Center
-            OnSelect: =Select(Parent)
-            Text: |
-                =JSON(
-                    {
-                        "IDENTIFICADOR_PREG": ThisItem.IDENTIFICADOR_PREG,
-                        "Id_Preg": Id_Preg
-                    }
-                )
-            Width: =49
-            X: =643
-            Y: =76
-            ZIndex: =12
 
     Cantidad_de_Actividades As label:
         Align: =Align.Center
