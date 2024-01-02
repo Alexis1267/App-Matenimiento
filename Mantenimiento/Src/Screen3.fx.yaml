@@ -69,7 +69,7 @@ Screen3 As screen:
                 ZIndex: =1
 
         Label14 As label:
-            Height: =44
+            Height: =123
             Overflow: =Overflow.Scroll
             Text: =ActividadMP
             Width: =1074
@@ -80,7 +80,7 @@ Screen3 As screen:
         Radio1 As radio:
             DisplayMode: |
                 =If(
-                    Button1.DisplayMode = DisplayMode.Disabled,
+                    Button1.DisplayMode = DisplayMode.Disabled || Label15_1.Visible,
                     DisplayMode.Disabled,
                     DisplayMode.Edit
                 )
@@ -334,6 +334,7 @@ Screen3 As screen:
             ZIndex: =4
 
         Label15 As label:
+            Align: =Align.Center
             Fill: =RGBA(220, 153, 153, 1)
             Height: =80
             Text: ="No se ha completado la actividad"
@@ -343,9 +344,10 @@ Screen3 As screen:
             ZIndex: =5
 
         Label15_1 As label:
+            Align: =Align.Center
             Fill: =RGBA(232, 244, 217, 1)
             Height: =80
-            Text: ="Esta Actividad ya se ha completado."
+            Text: ="Esta actividad ya se ha completado."
             Visible: =If(Label18.Text <> "No Realizado",true,false)
             Width: =340
             X: =990
