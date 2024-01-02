@@ -26,7 +26,7 @@ Screen3 As screen:
             FontWeight: =FontWeight.Bold
             Height: =79
             Size: =30
-            Text: ="Descripción de actividades a Realizar"
+            Text: ="Descripción de Actividades a Realizar"
             Width: =1330
             Y: =1
             ZIndex: =1
@@ -333,12 +333,23 @@ Screen3 As screen:
             Y: =15
             ZIndex: =4
 
-        Icon1 As icon.Check:
-            Color: =RGBA(141, 198, 63, 1)
-            Icon: =Icon.Check
-            X: =1243
-            Y: =8
+        Label15 As label:
+            Fill: =RGBA(220, 153, 153, 1)
+            Height: =80
+            Text: ="No se ha completado la actividad"
+            Visible: =If(Label18.Text = "No Realizado",true,false)
+            Width: =340
+            X: =990
             ZIndex: =5
+
+        Label15_1 As label:
+            Fill: =RGBA(232, 244, 217, 1)
+            Height: =80
+            Text: ="Esta Actividad ya se ha completado."
+            Visible: =If(Label18.Text <> "No Realizado",true,false)
+            Width: =340
+            X: =990
+            ZIndex: =6
 
     Container1_43 As groupContainer.manualLayoutContainer:
         Height: =768
