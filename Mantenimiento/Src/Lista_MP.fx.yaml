@@ -16,7 +16,7 @@ Lista_MP As screen:
         Items: |+
             =//"Mostrar todos los MP en estado 'En proceso' si ambos campos están en blanco."
             
-            If
+            /*If
             (
                     IsBlank(DropdownMTTO.Selected.Value) && IsBlank(Filtro_Sema.Text),
                     Filter(CMXE_MP_N, Estatus = "En proceso"|| Estatus= "PENDIENTE"), 
@@ -47,7 +47,46 @@ Lista_MP As screen:
                         ) 
                     )
                 )
+            )*/
+            
+            If
+            (
+                IsBlank(DropdownMTTO.Selected.Value) && IsBlank(Filtro_Sema.Text) && IsBlank(DropdownEstatus.Selected.Value),
+                Filter(CMXE_MP_N, Estatus = "En proceso" || Estatus = "Pendiente"), 
+            
+                If
+                (
+                    IsBlank(DropdownMTTO.Selected.Value) && IsBlank(Filtro_Sema.Text),
+                    Filter(CMXE_MP_N, Estatus = DropdownEstatus.Selected.Value), 
+            
+                    If
+                    (
+                        IsBlank(DropdownMTTO.Selected.Value) && IsBlank(DropdownEstatus.Selected.Value),
+                        Filter(CMXE_MP_N, Semana = Filtro_Sema.Text, Estatus = "En proceso" || Estatus = "PENDIENTE"), 
+            
+                        If
+                        (
+                            IsBlank(DropdownMTTO.Selected.Value),
+                            Filter(CMXE_MP_N, Semana = Filtro_Sema.Text, Estatus = DropdownEstatus.Selected.Value), 
+            
+                            If
+                            (
+                                IsBlank(Filtro_Sema.Text),
+                                Filter(CMXE_MP_N, DropdownMTTO.Selected.Value in Clas_Mantenimineto, Estatus = DropdownEstatus.Selected.Value), 
+            
+                                Filter
+                                (
+                                    CMXE_MP_N,
+                                    DropdownMTTO.Selected.Value in Clas_Mantenimineto,
+                                    Semana = Filtro_Sema.Text,
+                                    Estatus = DropdownEstatus.Selected.Value
+                                ) 
+                            )
+                        )
+                    )
+                )
             )
+            
             
             
             
@@ -61,7 +100,7 @@ Lista_MP As screen:
         TemplateSize: =220
         Width: =1366
         Y: =170
-        ZIndex: =1
+        ZIndex: =3
 
         Title3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -425,7 +464,7 @@ Lista_MP As screen:
         Height: =92
         Width: =1366
         X: =0.00
-        ZIndex: =2
+        ZIndex: =4
 
     Label1_20 As label:
         Align: =Align.Center
@@ -440,7 +479,8 @@ Lista_MP As screen:
             MANTENIMIENTO PREVENTIVO ACTIVO"
         Width: =1366
         X: =0.00
-        ZIndex: =3
+        Y: =1
+        ZIndex: =5
 
     MAQUINA_QR As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -460,7 +500,7 @@ Lista_MP As screen:
         Width: =191.32
         X: =1120
         Y: =6
-        ZIndex: =4
+        ZIndex: =6
 
     MAQUINA_QR_3Letras As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -473,20 +513,7 @@ Lista_MP As screen:
         Width: =191.32
         X: =1120
         Y: =46
-        ZIndex: =5
-
-    Icon3 As icon.Reload:
-        Color: =RGBA(21, 44, 115, 1)
-        Height: =49
-        Icon: =Icon.Reload
-        OnSelect: |-
-            =//Esto me sirve solo para hacer un refresh a los mantenimientos preventivos
-            
-            Refresh(CMXE_MP_N)
-        Width: =49
-        X: =31
-        Y: =96
-        ZIndex: =12
+        ZIndex: =7
 
     Group17 As group:
         Height: =5
@@ -508,7 +535,7 @@ Lista_MP As screen:
             Width: =242
             X: =621
             Y: =118
-            ZIndex: =6
+            ZIndex: =8
 
         Label11_13 As label:
             FontWeight: =FontWeight.Bold
@@ -518,16 +545,20 @@ Lista_MP As screen:
             Width: =242
             X: =621
             Y: =92
-            ZIndex: =7
+            ZIndex: =9
 
-    Image2_58 As image:
-        Height: =92
-        Image: =carrier_logo_300
-        PaddingRight: =0.00
-        PaddingTop: =0.00
-        Width: =159
-        X: =44
-        ZIndex: =15
+    Icon3 As icon.Reload:
+        Color: =RGBA(21, 44, 115, 1)
+        Height: =49
+        Icon: =Icon.Reload
+        OnSelect: |-
+            =//Esto me sirve solo para hacer un refresh a los mantenimientos preventivos
+            
+            Refresh(CMXE_MP_N)
+        Width: =49
+        X: =31
+        Y: =96
+        ZIndex: =14
 
     Group17_1 As group:
         Height: =5
@@ -549,7 +580,7 @@ Lista_MP As screen:
             Width: =231
             X: =375
             Y: =118
-            ZIndex: =8
+            ZIndex: =10
 
         Label11_14 As label:
             DisplayMode: =DisplayMode.Disabled
@@ -560,7 +591,16 @@ Lista_MP As screen:
             Width: =231
             X: =375
             Y: =92
-            ZIndex: =9
+            ZIndex: =11
+
+    Image2_58 As image:
+        Height: =92
+        Image: =carrier_logo_300
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Width: =159
+        X: =44
+        ZIndex: =17
 
     Icon2 As icon.Undo:
         Color: =RGBA(255, 255, 255, 1)
@@ -576,7 +616,39 @@ Lista_MP As screen:
             Reset(Filtro_Sema);
         X: =1281
         Y: =14
-        ZIndex: =16
+        ZIndex: =18
+
+    Group17_6 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =18
+
+        DropdownActivo As dropdown:
+            BorderThickness: =1
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(0, 18, 107, 1)
+            DisplayMode: =DisplayMode.Disabled
+            Height: =37
+            Items: |-
+                =//Me trae el valor unico de ID_Maq
+                
+                Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),ID_Maq)
+            Width: =231
+            X: =123
+            Y: =118
+            ZIndex: =12
+
+        Label11_20 As label:
+            DisplayMode: =DisplayMode.Disabled
+            FontWeight: =FontWeight.Bold
+            Height: =25
+            Text: ="Activo.No"
+            Width: =231
+            X: =123
+            Y: =92
+            ZIndex: =13
 
     Label11_1 As label:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -587,7 +659,7 @@ Lista_MP As screen:
         Width: =79
         X: =16
         Y: =143
-        ZIndex: =17
+        ZIndex: =19
 
     Pantalla_Carg_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
@@ -598,7 +670,7 @@ Lista_MP As screen:
         RadiusTopRight: =0
         Visible: =CargaVisible
         Width: =1366
-        ZIndex: =18
+        ZIndex: =20
 
         HtmlText1_8 As htmlViewer:
             Fill: =RGBA(255, 255, 255, 1)
@@ -707,38 +779,6 @@ Lista_MP As screen:
             Y: =454
             ZIndex: =5
 
-    Group17_6 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =18
-
-        DropdownActivo As dropdown:
-            BorderThickness: =1
-            ChevronBackground: =RGBA(0, 0, 0, 0)
-            ChevronFill: =RGBA(0, 18, 107, 1)
-            DisplayMode: =DisplayMode.Disabled
-            Height: =37
-            Items: |-
-                =//Me trae el valor unico de ID_Maq
-                
-                Distinct(Filter(CMXE_MP_N,ID_Maq = MAQUINA_QR.Text),ID_Maq)
-            Width: =231
-            X: =123
-            Y: =118
-            ZIndex: =10
-
-        Label11_20 As label:
-            DisplayMode: =DisplayMode.Disabled
-            FontWeight: =FontWeight.Bold
-            Height: =25
-            Text: ="Activo.No"
-            Width: =231
-            X: =123
-            Y: =92
-            ZIndex: =11
-
     TimerCarga_1 As timer:
         AutoStart: =true
         Duration: =5000
@@ -746,7 +786,37 @@ Lista_MP As screen:
         Visible: =false
         X: =954
         Y: =6
-        ZIndex: =19
+        ZIndex: =21
+
+    Group17_2 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =22
+
+        DropdownEstatus As dropdown:
+            AllowEmptySelection: =true
+            BorderThickness: =1
+            ChevronBackground: =RGBA(0, 0, 0, 0)
+            ChevronFill: =RGBA(0, 18, 107, 1)
+            Default: =""
+            Height: =37
+            Items: =["Pendiente","En Proceso"]
+            Width: =242
+            X: =908
+            Y: =118
+            ZIndex: =1
+
+        Label11_16 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =25
+            Text: |-
+                ="Estatus:"
+            Width: =242
+            X: =908
+            Y: =92
+            ZIndex: =2
 
     Group9 As group:
         Height: =5
@@ -761,7 +831,7 @@ Lista_MP As screen:
             Text: ="N.º de Semana"
             X: =1195
             Y: =93
-            ZIndex: =13
+            ZIndex: =15
 
         Filtro_Sema As text:
             Default: =""
@@ -770,5 +840,5 @@ Lista_MP As screen:
             Width: =150
             X: =1195
             Y: =119
-            ZIndex: =14
+            ZIndex: =16
 
