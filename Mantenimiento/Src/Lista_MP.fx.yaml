@@ -52,40 +52,77 @@ Lista_MP As screen:
             If
             (
                 IsBlank(DropdownMTTO.Selected.Value) && IsBlank(Filtro_Sema.Text) && IsBlank(DropdownEstatus.Selected.Value),
-                Filter(CMXE_MP_N, Estatus = "En proceso" || Estatus = "Pendiente"), 
+                Filter(CMXE_MP_N, Estatus = "En Proceso" || Estatus = "Pendiente"), 
             
                 If
                 (
                     IsBlank(DropdownMTTO.Selected.Value) && IsBlank(Filtro_Sema.Text),
-                    Filter(CMXE_MP_N, Estatus = DropdownEstatus.Selected.Value), 
+                    Filter(CMXE_MP_N, Estatus = If(IsBlank(DropdownEstatus.Selected.Value), "En Proceso" & "Pendiente", DropdownEstatus.Selected.Value)), 
             
                     If
                     (
                         IsBlank(DropdownMTTO.Selected.Value) && IsBlank(DropdownEstatus.Selected.Value),
-                        Filter(CMXE_MP_N, Semana = Filtro_Sema.Text, Estatus = "En proceso" || Estatus = "PENDIENTE"), 
+                        Filter(CMXE_MP_N, Semana = Filtro_Sema.Text, Estatus = "En Proceso" || Estatus = "Pendiente"), 
             
                         If
                         (
-                            IsBlank(DropdownMTTO.Selected.Value),
-                            Filter(CMXE_MP_N, Semana = Filtro_Sema.Text, Estatus = DropdownEstatus.Selected.Value), 
+                            IsBlank(DropdownMTTO.Selected.Value), 
+                            Filter(    
+                                 CMXE_MP_N,
+                                Semana = Filtro_Sema.Text,
+                                Estatus = If(IsBlank(DropdownEstatus.Selected.Value), "En Proceso" & "Pendiente", DropdownEstatus.Selected.Value)),
             
                             If
                             (
-                                IsBlank(Filtro_Sema.Text),
-                                Filter(CMXE_MP_N, DropdownMTTO.Selected.Value in Clas_Mantenimineto, Estatus = DropdownEstatus.Selected.Value), 
+                                IsBlank(Filtro_Sema.Text) && IsBlank(DropdownEstatus.Selected.Value),
+                                Filter(CMXE_MP_N, Clas_Mantenimineto = DropdownMTTO.Selected.Value, Estatus = "En Proceso" || Estatus = "Pendiente"),
             
-                                Filter
+            
+                                If
                                 (
-                                    CMXE_MP_N,
-                                    DropdownMTTO.Selected.Value in Clas_Mantenimineto,
-                                    Semana = Filtro_Sema.Text,
-                                    Estatus = DropdownEstatus.Selected.Value
-                                ) 
+                                    IsBlank(DropdownEstatus.Selected.Value),
+                                    Filter
+                                    (
+                                        CMXE_MP_N,
+                                        DropdownMTTO.Selected.Value in Clas_Mantenimineto,
+                                        Semana = Filtro_Sema.Text,
+                                        Clas_Mantenimineto = DropdownMTTO.Selected.Value
+                                    ),
+                                    If
+                                    (
+                                        IsBlank(Filtro_Sema.Text),
+                                        Filter
+                                        (
+                                            CMXE_MP_N,
+                                            DropdownMTTO.Selected.Value in Clas_Mantenimineto,
+                                            Estatus = If(IsBlank(DropdownEstatus.Selected.Value), "En Proceso" & "Pendiente", DropdownEstatus.Selected.Value),
+                                            Clas_Mantenimineto = DropdownMTTO.Selected.Value
+                                        ),
+                                        
+                                        Filter
+                                        (
+                                            CMXE_MP_N,
+                                            DropdownMTTO.Selected.Value in Clas_Mantenimineto,
+                                            Semana = Filtro_Sema.Text,
+                                            Estatus = If(IsBlank(DropdownEstatus.Selected.Value), "En Proceso" & "Pendiente", DropdownEstatus.Selected.Value),
+                                            Clas_Mantenimineto = DropdownMTTO.Selected.Value
+                                        )
+                                    )
+                                )
                             )
                         )
                     )
                 )
             )
+            
+            
+            
+            
+            
+            
+            
+            
+            
             
             
             
