@@ -61,7 +61,7 @@
     "dependents": [],
     "id": "2019b927-6731-4741-9d45-d73b8f21f1cf"
   },
-  "3707f5cd-6dd4-49d9-b36c-1952f40f2d11": {
+  "31971f72-960f-4554-a6d5-b20b61cbe802": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
@@ -93,7 +93,7 @@
       "shared_sql_1": "7817e419-2139-4788-9873-a604336f6667"
     },
     "dependents": [],
-    "id": "3707f5cd-6dd4-49d9-b36c-1952f40f2d11"
+    "id": "31971f72-960f-4554-a6d5-b20b61cbe802"
   },
   "3781cddb-e53a-4b94-b919-4e0845a84178": {
     "connectionRef": {
@@ -197,7 +197,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.23122.17",
-        "modifiedOn": "2024-01-04 15:05:28",
+        "modifiedOn": "2024-01-04 16:59:08",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"]}}",
         "version": 1
       },
@@ -247,8 +247,8 @@
     "dependents": [
       "c67f128b-a109-47c2-a2cb-6e1abcf3fbdc",
       "aec39d8a-564f-48dc-bd8c-ae5c22e96646",
-      "3707f5cd-6dd4-49d9-b36c-1952f40f2d11",
-      "0517b2b7-1b87-4394-b618-bd3dd2ab9e2a"
+      "0517b2b7-1b87-4394-b618-bd3dd2ab9e2a",
+      "31971f72-960f-4554-a6d5-b20b61cbe802"
     ],
     "endpoints": [
       "Vmc8107da003,CMXEDataCollection"

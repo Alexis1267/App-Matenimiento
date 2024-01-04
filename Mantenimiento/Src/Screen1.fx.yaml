@@ -4,7 +4,8 @@
         =Set(NomenclaturaMp,PruebaNomencla.Text);
         Refresh(PreventivSure_Preg);
         UpdateContext({btnPendiente:false});
-        Actualizar_Res.Run(Value(Cantidad_de_Actividades.Text),Id_Preg);
+        
+        
         SpUp_PreventivSure_ActualizarCompletado.Run(Id_Preg);
         
         
@@ -188,7 +189,7 @@
         Color: =RGBA(255, 255, 255, 1)
         Text: =CountRows(Gallery4.AllItems)
         Width: =53
-        X: =1313
+        X: =1297
         Y: =100
         ZIndex: =3
 
