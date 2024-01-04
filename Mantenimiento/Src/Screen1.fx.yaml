@@ -123,7 +123,6 @@
             Icon: =Icon.ChevronRight
             OnSelect: |-
                 =
-                
                 Actualizar_Res.Run(Value(Cantidad_de_Actividades.Text),Id_Preg) && Navigate(Screen3) //Este flow lo que me hace es de que a la tabla PreventivSure_Preg me actualiza a "No realizado" la cantidad de actividades que tenga
             PaddingBottom: =16
             PaddingLeft: =16
@@ -162,7 +161,7 @@
             Height: =112
             OnSelect: =Select(Parent)
             Text: =ThisItem.Actividad
-            Width: =1174
+            Width: =977
             X: =49
             Y: =4
             ZIndex: =9
