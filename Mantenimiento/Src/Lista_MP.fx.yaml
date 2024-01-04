@@ -52,30 +52,31 @@ Lista_MP As screen:
             If
             (
                 IsBlank(DropdownMTTO.Selected.Value) && IsBlank(Filtro_Sema.Text) && IsBlank(DropdownEstatus.Selected.Value),
-                Filter(CMXE_MP_N, Estatus = "En Proceso" || Estatus = "Pendiente"), 
+                Filter(CMXE_MP_N, Estatus = "En Proceso" || Estatus = "Pendiente" , ID_Maq = DropdownActivo.Selected.Value ), 
             
                 If
                 (
                     IsBlank(DropdownMTTO.Selected.Value) && IsBlank(Filtro_Sema.Text),
-                    Filter(CMXE_MP_N, Estatus = If(IsBlank(DropdownEstatus.Selected.Value), "En Proceso" & "Pendiente", DropdownEstatus.Selected.Value)), 
+                    Filter(CMXE_MP_N, ID_Maq = DropdownActivo.Selected.Value,Estatus = If(IsBlank(DropdownEstatus.Selected.Value), "En Proceso" & "Pendiente", DropdownEstatus.Selected.Value)), 
             
                     If
                     (
                         IsBlank(DropdownMTTO.Selected.Value) && IsBlank(DropdownEstatus.Selected.Value),
-                        Filter(CMXE_MP_N, Semana = Filtro_Sema.Text, Estatus = "En Proceso" || Estatus = "Pendiente"), 
+                        Filter(CMXE_MP_N,ID_Maq = DropdownActivo.Selected.Value, Semana = Filtro_Sema.Text, Estatus = "En Proceso" || Estatus = "Pendiente"), 
             
                         If
                         (
                             IsBlank(DropdownMTTO.Selected.Value), 
                             Filter(    
                                  CMXE_MP_N,
+                                 ID_Maq = DropdownActivo.Selected.Value,
                                 Semana = Filtro_Sema.Text,
                                 Estatus = If(IsBlank(DropdownEstatus.Selected.Value), "En Proceso" & "Pendiente", DropdownEstatus.Selected.Value)),
             
                             If
                             (
                                 IsBlank(Filtro_Sema.Text) && IsBlank(DropdownEstatus.Selected.Value),
-                                Filter(CMXE_MP_N, Clas_Mantenimineto = DropdownMTTO.Selected.Value, Estatus = "En Proceso" || Estatus = "Pendiente"),
+                                Filter(CMXE_MP_N,ID_Maq = DropdownActivo.Selected.Value, Clas_Mantenimineto = DropdownMTTO.Selected.Value, Estatus = "En Proceso" || Estatus = "Pendiente"),
             
             
                                 If
@@ -84,6 +85,7 @@ Lista_MP As screen:
                                     Filter
                                     (
                                         CMXE_MP_N,
+                                        ID_Maq = DropdownActivo.Selected.Value,
                                         DropdownMTTO.Selected.Value in Clas_Mantenimineto,
                                         Semana = Filtro_Sema.Text,
                                         Clas_Mantenimineto = DropdownMTTO.Selected.Value
@@ -94,6 +96,7 @@ Lista_MP As screen:
                                         Filter
                                         (
                                             CMXE_MP_N,
+                                            ID_Maq = DropdownActivo.Selected.Value,
                                             DropdownMTTO.Selected.Value in Clas_Mantenimineto,
                                             Estatus = If(IsBlank(DropdownEstatus.Selected.Value), "En Proceso" & "Pendiente", DropdownEstatus.Selected.Value),
                                             Clas_Mantenimineto = DropdownMTTO.Selected.Value
@@ -102,6 +105,7 @@ Lista_MP As screen:
                                         Filter
                                         (
                                             CMXE_MP_N,
+                                            ID_Maq = DropdownActivo.Selected.Value,
                                             DropdownMTTO.Selected.Value in Clas_Mantenimineto,
                                             Semana = Filtro_Sema.Text,
                                             Estatus = If(IsBlank(DropdownEstatus.Selected.Value), "En Proceso" & "Pendiente", DropdownEstatus.Selected.Value),
