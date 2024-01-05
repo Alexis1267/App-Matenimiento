@@ -124,7 +124,7 @@
             Icon: =Icon.ChevronRight
             OnSelect: |-
                 =
-                Actualizar_Res.Run(Value(Cantidad_de_Actividades.Text),Id_Preg) && Navigate(Screen3) //Este flow lo que me hace es de que a la tabla PreventivSure_Preg me actualiza a "No realizado" la cantidad de actividades que tenga
+                SpUp_PreventivSure_Actualizar_CantidadRespuestas.Run(Value(Cantidad_de_Actividades.Text),Id_Preg) && Navigate(Screen3) //Este flow lo que me hace es de que a la tabla PreventivSure_Preg me actualiza a "No realizado" la cantidad de actividades que tenga
             PaddingBottom: =16
             PaddingLeft: =16
             PaddingRight: =16

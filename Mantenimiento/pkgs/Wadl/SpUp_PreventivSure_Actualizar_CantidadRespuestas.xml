@@ -1,5 +1,5 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Actualizar_Res" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="Actualizar_Res" />
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="SpUp_PreventivSure_Actualizar_CantidadRespuestas" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="SpUp_PreventivSure_Actualizar_CantidadRespuestas" />
   <grammars>
     <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <number name="ManualTriggerInput_number_def" />
