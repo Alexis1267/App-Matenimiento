@@ -1,5 +1,5 @@
 Screen2 As screen:
-    OnVisible: =Set(Dev,Consultar_Res.Run(1,8))
+    OnVisible: =Set(Dev,SpOut_PreventivSure_VerRespuesta.Run(1,8))
 
     "Gallery4_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         BorderColor: =RGBA(0, 0, 0, 1)

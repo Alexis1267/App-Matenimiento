@@ -5,7 +5,7 @@ Screen3 As screen:
         Set(Num_PregMP,Value(Label6.Text));
         Set(Identificador_PregMP,Value(Label6_3.Text));
         
-        Set(ConsultaRes,Consultar_Res.Run(Identificador_PregMP,Id_Preg))
+        Set(ConsultaRes,SpOut_PreventivSure_VerRespuesta.Run(Identificador_PregMP,Id_Preg))
 
     Titulo As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)

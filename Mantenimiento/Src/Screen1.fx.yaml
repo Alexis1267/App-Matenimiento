@@ -11,7 +11,7 @@
         
         
         
-        Set(ConsultaRes,Consultar_Res.Run(Identificador_PregMP,Id_Preg));
+        Set(ConsultaRes,SpOut_PreventivSure_VerRespuesta.Run(Identificador_PregMP,Id_Preg));
         
         
         //datos de la otra pantalla
