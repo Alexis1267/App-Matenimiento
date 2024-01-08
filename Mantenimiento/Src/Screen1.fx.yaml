@@ -181,6 +181,7 @@
             Align: =Align.Center
             OnSelect: =Select(Parent)
             Text: =ThisItem.IDENTIFICADOR_PREG
+            Visible: =false
             Width: =49
             Y: =76
             ZIndex: =11
@@ -189,6 +190,7 @@
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Text: =CountRows(Gallery4.AllItems)
+        Visible: =false
         Width: =53
         X: =1297
         Y: =100
@@ -282,6 +284,7 @@
     TempoHH_Contador_1 As label:
         Align: =Align.Center
         Text: =TimerHorasHombre.Text
+        Visible: =false
         Width: =113
         X: =221
         Y: =690
@@ -323,6 +326,7 @@
         Duration: =15000
         OnTimerEnd: =Navigate(Lista_MP)
         Start: =ContadorFinal
+        Visible: =false
         X: =221
         Y: =40
         ZIndex: =9

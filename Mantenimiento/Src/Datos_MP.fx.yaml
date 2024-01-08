@@ -46,6 +46,7 @@ Datos_MP As screen:
 
     Label23 As label:
         Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH)
+        Visible: =false
         X: =1216
         Y: =151
         ZIndex: =3
@@ -423,6 +424,7 @@ Datos_MP As screen:
                     Find("-", CadenaCompleta)
                 ) - 1
             ) )
+        Visible: =false
         Width: =263
         X: =1103
         Y: =96
@@ -1047,6 +1049,7 @@ Datos_MP As screen:
         Start: =ContadorHH
         Text: |-
             =Text(Time(0, 0, Self.Value/1000) + TimeValue(Label23.Text),"hh:mm:ss")
+        Visible: =false
         X: =1166
         Y: =26
         ZIndex: =46
