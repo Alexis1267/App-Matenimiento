@@ -88,7 +88,9 @@ Lista_MP As screen:
                                         ID_Maq = DropdownActivo.Selected.Value,
                                         DropdownMTTO.Selected.Value in Clas_Mantenimineto,
                                         Semana = Filtro_Sema.Text,
-                                        Clas_Mantenimineto = DropdownMTTO.Selected.Value
+                                        Clas_Mantenimineto = DropdownMTTO.Selected.Value,
+                                        Estatus = "En Proceso" || Estatus = "Pendiente"
+                                    
                                     ),
                                     If
                                     (
