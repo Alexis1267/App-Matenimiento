@@ -259,6 +259,8 @@
             =
             Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"Pendiente"},{Tecnicos:Label12_15.Text},{ Horas_Hombre: TimerHorasHombre.Text });
             
+            Patch(PreventivSure_Preg,{id_preventivsure: Id_Preg},{TempoHH:TimerHorasHombre.Text});
+            
             
             Set(ContadorFinal, true);
             Set(ContadorHH, false);
