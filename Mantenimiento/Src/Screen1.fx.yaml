@@ -1,7 +1,8 @@
 "Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(21, 44, 115, 1)
     OnVisible: |-
-        =Set(NomenclaturaMp,PruebaNomencla.Text);
+        =Set(NomenclaturaMp,PruebaNomencla.Text);//Ya no lo necesito(Eso creo)
+        Set(ClaseMTTO,Label8.Text);
         Refresh(PreventivSure_Preg);
         UpdateContext({btnPendiente:false});
         
@@ -64,7 +65,7 @@
         DelayItemLoading: =true
         Height: =486
         Items: |+
-            =Sort(Sort(Search(PreventivSure_PreguntasMP,NomenclaturaMp,"Proc_No"),Sub_Tarea),Num_Pregunta)
+            =Sort(Sort(Search(PreventivSure_PreguntasMP,ClaseMTTO,"Clase_MTTO"),Sub_Tarea),Num_Pregunta)
             
             
             
