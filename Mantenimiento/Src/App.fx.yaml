@@ -11,6 +11,9 @@ App As appinfo:
         Set( DiferenciaDias, FechaEntrada - FechaInicioAnio);
         Set (SemanasTranscurridas, RoundUp(DiferenciaDias / 7, 0));
         
+        //Refrescar las actividades
+        Refresh(PreventivSure_PreguntasMP)
+        
         
         
         

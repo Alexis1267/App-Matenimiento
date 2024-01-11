@@ -1881,66 +1881,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.NomenclaturaMp"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.NomenclaturaMp",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "NomenclaturaMp",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.Dato_Semana"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Dato_Semana",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Dato_Semana",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.Dato_Proc_No_class"
                 }
               ],
@@ -1971,17 +1911,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.DropdownInvolu"
+                  "fullyQualifiedName": "App.Dato_Semana"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.DropdownInvolu",
+                  "fullyQualifiedName": "App.Dato_Semana",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "DropdownInvolu",
+                "member": "Dato_Semana",
                 "module": "App",
                 "type": "App"
               }
@@ -2072,6 +2012,66 @@
               },
               "properties": {
                 "member": "Maq",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.NomenclaturaMp"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.NomenclaturaMp",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "NomenclaturaMp",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.DropdownInvolu"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.DropdownInvolu",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DropdownInvolu",
                 "module": "App",
                 "type": "App"
               }
