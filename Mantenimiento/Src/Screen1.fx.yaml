@@ -143,6 +143,7 @@
             PaddingRight: =16
             PaddingTop: =16
             Tooltip: ="View item details"
+            Visible: =false
             Width: =86
             X: =890
             Y: =18
@@ -199,15 +200,14 @@
             ZIndex: =11
 
         Button6 As button:
-            BorderColor: =RGBA(152, 208, 70, 1)
-            BorderThickness: =5
+            BorderColor: =RGBA(209, 232, 178, 1)
             Color: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            OnSelect: =Select(Parent)
+            Fill: =RGBA(232, 244, 217, 1)
+            OnSelect: =SpUp_PreventivSure_Actualizar_CantidadRespuestas.Run(Value(Cantidad_de_Actividades.Text),Id_Preg) && Navigate(Screen3) //Este flow lo que me hace es de que a la tabla PreventivSure_Preg me actualiza a "No realizado" la cantidad de actividades que tenga
             Text: ="Responder actividad"
             Width: =223
-            X: =1029
-            Y: =40
+            X: =1062
+            Y: =39
             ZIndex: =12
 
     Cantidad_de_Actividades As label:
