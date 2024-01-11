@@ -144,8 +144,8 @@
             PaddingTop: =16
             Tooltip: ="View item details"
             Width: =86
-            X: =1223
-            Y: =16
+            X: =890
+            Y: =18
             ZIndex: =4
 
         Rectangle3 As rectangle:
@@ -175,7 +175,7 @@
             Height: =112
             OnSelect: =Select(Parent)
             Text: =ThisItem.Actividad
-            Width: =977
+            Width: =841
             X: =49
             Y: =4
             ZIndex: =9
@@ -197,6 +197,18 @@
             Width: =49
             Y: =76
             ZIndex: =11
+
+        Button6 As button:
+            BorderColor: =RGBA(152, 208, 70, 1)
+            BorderThickness: =5
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            OnSelect: =Select(Parent)
+            Text: ="Responder actividad"
+            Width: =223
+            X: =1029
+            Y: =40
+            ZIndex: =12
 
     Cantidad_de_Actividades As label:
         Align: =Align.Center
@@ -227,6 +239,16 @@
             Width: =82
             Y: =3
             ZIndex: =3
+
+        Label2 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =25
+            Text: ="Marcar el MP como pendiente"
+            Width: =285
+            X: =1039
+            Y: =53
+            ZIndex: =4
 
     Button5 As button:
         Fill: =RGBA(97, 181, 73, 1)
@@ -288,8 +310,8 @@
         RadiusTopRight: =20
         Text: ="Pendiente "
         Width: =155
-        X: =1122
-        Y: =688
+        X: =1119
+        Y: =679
         ZIndex: =6
 
     TempoHH_Contador_1 As label:
