@@ -9,19 +9,25 @@ Datos_MP As screen:
         Set(ID_MAQUINA,Value(Title3_5.Text)); 
         
         
-        
-        Set(CargaVisible,true); //Variable para activar y desactivar el contenedor Pantalla_Carga
-        
-        
+        //Variable para activar y desactivar el contenedor Pantalla_Carga
+        Set(CargaVisible,true); 
         
         
         
         
+        
+        //Esta tres variables las utilizo para poder separar la nomenclatura y dejar el activo y su claseMTTO. Ejemplo de MEPS-04-10M-HID a -> MEPS-04-HID
+        
+        //Esto lo que hace es que me almacena la cadena completa -> MEPS-04-10M-HID
         Set( CadenaCompleta, MAQUINA);
+        //Esta me almacena las tres ultimas letras -> HID
         Set( UltimasTresLetrasMAQ, Right(CadenaCompleta, 3));
-        
+        //Esta me almacena las Primeras letras
         Set(PrimerasLetrasMAQ,Left(CadenaCompleta,8));
         
+        
+        
+        //Esta variable la utiliza para saber cual es el ID de la pregunta de la tabla PreventivSure_Preg
         Set(Id_Preg,LookUp(PreventivSure_Preg,Folio_Maq = ID_MAQUINA,id_preventivsure))
         
         
@@ -44,7 +50,6 @@ Datos_MP As screen:
 
     Label23 As label:
         Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_MAQUINA,TempoHH)
-        Visible: =false
         X: =1216
         Y: =151
         ZIndex: =3
@@ -406,37 +411,13 @@ Datos_MP As screen:
         X: =44
         ZIndex: =42
 
-    PruebaNomencla As label:
-        Color: =RGBA(255, 255, 255, 1)
-        FontWeight: =FontWeight.Bold
-        Height: =47
-        Text: |-
-            =Concatenate(Left(
-                CadenaCompleta,                            // El texto original
-                Find("-",
-                    CadenaCompleta,
-                    Find("-", CadenaCompleta) +1
-                )-1
-            ) & Right(
-                CadenaCompleta,                            // El texto original
-                Find("-",
-                    CadenaCompleta,
-                    Find("-", CadenaCompleta)
-                ) - 1
-            ) )
-        Visible: =false
-        Width: =263
-        X: =1103
-        Y: =96
-        ZIndex: =43
-
     ModalPop_Datos As groupContainer.manualLayoutContainer:
         Height: =768
         PaddingRight: =0.00
         PaddingTop: =0.00
         Visible: =ModalPop_Datos
         Width: =1366
-        ZIndex: =44
+        ZIndex: =43
 
         HtmlText3_15 As htmlViewer:
             Height: =1080
@@ -754,6 +735,125 @@ Datos_MP As screen:
                 Y: =131
                 ZIndex: =16
 
+    Pantalla_Carg As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =768
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Visible: =CargaVisible
+        Width: =1366
+        ZIndex: =44
+
+        HtmlText1_7 As htmlViewer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =768
+            HtmlText: |+
+                ="<div style = ""
+                position: absolute;
+                top: 10%;
+                left: 50%;
+                margin-left: -500px;
+                margin-top: 230px;
+                transform-origin: 50% 48%;
+                border-radius: 43%;
+                height:"& 1000 &"px;
+                width:"&1000 &"px;
+                background-color:RGBA(173, 181, 189, 0);
+                transform: rotate("&Line&"deg);
+                ""></div>
+                
+                
+                <div style = ""
+                position: absolute;
+                top: 40%;
+                left: 10%;
+                margin-left: -500px;
+                margin-top: 230px;
+                transform-origin: 50% 48%;
+                border-radius: 43%;
+                height:"& 1000 &"px;
+                width:"&1000 &"px;
+                background-color:RGBA(173, 181, 189, 0.1);
+                transform: rotate("&Line&"deg);
+                ""></div>
+                
+                <div style = ""
+                position: absolute;
+                top: -140%;
+                left: 110%;
+                margin-left: -500px;
+                margin-top: 500px;
+                transform-origin: 50% 48%;
+                border-radius: 43%;
+                height:"& 1000 &"px;
+                width:"&1000 &"px;
+                background-color:RGBA(173, 181, 189, 0.1);
+                transform: rotate("&Line&"deg);
+                ""></div>"
+                
+                
+                
+                
+                
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =14.04
+            Width: =1366
+            X: =0.00
+            ZIndex: =2
+
+        Timer1_5 As timer:
+            AutoStart: =true
+            Duration: =50
+            OnTimerEnd: |-
+                =If(Line = 360,
+                UpdateContext({Line:0}),
+                UpdateContext({Line:Line+2}))
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Repeat: =true
+            Size: =16.58
+            Visible: =false
+            Width: =204.07
+            Y: =133
+            ZIndex: =3
+
+        Label1_22 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =63
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =31.89
+            Text: =//En esta parte lo que hago es poner la variable que se creo en la pantalla de "Sesion" donde me toma el nombre de la persona que hizo el inicio de sesion y lo muestra en la pantalla
+            Width: =557.51
+            X: =0.00
+            Y: =144
+            ZIndex: =4
+
+        Image36_1 As image:
+            Height: =260
+            Image: =Carga_Engranage
+            Width: =260
+            X: =553
+            Y: =194
+            ZIndex: =5
+
+        Label1_19 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =92
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =44.63
+            Text: ="Cargando..."
+            Width: =353
+            X: =506
+            Y: =454
+            ZIndex: =6
+
     Group3_10 As group:
         Height: =5
         Width: =5
@@ -919,125 +1019,6 @@ Datos_MP As screen:
             Y: =493
             ZIndex: =32
 
-    Pantalla_Carg As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =768
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Visible: =CargaVisible
-        Width: =1366
-        ZIndex: =45
-
-        HtmlText1_7 As htmlViewer:
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =768
-            HtmlText: |+
-                ="<div style = ""
-                position: absolute;
-                top: 10%;
-                left: 50%;
-                margin-left: -500px;
-                margin-top: 230px;
-                transform-origin: 50% 48%;
-                border-radius: 43%;
-                height:"& 1000 &"px;
-                width:"&1000 &"px;
-                background-color:RGBA(173, 181, 189, 0);
-                transform: rotate("&Line&"deg);
-                ""></div>
-                
-                
-                <div style = ""
-                position: absolute;
-                top: 40%;
-                left: 10%;
-                margin-left: -500px;
-                margin-top: 230px;
-                transform-origin: 50% 48%;
-                border-radius: 43%;
-                height:"& 1000 &"px;
-                width:"&1000 &"px;
-                background-color:RGBA(173, 181, 189, 0.1);
-                transform: rotate("&Line&"deg);
-                ""></div>
-                
-                <div style = ""
-                position: absolute;
-                top: -140%;
-                left: 110%;
-                margin-left: -500px;
-                margin-top: 500px;
-                transform-origin: 50% 48%;
-                border-radius: 43%;
-                height:"& 1000 &"px;
-                width:"&1000 &"px;
-                background-color:RGBA(173, 181, 189, 0.1);
-                transform: rotate("&Line&"deg);
-                ""></div>"
-                
-                
-                
-                
-                
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =14.04
-            Width: =1366
-            X: =0.00
-            ZIndex: =2
-
-        Timer1_5 As timer:
-            AutoStart: =true
-            Duration: =50
-            OnTimerEnd: |-
-                =If(Line = 360,
-                UpdateContext({Line:0}),
-                UpdateContext({Line:Line+2}))
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Repeat: =true
-            Size: =16.58
-            Visible: =false
-            Width: =204.07
-            Y: =133
-            ZIndex: =3
-
-        Label1_22 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Height: =63
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =31.89
-            Text: =//En esta parte lo que hago es poner la variable que se creo en la pantalla de "Sesion" donde me toma el nombre de la persona que hizo el inicio de sesion y lo muestra en la pantalla
-            Width: =557.51
-            X: =0.00
-            Y: =144
-            ZIndex: =4
-
-        Image36_1 As image:
-            Height: =260
-            Image: =Carga_Engranage
-            Width: =260
-            X: =553
-            Y: =194
-            ZIndex: =5
-
-        Label1_19 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Height: =92
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =44.63
-            Text: ="Cargando..."
-            Width: =353
-            X: =506
-            Y: =454
-            ZIndex: =6
-
     TimerHorasHombre As timer:
         AutoPause: =false
         AutoStart: =ContadorHH
@@ -1052,6 +1033,30 @@ Datos_MP As screen:
         Visible: =false
         X: =1166
         Y: =26
+        ZIndex: =45
+
+    PruebaNomencla As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(168, 0, 0, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =47
+        Text: |-
+            =Concatenate(Left(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta) +1
+                )-1
+            ) & Right(
+                CadenaCompleta,                            // El texto original
+                Find("-",
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta)
+                ) - 1
+            ) )
+        Width: =263
+        X: =1103
+        Y: =96
         ZIndex: =46
 
     Group5_1 As group:
