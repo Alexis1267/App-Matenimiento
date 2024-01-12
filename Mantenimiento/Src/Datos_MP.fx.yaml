@@ -591,8 +591,7 @@ Datos_MP As screen:
                     //VALIDA SI HAY ALGO QUE NO COINCIDA CON LOS DATOS DEL USUARIO
                     If(Valida = InsertNomina_2.Text,Collect(Add_Involucrado,{Nombre:Coalesce( DropUser_2.SelectedText.Value)}),Notify("El nombre y/o el número de nómina no coinciden. No se puede agregar al usuario. Por favor, compruebe sus datos.",NotificationType.Error));
                     
-                    //Reset(DropUser_2);
-                    //Reset(InsertNomina_2);
+                    
                     
                     
                     
@@ -895,10 +894,7 @@ Datos_MP As screen:
             PaddingTop: =3.63
             Size: =16.58
             Text: |+
-                =//Text(Concat(Add_Involucrado,"- "&Nombre,Char(10)))
-                //Text(Trim(Concat(Add_Involucrado,"- "&Nombre,Char(10))) & Char(10) & LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos))
-                
-                //Text(Trim(Concat(Add_Involucrado, "- " & Nombre, Char(10))) & Char(10) & Trim(LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos)))
+                =
                 
                 Text(
                     Trim(
