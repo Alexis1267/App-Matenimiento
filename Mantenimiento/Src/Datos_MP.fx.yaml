@@ -50,6 +50,7 @@ Datos_MP As screen:
 
     Label23 As label:
         Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_MAQUINA,TempoHH)
+        Visible: =false
         X: =1216
         Y: =151
         ZIndex: =3
@@ -97,27 +98,13 @@ Datos_MP As screen:
         FontWeight: =FontWeight.Bold
         Height: =54
         OnSelect: |+
-            =Set(ContadorHH,true);
-            
-            //VALIDACION DE CAMPO INVOLUCRADOS
-            /*If(IsBlank(Trim(Label12_15.Text)),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
-            If(PruebaNomencla.Text = "MEPS-04-CPE",Navigate('MEPS-04-CPE',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-DKE",Navigate('MEPS-04-DKE(ImgEjem1)',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-DKS",Navigate('MEPS-04-DKS(ImgEjem1)',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-CPS",Navigate('MEPS-04-CPS(Preg1)',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-GX1",Navigate('MEPS-04-GX1(Preg1)',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-BTT",Navigate('MEPS-04-BTT(Preg1)',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-ELE",Navigate('MEPS-04-ELE(Preg1)',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-HID",Navigate(Pruebas,ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-LUB",Navigate('MEPS-04-LUB(Preg1)',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-GX2",Navigate('MEPS-04-GX2(Preg1)',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-MEC",Navigate('MEPS-04-MEC(Preg1)',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-BV3",Navigate('MEPS-04-BV3(Preg1)',ScreenTransition.Cover),
-            If(PruebaNomencla.Text = "MEPS-04-BV2",Navigate('MEPS-04-BV2(Preg1)',ScreenTransition.Cover), Notify("Error",NotificationType.Error)))))))))))))));*/
+            =//Variable que hace que el contador de Horas Hombre me inicie al darle al boton
+            Set(ContadorHH,true);
             
             
+            
+            //Validacion para que cuando no haya ningun usuario registrado, que no me deje avanzar a la siguiente pantalla
             If(IsBlank(Trim(Label12_15.Text)),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
-            
             If(PruebaNomencla.Text = PruebaNomencla.Text,Navigate(Lista_Actividades_MP,ScreenTransition.Cover), Notify("Error",NotificationType.Error)));
             
             
@@ -326,7 +313,7 @@ Datos_MP As screen:
             PaddingTop: =6.37
             Size: =16.58
             Text: |
-                =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,ID_Maq) //Esto lo que me hace es de que me encuentre el registo del Proc.No.:
+                =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,ID_Maq) //Esto lo que me hace es de que me encuentre el registo del Activo:
             Width: =323.96
             X: =375
             Y: =277
@@ -1054,6 +1041,7 @@ Datos_MP As screen:
                     Find("-", CadenaCompleta)
                 ) - 1
             ) )
+        Visible: =false
         Width: =263
         X: =1103
         Y: =96
