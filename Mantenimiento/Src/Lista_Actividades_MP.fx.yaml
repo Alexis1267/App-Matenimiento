@@ -1,6 +1,6 @@
 "Lista_Actividades_MP As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
     Fill: =RGBA(21, 44, 115, 1)
-    OnVisible: |-
+    OnVisible: |+
         =Set(NomenclaturaMp,PruebaNomencla.Text);//Ya no lo necesito(Eso creo)
         Set(ClaseMTTO,Label8.Text);
         Set(Activo,Label8_9.Text);
@@ -36,20 +36,6 @@
         
         
         
-        //BOTONES 
-        //ClearCollect(BotonesDeshabilitados,{});
-        //ClearCollect(BotonesDeshabilitadosR,{});
-        
-        
-        
-        
-        //Set(nom_archivo_PDF,Concatenate(Dato_Proc_No_class&"-"&Dato_NomMaquina&"-WK"&Dato_Semana&".pdf"));
-        
-        
-        //Variable de contexto para desactivar boton de pendiente
-        
-        
-        //Suma de los temporizadores
 
     Titulo_4 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
