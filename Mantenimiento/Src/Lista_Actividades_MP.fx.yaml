@@ -270,7 +270,7 @@
                 Set(ContadorFinal, true);
             
             Patch(  CMXE_MP_N,                              //Si es diferente a eso entonces me realiza el patch para mandar la informacion del MP finalizado
-                    { Folio_Maq: ID_Maquina },
+                    { Folio_Maq: ID_MAQUINA },
                     { Com_Matenimiento: "Si" },
                     { Estatus: "Completado" },
                     { Fecha_de_Finalizacion: Now() },
@@ -295,7 +295,7 @@
         Height: =44
         OnSelect: |-
             =
-            Patch(CMXE_MP_N,{Folio_Maq: ID_Maquina},{Estatus:"Pendiente"},{Tecnicos:Label12_15.Text},{ Horas_Hombre: TimerHorasHombre.Text });
+            Patch(CMXE_MP_N,{Folio_Maq: ID_MAQUINA},{Estatus:"Pendiente"},{Tecnicos:Label12_15.Text},{ Horas_Hombre: TimerHorasHombre.Text });
             
             Patch(PreventivSure_Preg,{id_preventivsure: Id_Preg},{TempoHH:TimerHorasHombre.Text});
             

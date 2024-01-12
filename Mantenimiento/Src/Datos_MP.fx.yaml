@@ -1,30 +1,28 @@
 Datos_MP As screen:
     OnHidden: =Set(Maq,Label8_8.Text)
     OnVisible: |+
-        =Set(MAQUINA,Title3.Text); //Esta variable se utiliza para almacenar el "Proc.No" que esta en la pantalla de ListaMP
-        Set(ID_MAQUINA,Value(Title3_5.Text)); //Para almacenar ID de la maquina que se seleccione de la galeria y traerme todos los datos de ese MP a la pantalla de visualizacion de datos.
+        =//Esta variable se utiliza para almacenar el "Proc.No" que esta en la pantalla de ListaMP
+        Set(MAQUINA,Title3.Text); 
         
-        Set(ID_Maquina,Value(Title3_5.Text)); //Esta variable se utiliza para almacenar el "ID" de la maquina, para que despues en la pantalla de los botones cuando finalizan las actividades se pueda hacer el update de "Com_Mantenimiento"
+        //1. Para almacenar ID de la maquina que se seleccione de la galeria y traerme todos los datos de ese MP a la pantalla de visualizacion de datos.
+        //2. Esta variable se utiliza para almacenar el "ID" de la maquina, para que despues en la pantalla de los botones cuando finalizan las actividades se pueda hacer el update de "Com_Mantenimiento"
+        Set(ID_MAQUINA,Value(Title3_5.Text)); 
+        
+        
         
         Set(CargaVisible,true); //Variable para activar y desactivar el contenedor Pantalla_Carga
-        /*
-        // Tu cadena
-        Set( CadenaCompleta, "MEPS-04-2M-CPE");
         
-        // Encuentra la posición del último guion en la cadena
-        Set(PosicionGuion, Len(CadenaCompleta) - Len(Mid(CadenaCompleta, Len(CadenaCompleta), 1)) + 1);
         
-        // Obtiene la última parte de la cadena
-        Set(UltimaParte, Mid(CadenaCompleta, PosicionGuion + 1, Len(CadenaCompleta) - PosicionGuion));
         
-        */
+        
+        
         
         Set( CadenaCompleta, MAQUINA);
         Set( UltimasTresLetrasMAQ, Right(CadenaCompleta, 3));
         
         Set(PrimerasLetrasMAQ,Left(CadenaCompleta,8));
         
-        Set(Id_Preg,LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,id_preventivsure))
+        Set(Id_Preg,LookUp(PreventivSure_Preg,Folio_Maq = ID_MAQUINA,id_preventivsure))
         
         
         
@@ -45,7 +43,7 @@ Datos_MP As screen:
         ZIndex: =2
 
     Label23 As label:
-        Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_Maquina,TempoHH)
+        Text: =LookUp(PreventivSure_Preg,Folio_Maq = ID_MAQUINA,TempoHH)
         Visible: =false
         X: =1216
         Y: =151
@@ -817,7 +815,7 @@ Datos_MP As screen:
                 
                 Text(
                     Trim(
-                        LookUp(CMXE_MP_N, Folio_Maq = ID_Maquina, Tecnicos)
+                        LookUp(CMXE_MP_N, Folio_Maq = ID_MAQUINA, Tecnicos)
                     ) & Char(10) &
                     Trim(
                         Concat(
