@@ -115,7 +115,7 @@ Datos_MP As screen:
             
             If(IsBlank(Trim(Label12_15.Text)),Notify("Debe de agregar a 1 usuario por lo menos.",NotificationType.Error),
             
-            If(PruebaNomencla.Text = PruebaNomencla.Text,Navigate(Screen1,ScreenTransition.Cover), Notify("Error",NotificationType.Error)));
+            If(PruebaNomencla.Text = PruebaNomencla.Text,Navigate(Lista_Actividades_MP,ScreenTransition.Cover), Notify("Error",NotificationType.Error)));
             
             
         PaddingRight: =6.37

@@ -14,41 +14,7 @@ Lista_MP As screen:
         DelayItemLoading: =true
         Height: =598
         Items: |+
-            =//"Mostrar todos los MP en estado 'En proceso' si ambos campos están en blanco."
-            
-            /*If
-            (
-                    IsBlank(DropdownMTTO.Selected.Value) && IsBlank(Filtro_Sema.Text),
-                    Filter(CMXE_MP_N, Estatus = "En proceso"|| Estatus= "PENDIENTE"), 
-            
-            
-                    //Mostrará los MP en estado 'En proceso' correspondientes a la semana ingresada en el campo de entrada si el           menú desplegable de Clase de Mantenimiento está vacío.
-            
-                If
-                (
-                    IsBlank(DropdownMTTO.Selected.Value),
-                    Filter(CMXE_MP_N, Semana = Filtro_Sema.Text,Estatus = "En proceso"|| Estatus= "PENDIENTE"), 
-            
-                    // Mostrara los MP en estado 'En proceso' de la clase de mantenimiento que se seleccione del dropdown si el             input text de semana esta vacio
-            
-                    If
-                    (
-                        IsBlank(Filtro_Sema.Text),
-                        Filter(CMXE_MP_N, DropdownMTTO.Selected.Value in Clas_Mantenimineto,Estatus = "En proceso"|| Estatus= "PENDIENTE"), 
-            
-                        // En esta parte si no se cumple la condicion anterior que me haga el filtro con ambos campos, el dropdown              y semana
-            
-                        Filter
-                        (
-                            CMXE_MP_N,
-                            DropdownMTTO.Selected.Value in Clas_Mantenimineto,
-                            Semana = Filtro_Sema.Text,
-                            Estatus = "En proceso"|| Estatus= "PENDIENTE"
-                        ) 
-                    )
-                )
-            )*/
-            
+            =//Filtro de la galeria de los mantenimientos preventivos
             If
             (
                 IsBlank(DropdownMTTO.Selected.Value) && IsBlank(Filtro_Sema.Text) && IsBlank(DropdownEstatus.Selected.Value),
@@ -533,7 +499,7 @@ Lista_MP As screen:
         Size: =16.58
         Text: |-
             =
-            //Esta variable almacena el valor del código QR que ha sido escaneado.
+            //Esta variable almacena el valor del código QR que ha sido escaneado. Ejemplo (MEPS-04)
             
             //Maquina_QR
             

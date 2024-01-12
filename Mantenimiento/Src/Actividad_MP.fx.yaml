@@ -1,4 +1,4 @@
-Screen3 As screen:
+Actividad_MP As screen:
     Fill: =RGBA(21, 44, 115, 1)
     OnVisible: |
         =Set(ActividadMP,Label6_1.Text);
@@ -285,7 +285,7 @@ Screen3 As screen:
             Height: =75
             Icon: =Icon.BackArrow
             OnSelect: |
-                =Navigate(Screen1);
+                =Navigate(Lista_Actividades_MP);
                 Reset(Radio1);
             Width: =82
             Y: =3
@@ -308,7 +308,7 @@ Screen3 As screen:
             OnSelect: |+
                 =
                 //Validacion de boton finalizar actividad, para que se ponga deshabilitado
-                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),SpUp_PreventivSure_ActualizarRespuesta.Run(Id_Preg,Identificador_PregMP,Radio1.Selected.Value) && Navigate(Screen1));
+                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit,Notify("Debe de dar una justificacion",NotificationType.Error),SpUp_PreventivSure_ActualizarRespuesta.Run(Id_Preg,Identificador_PregMP,Radio1.Selected.Value) && Navigate(Lista_Actividades_MP));
                 
                 //Resetear los Radios
                 Reset(Radio1);
