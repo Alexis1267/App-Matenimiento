@@ -238,7 +238,7 @@
             ZIndex: =4
 
     Button5 As button:
-        DisplayMode: =If(LookUp(PreventivSure_Preg,id_preventivsure = Id_Preg).Completado = 0,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =
         Fill: =RGBA(97, 181, 73, 1)
         Height: =61
         OnSelect: |+

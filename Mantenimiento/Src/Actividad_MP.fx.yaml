@@ -167,7 +167,7 @@ Actividad_MP As screen:
                     !IsBlank(Find("Sin Responder", Label17.Text)),
                     "No Realizado",
                     If(
-                        !IsBlank(Find("No Realizado", Label17.Text)),
+                        !IsBlank(Find("null", Label17.Text)),
                         "No Realizado",
                         If(
                             !IsBlank(Find("No realizado", Label17.Text)),
