@@ -297,7 +297,7 @@ Actividad_MP As screen:
                 
                 //If(Radio1.Selected.Value = "No realizado" || Button1.DisplayMode = DisplayMode.Edit  ,DisplayMode.Disabled,DisplayMode.Edit)}
                 
-                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit || Label15_1.Visible ,DisplayMode.Disabled,DisplayMode.Edit)
+                If(Radio1.Selected.Value = "No realizado" && Radio1.DisplayMode = DisplayMode.Edit || Label15_1.Visible || IsBlank(Radio1.Selected.Value) ,DisplayMode.Disabled,DisplayMode.Edit)
                 
                 
                 
