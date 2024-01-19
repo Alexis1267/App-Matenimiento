@@ -561,6 +561,7 @@ Datos_MP As screen:
                 HintText: ="Trabajador No."
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
+                Mode: =TextMode.Password
                 PaddingRight: =6.37
                 PaddingTop: =6.37
                 RadiusBottomLeft: =0
@@ -699,6 +700,7 @@ Datos_MP As screen:
 
             Label4 As label:
                 Text: =LookUp(PreventivSure_Tecnicos,DropUser_2.SelectedText.Value = Tecnico,Num_Empleado)
+                Visible: =false
                 X: =698
                 Y: =200
                 ZIndex: =14
