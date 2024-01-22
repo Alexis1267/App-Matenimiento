@@ -726,7 +726,7 @@ Datos_MP As screen:
                 Height: =40
                 Icon: =Icon.Hide
                 OnSelect: =Set(Mostrar_Password,false)
-                Visible: =If(Mostrar_Password,true,false)
+                Visible: =If(Mostrar_Password,true,false) && BTN_VISIBLE = "AGREGAR"
                 Width: =49
                 X: =600
                 Y: =286
@@ -736,7 +736,7 @@ Datos_MP As screen:
                 Height: =40
                 Icon: =Icon.View
                 OnSelect: =Set(Mostrar_Password,true)
-                Visible: =If(Mostrar_Password,false,true)
+                Visible: =If(Mostrar_Password,false,true) && BTN_VISIBLE = "AGREGAR"
                 Width: =49
                 X: =600
                 Y: =286
