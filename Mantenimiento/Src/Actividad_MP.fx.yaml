@@ -148,6 +148,7 @@ Actividad_MP As screen:
         Label17 As label:
             Align: =Align.Center
             Text: =ConsultaRes.resultado
+            Visible: =false
             Width: =388
             X: =941
             ZIndex: =9
@@ -187,6 +188,7 @@ Actividad_MP As screen:
                 
                 
                 
+            Visible: =false
             X: =1180
             Y: =128
             ZIndex: =10
