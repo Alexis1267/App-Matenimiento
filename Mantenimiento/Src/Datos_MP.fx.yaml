@@ -140,42 +140,6 @@ Datos_MP As screen:
         Y: =96
         ZIndex: =33
 
-    Group7 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =33
-
-        DatePicker3_1 As datepicker:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            DefaultDate: =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Fecha_Programada)
-            DisplayMode: =DisplayMode.Disabled
-            PaddingRight: =6.37
-            PaddingTop: =0.00
-            Size: =17.86
-            Width: =295
-            X: =976
-            Y: =428
-            ZIndex: =16
-
-        Label7_12 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(21, 44, 115, 1)
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: |-
-                ="Fecha Programada:"
-            Width: =295
-            X: =976
-            Y: =388
-            ZIndex: =23
-
     Group8 As group:
         Height: =5
         Width: =5
@@ -211,6 +175,42 @@ Datos_MP As screen:
             X: =656
             Y: =388
             ZIndex: =22
+
+    Group7 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =33
+
+        DatePicker3_1 As datepicker:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            DefaultDate: =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Fecha_Programada)
+            DisplayMode: =DisplayMode.Disabled
+            PaddingRight: =6.37
+            PaddingTop: =0.00
+            Size: =17.86
+            Width: =295
+            X: =976
+            Y: =428
+            ZIndex: =16
+
+        Label7_12 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(21, 44, 115, 1)
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: |-
+                ="Fecha Programada:"
+            Width: =295
+            X: =976
+            Y: =388
+            ZIndex: =23
 
     Label1_23 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -861,44 +861,6 @@ Datos_MP As screen:
             Y: =454
             ZIndex: =6
 
-    Group3_10 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =44
-
-        Label7_44 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(21, 44, 115, 1)
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: |-
-                ="Condición del equipo:"
-            Width: =295
-            X: =656
-            Y: =493
-            ZIndex: =35
-
-        Label8_24 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =If(Label8_24.Text = "Off",RGBA(168,0,0,1),Label8_24.Text = "On",RGBA(97,180,93,100))
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: |
-                =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Cond_Equipo)
-            Width: =295
-            X: =656
-            Y: =533
-            ZIndex: =36
-
     Group16 As group:
         Height: =5
         Width: =5
@@ -1023,6 +985,44 @@ Datos_MP As screen:
             Y: =493
             ZIndex: =32
 
+    Group3_10 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =44
+
+        Label7_44 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(21, 44, 115, 1)
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: |-
+                ="Condición del equipo:"
+            Width: =295
+            X: =656
+            Y: =493
+            ZIndex: =35
+
+        Label8_24 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =If(Label8_24.Text = "Off",RGBA(168,0,0,1),Label8_24.Text = "On",RGBA(97,180,93,100))
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: |
+                =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Cond_Equipo)
+            Width: =295
+            X: =656
+            Y: =533
+            ZIndex: =36
+
     TimerHorasHombre As timer:
         AutoPause: =false
         AutoStart: =ContadorHH
@@ -1099,14 +1099,27 @@ Datos_MP As screen:
             Y: =388
             ZIndex: =7
 
-    Group1 As group:
+    Group6 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =74
 
-        Label7_15 As label:
+        DatePicker3 As datepicker:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            DefaultDate: =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Fecha_Inicio)
+            DisplayMode: =DisplayMode.Disabled
+            PaddingRight: =6.37
+            PaddingTop: =0.00
+            Size: =17.86
+            Width: =295
+            X: =341
+            Y: =428
+            ZIndex: =9
+
+        Label7 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Color: =RGBA(255, 255, 255, 1)
@@ -1116,28 +1129,11 @@ Datos_MP As screen:
             PaddingTop: =6.37
             Size: =16.58
             Text: |-
-                ="Prioridad:"
+                ="Fecha Inicio:"
             Width: =295
             X: =341
-            Y: =589
-            ZIndex: =17
-
-        Label8_2 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Fill: |-
-                =//If(Label8_2.Text = "Alta", RGBA(239, 35, 60,1),Label8_2.Text = "Baja", RGBA(56, 176, 0,1),Label8_2.Text = "Media", RGBA(233, 165, 43,1))
-                RGBA(0, 0, 0,0)
-            LineHeight: |
-                =1.2
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Prioridad)
-            Width: =295
-            X: =341
-            Y: =629
-            ZIndex: =18
+            Y: =388
+            ZIndex: =13
 
     Group2 As group:
         Height: =5
@@ -1209,27 +1205,14 @@ Datos_MP As screen:
             Y: =629
             ZIndex: =20
 
-    Group6 As group:
+    Group1 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =74
 
-        DatePicker3 As datepicker:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            DefaultDate: =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Fecha_Inicio)
-            DisplayMode: =DisplayMode.Disabled
-            PaddingRight: =6.37
-            PaddingTop: =0.00
-            Size: =17.86
-            Width: =295
-            X: =341
-            Y: =428
-            ZIndex: =9
-
-        Label7 As label:
+        Label7_15 As label:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderThickness: =1
             Color: =RGBA(255, 255, 255, 1)
@@ -1239,9 +1222,26 @@ Datos_MP As screen:
             PaddingTop: =6.37
             Size: =16.58
             Text: |-
-                ="Fecha Inicio:"
+                ="Prioridad:"
             Width: =295
             X: =341
-            Y: =388
-            ZIndex: =13
+            Y: =589
+            ZIndex: =17
+
+        Label8_2 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Fill: |-
+                =//If(Label8_2.Text = "Alta", RGBA(239, 35, 60,1),Label8_2.Text = "Baja", RGBA(56, 176, 0,1),Label8_2.Text = "Media", RGBA(233, 165, 43,1))
+                RGBA(0, 0, 0,0)
+            LineHeight: |
+                =1.2
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Prioridad)
+            Width: =295
+            X: =341
+            Y: =629
+            ZIndex: =18
 

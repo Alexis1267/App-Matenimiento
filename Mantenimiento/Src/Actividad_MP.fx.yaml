@@ -83,7 +83,7 @@ Actividad_MP As screen:
                     DisplayMode.Disabled,
                     DisplayMode.Edit
                 )
-            Height: =35
+            Height: =40
             Items: =["Realizado","No realizado"]
             Layout: =Layout.Horizontal
             PaddingBottom: =0
@@ -523,75 +523,6 @@ Actividad_MP As screen:
                 X: =369.88
                 ZIndex: =8
 
-            Group15_43 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =19
-
-                Label9_456 As label:
-                    FontWeight: =FontWeight.Bold
-                    Height: =48
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Text: |-
-                        ="*Justificación:"
-                    Width: =443.84
-                    X: =20
-                    Y: =351
-                    ZIndex: =2
-
-                TextInput1_227 As text:
-                    BorderColor: =RGBA(0, 0, 0, 1)
-                    BorderThickness: =1
-                    Clear: =true
-                    Default: =
-                    Height: =120
-                    HintText: ="Agregue una justificación"
-                    Mode: =TextMode.MultiLine
-                    PaddingRight: =6.59
-                    PaddingTop: =6.59
-                    Reset: =true
-                    Size: =17.13
-                    Width: =632.62
-                    X: =21
-                    Y: =399
-                    ZIndex: =3
-
-            Group14_43 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =19
-
-                ACT_42 As text:
-                    Default: =ActividadMP
-                    DisplayMode: =DisplayMode.View
-                    Height: =68
-                    Mode: =TextMode.MultiLine
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Width: =1200.18
-                    X: =25.51
-                    Y: =283
-                    ZIndex: =9
-
-                Label9_455 As label:
-                    FontWeight: =FontWeight.Bold
-                    PaddingRight: =6.37
-                    PaddingTop: =6.37
-                    Size: =16.58
-                    Text: |-
-                        ="Actividad:"
-                    Width: =191.32
-                    X: =25.51
-                    Y: =243
-                    ZIndex: =18
-
             Group13_47 As group:
                 Height: =5
                 Width: =5
@@ -652,6 +583,36 @@ Actividad_MP As screen:
                     Y: =105
                     ZIndex: =13
 
+            Group10_43 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_453 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="Nombre de la maquina:"
+                    Width: =295.91
+                    X: =25.51
+                    Y: =155
+                    ZIndex: =14
+
+                TextInput1_225 As text:
+                    Default: =Dato_NomMaquina
+                    DisplayMode: =DisplayMode.View
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =470.62
+                    X: =25.51
+                    Y: =195
+                    ZIndex: =15
+
             Group11_43 As group:
                 Height: =5
                 Width: =5
@@ -682,35 +643,74 @@ Actividad_MP As screen:
                     Y: =195
                     ZIndex: =17
 
-            Group10_43 As group:
+            Group14_43 As group:
                 Height: =5
                 Width: =5
                 X: =40
                 Y: =40
                 ZIndex: =19
 
-                Label9_453 As label:
+                ACT_42 As text:
+                    Default: =ActividadMP
+                    DisplayMode: =DisplayMode.View
+                    Height: =68
+                    Mode: =TextMode.MultiLine
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =1200.18
+                    X: =25.51
+                    Y: =283
+                    ZIndex: =9
+
+                Label9_455 As label:
                     FontWeight: =FontWeight.Bold
                     PaddingRight: =6.37
                     PaddingTop: =6.37
                     Size: =16.58
                     Text: |-
-                        ="Nombre de la maquina:"
-                    Width: =295.91
+                        ="Actividad:"
+                    Width: =191.32
                     X: =25.51
-                    Y: =155
-                    ZIndex: =14
+                    Y: =243
+                    ZIndex: =18
 
-                TextInput1_225 As text:
-                    Default: =Dato_NomMaquina
-                    DisplayMode: =DisplayMode.View
+            Group15_43 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_456 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =48
                     PaddingRight: =6.37
                     PaddingTop: =6.37
                     Size: =16.58
-                    Width: =470.62
-                    X: =25.51
-                    Y: =195
-                    ZIndex: =15
+                    Text: |-
+                        ="*Justificación:"
+                    Width: =443.84
+                    X: =20
+                    Y: =351
+                    ZIndex: =2
+
+                TextInput1_227 As text:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
+                    Clear: =true
+                    Default: =
+                    Height: =120
+                    HintText: ="Agregue una justificación"
+                    Mode: =TextMode.MultiLine
+                    PaddingRight: =6.59
+                    PaddingTop: =6.59
+                    Reset: =true
+                    Size: =17.13
+                    Width: =632.62
+                    X: =21
+                    Y: =399
+                    ZIndex: =3
 
             AddMediaWithImage6_43 As group:
                 Height: =5
