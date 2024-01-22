@@ -552,7 +552,6 @@ Datos_MP As screen:
             InsertNomina_2 As text:
                 BorderColor: =RGBA(0, 0, 0, 1)
                 BorderThickness: =1
-                Clear: =true
                 Default: =""
                 DisabledBorderColor: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(0, 0, 0, 1)
@@ -561,7 +560,7 @@ Datos_MP As screen:
                 HintText: ="Trabajador No."
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(255, 255, 255, 1)
-                Mode: =TextMode.Password
+                Mode: =If(Mostrar_Password,TextMode.SingleLine,TextMode.Password)
                 PaddingRight: =6.37
                 PaddingTop: =6.37
                 RadiusBottomLeft: =0
@@ -723,6 +722,26 @@ Datos_MP As screen:
                 Y: =131
                 ZIndex: =16
 
+            Icon4 As icon.Hide:
+                Height: =40
+                Icon: =Icon.Hide
+                OnSelect: =Set(Mostrar_Password,false)
+                Visible: =If(Mostrar_Password,true,false)
+                Width: =49
+                X: =600
+                Y: =286
+                ZIndex: =17
+
+            Icon5 As icon.View:
+                Height: =40
+                Icon: =Icon.View
+                OnSelect: =Set(Mostrar_Password,true)
+                Visible: =If(Mostrar_Password,false,true)
+                Width: =49
+                X: =600
+                Y: =286
+                ZIndex: =18
+
     Pantalla_Carg As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =768
@@ -841,6 +860,12 @@ Datos_MP As screen:
             X: =506
             Y: =454
             ZIndex: =6
+
+        Icon1 As icon.Hide:
+            Icon: =Icon.Hide
+            X: =823
+            Y: =459
+            ZIndex: =7
 
     Group3_10 As group:
         Height: =5
