@@ -51,7 +51,7 @@ Actividad_MP As screen:
         ZIndex: =2
 
         Container7 As groupContainer.manualLayoutContainer:
-            Height: =35
+            Height: =40
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -62,19 +62,18 @@ Actividad_MP As screen:
             Label5 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
-                Height: =35
                 Size: =20
                 Text: ="Actividad"
                 Width: =1330
                 ZIndex: =1
 
         Label14 As label:
-            Height: =123
+            Height: =118
             Overflow: =Overflow.Scroll
             Text: =ActividadMP
             Width: =1074
             X: =63
-            Y: =35
+            Y: =40
             ZIndex: =2
 
         Radio1 As radio:
@@ -131,9 +130,10 @@ Actividad_MP As screen:
 
         Label1 As label:
             Align: =Align.Center
+            FontWeight: =FontWeight.Bold
             Text: =Num_PregMP
             Width: =44
-            Y: =31
+            Y: =40
             ZIndex: =6
 
         Label1_1 As label:
