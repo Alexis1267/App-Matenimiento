@@ -12,7 +12,7 @@ Lista_MP As screen:
         BorderColor: =RGBA(21, 44, 115, 1)
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =598
+        Height: =593
         Items: |+
             =//Filtro de la galeria de los mantenimientos preventivos
             If
@@ -106,9 +106,9 @@ Lista_MP As screen:
         OnSelect: =
         TemplateFill: =If(ThisItem.IsSelected,RGBA(186,192,208,1), RGBA(0,0,0,0)) //En esta parte se realiza una validacion, solo con la finalidad de estetica, ya que lo que realiza este codigo es de que me esta diciendo que si se selecciona este item, que me lo colore a un color tono gris 
         TemplatePadding: =0
-        TemplateSize: =220
+        TemplateSize: =227
         Width: =1366
-        Y: =170
+        Y: =163
         ZIndex: =3
 
         Title3 As label:
@@ -125,7 +125,7 @@ Lista_MP As screen:
             Width: =403
             X: =372
             Y: =37
-            ZIndex: =1
+            ZIndex: =2
 
         Subtitle3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -141,7 +141,7 @@ Lista_MP As screen:
             Width: =285
             X: =372
             Y: =97
-            ZIndex: =2
+            ZIndex: =3
 
         Body2 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -157,7 +157,7 @@ Lista_MP As screen:
             Width: =285
             X: =372
             Y: =127
-            ZIndex: =3
+            ZIndex: =4
 
         Separator3 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -167,7 +167,7 @@ Lista_MP As screen:
             Width: =1742.23
             X: =0.00
             Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =4
+            ZIndex: =5
 
         Rectangle7 As rectangle:
             Height: =Parent.TemplateHeight - Separator3.Height
@@ -176,7 +176,7 @@ Lista_MP As screen:
             Width: =5.09
             X: =0.00
             Y: =1
-            ZIndex: =5
+            ZIndex: =6
 
         Body2_1 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -192,7 +192,7 @@ Lista_MP As screen:
             Width: =285
             X: =372
             Y: =157
-            ZIndex: =6
+            ZIndex: =7
 
         Body2_3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -212,6 +212,7 @@ Lista_MP As screen:
 
         Title3_1 As label:
             Align: =Align.Right
+            Color: =RGBA(0, 0, 0, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =30
             OnSelect: =Select(Parent)
@@ -298,10 +299,11 @@ Lista_MP As screen:
             Width: =332.89
             X: =29.32
             Y: =187
-            ZIndex: =14
+            ZIndex: =13
 
         Title3_2 As label:
             Align: =Align.Right
+            Color: =RGBA(0, 0, 0, 1)
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =30
             OnSelect: =Select(Parent)
@@ -316,7 +318,7 @@ Lista_MP As screen:
             Width: =332.89
             X: =29.32
             Y: =7
-            ZIndex: =15
+            ZIndex: =14
 
         Title3_3 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -332,7 +334,7 @@ Lista_MP As screen:
             Width: =285
             X: =372
             Y: =7
-            ZIndex: =16
+            ZIndex: =15
 
         Title3_4 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -351,7 +353,7 @@ Lista_MP As screen:
             Width: =58.66
             X: =1145.34
             Y: =9
-            ZIndex: =17
+            ZIndex: =16
 
         Title3_5 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -370,7 +372,7 @@ Lista_MP As screen:
             Width: =58
             X: =1219.31
             Y: =9
-            ZIndex: =18
+            ZIndex: =17
 
         NextArrow3 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
@@ -387,7 +389,7 @@ Lista_MP As screen:
             Width: =100.76
             X: =1626.16
             Y: =60
-            ZIndex: =19
+            ZIndex: =18
 
         Icon7 As icon.ChevronRight:
             Icon: =Icon.ChevronRight
@@ -406,7 +408,7 @@ Lista_MP As screen:
             Visible: =If(ThisItem.IsSelected,true)
             X: =1266
             Y: =81
-            ZIndex: =20
+            ZIndex: =19
 
         Subtitle3_4 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -422,7 +424,7 @@ Lista_MP As screen:
             Width: =285
             X: =372
             Y: =67
-            ZIndex: =21
+            ZIndex: =20
 
         Subtitle3_5 As label:
             Align: =Align.Right
@@ -440,7 +442,7 @@ Lista_MP As screen:
             Width: =332.89
             X: =29
             Y: =67
-            ZIndex: =22
+            ZIndex: =21
 
         Title3_6 As label:
             Align: =Align.Right
@@ -458,7 +460,7 @@ Lista_MP As screen:
             Width: =332.89
             X: =540
             Y: =1
-            ZIndex: =23
+            ZIndex: =22
 
         Title3_7 As label:
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -474,7 +476,7 @@ Lista_MP As screen:
             Width: =67
             X: =886
             Y: =1
-            ZIndex: =24
+            ZIndex: =23
 
     Rectangle1_61 As rectangle:
         Fill: =RGBA(21, 44, 115, 1)
