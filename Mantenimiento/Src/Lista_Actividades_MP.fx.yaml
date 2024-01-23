@@ -265,7 +265,7 @@
                     { Horas_Hombre: TimerHorasHombre.Text },
                     { Tecnicos: Label12_15.Text }
                 );
-                Notify("Listo",NotificationType.Success));
+                Notify("Haz compeltado correctamente el Mantenimiento Preventivo.",NotificationType.Success));
             
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
