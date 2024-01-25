@@ -1044,8 +1044,8 @@ Datos_MP As screen:
         Fill: =RGBA(168, 0, 0, 1)
         FontWeight: =FontWeight.Bold
         Height: =47
-        Text: |-
-            =Concatenate(Left(
+        Text: |+
+            =/*Concatenate(Left(
                 CadenaCompleta,                            // El texto original
                 Find("-",
                     CadenaCompleta,
@@ -1057,8 +1057,23 @@ Datos_MP As screen:
                     CadenaCompleta,
                     Find("-", CadenaCompleta)
                 ) - 1
-            ) )
-        Visible: =false
+            ) )*/
+            
+            Concatenate(
+                Left(
+                    CadenaCompleta,
+                    Find("-", CadenaCompleta, Find("-", CadenaCompleta) + 1) - 1
+                ) & "-" &
+                Right(
+                    CadenaCompleta,
+                    Len(CadenaCompleta) - Find("-", CadenaCompleta, Find("-", CadenaCompleta, Find("-", CadenaCompleta) + 1) + 1)
+                )
+            )
+            
+            
+            
+            
+            
         Width: =263
         X: =1103
         Y: =96
