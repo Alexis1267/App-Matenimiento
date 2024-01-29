@@ -895,6 +895,8 @@ Actividad_MP As screen:
             ZIndex: =10
 
         Dropdown1 As dropdown:
+            AllowEmptySelection: =true
+            Default: ="Texto"
             Height: =42
             Items: =["mm","PSI","Voltaje"]
             Width: =178
@@ -910,6 +912,7 @@ Actividad_MP As screen:
             ZIndex: =15
 
             Label11 As label:
+                FontWeight: =FontWeight.Bold
                 Text: ="1."
                 Width: =31
                 X: =349
@@ -917,7 +920,7 @@ Actividad_MP As screen:
                 ZIndex: =12
 
             TextInput1 As text:
-                Default: ="Text input"
+                Default: =""
                 Format: =TextFormat.Number
                 Width: =52
                 X: =380
@@ -939,14 +942,15 @@ Actividad_MP As screen:
             ZIndex: =18
 
             Label11_4 As label:
-                Text: ="1."
+                FontWeight: =FontWeight.Bold
+                Text: ="2."
                 Width: =31
                 X: =506
                 Y: =60
                 ZIndex: =15
 
             TextInput1_1 As text:
-                Default: ="Text input"
+                Default: =""
                 Format: =TextFormat.Number
                 Width: =52
                 X: =537
@@ -968,14 +972,15 @@ Actividad_MP As screen:
             ZIndex: =21
 
             Label11_6 As label:
-                Text: ="1."
+                FontWeight: =FontWeight.Bold
+                Text: ="3."
                 Width: =31
                 X: =665
                 Y: =60
                 ZIndex: =18
 
             TextInput1_2 As text:
-                Default: ="Text input"
+                Default: =""
                 Format: =TextFormat.Number
                 Width: =52
                 X: =696
@@ -997,14 +1002,15 @@ Actividad_MP As screen:
             ZIndex: =24
 
             Label11_8 As label:
-                Text: ="1."
+                FontWeight: =FontWeight.Bold
+                Text: ="4."
                 Width: =31
                 X: =817
                 Y: =60
                 ZIndex: =21
 
             TextInput1_3 As text:
-                Default: ="Text input"
+                Default: =""
                 Format: =TextFormat.Number
                 Width: =52
                 X: =848
