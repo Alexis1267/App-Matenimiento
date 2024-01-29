@@ -822,60 +822,9 @@ Actividad_MP As screen:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Semibold
                 Size: =20
-                Text: ="Actividad"
+                Text: ="Anotaciones"
                 Width: =1330
                 ZIndex: =1
-
-        Label14_1 As label:
-            AutoHeight: =true
-            Height: =118
-            Overflow: =Overflow.Scroll
-            Text: =ActividadMP
-            Width: =1074
-            X: =63
-            Y: =40
-            ZIndex: =2
-
-        Radio1_1 As radio:
-            DisplayMode: |
-                =If(
-                    Button1_1.DisplayMode = DisplayMode.Disabled || Label15_1.Visible,
-                    DisplayMode.Disabled,
-                    DisplayMode.Edit
-                )
-            Height: =40
-            Items: =["Realizado","No realizado"]
-            Layout: =Layout.Horizontal
-            PaddingBottom: =0
-            PaddingTop: =0
-            RadioSize: =33
-            Width: =389
-            ZIndex: =3
-
-        Button1_1 As button:
-            DisplayMode: =If(BotonHallazgo,DisplayMode.Disabled,DisplayMode)
-            Fill: =RGBA(234, 0, 41, 1)
-            Height: =65
-            OnSelect: |+
-                =UpdateContext({ShowPopUp : true});
-                
-                
-                
-                //Deshabilitar boton
-                UpdateContext({BotonHallazgo: false});
-                
-                
-                Set(ActividadMP,Label14_1.Text);
-                
-                
-            Text: ="¿Se encontro algun hallazgo?"
-            Visible: |+
-                =If(Radio1_1.Selected.Value = "Realizado" || Radio1_1.Selected.Value = "No realizado",true,false)
-                
-            Width: =187
-            X: =1125
-            Y: =63
-            ZIndex: =4
 
         Button4_1 As button:
             Height: =30
@@ -887,14 +836,6 @@ Actividad_MP As screen:
             X: =1052
             Y: =128
             ZIndex: =5
-
-        Label1_3 As label:
-            Align: =Align.Center
-            FontWeight: =FontWeight.Bold
-            Text: =Num_PregMP
-            Width: =44
-            Y: =40
-            ZIndex: =6
 
         Label1_2 As label:
             Align: =Align.Center
@@ -952,4 +893,10 @@ Actividad_MP As screen:
             X: =1180
             Y: =128
             ZIndex: =10
+
+        Dropdown1 As dropdown:
+            Items: =["mm","PSI","Voltaje"]
+            X: =32
+            Y: =61
+            ZIndex: =11
 
