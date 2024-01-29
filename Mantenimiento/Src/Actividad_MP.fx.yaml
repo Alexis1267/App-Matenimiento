@@ -68,6 +68,7 @@ Actividad_MP As screen:
                 ZIndex: =1
 
         Label14 As label:
+            AutoHeight: =true
             Height: =118
             Overflow: =Overflow.Scroll
             Text: =ActividadMP
@@ -195,7 +196,7 @@ Actividad_MP As screen:
 
     Img_Ilustrativas As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =380
+        Height: =252
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
@@ -795,4 +796,160 @@ Actividad_MP As screen:
                 X: =858.36
                 Y: =105
                 ZIndex: =22
+
+    Actividad_1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =110
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Width: =1330
+        X: =20
+        Y: =543
+        ZIndex: =6
+
+        Container7_1 As groupContainer.manualLayoutContainer:
+            Height: =40
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =1330
+            ZIndex: =1
+
+            Label5_1 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Semibold
+                Size: =20
+                Text: ="Actividad"
+                Width: =1330
+                ZIndex: =1
+
+        Label14_1 As label:
+            AutoHeight: =true
+            Height: =118
+            Overflow: =Overflow.Scroll
+            Text: =ActividadMP
+            Width: =1074
+            X: =63
+            Y: =40
+            ZIndex: =2
+
+        Radio1_1 As radio:
+            DisplayMode: |
+                =If(
+                    Button1_1.DisplayMode = DisplayMode.Disabled || Label15_1.Visible,
+                    DisplayMode.Disabled,
+                    DisplayMode.Edit
+                )
+            Height: =40
+            Items: =["Realizado","No realizado"]
+            Layout: =Layout.Horizontal
+            PaddingBottom: =0
+            PaddingTop: =0
+            RadioSize: =33
+            Width: =389
+            ZIndex: =3
+
+        Button1_1 As button:
+            DisplayMode: =If(BotonHallazgo,DisplayMode.Disabled,DisplayMode)
+            Fill: =RGBA(234, 0, 41, 1)
+            Height: =65
+            OnSelect: |+
+                =UpdateContext({ShowPopUp : true});
+                
+                
+                
+                //Deshabilitar boton
+                UpdateContext({BotonHallazgo: false});
+                
+                
+                Set(ActividadMP,Label14_1.Text);
+                
+                
+            Text: ="¿Se encontro algun hallazgo?"
+            Visible: |+
+                =If(Radio1_1.Selected.Value = "Realizado" || Radio1_1.Selected.Value = "No realizado",true,false)
+                
+            Width: =187
+            X: =1125
+            Y: =63
+            ZIndex: =4
+
+        Button4_1 As button:
+            Height: =30
+            OnSelect: |
+                =UpdateContext({BotonHallazgo: false});
+            Text: ="Deshabilitar boton"
+            Visible: =false
+            Width: =278
+            X: =1052
+            Y: =128
+            ZIndex: =5
+
+        Label1_3 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Text: =Num_PregMP
+            Width: =44
+            Y: =40
+            ZIndex: =6
+
+        Label1_2 As label:
+            Align: =Align.Center
+            Height: =35
+            Text: =Identificador_PregMP
+            Visible: =false
+            Width: =44
+            X: =1286
+            ZIndex: =8
+
+        Label17_1 As label:
+            Align: =Align.Center
+            Text: =ConsultaRes.resultado
+            Visible: =false
+            Width: =388
+            X: =941
+            ZIndex: =9
+
+        Label18_1 As label:
+            Height: =30
+            Text: |+
+                =/*If(
+                    IsBlank(Find("No Realizado", Label17.Text)),
+                    Mid(Label17.Text, Find("Realizado", Label17.Text), Len("Realizado")),
+                    Mid(Label17.Text, Find("No Realizado", Label17.Text), Len("No Realizado")),
+                    Mid(Label17.Text, Find("No realizado", Label17.Text), Len("No realizado"))
+                )
+                */
+                
+                If(
+                    !IsBlank(Find("Sin Responder", Label17_1.Text)),
+                    "No Realizado",
+                    If(
+                        !IsBlank(Find("null", Label17_1.Text)),
+                        "No Realizado",
+                        If(
+                            !IsBlank(Find("No realizado", Label17_1.Text)),
+                            "No realizado",
+                            "Realizado"
+                        )
+                    )
+                )
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            Visible: =false
+            X: =1180
+            Y: =128
+            ZIndex: =10
 

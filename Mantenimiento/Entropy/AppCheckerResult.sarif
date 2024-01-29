@@ -1574,6 +1574,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Actividad_MP.Actividad_1.Radio1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Actividad_MP.Actividad_1.Radio1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Actividad_MP",
+                "type": "Actividad_MP.Actividad_1.Radio1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.SemanasTranscurridas"
                 }
               ],

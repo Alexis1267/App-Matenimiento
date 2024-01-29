@@ -193,8 +193,8 @@
             OnSelect: =SpUp_PreventivSure_Actualizar_CantidadRespuestas.Run(Value(Cantidad_de_Actividades.Text),Id_Preg) && Navigate(Actividad_MP) //Este flow lo que me hace es de que a la tabla PreventivSure_Preg me actualiza a "No realizado" la cantidad de actividades que tenga
             Text: ="Responder actividad"
             Width: =223
-            X: =1062
-            Y: =39
+            X: =1067
+            Y: =76
             ZIndex: =12
 
         Label9 As label:
