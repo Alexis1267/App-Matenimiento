@@ -52,7 +52,7 @@
     "Gallery4 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
         BorderColor: =RGBA(0, 0, 0, 1)
         DelayItemLoading: =true
-        Height: =486
+        Height: =485
         Items: |+
             =//Sort(Sort(Search(PreventivSure_PreguntasMP,Activo,"Activo_No") ,Sub_Tarea),Num_Pregunta)
             
@@ -81,10 +81,10 @@
         LoadingSpinner: =LoadingSpinner.Data
         TemplateFill: =If(ThisItem.IsSelected,RGBA(186,192,208,1), RGBA(0,0,0,0))
         TemplatePadding: =0
-        TemplateSize: =116
+        TemplateSize: =208
         Width: =1309
         X: =30
-        Y: =140
+        Y: =141
         ZIndex: =2
 
         Subtitle2 As label:
@@ -148,33 +148,33 @@
             Height: =1
             OnSelect: =Select(Parent)
             Width: =1366
-            Y: =115
+            Y: =207
             ZIndex: =7
 
         Label6 As label:
             Align: =Align.Center
+            FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
             Text: =ThisItem.Num_Pregunta
-            Width: =49
-            Y: =40
+            Width: =75
+            X: =79
             ZIndex: =8
 
         Label6_1 As label:
-            Height: =112
+            AutoHeight: =true
+            Height: =143
             OnSelect: =Select(Parent)
             Text: =ThisItem.Actividad
-            Width: =1013
-            X: =49
-            Y: =4
+            Width: =1049
+            Y: =64
             ZIndex: =9
 
         Label6_2 As label:
             FontWeight: =FontWeight.Bold
             OnSelect: =Select(Parent)
             Text: =ThisItem.Sub_Tarea
-            Width: =1231
-            X: =4
-            Y: =4
+            Width: =569
+            X: =511
             ZIndex: =10
 
         Label6_3 As label:
@@ -196,6 +196,22 @@
             X: =1062
             Y: =39
             ZIndex: =12
+
+        Label9 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Text: ="N.º de preg."
+            Width: =112
+            ZIndex: =13
+
+        Label9_1 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Actividad:"
+            Width: =112
+            Y: =36
+            ZIndex: =14
 
     Cantidad_de_Actividades As label:
         Align: =Align.Center
