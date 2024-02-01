@@ -12,7 +12,7 @@ Lista_MP As screen:
         BorderColor: =RGBA(21, 44, 115, 1)
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =593
+        Height: =587
         Items: |+
             =//Filtro de la galeria de los mantenimientos preventivos
             If
@@ -106,9 +106,9 @@ Lista_MP As screen:
         OnSelect: =
         TemplateFill: =If(ThisItem.IsSelected,RGBA(186,192,208,1), RGBA(0,0,0,0)) //En esta parte se realiza una validacion, solo con la finalidad de estetica, ya que lo que realiza este codigo es de que me esta diciendo que si se selecciona este item, que me lo colore a un color tono gris 
         TemplatePadding: =0
-        TemplateSize: =227
+        TemplateSize: =221
         Width: =1366
-        Y: =159
+        Y: =165
         ZIndex: =3
 
         Title3 As label:
@@ -459,7 +459,7 @@ Lista_MP As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =332.89
             X: =540
-            Y: =1
+            Y: =9
             ZIndex: =22
 
         Title3_7 As label:

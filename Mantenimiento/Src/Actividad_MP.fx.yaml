@@ -896,12 +896,13 @@ Actividad_MP As screen:
 
         Dropdown1 As dropdown:
             AllowEmptySelection: =true
+            ChevronBackground: =RGBA(0, 18, 107, 1)
             Default: ="Texto"
-            Height: =42
-            Items: =["mm","PSI","Voltaje"]
-            Width: =178
-            X: =32
-            Y: =60
+            Height: =29
+            Items: =["mm","PSI","V"]
+            Width: =100
+            X: =187
+            Y: =6
             ZIndex: =11
 
         Group4 As group:
@@ -993,6 +994,13 @@ Actividad_MP As screen:
                 X: =748
                 Y: =60
                 ZIndex: =20
+
+        Label13 As label:
+            Size: =12
+            Text: ="Seleccione la unidad de medida"
+            Width: =154
+            X: =19
+            ZIndex: =24
 
         Group4_3 As group:
             Height: =5
