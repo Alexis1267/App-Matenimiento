@@ -861,6 +861,44 @@ Datos_MP As screen:
             Y: =454
             ZIndex: =6
 
+    Group3_10 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =44
+
+        Label7_44 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(21, 44, 115, 1)
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: |-
+                ="Condición del equipo:"
+            Width: =295
+            X: =656
+            Y: =493
+            ZIndex: =35
+
+        Label8_24 As label:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =1
+            Color: =If(Label8_24.Text = "Off",RGBA(168,0,0,1),Label8_24.Text = "On",RGBA(97,180,93,100))
+            FontWeight: =FontWeight.Bold
+            PaddingRight: =6.37
+            PaddingTop: =6.37
+            Size: =16.58
+            Text: |
+                =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Cond_Equipo)
+            Width: =295
+            X: =656
+            Y: =533
+            ZIndex: =36
+
     Group16 As group:
         Height: =5
         Width: =5
@@ -984,44 +1022,6 @@ Datos_MP As screen:
             X: =22
             Y: =493
             ZIndex: =32
-
-    Group3_10 As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =44
-
-        Label7_44 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =RGBA(255, 255, 255, 1)
-            Fill: =RGBA(21, 44, 115, 1)
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: |-
-                ="Condición del equipo:"
-            Width: =295
-            X: =656
-            Y: =493
-            ZIndex: =35
-
-        Label8_24 As label:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderThickness: =1
-            Color: =If(Label8_24.Text = "Off",RGBA(168,0,0,1),Label8_24.Text = "On",RGBA(97,180,93,100))
-            FontWeight: =FontWeight.Bold
-            PaddingRight: =6.37
-            PaddingTop: =6.37
-            Size: =16.58
-            Text: |
-                =LookUp(CMXE_MP_N,Folio_Maq = ID_MAQUINA,Cond_Equipo)
-            Width: =295
-            X: =656
-            Y: =533
-            ZIndex: =36
 
     TimerHorasHombre As timer:
         AutoPause: =false
