@@ -191,10 +191,11 @@
 
     Button3 As button:
         Height: =57
-        Text: ="Button"
+        Text: ="Control de preguntas"
         Visible: =If(LookUp(PreventivSure_Tecnicos,Correo = Identificacion.Email,Rol = "Admin"), true,false) 
         Width: =334
-        Y: =711
+        X: =531
+        Y: =691
         ZIndex: =12
 
     Label16 As label:
