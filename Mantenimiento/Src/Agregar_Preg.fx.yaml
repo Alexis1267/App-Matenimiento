@@ -488,6 +488,14 @@ Agregar_Preg As screen:
         Y: =117
         ZIndex: =6
 
+        TextInput2 As text:
+            Default: =""
+            Visible: =If(BotonZona,true,false)
+            Width: =328
+            X: =530
+            Y: =117
+            ZIndex: =3
+
         AddMediaWithImage1 As group:
             Height: =5
             Width: =5
@@ -608,31 +616,18 @@ Agregar_Preg As screen:
                 Y: =231
                 ZIndex: =19
 
-        Dropdown4 As dropdown:
-            Items: =DropDownSample
+        Label20_2 As label:
+            Text: ="Subtarea"
+            Width: =328
             X: =530
-            Y: =115
+            ZIndex: =22
+
+        Dropdown4 As dropdown:
+            Items: |
+                =Sort(Distinct(Filter(PreventivSure_PreguntasMP,Localizacion = BtnLocalizacion,Activo_No = Dropdown2.SelectedText.Value,Clase_MTTO = Dropdown3.SelectedText.Value),Sub_Tarea),Value)
+            X: =530
+            Y: =46
             ZIndex: =24
-
-        Group12 As group:
-            Height: =5
-            Width: =5
-            X: =40
-            Y: =40
-            ZIndex: =24
-
-            TextInput2 As text:
-                Default: ="Text input"
-                Width: =328
-                X: =530
-                Y: =42
-                ZIndex: =3
-
-            Label20_2 As label:
-                Text: ="Subtarea"
-                Width: =328
-                X: =530
-                ZIndex: =22
 
         Group10 As group:
             Height: =5
@@ -689,7 +684,7 @@ Agregar_Preg As screen:
             ZIndex: =24
 
             TextInput3 As text:
-                Default: ="Text input"
+                Default: =""
                 Width: =288
                 X: =910
                 Y: =46
@@ -701,6 +696,24 @@ Agregar_Preg As screen:
                 X: =910
                 Y: =6
                 ZIndex: =23
+
+        Icon1 As icon.Add:
+            Height: =27
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({BotonZona:true})
+            Width: =28
+            X: =530
+            Y: =89
+            ZIndex: =26
+
+        Label21 As label:
+            Height: =27
+            Text: ="Agregar nueva subtarea"
+            Width: =218
+            X: =558
+            Y: =89
+            ZIndex: =27
 
     Icon1_4 As icon.BackArrow:
         DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
