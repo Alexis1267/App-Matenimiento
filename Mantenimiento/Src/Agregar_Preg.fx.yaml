@@ -1,6 +1,7 @@
 Agregar_Preg As screen:
     Fill: =RGBA(21, 44, 115, 1)
-    OnVisible: =
+    OnVisible: |-
+        =UpdateContext({BotonZona:false})
 
     Titulo_9 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -490,7 +491,7 @@ Agregar_Preg As screen:
 
         TextInput2 As text:
             Default: =""
-            Visible: =If(BotonZona,true,false)
+            Visible: =BotonZona
             Width: =328
             X: =530
             Y: =117
@@ -701,7 +702,7 @@ Agregar_Preg As screen:
             Height: =27
             Icon: =Icon.Add
             OnSelect: |-
-                =UpdateContext({BotonZona:true})
+                =UpdateContext({BotonZona:!BotonZona})
             Width: =28
             X: =530
             Y: =89
