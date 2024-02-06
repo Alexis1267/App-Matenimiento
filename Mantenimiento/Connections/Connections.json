@@ -27,6 +27,40 @@
     "dependents": [],
     "id": "2019b927-6731-4741-9d45-d73b8f21f1cf"
   },
+  "2e97573b-12ec-4b51-a922-f65ae802ce96": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "3736083c-041a-4b5d-ab79-97559da2f0cf": {
+          "value": "shared_sql_1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "6854a9fc-026c-4a54-b3bd-ce93e54e8647"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sql_1": {
+          "value": "3736083c-041a-4b5d-ab79-97559da2f0cf"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "6854a9fc-026c-4a54-b3bd-ce93e54e8647"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SpIn_PreventivSure_InsertarActividadDatos"
+    ],
+    "dependencies": {
+      "shared_sql_1": "3736083c-041a-4b5d-ab79-97559da2f0cf"
+    },
+    "dependents": [],
+    "id": "2e97573b-12ec-4b51-a922-f65ae802ce96"
+  },
   "3736083c-041a-4b5d-ab79-97559da2f0cf": {
     "connectionRef": {
       "authenticationType": "sqlAuthentication",
@@ -35,7 +69,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.24014.14",
-        "modifiedOn": "2024-02-06 20:01:54",
+        "modifiedOn": "2024-02-06 20:40:48",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
@@ -69,16 +103,17 @@
     "dataSources": [
       "CMXE_MP_N",
       "CMXE_TablaH_MP",
-      "PreventivSure_PreguntasMP",
       "PreventivSure_Tecnicos",
-      "PreventivSure_Preg"
+      "PreventivSure_Preg",
+      "PreventivSure_PreguntasMP"
     ],
     "dependencies": {},
     "dependents": [
       "85f6a102-9f39-4074-ae0a-bcc742458f29",
       "d1da1e37-b283-412f-9cd5-cefd517188a5",
       "cdc0749a-7649-4c36-bc6a-c188db5b5898",
-      "bdea71f6-7dfd-4f8c-a01b-8ba1898b3af6"
+      "bdea71f6-7dfd-4f8c-a01b-8ba1898b3af6",
+      "2e97573b-12ec-4b51-a922-f65ae802ce96"
     ],
     "endpoints": [
       "CMXMOA17%5cI40SQLQAENV,CMXEDataCollection"

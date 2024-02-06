@@ -635,6 +635,7 @@ Agregar_Preg As screen:
             ZIndex: =22
 
         Dropdown4 As dropdown:
+            DisplayMode: =If(BotonZona,DisplayMode.Disabled,DisplayMode.Edit)
             Items: |
                 =Sort(Distinct(Filter(PreventivSure_PreguntasMP,Localizacion = BtnLocalizacion,Activo_No = Dropdown2.SelectedText.Value,Clase_MTTO = Dropdown3.SelectedText.Value),Sub_Tarea),Value)
             Width: =273
@@ -736,11 +737,12 @@ Agregar_Preg As screen:
         Button13 As button:
             Height: =35
             OnSelect: |-
-                =Patch(PreventivSure_PreguntasMP,Defaults(PreventivSure_PreguntasMP),
+                =Patch(PreventivSure_PreguntasMP, Defaults(PreventivSure_PreguntasMP),
                 {
                  Activo_No: Dropdown2.SelectedText.Value,
                  Clase_MTTO: Dropdown3.SelectedText.Value,
-                 Sub_Tarea: Dropdown4.SelectedText.Value,
+                 //Sub_Tarea: Dropdown4.SelectedText.Value,
+                 Sub_Tarea: If(Dropdown4.DisplayMode = DisplayMode.Disabled, TextInput2.Text,Dropdown4.SelectedText.Value),
                  Actividad: TextInput3.Text
                 });
             Text: ="Registrar nueva pregunta"
@@ -748,6 +750,17 @@ Agregar_Preg As screen:
             X: =523
             Y: =567
             ZIndex: =28
+
+        Dropdown2_1 As dropdown:
+            Items: |+
+                =Sort(Distinct(Filter(CMXE_MP_N,ID_Maq = Dropdown2.SelectedText.Value),Nom_Equipo),Value)
+                
+                
+                
+            Width: =223
+            X: =5
+            Y: =117
+            ZIndex: =29
 
     Icon1_4 As icon.BackArrow:
         DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
