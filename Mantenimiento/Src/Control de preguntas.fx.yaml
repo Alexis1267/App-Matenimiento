@@ -491,7 +491,9 @@
 
         Button8 As button:
             Height: =105
-            OnSelect: =Navigate(Elegir,ScreenTransition.Fade)
+            OnSelect: |-
+                =Navigate(Elegir,ScreenTransition.Fade);
+                Set(BtnLocalizacion,"Prensa")
             Text: ="PRENSAS"
             Width: =197
             X: =578
