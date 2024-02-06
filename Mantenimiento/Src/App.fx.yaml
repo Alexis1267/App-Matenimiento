@@ -12,7 +12,9 @@ App As appinfo:
         Set (SemanasTranscurridas, RoundUp(DiferenciaDias / 7, 0));
         
         //Refrescar las actividades
-        Refresh(PreventivSure_PreguntasMP)
+        Refresh(PreventivSure_PreguntasMP);
+        
+        Set(Identificacion,User())
         
         
         
