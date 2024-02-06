@@ -1,4 +1,4 @@
-"'Control de preguntas_1' As screen":
+Elegir As screen:
     Fill: =RGBA(21, 44, 115, 1)
     OnVisible: |
         =Set(ActividadMP,Label6_1.Text);
@@ -493,12 +493,40 @@
         Y: =117
         ZIndex: =6
 
-        Button8_1 As button:
-            Height: =105
-            OnSelect: =
-            Text: ="PRENSAS"
-            Width: =197
-            X: =578
-            Y: =238
+        Label19 As label:
+            Align: =Align.Center
+            Height: =64
+            Size: =30
+            Text: ="¿Qué deseas hacer?"
+            Width: =434
+            X: =438
+            Y: =39
             ZIndex: =1
+
+        Button9 As button:
+            Fill: =RGBA(141, 198, 63, 1)
+            Height: =112
+            Text: ="Agregar"
+            Width: =182
+            X: =114
+            Y: =232
+            ZIndex: =2
+
+        Button9_1 As button:
+            Fill: =RGBA(255, 191, 0, 1)
+            Height: =112
+            Text: ="Modificar"
+            Width: =182
+            X: =564
+            Y: =232
+            ZIndex: =3
+
+        Button9_2 As button:
+            Fill: =RGBA(168, 0, 0, 1)
+            Height: =112
+            Text: ="Eliminar"
+            Width: =182
+            X: =1017
+            Y: =232
+            ZIndex: =4
 
