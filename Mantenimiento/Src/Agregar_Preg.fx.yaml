@@ -488,32 +488,6 @@ Agregar_Preg As screen:
         Y: =117
         ZIndex: =6
 
-        Dropdown2 As dropdown:
-            Items: =DropDownSample
-            X: =24
-            Y: =46
-            ZIndex: =1
-
-        Dropdown3 As dropdown:
-            Items: =DropDownSample
-            X: =404
-            Y: =46
-            ZIndex: =2
-
-        TextInput2 As text:
-            Default: ="Text input"
-            Width: =328
-            X: =24
-            Y: =122
-            ZIndex: =3
-
-        TextInput3 As text:
-            Default: ="Text input"
-            Width: =328
-            X: =404
-            Y: =120
-            ZIndex: =4
-
         AddMediaWithImage1 As group:
             Height: =5
             Width: =5
@@ -526,16 +500,16 @@ Agregar_Preg As screen:
                 Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
                 ImagePosition: =ImagePosition.Fill
                 Width: =200
-                X: =32
-                Y: =198
+                X: =45
+                Y: =231
                 ZIndex: =6
 
             AddMediaButton1 As addMedia:
                 Height: =180
                 Size: =25
                 Width: =200
-                X: =32
-                Y: =198
+                X: =45
+                Y: =231
                 ZIndex: =7
 
         AddMediaWithImage2 As group:
@@ -550,16 +524,16 @@ Agregar_Preg As screen:
                 Image: =If(IsBlank(AddMediaButton2.Media), SampleImage, AddMediaButton2.Media)
                 ImagePosition: =ImagePosition.Fill
                 Width: =200
-                X: =287
-                Y: =198
+                X: =300
+                Y: =231
                 ZIndex: =9
 
             AddMediaButton2 As addMedia:
                 Height: =180
                 Size: =25
                 Width: =200
-                X: =287
-                Y: =198
+                X: =300
+                Y: =231
                 ZIndex: =10
 
         AddMediaWithImage3 As group:
@@ -574,16 +548,16 @@ Agregar_Preg As screen:
                 Image: =If(IsBlank(AddMediaButton3.Media), SampleImage, AddMediaButton3.Media)
                 ImagePosition: =ImagePosition.Fill
                 Width: =200
-                X: =545
-                Y: =198
+                X: =558
+                Y: =231
                 ZIndex: =12
 
             AddMediaButton3 As addMedia:
                 Height: =180
                 Size: =25
                 Width: =200
-                X: =545
-                Y: =198
+                X: =558
+                Y: =231
                 ZIndex: =13
 
         AddMediaWithImage4 As group:
@@ -598,16 +572,16 @@ Agregar_Preg As screen:
                 Image: =If(IsBlank(AddMediaButton4.Media), SampleImage, AddMediaButton4.Media)
                 ImagePosition: =ImagePosition.Fill
                 Width: =200
-                X: =803
-                Y: =198
+                X: =816
+                Y: =231
                 ZIndex: =15
 
             AddMediaButton4 As addMedia:
                 Height: =180
                 Size: =25
                 Width: =200
-                X: =803
-                Y: =198
+                X: =816
+                Y: =231
                 ZIndex: =16
 
         AddMediaWithImage5 As group:
@@ -622,45 +596,100 @@ Agregar_Preg As screen:
                 Image: =If(IsBlank(AddMediaButton5.Media), SampleImage, AddMediaButton5.Media)
                 ImagePosition: =ImagePosition.Fill
                 Width: =200
-                X: =1074
-                Y: =198
+                X: =1087
+                Y: =231
                 ZIndex: =18
 
             AddMediaButton5 As addMedia:
                 Height: =180
                 Size: =25
                 Width: =200
-                X: =1074
-                Y: =198
+                X: =1087
+                Y: =231
                 ZIndex: =19
 
-        Label20 As label:
-            Text: ="Activo.No"
-            Width: =328
-            X: =24
-            Y: =6
-            ZIndex: =20
+        Group12 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =24
 
-        Label20_1 As label:
-            Text: ="Clase de MTTO"
-            Width: =328
-            X: =404
-            Y: =6
-            ZIndex: =21
+            TextInput2 As text:
+                Default: ="Text input"
+                Width: =328
+                X: =530
+                Y: =42
+                ZIndex: =3
 
-        Label20_2 As label:
-            Text: ="Subtarea"
-            Width: =328
-            X: =24
-            Y: =80
-            ZIndex: =22
+            Label20_2 As label:
+                Text: ="Subtarea"
+                Width: =328
+                X: =530
+                ZIndex: =22
 
-        Label20_3 As label:
-            Text: ="Nueva Actividad"
-            Width: =328
-            X: =404
-            Y: =80
-            ZIndex: =23
+        Group10 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =24
+
+            Dropdown2 As dropdown:
+                Items: =DropDownSample
+                Width: =138
+                X: =24
+                Y: =46
+                ZIndex: =1
+
+            Label20 As label:
+                Text: ="Activo.No"
+                Width: =138
+                X: =24
+                Y: =6
+                ZIndex: =20
+
+        Group11 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =24
+
+            Dropdown3 As dropdown:
+                Items: =DropDownSample
+                Width: =178
+                X: =226
+                Y: =46
+                ZIndex: =2
+
+            Label20_1 As label:
+                Text: ="Clase de MTTO"
+                Width: =178
+                X: =226
+                Y: =6
+                ZIndex: =21
+
+        Group13 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =24
+
+            TextInput3 As text:
+                Default: ="Text input"
+                Width: =288
+                X: =910
+                Y: =46
+                ZIndex: =4
+
+            Label20_3 As label:
+                Text: ="Nueva Actividad"
+                Width: =288
+                X: =910
+                Y: =6
+                ZIndex: =23
 
     Icon1_4 As icon.BackArrow:
         DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
