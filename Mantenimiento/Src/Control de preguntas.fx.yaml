@@ -1,11 +1,7 @@
 "'Control de preguntas' As screen":
     Fill: =RGBA(21, 44, 115, 1)
     OnVisible: |
-        =Set(ActividadMP,Label6_1.Text);
-        Set(Num_PregMP,Value(Label6.Text));
-        Set(Identificador_PregMP,Value(Label6_3.Text));
-        
-        Set(ConsultaRes,SpOut_PreventivSure_VerRespuesta.Run(Identificador_PregMP,Id_Preg))
+        =
 
     Titulo_5 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -495,7 +491,7 @@
 
         Button8 As button:
             Height: =105
-            OnSelect: =
+            OnSelect: =Navigate(Elegir,ScreenTransition.Fade)
             Text: ="PRENSAS"
             Width: =197
             X: =578
