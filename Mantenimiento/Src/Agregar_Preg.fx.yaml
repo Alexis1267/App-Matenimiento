@@ -752,21 +752,21 @@ Agregar_Preg As screen:
                 
                 // Set file1 name
                     //Set(ImgName1, Concatenate(TextInput1_224.Text &"_1",Now(),".jpg"));
-                    Set(ImgName1, Concatenate("/"& BtnLocalizacion &"/"& Dropdown2.SelectedText.Value &TextInput1_224.Text &"_1",Now(),".jpg"));
+                    Set(ImgName1, Concatenate("/"& BtnLocalizacion &"/"& Dropdown2.SelectedText.Value& Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
                 
                 
                  
                 
                     // Get file1 binary data and convert it to base64
-                    Set(attachmentValue1, JSON(UploadedImage7_43.Image, JSONFormat.IncludeBinaryData));
-                    Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
+                    Set(attachmentImgValue1, JSON(UploadedImage1.Image, JSONFormat.IncludeBinaryData));
+                    Set(attachmentImg1Base64Only, Mid(attachmentImgValue1, Find(",", attachmentImgValue1)+1, Len(attachmentImgValue1) - Find(",", attachmentImgValue1)-1 ));
                 
                  
                 
                     // Upload file1 and get url
                     //Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
                 
-                Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
+                Set(IMG1,Flow_Imagenes_Actividades.Run(ImgName1,attachmentImg1Base64Only).sharepointfilelink);
                 
                 
                 
