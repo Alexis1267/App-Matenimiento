@@ -859,11 +859,56 @@ Agregar_Preg As screen:
             Color: =RGBA(255, 0, 0, 1)
             Height: =35
             Icon: =Icon.CancelBadge
-            OnSelect: =
+            OnSelect: |
+                =Reset(AddMediaButton3)
             Width: =34
             X: =724
             Y: =215
             ZIndex: =30
+
+        Icon10_1 As icon.CancelBadge:
+            Color: =RGBA(255, 0, 0, 1)
+            Height: =35
+            Icon: =Icon.CancelBadge
+            OnSelect: |
+                =Reset(AddMediaButton2)
+            Width: =34
+            X: =463
+            Y: =215
+            ZIndex: =31
+
+        Icon10_2 As icon.CancelBadge:
+            Color: =RGBA(255, 0, 0, 1)
+            Height: =35
+            Icon: =Icon.CancelBadge
+            OnSelect: |
+                =Reset(AddMediaButton1)
+            Width: =34
+            X: =195
+            Y: =215
+            ZIndex: =32
+
+        Icon10_3 As icon.CancelBadge:
+            Color: =RGBA(255, 0, 0, 1)
+            Height: =35
+            Icon: =Icon.CancelBadge
+            OnSelect: |
+                =Reset(AddMediaButton4)
+            Width: =34
+            X: =982
+            Y: =215
+            ZIndex: =33
+
+        Icon10_5 As icon.CancelBadge:
+            Color: =RGBA(255, 0, 0, 1)
+            Height: =35
+            Icon: =Icon.CancelBadge
+            OnSelect: |
+                =Reset(AddMediaButton5)
+            Width: =34
+            X: =1253
+            Y: =215
+            ZIndex: =34
 
     Icon1_4 As icon.BackArrow:
         DisplayMode: =
