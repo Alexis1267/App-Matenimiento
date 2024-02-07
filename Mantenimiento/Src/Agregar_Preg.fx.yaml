@@ -752,7 +752,7 @@ Agregar_Preg As screen:
                 
                 // Set file1 name
                     //Set(ImgName1, Concatenate(TextInput1_224.Text &"_1",Now(),".jpg"));
-                    Set(ImgName1, Concatenate("/"& &TextInput1_224.Text &"_1",Now(),".jpg"));
+                    Set(ImgName1, Concatenate("/"& BtnLocalizacion &"/"& Dropdown2.SelectedText.Value &TextInput1_224.Text &"_1",Now(),".jpg"));
                 
                 
                  
