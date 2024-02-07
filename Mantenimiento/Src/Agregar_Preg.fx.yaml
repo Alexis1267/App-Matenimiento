@@ -513,6 +513,7 @@ Agregar_Preg As screen:
                 ZIndex: =6
 
             AddMediaButton1 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
                 Fill: =RGBA(202, 202, 202, 1)
                 Height: =43
                 Size: =13
@@ -539,6 +540,7 @@ Agregar_Preg As screen:
                 ZIndex: =9
 
             AddMediaButton2 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
                 Fill: =RGBA(202, 202, 202, 1)
                 Height: =43
                 Size: =13
@@ -565,6 +567,7 @@ Agregar_Preg As screen:
                 ZIndex: =12
 
             AddMediaButton3 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
                 Fill: =RGBA(202, 202, 202, 1)
                 Height: =43
                 Size: =13
@@ -591,6 +594,7 @@ Agregar_Preg As screen:
                 ZIndex: =15
 
             AddMediaButton4 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
                 Fill: =RGBA(202, 202, 202, 1)
                 Height: =43
                 Size: =13
@@ -617,6 +621,7 @@ Agregar_Preg As screen:
                 ZIndex: =18
 
             AddMediaButton5 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
                 Fill: =RGBA(202, 202, 202, 1)
                 Height: =43
                 Size: =13
@@ -740,17 +745,31 @@ Agregar_Preg As screen:
         Button13 As button:
             Height: =35
             OnSelect: |+
-                =/*Patch(PreventivSure_PreguntasMP, Defaults(PreventivSure_PreguntasMP),
-                {
-                 Activo_No: Dropdown2.SelectedText.Value,
-                 Clase_MTTO: Dropdown3.SelectedText.Value,
-                 //Sub_Tarea: Dropdown4.SelectedText.Value,
-                 Sub_Tarea: If(Dropdown4.DisplayMode = DisplayMode.Disabled, TextInput2.Text,Dropdown4.SelectedText.Value),
-                 Actividad: TextInput3.Text
-                });*/
+                =
+                //AGREGAR NUEVA ACTIVIDAD A PRENSAS
+                SpIn_PreventivSure_InsertarActividadDatos.Run(
+                Dropdown2.SelectedText.Value,
+                Dropdown3.SelectedText.Value,
+                If(Dropdown4.DisplayMode = DisplayMode.Disabled,TextInput2.Text,Dropdown4.SelectedText.Value),
+                TextInput3.Text,
+                If(IsBlank(AddMediaButton1.Media),"N/T",IMG1),
+                If(IsBlank(AddMediaButton2.Media),"N/T",IMG2),
+                If(IsBlank(AddMediaButton3.Media),"N/T",IMG3),
+                If(IsBlank(AddMediaButton4.Media),"N/T",IMG4),
+                If(IsBlank(AddMediaButton5.Media),"N/T",IMG5));
                 
-                //AGREGAR NUEVA ACTIVIDAD
-                SpIn_PreventivSure_InsertarActividadDatos.Run(Dropdown2.SelectedText.Value,Dropdown3.SelectedText.Value,If(Dropdown4.DisplayMode = DisplayMode.Disabled, TextInput2.Text,Dropdown4.SelectedText.Value),TextInput3.Text,IMG1,IMG2,IMG3,If(IsBlank(AddMediaButton4.Media),"N/A",IMG4),If(IsBlank(AddMediaButton4.Media),"N/A",IMG5));
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 
                 
                 
