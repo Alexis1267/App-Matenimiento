@@ -855,6 +855,16 @@ Agregar_Preg As screen:
             Y: =117
             ZIndex: =29
 
+        Icon10 As icon.CancelBadge:
+            Color: =RGBA(255, 0, 0, 1)
+            Height: =35
+            Icon: =Icon.CancelBadge
+            OnSelect: =
+            Width: =34
+            X: =724
+            Y: =215
+            ZIndex: =30
+
     Icon1_4 As icon.BackArrow:
         DisplayMode: =
         Height: =75
