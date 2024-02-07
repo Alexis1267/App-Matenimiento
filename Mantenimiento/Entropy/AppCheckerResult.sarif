@@ -3404,36 +3404,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.IMG1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.IMG1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "IMG1",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.Camera"
                 }
               ],
