@@ -747,7 +747,25 @@ Agregar_Preg As screen:
                 });*/
                 
                 //AGREGAR NUEVA ACTIVIDAD
-                SpIn_PreventivSure_InsertarActividadDatos.Run(Dropdown2.SelectedText.Value,Dropdown3.SelectedText.Value,If(Dropdown4.DisplayMode = DisplayMode.Disabled, TextInput2.Text,Dropdown4.SelectedText.Value),TextInput3.Text,"a","a","a","a","a")
+                SpIn_PreventivSure_InsertarActividadDatos.Run(Dropdown2.SelectedText.Value,Dropdown3.SelectedText.Value,If(Dropdown4.DisplayMode = DisplayMode.Disabled, TextInput2.Text,Dropdown4.SelectedText.Value),TextInput3.Text,"a","a","a","a","a");
+                
+                
+                
+                // Set file1 name
+                    Set(ImgName1, Concatenate(TextInput1_224.Text &"_1",Now(),".jpg"));
+                
+                 
+                
+                    // Get file1 binary data and convert it to base64
+                    Set(attachmentValue1, JSON(UploadedImage7_43.Image, JSONFormat.IncludeBinaryData));
+                    Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
+                
+                 
+                
+                    // Upload file1 and get url
+                    //Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
+                
+                Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
             Text: ="Registrar nueva pregunta"
             Width: =270
             X: =523
@@ -766,7 +784,7 @@ Agregar_Preg As screen:
             ZIndex: =29
 
     Icon1_4 As icon.BackArrow:
-        DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+        DisplayMode: =
         Height: =75
         Icon: =Icon.BackArrow
         OnSelect: |

@@ -33,7 +33,7 @@ Elegir As screen:
             ZIndex: =2
 
         Icon1_5 As icon.BackArrow:
-            DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+            DisplayMode: =
             Height: =75
             Icon: =Icon.BackArrow
             OnSelect: |
