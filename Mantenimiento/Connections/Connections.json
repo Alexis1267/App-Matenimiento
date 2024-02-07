@@ -35,7 +35,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.24014.14",
-        "modifiedOn": "2024-02-07 13:53:03",
+        "modifiedOn": "2024-02-07 14:06:05",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
@@ -107,9 +107,44 @@
     "dependencies": {},
     "dependents": [
       "80012031-53e1-42dc-a0cf-2bf547d652ef",
-      "bf72f332-73e3-4436-9a39-4ed9c351cfeb"
+      "bf72f332-73e3-4436-9a39-4ed9c351cfeb",
+      "61ee6c7b-9591-4a29-ab5b-b7fa59026077"
     ],
     "id": "3781cddb-e53a-4b94-b919-4e0845a84178"
+  },
+  "61ee6c7b-9591-4a29-ab5b-b7fa59026077": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "3781cddb-e53a-4b94-b919-4e0845a84178": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "b50d4bf5-1f37-4ea4-a0b0-de4cf0180c56"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "3781cddb-e53a-4b94-b919-4e0845a84178"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "b50d4bf5-1f37-4ea4-a0b0-de4cf0180c56"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "Flow_Imagenes_Actividades"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "3781cddb-e53a-4b94-b919-4e0845a84178"
+    },
+    "dependents": [],
+    "id": "61ee6c7b-9591-4a29-ab5b-b7fa59026077"
   },
   "80012031-53e1-42dc-a0cf-2bf547d652ef": {
     "connectionRef": {

@@ -736,7 +736,7 @@ Agregar_Preg As screen:
 
         Button13 As button:
             Height: =35
-            OnSelect: |-
+            OnSelect: |+
                 =/*Patch(PreventivSure_PreguntasMP, Defaults(PreventivSure_PreguntasMP),
                 {
                  Activo_No: Dropdown2.SelectedText.Value,
@@ -750,9 +750,10 @@ Agregar_Preg As screen:
                 SpIn_PreventivSure_InsertarActividadDatos.Run(Dropdown2.SelectedText.Value,Dropdown3.SelectedText.Value,If(Dropdown4.DisplayMode = DisplayMode.Disabled, TextInput2.Text,Dropdown4.SelectedText.Value),TextInput3.Text,"a","a","a","a","a");
                 
                 
-                
                 // Set file1 name
-                    Set(ImgName1, Concatenate(TextInput1_224.Text &"_1",Now(),".jpg"));
+                    //Set(ImgName1, Concatenate(TextInput1_224.Text &"_1",Now(),".jpg"));
+                    Set(ImgName1, Concatenate("/"& &TextInput1_224.Text &"_1",Now(),".jpg"));
+                
                 
                  
                 
@@ -766,6 +767,10 @@ Agregar_Preg As screen:
                     //Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
                 
                 Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
+                
+                
+                
+                
             Text: ="Registrar nueva pregunta"
             Width: =270
             X: =523
