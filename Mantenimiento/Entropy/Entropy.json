@@ -18,11 +18,6 @@
     "AddMediaButton6_44": 27,
     "AddMediaButton6_45": 64,
     "AddMediaButton6_46": 160,
-    "AddMediaWithImage1": 200,
-    "AddMediaWithImage2": 201,
-    "AddMediaWithImage3": 202,
-    "AddMediaWithImage4": 203,
-    "AddMediaWithImage5": 204,
     "AddMediaWithImage6_43": 248,
     "AddMediaWithImage6_44": 35,
     "AddMediaWithImage6_45": 72,
@@ -111,6 +106,7 @@
     "Group11_44": 32,
     "Group11_45": 69,
     "Group11_46": 165,
+    "Group12": 499,
     "Group12_44": 243,
     "Group12_45": 30,
     "Group12_46": 67,
@@ -120,10 +116,12 @@
     "Group13_48": 29,
     "Group13_49": 66,
     "Group13_50": 162,
+    "Group14": 500,
     "Group14_43": 246,
     "Group14_44": 33,
     "Group14_45": 70,
     "Group14_46": 166,
+    "Group15": 501,
     "Group15_43": 247,
     "Group15_44": 34,
     "Group15_45": 71,
@@ -133,6 +131,8 @@
     "Group17_1": 133,
     "Group17_2": 135,
     "Group17_6": 132,
+    "Group18": 502,
+    "Group19": 503,
     "Group2": 388,
     "Group2_1": 378,
     "Group3": 390,
@@ -261,6 +261,7 @@
     "Label20_1": 175,
     "Label20_2": 176,
     "Label20_3": 177,
+    "Label20_4": 498,
     "Label21": 183,
     "Label22": 469,
     "Label23": 344,
@@ -453,7 +454,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "02/07/2024 17:26:24",
+  "HeaderLastSavedDateTimeUTC": "02/07/2024 17:33:19",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "1102e19c-503c-4599-ba22-9e94ae81ca10": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/5e609ac51a8244f4b2ade014f9f1ab15\"",
@@ -578,26 +579,6 @@
     "Tecnicos_App_MP": 16
   },
   "OrderGroupControls": {
-    "AddMediaWithImage1": {
-      "AddMediaButton1": 1,
-      "UploadedImage1": 0
-    },
-    "AddMediaWithImage2": {
-      "AddMediaButton2": 1,
-      "UploadedImage2": 0
-    },
-    "AddMediaWithImage3": {
-      "AddMediaButton3": 1,
-      "UploadedImage3": 0
-    },
-    "AddMediaWithImage4": {
-      "AddMediaButton4": 1,
-      "UploadedImage4": 0
-    },
-    "AddMediaWithImage5": {
-      "AddMediaButton5": 1,
-      "UploadedImage5": 0
-    },
     "AddMediaWithImage6_43": {
       "AddMediaButton6_43": 1,
       "UploadedImage7_43": 0
@@ -658,6 +639,11 @@
       "Label9_478": 0,
       "TextInput1_241": 1
     },
+    "Group12": {
+      "AddMediaButton1": 1,
+      "Icon10_2": 2,
+      "UploadedImage1": 0
+    },
     "Group12_44": {
       "Label9_451": 0,
       "TextInput1_224": 1
@@ -694,6 +680,11 @@
       "Label9_474": 0,
       "TextInput1_238": 1
     },
+    "Group14": {
+      "AddMediaButton2": 1,
+      "Icon10_1": 2,
+      "UploadedImage2": 0
+    },
     "Group14_43": {
       "ACT_42": 0,
       "Label9_455": 1
@@ -709,6 +700,11 @@
     "Group14_46": {
       "ACT_45": 0,
       "Label9_479": 1
+    },
+    "Group15": {
+      "AddMediaButton3": 1,
+      "Icon10": 2,
+      "UploadedImage3": 0
     },
     "Group15_43": {
       "Label9_456": 0,
@@ -747,6 +743,16 @@
     "Group17_6": {
       "DropdownActivo": 0,
       "Label11_20": 1
+    },
+    "Group18": {
+      "AddMediaButton4": 1,
+      "Icon10_3": 2,
+      "UploadedImage4": 0
+    },
+    "Group19": {
+      "AddMediaButton5": 1,
+      "Icon10_5": 2,
+      "UploadedImage5": 0
     },
     "Group2": {
       "Label7_13": 0,
@@ -858,11 +864,6 @@
     "AddMediaButton6_44": {},
     "AddMediaButton6_45": {},
     "AddMediaButton6_46": {},
-    "AddMediaWithImage1": {},
-    "AddMediaWithImage2": {},
-    "AddMediaWithImage3": {},
-    "AddMediaWithImage4": {},
-    "AddMediaWithImage5": {},
     "AddMediaWithImage6_43": {},
     "AddMediaWithImage6_44": {},
     "AddMediaWithImage6_45": {},
@@ -974,6 +975,7 @@
     "Group11_44": {},
     "Group11_45": {},
     "Group11_46": {},
+    "Group12": {},
     "Group12_44": {},
     "Group12_45": {},
     "Group12_46": {},
@@ -983,10 +985,12 @@
     "Group13_48": {},
     "Group13_49": {},
     "Group13_50": {},
+    "Group14": {},
     "Group14_43": {},
     "Group14_44": {},
     "Group14_45": {},
     "Group14_46": {},
+    "Group15": {},
     "Group15_43": {},
     "Group15_44": {},
     "Group15_45": {},
@@ -996,6 +1000,8 @@
     "Group17_1": {},
     "Group17_2": {},
     "Group17_6": {},
+    "Group18": {},
+    "Group19": {},
     "Group2": {},
     "Group2_1": {},
     "Group3": {},
@@ -1124,6 +1130,7 @@
     "Label20_1": {},
     "Label20_2": {},
     "Label20_3": {},
+    "Label20_4": {},
     "Label21": {},
     "Label22": {},
     "Label23": {},
@@ -1375,20 +1382,15 @@
     "Actividad": 214,
     "Actividad_1": 234,
     "Actividad_MP": 513,
-    "AddMediaButton1": 431,
-    "AddMediaButton2": 432,
-    "AddMediaButton3": 433,
-    "AddMediaButton4": 434,
-    "AddMediaButton5": 435,
+    "AddMediaButton1": 432,
+    "AddMediaButton2": 433,
+    "AddMediaButton3": 434,
+    "AddMediaButton4": 435,
+    "AddMediaButton5": 436,
     "AddMediaButton6_43": 209,
     "AddMediaButton6_44": 293,
     "AddMediaButton6_45": 329,
     "AddMediaButton6_46": 369,
-    "AddMediaWithImage1": 416,
-    "AddMediaWithImage2": 419,
-    "AddMediaWithImage3": 422,
-    "AddMediaWithImage4": 425,
-    "AddMediaWithImage5": 428,
     "AddMediaWithImage6_43": 206,
     "AddMediaWithImage6_44": 290,
     "AddMediaWithImage6_45": 326,
@@ -1405,7 +1407,7 @@
     "Body3": 168,
     "Button1": 222,
     "Button1_15": 152,
-    "Button13": 437,
+    "Button13": 438,
     "Button2": 263,
     "Button3": 10,
     "Button3_5": 91,
@@ -1415,7 +1417,7 @@
     "Button5_1": 178,
     "Button5_13": 153,
     "Button6": 172,
-    "Button7": 436,
+    "Button7": 437,
     "Button7_55": 210,
     "Button7_56": 294,
     "Button7_57": 330,
@@ -1444,7 +1446,7 @@
     "Datos_MP": 3,
     "Dropdown1": 240,
     "Dropdown2": 408,
-    "Dropdown2_1": 414,
+    "Dropdown2_1": 416,
     "Dropdown3": 409,
     "Dropdown4": 410,
     "Dropdown4_44": 194,
@@ -1477,6 +1479,7 @@
     "Group11_44": 281,
     "Group11_45": 317,
     "Group11_46": 357,
+    "Group12": 418,
     "Group12_44": 189,
     "Group12_45": 273,
     "Group12_46": 309,
@@ -1486,10 +1489,12 @@
     "Group13_48": 271,
     "Group13_49": 307,
     "Group13_50": 347,
+    "Group14": 421,
     "Group14_43": 201,
     "Group14_44": 285,
     "Group14_45": 321,
     "Group14_46": 361,
+    "Group15": 424,
     "Group15_43": 205,
     "Group15_44": 289,
     "Group15_45": 325,
@@ -1499,6 +1504,8 @@
     "Group17_1": 27,
     "Group17_2": 31,
     "Group17_6": 25,
+    "Group18": 427,
+    "Group19": 430,
     "Group2": 136,
     "Group2_1": 105,
     "Group3": 146,
@@ -1530,12 +1537,12 @@
     "Icon1_2": 175,
     "Icon1_4": 399,
     "Icon1_5": 334,
-    "Icon10": 424,
-    "Icon10_1": 421,
-    "Icon10_2": 418,
-    "Icon10_3": 427,
+    "Icon10": 425,
+    "Icon10_1": 422,
+    "Icon10_2": 419,
+    "Icon10_3": 428,
     "Icon10_4": 87,
-    "Icon10_5": 430,
+    "Icon10_5": 431,
     "Icon12": 378,
     "Icon12_1": 376,
     "Icon13": 377,
@@ -1627,6 +1634,7 @@
     "Label20_1": 403,
     "Label20_2": 405,
     "Label20_3": 406,
+    "Label20_4": 414,
     "Label21": 413,
     "Label22": 388,
     "Label23": 107,
@@ -1876,7 +1884,7 @@
       "htmlViewer": 8,
       "icon": 31,
       "image": 36,
-      "label": 156,
+      "label": 157,
       "radio": 1,
       "rectangle": 18,
       "screen": 8,

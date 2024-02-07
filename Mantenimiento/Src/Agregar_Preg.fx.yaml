@@ -496,141 +496,6 @@ Agregar_Preg As screen:
             Y: =117
             ZIndex: =3
 
-        AddMediaWithImage1 As group:
-            Height: =5
-            Width: =5
-            X: =40
-            Y: =40
-            ZIndex: =5
-
-            UploadedImage1 As image:
-                Height: =180
-                Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
-                ImagePosition: =ImagePosition.Fill
-                Width: =200
-                X: =45
-                Y: =215
-                ZIndex: =6
-
-            AddMediaButton1 As addMedia:
-                ChangePictureText: ="Cambiar Imagen"
-                Fill: =RGBA(202, 202, 202, 1)
-                Height: =43
-                Size: =13
-                Text: ="Agregar imagen 1"
-                Width: =200
-                X: =45
-                Y: =395
-                ZIndex: =7
-
-        AddMediaWithImage2 As group:
-            Height: =5
-            Width: =5
-            X: =40
-            Y: =40
-            ZIndex: =8
-
-            UploadedImage2 As image:
-                Height: =180
-                Image: =If(IsBlank(AddMediaButton2.Media), SampleImage, AddMediaButton2.Media)
-                ImagePosition: =ImagePosition.Fill
-                Width: =200
-                X: =300
-                Y: =215
-                ZIndex: =9
-
-            AddMediaButton2 As addMedia:
-                ChangePictureText: ="Cambiar Imagen"
-                Fill: =RGBA(202, 202, 202, 1)
-                Height: =43
-                Size: =13
-                Text: ="Agregar imagen 2"
-                Width: =200
-                X: =300
-                Y: =395
-                ZIndex: =10
-
-        AddMediaWithImage3 As group:
-            Height: =5
-            Width: =5
-            X: =60
-            Y: =60
-            ZIndex: =11
-
-            UploadedImage3 As image:
-                Height: =180
-                Image: =If(IsBlank(AddMediaButton3.Media), SampleImage, AddMediaButton3.Media)
-                ImagePosition: =ImagePosition.Fill
-                Width: =200
-                X: =558
-                Y: =215
-                ZIndex: =12
-
-            AddMediaButton3 As addMedia:
-                ChangePictureText: ="Cambiar Imagen"
-                Fill: =RGBA(202, 202, 202, 1)
-                Height: =43
-                Size: =13
-                Text: ="Agregar imagen 3"
-                Width: =200
-                X: =558
-                Y: =395
-                ZIndex: =13
-
-        AddMediaWithImage4 As group:
-            Height: =5
-            Width: =5
-            X: =80
-            Y: =80
-            ZIndex: =14
-
-            UploadedImage4 As image:
-                Height: =180
-                Image: =If(IsBlank(AddMediaButton4.Media), SampleImage, AddMediaButton4.Media)
-                ImagePosition: =ImagePosition.Fill
-                Width: =200
-                X: =816
-                Y: =215
-                ZIndex: =15
-
-            AddMediaButton4 As addMedia:
-                ChangePictureText: ="Cambiar Imagen"
-                Fill: =RGBA(202, 202, 202, 1)
-                Height: =43
-                Size: =13
-                Text: ="Agregar imagen 4"
-                Width: =200
-                X: =816
-                Y: =395
-                ZIndex: =16
-
-        AddMediaWithImage5 As group:
-            Height: =5
-            Width: =5
-            X: =100
-            Y: =100
-            ZIndex: =17
-
-            UploadedImage5 As image:
-                Height: =180
-                Image: =If(IsBlank(AddMediaButton5.Media), SampleImage, AddMediaButton5.Media)
-                ImagePosition: =ImagePosition.Fill
-                Width: =200
-                X: =1087
-                Y: =215
-                ZIndex: =18
-
-            AddMediaButton5 As addMedia:
-                ChangePictureText: ="Cambiar Imagen"
-                Fill: =RGBA(202, 202, 202, 1)
-                Height: =43
-                Size: =13
-                Text: ="Agregar imagen 5"
-                Width: =200
-                X: =1087
-                Y: =395
-                ZIndex: =19
-
         Label20_2 As label:
             FontWeight: =FontWeight.Bold
             Text: ="Zona"
@@ -643,7 +508,7 @@ Agregar_Preg As screen:
             Default: ="N/A"
             DisplayMode: =If(BotonZona,DisplayMode.Disabled,DisplayMode.Edit)
             Items: |
-                =Concatenate(Sort(Distinct(Filter(PreventivSure_PreguntasMP,Localizacion = BtnLocalizacion,Activo_No = Dropdown2.SelectedText.Value,Clase_MTTO = Dropdown3.SelectedText.Value),Sub_Tarea),Value),["N/A"] )
+                =Distinct(Concatenate(Sort(Distinct(Filter(PreventivSure_PreguntasMP,Localizacion = BtnLocalizacion,Activo_No = Dropdown2.SelectedText.Value,Clase_MTTO = Dropdown3.SelectedText.Value),Sub_Tarea),Value),["N/A"] ),Value)
             Width: =273
             X: =430
             Y: =46
@@ -845,6 +710,7 @@ Agregar_Preg As screen:
             ZIndex: =28
 
         Dropdown2_1 As dropdown:
+            DisplayMode: =DisplayMode.Disabled
             Items: |+
                 =Sort(Distinct(Filter(CMXE_MP_N,ID_Maq = Dropdown2.SelectedText.Value),Nom_Equipo),Value)
                 
@@ -852,63 +718,8 @@ Agregar_Preg As screen:
                 
             Width: =223
             X: =5
-            Y: =117
+            Y: =140
             ZIndex: =29
-
-        Icon10 As icon.CancelBadge:
-            Color: =RGBA(255, 0, 0, 1)
-            Height: =35
-            Icon: =Icon.CancelBadge
-            OnSelect: |
-                =Reset(AddMediaButton3)
-            Width: =34
-            X: =724
-            Y: =215
-            ZIndex: =30
-
-        Icon10_1 As icon.CancelBadge:
-            Color: =RGBA(255, 0, 0, 1)
-            Height: =35
-            Icon: =Icon.CancelBadge
-            OnSelect: |
-                =Reset(AddMediaButton2)
-            Width: =34
-            X: =463
-            Y: =215
-            ZIndex: =31
-
-        Icon10_2 As icon.CancelBadge:
-            Color: =RGBA(255, 0, 0, 1)
-            Height: =35
-            Icon: =Icon.CancelBadge
-            OnSelect: |
-                =Reset(AddMediaButton1)
-            Width: =34
-            X: =195
-            Y: =215
-            ZIndex: =32
-
-        Icon10_3 As icon.CancelBadge:
-            Color: =RGBA(255, 0, 0, 1)
-            Height: =35
-            Icon: =Icon.CancelBadge
-            OnSelect: |
-                =Reset(AddMediaButton4)
-            Width: =34
-            X: =982
-            Y: =215
-            ZIndex: =33
-
-        Icon10_5 As icon.CancelBadge:
-            Color: =RGBA(255, 0, 0, 1)
-            Height: =35
-            Icon: =Icon.CancelBadge
-            OnSelect: |
-                =Reset(AddMediaButton5)
-            Width: =34
-            X: =1253
-            Y: =215
-            ZIndex: =34
 
         Button7 As button:
             Height: =64
@@ -919,6 +730,204 @@ Agregar_Preg As screen:
             X: =18
             Y: =552
             ZIndex: =35
+
+        Label20_4 As label:
+            FontWeight: =FontWeight.Bold
+            Text: ="Nombre del equipo"
+            Width: =223
+            X: =5
+            Y: =100
+            ZIndex: =36
+
+        Group12 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =37
+
+            UploadedImage1 As image:
+                Height: =180
+                Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+                ImagePosition: =ImagePosition.Fill
+                Width: =200
+                X: =45
+                Y: =289
+                ZIndex: =6
+
+            AddMediaButton1 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =43
+                Size: =13
+                Text: ="Agregar imagen 1"
+                Width: =200
+                X: =45
+                Y: =469
+                ZIndex: =7
+
+            Icon10_2 As icon.CancelBadge:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.CancelBadge
+                OnSelect: |
+                    =Reset(AddMediaButton1)
+                Width: =34
+                X: =211
+                Y: =289
+                ZIndex: =32
+
+        Group14 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =37
+
+            UploadedImage2 As image:
+                Height: =180
+                Image: =If(IsBlank(AddMediaButton2.Media), SampleImage, AddMediaButton2.Media)
+                ImagePosition: =ImagePosition.Fill
+                Width: =200
+                X: =300
+                Y: =289
+                ZIndex: =9
+
+            AddMediaButton2 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =43
+                Size: =13
+                Text: ="Agregar imagen 2"
+                Width: =200
+                X: =300
+                Y: =469
+                ZIndex: =10
+
+            Icon10_1 As icon.CancelBadge:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.CancelBadge
+                OnSelect: |
+                    =Reset(AddMediaButton2)
+                Width: =34
+                X: =463
+                Y: =289
+                ZIndex: =31
+
+        Group15 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =37
+
+            UploadedImage3 As image:
+                Height: =180
+                Image: =If(IsBlank(AddMediaButton3.Media), SampleImage, AddMediaButton3.Media)
+                ImagePosition: =ImagePosition.Fill
+                Width: =200
+                X: =558
+                Y: =289
+                ZIndex: =12
+
+            AddMediaButton3 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =43
+                Size: =13
+                Text: ="Agregar imagen 3"
+                Width: =200
+                X: =558
+                Y: =469
+                ZIndex: =13
+
+            Icon10 As icon.CancelBadge:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.CancelBadge
+                OnSelect: |
+                    =Reset(AddMediaButton3)
+                Width: =34
+                X: =724
+                Y: =289
+                ZIndex: =30
+
+        Group18 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =37
+
+            UploadedImage4 As image:
+                Height: =180
+                Image: =If(IsBlank(AddMediaButton4.Media), SampleImage, AddMediaButton4.Media)
+                ImagePosition: =ImagePosition.Fill
+                Width: =200
+                X: =816
+                Y: =289
+                ZIndex: =15
+
+            AddMediaButton4 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =43
+                Size: =13
+                Text: ="Agregar imagen 4"
+                Width: =200
+                X: =816
+                Y: =469
+                ZIndex: =16
+
+            Icon10_3 As icon.CancelBadge:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.CancelBadge
+                OnSelect: |
+                    =Reset(AddMediaButton4)
+                Width: =34
+                X: =982
+                Y: =289
+                ZIndex: =33
+
+        Group19 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =37
+
+            UploadedImage5 As image:
+                Height: =180
+                Image: =If(IsBlank(AddMediaButton5.Media), SampleImage, AddMediaButton5.Media)
+                ImagePosition: =ImagePosition.Fill
+                Width: =200
+                X: =1087
+                Y: =289
+                ZIndex: =18
+
+            AddMediaButton5 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =43
+                Size: =13
+                Text: ="Agregar imagen 5"
+                Width: =200
+                X: =1087
+                Y: =469
+                ZIndex: =19
+
+            Icon10_5 As icon.CancelBadge:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.CancelBadge
+                OnSelect: |
+                    =Reset(AddMediaButton5)
+                Width: =34
+                X: =1253
+                Y: =289
+                ZIndex: =34
 
     Icon1_4 As icon.BackArrow:
         DisplayMode: =
