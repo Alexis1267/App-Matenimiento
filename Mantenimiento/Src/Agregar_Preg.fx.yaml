@@ -635,9 +635,10 @@ Agregar_Preg As screen:
             ZIndex: =22
 
         Dropdown4 As dropdown:
+            Default: ="N/A"
             DisplayMode: =If(BotonZona,DisplayMode.Disabled,DisplayMode.Edit)
             Items: |
-                =Sort(Distinct(Filter(PreventivSure_PreguntasMP,Localizacion = BtnLocalizacion,Activo_No = Dropdown2.SelectedText.Value,Clase_MTTO = Dropdown3.SelectedText.Value),Sub_Tarea),Value)
+                =Concatenate(Sort(Distinct(Filter(PreventivSure_PreguntasMP,Localizacion = BtnLocalizacion,Activo_No = Dropdown2.SelectedText.Value,Clase_MTTO = Dropdown3.SelectedText.Value),Sub_Tarea),Value),["N/A"] )
             Width: =273
             X: =430
             Y: =46
@@ -701,6 +702,8 @@ Agregar_Preg As screen:
 
             TextInput3 As text:
                 Default: =""
+                DisplayMode: |
+                    =
                 Height: =125
                 Mode: =TextMode.MultiLine
                 Width: =585
