@@ -767,8 +767,7 @@ Agregar_Preg As screen:
         Height: =75
         Icon: =Icon.BackArrow
         OnSelect: |
-            =Navigate(Lista_Actividades_MP);
-            Reset(Radio1);
+            =Navigate(Elegir,ScreenTransition.Fade)
         Width: =82
         X: =20
         Y: =20

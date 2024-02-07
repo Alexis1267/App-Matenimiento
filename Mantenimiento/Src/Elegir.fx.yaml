@@ -32,6 +32,16 @@ Elegir As screen:
             X: =1161
             ZIndex: =2
 
+        Icon1_5 As icon.BackArrow:
+            DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
+            Height: =75
+            Icon: =Icon.BackArrow
+            OnSelect: |
+                =Navigate('Control de preguntas',ScreenTransition.Fade)
+            Width: =82
+            Y: =2
+            ZIndex: =3
+
     Container1_45 As groupContainer.manualLayoutContainer:
         Height: =768
         PaddingRight: =0.00
@@ -478,7 +488,7 @@ Elegir As screen:
 
     Titulo_8 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =534
+        Height: =620
         RadiusBottomLeft: =30
         RadiusBottomRight: =30
         RadiusTopLeft: =30
@@ -525,27 +535,4 @@ Elegir As screen:
             X: =982
             Y: =286
             ZIndex: =4
-
-    Titulo_11 As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =80
-        RadiusBottomLeft: =30
-        RadiusBottomRight: =30
-        RadiusTopLeft: =30
-        RadiusTopRight: =30
-        Width: =1330
-        X: =20
-        Y: =668
-        ZIndex: =7
-
-        Icon1_3 As icon.BackArrow:
-            DisplayMode: =If(Button1.DisplayMode = DisplayMode.Disabled,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =75
-            Icon: =Icon.BackArrow
-            OnSelect: |
-                =Navigate(Lista_Actividades_MP);
-                Reset(Radio1);
-            Width: =82
-            Y: =3
-            ZIndex: =3
 
