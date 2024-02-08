@@ -213,6 +213,15 @@
             Y: =36
             ZIndex: =14
 
+        Image3 As image:
+            Height: =92
+            Image: =ThisItem.img1
+            OnSelect: =Select(Parent)
+            Width: =126
+            X: =495
+            Y: =116
+            ZIndex: =15
+
     Cantidad_de_Actividades As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
