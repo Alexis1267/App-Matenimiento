@@ -10,7 +10,7 @@ Agregar_Preg As screen:
             Set(attachmentImg1Base64Only, Mid(attachmentImgValue1, Find(",", attachmentImgValue1)+1, Len(attachmentImgValue1) - Find(",", attachmentImgValue1)-1 ));
         
             // Upload file1 and get url
-        Set(IMG1,Flow_Imagenes_Actividades.Run(ImgName1,attachmentImg1Base64Only).sharepointfilelink);
+        //Set(IMG1,Flow_Imagenes_Actividades.Run(ImgName1,attachmentImg1Base64Only).sharepointfilelink);
         
         
         ////////////////////////////////////////////////////////////
@@ -23,7 +23,7 @@ Agregar_Preg As screen:
             Set(attachmentImg2Base64Only, Mid(attachmentImg2Value1, Find(",", attachmentImg2Value1)+1, Len(attachmentImg2Value1) - Find(",", attachmentImg2Value1)-1 ));
         
             // Upload file1 and get url
-        Set(IMG2,Flow_Imagenes_Actividades.Run(ImgName2,attachmentImg2Base64Only).sharepointfilelink);
+        //Set(IMG2,Flow_Imagenes_Actividades.Run(ImgName2,attachmentImg2Base64Only).sharepointfilelink);
         
         ////////////////////////////////////////////////////////////
         //IMG3
@@ -35,7 +35,7 @@ Agregar_Preg As screen:
             Set(attachmentImg3Base64Only, Mid(attachmentImg3Value1, Find(",", attachmentImg3Value1)+1, Len(attachmentImg3Value1) - Find(",", attachmentImg3Value1)-1 ));
         
             // Upload file1 and get url
-        Set(IMG3,Flow_Imagenes_Actividades.Run(ImgName3,attachmentImg3Base64Only).sharepointfilelink);
+        //Set(IMG3,Flow_Imagenes_Actividades.Run(ImgName3,attachmentImg3Base64Only).sharepointfilelink);
         
         ///////////////////////////////////////////////////////////
         //IMG4
@@ -47,7 +47,7 @@ Agregar_Preg As screen:
             Set(attachmentImg4Base64Only, Mid(attachmentImg4Value1, Find(",", attachmentImg4Value1)+1, Len(attachmentImg4Value1) - Find(",", attachmentImg4Value1)-1 ));
         
             // Upload file1 and get url
-        Set(IMG4,Flow_Imagenes_Actividades.Run(ImgName4,attachmentImg4Base64Only).sharepointfilelink);
+        //Set(IMG4,Flow_Imagenes_Actividades.Run(ImgName4,attachmentImg4Base64Only).sharepointfilelink);
         
         ///////////////////////////////////////////////////////////
         //IMG5
@@ -59,7 +59,7 @@ Agregar_Preg As screen:
             Set(attachmentImg5Base64Only, Mid(attachmentImg5Value1, Find(",", attachmentImg5Value1)+1, Len(attachmentImg5Value1) - Find(",", attachmentImg5Value1)-1 ));
         
             // Upload file1 and get url
-        Set(IMG5,Flow_Imagenes_Actividades.Run(ImgName5,attachmentImg5Base64Only).sharepointfilelink);
+        //Set(IMG5,Flow_Imagenes_Actividades.Run(ImgName5,attachmentImg5Base64Only).sharepointfilelink);
 
     Titulo_9 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -567,7 +567,7 @@ Agregar_Preg As screen:
             Default: ="N/A"
             DisplayMode: =If(BotonZona,DisplayMode.Disabled,DisplayMode.Edit)
             Items: |
-                =Distinct(Concatenate(Sort(Distinct(Filter(PreventivSure_PreguntasMP,Localizacion = BtnLocalizacion,Activo_No = Dropdown2.SelectedText.Value,Clase_MTTO = Dropdown3.SelectedText.Value),Sub_Tarea),Value),["N/A"] ),Value)
+                =Sort(Distinct(Filter(PreventivSure_PreguntasMP,Localizacion = BtnLocalizacion,Activo_No = Dropdown2.SelectedText.Value,Clase_MTTO = Dropdown3.SelectedText.Value),Sub_Tarea),Value)
             Width: =273
             X: =430
             Y: =46
@@ -678,11 +678,11 @@ Agregar_Preg As screen:
                 Dropdown3.SelectedText.Value,
                 If(Dropdown4.DisplayMode = DisplayMode.Disabled,TextInput2.Text,Dropdown4.SelectedText.Value),
                 TextInput3.Text,
-                If(IsBlank(AddMediaButton1.Media),"N/T",IMG1),
-                If(IsBlank(AddMediaButton2.Media),"N/T",IMG2),
-                If(IsBlank(AddMediaButton3.Media),"N/T",IMG3),
-                If(IsBlank(AddMediaButton4.Media),"N/T",IMG4),
-                If(IsBlank(AddMediaButton5.Media),"N/T",IMG5)));
+                If(IsBlank(AddMediaButton1.Media),"N/T",Flow_Imagenes_Actividades.Run(ImgName1,attachmentImg1Base64Only).sharepointfilelink),
+                If(IsBlank(AddMediaButton2.Media),"N/T",Flow_Imagenes_Actividades.Run(ImgName2,attachmentImg2Base64Only).sharepointfilelink),
+                If(IsBlank(AddMediaButton3.Media),"N/T",Flow_Imagenes_Actividades.Run(ImgName3,attachmentImg3Base64Only).sharepointfilelink),
+                If(IsBlank(AddMediaButton4.Media),"N/T",Flow_Imagenes_Actividades.Run(ImgName4,attachmentImg4Base64Only).sharepointfilelink),
+                If(IsBlank(AddMediaButton5.Media),"N/T",Flow_Imagenes_Actividades.Run(ImgName5,attachmentImg5Base64Only).sharepointfilelink)));
                 
                 
                 

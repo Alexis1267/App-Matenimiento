@@ -191,6 +191,7 @@
 
     Button3 As button:
         Height: =57
+        OnSelect: =Navigate('Control de preguntas',ScreenTransition.Fade)
         Text: ="Control de preguntas"
         Visible: =If(LookUp(PreventivSure_Tecnicos,Correo = Identificacion.Email,Rol = "Admin"), true,false) 
         Width: =334
