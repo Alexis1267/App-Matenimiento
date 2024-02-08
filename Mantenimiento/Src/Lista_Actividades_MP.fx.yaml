@@ -216,12 +216,11 @@
 
         Image3 As image:
             BorderThickness: =1
-            Height: =92
             Image: =ThisItem.img1
             OnSelect: =Select(Parent)
             Width: =126
             X: =300
-            Y: =116
+            Y: =108
             ZIndex: =15
 
         Image4 As image:
