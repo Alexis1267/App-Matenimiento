@@ -778,7 +778,7 @@ Agregar_Preg As screen:
                 If(IsBlank(AddMediaButton2.Media),"N/T",Flow_Imagenes_Actividades.Run(ImgName2,attachmentImg2Base64Only).sharepointfilelink),
                 If(IsBlank(AddMediaButton3.Media),"N/T",Flow_Imagenes_Actividades.Run(ImgName3,attachmentImg3Base64Only).sharepointfilelink),
                 If(IsBlank(AddMediaButton4.Media),"N/T",Flow_Imagenes_Actividades.Run(ImgName4,attachmentImg4Base64Only).sharepointfilelink),
-                If(IsBlank(AddMediaButton5.Media),"N/T",Flow_Imagenes_Actividades.Run(ImgName5,attachmentImg5Base64Only).sharepointfilelink)));
+                If(IsBlank(AddMediaButton5.Media),"N/T",Flow_Imagenes_Actividades.Run(ImgName5,attachmentImg5Base64Only).sharepointfilelink)),Notify("Se ha registraro la nueva actividad correctamente.",NotificationType.Success));
                 
                 
                 
@@ -1167,13 +1167,6 @@ Agregar_Preg As screen:
                     X: =1247
                     ZIndex: =2
 
-                Icon13 As icon.Reload:
-                    Icon: =Icon.Reload
-                    OnSelect: =Refresh(PreventivSure_PreguntasMP)
-                    X: =20
-                    Y: =8
-                    ZIndex: =3
-
         "Gallery8 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             BorderColor: =RGBA(0, 13, 75, 1)
             DelayItemLoading: =true
@@ -1334,6 +1327,7 @@ Agregar_Preg As screen:
                 Text: |-
                     ="Activo_No:"
                 Width: =102
+                X: =119
                 ZIndex: =1
 
             TextInput4 As text:
@@ -1346,7 +1340,7 @@ Agregar_Preg As screen:
                 RadiusTopLeft: =30
                 RadiusTopRight: =30
                 Width: =186
-                X: =113
+                X: =232
                 Y: =8
                 ZIndex: =2
 
@@ -1356,7 +1350,7 @@ Agregar_Preg As screen:
                 Text: |-
                     ="Tipo de MTTO:"
                 Width: =142
-                X: =335
+                X: =461
                 ZIndex: =3
 
             TextInput4_1 As text:
@@ -1369,7 +1363,15 @@ Agregar_Preg As screen:
                 RadiusTopLeft: =30
                 RadiusTopRight: =30
                 Width: =186
-                X: =490
+                X: =616
                 Y: =8
                 ZIndex: =4
+
+            Icon13_1 As icon.Reload:
+                Height: =48
+                Icon: =Icon.Reload
+                OnSelect: =Refresh(PreventivSure_PreguntasMP)
+                Width: =61
+                Y: =4
+                ZIndex: =5
 

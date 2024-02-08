@@ -1604,49 +1604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Agregar_Preg.Container2.Titulo_11.Titulo_12.Icon13.AccessibleLabel"
+                  "fullyQualifiedName": "Agregar_Preg.Container2.Titulo_13.Icon13_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Agregar_Preg.Container2.Titulo_11.Titulo_12.Icon13.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Agregar_Preg",
-                "type": "Agregar_Preg.Container2.Titulo_11.Titulo_12.Icon13"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Agregar_Preg.Container2.Titulo_11.Titulo_12.Icon13.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Agregar_Preg.Container2.Titulo_11.Titulo_12.Icon13.TabIndex",
+                  "fullyQualifiedName": "Agregar_Preg.Container2.Titulo_13.Icon13_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Agregar_Preg",
-                "type": "Agregar_Preg.Container2.Titulo_11.Titulo_12.Icon13"
+                "type": "Agregar_Preg.Container2.Titulo_13.Icon13_1"
               }
             }
           ],
@@ -1658,6 +1628,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Agregar_Preg.Container2.Titulo_13.Icon13_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Agregar_Preg.Container2.Titulo_13.Icon13_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Agregar_Preg",
+                "type": "Agregar_Preg.Container2.Titulo_13.Icon13_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3717,6 +3717,66 @@
                 "member": "TabIndex",
                 "module": "Actividad_MP",
                 "type": "Actividad_MP.Titulo_1.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Control de preguntas'.Titulo_5.Icon1_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Control de preguntas'.Titulo_5.Icon1_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Control de preguntas",
+                "type": "'Control de preguntas'.Titulo_5.Icon1_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Control de preguntas'.Titulo_5.Icon1_6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Control de preguntas'.Titulo_5.Icon1_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Control de preguntas",
+                "type": "'Control de preguntas'.Titulo_5.Icon1_6"
               }
             }
           ],

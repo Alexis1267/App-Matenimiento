@@ -33,6 +33,16 @@
             X: =1161
             ZIndex: =2
 
+        Icon1_6 As icon.BackArrow:
+            DisplayMode: =
+            Height: =75
+            Icon: =Icon.BackArrow
+            OnSelect: |
+                =Navigate(QR_Inicio,ScreenTransition.Fade)
+            Width: =82
+            Y: =5
+            ZIndex: =3
+
     Container1_44 As groupContainer.manualLayoutContainer:
         Height: =768
         PaddingRight: =0.00
