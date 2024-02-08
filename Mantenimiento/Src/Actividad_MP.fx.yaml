@@ -138,6 +138,7 @@ Actividad_MP As screen:
 
             TextInput1 As text:
                 Default: =""
+                DisplayMode: =If(IsBlank(Dropdown1.Selected.Value),DisplayMode.Disabled,DisplayMode.Edit)
                 Format: =TextFormat.Number
                 Width: =52
                 X: =380
@@ -168,6 +169,7 @@ Actividad_MP As screen:
 
             TextInput1_1 As text:
                 Default: =""
+                DisplayMode: =If(IsBlank(Dropdown1.Selected.Value),DisplayMode.Disabled,DisplayMode.Edit)
                 Format: =TextFormat.Number
                 Width: =52
                 X: =537
@@ -198,6 +200,7 @@ Actividad_MP As screen:
 
             TextInput1_2 As text:
                 Default: =""
+                DisplayMode: =If(IsBlank(Dropdown1.Selected.Value),DisplayMode.Disabled,DisplayMode.Edit)
                 Format: =TextFormat.Number
                 Width: =52
                 X: =696
@@ -235,6 +238,7 @@ Actividad_MP As screen:
 
             TextInput1_3 As text:
                 Default: =""
+                DisplayMode: =If(IsBlank(Dropdown1.Selected.Value),DisplayMode.Disabled,DisplayMode.Edit)
                 Format: =TextFormat.Number
                 Width: =52
                 X: =848
