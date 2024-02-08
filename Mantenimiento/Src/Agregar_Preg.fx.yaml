@@ -1,6 +1,65 @@
 Agregar_Preg As screen:
     Fill: =RGBA(21, 44, 115, 1)
-    OnVisible: =
+    OnVisible: |-
+        =//IMG1
+        Set(ImgName1,Concatenate("AyudaVisual_1-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+        
+            // Get file1 binary data and convert it to base64
+            Set(attachmentImgValue1, JSON(UploadedImage1.Image, JSONFormat.IncludeBinaryData));
+        
+            Set(attachmentImg1Base64Only, Mid(attachmentImgValue1, Find(",", attachmentImgValue1)+1, Len(attachmentImgValue1) - Find(",", attachmentImgValue1)-1 ));
+        
+            // Upload file1 and get url
+        Set(IMG1,Flow_Imagenes_Actividades.Run(ImgName1,attachmentImg1Base64Only).sharepointfilelink);
+        
+        
+        ////////////////////////////////////////////////////////////
+        //IMG2
+        Set(ImgName2,Concatenate("AyudaVisual_2-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+        
+            // Get file1 binary data and convert it to base64
+            Set(attachmentImg2Value1, JSON(UploadedImage2.Image, JSONFormat.IncludeBinaryData));
+        
+            Set(attachmentImg2Base64Only, Mid(attachmentImg2Value1, Find(",", attachmentImg2Value1)+1, Len(attachmentImg2Value1) - Find(",", attachmentImg2Value1)-1 ));
+        
+            // Upload file1 and get url
+        Set(IMG2,Flow_Imagenes_Actividades.Run(ImgName2,attachmentImg2Base64Only).sharepointfilelink);
+        
+        ////////////////////////////////////////////////////////////
+        //IMG3
+        Set(ImgName3,Concatenate("AyudaVisual_3-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+        
+            // Get file1 binary data and convert it to base64
+            Set(attachmentImg3Value1, JSON(UploadedImage3.Image, JSONFormat.IncludeBinaryData));
+        
+            Set(attachmentImg3Base64Only, Mid(attachmentImg3Value1, Find(",", attachmentImg3Value1)+1, Len(attachmentImg3Value1) - Find(",", attachmentImg3Value1)-1 ));
+        
+            // Upload file1 and get url
+        Set(IMG3,Flow_Imagenes_Actividades.Run(ImgName3,attachmentImg3Base64Only).sharepointfilelink);
+        
+        ///////////////////////////////////////////////////////////
+        //IMG4
+        Set(ImgName4,Concatenate("AyudaVisual_4-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+        
+            // Get file1 binary data and convert it to base64
+            Set(attachmentImg4Value1, JSON(UploadedImage4.Image, JSONFormat.IncludeBinaryData));
+        
+            Set(attachmentImg4Base64Only, Mid(attachmentImg4Value1, Find(",", attachmentImg4Value1)+1, Len(attachmentImg4Value1) - Find(",", attachmentImg4Value1)-1 ));
+        
+            // Upload file1 and get url
+        Set(IMG4,Flow_Imagenes_Actividades.Run(ImgName4,attachmentImg4Base64Only).sharepointfilelink);
+        
+        ///////////////////////////////////////////////////////////
+        //IMG5
+        Set(ImgName5,Concatenate("AyudaVisual_5-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+        
+            // Get file1 binary data and convert it to base64
+            Set(attachmentImg5Value1, JSON(UploadedImage5.Image, JSONFormat.IncludeBinaryData));
+        
+            Set(attachmentImg5Base64Only, Mid(attachmentImg5Value1, Find(",", attachmentImg5Value1)+1, Len(attachmentImg5Value1) - Find(",", attachmentImg5Value1)-1 ));
+        
+            // Upload file1 and get url
+        Set(IMG5,Flow_Imagenes_Actividades.Run(ImgName5,attachmentImg5Base64Only).sharepointfilelink);
 
     Titulo_9 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(237, 237, 237, 1)
@@ -641,7 +700,7 @@ Agregar_Preg As screen:
                 
                 
                 
-                //IMG1
+                /*//IMG1
                 Set(ImgName1,Concatenate("AyudaVisual_1-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
                 
                     // Get file1 binary data and convert it to base64
@@ -700,7 +759,7 @@ Agregar_Preg As screen:
                 
                     // Upload file1 and get url
                 Set(IMG5,Flow_Imagenes_Actividades.Run(ImgName5,attachmentImg5Base64Only).sharepointfilelink);
-                
+                */
                 
                 
                 

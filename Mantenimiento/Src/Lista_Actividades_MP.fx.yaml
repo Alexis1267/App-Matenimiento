@@ -174,7 +174,7 @@
             OnSelect: =Select(Parent)
             Text: =ThisItem.Sub_Tarea
             Width: =569
-            X: =511
+            X: =498
             ZIndex: =10
 
         Label6_3 As label:
@@ -218,6 +218,7 @@
             Height: =92
             Image: =ThisItem.img1
             OnSelect: =Select(Parent)
+            Visible: =false
             Width: =126
             X: =300
             Y: =116
@@ -227,6 +228,7 @@
             BorderThickness: =1
             Image: =ThisItem.img2
             OnSelect: =Select(Parent)
+            Visible: =false
             X: =466
             Y: =108
             ZIndex: =16
@@ -235,6 +237,7 @@
             BorderThickness: =1
             Image: =ThisItem.img3
             OnSelect: =Select(Parent)
+            Visible: =false
             X: =626
             Y: =108
             ZIndex: =17
@@ -243,6 +246,7 @@
             BorderThickness: =1
             Image: =ThisItem.img4
             OnSelect: =Select(Parent)
+            Visible: =false
             X: =772
             Y: =108
             ZIndex: =18
@@ -251,9 +255,19 @@
             BorderThickness: =1
             Image: =ThisItem.img5
             OnSelect: =Select(Parent)
+            Visible: =false
             X: =913
             Y: =108
             ZIndex: =19
+
+        Label9_2 As label:
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Text: |-
+                ="Zona:"
+            Width: =62
+            X: =436
+            ZIndex: =20
 
     Cantidad_de_Actividades As label:
         Align: =Align.Center
