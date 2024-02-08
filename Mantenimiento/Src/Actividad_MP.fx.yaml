@@ -468,7 +468,7 @@ Actividad_MP As screen:
         Image4_1 As image:
             BorderThickness: =1
             Height: =180
-            Image: =AyudaVisual2
+            Image: =LookUp(PreventivSure_PreguntasMP,Activo_No = Activo && Num_Pregunta = Num_PregMP && Clase_MTTO = Dato_ClassMtto,img1)
             Width: =220
             X: =302
             Y: =51
