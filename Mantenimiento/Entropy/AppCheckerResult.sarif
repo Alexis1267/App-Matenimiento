@@ -3854,17 +3854,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.NomenclaturaMp"
+                  "fullyQualifiedName": "App.Dato_Proc_No_class"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.NomenclaturaMp",
+                  "fullyQualifiedName": "App.Dato_Proc_No_class",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "NomenclaturaMp",
+                "member": "Dato_Proc_No_class",
                 "module": "App",
                 "type": "App"
               }
@@ -3914,47 +3914,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Dato_Proc_No_class"
+                  "fullyQualifiedName": "App.NomenclaturaMp"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Dato_Proc_No_class",
+                  "fullyQualifiedName": "App.NomenclaturaMp",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Dato_Proc_No_class",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.DropdownInvolu"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.DropdownInvolu",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "DropdownInvolu",
+                "member": "NomenclaturaMp",
                 "module": "App",
                 "type": "App"
               }
@@ -4075,6 +4045,36 @@
               },
               "properties": {
                 "member": "Maquina_QR",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.DropdownInvolu"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.DropdownInvolu",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DropdownInvolu",
                 "module": "App",
                 "type": "App"
               }
