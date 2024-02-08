@@ -194,8 +194,8 @@
         OnSelect: =Navigate('Control de preguntas',ScreenTransition.Fade)
         Text: ="Control de preguntas"
         Visible: =If(LookUp(PreventivSure_Tecnicos,Correo = Identificacion.Email,Rol = "Admin"), true,false) 
-        Width: =334
-        X: =531
+        Width: =335
+        X: =533
         Y: =691
         ZIndex: =12
 

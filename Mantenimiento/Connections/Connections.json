@@ -35,7 +35,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.24014.14",
-        "modifiedOn": "2024-02-08 19:50:22",
+        "modifiedOn": "2024-02-08 20:20:13",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
@@ -383,5 +383,27 @@
     },
     "dependents": [],
     "id": "d1da1e37-b283-412f-9cd5-cefd517188a5"
+  },
+  "e8ea4951-260b-48fc-b1e7-8306a92830dd": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1674/1.0.1674.3602/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://carcgl.sharepoint.com/sites/PowerApps559": {
+        "dataSources": {
+          "Documents": {
+            "tableName": "0bc2f7fc-48bd-4eb9-826e-d2fd3713227f"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Documents"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "e8ea4951-260b-48fc-b1e7-8306a92830dd"
   }
 }
