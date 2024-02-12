@@ -6,21 +6,11 @@
       <string name="ManualTriggerInput_text_1_def" />
       <string name="ManualTriggerInput_text_2_def" />
       <string name="ManualTriggerInput_text_3_def" />
-      <string name="ManualTriggerInput_text_4_def" />
-      <string name="ManualTriggerInput_text_5_def" />
-      <string name="ManualTriggerInput_text_6_def" />
-      <string name="ManualTriggerInput_text_7_def" />
-      <string name="ManualTriggerInput_text_8_def" />
       <object name="ManualTriggerInput">
         <property name="text" type="string" />
         <property name="text_1" type="string" />
         <property name="text_2" type="string" />
         <property name="text_3" type="string" />
-        <property name="text_4" type="string" />
-        <property name="text_5" type="string" />
-        <property name="text_6" type="string" />
-        <property name="text_7" type="string" />
-        <property name="text_8" type="string" />
       </object>
     </jsonTypes>
   </grammars>
@@ -45,21 +35,6 @@
             </param>
             <param style="plain" name="text_3" path="/text_3" type="xs:string" required="true">
               <doc title="Actividad" />
-            </param>
-            <param style="plain" name="text_4" path="/text_4" type="xs:string" required="true">
-              <doc title="Img1" />
-            </param>
-            <param style="plain" name="text_5" path="/text_5" type="xs:string" required="true">
-              <doc title="Img2" />
-            </param>
-            <param style="plain" name="text_6" path="/text_6" type="xs:string" required="true">
-              <doc title="Img3" />
-            </param>
-            <param style="plain" name="text_7" path="/text_7" type="xs:string" required="true">
-              <doc title="Img4" />
-            </param>
-            <param style="plain" name="text_8" path="/text_8" type="xs:string" required="true">
-              <doc title="Img5" />
             </param>
           </representation>
         </request>

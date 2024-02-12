@@ -767,20 +767,15 @@ Agregar_Preg As screen:
                 
                 
                 
-                /*
+                
                 //AGREGAR NUEVA ACTIVIDAD A PRENSAS
                 If(IsBlank(TextInput3.Text),Notify("No puedes dejar campos vacios",NotificationType.Error),
                 SpIn_PreventivSure_InsertarActividadDatos.Run(
                 Dropdown2.SelectedText.Value,
                 Dropdown3.SelectedText.Value,
                 If(Dropdown4.DisplayMode = DisplayMode.Disabled,TextInput2.Text,Dropdown4.SelectedText.Value),
-                TextInput3.Text,
-                If(IsBlank(AddMediaButton1.Media),"N/T","N/T"),
-                If(IsBlank(AddMediaButton2.Media),"N/T","N/T"),
-                If(IsBlank(AddMediaButton3.Media),"N/T","N/T"),
-                If(IsBlank(AddMediaButton4.Media),"N/T","N/T"),
-                If(IsBlank(AddMediaButton5.Media),"N/T","N/T")),Notify("Se ha registraro la nueva actividad correctamente.",NotificationType.Success));
-                */
+                TextInput3.Text),Notify("Se ha registraro la nueva actividad correctamente.",NotificationType.Success));
+                
                 Patch(PreventivSure_PreguntasMP, Defaults(PreventivSure_PreguntasMP),
                 {img1:UploadedImage1.Image},
                 {img2:UploadedImage2.Image},
