@@ -33,9 +33,10 @@
       "displayName": "SQL Server",
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
+        "apiVer": 2,
         "appVer": "3.24014.14",
-        "modifiedOn": "2024-02-08 20:32:13",
-        "policy": "{\"type\":\"unused\"}",
+        "modifiedOn": "2024-02-12 13:54:01",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
       "gatewayObjectIdHint": "263dc832-5fea-479a-9fac-23670d346397",
@@ -94,6 +95,9 @@
     "datasets": {
       "https://carcgl-my.sharepoint.com/personal/alexis_silva_carrier_com": {
         "dataSources": {
+          "Prueba_IMG": {
+            "tableName": "f87de6bf-ccbb-44a5-b78b-e81ec201624e"
+          },
           "Tecnicos_App_MP": {
             "tableName": "b6097c69-2ea6-4c0c-a183-6d681794f2b9"
           }
@@ -101,7 +105,8 @@
       }
     },
     "dataSources": [
-      "Tecnicos_App_MP"
+      "Tecnicos_App_MP",
+      "Prueba_IMG"
     ],
     "dependencies": {},
     "dependents": [
