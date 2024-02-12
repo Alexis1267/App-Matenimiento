@@ -763,9 +763,14 @@ Agregar_Preg As screen:
                 
                 
                 */
-                
-                
-                
+                /*
+                Patch(PreventivSure_PreguntasMP, Defaults(PreventivSure_PreguntasMP),
+                {img1:UploadedImage1.Image},
+                {img2:UploadedImage2.Image},
+                {img3:UploadedImage3.Image},
+                {img4:UploadedImage4.Image},
+                {img5:UploadedImage5.Image});
+                */
                 
                 
                 //AGREGAR NUEVA ACTIVIDAD A PRENSAS
@@ -774,14 +779,12 @@ Agregar_Preg As screen:
                 Dropdown2.SelectedText.Value,
                 Dropdown3.SelectedText.Value,
                 If(Dropdown4.DisplayMode = DisplayMode.Disabled,TextInput2.Text,Dropdown4.SelectedText.Value),
-                TextInput3.Text),Notify("Se ha registraro la nueva actividad correctamente.",NotificationType.Success));
+                TextInput3.Text,UploadedImage1.Image),Notify("Se ha registraro la nueva actividad correctamente.",NotificationType.Success));
                 
-                Patch(PreventivSure_PreguntasMP, Defaults(PreventivSure_PreguntasMP),
-                {img1:UploadedImage1.Image},
-                {img2:UploadedImage2.Image},
-                {img3:UploadedImage3.Image},
-                {img4:UploadedImage4.Image},
-                {img5:UploadedImage5.Image})
+                
+                
+                
+                
                 
                 
                 
