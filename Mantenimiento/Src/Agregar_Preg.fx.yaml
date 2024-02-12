@@ -781,12 +781,12 @@ Agregar_Preg As screen:
                 If(IsBlank(AddMediaButton4.Media),"N/T","N/T"),
                 If(IsBlank(AddMediaButton5.Media),"N/T","N/T")),Notify("Se ha registraro la nueva actividad correctamente.",NotificationType.Success));
                 */
-                Patch(PreventivSure_PreguntasMP,
+                Patch(PreventivSure_PreguntasMP, Defaults(PreventivSure_PreguntasMP),
                 {img1:UploadedImage1.Image},
-                {img1:UploadedImage2.Image},
-                {img1:UploadedImage3.Image},
-                {img1:UploadedImage4.Image},
-                {img1:UploadedImage5.Image})
+                {img2:UploadedImage2.Image},
+                {img3:UploadedImage3.Image},
+                {img4:UploadedImage4.Image},
+                {img5:UploadedImage5.Image})
                 
                 
                 
