@@ -1,4 +1,38 @@
 {
+  "0a179713-8069-415c-8562-31de1336e624": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "SpIn_PreventivSure_InsertarActividadDatos"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "6854a9fc-026c-4a54-b3bd-ce93e54e8647"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "SpIn_PreventivSure_InsertarActividadDatos"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "6854a9fc-026c-4a54-b3bd-ce93e54e8647"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "SpIn_PreventivSure_InsertarActividadDatos"
+    ],
+    "dependencies": {
+      "shared_sql_1": "3736083c-041a-4b5d-ab79-97559da2f0cf"
+    },
+    "dependents": [],
+    "id": "0a179713-8069-415c-8562-31de1336e624"
+  },
   "1102e19c-503c-4599-ba22-9e94ae81ca10": {
     "connectionRef": {
       "displayName": "Office 365 Users",
@@ -35,7 +69,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.24015.12",
-        "modifiedOn": "2024-02-12 20:53:43",
+        "modifiedOn": "2024-02-13 18:22:57",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[pruebaimg1]\":[\"get\"]}}",
         "version": 1
       },
@@ -83,7 +117,7 @@
       "d1da1e37-b283-412f-9cd5-cefd517188a5",
       "cdc0749a-7649-4c36-bc6a-c188db5b5898",
       "bdea71f6-7dfd-4f8c-a01b-8ba1898b3af6",
-      "e53d9037-c3d5-4c03-8835-84d48894bc4a"
+      "0a179713-8069-415c-8562-31de1336e624"
     ],
     "endpoints": [
       "CMXMOA17%5cI40SQLQAENV,CMXEDataCollection"
@@ -357,40 +391,6 @@
     },
     "dependents": [],
     "id": "d1da1e37-b283-412f-9cd5-cefd517188a5"
-  },
-  "e53d9037-c3d5-4c03-8835-84d48894bc4a": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "workflowDisplayName": {
-          "value": "SpIn_PreventivSure_InsertarActividadDatos"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "6854a9fc-026c-4a54-b3bd-ce93e54e8647"
-        }
-      },
-      "parameterHintsV2": {
-        "workflowDisplayName": {
-          "value": "SpIn_PreventivSure_InsertarActividadDatos"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "6854a9fc-026c-4a54-b3bd-ce93e54e8647"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "SpIn_PreventivSure_InsertarActividadDatos"
-    ],
-    "dependencies": {
-      "shared_sql_1": "3736083c-041a-4b5d-ab79-97559da2f0cf"
-    },
-    "dependents": [],
-    "id": "e53d9037-c3d5-4c03-8835-84d48894bc4a"
   },
   "e8ea4951-260b-48fc-b1e7-8306a92830dd": {
     "connectionRef": {
