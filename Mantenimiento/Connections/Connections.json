@@ -5,6 +5,9 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "3736083c-041a-4b5d-ab79-97559da2f0cf": {
+          "value": "shared_sql_1"
+        },
         "workflowDisplayName": {
           "value": "SpIn_PreventivSure_InsertarActividadDatos"
         },
@@ -14,6 +17,9 @@
         }
       },
       "parameterHintsV2": {
+        "shared_sql_1": {
+          "value": "3736083c-041a-4b5d-ab79-97559da2f0cf"
+        },
         "workflowDisplayName": {
           "value": "SpIn_PreventivSure_InsertarActividadDatos"
         },
@@ -69,8 +75,8 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.24015.12",
-        "modifiedOn": "2024-02-13 18:22:57",
-        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[pruebaimg1]\":[\"get\"]}}",
+        "modifiedOn": "2024-02-13 19:21:59",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[pruebaimg1]\":[\"get\"]}}",
         "version": 1
       },
       "gatewayObjectIdHint": "263dc832-5fea-479a-9fac-23670d346397",
@@ -108,8 +114,8 @@
       "CMXE_TablaH_MP",
       "PreventivSure_Tecnicos",
       "PreventivSure_Preg",
-      "PreventivSure_PreguntasMP",
-      "Pruebaimg1"
+      "Pruebaimg1",
+      "PreventivSure_PreguntasMP"
     ],
     "dependencies": {},
     "dependents": [
