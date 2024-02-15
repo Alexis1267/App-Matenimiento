@@ -787,7 +787,7 @@ Agregar_Preg As screen:
                 {Nom_Equipo:Dropdown2_1.SelectedText.Value},
                 {img1:UploadedImage1.Image});
                 
-                PruebaFlowActividad.Run(TextInput3.Text,Dropdown3.SelectedText.Value,Dropdown4.SelectedText.Value,Dropdown2.SelectedText.Value)
+                PruebaFlowActividad.Run(TextInput3.Text,Dropdown3.SelectedText.Value,If(Dropdown4.DisplayMode = DisplayMode.Disabled,TextInput2.Text,Dropdown4.SelectedText.Value),Dropdown2.SelectedText.Value)
                 
                 
                 
