@@ -1,13 +1,24 @@
 {
-  "02646324-0414-4b71-8fbd-4d1cc4fce599": {
+  "1102e19c-503c-4599-ba22-9e94ae81ca10": {
+    "connectionRef": {
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1649/1.0.1649.3368/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1102e19c-503c-4599-ba22-9e94ae81ca10"
+  },
+  "11fb8597-7706-4dd9-9a8b-f58ac5e54457": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "3736083c-041a-4b5d-ab79-97559da2f0cf": {
-          "value": "shared_sql_1"
-        },
         "workflowDisplayName": {
           "value": "PruebaFlowActividad"
         },
@@ -17,9 +28,6 @@
         }
       },
       "parameterHintsV2": {
-        "shared_sql_1": {
-          "value": "3736083c-041a-4b5d-ab79-97559da2f0cf"
-        },
         "workflowDisplayName": {
           "value": "PruebaFlowActividad"
         },
@@ -37,61 +45,7 @@
       "shared_sql_1": "3736083c-041a-4b5d-ab79-97559da2f0cf"
     },
     "dependents": [],
-    "id": "02646324-0414-4b71-8fbd-4d1cc4fce599"
-  },
-  "0a179713-8069-415c-8562-31de1336e624": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "3736083c-041a-4b5d-ab79-97559da2f0cf": {
-          "value": "shared_sql_1"
-        },
-        "workflowDisplayName": {
-          "value": "SpIn_PreventivSure_InsertarActividadDatos"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "6854a9fc-026c-4a54-b3bd-ce93e54e8647"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_sql_1": {
-          "value": "3736083c-041a-4b5d-ab79-97559da2f0cf"
-        },
-        "workflowDisplayName": {
-          "value": "SpIn_PreventivSure_InsertarActividadDatos"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "6854a9fc-026c-4a54-b3bd-ce93e54e8647"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "SpIn_PreventivSure_InsertarActividadDatos"
-    ],
-    "dependencies": {
-      "shared_sql_1": "3736083c-041a-4b5d-ab79-97559da2f0cf"
-    },
-    "dependents": [],
-    "id": "0a179713-8069-415c-8562-31de1336e624"
-  },
-  "1102e19c-503c-4599-ba22-9e94ae81ca10": {
-    "connectionRef": {
-      "displayName": "Office 365 Users",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1649/1.0.1649.3368/office365users/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
-    },
-    "datasets": {},
-    "dataSources": [
-      "Office365Users"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "1102e19c-503c-4599-ba22-9e94ae81ca10"
+    "id": "11fb8597-7706-4dd9-9a8b-f58ac5e54457"
   },
   "2019b927-6731-4741-9d45-d73b8f21f1cf": {
     "connectionRef": {
@@ -115,8 +69,8 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.24015.12",
-        "modifiedOn": "2024-02-15 14:52:42",
-        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[pruebaimg1]\":[\"get\"]}}",
+        "modifiedOn": "2024-02-15 15:06:53",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[pruebaimg1]\":[\"get\"]}}",
         "version": 1
       },
       "gatewayObjectIdHint": "263dc832-5fea-479a-9fac-23670d346397",
@@ -163,8 +117,7 @@
       "d1da1e37-b283-412f-9cd5-cefd517188a5",
       "cdc0749a-7649-4c36-bc6a-c188db5b5898",
       "bdea71f6-7dfd-4f8c-a01b-8ba1898b3af6",
-      "0a179713-8069-415c-8562-31de1336e624",
-      "02646324-0414-4b71-8fbd-4d1cc4fce599"
+      "11fb8597-7706-4dd9-9a8b-f58ac5e54457"
     ],
     "endpoints": [
       "CMXMOA17%5cI40SQLQAENV,CMXEDataCollection"
