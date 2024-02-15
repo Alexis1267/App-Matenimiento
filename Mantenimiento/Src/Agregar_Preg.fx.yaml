@@ -899,7 +899,6 @@ Agregar_Preg As screen:
             ZIndex: =28
 
         Dropdown2_1 As dropdown:
-            DisplayMode: =DisplayMode.Disabled
             Items: |+
                 =Sort(Distinct(Filter(CMXE_MP_N,ID_Maq = Dropdown2.SelectedText.Value),Nom_Equipo),Value)
                 
