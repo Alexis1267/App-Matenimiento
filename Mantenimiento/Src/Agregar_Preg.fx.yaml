@@ -783,7 +783,11 @@ Agregar_Preg As screen:
                 */
                 
                 Patch(PreventivSure_PreguntasMP,Defaults(PreventivSure_PreguntasMP),
-                {img1:UploadedImage1.Image})
+                {Activo_No:Dropdown2.SelectedText.Value},
+                {Nom_Equipo:Dropdown2_1.SelectedText.Value},
+                {img1:UploadedImage1.Image});
+                
+                PruebaFlowActividad.Run(TextInput3.Text,Dropdown3.SelectedText.Value,Dropdown4.SelectedText.Value,Dropdown2.SelectedText.Value)
                 
                 
                 
