@@ -719,7 +719,23 @@ Agregar_Preg As screen:
             Fill: =RGBA(141, 198, 63, 1)
             Height: =35
             OnSelect: |+
-                =/*
+                =If(IsBlank(Dropdown3.SelectedText.Value) || IsBlank(TextInput3.Text), Notify("No se permiten campos vacíos",NotificationType.Error),
+                Patch(PreventivSure_PreguntasMP,Defaults(PreventivSure_PreguntasMP),
+                {Activo_No:Dropdown2.SelectedText.Value},
+                {Nom_Equipo:Dropdown2_1.SelectedText.Value},
+                {img1:UploadedImage1.Image},
+                {img2:UploadedImage2.Image},
+                {img3:UploadedImage3.Image},
+                {img4:UploadedImage4.Image},
+                {img5:UploadedImage5.Image}
+                ));
+                
+                If(IsBlank(Dropdown3.SelectedText.Value) || IsBlank(TextInput3.Text), Notify("No se permiten campos vacíos",NotificationType.Error),
+                SpIn_PreventivSure_InsertarActividadDatos.Run(TextInput3.Text,Dropdown3.SelectedText.Value,If(Dropdown4.DisplayMode = DisplayMode.Disabled,TextInput2.Text,Dropdown4.SelectedText.Value),Dropdown2.SelectedText.Value));
+                
+                Notify("Se ha registrado",NotificationType.Success)
+                
+                /*
                 //IMG1
                 Set(ImgName1,Concatenate("AyudaVisual_1-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
                 
@@ -783,19 +799,7 @@ Agregar_Preg As screen:
                 */
                 
                 
-                If(IsBlank(Dropdown3.SelectedText.Value) && IsBlank(TextInput3.Text), Notify("No",NotificationType.Error),
-                Patch(PreventivSure_PreguntasMP,Defaults(PreventivSure_PreguntasMP),
-                {Activo_No:Dropdown2.SelectedText.Value},
-                {Nom_Equipo:Dropdown2_1.SelectedText.Value},
-                {img1:UploadedImage1.Image},
-                {img2:UploadedImage2.Image},
-                {img3:UploadedImage3.Image},
-                {img4:UploadedImage4.Image},
-                {img5:UploadedImage5.Image}
-                ));
                 
-                If(IsBlank(Dropdown3.SelectedText.Value) && IsBlank(TextInput3.Text), Notify("No",NotificationType.Error),
-                SpIn_PreventivSure_InsertarActividadDatos.Run(TextInput3.Text,Dropdown3.SelectedText.Value,If(Dropdown4.DisplayMode = DisplayMode.Disabled,TextInput2.Text,Dropdown4.SelectedText.Value),Dropdown2.SelectedText.Value))
                 
                 
                 
