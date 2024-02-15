@@ -190,6 +190,7 @@
         ZIndex: =11
 
     Button3 As button:
+        DisplayMode: =If(LookUp(PreventivSure_Tecnicos,Correo = Identificacion.Email,Rol = "Admin"), DisplayMode.Edit,DisplayMode.Disabled) 
         Height: =57
         OnSelect: =Navigate('Control de preguntas',ScreenTransition.Fade)
         Text: ="Control de preguntas"
