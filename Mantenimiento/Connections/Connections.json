@@ -53,6 +53,40 @@
     "dependents": [],
     "id": "1102e19c-503c-4599-ba22-9e94ae81ca10"
   },
+  "141424b9-10bc-481b-88a2-e2fe10c3fb68": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "PruebaFlowActividad"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f9819db9-c215-4b81-93cb-d8a18f46ad48"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "PruebaFlowActividad"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f9819db9-c215-4b81-93cb-d8a18f46ad48"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PruebaFlowActividad"
+    ],
+    "dependencies": {
+      "shared_sql_1": "3736083c-041a-4b5d-ab79-97559da2f0cf"
+    },
+    "dependents": [],
+    "id": "141424b9-10bc-481b-88a2-e2fe10c3fb68"
+  },
   "2019b927-6731-4741-9d45-d73b8f21f1cf": {
     "connectionRef": {
       "displayName": "Office 365 Outlook",
@@ -75,7 +109,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.24015.12",
-        "modifiedOn": "2024-02-13 19:21:59",
+        "modifiedOn": "2024-02-15 14:27:15",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"],\"[dbo].[pruebaimg1]\":[\"get\"]}}",
         "version": 1
       },
@@ -123,7 +157,8 @@
       "d1da1e37-b283-412f-9cd5-cefd517188a5",
       "cdc0749a-7649-4c36-bc6a-c188db5b5898",
       "bdea71f6-7dfd-4f8c-a01b-8ba1898b3af6",
-      "0a179713-8069-415c-8562-31de1336e624"
+      "0a179713-8069-415c-8562-31de1336e624",
+      "141424b9-10bc-481b-88a2-e2fe10c3fb68"
     ],
     "endpoints": [
       "CMXMOA17%5cI40SQLQAENV,CMXEDataCollection"

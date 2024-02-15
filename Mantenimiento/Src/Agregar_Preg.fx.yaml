@@ -771,7 +771,7 @@ Agregar_Preg As screen:
                 {img4:UploadedImage4.Image},
                 {img5:UploadedImage5.Image});
                 */
-                
+                /*
                 
                 //AGREGAR NUEVA ACTIVIDAD A PRENSAS
                 If(IsBlank(TextInput3.Text),Notify("No puedes dejar campos vacios",NotificationType.Error),
@@ -780,6 +780,11 @@ Agregar_Preg As screen:
                 Dropdown3.SelectedText.Value,
                 If(Dropdown4.DisplayMode = DisplayMode.Disabled,TextInput2.Text,Dropdown4.SelectedText.Value),
                 TextInput3.Text, UploadedImage1.Image,UploadedImage2.Image,UploadedImage3.Image,UploadedImage4.Image,UploadedImage5.Image),Notify("Se ha registraro la nueva actividad correctamente.",NotificationType.Success));
+                */
+                
+                Patch(PreventivSure_PreguntasMP,Defaults(PreventivSure_PreguntasMP),
+                {img1:UploadedImage1.Image})
+                
                 
                 
                 
