@@ -80,7 +80,7 @@ Editar_Preg As screen:
             FontWeight: =FontWeight.Bold
             Height: =80
             Size: =30
-            Text: ="AGREGAR NUEVA ACTIVIDAD"
+            Text: ="EDITAR ACTIVIDAD ACTIVIDAD"
             Width: =1329
             ZIndex: =1
 
@@ -691,7 +691,7 @@ Editar_Preg As screen:
 
             Label20_15 As label:
                 FontWeight: =FontWeight.Bold
-                Text: ="Nueva Actividad"
+                Text: ="Actividad"
                 Width: =585
                 X: =733
                 Y: =6
@@ -702,6 +702,7 @@ Editar_Preg As screen:
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({BotonZona:!BotonZona})
+            Visible: =false
             Width: =28
             X: =458
             Y: =90
@@ -710,6 +711,7 @@ Editar_Preg As screen:
         Label21_2 As label:
             Height: =27
             Text: ="Agregar nueva Zona"
+            Visible: =false
             Width: =218
             X: =486
             Y: =90

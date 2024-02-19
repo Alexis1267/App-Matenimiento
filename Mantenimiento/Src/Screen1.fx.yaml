@@ -1,4 +1,5 @@
 "Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
+    OnVisible: =
 
     Canvas1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
@@ -1544,7 +1545,7 @@
                     Icon11 As icon.Edit:
                         Color: =RGBA(233, 165, 43, 1)
                         Icon: =Icon.Edit
-                        OnSelect: =Select(Parent)
+                        OnSelect: =Navigate(Editar_Preg,ScreenTransition.Fade)
                         Visible: =If(ThisItem.IsSelected,true)
                         X: =1110
                         Y: =19
@@ -1588,6 +1589,27 @@
                         X: =1230
                         Y: =16
                         ZIndex: =17
+
+                    Label22_4 As label:
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.Activo_No
+                        X: =1170
+                        Y: =89
+                        ZIndex: =18
+
+                    Label22_5 As label:
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.Nom_Equipo
+                        X: =1170
+                        Y: =122
+                        ZIndex: =19
+
+                    Label22_6 As label:
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.Clase_MTTO
+                        X: =1170
+                        Y: =164
+                        ZIndex: =20
 
             Group10_2 As group:
                 Height: =5
