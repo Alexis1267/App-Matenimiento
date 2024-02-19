@@ -1419,6 +1419,7 @@
                     ZIndex: =1
 
                     Image6_10 As image:
+                        BorderThickness: =1
                         Height: =210
                         Image: =ThisItem.img1
                         OnSelect: =Select(Parent)
@@ -1426,8 +1427,8 @@
                         RadiusBottomRight: =8
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
-                        Width: =260
-                        X: =22
+                        Width: =250
+                        X: =12
                         Y: =204
                         ZIndex: =1
 
@@ -1485,6 +1486,7 @@
                         ZIndex: =8
 
                     Image6_11 As image:
+                        BorderThickness: =1
                         Height: =210
                         Image: =ThisItem.img2
                         OnSelect: =Select(Parent)
@@ -1492,12 +1494,13 @@
                         RadiusBottomRight: =8
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
-                        Width: =260
-                        X: =308
+                        Width: =250
+                        X: =271
                         Y: =204
                         ZIndex: =9
 
                     Image6_12 As image:
+                        BorderThickness: =1
                         Height: =210
                         Image: =ThisItem.img3
                         OnSelect: =Select(Parent)
@@ -1505,12 +1508,13 @@
                         RadiusBottomRight: =8
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
-                        Width: =260
-                        X: =545
+                        Width: =250
+                        X: =531
                         Y: =204
                         ZIndex: =10
 
                     Image6_13 As image:
+                        BorderThickness: =1
                         Height: =210
                         Image: =ThisItem.img4
                         OnSelect: =Select(Parent)
@@ -1518,12 +1522,13 @@
                         RadiusBottomRight: =8
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
-                        Width: =260
-                        X: =784
+                        Width: =250
+                        X: =792
                         Y: =204
                         ZIndex: =11
 
                     Image6_14 As image:
+                        BorderThickness: =1
                         Height: =210
                         Image: =ThisItem.img5
                         OnSelect: =Select(Parent)
@@ -1531,8 +1536,8 @@
                         RadiusBottomRight: =8
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
-                        Width: =260
-                        X: =1020
+                        Width: =250
+                        X: =1056
                         Y: =204
                         ZIndex: =12
 
