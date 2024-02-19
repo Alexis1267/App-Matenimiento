@@ -669,79 +669,7 @@ Editar_Preg As screen:
                 
                 //Notify("Se ha registrado",NotificationType.Success);
                 
-                
-                
-                /*
-                //IMG1
-                Set(ImgName1,Concatenate("AyudaVisual_1-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
-                
-                    // Get file1 binary data and convert it to base64
-                    Set(attachmentImgValue1, JSON(UploadedImage1.Image, JSONFormat.IncludeBinaryData));
-                
-                    Set(attachmentImg1Base64Only, Mid(attachmentImgValue1, Find(",", attachmentImgValue1)+1, Len(attachmentImgValue1) - Find(",", attachmentImgValue1)-1 ));
-                
-                //IMG2
-                Set(ImgName2,Concatenate("AyudaVisual_2-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
-                
-                    // Get file1 binary data and convert it to base64
-                    Set(attachmentImg2Value1, JSON(UploadedImage2.Image, JSONFormat.IncludeBinaryData));
-                
-                    Set(attachmentImg2Base64Only, Mid(attachmentImg2Value1, Find(",", attachmentImg2Value1)+1, Len(attachmentImg2Value1) - Find(",", attachmentImg2Value1)-1 ));
-                
-                
-                //IMG3
-                Set(ImgName3,Concatenate("AyudaVisual_3-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
-                
-                    // Get file1 binary data and convert it to base64
-                    Set(attachmentImg3Value1, JSON(UploadedImage3.Image, JSONFormat.IncludeBinaryData));
-                
-                    Set(attachmentImg3Base64Only, Mid(attachmentImg3Value1, Find(",", attachmentImg3Value1)+1, Len(attachmentImg3Value1) - Find(",", attachmentImg3Value1)-1 ));
-                
-                //IMG4
-                Set(ImgName4,Concatenate("AyudaVisual_4-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
-                
-                    // Get file1 binary data and convert it to base64
-                    Set(attachmentImg4Value1, JSON(UploadedImage4.Image, JSONFormat.IncludeBinaryData));
-                
-                    Set(attachmentImg4Base64Only, Mid(attachmentImg4Value1, Find(",", attachmentImg4Value1)+1, Len(attachmentImg4Value1) - Find(",", attachmentImg4Value1)-1 ));
-                
-                //IMG5
-                Set(ImgName5,Concatenate("AyudaVisual_5-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
-                
-                    // Get file1 binary data and convert it to base64
-                    Set(attachmentImg5Value1, JSON(UploadedImage5.Image, JSONFormat.IncludeBinaryData));
-                
-                    Set(attachmentImg5Base64Only, Mid(attachmentImg5Value1, Find(",", attachmentImg5Value1)+1, Len(attachmentImg5Value1) - Find(",", attachmentImg5Value1)-1 ));
-                
-                
-                */
-                /*
-                Patch(PreventivSure_PreguntasMP, Defaults(PreventivSure_PreguntasMP),
-                {img1:UploadedImage1.Image},
-                {img2:UploadedImage2.Image},
-                {img3:UploadedImage3.Image},
-                {img4:UploadedImage4.Image},
-                {img5:UploadedImage5.Image});
-                */
-                /*
-                
-                //AGREGAR NUEVA ACTIVIDAD A PRENSAS
-                If(IsBlank(TextInput3.Text),Notify("No puedes dejar campos vacios",NotificationType.Error),
-                SpIn_PreventivSure_InsertarActividadDatos.Run(
-                Dropdown2.SelectedText.Value,
-                Dropdown3.SelectedText.Value,
-                If(Dropdown4.DisplayMode = DisplayMode.Disabled,TextInput2.Text,Dropdown4.SelectedText.Value),
-                TextInput3.Text, UploadedImage1.Image,UploadedImage2.Image,UploadedImage3.Image,UploadedImage4.Image,UploadedImage5.Image),Notify("Se ha registraro la nueva actividad correctamente.",NotificationType.Success));
-                */
-                
-                
-                
-                
-                
-                
-                
-                
-                
+                patch
                 
                 
                 
@@ -940,6 +868,17 @@ Editar_Preg As screen:
             Y: =222
             ZIndex: =27
 
+        Button12 As button:
+            OnSelect: |+
+                =UpdateContext({visibleimg1:false});
+                
+                Reset(AddMediaButton1_2);
+                
+            Text: ="Eliminar IMG"
+            X: =65
+            Y: =508
+            ZIndex: =31
+
         Group14_2 As group:
             Height: =5
             Width: =5
@@ -1046,10 +985,12 @@ Editar_Preg As screen:
                 Color: =RGBA(255, 0, 0, 1)
                 Height: =35
                 Icon: =Icon.CancelBadge
-                OnSelect: |
+                OnSelect: |+
                     =Reset(AddMediaButton1_2);
                     
                     UpdateContext({visibleimg1:true})
+                    
+                Visible: =If(Image9.Visible = true ,false,true)
                 Width: =34
                 X: =211
                 Y: =240
