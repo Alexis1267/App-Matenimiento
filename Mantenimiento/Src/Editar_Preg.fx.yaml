@@ -565,7 +565,7 @@ Editar_Preg As screen:
 
         Dropdown4_2 As dropdown:
             Default: ="N/A"
-            DisplayMode: =If(BotonZona,DisplayMode.Disabled,DisplayMode.Edit)
+            DisplayMode: =DisplayMode.Disabled
             Items: |+
                 =[Edit_Zona]
                 
@@ -632,6 +632,7 @@ Editar_Preg As screen:
             ZIndex: =24
 
             Dropdown2_5 As dropdown:
+                DisplayMode: =DisplayMode.Disabled
                 Items: |+
                     =[Edit_Activo]
                     
@@ -657,9 +658,10 @@ Editar_Preg As screen:
             ZIndex: =24
 
             Dropdown3_3 As dropdown:
+                DisplayMode: =DisplayMode.Disabled
                 Items: |-
                     =//Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion, ID_Maq = Dropdown2_5.SelectedText.Value),Clas_Mantenimineto),Value)
-                    [Edit_Activo]
+                    [Edit_ClaseMTTO]
                 Width: =213
                 X: =222
                 Y: =46
@@ -681,7 +683,7 @@ Editar_Preg As screen:
             ZIndex: =24
 
             TextInput3_2 As text:
-                Default: =""
+                Default: =Edit_Actividad
                 DisplayMode: |
                     =
                 Height: =125

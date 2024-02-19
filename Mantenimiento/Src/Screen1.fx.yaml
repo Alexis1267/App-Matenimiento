@@ -1550,7 +1550,9 @@
                             
                             Set(Edit_Zona,ThisItem.Sub_Tarea);
                             Set(Edit_Activo,ThisItem.Activo_No);
-                            Set(Edit_ClaseMTTO,ThisItem.Activo_No);
+                            Set(Edit_ClaseMTTO,ThisItem.Clase_MTTO);
+                            Set(Edit_Actividad,ThisItem.Actividad);
+                            
                             
                             
                             
@@ -1597,20 +1599,6 @@
                         X: =1230
                         Y: =16
                         ZIndex: =17
-
-                    Label22_4 As label:
-                        OnSelect: =Select(Parent)
-                        Text: =ThisItem.Activo_No
-                        X: =1170
-                        Y: =89
-                        ZIndex: =18
-
-                    Label22_6 As label:
-                        OnSelect: =Select(Parent)
-                        Text: =ThisItem.Clase_MTTO
-                        X: =1170
-                        Y: =123
-                        ZIndex: =20
 
             Group10_2 As group:
                 Height: =5
