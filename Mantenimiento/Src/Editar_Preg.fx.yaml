@@ -567,8 +567,10 @@ Editar_Preg As screen:
             Default: ="N/A"
             DisplayMode: =If(BotonZona,DisplayMode.Disabled,DisplayMode.Edit)
             Items: |+
-                =//Sort(Distinct(Filter(PreventivSure_PreguntasMP,Localizacion = BtnLocalizacion,Activo_No = Dropdown2.SelectedText.Value,Clase_MTTO = Dropdown3.SelectedText.Value),Sub_Tarea),Value)
+                =[Edit_Zona]
                 
+                //Sort(Distinct(Filter(PreventivSure_PreguntasMP,Localizacion = BtnLocalizacion,Activo_No = Dropdown2.SelectedText.Value,Clase_MTTO = Dropdown3.SelectedText.Value),Sub_Tarea),Value)
+                /*
                 If(
                     CountRows(
                         Filter(
@@ -615,7 +617,7 @@ Editar_Preg As screen:
                         Value
                     )
                 )
-                
+                */
                 
             Width: =245
             X: =458
@@ -631,8 +633,7 @@ Editar_Preg As screen:
 
             Dropdown2_5 As dropdown:
                 Items: |+
-                    =Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion),ID_Maq),Value)
-                    
+                    =[Edit_Activo]
                     
                     
                 Width: =195
@@ -656,8 +657,9 @@ Editar_Preg As screen:
             ZIndex: =24
 
             Dropdown3_3 As dropdown:
-                Items: |
-                    =Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion, ID_Maq = Dropdown2_5.SelectedText.Value),Clas_Mantenimineto),Value)
+                Items: |-
+                    =//Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion, ID_Maq = Dropdown2_5.SelectedText.Value),Clas_Mantenimineto),Value)
+                    [Edit_Activo]
                 Width: =213
                 X: =222
                 Y: =46

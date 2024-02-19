@@ -1545,7 +1545,15 @@
                     Icon11 As icon.Edit:
                         Color: =RGBA(233, 165, 43, 1)
                         Icon: =Icon.Edit
-                        OnSelect: =Navigate(Editar_Preg,ScreenTransition.Fade)
+                        OnSelect: |+
+                            =Navigate(Editar_Preg,ScreenTransition.Fade);
+                            
+                            Set(Edit_Zona,ThisItem.Sub_Tarea);
+                            Set(Edit_Activo,ThisItem.Activo_No);
+                            Set(Edit_ClaseMTTO,ThisItem.Activo_No);
+                            
+                            
+                            
                         Visible: =If(ThisItem.IsSelected,true)
                         X: =1110
                         Y: =19
@@ -1597,18 +1605,11 @@
                         Y: =89
                         ZIndex: =18
 
-                    Label22_5 As label:
-                        OnSelect: =Select(Parent)
-                        Text: =ThisItem.Nom_Equipo
-                        X: =1170
-                        Y: =122
-                        ZIndex: =19
-
                     Label22_6 As label:
                         OnSelect: =Select(Parent)
                         Text: =ThisItem.Clase_MTTO
                         X: =1170
-                        Y: =164
+                        Y: =123
                         ZIndex: =20
 
             Group10_2 As group:
