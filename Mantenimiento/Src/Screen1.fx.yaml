@@ -1365,8 +1365,8 @@
                         =Sort(
                             Sort(
                                 Filter(
-                                    Search(PreventivSure_PreguntasMP, Dropdown2_2.SelectedText.Value, "Activo_No"),
-                                    Clase_MTTO = Dropdown3_1.SelectedText.Value
+                                    Search(PreventivSure_PreguntasMP, Dropdown2_4.SelectedText.Value, "Activo_No"),
+                                    Clase_MTTO = Dropdown3_2.SelectedText.Value
                                 ),
                                 Sub_Tarea
                             ),
@@ -1547,7 +1547,7 @@
                         
                     Width: =195
                     X: =40
-                    Y: =47
+                    Y: =60
                     ZIndex: =2
 
                 Label20_10 As label:
@@ -1555,7 +1555,7 @@
                     Text: ="Activo.No"
                     Width: =195
                     X: =40
-                    Y: =13
+                    Y: =26
                     ZIndex: =4
 
             Group11_2 As group:
@@ -1570,7 +1570,7 @@
                         =Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion, ID_Maq = Dropdown2_4.SelectedText.Value),Clas_Mantenimineto),Value)
                     Width: =213
                     X: =257
-                    Y: =47
+                    Y: =60
                     ZIndex: =3
 
                 Label20_11 As label:
@@ -1578,7 +1578,7 @@
                     Text: ="Clase de MTTO"
                     Width: =213
                     X: =257
-                    Y: =13
+                    Y: =26
                     ZIndex: =5
 
     Label3_13 As label:
