@@ -7,7 +7,7 @@
 
     Canvas1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
-        Height: =Parent.Height - Self.Y
+        Height: =680
         Width: =Parent.Width
         Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
         ZIndex: =3
@@ -1339,11 +1339,170 @@
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =524
+            Height: =697
             Width: =1366
             X: =0
             Y: =1
             ZIndex: =2
+
+            Container1 As groupContainer.manualLayoutContainer:
+                Height: =558
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Width: =1320
+                X: =20
+                Y: =106
+                ZIndex: =1
+
+                "Gallery8_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                    BorderColor: =RGBA(0, 13, 75, 1)
+                    DelayItemLoading: =true
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =558
+                    Items: |-
+                        =Sort(
+                            Sort(
+                                Filter(
+                                    Search(PreventivSure_PreguntasMP, Dropdown2_2.SelectedText.Value, "Activo_No"),
+                                    Clase_MTTO = Dropdown3_1.SelectedText.Value
+                                ),
+                                Sub_Tarea
+                            ),
+                            Num_Pregunta
+                        )
+                    Layout: =Layout.Vertical
+                    LoadingSpinner: =LoadingSpinner.Data
+                    TemplatePadding: =0
+                    TemplateSize: =439
+                    Width: =1320
+                    ZIndex: =1
+
+                    Image6_10 As image:
+                        Height: =150
+                        Image: =ThisItem.img1
+                        OnSelect: =Select(Parent)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =196
+                        X: =102
+                        Y: =117
+                        ZIndex: =1
+
+                    Title6_5 As label:
+                        AutoHeight: =true
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.Actividad
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =768
+                        X: =51
+                        Y: =59
+                        ZIndex: =2
+
+                    Separator5_2 As rectangle:
+                        Fill: =RGBA(202, 202, 202, 1)
+                        Height: =8
+                        OnSelect: =Select(Parent)
+                        Width: =Parent.TemplateWidth
+                        Y: =Parent.TemplateHeight - Self.Height
+                        ZIndex: =5
+
+                    Rectangle9_2 As rectangle:
+                        Height: =Parent.TemplateHeight - Separator5_2.Height
+                        OnSelect: =Select(Parent)
+                        Visible: =ThisItem.IsSelected
+                        Width: =4
+                        ZIndex: =6
+
+                    Label22_2 As label:
+                        OnSelect: =Select(Parent)
+                        Text: =ThisItem.Num_Pregunta
+                        X: =4
+                        Y: =51
+                        ZIndex: =7
+
+                    Title6_4 As label:
+                        AutoHeight: =true
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =ThisItem.Sub_Tarea
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =768
+                        X: =40
+                        Y: =27
+                        ZIndex: =8
+
+                    Image6_11 As image:
+                        Height: =150
+                        Image: =ThisItem.img2
+                        OnSelect: =Select(Parent)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =196
+                        X: =332
+                        Y: =117
+                        ZIndex: =9
+
+                    Image6_12 As image:
+                        Height: =150
+                        Image: =ThisItem.img3
+                        OnSelect: =Select(Parent)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =196
+                        X: =569
+                        Y: =117
+                        ZIndex: =10
+
+                    Image6_13 As image:
+                        Height: =150
+                        Image: =ThisItem.img4
+                        OnSelect: =Select(Parent)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =196
+                        X: =808
+                        Y: =117
+                        ZIndex: =11
+
+                    Image6_14 As image:
+                        Height: =150
+                        Image: =ThisItem.img5
+                        OnSelect: =Select(Parent)
+                        RadiusBottomLeft: =8
+                        RadiusBottomRight: =8
+                        RadiusTopLeft: =8
+                        RadiusTopRight: =8
+                        Width: =196
+                        X: =1044
+                        Y: =117
+                        ZIndex: =12
+
+                    Icon11 As icon.Edit:
+                        Color: =RGBA(233, 165, 43, 1)
+                        Icon: =Icon.Edit
+                        OnSelect: =Select(Parent)
+                        X: =1110
+                        Y: =19
+                        ZIndex: =13
 
     Label3_13 As label:
         Align: =Align.Center
@@ -1351,7 +1510,7 @@
         FontWeight: =FontWeight.Bold
         Height: =47
         Size: =30
-        Text: ="AGREGAR NUEVA ACTIVIDAD"
+        Text: ="CONTROL DE PREGUNTAS"
         Width: =1329
         X: =17
         Y: =20
