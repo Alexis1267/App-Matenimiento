@@ -1441,8 +1441,8 @@
                         Text: =ThisItem.Actividad
                         VerticalAlign: =VerticalAlign.Top
                         Width: =768
-                        X: =154
-                        Y: =85
+                        X: =111
+                        Y: =89
                         ZIndex: =2
 
                     Separator5_2 As rectangle:
@@ -1463,8 +1463,8 @@
                     Label22_2 As label:
                         OnSelect: =Select(Parent)
                         Text: =ThisItem.Num_Pregunta
-                        X: =211
-                        Y: =51
+                        X: =170
+                        Y: =40
                         ZIndex: =7
 
                     Title6_4 As label:
@@ -1475,11 +1475,12 @@
                         PaddingLeft: =0
                         PaddingRight: =0
                         PaddingTop: =0
+                        Size: =15
                         Text: =ThisItem.Sub_Tarea
                         VerticalAlign: =VerticalAlign.Top
                         Width: =768
-                        X: =116
-                        Y: =27
+                        X: =95
+                        Y: =7
                         ZIndex: =8
 
                     Image6_11 As image:
@@ -1545,10 +1546,11 @@
                     Label26 As label:
                         FontWeight: =FontWeight.Bold
                         OnSelect: =Select(Parent)
+                        Size: =15
                         Text: |-
                             ="ZONA:"
-                        X: =45
-                        Y: =19
+                        Width: =91
+                        X: =4
                         ZIndex: =14
 
                     Label26_1 As label:
@@ -1556,17 +1558,18 @@
                         OnSelect: =Select(Parent)
                         Text: |-
                             ="ACTIVIDAD:"
-                        X: =45
-                        Y: =77
+                        Width: =111
+                        Y: =81
                         ZIndex: =15
 
                     Label26_2 As label:
                         FontWeight: =FontWeight.Bold
                         OnSelect: =Select(Parent)
+                        Size: =15
                         Text: |-
                             ="Nº de actividad:"
-                        X: =45
-                        Y: =51
+                        Width: =170
+                        Y: =40
                         ZIndex: =16
 
             Group10_2 As group:
