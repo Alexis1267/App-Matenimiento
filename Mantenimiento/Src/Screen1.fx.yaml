@@ -1644,10 +1644,19 @@
                     FontWeight: =FontWeight.Bold
                     Height: =84
                     Size: =20
-                    Text: ="¿Esta seguro que desea eliminar la actividad seleccionada?"
+                    Text: ="¿Está seguro de que desea eliminar la actividad seleccionada?"
                     Width: =548
                     Y: =147
                     ZIndex: =4
+
+                Icon14 As icon.CancelBadge:
+                    Color: =RGBA(184, 0, 0, 1)
+                    Height: =105
+                    Icon: =Icon.CancelBadge
+                    Width: =117
+                    X: =215
+                    Y: =30
+                    ZIndex: =5
 
             Group11_2 As group:
                 Height: =5
