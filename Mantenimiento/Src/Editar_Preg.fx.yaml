@@ -561,7 +561,7 @@ Editar_Preg As screen:
             Width: =245
             X: =458
             Y: =6
-            ZIndex: =22
+            ZIndex: =15
 
         Dropdown4_2 As dropdown:
             Default: ="N/A"
@@ -622,84 +622,7 @@ Editar_Preg As screen:
             Width: =245
             X: =458
             Y: =46
-            ZIndex: =24
-
-        Group10_3 As group:
-            Height: =5
-            Width: =5
-            X: =40
-            Y: =40
-            ZIndex: =24
-
-            Dropdown2_5 As dropdown:
-                DisplayMode: =DisplayMode.Disabled
-                Items: |+
-                    =[Edit_Activo]
-                    
-                    
-                Width: =195
-                X: =5
-                Y: =46
-                ZIndex: =1
-
-            Label20_12 As label:
-                FontWeight: =FontWeight.Bold
-                Text: ="Activo.No"
-                Width: =195
-                X: =5
-                Y: =6
-                ZIndex: =20
-
-        Group11_3 As group:
-            Height: =5
-            Width: =5
-            X: =40
-            Y: =40
-            ZIndex: =24
-
-            Dropdown3_3 As dropdown:
-                DisplayMode: =DisplayMode.Disabled
-                Items: |-
-                    =//Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion, ID_Maq = Dropdown2_5.SelectedText.Value),Clas_Mantenimineto),Value)
-                    [Edit_ClaseMTTO]
-                Width: =213
-                X: =222
-                Y: =46
-                ZIndex: =2
-
-            Label20_13 As label:
-                FontWeight: =FontWeight.Bold
-                Text: ="Clase de MTTO"
-                Width: =213
-                X: =222
-                Y: =6
-                ZIndex: =21
-
-        Group13_2 As group:
-            Height: =5
-            Width: =5
-            X: =40
-            Y: =40
-            ZIndex: =24
-
-            TextInput3_2 As text:
-                Default: =Edit_Actividad
-                DisplayMode: |
-                    =
-                Height: =125
-                Mode: =TextMode.MultiLine
-                Width: =585
-                X: =733
-                Y: =46
-                ZIndex: =4
-
-            Label20_15 As label:
-                FontWeight: =FontWeight.Bold
-                Text: ="Actividad"
-                Width: =585
-                X: =733
-                Y: =6
-                ZIndex: =23
+            ZIndex: =17
 
         Icon1_9 As icon.Add:
             Height: =27
@@ -710,7 +633,7 @@ Editar_Preg As screen:
             Width: =28
             X: =458
             Y: =90
-            ZIndex: =26
+            ZIndex: =18
 
         Label21_2 As label:
             Height: =27
@@ -719,7 +642,7 @@ Editar_Preg As screen:
             Width: =218
             X: =486
             Y: =90
-            ZIndex: =27
+            ZIndex: =19
 
         Button13_2 As button:
             Fill: =RGBA(141, 198, 63, 1)
@@ -909,7 +832,7 @@ Editar_Preg As screen:
             Width: =270
             X: =523
             Y: =567
-            ZIndex: =28
+            ZIndex: =20
 
         Dropdown2_6 As dropdown:
             DisplayMode: =DisplayMode.Disabled
@@ -921,19 +844,84 @@ Editar_Preg As screen:
             Width: =223
             X: =5
             Y: =140
-            ZIndex: =29
+            ZIndex: =21
 
-        Button7_2 As button:
-            Height: =64
-            OnSelect: |-
-                =UpdateContext({BtnVisualizarAct:true});
-                
-                Refresh(PreventivSure_PreguntasMP)
-            Text: ="Visualizar actividades existentes"
-            Width: =253
-            X: =18
-            Y: =552
-            ZIndex: =35
+        Group10_3 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =24
+
+            Dropdown2_5 As dropdown:
+                DisplayMode: =DisplayMode.Disabled
+                Items: |+
+                    =[Edit_Activo]
+                    
+                    
+                Width: =195
+                X: =5
+                Y: =46
+                ZIndex: =1
+
+            Label20_12 As label:
+                FontWeight: =FontWeight.Bold
+                Text: ="Activo.No"
+                Width: =195
+                X: =5
+                Y: =6
+                ZIndex: =13
+
+        Group11_3 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =24
+
+            Dropdown3_3 As dropdown:
+                DisplayMode: =DisplayMode.Disabled
+                Items: |-
+                    =//Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion, ID_Maq = Dropdown2_5.SelectedText.Value),Clas_Mantenimineto),Value)
+                    [Edit_ClaseMTTO]
+                Width: =213
+                X: =222
+                Y: =46
+                ZIndex: =2
+
+            Label20_13 As label:
+                FontWeight: =FontWeight.Bold
+                Text: ="Clase de MTTO"
+                Width: =213
+                X: =222
+                Y: =6
+                ZIndex: =14
+
+        Group13_2 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =24
+
+            TextInput3_2 As text:
+                Default: =Edit_Actividad
+                DisplayMode: |
+                    =
+                Height: =125
+                Mode: =TextMode.MultiLine
+                Width: =585
+                X: =733
+                Y: =46
+                ZIndex: =4
+
+            Label20_15 As label:
+                FontWeight: =FontWeight.Bold
+                Text: ="Actividad"
+                Width: =585
+                X: =733
+                Y: =6
+                ZIndex: =16
 
         Label20_16 As label:
             FontWeight: =FontWeight.Bold
@@ -941,7 +929,15 @@ Editar_Preg As screen:
             Width: =223
             X: =5
             Y: =100
-            ZIndex: =36
+            ZIndex: =26
+
+        Image9 As image:
+            Height: =208
+            Image: =Edit_AyudaV1
+            Width: =240
+            X: =25
+            Y: =222
+            ZIndex: =27
 
         Group14_2 As group:
             Height: =5
@@ -956,7 +952,7 @@ Editar_Preg As screen:
                 Width: =240
                 X: =280
                 Y: =238
-                ZIndex: =9
+                ZIndex: =5
 
             AddMediaButton2_2 As addMedia:
                 ChangePictureText: ="Cambiar Imagen"
@@ -967,7 +963,7 @@ Editar_Preg As screen:
                 Width: =200
                 X: =300
                 Y: =447
-                ZIndex: =10
+                ZIndex: =6
 
             Icon10_13 As icon.CancelBadge:
                 Color: =RGBA(255, 0, 0, 1)
@@ -978,7 +974,7 @@ Editar_Preg As screen:
                 Width: =34
                 X: =467
                 Y: =240
-                ZIndex: =31
+                ZIndex: =23
 
         Group15_2 As group:
             Height: =5
@@ -993,7 +989,7 @@ Editar_Preg As screen:
                 Width: =240
                 X: =538
                 Y: =238
-                ZIndex: =12
+                ZIndex: =7
 
             AddMediaButton3_2 As addMedia:
                 ChangePictureText: ="Cambiar Imagen"
@@ -1004,7 +1000,7 @@ Editar_Preg As screen:
                 Width: =200
                 X: =558
                 Y: =447
-                ZIndex: =13
+                ZIndex: =8
 
             Icon10_11 As icon.CancelBadge:
                 Color: =RGBA(255, 0, 0, 1)
@@ -1015,7 +1011,7 @@ Editar_Preg As screen:
                 Width: =34
                 X: =724
                 Y: =238
-                ZIndex: =30
+                ZIndex: =22
 
         Group12_2 As group:
             Height: =5
@@ -1030,7 +1026,7 @@ Editar_Preg As screen:
                 Width: =240
                 X: =25
                 Y: =240
-                ZIndex: =6
+                ZIndex: =28
 
             AddMediaButton1_2 As addMedia:
                 ChangePictureText: ="Cambiar Imagen"
@@ -1041,7 +1037,7 @@ Editar_Preg As screen:
                 Width: =200
                 X: =45
                 Y: =447
-                ZIndex: =7
+                ZIndex: =29
 
             Icon10_12 As icon.CancelBadge:
                 Color: =RGBA(255, 0, 0, 1)
@@ -1052,7 +1048,7 @@ Editar_Preg As screen:
                 Width: =34
                 X: =211
                 Y: =240
-                ZIndex: =32
+                ZIndex: =30
 
         Group18_2 As group:
             Height: =5
@@ -1067,7 +1063,7 @@ Editar_Preg As screen:
                 Width: =240
                 X: =796
                 Y: =240
-                ZIndex: =15
+                ZIndex: =9
 
             AddMediaButton4_2 As addMedia:
                 ChangePictureText: ="Cambiar Imagen"
@@ -1078,7 +1074,7 @@ Editar_Preg As screen:
                 Width: =200
                 X: =816
                 Y: =447
-                ZIndex: =16
+                ZIndex: =10
 
             Icon10_14 As icon.CancelBadge:
                 Color: =RGBA(255, 0, 0, 1)
@@ -1089,7 +1085,7 @@ Editar_Preg As screen:
                 Width: =34
                 X: =982
                 Y: =240
-                ZIndex: =33
+                ZIndex: =24
 
         Group19_2 As group:
             Height: =5
@@ -1104,7 +1100,7 @@ Editar_Preg As screen:
                 Width: =240
                 X: =1067
                 Y: =240
-                ZIndex: =18
+                ZIndex: =11
 
             AddMediaButton5_2 As addMedia:
                 ChangePictureText: ="Cambiar Imagen"
@@ -1115,7 +1111,7 @@ Editar_Preg As screen:
                 Width: =200
                 X: =1087
                 Y: =447
-                ZIndex: =19
+                ZIndex: =12
 
             Icon10_15 As icon.CancelBadge:
                 Color: =RGBA(255, 0, 0, 1)
@@ -1126,7 +1122,7 @@ Editar_Preg As screen:
                 Width: =34
                 X: =1253
                 Y: =240
-                ZIndex: =34
+                ZIndex: =25
 
     Icon1_8 As icon.BackArrow:
         DisplayMode: =
