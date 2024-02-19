@@ -1532,6 +1532,55 @@
                         Y: =51
                         ZIndex: =16
 
+            Group10_2 As group:
+                Height: =5
+                Width: =5
+                X: =35
+                Y: =34
+                ZIndex: =6
+
+                Dropdown2_4 As dropdown:
+                    Items: |+
+                        =Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion),ID_Maq),Value)
+                        
+                        
+                        
+                    Width: =195
+                    X: =40
+                    Y: =47
+                    ZIndex: =2
+
+                Label20_10 As label:
+                    FontWeight: =FontWeight.Bold
+                    Text: ="Activo.No"
+                    Width: =195
+                    X: =40
+                    Y: =13
+                    ZIndex: =4
+
+            Group11_2 As group:
+                Height: =5
+                Width: =5
+                X: =35
+                Y: =34
+                ZIndex: =7
+
+                Dropdown3_2 As dropdown:
+                    Items: |
+                        =Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion, ID_Maq = Dropdown2_4.SelectedText.Value),Clas_Mantenimineto),Value)
+                    Width: =213
+                    X: =257
+                    Y: =47
+                    ZIndex: =3
+
+                Label20_11 As label:
+                    FontWeight: =FontWeight.Bold
+                    Text: ="Clase de MTTO"
+                    Width: =213
+                    X: =257
+                    Y: =13
+                    ZIndex: =5
+
     Label3_13 As label:
         Align: =Align.Center
         DisplayMode: =DisplayMode.View
