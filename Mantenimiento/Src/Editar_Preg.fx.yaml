@@ -648,7 +648,7 @@ Editar_Preg As screen:
             Fill: =RGBA(141, 198, 63, 1)
             Height: =49
             OnSelect: |+
-                =If(IsBlank(Dropdown3_3.SelectedText.Value) || IsBlank(TextInput3_2.Text), Notify("No se permiten campos vacíos",NotificationType.Error),
+                =/*If(IsBlank(Dropdown3_3.SelectedText.Value) || IsBlank(TextInput3_2.Text), Notify("No se permiten campos vacíos",NotificationType.Error),
                 Patch(PreventivSure_PreguntasMP,Defaults(PreventivSure_PreguntasMP),
                 {Activo_No:Dropdown2_5.SelectedText.Value},
                 {Nom_Equipo:Dropdown2_6.SelectedText.Value},
@@ -665,7 +665,7 @@ Editar_Preg As screen:
                 Reset(AddMediaButton2_2);
                 Reset(AddMediaButton3_2);
                 Reset(AddMediaButton4_2);
-                Reset(AddMediaButton5_2););
+                Reset(AddMediaButton5_2););*/
                 
                 //Notify("Se ha registrado",NotificationType.Success);
                 
