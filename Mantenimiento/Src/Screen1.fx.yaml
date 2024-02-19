@@ -1412,6 +1412,7 @@
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
                     ShowScrollbar: =false
+                    TemplateFill: =If(ThisItem.IsSelected,RGBA(186,192,208,1), RGBA(0,0,0,0))
                     TemplatePadding: =0
                     TemplateSize: =439
                     Width: =1320
@@ -1539,6 +1540,7 @@
                         Color: =RGBA(233, 165, 43, 1)
                         Icon: =Icon.Edit
                         OnSelect: =Select(Parent)
+                        Visible: =If(ThisItem.IsSelected,true)
                         X: =1110
                         Y: =19
                         ZIndex: =13
@@ -1577,6 +1579,7 @@
                         Icon: =Icon.Trash
                         OnSelect: |-
                             =UpdateContext({BtnEliminarConfirm:true})
+                        Visible: =If(ThisItem.IsSelected,true)
                         X: =1230
                         Y: =16
                         ZIndex: =17
