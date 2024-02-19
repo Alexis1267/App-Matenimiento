@@ -1,0 +1,1420 @@
+Agregar_Preg_2 As screen:
+    Fill: =RGBA(21, 44, 115, 1)
+    OnVisible: |-
+        =/*//IMG1
+        Set(ImgName1,Concatenate("AyudaVisual_1-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+        
+            // Get file1 binary data and convert it to base64
+            Set(attachmentImgValue1, JSON(UploadedImage1.Image, JSONFormat.IncludeBinaryData));
+        
+            Set(attachmentImg1Base64Only, Mid(attachmentImgValue1, Find(",", attachmentImgValue1)+1, Len(attachmentImgValue1) - Find(",", attachmentImgValue1)-1 ));
+        
+            // Upload file1 and get url
+        //Set(IMG1,Flow_Imagenes_Actividades.Run(ImgName1,attachmentImg1Base64Only).sharepointfilelink);
+        
+        
+        ////////////////////////////////////////////////////////////
+        //IMG2
+        Set(ImgName2,Concatenate("AyudaVisual_2-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+        
+            // Get file1 binary data and convert it to base64
+            Set(attachmentImg2Value1, JSON(UploadedImage2.Image, JSONFormat.IncludeBinaryData));
+        
+            Set(attachmentImg2Base64Only, Mid(attachmentImg2Value1, Find(",", attachmentImg2Value1)+1, Len(attachmentImg2Value1) - Find(",", attachmentImg2Value1)-1 ));
+        
+            // Upload file1 and get url
+        //Set(IMG2,Flow_Imagenes_Actividades.Run(ImgName2,attachmentImg2Base64Only).sharepointfilelink);
+        
+        ////////////////////////////////////////////////////////////
+        //IMG3
+        Set(ImgName3,Concatenate("AyudaVisual_3-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+        
+            // Get file1 binary data and convert it to base64
+            Set(attachmentImg3Value1, JSON(UploadedImage3.Image, JSONFormat.IncludeBinaryData));
+        
+            Set(attachmentImg3Base64Only, Mid(attachmentImg3Value1, Find(",", attachmentImg3Value1)+1, Len(attachmentImg3Value1) - Find(",", attachmentImg3Value1)-1 ));
+        
+            // Upload file1 and get url
+        //Set(IMG3,Flow_Imagenes_Actividades.Run(ImgName3,attachmentImg3Base64Only).sharepointfilelink);
+        
+        ///////////////////////////////////////////////////////////
+        //IMG4
+        Set(ImgName4,Concatenate("AyudaVisual_4-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+        
+            // Get file1 binary data and convert it to base64
+            Set(attachmentImg4Value1, JSON(UploadedImage4.Image, JSONFormat.IncludeBinaryData));
+        
+            Set(attachmentImg4Base64Only, Mid(attachmentImg4Value1, Find(",", attachmentImg4Value1)+1, Len(attachmentImg4Value1) - Find(",", attachmentImg4Value1)-1 ));
+        
+            // Upload file1 and get url
+        //Set(IMG4,Flow_Imagenes_Actividades.Run(ImgName4,attachmentImg4Base64Only).sharepointfilelink);
+        
+        ///////////////////////////////////////////////////////////
+        //IMG5
+        Set(ImgName5,Concatenate("AyudaVisual_5-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+        
+            // Get file1 binary data and convert it to base64
+            Set(attachmentImg5Value1, JSON(UploadedImage5.Image, JSONFormat.IncludeBinaryData));
+        
+            Set(attachmentImg5Base64Only, Mid(attachmentImg5Value1, Find(",", attachmentImg5Value1)+1, Len(attachmentImg5Value1) - Find(",", attachmentImg5Value1)-1 ));
+        
+            // Upload file1 and get url
+        //Set(IMG5,Flow_Imagenes_Actividades.Run(ImgName5,attachmentImg5Base64Only).sharepointfilelink);*/
+
+    Titulo_26 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =80
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Width: =1330
+        X: =20
+        Y: =18
+        ZIndex: =1
+
+        Label3_14 As label:
+            Align: =Align.Center
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =80
+            Size: =30
+            Text: ="AGREGAR NUEVA ACTIVIDAD"
+            Width: =1329
+            ZIndex: =1
+
+        Image2_6 As image:
+            Height: =80
+            Image: =carrier_logo_300
+            Width: =158
+            X: =1161
+            ZIndex: =2
+
+    Container1_49 As groupContainer.manualLayoutContainer:
+        Height: =768
+        PaddingRight: =0.00
+        PaddingTop: =0.00
+        Visible: =ShowPopUp
+        Width: =1366
+        X: =0.00
+        Y: |
+            =0
+        ZIndex: =5
+
+        HtmlText3_63 As htmlViewer:
+            Height: =768
+            HtmlText: |-
+                ="<div style=""
+                position: absolute;
+                  text-align: center;
+                  color: #fff;
+                  box-shadow: 0px 0px 25px #222;
+                  backdrop-filter: blur(10px);
+                height:"& 1080 &"px;
+                width:"& 1920 &"px;""></div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Size: =14.04
+            Visible: =ShowPopUp
+            Width: =1366
+            ZIndex: =1
+
+        Container2_49 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(227, 234, 243, 1)
+            Height: =595
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Width: =1272.89
+            X: =56
+            Y: =112
+            ZIndex: =2
+
+            Rectangle3_51 As rectangle:
+                Fill: =RGBA(21, 44, 115, 1)
+                Height: =65
+                Width: =1272.89
+                X: =0.00
+                ZIndex: =4
+
+            Button7_61 As button:
+                BorderStyle: =BorderStyle.None
+                DisplayMode: |
+                    =//Validacion de boton de que debe cumplir y escribir en justificacion
+                    If(IsBlank(TextInput1_257.Text) || IsBlank(Dropdown4_50.Selected.Value) ,DisplayMode.Disabled,DisplayMode.Edit) //Lo que dice este codigo es de que si el input text de la justificacion esta en blanco, que el boton sea disable y si tiene algo escrito, que se active el boton para seguir con la accion
+                    
+                    
+                    //BOTONES
+                Fill: =RGBA(97, 181, 73, 1)
+                FontWeight: =FontWeight.Bold
+                OnSelect: |+
+                    =
+                    // Set file1 name
+                        Set(fileName1, Concatenate(TextInput1_254.Text &"_1",Now(),".jpg"));
+                    
+                     
+                    
+                        // Get file1 binary data and convert it to base64
+                        Set(attachmentValue1, JSON(UploadedImage7_49.Image, JSONFormat.IncludeBinaryData));
+                        Set(attachment1Base64Only, Mid(attachmentValue1, Find(",", attachmentValue1)+1, Len(attachmentValue1) - Find(",", attachmentValue1)-1 ));
+                    
+                     
+                    
+                        // Upload file1 and get url
+                        //Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
+                    
+                    Set(attachment1Link,Flujo_ImagenesMP.Run(fileName1,attachment1Base64Only).sharepointfilelink);
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    //INGRESAR DATOS A LA TABLA HALLAZGOS
+                    
+                    Patch(CMXE_TablaH_MP,Defaults(CMXE_TablaH_MP),
+                    {
+                    Asignado: Dropdown4_50.Selected.Value,
+                    Localizacion: TextInput1_253.Text,
+                    Proc_No: TextInput1_254.Text,
+                    Nom_Maquina:TextInput1_255.Text,
+                    Clas_Mantenimiento: TextInput1_256.Text,
+                    Fecha_Inicio: Now(),
+                    Justificacion: TextInput1_257.Text,
+                    Imagenes: attachment1Link,
+                    Actividad: ACT_48.Text,
+                    Estatus: "Abierto"
+                    });
+                    
+                    Notify("El reporte se ha enviado con éxito.", NotificationType.Success);
+                    
+                    
+                    //Deshabilitar botonHallazgo
+                    UpdateContext({BotonHallazgo: true});
+                    
+                    UpdateContext({ShowPopUp: false}); //En este boton lo que debera de ser es enviar los datos que traje y cerrar el ModalPopUp
+                    Reset(TextInput1_257);
+                    Reset(AddMediaButton6_49);
+                    
+                    //BOTONES
+                    
+                    
+                    
+                    
+                    
+                    
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =19.14
+                Text: ="Enviar"
+                Width: =204.07
+                X: =534.40
+                Y: =538
+                ZIndex: =5
+
+            Icon4_50 As icon.Cancel:
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =65
+                Icon: =Icon.Cancel
+                OnSelect: |+
+                    =UpdateContext({ShowPopUp: false});
+                    Reset(TextInput1_257);
+                    Reset(AddMediaButton6_49);
+                    Reset(Dropdown4_50);
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =81.63
+                X: =1191.25
+                ZIndex: =6
+
+            Image4_50 As image:
+                Height: =65
+                Image: =carrier_logo_300
+                PaddingRight: =0.00
+                PaddingTop: =0.00
+                Width: =150.49
+                X: =25.51
+                ZIndex: =7
+
+            Label9_497 As label:
+                Color: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =65
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =35
+                Text: ="Reporte de hallazgo"
+                Width: =531.85
+                X: =369.88
+                ZIndex: =8
+
+            Group13_53 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_498 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="Localización:"
+                    Width: =233.41
+                    X: =25.51
+                    Y: =65
+                    ZIndex: =10
+
+                TextInput1_253 As text:
+                    Default: =Dato_Localizacion
+                    DisplayMode: =DisplayMode.View
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =311.19
+                    X: =25.51
+                    Y: =105
+                    ZIndex: =11
+
+            Group12_50 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_499 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="Nombre del activo:"
+                    Width: =278.06
+                    X: =404.31
+                    Y: =65
+                    ZIndex: =12
+
+                TextInput1_254 As text:
+                    Default: =Dato_Proc_No
+                    DisplayMode: =DisplayMode.View
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =369.88
+                    X: =404.31
+                    Y: =105
+                    ZIndex: =13
+
+            Group10_49 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_501 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="Nombre de la maquina:"
+                    Width: =295.91
+                    X: =25.51
+                    Y: =155
+                    ZIndex: =14
+
+                TextInput1_255 As text:
+                    Default: =Dato_NomMaquina
+                    DisplayMode: =DisplayMode.View
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =470.62
+                    X: =25.51
+                    Y: =195
+                    ZIndex: =15
+
+            Group11_49 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_502 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="Clase de mantenimiento:"
+                    Width: =318.86
+                    X: =580.33
+                    Y: =155
+                    ZIndex: =16
+
+                TextInput1_256 As text:
+                    Default: =Dato_ClassMtto
+                    DisplayMode: =DisplayMode.View
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =438.75
+                    X: =580.33
+                    Y: =195
+                    ZIndex: =17
+
+            Group14_49 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                ACT_48 As text:
+                    Default: =ActividadMP
+                    DisplayMode: =DisplayMode.View
+                    Height: =68
+                    Mode: =TextMode.MultiLine
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Width: =1200.18
+                    X: =25.51
+                    Y: =283
+                    ZIndex: =9
+
+                Label9_503 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="Actividad:"
+                    Width: =191.32
+                    X: =25.51
+                    Y: =243
+                    ZIndex: =18
+
+            Group15_49 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                Label9_504 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =48
+                    PaddingRight: =6.37
+                    PaddingTop: =6.37
+                    Size: =16.58
+                    Text: |-
+                        ="*Justificación:"
+                    Width: =443.84
+                    X: =20
+                    Y: =351
+                    ZIndex: =2
+
+                TextInput1_257 As text:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    BorderThickness: =1
+                    Clear: =true
+                    Default: =
+                    Height: =120
+                    HintText: ="Agregue una justificación"
+                    Mode: =TextMode.MultiLine
+                    PaddingRight: =6.59
+                    PaddingTop: =6.59
+                    Reset: =true
+                    Size: =17.13
+                    Width: =632.62
+                    X: =21
+                    Y: =399
+                    ZIndex: =3
+
+            AddMediaWithImage6_49 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =19
+
+                UploadedImage7_49 As image:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    Height: =139
+                    Image: =If(IsBlank(AddMediaButton6_49.Media), SampleImage, AddMediaButton6_49.Media)
+                    PaddingRight: =0.00
+                    PaddingTop: =0.00
+                    Width: =239.78
+                    X: =988.47
+                    Y: =380
+                    ZIndex: =19
+
+                AddMediaButton6_49 As addMedia:
+                    BorderColor: =RGBA(0, 0, 0, 1)
+                    ChangePictureText: ="Cambiar fotografia"
+                    Height: =64
+                    Size: =19.77
+                    Text: ="Adjuntar evidencia"
+                    Width: =247.77
+                    X: =711
+                    Y: =417
+                    ZIndex: =20
+
+            Label9_500 As label:
+                FontWeight: =FontWeight.Bold
+                PaddingRight: =6.37
+                PaddingTop: =6.37
+                Size: =16.58
+                Text: |-
+                    ="Persona que reporta hallazgo:"
+                Width: =369.88
+                X: =858.36
+                Y: =65
+                ZIndex: =21
+
+            Dropdown4_50 As dropdown:
+                BorderColor: =RGBA(0, 40, 85, 1)
+                BorderThickness: =1
+                ChevronBackground: =RGBA(21, 44, 115, 1)
+                Default: =
+                Items: |+
+                    = 
+                     //Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10) & Char(10) & Label12_15.Text)
+                     //Split(Label12_15.Text, Char(10))
+                    
+                    Filter(Split(Label12_15.Text, Char(10)), !IsBlank(Value))
+                    
+                    
+                     
+                    
+                    //Concatenate(DropdownAsig,DropdownInvolu)
+                    
+                    //Split(Concat(Gallery2.AllItems , "" & Title2 & Char(10)),Concat(AsignadoOp,"" & NombreOp & Char(10), Char(10)))
+                    
+                     //Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)&Operador), Char(10))
+                    
+                    //Concatenate(Split(Concat(Gallery2.AllItems, "" & Title2 & Char(10)), Char(10)))
+                    
+                    /*Split(
+                        Concatenate(
+                            Text(Title2, "[$-en-US]0") &Char(10) & Text(Operador, "[$-en-US]0") & Char(10)
+                        ),
+                        Char(10)
+                    )*/
+                    
+                    
+                    
+                    
+                    
+                    
+                PaddingRight: =12.76
+                PaddingTop: =12.76
+                Size: =16.58
+                Width: =367.32
+                X: =858.36
+                Y: =105
+                ZIndex: =22
+
+    Titulo_27 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =631
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Width: =1330
+        X: =20
+        Y: =117
+        ZIndex: =6
+
+        TextInput2_2 As text:
+            Default: =""
+            Visible: =BotonZona
+            Width: =245
+            X: =458
+            Y: =117
+            ZIndex: =3
+
+        Label20_14 As label:
+            FontWeight: =FontWeight.Bold
+            Text: ="Zona"
+            Width: =245
+            X: =458
+            Y: =6
+            ZIndex: =22
+
+        Dropdown4_2 As dropdown:
+            Default: ="N/A"
+            DisplayMode: =If(BotonZona,DisplayMode.Disabled,DisplayMode.Edit)
+            Items: |+
+                =//Sort(Distinct(Filter(PreventivSure_PreguntasMP,Localizacion = BtnLocalizacion,Activo_No = Dropdown2.SelectedText.Value,Clase_MTTO = Dropdown3.SelectedText.Value),Sub_Tarea),Value)
+                
+                If(
+                    CountRows(
+                        Filter(
+                            Sort(
+                                Distinct(
+                                    Filter(
+                                        PreventivSure_PreguntasMP,
+                                        Localizacion = BtnLocalizacion,
+                                        Activo_No = Dropdown2_5.SelectedText.Value,
+                                        Clase_MTTO = Dropdown3_3.SelectedText.Value
+                                    ),
+                                    Sub_Tarea
+                                ),
+                                Value
+                            ),
+                            Value = "N/A"
+                        )
+                    ) = 0,
+                    Concatenate(
+                        Sort(
+                            Distinct(
+                                Filter(
+                                    PreventivSure_PreguntasMP,
+                                    Localizacion = BtnLocalizacion,
+                                    Activo_No = Dropdown2_5.SelectedText.Value,
+                                    Clase_MTTO = Dropdown3_3.SelectedText.Value
+                                ),
+                                Sub_Tarea
+                            ),
+                            Value
+                        ),
+                        ["N/A"]
+                    ),
+                    Sort(
+                        Distinct(
+                            Filter(
+                                PreventivSure_PreguntasMP,
+                                Localizacion = BtnLocalizacion,
+                                Activo_No = Dropdown2_5.SelectedText.Value,
+                                Clase_MTTO = Dropdown3_3.SelectedText.Value
+                            ),
+                            Sub_Tarea
+                        ),
+                        Value
+                    )
+                )
+                
+                
+            Width: =245
+            X: =458
+            Y: =46
+            ZIndex: =24
+
+        Group10_3 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =24
+
+            Dropdown2_5 As dropdown:
+                Items: |+
+                    =Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion),ID_Maq),Value)
+                    
+                    
+                    
+                Width: =195
+                X: =5
+                Y: =46
+                ZIndex: =1
+
+            Label20_12 As label:
+                FontWeight: =FontWeight.Bold
+                Text: ="Activo.No"
+                Width: =195
+                X: =5
+                Y: =6
+                ZIndex: =20
+
+        Group11_3 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =24
+
+            Dropdown3_3 As dropdown:
+                Items: |
+                    =Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion, ID_Maq = Dropdown2_5.SelectedText.Value),Clas_Mantenimineto),Value)
+                Width: =213
+                X: =222
+                Y: =46
+                ZIndex: =2
+
+            Label20_13 As label:
+                FontWeight: =FontWeight.Bold
+                Text: ="Clase de MTTO"
+                Width: =213
+                X: =222
+                Y: =6
+                ZIndex: =21
+
+        Group13_2 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =24
+
+            TextInput3_2 As text:
+                Default: =""
+                DisplayMode: |
+                    =
+                Height: =125
+                Mode: =TextMode.MultiLine
+                Width: =585
+                X: =733
+                Y: =46
+                ZIndex: =4
+
+            Label20_15 As label:
+                FontWeight: =FontWeight.Bold
+                Text: ="Nueva Actividad"
+                Width: =585
+                X: =733
+                Y: =6
+                ZIndex: =23
+
+        Icon1_9 As icon.Add:
+            Height: =27
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({BotonZona:!BotonZona})
+            Width: =28
+            X: =458
+            Y: =90
+            ZIndex: =26
+
+        Label21_2 As label:
+            Height: =27
+            Text: ="Agregar nueva Zona"
+            Width: =218
+            X: =486
+            Y: =90
+            ZIndex: =27
+
+        Button13_2 As button:
+            Fill: =RGBA(141, 198, 63, 1)
+            Height: =49
+            OnSelect: |+
+                =If(IsBlank(Dropdown3_3.SelectedText.Value) || IsBlank(TextInput3_2.Text), Notify("No se permiten campos vacíos",NotificationType.Error),
+                Patch(PreventivSure_PreguntasMP,Defaults(PreventivSure_PreguntasMP),
+                {Activo_No:Dropdown2_5.SelectedText.Value},
+                {Nom_Equipo:Dropdown2_6.SelectedText.Value},
+                {img1:UploadedImage1_2.Image},
+                {img2:UploadedImage2_2.Image},
+                {img3:UploadedImage3_2.Image},
+                {img4:UploadedImage4_2.Image},
+                {img5:UploadedImage5_2.Image}
+                ));
+                
+                If(IsBlank(Dropdown3_3.SelectedText.Value) || IsBlank(TextInput3_2.Text), Notify("No se permiten campos vacíos",NotificationType.Error),
+                SpIn_PreventivSure_InsertarActividadDatos.Run(TextInput3_2.Text,Dropdown3_3.SelectedText.Value,If(Dropdown4_2.DisplayMode = DisplayMode.Disabled,TextInput2_2.Text,Dropdown4_2.SelectedText.Value),Dropdown2_5.SelectedText.Value) && Notify("Se",NotificationType.Success) && Reset(TextInput3_2);
+                Reset(AddMediaButton1_2);
+                Reset(AddMediaButton2_2);
+                Reset(AddMediaButton3_2);
+                Reset(AddMediaButton4_2);
+                Reset(AddMediaButton5_2););
+                
+                //Notify("Se ha registrado",NotificationType.Success);
+                
+                
+                
+                /*
+                //IMG1
+                Set(ImgName1,Concatenate("AyudaVisual_1-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+                
+                    // Get file1 binary data and convert it to base64
+                    Set(attachmentImgValue1, JSON(UploadedImage1.Image, JSONFormat.IncludeBinaryData));
+                
+                    Set(attachmentImg1Base64Only, Mid(attachmentImgValue1, Find(",", attachmentImgValue1)+1, Len(attachmentImgValue1) - Find(",", attachmentImgValue1)-1 ));
+                
+                //IMG2
+                Set(ImgName2,Concatenate("AyudaVisual_2-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+                
+                    // Get file1 binary data and convert it to base64
+                    Set(attachmentImg2Value1, JSON(UploadedImage2.Image, JSONFormat.IncludeBinaryData));
+                
+                    Set(attachmentImg2Base64Only, Mid(attachmentImg2Value1, Find(",", attachmentImg2Value1)+1, Len(attachmentImg2Value1) - Find(",", attachmentImg2Value1)-1 ));
+                
+                
+                //IMG3
+                Set(ImgName3,Concatenate("AyudaVisual_3-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+                
+                    // Get file1 binary data and convert it to base64
+                    Set(attachmentImg3Value1, JSON(UploadedImage3.Image, JSONFormat.IncludeBinaryData));
+                
+                    Set(attachmentImg3Base64Only, Mid(attachmentImg3Value1, Find(",", attachmentImg3Value1)+1, Len(attachmentImg3Value1) - Find(",", attachmentImg3Value1)-1 ));
+                
+                //IMG4
+                Set(ImgName4,Concatenate("AyudaVisual_4-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+                
+                    // Get file1 binary data and convert it to base64
+                    Set(attachmentImg4Value1, JSON(UploadedImage4.Image, JSONFormat.IncludeBinaryData));
+                
+                    Set(attachmentImg4Base64Only, Mid(attachmentImg4Value1, Find(",", attachmentImg4Value1)+1, Len(attachmentImg4Value1) - Find(",", attachmentImg4Value1)-1 ));
+                
+                //IMG5
+                Set(ImgName5,Concatenate("AyudaVisual_5-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+                
+                    // Get file1 binary data and convert it to base64
+                    Set(attachmentImg5Value1, JSON(UploadedImage5.Image, JSONFormat.IncludeBinaryData));
+                
+                    Set(attachmentImg5Base64Only, Mid(attachmentImg5Value1, Find(",", attachmentImg5Value1)+1, Len(attachmentImg5Value1) - Find(",", attachmentImg5Value1)-1 ));
+                
+                
+                */
+                /*
+                Patch(PreventivSure_PreguntasMP, Defaults(PreventivSure_PreguntasMP),
+                {img1:UploadedImage1.Image},
+                {img2:UploadedImage2.Image},
+                {img3:UploadedImage3.Image},
+                {img4:UploadedImage4.Image},
+                {img5:UploadedImage5.Image});
+                */
+                /*
+                
+                //AGREGAR NUEVA ACTIVIDAD A PRENSAS
+                If(IsBlank(TextInput3.Text),Notify("No puedes dejar campos vacios",NotificationType.Error),
+                SpIn_PreventivSure_InsertarActividadDatos.Run(
+                Dropdown2.SelectedText.Value,
+                Dropdown3.SelectedText.Value,
+                If(Dropdown4.DisplayMode = DisplayMode.Disabled,TextInput2.Text,Dropdown4.SelectedText.Value),
+                TextInput3.Text, UploadedImage1.Image,UploadedImage2.Image,UploadedImage3.Image,UploadedImage4.Image,UploadedImage5.Image),Notify("Se ha registraro la nueva actividad correctamente.",NotificationType.Success));
+                */
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                /*//IMG1
+                Set(ImgName1,Concatenate("AyudaVisual_1-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+                
+                    // Get file1 binary data and convert it to base64
+                    Set(attachmentImgValue1, JSON(UploadedImage1.Image, JSONFormat.IncludeBinaryData));
+                
+                    Set(attachmentImg1Base64Only, Mid(attachmentImgValue1, Find(",", attachmentImgValue1)+1, Len(attachmentImgValue1) - Find(",", attachmentImgValue1)-1 ));
+                
+                    // Upload file1 and get url
+                Set(IMG1,Flow_Imagenes_Actividades.Run(ImgName1,attachmentImg1Base64Only).sharepointfilelink);
+                
+                
+                ////////////////////////////////////////////////////////////
+                //IMG2
+                Set(ImgName2,Concatenate("AyudaVisual_2-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+                
+                    // Get file1 binary data and convert it to base64
+                    Set(attachmentImg2Value1, JSON(UploadedImage2.Image, JSONFormat.IncludeBinaryData));
+                
+                    Set(attachmentImg2Base64Only, Mid(attachmentImg2Value1, Find(",", attachmentImg2Value1)+1, Len(attachmentImg2Value1) - Find(",", attachmentImg2Value1)-1 ));
+                
+                    // Upload file1 and get url
+                Set(IMG2,Flow_Imagenes_Actividades.Run(ImgName2,attachmentImg2Base64Only).sharepointfilelink);
+                
+                ////////////////////////////////////////////////////////////
+                //IMG3
+                Set(ImgName3,Concatenate("AyudaVisual_3-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+                
+                    // Get file1 binary data and convert it to base64
+                    Set(attachmentImg3Value1, JSON(UploadedImage3.Image, JSONFormat.IncludeBinaryData));
+                
+                    Set(attachmentImg3Base64Only, Mid(attachmentImg3Value1, Find(",", attachmentImg3Value1)+1, Len(attachmentImg3Value1) - Find(",", attachmentImg3Value1)-1 ));
+                
+                    // Upload file1 and get url
+                Set(IMG3,Flow_Imagenes_Actividades.Run(ImgName3,attachmentImg3Base64Only).sharepointfilelink);
+                
+                ///////////////////////////////////////////////////////////
+                //IMG4
+                Set(ImgName4,Concatenate("AyudaVisual_4-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+                
+                    // Get file1 binary data and convert it to base64
+                    Set(attachmentImg4Value1, JSON(UploadedImage4.Image, JSONFormat.IncludeBinaryData));
+                
+                    Set(attachmentImg4Base64Only, Mid(attachmentImg4Value1, Find(",", attachmentImg4Value1)+1, Len(attachmentImg4Value1) - Find(",", attachmentImg4Value1)-1 ));
+                
+                    // Upload file1 and get url
+                Set(IMG4,Flow_Imagenes_Actividades.Run(ImgName4,attachmentImg4Base64Only).sharepointfilelink);
+                
+                ///////////////////////////////////////////////////////////
+                //IMG5
+                Set(ImgName5,Concatenate("AyudaVisual_5-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
+                
+                    // Get file1 binary data and convert it to base64
+                    Set(attachmentImg5Value1, JSON(UploadedImage5.Image, JSONFormat.IncludeBinaryData));
+                
+                    Set(attachmentImg5Base64Only, Mid(attachmentImg5Value1, Find(",", attachmentImg5Value1)+1, Len(attachmentImg5Value1) - Find(",", attachmentImg5Value1)-1 ));
+                
+                    // Upload file1 and get url
+                Set(IMG5,Flow_Imagenes_Actividades.Run(ImgName5,attachmentImg5Base64Only).sharepointfilelink);
+                */
+                
+                
+                
+            Text: ="Registrar nueva actividad"
+            Width: =270
+            X: =523
+            Y: =567
+            ZIndex: =28
+
+        Dropdown2_6 As dropdown:
+            DisplayMode: =DisplayMode.Disabled
+            Items: |+
+                =Sort(Distinct(Filter(CMXE_MP_N,ID_Maq = Dropdown2_5.SelectedText.Value),Nom_Equipo),Value)
+                
+                
+                
+            Width: =223
+            X: =5
+            Y: =140
+            ZIndex: =29
+
+        Button7_2 As button:
+            Height: =64
+            OnSelect: |-
+                =UpdateContext({BtnVisualizarAct:true});
+                
+                Refresh(PreventivSure_PreguntasMP)
+            Text: ="Visualizar actividades existentes"
+            Width: =253
+            X: =18
+            Y: =552
+            ZIndex: =35
+
+        Label20_16 As label:
+            FontWeight: =FontWeight.Bold
+            Text: ="Nombre del equipo"
+            Width: =223
+            X: =5
+            Y: =100
+            ZIndex: =36
+
+        Group14_2 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =37
+
+            UploadedImage2_2 As image:
+                Height: =208
+                Image: =If(IsBlank(AddMediaButton2_2.Media), SampleImage, AddMediaButton2_2.Media)
+                Width: =240
+                X: =280
+                Y: =238
+                ZIndex: =9
+
+            AddMediaButton2_2 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =43
+                Size: =13
+                Text: ="Agregar imagen 2"
+                Width: =200
+                X: =300
+                Y: =447
+                ZIndex: =10
+
+            Icon10_13 As icon.CancelBadge:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.CancelBadge
+                OnSelect: |
+                    =Reset(AddMediaButton2_2)
+                Width: =34
+                X: =467
+                Y: =240
+                ZIndex: =31
+
+        Group15_2 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =37
+
+            UploadedImage3_2 As image:
+                Height: =208
+                Image: =If(IsBlank(AddMediaButton3_2.Media), SampleImage, AddMediaButton3_2.Media)
+                Width: =240
+                X: =538
+                Y: =238
+                ZIndex: =12
+
+            AddMediaButton3_2 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =43
+                Size: =13
+                Text: ="Agregar imagen 3"
+                Width: =200
+                X: =558
+                Y: =447
+                ZIndex: =13
+
+            Icon10_11 As icon.CancelBadge:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.CancelBadge
+                OnSelect: |
+                    =Reset(AddMediaButton3_2)
+                Width: =34
+                X: =724
+                Y: =238
+                ZIndex: =30
+
+        Group12_2 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =37
+
+            UploadedImage1_2 As image:
+                Height: =208
+                Image: =If(IsBlank(AddMediaButton1_2.Media), SampleImage, AddMediaButton1_2.Media)
+                Width: =240
+                X: =25
+                Y: =240
+                ZIndex: =6
+
+            AddMediaButton1_2 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =43
+                Size: =13
+                Text: ="Agregar imagen 1"
+                Width: =200
+                X: =45
+                Y: =447
+                ZIndex: =7
+
+            Icon10_12 As icon.CancelBadge:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.CancelBadge
+                OnSelect: |
+                    =Reset(AddMediaButton1_2)
+                Width: =34
+                X: =211
+                Y: =240
+                ZIndex: =32
+
+        Group18_2 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =37
+
+            UploadedImage4_2 As image:
+                Height: =208
+                Image: =If(IsBlank(AddMediaButton4_2.Media), SampleImage, AddMediaButton4_2.Media)
+                Width: =240
+                X: =796
+                Y: =240
+                ZIndex: =15
+
+            AddMediaButton4_2 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =43
+                Size: =13
+                Text: ="Agregar imagen 4"
+                Width: =200
+                X: =816
+                Y: =447
+                ZIndex: =16
+
+            Icon10_14 As icon.CancelBadge:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.CancelBadge
+                OnSelect: |
+                    =Reset(AddMediaButton4_2)
+                Width: =34
+                X: =982
+                Y: =240
+                ZIndex: =33
+
+        Group19_2 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =37
+
+            UploadedImage5_2 As image:
+                Height: =208
+                Image: =If(IsBlank(AddMediaButton5_2.Media), SampleImage, AddMediaButton5_2.Media)
+                Width: =240
+                X: =1067
+                Y: =240
+                ZIndex: =18
+
+            AddMediaButton5_2 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =43
+                Size: =13
+                Text: ="Agregar imagen 5"
+                Width: =200
+                X: =1087
+                Y: =447
+                ZIndex: =19
+
+            Icon10_15 As icon.CancelBadge:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.CancelBadge
+                OnSelect: |
+                    =Reset(AddMediaButton5_2)
+                Width: =34
+                X: =1253
+                Y: =240
+                ZIndex: =34
+
+    Icon1_8 As icon.BackArrow:
+        DisplayMode: =
+        Height: =75
+        Icon: =Icon.BackArrow
+        OnSelect: |-
+            =Navigate(Elegir,ScreenTransition.Fade);
+            Reset(TextInput3_2);
+            Reset(AddMediaButton1_2);
+            Reset(AddMediaButton2_2);
+            Reset(AddMediaButton3_2);
+            Reset(AddMediaButton4_2);
+            Reset(AddMediaButton5_2);
+        Width: =82
+        X: =20
+        Y: =20
+        ZIndex: =8
+
+    Container2_3 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(21, 44, 115, 1)
+        Height: =768
+        Visible: =BtnVisualizarAct
+        Width: =1366
+        ZIndex: =9
+
+        Titulo_19 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(237, 237, 237, 1)
+            Height: =80
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Width: =1330
+            X: =21
+            Y: =18
+            ZIndex: =1
+
+            Label3_10 As label:
+                Align: =Align.Center
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =80
+                Size: =30
+                Text: ="ACTIVIDADES CARGADAS"
+                Width: =1157
+                ZIndex: =1
+
+            Icon12_7 As icon.Cancel:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =80
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =UpdateContext({BtnVisualizarAct:false})
+                Width: =82
+                X: =1247
+                ZIndex: =2
+
+            Titulo_24 As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(237, 237, 237, 1)
+                Height: =80
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Width: =1330
+                ZIndex: =3
+
+                Label3_13 As label:
+                    Align: =Align.Center
+                    DisplayMode: =DisplayMode.View
+                    Fill: =RGBA(255, 255, 255, 1)
+                    FontWeight: =FontWeight.Bold
+                    Height: =80
+                    Size: =30
+                    Text: ="ACTIVIDADES CARGADAS"
+                    Width: =1330
+                    ZIndex: =1
+
+                Icon12_6 As icon.Cancel:
+                    Color: =RGBA(255, 0, 0, 1)
+                    Height: =80
+                    Icon: =Icon.Cancel
+                    OnSelect: |-
+                        =UpdateContext({BtnVisualizarAct:false})
+                    Width: =82
+                    X: =1247
+                    ZIndex: =2
+
+        "Gallery8_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            BorderColor: =RGBA(0, 13, 75, 1)
+            DelayItemLoading: =true
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =573
+            Items: |-
+                =Sort(
+                    Sort(
+                        Filter(
+                            Search(PreventivSure_PreguntasMP, Dropdown2_5.SelectedText.Value, "Activo_No"),
+                            Clase_MTTO = Dropdown3_3.SelectedText.Value
+                        ),
+                        Sub_Tarea
+                    ),
+                    Num_Pregunta
+                )
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =267
+            Width: =1330
+            X: =19
+            Y: =195
+            ZIndex: =2
+
+            Image6_15 As image:
+                Height: =150
+                Image: =ThisItem.img1
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =196
+                X: =102
+                Y: =117
+                ZIndex: =1
+
+            Title6_7 As label:
+                AutoHeight: =true
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Actividad
+                VerticalAlign: =VerticalAlign.Top
+                Width: =768
+                X: =51
+                Y: =59
+                ZIndex: =2
+
+            Separator5_3 As rectangle:
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =8
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =5
+
+            Rectangle9_3 As rectangle:
+                Height: =Parent.TemplateHeight - Separator5_3.Height
+                OnSelect: =Select(Parent)
+                Visible: =ThisItem.IsSelected
+                Width: =4
+                ZIndex: =6
+
+            Label22_3 As label:
+                OnSelect: =Select(Parent)
+                Text: =ThisItem.Num_Pregunta
+                X: =4
+                Y: =51
+                ZIndex: =7
+
+            Title6_6 As label:
+                AutoHeight: =true
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.Sub_Tarea
+                VerticalAlign: =VerticalAlign.Top
+                Width: =768
+                X: =40
+                Y: =27
+                ZIndex: =8
+
+            Image6_16 As image:
+                Height: =150
+                Image: =ThisItem.img2
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =196
+                X: =332
+                Y: =117
+                ZIndex: =9
+
+            Image6_17 As image:
+                Height: =150
+                Image: =ThisItem.img3
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =196
+                X: =569
+                Y: =117
+                ZIndex: =10
+
+            Image6_18 As image:
+                Height: =150
+                Image: =ThisItem.img4
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =196
+                X: =808
+                Y: =117
+                ZIndex: =11
+
+            Image6_19 As image:
+                Height: =150
+                Image: =ThisItem.img5
+                OnSelect: =Select(Parent)
+                RadiusBottomLeft: =8
+                RadiusBottomRight: =8
+                RadiusTopLeft: =8
+                RadiusTopRight: =8
+                Width: =196
+                X: =1044
+                Y: =117
+                ZIndex: =12
+
+        Titulo_25 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =56
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =1330
+            X: =19
+            Y: =118
+            ZIndex: =3
+
+            Label24_6 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =56
+                Text: |-
+                    ="Activo_No:"
+                Width: =102
+                X: =119
+                ZIndex: =1
+
+            TextInput4_4 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =Dropdown2_5.SelectedText.Value
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(237, 237, 237, 1)
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Width: =186
+                X: =232
+                Y: =8
+                ZIndex: =2
+
+            Label24_7 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =56
+                Text: |-
+                    ="Tipo de MTTO:"
+                Width: =142
+                X: =461
+                ZIndex: =3
+
+            TextInput4_5 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =Dropdown3_3.SelectedText.Value
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(237, 237, 237, 1)
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Width: =186
+                X: =616
+                Y: =8
+                ZIndex: =4
+
+            Icon13_4 As icon.Reload:
+                Height: =48
+                Icon: =Icon.Reload
+                OnSelect: =Refresh(PreventivSure_PreguntasMP)
+                Width: =61
+                Y: =4
+                ZIndex: =5
+
