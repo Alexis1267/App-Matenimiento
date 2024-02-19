@@ -1617,16 +1617,27 @@
                 ZIndex: =7
 
                 Button10 As button:
-                    Text: ="Button"
+                    Fill: =RGBA(166, 166, 166, 1)
+                    OnSelect: |-
+                        =UpdateContext({BtnEliminarConfirm:false})
+                    Text: ="Cancelar"
                     X: =66
                     Y: =273
                     ZIndex: =1
 
                 Button11 As button:
-                    Text: ="Button"
+                    Fill: =RGBA(184, 0, 0, 1)
+                    Text: ="Borrar"
                     X: =324
                     Y: =273
                     ZIndex: =2
+
+                Label28 As label:
+                    Height: =0
+                    Text: ="Text"
+                    X: =40
+                    Y: =81
+                    ZIndex: =3
 
             Group11_2 As group:
                 Height: =5
