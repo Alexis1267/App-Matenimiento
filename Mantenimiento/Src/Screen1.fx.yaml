@@ -1374,22 +1374,23 @@
                         )
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
+                    ShowScrollbar: =false
                     TemplatePadding: =0
                     TemplateSize: =439
                     Width: =1320
                     ZIndex: =1
 
                     Image6_10 As image:
-                        Height: =150
+                        Height: =211
                         Image: =ThisItem.img1
                         OnSelect: =Select(Parent)
                         RadiusBottomLeft: =8
                         RadiusBottomRight: =8
                         RadiusTopLeft: =8
                         RadiusTopRight: =8
-                        Width: =196
-                        X: =102
-                        Y: =117
+                        Width: =264
+                        X: =22
+                        Y: =204
                         ZIndex: =1
 
                     Title6_5 As label:
