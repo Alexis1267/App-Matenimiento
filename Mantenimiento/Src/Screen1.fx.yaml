@@ -1,15 +1,10 @@
 "Screen1 As screen.'phoneLayout_FluidGridWithHeaderPageLayout_ver3.0'":
 
-    RectQuickActionBar1 As rectangle:
-        Height: =88
-        Width: =Parent.Width
-        ZIndex: =1
-
     Canvas1 As fluidGrid.fluidGridWithBlankCard:
         BorderThickness: =0
         Height: =680
         Width: =Parent.Width
-        Y: =RectQuickActionBar1.Y + RectQuickActionBar1.Height
+        Y: =
         ZIndex: =3
 
         DataCard1 As dataCard:
@@ -17,8 +12,8 @@
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =0
             DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =659
+            Fill: =RGBA(21, 44, 115, 1)
+            Height: =789
             Width: =Parent.Width
             X: =0
             Y: =0
@@ -476,7 +471,7 @@
                 RadiusTopRight: =30
                 Width: =1330
                 X: =18
-                Y: =17
+                Y: =117
                 ZIndex: =3
 
                 TextInput2_1 As text:
@@ -1334,16 +1329,58 @@
                         Y: =4
                         ZIndex: =5
 
+            Container3 As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =84
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Width: =1330
+                X: =18
+                Y: =16
+                ZIndex: =6
+
+                Label27 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Height: =84
+                    Size: =25
+                    Text: ="CONTROL DE ACTIVIDADES"
+                    Width: =1258
+                    ZIndex: =1
+
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(21, 44, 115, 1)
             Height: =697
             Width: =1366
             X: =0
             Y: =1
             ZIndex: =2
+
+            Container3_1 As groupContainer.manualLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =84
+                RadiusBottomLeft: =30
+                RadiusBottomRight: =30
+                RadiusTopLeft: =30
+                RadiusTopRight: =30
+                Width: =1330
+                X: =20
+                Y: =4
+                ZIndex: =1
+
+                Label27_1 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Height: =84
+                    Size: =25
+                    Text: ="ACTIVIDADES CARGADAS"
+                    Width: =522
+                    ZIndex: =1
 
             Container1 As groupContainer.manualLayoutContainer:
                 Height: =558
@@ -1354,7 +1391,7 @@
                 Width: =1320
                 X: =20
                 Y: =106
-                ZIndex: =1
+                ZIndex: =2
 
                 "Gallery8_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                     BorderColor: =RGBA(0, 13, 75, 1)
@@ -1546,17 +1583,17 @@
                         
                         
                     Width: =195
-                    X: =40
-                    Y: =60
-                    ZIndex: =2
+                    X: =888
+                    Y: =43
+                    ZIndex: =3
 
                 Label20_10 As label:
                     FontWeight: =FontWeight.Bold
                     Text: ="Activo.No"
                     Width: =195
-                    X: =40
-                    Y: =26
-                    ZIndex: =4
+                    X: =888
+                    Y: =9
+                    ZIndex: =5
 
             Group11_2 As group:
                 Height: =5
@@ -1569,44 +1606,15 @@
                     Items: |
                         =Sort(Distinct(Filter(CMXE_MP_N,Localizacion = BtnLocalizacion, ID_Maq = Dropdown2_4.SelectedText.Value),Clas_Mantenimineto),Value)
                     Width: =213
-                    X: =257
-                    Y: =60
-                    ZIndex: =3
+                    X: =1105
+                    Y: =43
+                    ZIndex: =4
 
                 Label20_11 As label:
                     FontWeight: =FontWeight.Bold
                     Text: ="Clase de MTTO"
                     Width: =213
-                    X: =257
-                    Y: =26
-                    ZIndex: =5
-
-    Label3_13 As label:
-        Align: =Align.Center
-        DisplayMode: =DisplayMode.View
-        FontWeight: =FontWeight.Bold
-        Height: =47
-        Size: =30
-        Text: ="CONTROL DE ACTIVIDADES"
-        Width: =1329
-        X: =17
-        Y: =20
-        ZIndex: =4
-
-    Icon1_9 As icon.BackArrow:
-        DisplayMode: =
-        Height: =75
-        Icon: =Icon.BackArrow
-        OnSelect: |-
-            =Navigate(Elegir,ScreenTransition.Fade);
-            Reset(TextInput3_1);
-            Reset(AddMediaButton1_1);
-            Reset(AddMediaButton2_1);
-            Reset(AddMediaButton3_1);
-            Reset(AddMediaButton4_1);
-            Reset(AddMediaButton5_1);
-        Width: =82
-        X: =17
-        Y: =6
-        ZIndex: =5
+                    X: =1105
+                    Y: =9
+                    ZIndex: =6
 
