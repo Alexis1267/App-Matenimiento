@@ -550,8 +550,8 @@ Agregar_Preg As screen:
         TextInput2 As text:
             Default: =""
             Visible: =BotonZona
-            Width: =273
-            X: =430
+            Width: =245
+            X: =458
             Y: =117
             ZIndex: =3
 
@@ -937,44 +937,6 @@ Agregar_Preg As screen:
             Y: =100
             ZIndex: =36
 
-        Group12 As group:
-            Height: =5
-            Width: =5
-            X: =40
-            Y: =40
-            ZIndex: =37
-
-            UploadedImage1 As image:
-                Height: =180
-                Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
-                ImagePosition: =ImagePosition.Fill
-                Width: =200
-                X: =45
-                Y: =267
-                ZIndex: =6
-
-            AddMediaButton1 As addMedia:
-                ChangePictureText: ="Cambiar Imagen"
-                Fill: =RGBA(202, 202, 202, 1)
-                Height: =43
-                Size: =13
-                Text: ="Agregar imagen 1"
-                Width: =200
-                X: =45
-                Y: =447
-                ZIndex: =7
-
-            Icon10_2 As icon.CancelBadge:
-                Color: =RGBA(255, 0, 0, 1)
-                Height: =35
-                Icon: =Icon.CancelBadge
-                OnSelect: |
-                    =Reset(AddMediaButton1)
-                Width: =34
-                X: =211
-                Y: =267
-                ZIndex: =32
-
         Group14 As group:
             Height: =5
             Width: =5
@@ -983,12 +945,11 @@ Agregar_Preg As screen:
             ZIndex: =37
 
             UploadedImage2 As image:
-                Height: =180
+                Height: =208
                 Image: =If(IsBlank(AddMediaButton2.Media), SampleImage, AddMediaButton2.Media)
-                ImagePosition: =ImagePosition.Fill
-                Width: =200
-                X: =300
-                Y: =267
+                Width: =240
+                X: =280
+                Y: =238
                 ZIndex: =9
 
             AddMediaButton2 As addMedia:
@@ -1009,8 +970,8 @@ Agregar_Preg As screen:
                 OnSelect: |
                     =Reset(AddMediaButton2)
                 Width: =34
-                X: =463
-                Y: =267
+                X: =467
+                Y: =240
                 ZIndex: =31
 
         Group15 As group:
@@ -1021,12 +982,11 @@ Agregar_Preg As screen:
             ZIndex: =37
 
             UploadedImage3 As image:
-                Height: =180
+                Height: =208
                 Image: =If(IsBlank(AddMediaButton3.Media), SampleImage, AddMediaButton3.Media)
-                ImagePosition: =ImagePosition.Fill
-                Width: =200
-                X: =558
-                Y: =267
+                Width: =240
+                X: =538
+                Y: =238
                 ZIndex: =12
 
             AddMediaButton3 As addMedia:
@@ -1048,8 +1008,45 @@ Agregar_Preg As screen:
                     =Reset(AddMediaButton3)
                 Width: =34
                 X: =724
-                Y: =267
+                Y: =238
                 ZIndex: =30
+
+        Group12 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =37
+
+            UploadedImage1 As image:
+                Height: =208
+                Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+                Width: =240
+                X: =25
+                Y: =240
+                ZIndex: =6
+
+            AddMediaButton1 As addMedia:
+                ChangePictureText: ="Cambiar Imagen"
+                Fill: =RGBA(202, 202, 202, 1)
+                Height: =43
+                Size: =13
+                Text: ="Agregar imagen 1"
+                Width: =200
+                X: =45
+                Y: =447
+                ZIndex: =7
+
+            Icon10_2 As icon.CancelBadge:
+                Color: =RGBA(255, 0, 0, 1)
+                Height: =35
+                Icon: =Icon.CancelBadge
+                OnSelect: |
+                    =Reset(AddMediaButton1)
+                Width: =34
+                X: =211
+                Y: =240
+                ZIndex: =32
 
         Group18 As group:
             Height: =5
@@ -1059,12 +1056,11 @@ Agregar_Preg As screen:
             ZIndex: =37
 
             UploadedImage4 As image:
-                Height: =180
+                Height: =208
                 Image: =If(IsBlank(AddMediaButton4.Media), SampleImage, AddMediaButton4.Media)
-                ImagePosition: =ImagePosition.Fill
-                Width: =200
-                X: =816
-                Y: =267
+                Width: =240
+                X: =796
+                Y: =240
                 ZIndex: =15
 
             AddMediaButton4 As addMedia:
@@ -1086,7 +1082,7 @@ Agregar_Preg As screen:
                     =Reset(AddMediaButton4)
                 Width: =34
                 X: =982
-                Y: =267
+                Y: =240
                 ZIndex: =33
 
         Group19 As group:
@@ -1097,12 +1093,11 @@ Agregar_Preg As screen:
             ZIndex: =37
 
             UploadedImage5 As image:
-                Height: =180
+                Height: =208
                 Image: =If(IsBlank(AddMediaButton5.Media), SampleImage, AddMediaButton5.Media)
-                ImagePosition: =ImagePosition.Fill
-                Width: =200
-                X: =1087
-                Y: =267
+                Width: =240
+                X: =1067
+                Y: =240
                 ZIndex: =18
 
             AddMediaButton5 As addMedia:
@@ -1124,15 +1119,21 @@ Agregar_Preg As screen:
                     =Reset(AddMediaButton5)
                 Width: =34
                 X: =1253
-                Y: =267
+                Y: =240
                 ZIndex: =34
 
     Icon1_4 As icon.BackArrow:
         DisplayMode: =
         Height: =75
         Icon: =Icon.BackArrow
-        OnSelect: |
-            =Navigate(Elegir,ScreenTransition.Fade)
+        OnSelect: |-
+            =Navigate(Elegir,ScreenTransition.Fade);
+            Reset(TextInput3);
+            Reset(AddMediaButton1);
+            Reset(AddMediaButton2);
+            Reset(AddMediaButton3);
+            Reset(AddMediaButton4);
+            Reset(AddMediaButton5);
         Width: =82
         X: =20
         Y: =20
