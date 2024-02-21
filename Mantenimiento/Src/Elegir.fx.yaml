@@ -511,7 +511,7 @@ Elegir As screen:
         Button9 As button:
             Fill: =RGBA(141, 198, 63, 1)
             Height: =100
-            OnSelect: =Navigate(Agregar_Preg,ScreenTransition.Fade)
+            OnSelect: =Navigate(Screen1,ScreenTransition.Fade)
             Text: ="Agregar pregunta"
             Width: =162
             X: =174

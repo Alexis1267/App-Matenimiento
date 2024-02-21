@@ -669,7 +669,7 @@ Editar_Preg As screen:
                 
                 //Notify("Se ha registrado",NotificationType.Success);
                 
-                Patch(PreventivSure_PreguntasMP,{Id_Pregunta:Edit_Id},{img1:If(Image9.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage1_2),SampleImage,UploadedImage1_2.Image))})
+                Patch(PreventivSure_PreguntasMP,{Id_Pregunta:Edit_Id},{img1:If(Image9.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage1_2.Image),SampleImage,UploadedImage1_2.Image))})
                 
                 
                 
