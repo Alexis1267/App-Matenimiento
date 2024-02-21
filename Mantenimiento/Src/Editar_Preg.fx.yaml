@@ -1,7 +1,10 @@
 Editar_Preg As screen:
     Fill: =RGBA(21, 44, 115, 1)
     OnVisible: |-
-        =/*//IMG1
+        =UpdateContext({visibleimg1:true});
+        
+        
+        /*//IMG1
         Set(ImgName1,Concatenate("AyudaVisual_1-"&BtnLocalizacion&"-"&Dropdown2.SelectedText.Value&"-"&Dropdown3.SelectedText.Value&"_1",Now(),".jpg"));
         
             // Get file1 binary data and convert it to base64
@@ -80,7 +83,7 @@ Editar_Preg As screen:
             FontWeight: =FontWeight.Bold
             Height: =80
             Size: =30
-            Text: ="EDITAR ACTIVIDAD ACTIVIDAD"
+            Text: ="EDITAR ACTIVIDAD"
             Width: =1329
             ZIndex: =1
 
