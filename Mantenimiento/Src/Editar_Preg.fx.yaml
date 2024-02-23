@@ -1124,7 +1124,7 @@ Editar_Preg As screen:
 
             UploadedImage5_2 As image:
                 Height: =208
-                Image: =If(IsBlank(AddMediaButton5_2.Media), SampleImage, AddMediaButton5_2.Media)
+                Image: = AddMediaButton5_2.Media
                 Width: =240
                 X: =1067
                 Y: =240
@@ -1134,6 +1134,8 @@ Editar_Preg As screen:
                 ChangePictureText: ="Cambiar Imagen"
                 Fill: =RGBA(202, 202, 202, 1)
                 Height: =43
+                OnSelect: |-
+                    =UpdateContext({visibleimg5:false})
                 Size: =13
                 Text: ="Agregar imagen 5"
                 Width: =200
@@ -1145,12 +1147,24 @@ Editar_Preg As screen:
                 Color: =RGBA(255, 0, 0, 1)
                 Height: =35
                 Icon: =Icon.CancelBadge
-                OnSelect: |
-                    =Reset(AddMediaButton5_2)
+                OnSelect: |+
+                    =Reset(AddMediaButton5_2);
+                    
+                    
+                Visible: =If(Image13.Visible = true ,false,true)
                 Width: =34
                 X: =1253
                 Y: =240
                 ZIndex: =25
+
+        Image13 As image:
+            Height: =208
+            Image: =Edit_AyudaV5
+            Visible: =visibleimg5
+            Width: =240
+            X: =1067
+            Y: =238
+            ZIndex: =38
 
     Icon1_8 As icon.BackArrow:
         DisplayMode: =
