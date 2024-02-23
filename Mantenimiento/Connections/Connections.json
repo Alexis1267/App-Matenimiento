@@ -75,7 +75,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.24021.12",
-        "modifiedOn": "2024-02-23 15:24:13",
+        "modifiedOn": "2024-02-23 18:25:22",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
@@ -124,7 +124,8 @@
       "cdc0749a-7649-4c36-bc6a-c188db5b5898",
       "bdea71f6-7dfd-4f8c-a01b-8ba1898b3af6",
       "11fb8597-7706-4dd9-9a8b-f58ac5e54457",
-      "8259cc02-4bfb-4f60-8a38-c98be5b964b9"
+      "8259cc02-4bfb-4f60-8a38-c98be5b964b9",
+      "51119053-2603-4f6b-9d3e-c1907ca55c5a"
     ],
     "endpoints": [
       "CMXMOA17%5cI40SQLQAENV,CMXEDataCollection"
@@ -160,6 +161,46 @@
       "61ee6c7b-9591-4a29-ab5b-b7fa59026077"
     ],
     "id": "3781cddb-e53a-4b94-b919-4e0845a84178"
+  },
+  "51119053-2603-4f6b-9d3e-c1907ca55c5a": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "3736083c-041a-4b5d-ab79-97559da2f0cf": {
+          "value": "shared_sql_1"
+        },
+        "workflowDisplayName": {
+          "value": "EliminarActividad"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "423977a5-3231-4a6a-afe9-c57a98ab8dee"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sql_1": {
+          "value": "3736083c-041a-4b5d-ab79-97559da2f0cf"
+        },
+        "workflowDisplayName": {
+          "value": "EliminarActividad"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "423977a5-3231-4a6a-afe9-c57a98ab8dee"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "EliminarActividad"
+    ],
+    "dependencies": {
+      "shared_sql_1": "3736083c-041a-4b5d-ab79-97559da2f0cf"
+    },
+    "dependents": [],
+    "id": "51119053-2603-4f6b-9d3e-c1907ca55c5a"
   },
   "61ee6c7b-9591-4a29-ab5b-b7fa59026077": {
     "connectionRef": {

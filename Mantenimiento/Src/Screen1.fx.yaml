@@ -1601,8 +1601,13 @@
                     Icon13 As icon.Trash:
                         Color: =RGBA(184, 0, 0, 1)
                         Icon: =Icon.Trash
-                        OnSelect: |-
-                            =UpdateContext({BtnEliminarConfirm:true})
+                        OnSelect: |
+                            =UpdateContext({BtnEliminarConfirm:true});
+                            
+                            UpdateContext({Delete_IdPregunta:ThisItem.Id_Pregunta});
+                            UpdateContext({Delete_ClaseMtto:ThisItem.Clase_MTTO});
+                            UpdateContext({Delete_Zona:ThisItem.Sub_Tarea});
+                            UpdateContext({Delete_Activo:ThisItem.Activo_No});
                         Visible: =If(ThisItem.IsSelected,true)
                         X: =1230
                         Y: =16
@@ -1654,6 +1659,7 @@
 
                 Button11 As button:
                     Fill: =RGBA(184, 0, 0, 1)
+                    OnSelect: =EliminarActividad.Run(Delete_IdPregunta,Delete_ClaseMtto,Delete_Zona,Delete_Activo)
                     Text: ="Eliminar"
                     X: =324
                     Y: =273
