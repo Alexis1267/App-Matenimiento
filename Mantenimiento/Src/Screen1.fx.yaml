@@ -1659,7 +1659,18 @@
 
                 Button11 As button:
                     Fill: =RGBA(184, 0, 0, 1)
-                    OnSelect: =EliminarActividad.Run(Delete_IdPregunta,Delete_ClaseMtto,Delete_Zona,Delete_Activo)
+                    OnSelect: |
+                        =//Flow para poder eliminar la actividad
+                        EliminarActividad.Run(Delete_IdPregunta,Delete_ClaseMtto,Delete_Zona,Delete_Activo);
+                        
+                        //Actualizamos la BD 
+                        Refresh(PreventivSure_PreguntasMP);
+                        
+                        //Mensaje de notificacion
+                        Notify("La actividad ha sido eliminada exitosamente.",NotificationType.Success);
+                        
+                        //Cerramos el ModalPop
+                        UpdateContext({BtnEliminarConfirm:false})
                     Text: ="Eliminar"
                     X: =324
                     Y: =273
@@ -1684,6 +1695,7 @@
 
                 Icon14 As icon.CancelBadge:
                     Color: =RGBA(184, 0, 0, 1)
+                    DisplayMode: =DisplayMode.View
                     Height: =105
                     Icon: =Icon.CancelBadge
                     Width: =117
