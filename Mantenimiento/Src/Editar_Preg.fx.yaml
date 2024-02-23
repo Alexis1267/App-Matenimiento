@@ -1150,6 +1150,7 @@ Editar_Preg As screen:
                 OnSelect: |+
                     =Reset(AddMediaButton5_2);
                     
+                    UpdateContext({visibleimg5:true})
                     
                 Visible: =If(Image13.Visible = true ,false,true)
                 Width: =34
@@ -1165,6 +1166,17 @@ Editar_Preg As screen:
             X: =1067
             Y: =238
             ZIndex: =38
+
+        Button12_4 As button:
+            OnSelect: |+
+                =UpdateContext({visibleimg5:false});
+                
+                Reset(AddMediaButton5_2);
+                
+            Text: ="Eliminar IMG"
+            X: =1107
+            Y: =508
+            ZIndex: =39
 
     Icon1_8 As icon.BackArrow:
         DisplayMode: =
