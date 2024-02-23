@@ -1662,7 +1662,7 @@
                     Fill: =RGBA(184, 0, 0, 1)
                     OnSelect: |
                         =//Flow para poder eliminar la actividad
-                        EliminarActividad.Run(Delete_IdPregunta,Delete_ClaseMtto,Delete_Zona,Delete_Activo);
+                        SpUp_PreventivSure_EliminarActividadDatos.Run(Delete_IdPregunta,Delete_ClaseMtto,Delete_Zona,Delete_Activo);
                         
                         //Actualizamos la BD 
                         Refresh(PreventivSure_PreguntasMP);

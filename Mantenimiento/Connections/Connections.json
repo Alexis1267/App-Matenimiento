@@ -75,7 +75,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.24021.12",
-        "modifiedOn": "2024-02-23 20:43:42",
+        "modifiedOn": "2024-02-23 20:51:39",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
@@ -125,7 +125,7 @@
       "bdea71f6-7dfd-4f8c-a01b-8ba1898b3af6",
       "11fb8597-7706-4dd9-9a8b-f58ac5e54457",
       "8259cc02-4bfb-4f60-8a38-c98be5b964b9",
-      "51119053-2603-4f6b-9d3e-c1907ca55c5a"
+      "5da40984-b78c-4cac-bb39-5c3f9f947bac"
     ],
     "endpoints": [
       "CMXMOA17%5cI40SQLQAENV,CMXEDataCollection"
@@ -162,17 +162,14 @@
     ],
     "id": "3781cddb-e53a-4b94-b919-4e0845a84178"
   },
-  "51119053-2603-4f6b-9d3e-c1907ca55c5a": {
+  "5da40984-b78c-4cac-bb39-5c3f9f947bac": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
-        "3736083c-041a-4b5d-ab79-97559da2f0cf": {
-          "value": "shared_sql_1"
-        },
         "workflowDisplayName": {
-          "value": "EliminarActividad"
+          "value": "SpUp_PreventivSure_EliminarActividadDatos"
         },
         "workflowEntityId": {},
         "workflowName": {
@@ -180,11 +177,8 @@
         }
       },
       "parameterHintsV2": {
-        "shared_sql_1": {
-          "value": "3736083c-041a-4b5d-ab79-97559da2f0cf"
-        },
         "workflowDisplayName": {
-          "value": "EliminarActividad"
+          "value": "SpUp_PreventivSure_EliminarActividadDatos"
         },
         "workflowEntityId": {},
         "workflowName": {
@@ -194,13 +188,13 @@
     },
     "datasets": {},
     "dataSources": [
-      "EliminarActividad"
+      "SpUp_PreventivSure_EliminarActividadDatos"
     ],
     "dependencies": {
       "shared_sql_1": "3736083c-041a-4b5d-ab79-97559da2f0cf"
     },
     "dependents": [],
-    "id": "51119053-2603-4f6b-9d3e-c1907ca55c5a"
+    "id": "5da40984-b78c-4cac-bb39-5c3f9f947bac"
   },
   "61ee6c7b-9591-4a29-ab5b-b7fa59026077": {
     "connectionRef": {
