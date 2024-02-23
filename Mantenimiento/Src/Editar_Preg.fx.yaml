@@ -1103,7 +1103,7 @@ Editar_Preg As screen:
         Height: =75
         Icon: =Icon.BackArrow
         OnSelect: |-
-            =Navigate(Elegir,ScreenTransition.Fade);
+            =Navigate(Screen1,ScreenTransition.Fade);
             Reset(TextInput3_2);
             Reset(AddMediaButton1_2);
             Reset(AddMediaButton2_2);
