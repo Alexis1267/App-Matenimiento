@@ -965,6 +965,15 @@ Editar_Preg As screen:
             Y: =508
             ZIndex: =35
 
+        Image12 As image:
+            Height: =208
+            Image: =Edit_AyudaV4
+            Visible: =visibleimg4
+            Width: =240
+            X: =796
+            Y: =240
+            ZIndex: =36
+
         Group14_2 As group:
             Height: =5
             Width: =5
@@ -1072,6 +1081,8 @@ Editar_Preg As screen:
                 ChangePictureText: ="Cambiar Imagen"
                 Fill: =RGBA(202, 202, 202, 1)
                 Height: =43
+                OnSelect: |-
+                    =UpdateContext({visibleimg4:false})
                 Size: =13
                 Text: ="Agregar imagen 4"
                 Width: =200
@@ -1084,7 +1095,10 @@ Editar_Preg As screen:
                 Height: =35
                 Icon: =Icon.CancelBadge
                 OnSelect: |
-                    =Reset(AddMediaButton4_2)
+                    =Reset(AddMediaButton4_2);
+                    
+                    UpdateContext({visibleimg4:true})
+                Visible: =If(Image12.Visible = true ,false,true)
                 Width: =34
                 X: =982
                 Y: =240
