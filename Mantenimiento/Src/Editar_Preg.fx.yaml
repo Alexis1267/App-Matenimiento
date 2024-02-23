@@ -2,6 +2,10 @@ Editar_Preg As screen:
     Fill: =RGBA(21, 44, 115, 1)
     OnVisible: |-
         =UpdateContext({visibleimg1:true});
+        UpdateContext({visibleimg2:true});
+        UpdateContext({visibleimg3:true});
+        UpdateContext({visibleimg4:true});
+        UpdateContext({visibleimg5:true});
         
         
         /*//IMG1
@@ -673,6 +677,7 @@ Editar_Preg As screen:
                 //Notify("Se ha registrado",NotificationType.Success);
                 
                 Patch(PreventivSure_PreguntasMP,{Id_Pregunta:Edit_Id},
+                {Actividad:TextInput3_2.Text},
                 {img1:If(Image9.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage1_2.Image),SampleImage,UploadedImage1_2.Image))},
                 {img2:If(Image10.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage2_2.Image),SampleImage,UploadedImage2_2.Image))},
                 {img3:If(Image11.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage3_2.Image),SampleImage,UploadedImage3_2.Image))},
