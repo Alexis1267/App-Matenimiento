@@ -974,6 +974,17 @@ Editar_Preg As screen:
             Y: =240
             ZIndex: =36
 
+        Button12_3 As button:
+            OnSelect: |+
+                =UpdateContext({visibleimg4:false});
+                
+                Reset(AddMediaButton4_2);
+                
+            Text: ="Eliminar IMG"
+            X: =842
+            Y: =508
+            ZIndex: =37
+
         Group14_2 As group:
             Height: =5
             Width: =5
@@ -1071,7 +1082,7 @@ Editar_Preg As screen:
 
             UploadedImage4_2 As image:
                 Height: =208
-                Image: =If(IsBlank(AddMediaButton4_2.Media), SampleImage, AddMediaButton4_2.Media)
+                Image: =AddMediaButton4_2.Media
                 Width: =240
                 X: =796
                 Y: =240
