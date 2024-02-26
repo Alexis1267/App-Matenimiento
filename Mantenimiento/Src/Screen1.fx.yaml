@@ -656,7 +656,7 @@
                         {img3:UploadedImage3_1.Image},
                         {img4:UploadedImage4_1.Image},
                         {img5:UploadedImage5_1.Image},
-                        {CreadoPor:Identificacion.FullName},
+                        {CreadoPor:Text(Identificacion.FullName)},
                         {Fecha_Creacion:Now()}
                         ));
                         
