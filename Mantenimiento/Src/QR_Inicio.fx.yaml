@@ -191,13 +191,13 @@
 
     Button3 As button:
         DisplayMode: =If(LookUp(PreventivSure_Tecnicos,Correo = Identificacion.Email,Rol = "Admin"), DisplayMode.Edit,DisplayMode.Disabled) 
-        Height: =57
+        Height: =68
         OnSelect: =Navigate('Control de preguntas',ScreenTransition.Fade)
         Text: ="Control de preguntas"
         Visible: =If(LookUp(PreventivSure_Tecnicos,Correo = Identificacion.Email,Rol = "Admin"), true,false) 
         Width: =335
         X: =533
-        Y: =691
+        Y: =676
         ZIndex: =12
 
     Label16 As label:
