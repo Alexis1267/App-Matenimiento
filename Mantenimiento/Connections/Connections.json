@@ -75,7 +75,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_sql",
         "apiVer": 2,
         "appVer": "3.24021.12",
-        "modifiedOn": "2024-02-23 20:51:39",
+        "modifiedOn": "2024-02-26 13:21:05",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[dbo].[preventivsure_preg]\":[\"post\",\"patch\",\"get\"],\"[dbo].[preventivsure_tecnicos]\":[\"get\"],\"[dbo].[preventivsure_preguntasmp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_tablah_mp]\":[\"post\",\"patch\",\"get\"],\"[dbo].[cmxe_mp_n]\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
@@ -168,6 +168,9 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "3736083c-041a-4b5d-ab79-97559da2f0cf": {
+          "value": "shared_sql_1"
+        },
         "workflowDisplayName": {
           "value": "SpUp_PreventivSure_EliminarActividadDatos"
         },
@@ -177,6 +180,9 @@
         }
       },
       "parameterHintsV2": {
+        "shared_sql_1": {
+          "value": "3736083c-041a-4b5d-ab79-97559da2f0cf"
+        },
         "workflowDisplayName": {
           "value": "SpUp_PreventivSure_EliminarActividadDatos"
         },

@@ -82,7 +82,7 @@
         LoadingSpinner: =LoadingSpinner.Data
         TemplateFill: =If(ThisItem.IsSelected,RGBA(186,192,208,1), RGBA(0,0,0,0))
         TemplatePadding: =0
-        TemplateSize: =208
+        TemplateSize: =319
         Width: =1309
         X: =30
         Y: =141
@@ -149,7 +149,7 @@
             Height: =1
             OnSelect: =Select(Parent)
             Width: =1366
-            Y: =207
+            Y: =318
             ZIndex: =7
 
         Label6 As label:
