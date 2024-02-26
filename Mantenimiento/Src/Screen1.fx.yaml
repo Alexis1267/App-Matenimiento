@@ -1292,6 +1292,17 @@
                     Width: =1330
                     ZIndex: =1
 
+                Icon1_4 As icon.BackArrow:
+                    DisplayMode: =
+                    Height: =75
+                    Icon: =Icon.BackArrow
+                    OnSelect: |
+                        =Navigate('Control de preguntas',ScreenTransition.Fade);
+                    Width: =82
+                    X: =16
+                    Y: =4
+                    ZIndex: =2
+
         DataCard2 As dataCard.blankCard:
             BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.Solid
