@@ -1396,7 +1396,7 @@
                         Text: =ThisItem.Actividad
                         VerticalAlign: =VerticalAlign.Top
                         Width: =768
-                        X: =111
+                        X: =107
                         Y: =89
                         ZIndex: =2
 
@@ -1418,7 +1418,7 @@
                     Label22_2 As label:
                         OnSelect: =Select(Parent)
                         Text: =ThisItem.Num_Pregunta
-                        X: =170
+                        X: =164
                         Y: =40
                         ZIndex: =7
 
@@ -1434,7 +1434,7 @@
                         Text: =ThisItem.Sub_Tarea
                         VerticalAlign: =VerticalAlign.Top
                         Width: =768
-                        X: =95
+                        X: =80
                         Y: =7
                         ZIndex: =8
 
