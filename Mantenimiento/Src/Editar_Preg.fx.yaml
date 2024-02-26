@@ -679,10 +679,10 @@ Editar_Preg As screen:
                 Patch(PreventivSure_PreguntasMP,{Id_Pregunta:Edit_Id},
                 {Actividad:TextInput3_2.Text},
                 {img1:If(Image9.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage1_2.Image),SampleImage,UploadedImage1_2.Image))},
-                {img2:If(Image10.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage2_2.Image),SampleImage,UploadedImage2_2.Image))},
-                {img3:If(Image11.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage3_2.Image),SampleImage,UploadedImage3_2.Image))},
-                {img4:If(Image12.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage4_2.Image),SampleImage,UploadedImage4_2.Image))},
-                {img5:If(Image13.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage5_2.Image),SampleImage,UploadedImage5_2.Image))},
+                {img2:If(Image10.Visible = true,Edit_AyudaV2,If(IsBlank(UploadedImage2_2.Image),SampleImage,UploadedImage2_2.Image))},
+                {img3:If(Image11.Visible = true,Edit_AyudaV3,If(IsBlank(UploadedImage3_2.Image),SampleImage,UploadedImage3_2.Image))},
+                {img4:If(Image12.Visible = true,Edit_AyudaV4,If(IsBlank(UploadedImage4_2.Image),SampleImage,UploadedImage4_2.Image))},
+                {img5:If(Image13.Visible = true,Edit_AyudaV5,If(IsBlank(UploadedImage5_2.Image),SampleImage,UploadedImage5_2.Image))},
                 {ModificadoPor:Identificacion.FullName},
                 {Fecha_Modificacion:Now()})
                 
