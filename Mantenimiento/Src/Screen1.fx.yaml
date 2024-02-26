@@ -1675,7 +1675,7 @@
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =15
-                        Text: =ThisItem.Fecha_Modificacion
+                        Text: =Text( ThisItem.Fecha_Modificacion,"dd/mmmm/yyyy","es-MX")
                         VerticalAlign: =VerticalAlign.Top
                         Width: =216
                         X: =1104
