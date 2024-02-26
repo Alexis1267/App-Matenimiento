@@ -1671,6 +1671,63 @@
                         Y: =449
                         ZIndex: =21
 
+                    Label26_5 As label:
+                        Align: =Align.Right
+                        FontWeight: =FontWeight.Bold
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: |-
+                            ="Modificada por:"
+                        Width: =173
+                        X: =927
+                        Y: =414
+                        ZIndex: =22
+
+                    Title6_10 As label:
+                        AutoHeight: =true
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =15
+                        Text: =ThisItem.CreadoPor
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =216
+                        X: =1104
+                        Y: =421
+                        ZIndex: =23
+
+                    Label26_6 As label:
+                        Align: =Align.Right
+                        FontWeight: =FontWeight.Bold
+                        Height: =31
+                        OnSelect: =Select(Parent)
+                        Size: =15
+                        Text: |-
+                            ="Fecha de creación:"
+                        Width: =205
+                        X: =895
+                        Y: =446
+                        ZIndex: =24
+
+                    Title6_11 As label:
+                        AutoHeight: =true
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =15
+                        Text: =ThisItem.Fecha_Modificacion
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =216
+                        X: =1104
+                        Y: =449
+                        ZIndex: =25
+
             Group10_2 As group:
                 Height: =5
                 Width: =5
