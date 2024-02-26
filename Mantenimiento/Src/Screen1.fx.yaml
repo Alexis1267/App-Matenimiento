@@ -655,7 +655,9 @@
                         {img2:UploadedImage2_1.Image},
                         {img3:UploadedImage3_1.Image},
                         {img4:UploadedImage4_1.Image},
-                        {img5:UploadedImage5_1.Image}
+                        {img5:UploadedImage5_1.Image},
+                        {CreadoPor:Identificacion.FullName},
+                        {Fecha_Creacion:Now()}
                         ));
                         
                         If(IsBlank(Dropdown3_1.SelectedText.Value) || IsBlank(TextInput3_1.Text), Notify("No se permiten campos vacíos",NotificationType.Error),
