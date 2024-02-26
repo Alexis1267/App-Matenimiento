@@ -682,7 +682,9 @@ Editar_Preg As screen:
                 {img2:If(Image10.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage2_2.Image),SampleImage,UploadedImage2_2.Image))},
                 {img3:If(Image11.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage3_2.Image),SampleImage,UploadedImage3_2.Image))},
                 {img4:If(Image12.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage4_2.Image),SampleImage,UploadedImage4_2.Image))},
-                {img5:If(Image13.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage5_2.Image),SampleImage,UploadedImage5_2.Image))})
+                {img5:If(Image13.Visible = true,Edit_AyudaV1,If(IsBlank(UploadedImage5_2.Image),SampleImage,UploadedImage5_2.Image))},
+                {ModificadoPor:Identificacion.FullName},
+                {Fecha_Modificacion:Now()})
                 
                 
                 
