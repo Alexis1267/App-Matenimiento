@@ -1568,8 +1568,8 @@
                             
                             
                         Visible: =If(ThisItem.IsSelected,true)
-                        X: =1110
-                        Y: =19
+                        X: =1133
+                        Y: =17
                         ZIndex: =13
 
                     Label26 As label:
@@ -1621,7 +1621,7 @@
                         OnSelect: =Select(Parent)
                         Size: =15
                         Text: |-
-                            ="Creada por:"
+                            ="Creado por:"
                         Width: =133
                         X: =4
                         Y: =414
@@ -1677,7 +1677,7 @@
                         OnSelect: =Select(Parent)
                         Size: =15
                         Text: |-
-                            ="Modificada por:"
+                            ="Modificado por:"
                         Width: =173
                         X: =927
                         Y: =414
@@ -1692,7 +1692,7 @@
                         PaddingRight: =0
                         PaddingTop: =0
                         Size: =15
-                        Text: =ThisItem.CreadoPor
+                        Text: =ThisItem.ModificadoPor
                         VerticalAlign: =VerticalAlign.Top
                         Width: =216
                         X: =1104
